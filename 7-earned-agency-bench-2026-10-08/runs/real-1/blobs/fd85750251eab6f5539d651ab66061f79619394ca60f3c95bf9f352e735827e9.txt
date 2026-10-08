@@ -1,0 +1,4 @@
+from nestedget import get as nested_get
+
+def nested_get(obj, path: str, default=None):
+    return nested_get(obj, path, default)

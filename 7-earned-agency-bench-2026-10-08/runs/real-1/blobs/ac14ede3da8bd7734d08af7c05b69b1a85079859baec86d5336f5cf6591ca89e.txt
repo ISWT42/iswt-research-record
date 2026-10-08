@@ -1,0 +1,75 @@
+{"status": "done"}
+```python
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Insert underscores based on the rules
+    result = []
+    for i, char in enumerate(name):
+        if char.isupper():
+            # Rule 1: Between lowercase/digit and uppercase
+            if i > 0 and (name[i-1].islower() or name[i-1].isdigit()):
+                result.append('_')
+            # Rule 2: Before an uppercase that has another uppercase before it and a lowercase after it
+            # This handles cases like "HTML" -> "H_T_M_L" initially? No.
+            # "parseHTMLText" -> parse_H_T_M_L_Text? No.
+            # Let's trace "parseHTMLText":
+            # p,a,r,s,e are lower. H is upper. prev='e' (lower). Add '_'. Result so far: "parse_"
+            # Next is T. prev='H' (upper). Is there a lowercase after T? Yes, 'T' is followed by 'M'? No, 'T' is followed by 'M' which is upper.
+            # Wait, let's look at the rule carefully.
+            # "before a capital letter that has another capital letter before it and a lowercase letter after it."
+            # In "HTMLText":
+            # H: prev=None.
+            # T: prev=H (upper). After=T? No, after=M (upper). So no underscore before T?
+            # M: prev=T (upper). After=L (upper). So no underscore before M?
+            # L: prev=M (upper). After=T (lower). YES. Underscore before L.
+            # T: prev=L (lower). Rule 1 applies. Underscore before T.
+            # e: lower.
+            # x: lower.
+            # t: lower.
+            
+            # So "HTMLText" becomes "HTML_Text"?
+            # Let's check "parseHTMLText" -> "parse_html_text".
+            # If we insert _ before L in HTML, we get "HTML_Text". Then T gets _ from Rule 1 (prev L is lower? No, L is lower now? No, L is still upper in original string).
+            # The rules apply to the ORIGINAL string positions.
+            
+            # Let's re-evaluate "HTMLText" with original indices:
+            # i=0, H: No prev.
+            # i=1, T: Prev=H (upper). After=M (upper). Condition 2 fails (after must be lower).
+            # i=2, M: Prev=T (upper). After=L (upper). Condition 2 fails.
+            # i=3, L: Prev=M (upper). After=T (lower). Condition 2 holds. Insert _.
+            # i=4, T: Prev=L (lower). Condition 1 holds. Insert _.
+            # i=5, e: Lower.
+            # i=6, x: Lower.
+            # i=7, t: Lower.
+            
+            # Result chars: H, T, M, _, L, _, T, e, x, t.
+            # String: "HTM_L_Text". Lowercase: "htm_l_text".
+            # But expected is "html_text".
+            
+            # My interpretation of Rule 2 might be slightly off or needs refinement.
+            # "parseHTMLText" -> "parse_html_text"
+            # Breakdown: parse | HTML | Text
+            # HTML is a sequence of capitals. Text starts with T.
+            # Usually, camelCase conversion treats consecutive capitals as a single acronym unless the last one is part of the next word.
+            # Standard regex approach: (?<=[a-z])(?=[A-Z]) or (?<=[A-Z])(?=[A-Z][a-z])
+            
+            # Let's try standard regex logic:
+            # 1. Insert _ between lower/digit and upper: (?<=[a-z0-9])(?=[A-Z])
+            # 2. Insert _ between upper and upper+lower: (?<=[A-Z])(?=[A-Z][a-z])
+            
+            # Apply to "parseHTMLText":
+            # 1. Between 'e' and 'H': Match. -> parse_HTMLText
+            # 2. Between 'L' and 'T': 
+            #    Look behind: L is Upper. Look ahead: T is Upper, next is 'e' (lower). Match. -> parse_HTML_Text
+            #    What about between H and T? Behind H (Upper), Ahead T (Upper), next M (Upper). No match.
+            #    Between T and M? Behind T (Upper), Ahead M (Upper), next L (Upper). No match.
+            #    Between M and L? Behind M (Upper), Ahead L (Upper), next T (Lower). Match. -> parse_HTML__Text?
+            #    Wait. If I insert at M->L AND L->T, I get double underscores?
+            
+            # Let's trace "HTMLText" again with regex:
+            # String: H T M L T e x t
+            # Pos 0: H
+            # Pos 1: T. Check pos 0->1. H(Up)->T(Up). Next char at 2 is M(Up). Rule 2 requires next char to be Lower. Fail.
+            # Pos 2: M. Check pos 1->

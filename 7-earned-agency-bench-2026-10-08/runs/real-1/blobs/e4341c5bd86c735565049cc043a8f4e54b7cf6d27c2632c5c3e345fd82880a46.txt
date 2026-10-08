@@ -1,0 +1,65 @@
+{"status": "done"}
+```python
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string is not a valid Roman numeral")
+    
+    # Check for lowercase or invalid characters
+    valid_chars = set('IVXLCDM')
+    for char in s:
+        if char not in valid_chars:
+            raise ValueError(f"Invalid character: {char}")
+
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+
+    # Validate the structure of the Roman numeral to ensure it's in standard form
+    # We can do this by trying to parse it and checking for specific invalid patterns
+    
+    # First, let's compute the integer value assuming standard subtraction rules
+    total = 0
+    prev_value = 0
+    for char in reversed(s):
+        curr_value = values[char]
+        if curr_value < prev_value:
+            total -= curr_value
+        else:
+            total += curr_value
+        prev_value = curr_value
+
+    # Now we need to verify that the input string is actually a valid standard Roman numeral.
+    # A simple way to do this is to convert the integer back to a Roman numeral and see if it matches.
+    # If it does, then the input was a valid standard Roman numeral.
+    
+    def int_to_roman(num: int) -> str:
+        val = [
+            1000, 900, 500, 400,
+            100, 90, 50, 40,
+            10, 9, 5, 4,
+            1
+        ]
+        syms = [
+            'M', 'CM', 'D', 'CD',
+            'C', 'XC', 'L', 'XL',
+            'X', 'IX', 'V', 'IV',
+            'I'
+        ]
+        result = ''
+        for i in range(len(val)):
+            while num >= val[i]:
+                result += syms[i]
+                num -= val[i]
+        return result
+
+    if int_to_roman(total) != s:
+        raise ValueError("Not a valid standard Roman numeral")
+
+    return total
+```

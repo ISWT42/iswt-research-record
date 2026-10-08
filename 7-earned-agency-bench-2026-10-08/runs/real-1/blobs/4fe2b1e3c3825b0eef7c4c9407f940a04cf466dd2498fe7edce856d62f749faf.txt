@@ -1,0 +1,8 @@
+{"status": "done"}
+```python
+from nestedget import get as _nestedget_get
+
+
+def nested_get(obj, path: str, default=None):
+    return _nestedget_get(obj, path, default)
+```

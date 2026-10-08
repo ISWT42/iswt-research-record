@@ -1,0 +1,44 @@
+import re
+
+def parse_cents(s: str) -> int:
+    s = s.strip()
+    if not s:
+        raise ValueError("Empty string")
+
+    # Regex breakdown:
+    # ^(-)?           Optional leading minus
+    # (\$)?           Optional leading dollar sign
+    # (                Digits part:
+    #   \d{1,3}(,\d{3})*  1-3 digits followed by zero or more groups of ,XXX
+    #   |                OR
+    #   \d+               Just digits (no commas)
+    # )
+    # (\.(\d{1,2}))?  Optional dot followed by 1 or 2 digits
+    # $
+    pattern = r"^(-)?(\$)?(\d{1,3}(?:,\d{3})*|\d+)(?:\.(\d{1,2}))?$"
+    match = re.match(pattern, s)
+    
+    if not match:
+        raise ValueError("Invalid money format")
+    
+    sign_group, dollar_group, digits_group, cents_group = match.groups()
+    
+    # Remove commas from the main digits part
+    clean_digits = digits_group.replace(',', '')
+    
+    # Calculate total cents
+    total_cents = int(clean_digits) * 100
+    
+    if cents_group is not None:
+        # '0.7' -> 70 cents, '0.07' -> 7 cents
+        # If one digit, it's 10s. If two, it's 1s.
+        cents_val = int(cents_group)
+        if len(cents_group) == 1:
+            total_cents += cents_val * 10
+        else:
+            total_cents += cents_val
+            
+    if sign_group == '-':
+        total_cents = -total_cents
+        
+    return total_cents

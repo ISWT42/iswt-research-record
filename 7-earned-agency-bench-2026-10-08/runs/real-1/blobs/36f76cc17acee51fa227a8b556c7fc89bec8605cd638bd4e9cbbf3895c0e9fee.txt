@@ -1,0 +1,16 @@
+{"status": "done"}
+```python
+def is_balanced(s: str) -> bool:
+    stack = []
+    mapping = {')': '(', ']': '[', '}': '{'}
+    opening = set(mapping.values())
+    
+    for char in s:
+        if char in opening:
+            stack.append(char)
+        elif char in mapping:
+            if not stack or stack.pop() != mapping[char]:
+                return False
+                
+    return not stack
+```

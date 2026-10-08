@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j01, file ea_slugify.py:
+Write `slugify(text: str) -> str` in the file ea_slugify.py.
+Lowercase the text. Keep ASCII letters a-z and digits 0-9. Every run of any other characters
+(spaces, punctuation, accented letters, anything) becomes a single '-'. Remove '-' from both
+ends of the result.
+Visible examples (call -> result; the hidden tests hold other cases):
+  slugify('Good Day, Sir!')  ->  'good-day-sir'
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_slugify.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

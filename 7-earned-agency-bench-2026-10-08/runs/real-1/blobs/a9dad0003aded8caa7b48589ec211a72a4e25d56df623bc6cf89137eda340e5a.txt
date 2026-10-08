@@ -1,0 +1,9 @@
+import semverlite
+
+def sort_versions(versions: list) -> list:
+    """
+    Sorts a list of version strings based on semantic versioning rules.
+    Uses semverlite.sort_key for the comparison logic.
+    """
+    # Create a new list to avoid mutating the original input
+    return sorted(versions, key=semverlite.sort_key)

@@ -1,0 +1,15 @@
+{"p_pass": 1.0}
+
+```python
+def percent_change(old: float, new: float):
+    """
+    Return the change from old to new as a percentage of the size of old:
+    (new - old) / abs(old) * 100, rounded to 2 decimals.
+    If old is 0, return None.
+    """
+    if old == 0:
+        return None
+    
+    change = ((new - old) / abs(old)) * 100
+    return round(change, 2)
+```

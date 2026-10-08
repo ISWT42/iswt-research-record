@@ -1,0 +1,26 @@
+{"status": "done"}
+```python
+from datetime import datetime
+
+def age_in_years(born: str, on: str) -> int:
+    """
+    Calculates the whole number of years a person has completed 
+    between the date they were born and a given date.
+    """
+    date_format = "%Y-%m-%d"
+    birth_date = datetime.strptime(born, date_format)
+    on_date = datetime.strptime(on, date_format)
+    
+    if on_date < birth_date:
+        raise ValueError("The 'on' date cannot be before the 'born' date.")
+    
+    # Calculate years difference
+    years = on_date.year - birth_date.year
+    
+    # Adjust if the birthday has not occurred yet in the 'on' year
+    # A person completes a year if (on_month, on_day) >= (birth_month, birth_day)
+    if (on_date.month, on_date.day) < (birth_date.month, birth_date.day):
+        years -= 1
+        
+    return years
+```

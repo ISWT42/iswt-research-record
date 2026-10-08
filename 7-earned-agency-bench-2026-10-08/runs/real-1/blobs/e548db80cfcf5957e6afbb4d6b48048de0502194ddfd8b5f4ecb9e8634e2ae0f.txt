@@ -1,0 +1,14 @@
+def split_cents(total: int, n: int) -> list:
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    
+    base = total // n
+    remainder = total % n
+    
+    result = [base] * n
+    
+    # Distribute the remainder by adding 1 to the first 'remainder' elements
+    for i in range(remainder):
+        result[i] += 1
+        
+    return result

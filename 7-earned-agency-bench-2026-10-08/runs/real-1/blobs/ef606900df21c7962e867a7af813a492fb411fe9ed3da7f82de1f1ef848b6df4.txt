@@ -1,0 +1,3 @@
+```json
+{"verdict": "contradicted", "reason": "test failed with 2 assertion errors on this file hash"}
+```

@@ -1224,6 +1224,54 @@
    "sha256": "4c39e64a3e3577582f39da97c8e45a16bacd671f90c3a6c2b5e4f059e95fe48f",
    "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
    "replaced_by": "5-designs-and-statements/weakness-designs-2026-10-05/W3-DESIGN-v1.redacted.md"
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/DESIGN.md",
+   "sha256": "5872eaf1ba973f857da36cb341a0cea58ed0bf0bbff3afb959221aa43d54a96c",
+   "reason": "sealed original not published; redacted copy published instead (4 quoted forecast probabilities of the decision model removed from the translation table)",
+   "replaced_by": "7-earned-agency-bench-2026-10-08/DESIGN.redacted.md"
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/sources/AGREED-DESIGN-from-the-7-oct-handoff.md",
+   "sha256": "16d8dc38f5803eb89bf326b718a6bce27e3fa7cbdab1a1be51bd6464272baa1d",
+   "reason": "sealed original not published; redacted copy published instead (4 forecast probabilities of the decision model removed; 1 local folder path shortened)",
+   "replaced_by": "7-earned-agency-bench-2026-10-08/sources/AGREED-DESIGN-from-the-7-oct-handoff.redacted.md"
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/sources/IDEA-1-relay-his-words.md",
+   "sha256": "c372ae07960ab5692b07ba85ac14190aef3f7e9302024d0c8a36ab08b9a9585d",
+   "reason": "sealed original not published; redacted copy published instead (box account name replaced)",
+   "replaced_by": "7-earned-agency-bench-2026-10-08/sources/IDEA-1-relay-his-words.redacted.md"
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/PREDICTIONS.md",
+   "sha256": "4899c1c3c87754faaec43d652de8123d3ad26919dc9e062230f6cc20e6bbf77a",
+   "reason": "our forecasts; kept private by the owner's rule; hash in EAB-SEAL-SHA256.txt",
+   "replaced_by": null
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/sources/CLAUDE-PREDICTIONS-R4.md",
+   "sha256": "6c95ab9e9fefedcc997f3816c875bd7ece820721410a99f2a407b993528cfbbe",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct)",
+   "replaced_by": null
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/sources/SUMMARY-R4.txt",
+   "sha256": "2600f163b26e24ec8250460f998bfb3cc63c01ea0dd04e3f0c4c0779348d7faa",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct); the decision model's forecasts",
+   "replaced_by": null
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/sources/STACK-3-PROPOSAL.md",
+   "sha256": "d048485562f9b7c746a4e3fe3822cf5e5d3aa89a9342b750c42c1ed3d28a0462",
+   "reason": "draft design that sets out the decision model's and Claude's forecasts side by side; kept private with them (its content that matters is in DESIGN.md)",
+   "replaced_by": null
+  },
+  {
+   "path": "7-earned-agency-bench-2026-10-08/COMMANDS.md",
+   "sha256": "b136be8856d7e5737dcd581f634d345d42ab63d3cad613138f5471f7952ed94c",
+   "reason": "run commands with local paths and account steps",
+   "replaced_by": null
   }
  ]
 }

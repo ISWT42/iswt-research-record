@@ -1,0 +1,77 @@
+{
+  "config_version": "2026-10-08.2",
+  "note": "Models, prices, broker, run limits, the arm presets and the declared comparisons live here and nowhere else. Change this file only BEFORE sealing. Prices are US$ per million tokens: the first three as given by Joshua on 7 Oct 2026; mistral as the live OpenRouter list price read on 8 Oct 2026 02:05 UTC. A 'revision' string, if set, becomes part of the agent name, so a changed revision starts an empty track record.",
+  "models": [
+    {"id": "qwen/qwen3.7-flash", "family": "qwen", "revision": "", "price_in_per_m": 0.03, "price_out_per_m": 0.13},
+    {"id": "google/gemma-4-31b-it", "family": "google", "revision": "", "price_in_per_m": 0.09, "price_out_per_m": 0.34},
+    {"id": "mistralai/mistral-small-3.2-24b-instruct", "family": "mistral", "revision": "", "price_in_per_m": 0.09375, "price_out_per_m": 0.25},
+    {"id": "xiaomi/mimo-v2.6-flash", "family": "xiaomi", "revision": "", "price_in_per_m": 0.14, "price_out_per_m": 0.28}
+  ],
+  "standin_models": [
+    {"id": "standin/careful", "family": "sa", "price_like": "qwen/qwen3.7-flash"},
+    {"id": "standin/overclaimer", "family": "sb", "price_like": "google/gemma-4-31b-it"},
+    {"id": "standin/gullible", "family": "sa", "price_like": "mistralai/mistral-small-3.2-24b-instruct"},
+    {"id": "standin/sloppy", "family": "sc", "price_like": "xiaomi/mimo-v2.6-flash"}
+  ],
+  "broker": {
+    "dir": "C:\\Users\\joshd\\Desktop\\Moonshots\\ai-broker",
+    "argv_prefix": ["node", "broker.mjs"],
+    "providers": {"forecast": "openrouter-plain", "certify": "openrouter-plain", "work": "openrouter-plain-long"},
+    "max_out_tokens_by_role": {"forecast": 400, "certify": 400, "work": 1200},
+    "providers_note": "Decision of 8 Oct, from the smoke test: the broker's plain OpenRouter routes send reasoning OFF, temperature 0, seed 42 and a fixed reply limit (openrouter-plain 400 tokens, openrouter-plain-long 1200), the same for every arm. The reasoning route (openrouter) let qwen3.7 spend all 4000 tokens thinking and return nothing, and made one-line forecasts cost 1,700 to 4,000 tokens. The limits in max_out_tokens_by_role are the broker's own for those routes (read from the copy of its code in stack-test-2, broker-copy/lib/providers); they are used for the worst-case cost reserved before each call. Change a route here only before sealing.",
+    "lane": "earned-agency-bench",
+    "call_timeout_s": 600
+  },
+  "run": {
+    "reps": 8,
+    "workers": 4,
+    "cap_usd": 3.00,
+    "max_minutes": 480,
+    "check_timeout_s": 20
+  },
+  "presets_note": "An arm is a preset of four factors: ticket (false/true); certify (none = nothing certified, all = every job, table = a routed number per rank, fixed = one per agent whatever its rank); work (equal = 2 jobs each, table = 3,2,2,1 by rank); routing (equal = the order turns each round, record = ranked by forecast accuracy so far, random = seeded random order). Routing applies only when certify is table or work is table. A preset that routes by record must name its random twin (same ticket, certify and work; routing random). A new combination is a new entry here.",
+  "presets": {
+    "A": {"name": "baseline", "ticket": false, "certify": "none", "work": "equal", "routing": "equal"},
+    "B": {"name": "ticket", "ticket": true, "certify": "none", "work": "equal", "routing": "equal"},
+    "C": {"name": "relay", "ticket": true, "certify": "all", "work": "equal", "routing": "equal"},
+    "D": {"name": "earned", "ticket": true, "certify": "table", "work": "table", "routing": "record", "twin": "E"},
+    "E": {"name": "random", "ticket": true, "certify": "table", "work": "table", "routing": "random"},
+    "DC": {"name": "earned-check-only", "ticket": true, "certify": "table", "work": "equal", "routing": "record", "twin": "EC"},
+    "EC": {"name": "random-check-only", "ticket": true, "certify": "table", "work": "equal", "routing": "random"},
+    "DW": {"name": "earned-work-only", "ticket": true, "certify": "fixed", "work": "table", "routing": "record", "twin": "EW"},
+    "EW": {"name": "random-work-only", "ticket": true, "certify": "fixed", "work": "table", "routing": "random"}
+  },
+  "default_arms": ["A", "B", "C", "D", "E"],
+  "analysis_note": "Declared before the run. 'primary' is the pair for T1, T1b and S1 (a = routed by record, b = its random twin). 'baseline' is the arm for guards G1 and G3. 'calibration_arms' are the arms pooled in T2. 'validity_arms' are the arms where nothing is routed, for S5. 'secondary' lists the paired comparisons (a minus b) with Holm adjustment: field is the measure, rounds is 'all' (1-5) or 'window' (2-5). A pair whose arms are not in the run is reported as not run.",
+  "analysis": {
+    "primary": {"a": "D", "b": "E"},
+    "baseline": "A",
+    "calibration_arms": ["A", "B", "C", "D", "E"],
+    "validity_arms": ["A", "B", "C"],
+    "secondary": [
+      {"id": "S2", "a": "B", "b": "A", "field": "accepted_false_done", "rounds": "all", "what": "ticket: B minus A, false done handed on, all rounds"},
+      {"id": "S3", "a": "C", "b": "B", "field": "accepted_false_done", "rounds": "all", "what": "certify-only relay: C minus B, same measure"},
+      {"id": "S4", "a": "D", "b": "C", "field": "accepted_false_done", "rounds": "window", "what": "earned routing (5 of 8 checked) against checking everything: D minus C, rounds 2-5"},
+      {"id": "S6", "a": "DC", "b": "EC", "field": "accepted_false_done", "rounds": "window", "what": "check-only twin pair: earned minus random checking, work share equal, rounds 2-5"},
+      {"id": "S7", "a": "DW", "b": "EW", "field": "accepted_false_done", "rounds": "window", "what": "work-only twin pair: earned minus random work share, checking fixed, rounds 2-5"}
+    ]
+  },
+  "estimate_basis": {
+    "source": "runs/smoke-1/room.jsonl, 19 real calls on 8 Oct (reasoning ON, the old setting), read with call_costs.py. The smoke test cannot show what calls cost with reasoning OFF, except for mistral, which does not reason: its replies were 11 to 14 tokens for a forecast and 52 to 108 for a work file. So the expected figure is built from tokens: the prompt sizes measured in the smoke test, reply sizes for a one-line forecast, a certify verdict, and a code file (the reference solutions average about 72 tokens and the longest is about 194; 120 allows for a docstring and the JSON line), at the config prices, averaged over the four models. A second smoke test with the plain routes replaces the assumed reply sizes with measured ones.",
+    "tokens_per_call": {"forecast": [318, 15], "work": [290, 120], "certify": [461, 45]},
+    "tokens_note": "[tokens in, tokens out] with reasoning off. The certify prompt size (461) is the relay's measured figure; the smoke test made no certify call.",
+    "seconds_per_call": {"forecast": 2.0, "work": 5.0, "certify": 3.0},
+    "seconds_note": "Assumed from mistral's calls in the smoke test (1.4 to 5.1 s; it does not reason). With reasoning on, the smoke calls took 41 s on average (up to 140 s).",
+    "reasoning_on_reference": {
+      "cost_per_call_usd": {"forecast": 0.000359, "work": 0.000499, "certify": 0.000359},
+      "seconds_per_call": {"forecast": 41.4, "work": 42.1, "certify": 41.4},
+      "by_model_forecast_work_usd": {
+        "qwen/qwen3.7-flash": [0.000270, 0.000527], "google/gemma-4-31b-it": [0.001036, 0.001167],
+        "mistralai/mistral-small-3.2-24b-instruct": [0.000028, 0.000044], "xiaomi/mimo-v2.6-flash": [0.000103, 0.000256]},
+      "note": "Equal weight over the four models, from the smoke calls; certify is taken to cost what a forecast costs (no certify call in the smoke test). This is what the run would cost if reasoning stayed on."
+    },
+    "ticket_extra_in_tokens": 150,
+    "feedback_extra_in_tokens_by_round": [0, 120, 240, 360, 480],
+    "worst_case_in_tokens": 3000
+  }
+}

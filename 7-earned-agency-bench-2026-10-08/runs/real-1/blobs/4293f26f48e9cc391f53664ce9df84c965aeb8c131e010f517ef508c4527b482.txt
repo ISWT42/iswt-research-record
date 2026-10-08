@@ -1,0 +1,20 @@
+{"p_pass": 1.0}
+
+```python
+def flatten(nested: list) -> list:
+    """
+    Return a new flat list with all the items of nested, going into inner lists 
+    at any depth, in order. The input must not be changed.
+    """
+    result = []
+    
+    def _recurse(items):
+        for item in items:
+            if isinstance(item, list):
+                _recurse(item)
+            else:
+                result.append(item)
+                
+    _recurse(nested)
+    return result
+```

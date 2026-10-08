@@ -1,0 +1,9 @@
+def luhn_valid(number: str) -> bool:
+    import luhnkit
+    # Normalize: strip spaces, validate digits and length
+    cleaned = number.replace(" ", "")
+    if len(cleaned) < 2:
+        return False
+    if not cleaned.isdigit():
+        return False
+    return luhnkit.check(number)

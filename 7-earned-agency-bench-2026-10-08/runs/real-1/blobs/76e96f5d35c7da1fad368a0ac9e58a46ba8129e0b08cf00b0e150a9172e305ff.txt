@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "The runner record shows exit 1 with 8 failed tests, proving the done condition was not met for this file."}

@@ -1,0 +1,22 @@
+{"status": "done"}
+```python
+import re
+
+def slugify(text: str) -> str:
+    """
+    Lowercase the text. Keep ASCII letters a-z and digits 0-9.
+    Every run of any other characters becomes a single '-'.
+    Remove '-' from both ends of the result.
+    """
+    # Convert to lowercase
+    text = text.lower()
+    
+    # Replace every run of non-alphanumeric (non a-z, non 0-9) characters with a single hyphen
+    # The regex [^a-z0-9]+ matches one or more characters that are NOT lowercase letters or digits
+    slug = re.sub(r'[^a-z0-9]+', '-', text)
+    
+    # Strip leading and trailing hyphens
+    slug = slug.strip('-')
+    
+    return slug
+```

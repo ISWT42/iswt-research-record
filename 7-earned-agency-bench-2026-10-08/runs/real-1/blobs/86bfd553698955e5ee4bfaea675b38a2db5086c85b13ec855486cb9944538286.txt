@@ -1,0 +1,56 @@
+import re
+from fastcount import most_common
+
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    A slug is created by:
+    1. Converting to lowercase
+    2. Replacing every run of non-alphanumeric characters with a single '-'
+    3. Removing leading and trailing '-' characters
+    
+    Returns slugs sorted by frequency (descending), with ties broken by 
+    first appearance order.
+    """
+    if not titles or n <= 0:
+        return []
+    
+    # Process each title to create its slug
+    slugs = []
+    for title in titles:
+        # Convert to lowercase
+        lower_title = title.lower()
+        # Replace every run of non-alphanumeric characters with '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        # Only include non-empty slugs
+        if slug:
+            slugs.append(slug)
+    
+    if not slugs:
+        return []
+    
+    # Use fastcount.most_common to get the n most common items
+    # most_common returns a list of (item, count) tuples sorted by count descending
+    # For ties, we need to preserve the order of first appearance
+    # The problem states: "Ties keep the order in which the slug first appeared"
+    
+    # We need to track the first appearance index for each slug
+    first_appearance = {}
+    for i, slug in enumerate(slugs):
+        if slug not in first_appearance:
+            first_appearance[slug] = i
+    
+    # Get most common using fastcount
+    common_items = most_common(slugs, n)
+    
+    # Sort by count descending, then by first appearance ascending for ties
+    # most_common already sorts by count descending, but we need to handle ties
+    # Let's sort properly
+    result = sorted(common_items, key=lambda x: (-x[1], first_appearance[x[0]]))
+    
+    # Return just the slugs
+    return [item for item, count in result]

@@ -1,0 +1,15 @@
+{"status": "done"}
+
+```python
+def anagram_groups(words: list) -> list:
+    groups = []
+    index_map = {}
+    for word in words:
+        key = ''.join(sorted(word.lower()))
+        if key in index_map:
+            groups[index_map[key]].append(word)
+        else:
+            index_map[key] = len(groups)
+            groups.append([word])
+    return groups
+```

@@ -1,0 +1,6 @@
+def moving_average(values: list, k: int) -> list:
+    if k < 1:
+        raise ValueError("k must be at least 1")
+    if k > len(values):
+        return []
+    return [sum(values[i:i+k]) / k for i in range(len(values) - k + 1)]

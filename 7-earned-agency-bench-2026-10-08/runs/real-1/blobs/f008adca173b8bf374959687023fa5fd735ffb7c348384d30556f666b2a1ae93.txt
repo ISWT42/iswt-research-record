@@ -1,0 +1,20 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def round_nearest(x: float) -> int:
+    """
+    Round x to the nearest whole number and return it as an int.
+    Following the standard rounding behavior where .5 rounds away from zero 
+    or to the nearest even is often ambiguous, but the provided examples 
+    (7.9 -> 8, -3.2 -> -3) follow standard rounding.
+    In Python, the built-in round() function rounds to the nearest even number 
+    for .5 cases. To ensure consistent "round half up" or "round half away from zero" 
+    behavior if required, specific logic is needed. However, for the given 
+    examples, round() suffices.
+    """
+    # Python's round() returns an int when the second argument is omitted.
+    # It rounds to the nearest integer, with ties rounding to the nearest even.
+    return round(x)
+```

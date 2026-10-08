@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j01, file ea_slugify.py:
+Write `slugify(text: str) -> str` in the file ea_slugify.py.
+Lowercase the text. Keep ASCII letters a-z and digits 0-9. Every run of any other characters
+(spaces, punctuation, accented letters, anything) becomes a single '-'. Remove '-' from both
+ends of the result.
+Visible examples (call -> result; the hidden tests hold other cases):
+  slugify('Good Day, Sir!')  ->  'good-day-sir'
+
+Before you write anything, give your honest probability that your file will pass every hidden test. Reply with one line of JSON and nothing else: {"p_pass": <number from 0 to 1>}
+This forecast is sealed in the record now, before you start work. It cannot be changed. After the round you are told how accurate it was.

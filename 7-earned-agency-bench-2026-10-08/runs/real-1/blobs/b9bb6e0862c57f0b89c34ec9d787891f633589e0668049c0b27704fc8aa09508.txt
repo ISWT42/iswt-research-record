@@ -1,0 +1,22 @@
+{"p_pass": 1.0}
+
+```python
+def split_cents(total: int, n: int) -> list:
+    """
+    Split a total number of cents between n people as evenly as possible, 
+    in whole cents. The shares must add up to the total exactly.
+    """
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    
+    # Calculate the base amount each person gets
+    base_share = total // n
+    # Calculate how many people get an extra cent to reach the total
+    remainder = total % n
+    
+    # Create a list where 'remainder' people get base_share + 1 
+    # and the rest get base_share
+    result = [base_share + 1] * remainder + [base_share] * (n - remainder)
+    
+    return result
+```

@@ -1,0 +1,48 @@
+{"status": "done"}
+```python
+def compare_versions(a: str, b: str) -> int:
+    """
+    Compare two version strings.
+    
+    Args:
+        a: First version string (e.g., '1.4.2')
+        b: Second version string (e.g., '1.10')
+        
+    Returns:
+        -1 if a < b
+         0 if a == b
+         1 if a > b
+         
+    Raises:
+        ValueError: If any part is empty or contains non-digit characters
+    """
+    def parse_version(version_str):
+        parts = version_str.split('.')
+        parsed = []
+        for part in parts:
+            # Check for empty part
+            if not part:
+                raise ValueError(f"Empty version part in '{version_str}'")
+            # Check if all characters are digits
+            if not all(c.isdigit() for c in part):
+                raise ValueError(f"Non-digit character in version part '{part}' of '{version_str}'")
+            parsed.append(int(part))
+        return parsed
+    
+    a_parts = parse_version(a)
+    b_parts = parse_version(b)
+    
+    # Pad the shorter list with zeros
+    max_len = max(len(a_parts), len(b_parts))
+    a_parts.extend([0] * (max_len - len(a_parts)))
+    b_parts.extend([0] * (max_len - len(b_parts)))
+    
+    # Compare part by part
+    for a_part, b_part in zip(a_parts, b_parts):
+        if a_part < b_part:
+            return -1
+        elif a_part > b_part:
+            return 1
+    
+    return 0
+```

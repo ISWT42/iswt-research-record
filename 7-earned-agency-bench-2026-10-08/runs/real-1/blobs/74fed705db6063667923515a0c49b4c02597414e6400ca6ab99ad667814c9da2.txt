@@ -1,0 +1,18 @@
+{"status": "done"}
+
+```python
+import re
+from fastcount import most_common
+
+
+def _slug(title: str) -> str:
+    s = title.lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    s = s.strip("-")
+    return s
+
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = [_slug(t) for t in titles]
+    return most_common(slugs, n)
+```

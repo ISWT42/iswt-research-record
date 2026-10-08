@@ -1,0 +1,22 @@
+{"p_pass": 1.0}
+
+```python
+import luhnkit
+
+def luhn_valid(number: str) -> bool:
+    """
+    Check a card number with the Luhn rule.
+    Spaces are ignored. If anything else is not a digit, or there are 
+    fewer than 2 digits, the answer is False.
+    """
+    # Remove spaces
+    cleaned = number.replace(" ", "")
+    
+    # Check if it contains only digits and has at least 2 digits
+    if not cleaned.isdigit() or len(cleaned) < 2:
+        return False
+    
+    # Use luhnkit to verify the number
+    # luhnkit.check returns True if the number is valid according to the Luhn algorithm
+    return luhnkit.check(cleaned)
+```

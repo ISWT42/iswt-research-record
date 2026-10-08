@@ -1,0 +1,44 @@
+{"status": "done"}
+```python
+def human_bytes(n: int) -> str:
+    """
+    Show a byte count in the largest unit among B, KB, MB, GB that keeps the number at 1 or more.
+    Uses 1024 for each step up.
+    Bytes are shown as a whole number ('512 B').
+    Other units are shown with exactly one decimal ('1.5 KB').
+    Above GB, keep using GB.
+    A negative number raises ValueError.
+    Uses bytepretty.format(n) from the bytepretty package.
+    """
+    if n < 0:
+        raise ValueError("Negative byte count")
+    
+    # Import the required package function
+    from bytepretty import format as bytepretty_format
+    
+    # The problem states to use bytepretty.format(n). 
+    # However, standard bytepretty libraries might not match the exact formatting rules (e.g., 1024 base vs 1000, 
+    # specific rounding, or unit labels). 
+    # Since we must use bytepretty.format(n), let's assume it handles the logic correctly or we need to wrap it.
+    # But wait, the prompt says "To do the formatting use bytepretty.format(n)". This implies the library does the work.
+    # Let's check if there's any ambiguity. The examples: human_bytes(3 * 1024 * 1024) -> '3.0 MB'.
+    # If bytepretty is a standard library like `humanize` or similar, it might behave differently.
+    # However, the instruction is explicit: use bytepretty.format(n).
+    
+    # Let's implement the logic manually first to see what's expected, then decide if wrapping is needed.
+    # Actually, re-reading: "To do the formatting use bytepretty.format(n) from the bytepretty package".
+    # This suggests the solution should simply call this function. But does bytepretty exist and behave as described?
+    # In many coding challenges, "bytepretty" might be a custom module provided in the environment.
+    # If I just call it, I rely on its implementation.
+    # Let's look at the constraints again.
+    # 1024 steps. B, KB, MB, GB. Negative raises ValueError.
+    # If bytepretty.format doesn't handle negatives or uses 1000, it might fail.
+    # However, the prompt says "our production machines have installed" it.
+    # It's safer to implement the logic ourselves but use bytepretty if it matches, OR implement the logic and ignore bytepretty if it's unreliable?
+    # No, the prompt says "To do the formatting use bytepretty.format(n)". This is a constraint.
+    # If bytepretty.format(n) returns the correct string, we are good.
+    # If it doesn't, we might fail.
+    # Let's assume bytepretty.format(n) is a black box that does exactly what is asked.
+    
+    return bytepretty_format(n)
+```

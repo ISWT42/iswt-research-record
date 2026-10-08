@@ -1,0 +1,21 @@
+{"status": "done"}
+```python
+def chunk(seq, size: int) -> list:
+    """
+    Split any sequence (a list or a string) into consecutive lists of at most size items, in order.
+    """
+    if size < 1:
+        raise ValueError("Size must be at least 1")
+    
+    if not seq:
+        return []
+    
+    result = []
+    for i in range(0, len(seq), size):
+        # Slicing a string or list returns the same type, 
+        # but the requirement specifies "consecutive lists".
+        # Therefore, we convert the slice to a list.
+        result.append(list(seq[i : i + size]))
+        
+    return result
+```

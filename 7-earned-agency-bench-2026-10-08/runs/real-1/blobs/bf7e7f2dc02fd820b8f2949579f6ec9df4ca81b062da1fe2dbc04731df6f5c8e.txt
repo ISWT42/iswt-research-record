@@ -1,0 +1,12 @@
+{"status": "done"}
+```python
+import re
+
+def slugify(text: str) -> str:
+    # Lowercase the text
+    text = text.lower()
+    # Replace any sequence of characters that are NOT a-z or 0-9 with a single '-'
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    # Remove '-' from both ends of the result
+    return text.strip('-')
+```

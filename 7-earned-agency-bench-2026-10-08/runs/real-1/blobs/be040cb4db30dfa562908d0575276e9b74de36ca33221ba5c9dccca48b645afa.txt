@@ -1,0 +1,19 @@
+import re
+from fastcount import most_common
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = []
+    seen = set()
+    for title in titles:
+        # Convert to lowercase
+        lower_title = title.lower()
+        # Replace runs of non-alphanumeric characters with '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        # Add to list if not already seen
+        if slug not in seen:
+            seen.add(slug)
+            slugs.append(slug)
+    # Get the n most common slugs
+    return [slug for slug, _ in most_common(slugs, n)]

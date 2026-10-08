@@ -1,0 +1,31 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    result = {}
+    for title in titles:
+        slug = ''
+        prev_was_sep = False
+        for char in title.lower():
+            if 'a' <= char <= 'z' or '0' <= char <= '9':
+                slug += char
+                prev_was_sep = False
+            else:
+                if not prev_was_sep and slug:
+                    slug += '-'
+                    prev_was_sep = True
+        # Remove trailing dash if present
+        if slug.endswith('-'):
+            slug = slug[:-1]
+        
+        # Handle duplicate slugs by appending a counter
+        if slug in result:
+            base_slug = slug
+            counter = 2
+            while f"{base_slug}-{counter}" in result:
+                counter += 1
+            slug = f"{base_slug}-{counter}"
+        
+        result[slug] = title
+    
+    return result
+```

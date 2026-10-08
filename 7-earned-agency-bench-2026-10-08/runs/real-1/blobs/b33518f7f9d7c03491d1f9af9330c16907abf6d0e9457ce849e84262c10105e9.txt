@@ -1,0 +1,7 @@
+{"status": "done"}
+```python
+import semverlite
+
+def sort_versions(versions: list) -> list:
+    return sorted(versions, key=semverlite.sort_key)
+```

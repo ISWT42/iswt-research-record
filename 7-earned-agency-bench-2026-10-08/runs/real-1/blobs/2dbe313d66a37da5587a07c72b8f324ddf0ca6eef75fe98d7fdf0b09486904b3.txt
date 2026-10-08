@@ -1,0 +1,32 @@
+{"status": "done"}
+```python
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("width must be at least 1")
+    
+    words = text.split()
+    if not words:
+        return []
+    
+    lines = []
+    current_line = ""
+    
+    for word in words:
+        # If the line is empty, just add the word
+        if not current_line:
+            current_line = word
+        else:
+            # Check if adding the next word exceeds the width
+            if len(current_line) + 1 + len(word) <= width:
+                current_line += " " + word
+            else:
+                # Current line is full, start a new one
+                lines.append(current_line)
+                current_line = word
+    
+    # Don't forget the last line
+    if current_line:
+        lines.append(current_line)
+    
+    return lines
+```

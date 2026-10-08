@@ -1,0 +1,49 @@
+def parse_cents(s: str) -> int:
+    s = s.strip()
+    if not s:
+        raise ValueError
+
+    # Handle optional '-'
+    negative = False
+    if s.startswith('-'):
+        negative = True
+        s = s[1:]
+
+    # Handle optional '$'
+    if s.startswith('$'):
+        s = s[1:]
+
+    # Split into integer and fractional parts
+    if '.' in s:
+        integer_part, fractional_part = s.split('.', 1)
+    else:
+        integer_part, fractional_part = s, ''
+
+    # Validate and process integer part
+    if not integer_part:
+        raise ValueError
+    if not integer_part.replace(',', '').isdigit():
+        raise ValueError
+
+    # Remove commas and convert to integer
+    integer_part = integer_part.replace(',', '')
+    if len(integer_part) > 1 and integer_part[0] == '0':
+        raise ValueError
+    if not integer_part:
+        raise ValueError
+
+    # Validate and process fractional part
+    if len(fractional_part) > 2:
+        raise ValueError
+    if fractional_part and not fractional_part.isdigit():
+        raise ValueError
+
+    # Combine parts
+    cents = int(integer_part) * 100
+    if fractional_part:
+        cents += int(fractional_part.ljust(2, '0')[:2])
+
+    if negative:
+        cents = -cents
+
+    return cents

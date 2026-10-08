@@ -1,0 +1,9 @@
+{"status": "done"}
+```python
+import isoweekly
+
+
+def iso_week(date: str) -> str:
+    week = isoweekly.week_of(date)
+    return f"{week.year}-W{week.week:02d}"
+```

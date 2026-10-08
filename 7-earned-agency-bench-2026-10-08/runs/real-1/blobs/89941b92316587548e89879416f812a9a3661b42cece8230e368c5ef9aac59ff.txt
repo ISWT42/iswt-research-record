@@ -1,0 +1,22 @@
+def anagram_groups(words: list) -> list:
+    groups = []
+    seen = set()
+
+    for word in words:
+        # Create a key that is the sorted lowercase version of the word
+        key = ''.join(sorted(word.lower()))
+
+        # Check if this key has been seen before
+        found = False
+        for group in groups:
+            # The first word in the group has the same key
+            first_word = group[0]
+            if ''.join(sorted(first_word.lower())) == key:
+                group.append(word)
+                found = True
+                break
+
+        if not found:
+            groups.append([word])
+
+    return groups

@@ -1,0 +1,36 @@
+{"status": "done"}
+```python
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("Width must be at least 1")
+    
+    words = text.split()
+    if not words:
+        return []
+    
+    lines = []
+    current_line = []
+    current_length = 0
+    
+    for word in words:
+        word_len = len(word)
+        # Calculate length if word is added to current line
+        # If current_line is empty, length is just word_len
+        # If not empty, length is current_length + 1 (for space) + word_len
+        added_length = word_len if not current_line else current_length + 1 + word_len
+        
+        if added_length <= width:
+            current_line.append(word)
+            current_length = added_length
+        else:
+            # Commit current line and start a new one with the word
+            if current_line:
+                lines.append(" ".join(current_line))
+            current_line = [word]
+            current_length = word_len
+            
+    if current_line:
+        lines.append(" ".join(current_line))
+        
+    return lines
+```

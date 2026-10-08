@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j17, file ea_dedupe.py:
+Write `dedupe(items: list, key=None) -> list` in the file ea_dedupe.py.
+Return a new list that keeps only the first item of each kind, in the original order. Two items
+are of the same kind when their key values are equal. The key value is key(item), or the item
+itself when key is None. Key values can be used in a set.
+Visible examples (call -> result; the hidden tests hold other cases):
+  dedupe([3, 1, 3, 2, 1])  ->  [3, 1, 2]
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_dedupe.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

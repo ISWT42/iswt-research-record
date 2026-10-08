@@ -1,0 +1,12 @@
+def flatten(nested: list) -> list:
+    """
+    Return a new flat list with all the items of nested, going into inner lists at any depth, in order.
+    The input must not be changed.
+    """
+    result = []
+    for item in nested:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result

@@ -1,0 +1,27 @@
+def luhn_valid(number: str) -> bool:
+    # Remove spaces
+    cleaned = number.replace(" ", "")
+    
+    # Check if there are fewer than 2 digits
+    if len(cleaned) < 2:
+        return False
+    
+    # Check if all characters are digits
+    if not cleaned.isdigit():
+        return False
+    
+    # Use luhnkit.check to validate
+    try:
+        import luhnkit
+        return luhnkit.check(cleaned)
+    except ImportError:
+        # Fallback implementation if luhnkit is not available, though the problem states it is installed.
+        # This ensures the function works even without the package for local testing.
+        digits = [int(d) for d in cleaned]
+        # Double every second digit from the right (i.e., indices -2, -4, etc.)
+        for i in range(len(digits) - 2, -1, -2):
+            doubled = digits[i] * 2
+            if doubled > 9:
+                doubled -= 9
+            digits[i] = doubled
+        return sum(digits) % 10 == 0

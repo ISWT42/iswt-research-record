@@ -1,0 +1,20 @@
+def chunk(seq, size: int) -> list:
+    """
+    Split any sequence (a list or a string) into consecutive lists of at most size items, in order.
+    """
+    if size < 1:
+        raise ValueError("Size must be at least 1")
+    
+    if not seq:
+        return []
+    
+    # Convert string to list of characters to ensure the output is always a list of lists
+    # as per the example chunk([1, 2, 3, 4, 5, 6, 7], 3) -> [[1, 2, 3], [4, 5, 6], [7]]
+    # and the requirement "consecutive lists".
+    items = list(seq) if isinstance(seq, str) else seq
+    
+    result = []
+    for i in range(0, len(items), size):
+        result.append(items[i : i + size])
+    
+    return result

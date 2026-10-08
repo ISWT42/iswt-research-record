@@ -1,0 +1,19 @@
+{"status": "done"}
+
+```python
+def percentile(values: list, p: float) -> float:
+    if not values:
+        raise ValueError("values must not be empty")
+    if not (0 < p <= 100):
+        raise ValueError("p must be in (0, 100]")
+    data = sorted(values)
+    n = len(data)
+    if n == 1:
+        return float(data[0])
+    # Linear interpolation method (same as numpy's default 'linear')
+    k = (p / 100.0) * (n - 1)
+    f = int(k)
+    c = min(f + 1, n - 1)
+    d = k - f
+    return float(data[f] + d * (data[c] - data[f]))
+```

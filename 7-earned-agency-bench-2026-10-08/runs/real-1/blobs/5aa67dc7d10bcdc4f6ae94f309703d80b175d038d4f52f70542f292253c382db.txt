@@ -1,0 +1,5 @@
+from semverlite import sort_key
+
+
+def sort_versions(versions: list) -> list:
+    return sorted(versions, key=sort_key)

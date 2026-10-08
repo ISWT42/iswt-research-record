@@ -1,0 +1,119 @@
+{"status": "done"}
+```python
+def parse_cents(s: str) -> int:
+    """
+    Parse a money string into whole cents.
+    
+    Accepted format:
+    - Optional leading '-'
+    - Optional '$'
+    - Digits with optional thousands separators (commas in groups of exactly 3)
+    - Optional '.' followed by 1 or 2 digits
+    
+    Spaces around the string are ignored. Anything else raises ValueError.
+    """
+    # Strip whitespace
+    s = s.strip()
+    
+    if not s:
+        raise ValueError("Empty string")
+    
+    # Check for negative sign
+    negative = False
+    if s.startswith('-'):
+        negative = True
+        s = s[1:]
+    elif s.startswith('+'):
+        s = s[1:]
+    
+    # Check for optional '$'
+    if s.startswith('$'):
+        s = s[1:]
+    
+    if not s:
+        raise ValueError("No digits after removing prefix")
+    
+    # Split into integer and decimal parts
+    if '.' in s:
+        parts = s.split('.')
+        if len(parts) != 2:
+            raise ValueError("Multiple decimal points")
+        int_part, dec_part = parts
+    else:
+        int_part = s
+        dec_part = ''
+    
+    # Validate integer part: digits and commas in groups of exactly 3
+    if not int_part:
+        raise ValueError("Empty integer part")
+    
+    # Remove commas and validate
+    if ',' in int_part:
+        # Check that commas are only in groups of exactly 3
+        # Split by comma
+        segments = int_part.split(',')
+        for seg in segments:
+            if not seg.isdigit():
+                raise ValueError(f"Invalid characters in integer part: {seg}")
+            if len(seg) == 0:
+                raise ValueError("Empty segment in integer part")
+            if len(seg) > 3:
+                raise ValueError(f"Segment too long: {seg}")
+        # Also check that all segments except possibly the first have length 3
+        # Actually, the spec says "groups of exactly three", which typically means
+        # standard number formatting: e.g., 1,234,567 where each group is 3 digits
+        # except possibly the leftmost one. Let's enforce: all groups must be exactly 3 digits
+        # except the first group can be 1-3 digits.
+        # Wait, re-reading: "thousands commas are allowed only in groups of exactly three"
+        # This likely means each comma-separated group must have exactly 3 digits.
+        # But that would mean '1,234' is valid (group '1' has 1 digit? No...)
+        # Standard interpretation: commas separate groups of 3 digits. The leftmost group can have 1-3 digits.
+        # Let me re-read: "digits (thousands commas are allowed only in groups of exactly three, as in '1,234')"
+        # '1,234' has groups '1' and '234'. '234' is 3 digits. '1' is 1 digit.
+        # So the rule is: every group after the first must be exactly 3 digits. The first group can be 1-3 digits.
+        # And there should be no leading zeros in the first group unless it's just '0'.
+        
+        for i, seg in enumerate(segments):
+            if not seg.isdigit():
+                raise ValueError(f"Invalid characters in segment: {seg}")
+            if i == 0:
+                if len(seg) < 1 or len(seg) > 3:
+                    raise ValueError(f"First segment invalid length: {seg}")
+            else:
+                if len(seg) != 3:
+                    raise ValueError(f"Non-first segment must be 3 digits: {seg}")
+        
+        # Reconstruct without commas
+        int_str = ''.join(segments)
+    else:
+        if not int_part.isdigit():
+            raise ValueError(f"Invalid characters in integer part: {int_part}")
+        int_str = int_part
+    
+    # Handle empty integer part after processing (e.g., just commas)
+    if not int_str:
+        raise ValueError("No digits in integer part")
+    
+    # Validate decimal part: 1 or 2 digits
+    if dec_part:
+        if not dec_part.isdigit():
+            raise ValueError(f"Invalid characters in decimal part: {dec_part}")
+        if len(dec_part) < 1 or len(dec_part) > 2:
+            raise ValueError(f"Decimal part must be 1 or 2 digits: {dec_part}")
+    
+    # Convert to cents
+    # Integer part in dollars
+    dollars = int(int_str)
+    cents = dollars * 100
+    
+    # Add decimal cents
+    if dec_part:
+        # Pad to 2 digits if needed
+        dec_val = int(dec_part.ljust(2, '0'))
+        cents += dec_val
+    
+    if negative:
+        cents = -cents
+    
+    return cents
+```

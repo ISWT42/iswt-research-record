@@ -1,0 +1,32 @@
+{"status": "done"}
+```python
+import re
+from collections import Counter
+
+try:
+    from fastcount import most_common
+except ImportError:
+    def most_common(items, n):
+        counts = Counter(items)
+        order = {}
+        for item in items:
+            if item not in order:
+                order[item] = len(order)
+        sorted_items = sorted(counts.items(), key=lambda kv: (-kv[1], order[kv[0]]))
+        return sorted_items[:n]
+
+
+def slugify(title: str) -> str:
+    s = title.lower()
+    s = re.sub(r'[^a-z0-9]+', '-', s)
+    s = s.strip('-')
+    return s
+
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = [slugify(t) for t in titles]
+    result = most_common(slugs, n)
+    if result and isinstance(result[0], tuple):
+        return [item for item, count in result]
+    return list(result)
+```

@@ -1,0 +1,11 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j25, file ea_percentile.py:
+Write `percentile(values: list, p: float) -> float` in the file ea_percentile.py.
+Return the p-th percentile of the numbers in `values`, where p is above 0 and at most 100. An
+empty list, or a p outside that range, raises ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  percentile([2, 4, 6, 8, 10], 100)  ->  10
+
+Before you write anything, give your honest probability that your file will pass every hidden test. Reply with one line of JSON and nothing else: {"p_pass": <number from 0 to 1>}
+This forecast is sealed in the record now, before you start work. It cannot be changed. After the round you are told how accurate it was.

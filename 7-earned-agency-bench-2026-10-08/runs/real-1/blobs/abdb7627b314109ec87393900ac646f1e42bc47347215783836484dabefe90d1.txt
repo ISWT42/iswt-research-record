@@ -1,0 +1,16 @@
+{"status": "done"}
+```python
+def rle_encode(s: str) -> str:
+    if not s:
+        return ''
+    parts = []
+    i = 0
+    n = len(s)
+    while i < n:
+        j = i
+        while j < n and s[j] == s[i]:
+            j += 1
+        parts.append(str(j - i) + s[i])
+        i = j
+    return ''.join(parts)
+```

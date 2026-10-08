@@ -1,0 +1,17 @@
+import bytepretty
+
+def human_bytes(n: int) -> str:
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # The requirement specifies using bytepretty.format(n)
+    # and specific formatting rules:
+    # - B: whole number
+    # - KB, MB, GB: one decimal
+    # - Max unit is GB
+    # - Must keep the number at 1 or more
+    
+    # Since the prompt explicitly mandates using bytepretty.format(n),
+    # we assume the package is designed to handle these specific 
+    # formatting requirements as described.
+    return bytepretty.format(n)

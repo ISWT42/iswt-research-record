@@ -1,0 +1,9 @@
+from datetime import datetime
+
+def days_between(a: str, b: str) -> int:
+    try:
+        date_a = datetime.strptime(a, '%Y-%m-%d').date()
+        date_b = datetime.strptime(b, '%Y-%m-%d').date()
+        return (date_b - date_a).days
+    except ValueError:
+        raise ValueError("Invalid date format or date value")

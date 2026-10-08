@@ -1,0 +1,24 @@
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    
+    # The number of rows in the original matrix
+    rows = len(m)
+    # The number of columns in the original matrix
+    cols = len(m[0]) if rows > 0 else 0
+    
+    if cols == 0:
+        return [[] for _ in range(0)] # Handle case of list of empty lists if necessary, though usually []
+    
+    # New matrix will have 'cols' rows and 'rows' columns
+    # The first column of input (bottom to top) becomes the first row of output.
+    # Input[row][col] moves to Output[col][(rows - 1) - row]
+    
+    res = []
+    for j in range(cols):
+        new_row = []
+        for i in range(rows - 1, -1, -1):
+            new_row.append(m[i][j])
+        res.append(new_row)
+        
+    return res

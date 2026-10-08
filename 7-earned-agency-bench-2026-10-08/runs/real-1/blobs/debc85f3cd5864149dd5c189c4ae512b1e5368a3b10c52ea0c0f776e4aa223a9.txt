@@ -1,0 +1,8 @@
+from nestedget import get
+
+def nested_get(obj, path: str, default=None):
+    """
+    Walks into obj using a dot-separated path.
+    Uses nestedget.get to handle the traversal.
+    """
+    return get(obj, path, default)

@@ -1,0 +1,24 @@
+{"p_pass": 1.0}
+
+```python
+import re
+from collections import Counter
+
+def top_words(text: str, n: int) -> list:
+    """
+    Returns the n most frequent words in lowercase, most frequent first.
+    Words are runs of ASCII letters.
+    """
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    
+    # Find all runs of ASCII letters, convert to lowercase
+    words = re.findall(r'[a-zA-Z]+', text.lower())
+    
+    # Count frequencies
+    counts = Counter(words)
+    
+    # most_common(n) returns a list of (word, count) tuples sorted by count descending
+    # We only need the words themselves
+    return [word for word, count in counts.most_common(n)]
+```

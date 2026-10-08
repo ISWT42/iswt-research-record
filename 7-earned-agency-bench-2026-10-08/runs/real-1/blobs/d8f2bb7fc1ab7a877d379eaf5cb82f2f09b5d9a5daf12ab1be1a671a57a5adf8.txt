@@ -1,0 +1,22 @@
+import re
+
+def top_words(text: str, n: int) -> list:
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    
+    # Find all runs of ASCII letters
+    words = re.findall(r'[a-zA-Z]+', text)
+    
+    # Convert to lowercase
+    words = [w.lower() for w in words]
+    
+    # Count frequencies
+    freq = {}
+    for word in words:
+        freq[word] = freq.get(word, 0) + 1
+    
+    # Sort by frequency (descending), then alphabetically for stability (optional but good practice)
+    sorted_words = sorted(freq.keys(), key=lambda x: (-freq[x], x))
+    
+    # Return the top n words
+    return sorted_words[:n]

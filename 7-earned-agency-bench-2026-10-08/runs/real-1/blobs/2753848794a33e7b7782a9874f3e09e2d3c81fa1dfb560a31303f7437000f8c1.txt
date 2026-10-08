@@ -1,0 +1,23 @@
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    
+    # Get dimensions of the input grid
+    rows = len(m)
+    cols = len(m[0]) if rows > 0 else 0
+    
+    if cols == 0:
+        return [[] for _ in range(cols)] # Should not happen based on typical grid definitions, but for safety
+
+    # The new grid will have 'cols' rows and 'rows' columns
+    # The first column of the input (bottom to top) becomes the first row of the output.
+    # Input m[row][col] maps to output[col][(rows - 1) - row]
+    
+    new_grid = []
+    for c in range(cols):
+        new_row = []
+        for r in range(rows - 1, -1, -1):
+            new_row.append(m[r][c])
+        new_grid.append(new_row)
+        
+    return new_grid

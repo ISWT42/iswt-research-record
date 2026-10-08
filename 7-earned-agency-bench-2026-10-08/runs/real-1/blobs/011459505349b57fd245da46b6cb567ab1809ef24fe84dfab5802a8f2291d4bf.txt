@@ -1,0 +1,19 @@
+import re
+
+def top_words(text: str, n: int) -> list:
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    words = re.findall(r'[A-Za-z]+', text)
+    counts = {}
+    for w in words:
+        lw = w.lower()
+        counts[lw] = counts.get(lw, 0) + 1
+    # Sort by frequency descending; ties broken by first appearance order
+    # to be deterministic. Using insertion order of first appearance.
+    order = {}
+    for w in words:
+        lw = w.lower()
+        if lw not in order:
+            order[lw] = len(order)
+    items = sorted(counts.items(), key=lambda kv: (-kv[1], order[kv[0]]))
+    return [w for w, _ in items[:n]]

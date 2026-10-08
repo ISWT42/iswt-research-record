@@ -1,0 +1,44 @@
+{"status": "done"}
+
+```python
+import re
+from datetime import datetime
+
+import isoweekly
+
+
+def iso_week(date: str) -> str:
+    """Return the ISO 8601 week of a 'YYYY-MM-DD' date as 'YYYY-Www'."""
+    if not isinstance(date, str):
+        raise ValueError("date must be a string in 'YYYY-MM-DD' form")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+        raise ValueError(f"invalid date: {date!r}")
+    try:
+        datetime.strptime(date, "%Y-%m-%d")
+    except ValueError:
+        raise ValueError(f"invalid date: {date!r}")
+    week = isoweekly.week_of(date)
+    # Normalize to 'YYYY-Www' regardless of the exact return type of week_of.
+    if isinstance(week, str):
+        m = re.fullmatch(r"(\d{4})-W(\d{1,2})", week)
+        if m:
+            return f"{m.group(1)}-W{int(m.group(2)):02d}"
+        # Fall back to parsing a date-like or other string form.
+        try:
+            d = datetime.strptime(week, "%Y-%m-%d")
+            return f"{d.isocalendar()[0]}-W{d.isocalendar()[1]:02d}"
+        except ValueError:
+            pass
+        raise ValueError(f"unexpected week_of result: {week!r}")
+    # Assume an object with isocalendar-like attributes or a (year, week) tuple.
+    try:
+        year = week[0]
+        num = week[1]
+        return f"{int(year)}-W{int(num):02d}"
+    except (TypeError, IndexError, KeyError):
+        pass
+    try:
+        return f"{int(week.year)}-W{int(week.week):02d}"
+    except AttributeError:
+        raise ValueError(f"unexpected week_of result: {week!r}")
+```

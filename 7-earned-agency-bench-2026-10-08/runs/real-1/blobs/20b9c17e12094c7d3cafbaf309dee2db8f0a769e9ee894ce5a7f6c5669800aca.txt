@@ -1,0 +1,11 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j27, file ea_rating.py:
+Write `average_rating(ratings: list) -> float` in the file ea_rating.py.
+Each rating is a whole number from 1 to 5. Return the mean of the ratings, rounded to 1 decimal
+place.
+Visible examples (call -> result; the hidden tests hold other cases):
+  average_rating([5, 5, 4, 4])  ->  4.5
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_rating.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

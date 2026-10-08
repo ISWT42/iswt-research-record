@@ -1,0 +1,101 @@
+{"status": "done"}
+```python
+def parse_cents(s: str) -> int:
+    """
+    Parse a money string into whole cents.
+    
+    Accepted format:
+    - Optional leading '-'
+    - Optional '$'
+    - Digits with optional thousands separators (commas in groups of exactly 3)
+    - Optional '.' followed by 1 or 2 digits
+    
+    Spaces around the string are ignored.
+    Anything else raises ValueError.
+    """
+    # Strip whitespace
+    s = s.strip()
+    
+    if not s:
+        raise ValueError("Empty string")
+    
+    # Check for negative sign
+    negative = False
+    if s.startswith('-'):
+        negative = True
+        s = s[1:]
+    elif s.startswith('+'):
+        s = s[1:]
+    
+    # Check for optional '$'
+    if s.startswith('$'):
+        s = s[1:]
+    
+    if not s:
+        raise ValueError("No digits after removing prefix")
+    
+    # Split on decimal point if present
+    if '.' in s:
+        parts = s.split('.')
+        if len(parts) != 2:
+            raise ValueError("Multiple decimal points")
+        integer_part, fractional_part = parts
+        
+        # Validate fractional part: must be 1 or 2 digits
+        if not fractional_part.isdigit():
+            raise ValueError(f"Invalid fractional part: {fractional_part}")
+        if len(fractional_part) < 1 or len(fractional_part) > 2:
+            raise ValueError(f"Fractional part must be 1 or 2 digits, got {len(fractional_part)}")
+        
+        # Pad fractional part to 2 digits
+        fractional_part = fractional_part.ljust(2, '0')
+    else:
+        integer_part = s
+        fractional_part = '00'
+    
+    # Validate and clean integer part
+    # Remove commas and validate format
+    if ',' in integer_part:
+        # Check that commas are in groups of exactly 3
+        # First, remove all commas
+        no_comma = integer_part.replace(',', '')
+        
+        # Now validate the comma placement
+        # The original string should have commas only separating groups of 3 digits from the right
+        # We can check this by reconstructing: split by comma, each group should be 3 digits except possibly the leftmost
+        groups = integer_part.split(',')
+        
+        # All groups must be non-empty and contain only digits
+        for group in groups:
+            if not group or not group.isdigit():
+                raise ValueError(f"Invalid comma group: '{group}'")
+        
+        # All groups except possibly the first must be exactly 3 digits
+        for i, group in enumerate(groups):
+            if i == 0:
+                # First group can be 1-3 digits
+                if len(group) < 1 or len(group) > 3:
+                    raise ValueError(f"First group has invalid length: {len(group)}")
+            else:
+                # Subsequent groups must be exactly 3 digits
+                if len(group) != 3:
+                    raise ValueError(f"Group after first must be 3 digits, got {len(group)}")
+        
+        integer_part = no_comma
+    else:
+        # No commas, just digits
+        if not integer_part.isdigit():
+            raise ValueError(f"Invalid integer part: {integer_part}")
+    
+    if not integer_part:
+        raise ValueError("No integer digits")
+    
+    # Combine to get total cents
+    # integer_part is the dollars, fractional_part is already padded to 2 digits
+    total_cents = int(integer_part) * 100 + int(fractional_part)
+    
+    if negative:
+        total_cents = -total_cents
+    
+    return total_cents
+```

@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j22, file ea_split.py:
+Write `split_cents(total: int, n: int) -> list` in the file ea_split.py.
+Split a total number of cents between n people as evenly as possible, in whole cents. The shares
+must add up to the total exactly. Return a list of n integers. The total is not negative. An n
+below 1 raises ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  split_cents(9, 3)  ->  [3, 3, 3]
+
+Before you write anything, give your honest probability that your file will pass every hidden test. Reply with one line of JSON and nothing else: {"p_pass": <number from 0 to 1>}
+This forecast is sealed in the record now, before you start work. It cannot be changed. After the round you are told how accurate it was.

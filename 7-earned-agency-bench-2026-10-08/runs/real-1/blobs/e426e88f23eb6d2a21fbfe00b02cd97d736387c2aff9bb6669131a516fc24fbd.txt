@@ -1,0 +1,14 @@
+{"status": "done"}
+```python
+import datetime
+
+def days_between(a: str, b: str) -> int:
+    try:
+        date_a = datetime.datetime.strptime(a, '%Y-%m-%d')
+        date_b = datetime.datetime.strptime(b, '%Y-%m-%d')
+    except ValueError:
+        raise ValueError("Invalid date format or non-existent date")
+    
+    delta = date_b - date_a
+    return delta.days
+```

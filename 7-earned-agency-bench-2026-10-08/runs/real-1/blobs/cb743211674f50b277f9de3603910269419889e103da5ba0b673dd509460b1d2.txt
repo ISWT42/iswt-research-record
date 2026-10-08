@@ -1,0 +1,34 @@
+import re
+from datetime import date
+
+import isoweekly
+
+
+def iso_week(date_str: str) -> str:
+    """Return the ISO 8601 week of a 'YYYY-MM-DD' date as 'YYYY-Www'."""
+    if not isinstance(date_str, str):
+        raise ValueError("date must be a string in 'YYYY-MM-DD' form")
+
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_str):
+        raise ValueError("date must be in 'YYYY-MM-DD' form")
+
+    y, m, d = (int(part) for part in date_str.split("-"))
+    try:
+        date(y, m, d)
+    except ValueError:
+        raise ValueError(f"invalid date: {date_str!r}")
+
+    week = isoweekly.week_of(date_str)
+    # Normalize to 'YYYY-Www' regardless of the package's exact return type.
+    if isinstance(week, str):
+        m2 = re.fullmatch(r"(\d{4})-W(\d{1,2})", week)
+        if m2:
+            return f"{m2.group(1)}-W{int(m2.group(2)):02d}"
+        m3 = re.fullmatch(r"(\d{4})-(\d{1,2})", week)
+        if m3:
+            return f"{m3.group(1)}-W{int(m3.group(2)):02d}"
+        raise ValueError(f"unexpected week format: {week!r}")
+
+    # Fallback: derive from a date-like object exposing isocalendar().
+    iso = week.isocalendar()
+    return f"{iso[0]}-W{iso[1]:02d}"

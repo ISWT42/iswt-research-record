@@ -1,0 +1,21 @@
+import re
+
+
+def to_snake(name: str) -> str:
+    """Convert a camelCase or CamelCase name to snake_case.
+
+    Rules:
+    1. Insert an underscore between a lowercase letter or digit and a capital
+       letter that immediately follows it.
+    2. Insert an underscore before a capital letter that has another capital
+       letter before it and a lowercase letter after it.
+    No other underscores are added; underscores already present stay.
+    The empty string returns ''.
+    """
+    if not name:
+        return ''
+    # Rule 1: lowercase/digit followed by uppercase
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    # Rule 2: uppercase followed by uppercase then lowercase
+    s = re.sub(r'([A-Z]+)([A-Z][a-z])', r'\1_\2', s)
+    return s.lower()

@@ -1,0 +1,1 @@
+{"verdict": "shown", "reason": "Runner's check on the recorded SHA-256 shows exit 0 with 6 passed, 0 failed, 0 errors, meeting the done-definition."}

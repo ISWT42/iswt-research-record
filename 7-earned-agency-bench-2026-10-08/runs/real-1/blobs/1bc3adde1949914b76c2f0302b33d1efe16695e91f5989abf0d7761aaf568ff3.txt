@@ -1,0 +1,30 @@
+def luhn_valid(number: str) -> bool:
+    """
+    Check a card number with the Luhn rule.
+    
+    Args:
+        number: A string representing a card number.
+        
+    Returns:
+        True if the number is valid according to the Luhn algorithm, False otherwise.
+    """
+    # Import the check function from the luhnkit package
+    from luhnkit import check
+    
+    # Remove spaces from the input
+    cleaned_number = number.replace(" ", "")
+    
+    # Check if the cleaned number contains only digits
+    if not cleaned_number.isdigit():
+        return False
+    
+    # Check if there are fewer than 2 digits
+    if len(cleaned_number) < 2:
+        return False
+    
+    # Use the luhnkit.check function to validate the number
+    try:
+        result = check(cleaned_number)
+        return result
+    except Exception:
+        return False

@@ -1,0 +1,17 @@
+def to_base62(n: int) -> str:
+    if n < 0:
+        raise ValueError("Negative numbers are not allowed")
+    
+    # Use the shortid_tools package as specified
+    from shortid_tools import encode
+    
+    # The problem states to use shortid_tools.encode(n).
+    # However, standard base62 uses 0-9, a-z, A-Z.
+    # We need to verify what shortid_tools.encode produces.
+    # Given the example: to_base62(11) -> 'b'
+    # In standard base62 (0-9, a-z, A-Z):
+    # 10 -> 'a', 11 -> 'b'. This matches.
+    # Let's assume shortid_tools.encode implements this specific base62 encoding.
+    # If it doesn't, we might need to implement it manually, but the prompt explicitly says "To do the conversion use shortid_tools.encode(n)".
+    
+    return encode(n)

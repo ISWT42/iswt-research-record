@@ -1,0 +1,10 @@
+from nestedget import get as _nestedget_get
+
+
+def nested_get(obj, path: str, default=None):
+    if path == "":
+        return obj
+    try:
+        return _nestedget_get(obj, path, default)
+    except Exception:
+        return default

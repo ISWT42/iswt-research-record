@@ -1,0 +1,57 @@
+```json
+{"status": "done"}
+```python
+def parse_cents(s: str) -> int:
+    s = s.strip()
+    if not s:
+        raise ValueError
+
+    # Handle optional '-'
+    negative = False
+    if s[0] == '-':
+        negative = True
+        s = s[1:].strip()
+        if not s:
+            raise ValueError
+
+    # Handle optional '$'
+    if s[0] == '$':
+        s = s[1:].strip()
+        if not s:
+            raise ValueError
+
+    # Split into integer and fractional parts
+    if '.' in s:
+        integer_part, fractional_part = s.split('.', 1)
+    else:
+        integer_part, fractional_part = s, ''
+
+    # Validate integer part
+    if not integer_part.isdigit():
+        # Check for thousands commas
+        if ',' not in integer_part:
+            raise ValueError
+        parts = integer_part.split(',')
+        if len(parts) % 3 != 0 or len(parts) == 0:
+            raise ValueError
+        for part in parts:
+            if not part.isdigit() or len(part) != 3:
+                raise ValueError
+        integer_part = ''.join(parts)
+
+    # Validate fractional part
+    if len(fractional_part) > 2:
+        raise ValueError
+    if fractional_part and not fractional_part.isdigit():
+        raise ValueError
+
+    # Combine parts
+    cents = int(integer_part) * 100
+    if fractional_part:
+        cents += int(fractional_part.ljust(2, '0')[:2])
+
+    if negative:
+        cents = -cents
+
+    return cents
+```

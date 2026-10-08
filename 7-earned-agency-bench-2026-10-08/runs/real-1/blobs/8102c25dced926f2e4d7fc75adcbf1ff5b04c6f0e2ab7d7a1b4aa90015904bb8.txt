@@ -1,0 +1,12 @@
+def chunk(seq, size: int) -> list:
+    if size < 1:
+        raise ValueError("size must be at least 1")
+    
+    if not seq:
+        return []
+    
+    result = []
+    for i in range(0, len(seq), size):
+        result.append(seq[i:i+size])
+    
+    return result

@@ -1,0 +1,14 @@
+{"status": "done"}
+```python
+import bytepretty
+
+def human_bytes(n: int) -> str:
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # The requirement specifies using bytepretty.format(n)
+    # and specific formatting rules (B, KB, MB, GB).
+    # Since the prompt explicitly mandates the use of bytepretty.format(n),
+    # we use that function to handle the formatting.
+    return bytepretty.format(n)
+```

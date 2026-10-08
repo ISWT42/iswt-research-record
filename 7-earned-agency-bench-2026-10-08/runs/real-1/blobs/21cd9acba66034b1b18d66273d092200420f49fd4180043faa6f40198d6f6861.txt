@@ -1,0 +1,22 @@
+{"status": "done"}
+```python
+def moving_average(values: list, k: int) -> list:
+    if k < 1:
+        raise ValueError("k must be at least 1")
+    
+    n = len(values)
+    if k > n:
+        return []
+    
+    result = []
+    # Calculate the sum of the first window
+    current_sum = sum(values[:k])
+    result.append(float(current_sum) / k)
+    
+    # Slide the window across the list
+    for i in range(n - k):
+        current_sum = current_sum - values[i] + values[i + k]
+        result.append(float(current_sum) / k)
+        
+    return result
+```

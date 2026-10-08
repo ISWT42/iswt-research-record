@@ -1,0 +1,13 @@
+{"status": "not_done"}
+
+The job requires using `shortid_tools.encode(n)`, but I cannot verify that this package exists or behaves as specified (correct digit order 0-9, a-z, A-Z; no leading zeros; ValueError for negatives). Since I can't run code or see the hidden tests, and the dependency's behavior is unverifiable, I'm not confident this passes.
+
+```python
+def to_base62(n: int) -> str:
+    if not isinstance(n, int) or isinstance(n, bool):
+        raise ValueError("n must be an integer")
+    if n < 0:
+        raise ValueError("negative numbers are not supported")
+    from shortid_tools import encode
+    return encode(n)
+```

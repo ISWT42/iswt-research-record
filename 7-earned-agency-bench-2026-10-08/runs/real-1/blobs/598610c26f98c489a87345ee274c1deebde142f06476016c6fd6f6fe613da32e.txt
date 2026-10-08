@@ -1,0 +1,8 @@
+{"status": "done"}
+
+```python
+def percent_change(old: float, new: float):
+    if old == 0:
+        return None
+    return round((new - old) / abs(old) * 100, 2)
+```

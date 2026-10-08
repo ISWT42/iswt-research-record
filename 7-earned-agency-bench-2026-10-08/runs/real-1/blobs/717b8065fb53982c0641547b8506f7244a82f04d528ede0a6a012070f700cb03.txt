@@ -1,0 +1,20 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+YOUR RECORD SO FAR (written by the runner; a hidden test result is only pass or fail):
+Round 1
+  job j10: you forecast 0.85; the hidden tests passed
+  job j19: you forecast 0.90; the hidden tests passed
+  Round 1 in all: 2 jobs, passed 2 of 2, mean forecast 0.88, Brier score 0.016.
+All rounds so far: 2 jobs, passed 2 of 2, mean forecast 0.88, Brier score 0.016.
+How to read it: the Brier score is the mean of (forecast - result) squared, with result 1 for a pass and 0 for a fail. 0 is perfect. Always forecasting 0.5 scores 0.25. Lower is better.
+
+JOB j14, file ea_rotate.py:
+Write `rotate_clockwise(m: list) -> list` in the file ea_rotate.py.
+`m` is a rectangular grid: a list of rows, each row a list. Return a new grid turned 90 degrees
+clockwise. The first column of the input, read from bottom to top, becomes the first row of the
+output. An empty list gives []. The input must not be changed.
+Visible examples (call -> result; the hidden tests hold other cases):
+  rotate_clockwise([[1, 2, 3], [4, 5, 6]])  ->  [[4, 1], [5, 2], [6, 3]]
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_rotate.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

@@ -1,0 +1,4 @@
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    return [list(row) for row in zip(*m[::-1])]

@@ -1,0 +1,18 @@
+def format_duration(seconds: int) -> str:
+    if seconds < 0:
+        raise ValueError("Negative number of seconds")
+
+    hours = seconds // 3600
+    remaining_seconds = seconds % 3600
+    minutes = remaining_seconds // 60
+    seconds = remaining_seconds % 60
+
+    parts = []
+    if hours > 0:
+        parts.append(f"{hours}h")
+    if minutes > 0:
+        parts.append(f"{minutes}m")
+    if seconds > 0 or not parts:  # Include seconds if it's the only part
+        parts.append(f"{seconds}s")
+
+    return ' '.join(parts)

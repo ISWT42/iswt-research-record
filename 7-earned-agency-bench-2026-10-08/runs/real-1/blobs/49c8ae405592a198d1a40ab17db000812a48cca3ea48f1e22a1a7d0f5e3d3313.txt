@@ -1,0 +1,49 @@
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string")
+
+    roman_map = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+
+    total = 0
+    prev_value = 0
+
+    for char in reversed(s):
+        if char not in roman_map:
+            raise ValueError(f"Invalid character: {char}")
+
+        current_value = roman_map[char]
+
+        if current_value < prev_value:
+            total -= current_value
+        else:
+            total += current_value
+
+        prev_value = current_value
+
+    # Validate the Roman numeral
+    if total > 3999:
+        raise ValueError("Roman numeral exceeds 3999")
+
+    # Check for invalid repetitions
+    for i in range(len(s) - 2):
+        if s[i] == s[i+1] == s[i+2]:
+            if s[i] in ['V', 'L', 'D']:
+                raise ValueError("Invalid repetition of V, L, or D")
+            if s[i] in ['I', 'X', 'C', 'M'] and s[i+3] == s[i]:
+                raise ValueError("More than three repetitions of I, X, C, or M")
+
+    # Check for invalid subtractive pairs
+    invalid_pairs = ['IIV', 'IIX', 'XXL', 'XXC', 'CCD', 'CCM']
+    for pair in invalid_pairs:
+        if pair in s:
+            raise ValueError(f"Invalid subtractive pair: {pair}")
+
+    return total

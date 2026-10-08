@@ -1,0 +1,113 @@
+{"status": "done"}
+
+```python
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or s == "":
+        raise ValueError("empty or invalid input")
+
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+              'C': 100, 'D': 500, 'M': 1000}
+
+    # Reject any character not in the allowed set (also catches lowercase)
+    for ch in s:
+        if ch not in values:
+            raise ValueError("invalid character")
+
+    # Parse with strict validation of standard form
+    i = 0
+    total = 0
+    n = len(s)
+
+    # Allowed subtractive pairs
+    subtract_pairs = {
+        ('I', 'V'): 4,
+        ('I', 'X'): 9,
+        ('X', 'L'): 40,
+        ('X', 'C'): 90,
+        ('C', 'D'): 400,
+        ('C', 'M'): 900,
+    }
+
+    # Repeat counts for each symbol
+    repeat_count = {'I': 0, 'V': 0, 'X': 0, 'L': 0, 'C': 0, 'D': 0, 'M': 0}
+    # Track last symbol to reset counts when symbol changes
+    last_symbol = None
+
+    while i < n:
+        ch = s[i]
+
+        # Check for subtractive pair
+        if i + 1 < n and (ch, s[i + 1]) in subtract_pairs:
+            # Subtractive pair: the smaller symbol must not be repeated before
+            # and the pair counts as one unit
+            # Reset repeat counts for both symbols involved
+            # The larger symbol in the pair (first char) must not repeat more than allowed
+            # Actually in standard form, subtractive pair's first symbol (I, X, C)
+            # appears once here.
+            # Check that this first symbol isn't a continuation of repeats
+            # (e.g., "IIV" is invalid)
+            # We handle by checking previous symbol
+            if last_symbol == ch:
+                # ch is being repeated; but subtractive pair after repeats of ch
+                # like "IIV" -> invalid. Only allowed if ch hasn't been repeated
+                # in a way that leads here. Actually "IIV" is invalid.
+                # Since subtractive pair uses ch once, if ch was already counted,
+                # it's a repeat leading into a subtractive - invalid.
+                raise ValueError("invalid subtractive form")
+            # Apply the pair
+            total += subtract_pairs[(ch, s[i + 1])]
+            # Reset counts for both symbols
+            repeat_count = {'I': 0, 'V': 0, 'X': 0, 'L': 0, 'C': 0, 'D': 0, 'M': 0}
+            last_symbol = None  # after pair, next symbol starts fresh
+            i += 2
+            continue
+
+        # Regular symbol
+        # Check repeat rules
+        if ch in ('V', 'L', 'D'):
+            # Never repeat
+            if last_symbol == ch:
+                raise ValueError("V, L, D cannot repeat")
+            repeat_count[ch] = 1
+        else:
+            # I, X, C, M can repeat up to 3 times
+            if last_symbol == ch:
+                repeat_count[ch] += 1
+                if repeat_count[ch] > 3:
+                    raise ValueError("too many repeats")
+            else:
+                repeat_count[ch] = 1
+
+        # Also need to ensure symbols go largest to smallest (non-increasing)
+        # except for subtractive pairs which we already handled.
+        # We check by tracking the previous regular symbol's value.
+        # But since we handle subtractive separately, here we just add.
+        total += values[ch]
+        last_symbol = ch
+        i += 1
+
+    # Validate non-increasing order (largest to smallest) for regular symbols
+    # Re-parse to check ordering
+    i = 0
+    prev_value = None
+    while i < n:
+        ch = s[i]
+        if i + 1 < n and (ch, s[i + 1]) in subtract_pairs:
+            pair_value = subtract_pairs[(ch, s[i + 1])]
+            if prev_value is not None and pair_value > prev_value:
+                raise ValueError("not in descending order")
+            prev_value = pair_value
+            i += 2
+            continue
+        val = values[ch]
+        if prev_value is not None and val > prev_value:
+            raise ValueError("not in descending order")
+        prev_value = val
+        i += 1
+
+    # Validate total is in range 1..3999
+    if total < 1 or total > 3999:
+        raise ValueError("out of range")
+
+    return total
+```

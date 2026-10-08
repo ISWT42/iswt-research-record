@@ -1,0 +1,1 @@
+{"verdict": "shown", "reason": "The runner record for the file hash shows exit 0 with 5 passed and 0 failed, meeting the done-definition."}

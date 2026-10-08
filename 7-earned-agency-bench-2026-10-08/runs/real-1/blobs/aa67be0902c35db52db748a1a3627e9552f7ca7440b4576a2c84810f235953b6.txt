@@ -1,0 +1,46 @@
+import re
+
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string")
+    
+    # Standard Roman Numeral Regex for 1-3999
+    # M{0,3} : Thousands (0-3000)
+    # (CM|CD|D?C{0,3}) : Hundreds (900, 400, 500-800, 0-300)
+    # (XC|XL|L?X{0,3}) : Tens (90, 40, 50-80, 0-30)
+    # (IX|IV|V?I{0,3}) : Ones (9, 4, 5-8, 0-3)
+    pattern = r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"
+    
+    if not re.match(pattern, s):
+        raise ValueError("Invalid Roman numeral")
+    
+    # The regex allows empty strings for each group, but the overall string 
+    # must not be empty (handled above). However, the regex could match an empty string 
+    # if s was empty. Since we checked if not s, we just need to ensure it's not 
+    # just a string that matches the pattern but results in 0 (though the pattern 
+    # only matches valid Roman numerals).
+    
+    roman_map = {
+        'I': 1, 'V': 5, 'X': 10, 'L': 50,
+        'C': 100, 'D': 500, 'M': 1000
+    }
+    
+    total = 0
+    prev_value = 0
+    
+    # Process from right to left to easily handle subtraction
+    for char in reversed(s):
+        if char not in roman_map:
+            raise ValueError("Invalid character")
+        
+        curr_value = roman_map[char]
+        if curr_value < prev_value:
+            total -= curr_value
+        else:
+            total += curr_value
+        prev_value = curr_value
+        
+    if total == 0:
+        raise ValueError("Invalid Roman numeral")
+        
+    return total

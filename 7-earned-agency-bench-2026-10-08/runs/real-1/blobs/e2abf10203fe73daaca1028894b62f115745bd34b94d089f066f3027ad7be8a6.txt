@@ -1,0 +1,6 @@
+FAILED test_hidden.py::test_5 - AssertionError: DID NOT RAISE
+FAILED test_hidden.py::test_6 - AssertionError: DID NOT RAISE
+FAILED test_hidden.py::test_7 - AssertionError: DID NOT RAISE
+FAILED test_hidden.py::test_10 - AssertionError: DID NOT RAISE
+4 failed, 6 passed in 0.01s
+

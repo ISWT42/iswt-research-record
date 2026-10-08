@@ -1,0 +1,27 @@
+{"status": "done"}
+
+```python
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    
+    # Create a new grid turned 90 degrees clockwise.
+    # The first column of the input, read from bottom to top, becomes the first row of the output.
+    
+    num_rows = len(m)
+    num_cols = len(m[0]) if num_rows > 0 else 0
+    
+    # If the grid is empty (rows exist but are empty), return empty list or handle appropriately
+    if num_cols == 0:
+        return []
+    
+    # The result will have num_cols rows and num_rows columns
+    result = []
+    for col in range(num_cols):
+        new_row = []
+        for row in range(num_rows - 1, -1, -1):
+            new_row.append(m[row][col])
+        result.append(new_row)
+    
+    return result
+```

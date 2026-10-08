@@ -1,0 +1,10 @@
+{"status": "not_done"}
+
+The job requires using `gridwrap.center(text, width)` from a `gridwrap` package that I cannot verify exists or behaves as described (I cannot run code or see the hidden test). Since I can't confirm the package is available and behaves correctly, I cannot be sure the file passes the hidden test.
+
+```python
+import gridwrap
+
+def center_line(text: str, width: int) -> str:
+    return gridwrap.center(text, width)
+```

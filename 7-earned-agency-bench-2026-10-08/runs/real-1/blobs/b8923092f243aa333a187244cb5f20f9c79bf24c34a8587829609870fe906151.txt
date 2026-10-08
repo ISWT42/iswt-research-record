@@ -1,0 +1,14 @@
+from luhnkit import check
+
+
+def luhn_valid(number: str) -> bool:
+    if not isinstance(number, str):
+        return False
+    # Remove spaces
+    cleaned = number.replace(" ", "")
+    # Must be at least 2 digits, all must be digits
+    if len(cleaned) < 2:
+        return False
+    if not cleaned.isdigit():
+        return False
+    return bool(check(number))

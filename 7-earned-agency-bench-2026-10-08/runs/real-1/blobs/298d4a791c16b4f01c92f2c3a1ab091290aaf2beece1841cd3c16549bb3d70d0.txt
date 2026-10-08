@@ -1,0 +1,75 @@
+{"status": "done"}
+
+```python
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    result = []
+    for i, char in enumerate(name):
+        if char.isupper():
+            # Check condition (2): preceded by a capital and followed by a lowercase
+            # This handles cases like 'HTML' where 'H' is start, 'T' follows 'H' (cap), 'M' follows 'T' (cap), 'L' follows 'M' (cap).
+            # Wait, let's re-read carefully.
+            # "before a capital letter that has another capital letter before it and a lowercase letter after it."
+            # Example: parseHTMLText
+            # H: prev=None, next=T. Not cap-prev.
+            # T: prev=H (cap), next=L (lower). Yes. Insert _ before T? 
+            # If we insert before T, we get parse_H... but we want parse_html.
+            # Let's trace 'parseHTMLText' -> 'parse_html_text'.
+            # p,a,r,s,e are lower.
+            # H: index 5. Prev is 'e' (lower). Condition (1) applies: insert _ before H? 
+            # If we insert _ before H, we get parse_H...
+            # T: index 6. Prev is 'H' (cap). Next is 'L' (lower). Condition (2) applies: insert _ before T?
+            # If we insert _ before T, we get parse_H_T...
+            # L: index 7. Prev is 'T' (cap). Next is 'T' (lower)? No, next is 'T' at index 8? No, 'Text'. T(8), e(9).
+            # L is followed by T? No, 'HTMLText'. H(5), T(6), M(7), L(8), T(9), e(10)...
+            # Let's map indices for 'parseHTMLText':
+            # 0:p, 1:a, 2:r, 3:s, 4:e, 5:H, 6:T, 7:M, 8:L, 9:T, 10:e, 11:x, 12:t
+            
+            # Processing:
+            # i=0..4: lower chars, append directly.
+            # i=5: 'H'. Is upper.
+            #   Cond (1): prev char 'e' is lower. Yes. Insert '_' then 'h'.
+            #   Result so far: 'parse_h'
+            # i=6: 'T'. Is upper.
+            #   Cond (1): prev char 'H' is upper. No.
+            #   Cond (2): prev char 'H' is upper? Yes. Next char 'M' is lower? No ('M' is upper). So Cond (2) fails.
+            #   Append 't'.
+            #   Result: 'parse_ht'
+            # i=7: 'M'. Is upper.
+            #   Cond (1): prev 'T' is upper. No.
+            #   Cond (2): prev 'T' is upper? Yes. Next 'L' is lower? No. Fails.
+            #   Append 'm'.
+            #   Result: 'parse_htm'
+            # i=8: 'L'. Is upper.
+            #   Cond (1): prev 'M' is upper. No.
+            #   Cond (2): prev 'M' is upper? Yes. Next 'T' is lower? No. Fails.
+            #   Append 'l'.
+            #   Result: 'parse_html'
+            # i=9: 'T'. Is upper.
+            #   Cond (1): prev 'L' is upper. No.
+            #   Cond (2): prev 'L' is upper? Yes. Next 'e' is lower? Yes. Passes.
+            #   Insert '_' then 't'.
+            #   Result: 'parse_html_t'
+            # i=10: 'e'. Lower. Append 'e'.
+            #   Result: 'parse_html_te'
+            # i=11: 'x'. Lower. Append 'x'.
+            #   Result: 'parse_html_tex'
+            # i=12: 't'. Lower. Append 't'.
+            #   Result: 'parse_html_text'
+            
+            # This matches the expected output 'parse_html_text'.
+            
+            # Let's check 'loadXMLFile' -> 'load_xml_file'
+            # l,o,a,d: lower.
+            # X: prev 'd' (lower). Cond (1) yes. -> 'load_x'
+            # M: prev 'X' (upper). Next 'L' (upper). Cond (2) no. -> 'load_xm'
+            # L: prev 'M' (upper). Next 'F' (upper). Cond (2) no. -> 'load_xml'
+            # F: prev 'L' (upper). Next 'i' (lower). Cond (2) yes. -> 'load_xml_f'
+            # i,l,e: lower. -> 'load_xml_file'
+            # Matches.
+            
+            # What about 'simpleXML'?
+            # s,i,m,p,l,e: lower.
+            # X: prev 'e' (lower). Cond (1) yes. -> 'simple_x'

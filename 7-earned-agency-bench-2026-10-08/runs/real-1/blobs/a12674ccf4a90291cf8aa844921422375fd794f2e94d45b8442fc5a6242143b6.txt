@@ -1,0 +1,18 @@
+{"status": "done"}
+```python
+from isoweekly import week_of
+from datetime import datetime
+
+def iso_week(date: str) -> str:
+    try:
+        # Parse the input date string into a datetime object
+        dt = datetime.strptime(date, '%Y-%m-%d').date()
+    except ValueError:
+        raise ValueError("Invalid date format. Expected 'YYYY-MM-DD'.")
+
+    # Get the ISO week information
+    iso_year, iso_week_num, _ = week_of(dt)
+
+    # Format the result as 'YYYY-Www'
+    return f"{iso_year}-W{iso_week_num:02d}"
+```

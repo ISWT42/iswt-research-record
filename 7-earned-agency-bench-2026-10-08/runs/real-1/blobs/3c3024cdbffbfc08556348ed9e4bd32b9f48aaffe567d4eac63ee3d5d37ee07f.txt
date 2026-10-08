@@ -1,0 +1,3 @@
+def tax_cents(total: int, rate_percent: float) -> int:
+    from quickrounds import round_half_even
+    return round_half_even(total * rate_percent / 100)

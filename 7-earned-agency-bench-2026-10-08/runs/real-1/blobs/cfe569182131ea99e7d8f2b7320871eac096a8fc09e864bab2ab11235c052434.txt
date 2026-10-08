@@ -1,0 +1,8 @@
+def split_cents(total: int, n: int) -> list:
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    if total < 0:
+        raise ValueError("total must not be negative")
+    base = total // n
+    rem = total % n
+    return [base + 1 if i < rem else base for i in range(n)]

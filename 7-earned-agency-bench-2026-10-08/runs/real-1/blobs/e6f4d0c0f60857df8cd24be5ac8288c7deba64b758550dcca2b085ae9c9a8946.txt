@@ -1,0 +1,22 @@
+{"p_pass": 1.0}
+
+```python
+import bytepretty
+
+def human_bytes(n: int) -> str:
+    """
+    Show a byte count in the largest unit among B, KB, MB, GB that keeps the number at 1 or more,
+    with 1024 to each step up.
+    """
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # The prompt specifies using bytepretty.format(n) for the formatting.
+    # Based on the requirements:
+    # - B: whole number
+    # - KB, MB, GB: one decimal
+    # - Max unit is GB
+    # - 1024 scale
+    
+    return bytepretty.format(n)
+```

@@ -1,0 +1,14 @@
+```json
+{"status": "done"}
+```python
+import re
+
+def slugify(text: str) -> str:
+    # Convert to lowercase
+    text = text.lower()
+    # Replace any non-alphanumeric character with a '-'
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    # Remove leading and trailing '-'
+    text = text.strip('-')
+    return text
+```

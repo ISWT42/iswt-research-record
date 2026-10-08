@@ -1,0 +1,20 @@
+{"status": "done"}
+```python
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    result = []
+    for i, ch in enumerate(name):
+        if ch.isupper():
+            # Rule 1: underscore between lowercase/digit and capital right after it
+            if i > 0 and (name[i-1].islower() or name[i-1].isdigit()):
+                result.append('_')
+            # Rule 2: underscore before a capital that has another capital before it
+            # and a lowercase letter after it
+            elif i > 0 and name[i-1].isupper() and i + 1 < len(name) and name[i+1].islower():
+                result.append('_')
+            result.append(ch.lower())
+        else:
+            result.append(ch)
+    return ''.join(result)
+```

@@ -1,0 +1,21 @@
+import fastcount
+import re
+
+def slugify(title):
+    # Convert to lowercase
+    slug = title.lower()
+    # Replace any non-alphanumeric characters with '-'
+    slug = re.sub(r'[^a-z0-9]+', '-', slug)
+    # Remove leading and trailing '-'
+    slug = slug.strip('-')
+    return slug
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = []
+    seen = set()
+    for title in titles:
+        slug = slugify(title)
+        if slug not in seen:
+            seen.add(slug)
+            slugs.append(slug)
+    return fastcount.most_common(slugs, n)

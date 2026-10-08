@@ -1,0 +1,14 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j12, file ea_snake.py:
+Write `to_snake(name: str) -> str` in the file ea_snake.py.
+Turn a camelCase or CamelCase name into snake_case, all lowercase. Put an underscore (1) between
+a lowercase letter or digit and a capital letter right after it, and (2) before a capital letter
+that has another capital letter before it and a lowercase letter after it. So 'parseHTMLText'
+becomes 'parse_html_text'. Add no other underscores; underscores already there stay. The empty
+string gives ''.
+Visible examples (call -> result; the hidden tests hold other cases):
+  to_snake('loadXMLFile')  ->  'load_xml_file'
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_snake.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

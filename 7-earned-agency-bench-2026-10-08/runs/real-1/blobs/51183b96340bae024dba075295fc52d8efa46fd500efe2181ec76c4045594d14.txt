@@ -1,0 +1,17 @@
+```json
+{"status": "done"}
+```python
+from collections import defaultdict
+
+def anagram_groups(words: list) -> list:
+    groups = defaultdict(list)
+    for word in words:
+        # Use a sorted tuple of characters as the key to group anagrams
+        key = tuple(sorted(word.lower()))
+        groups[key].append(word)
+    # Convert the dictionary values to a list and sort by the first occurrence
+    result = list(groups.values())
+    # Sort the groups based on the first word's original position
+    result.sort(key=lambda group: words.index(group[0]))
+    return result
+```

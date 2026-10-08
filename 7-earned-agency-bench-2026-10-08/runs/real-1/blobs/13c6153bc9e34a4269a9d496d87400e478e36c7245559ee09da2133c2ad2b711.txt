@@ -1,0 +1,21 @@
+{"status": "done"}
+```python
+def anagram_groups(words: list) -> list:
+    """
+    Group words that are anagrams of each other, ignoring case.
+    Groups are ordered by the first appearance of their members in the input list.
+    """
+    groups_map = {}
+    order = []
+    
+    for word in words:
+        # Normalize word to a sorted tuple of lowercase characters to use as a key
+        key = tuple(sorted(word.lower()))
+        if key not in groups_map:
+            groups_map[key] = []
+            order.append(key)
+        groups_map[key].append(word)
+    
+    # Return the groups in the order their first member appeared
+    return [groups_map[key] for key in order]
+```

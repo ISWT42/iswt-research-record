@@ -1,0 +1,33 @@
+{"p_pass": 1.0}
+
+```python
+from datetime import date
+
+def days_between(a: str, b: str) -> int:
+    """
+    Calculates the number of days between two dates provided in 'YYYY-MM-DD' format.
+    Returns a positive integer if b is later than a, negative if earlier, and 0 if they are the same.
+    Raises ValueError if the input strings are not valid calendar dates in the specified format.
+    """
+    def parse_date(date_str):
+        # Ensure the string is exactly 10 characters and follows the YYYY-MM-DD format
+        if len(date_str) != 10:
+            raise ValueError("Date must be in YYYY-MM-DD format")
+        if date_str[4] != '-' or date_str[7] != '-':
+            raise ValueError("Date must be in YYYY-MM-DD format")
+        
+        # Check if the components are digits
+        parts = date_str.split('-')
+        if len(parts) != 3 or not all(p.isdigit() for p in parts):
+            raise ValueError("Date components must be numeric")
+            
+        # date() constructor handles the actual calendar validation (leap years, days in month, etc.)
+        # It raises ValueError if the date is invalid.
+        return date(int(parts[0]), int(parts[1]), int(parts[2]))
+
+    date_a = parse_date(a)
+    date_b = parse_date(b)
+    
+    delta = date_b - date_a
+    return delta.days
+```

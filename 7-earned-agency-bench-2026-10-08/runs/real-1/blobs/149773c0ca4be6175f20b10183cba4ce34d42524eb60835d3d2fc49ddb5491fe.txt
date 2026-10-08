@@ -1,0 +1,15 @@
+```json
+{"status": "done"}
+```python
+def page_summary(count: int, per_page: int) -> list:
+    if count < 0 or per_page < 1:
+        raise ValueError
+    if count == 0:
+        return []
+    pages = []
+    for i in range(0, count, per_page):
+        first = i + 1
+        last = min(i + per_page, count)
+        pages.append(f"{first + 1}: {first}-{last}")
+    return pages
+```

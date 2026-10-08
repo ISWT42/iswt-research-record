@@ -1,0 +1,13 @@
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    result = {}
+    for title in titles:
+        slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+        base = slug
+        n = 1
+        while slug in result:
+            n += 1
+            slug = f"{base}-{n}"
+        result[slug] = title
+    return result

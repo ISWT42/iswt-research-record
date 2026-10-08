@@ -1,0 +1,3 @@
+```json
+{"verdict": "contradicted", "reason": "import of random is not allowed"}
+```

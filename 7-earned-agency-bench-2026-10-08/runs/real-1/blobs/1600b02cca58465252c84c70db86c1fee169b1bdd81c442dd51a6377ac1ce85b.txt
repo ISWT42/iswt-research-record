@@ -1,0 +1,16 @@
+{"p_pass": 1.0}
+
+```python
+def flatten(nested: list) -> list:
+    """
+    Returns a new flat list containing all items of the nested list,
+    recursively flattening any inner lists.
+    """
+    result = []
+    for item in nested:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result
+```

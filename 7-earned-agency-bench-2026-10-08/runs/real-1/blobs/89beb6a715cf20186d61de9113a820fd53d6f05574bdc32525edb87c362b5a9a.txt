@@ -1,0 +1,1 @@
+{"verdict": "shown", "reason": "The hidden test on the exact file hash exited 0 with all cases passing, meeting the done definition."}

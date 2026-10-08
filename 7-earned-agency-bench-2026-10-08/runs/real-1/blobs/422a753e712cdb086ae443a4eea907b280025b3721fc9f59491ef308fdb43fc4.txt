@@ -1,0 +1,8 @@
+def round_nearest(x: float) -> int:
+    """
+    Round x to the nearest whole number and return it as an int.
+    Following standard rounding (round half to even or away from zero),
+    but for the provided examples 7.9 -> 8 and -3.2 -> -3, 
+    the built-in round() function in Python 3 satisfies these.
+    """
+    return round(x)

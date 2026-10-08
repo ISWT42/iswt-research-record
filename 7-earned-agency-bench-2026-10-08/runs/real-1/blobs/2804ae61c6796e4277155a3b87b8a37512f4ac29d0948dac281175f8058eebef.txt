@@ -1,0 +1,88 @@
+{"status": "done"}
+
+```python
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or s == "":
+        raise ValueError("empty or invalid input")
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+              'C': 100, 'D': 500, 'M': 1000}
+    # Validate characters
+    for ch in s:
+        if ch not in values:
+            raise ValueError("invalid character")
+
+    # Check standard form by parsing greedily and comparing
+    # Build the canonical representation and compare.
+    def to_canonical(n):
+        mapping = [
+            (1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'),
+            (100, 'C'), (90, 'XC'), (50, 'L'), (40, 'XL'),
+            (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')
+        ]
+        out = []
+        for val, sym in mapping:
+            while n >= val:
+                out.append(sym)
+                n -= val
+        return ''.join(out)
+
+    # Parse value with subtractive rules, also validating structure
+    total = 0
+    i = 0
+    n = len(s)
+    # Track run lengths
+    prev = None
+    run = 0
+    # We'll do a structural validation pass
+    # Rules:
+    # - symbols non-increasing except allowed subtractive pairs
+    # - I,X,C,M repeat <=3; V,L,D never repeat
+    # - subtractive pairs only IV,IX,XL,XC,CD,CM
+    allowed_subtract = {'IV', 'IX', 'XL', 'XC', 'CD', 'CM'}
+    # Check repeats
+    i = 0
+    while i < n:
+        ch = s[i]
+        j = i
+        while j < n and s[j] == ch:
+            j += 1
+        run = j - i
+        if ch in 'VLD':
+            if run > 1:
+                raise ValueError("repeat not allowed")
+        else:  # I, X, C, M
+            if run > 3:
+                raise ValueError("too many repeats")
+        i = j
+
+    # Check ordering / subtractive pairs
+    i = 0
+    while i < n - 1:
+        pair = s[i:i+2]
+        if pair in allowed_subtract:
+            i += 2
+            continue
+        # otherwise must be non-increasing
+        if values[s[i]] < values[s[i+1]]:
+            raise ValueError("invalid order")
+        i += 1
+
+    # Now compute value
+    total = 0
+    i = 0
+    while i < n:
+        if i + 1 < n and s[i:i+2] in allowed_subtract:
+            total += values[s[i+1]] - values[s[i]]
+            i += 2
+        else:
+            total += values[s[i]]
+            i += 1
+
+    # Validate range and canonical form
+    if total < 1 or total > 3999:
+        raise ValueError("out of range")
+    if to_canonical(total) != s:
+        raise ValueError("non-standard form")
+
+    return total
+```

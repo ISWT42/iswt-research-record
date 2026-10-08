@@ -1,0 +1,11 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def percent_change(old: float, new: float):
+    if old == 0:
+        return None
+    change = ((new - old) / abs(old)) * 100
+    return round(change, 2)
+```

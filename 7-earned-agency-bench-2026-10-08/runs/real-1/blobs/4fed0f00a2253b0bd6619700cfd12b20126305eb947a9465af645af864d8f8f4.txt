@@ -1,0 +1,23 @@
+{"status": "done"}
+```python
+from isoweekly import week_of
+
+def iso_week(date: str) -> str:
+    """
+    Convert a date string 'YYYY-MM-DD' to its ISO 8601 week representation 'YYYY-Www'.
+    
+    Args:
+        date: A string in the format 'YYYY-MM-DD'
+        
+    Returns:
+        A string in the format 'YYYY-Www' representing the ISO week
+        
+    Raises:
+        ValueError: If the input string is not a valid date in the specified format
+    """
+    # Get the ISO week object using the isoweekly package
+    w = week_of(date)
+    
+    # Format as YYYY-Www
+    return f"{w.year}-W{w.week:02d}"
+```

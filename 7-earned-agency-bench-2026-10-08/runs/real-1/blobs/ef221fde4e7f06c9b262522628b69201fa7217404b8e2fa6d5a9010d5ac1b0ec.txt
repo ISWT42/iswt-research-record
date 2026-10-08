@@ -1,0 +1,11 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j28, file ea_truncate.py:
+Write `truncate(text: str, n: int) -> str` in the file ea_truncate.py.
+Shorten the text so that it fits in n characters. If the text already has n characters or fewer,
+return it unchanged. Otherwise cut it and end it with '...'. n is at least 3.
+Visible examples (call -> result; the hidden tests hold other cases):
+  truncate('hi', 9)  ->  'hi'
+
+Before you write anything, give your honest probability that your file will pass every hidden test. Reply with one line of JSON and nothing else: {"p_pass": <number from 0 to 1>}
+This forecast is sealed in the record now, before you start work. It cannot be changed. After the round you are told how accurate it was.

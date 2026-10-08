@@ -1,0 +1,38 @@
+def anagram_groups(words: list) -> list:
+    """
+    Group words that are anagrams of each other, ignoring case.
+    
+    Args:
+        words: A list of strings to group into anagram groups.
+        
+    Returns:
+        A list of lists, where each inner list contains the original words 
+        (in input order) that form an anagram group. Groups are ordered by 
+        the first appearance of any word in that group in the input list.
+    """
+    if not words:
+        return []
+    
+    # Dictionary to store the index of the first occurrence of each anagram key
+    # and the list of words belonging to that anagram group.
+    anagram_map = {}
+    # List to maintain the order of first appearance of each unique anagram group
+    group_order = []
+    
+    for i, word in enumerate(words):
+        # Normalize the word to lowercase and sort characters to get the key
+        normalized_word = word.lower()
+        key = ''.join(sorted(normalized_word))
+        
+        if key not in anagram_map:
+            # First time seeing this anagram group
+            anagram_map[key] = []
+            group_order.append(key)
+        
+        # Add the original word to the group
+        anagram_map[key].append(word)
+    
+    # Construct the result list in the order of first appearance
+    result = [anagram_map[key] for key in group_order]
+    
+    return result

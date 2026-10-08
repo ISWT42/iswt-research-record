@@ -1,0 +1,13 @@
+{"status": "done"}
+```python
+def round_nearest(x: float) -> int:
+    """
+    Round x to the nearest whole number and return it as an int.
+    Python's built-in round() function rounds to the nearest even number 
+    for .5 cases (Banker's rounding). For standard rounding, 
+    we can use the logic: floor(x + 0.5).
+    However, the examples provided (7.9 -> 8, -3.2 -> -3) are consistent 
+    with the standard round() function.
+    """
+    return int(round(x))
+```

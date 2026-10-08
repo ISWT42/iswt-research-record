@@ -1,0 +1,19 @@
+{"status": "done"}
+
+```python
+import luhnkit
+
+
+def luhn_valid(number: str) -> bool:
+    if not isinstance(number, str):
+        return False
+
+    # Remove spaces; anything else non-digit is invalid
+    cleaned = number.replace(" ", "")
+    if not cleaned.isdigit():
+        return False
+    if len(cleaned) < 2:
+        return False
+
+    return bool(luhnkit.check(number))
+```

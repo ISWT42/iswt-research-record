@@ -1,0 +1,19 @@
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    slug_dict = {}
+    for title in titles:
+        # Convert to lowercase
+        slug = title.lower()
+        # Replace any non-alphanumeric character with '-'
+        slug = re.sub(r'[^a-z0-9]', '-', slug)
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        # Ensure uniqueness by appending a number if needed
+        original_slug = slug
+        count = 1
+        while slug in slug_dict:
+            slug = f"{original_slug}-{count}"
+            count += 1
+        slug_dict[slug] = title
+    return slug_dict

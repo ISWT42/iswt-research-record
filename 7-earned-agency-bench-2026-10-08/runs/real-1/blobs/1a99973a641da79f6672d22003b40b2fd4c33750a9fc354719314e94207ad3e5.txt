@@ -1,0 +1,19 @@
+{"status": "done"}
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ""
+    
+    # Rule 1: Underscore between lowercase/digit and uppercase
+    # Example: 'loadXML' -> 'load_XML'
+    s1 = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Rule 2: Underscore before an uppercase letter that is followed by a lowercase letter,
+    # provided there was an uppercase letter before it.
+    # Example: 'XMLFile' -> 'XML_File'
+    s2 = re.sub(r'([A-Z])([A-Z][a-z])', r'\1_\2', s1)
+    
+    return s2.lower()
+```

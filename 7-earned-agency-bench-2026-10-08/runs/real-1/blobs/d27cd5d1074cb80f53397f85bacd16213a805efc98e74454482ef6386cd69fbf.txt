@@ -1,0 +1,13 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j23, file ea_summary.py:
+Write `page_summary(count: int, per_page: int) -> list` in the file ea_summary.py.
+A list of `count` items is shown in pages of `per_page` items. Return one string per non-empty
+page, in page order, in the form '<page>: <first>-<last>', where first and last are the positions
+of the first and the last item on that page. A count of 0 gives []. A negative count, or a
+per_page below 1, raises ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  page_summary(0, 4)  ->  []
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_summary.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

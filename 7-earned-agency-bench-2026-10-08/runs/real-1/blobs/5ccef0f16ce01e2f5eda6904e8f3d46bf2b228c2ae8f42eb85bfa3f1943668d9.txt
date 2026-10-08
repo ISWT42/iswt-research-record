@@ -1,0 +1,41 @@
+{"status": "done"}
+```python
+import re
+
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string")
+    
+    # Regular expression to validate standard Roman numeral form (1-3999)
+    # ^M{0,3}        : Up to 3000
+    # (CM|CD|D?C{0,3}): 900, 400, or 500-800 / 0-300
+    # (XC|XL|L?X{0,3}): 90, 40, or 50-80 / 0-30
+    # (IX|IV|V?I{0,3}): 9, 4, or 5-8 / 0-3
+    pattern = r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"
+    
+    if not re.match(pattern, s):
+        raise ValueError("Invalid Roman numeral")
+    
+    # The regex allows empty strings (all groups optional), but we checked for empty s above.
+    # However, the regex might match a string that is technically valid by pattern but 
+    # not a valid Roman numeral if it's just empty. Since we checked `if not s`, 
+    # and the regex ensures only valid characters and sequences, we are safe.
+    
+    roman_map = {
+        'I': 1, 'V': 5, 'X': 10, 'L': 50,
+        'C': 100, 'D': 500, 'M': 1000
+    }
+    
+    total = 0
+    prev_value = 0
+    # Process from right to left to handle subtraction easily
+    for char in reversed(s):
+        value = roman_map[char]
+        if value < prev_value:
+            total -= value
+        else:
+            total += value
+        prev_value = value
+        
+    return total
+```

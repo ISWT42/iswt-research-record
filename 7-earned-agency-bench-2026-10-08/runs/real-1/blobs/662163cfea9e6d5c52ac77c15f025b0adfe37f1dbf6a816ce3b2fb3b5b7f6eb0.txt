@@ -1,0 +1,55 @@
+{"status": "done"}
+
+```python
+import re
+
+
+def parse_cents(s: str) -> int:
+    if not isinstance(s, str):
+        raise ValueError("expected a string")
+    t = s.strip()
+    if t == "":
+        raise ValueError("empty string")
+
+    sign = 1
+    if t.startswith("-"):
+        sign = -1
+        t = t[1:]
+
+    if t.startswith("$"):
+        t = t[1:]
+
+    # Split off fractional part
+    if "." in t:
+        int_part, frac_part = t.split(".", 1)
+        if len(frac_part) == 0 or len(frac_part) > 2 or not frac_part.isdigit():
+            raise ValueError("bad fractional part")
+        if not frac_part.isdigit():
+            raise ValueError("bad fractional part")
+    else:
+        int_part = t
+        frac_part = None
+
+    if int_part == "":
+        raise ValueError("missing integer part")
+
+    # Validate integer part with optional thousands commas
+    if "," in int_part:
+        # must be groups of exactly three separated by commas
+        if not re.fullmatch(r"\d{1,3}(,\d{3})+", int_part):
+            raise ValueError("bad thousands grouping")
+        digits = int_part.replace(",", "")
+    else:
+        if not int_part.isdigit():
+            raise ValueError("bad integer part")
+        digits = int_part
+
+    if digits == "":
+        raise ValueError("no digits")
+
+    cents = int(digits) * 100
+    if frac_part is not None:
+        cents += int(frac_part.ljust(2, "0"))
+
+    return sign * cents
+```

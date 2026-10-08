@@ -1,0 +1,39 @@
+import re
+
+_PATTERN = re.compile(r'^(\d{4})-(\d{2})-(\d{2})$')
+
+_DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+
+def _is_leap(year: int) -> bool:
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+
+def _parse(s: str) -> int:
+    if not isinstance(s, str):
+        raise ValueError("not a string")
+    m = _PATTERN.match(s)
+    if not m:
+        raise ValueError("bad format")
+    year = int(m.group(1))
+    month = int(m.group(2))
+    day = int(m.group(3))
+    if month < 1 or month > 12:
+        raise ValueError("bad month")
+    max_day = _DAYS_IN_MONTH[month - 1]
+    if month == 2 and _is_leap(year):
+        max_day = 29
+    if day < 1 or day > max_day:
+        raise ValueError("bad day")
+    # ordinal day number since year 0 (proleptic Gregorian)
+    y = year - 1
+    days = y * 365 + y // 4 - y // 100 + y // 400
+    days += sum(_DAYS_IN_MONTH[:month - 1])
+    if month > 2 and _is_leap(year):
+        days += 1
+    days += day
+    return days
+
+
+def days_between(a: str, b: str) -> int:
+    return _parse(b) - _parse(a)

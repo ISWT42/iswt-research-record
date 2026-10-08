@@ -1,0 +1,29 @@
+```json
+{"status": "done"}
+```python
+def compare_versions(a: str, b: str) -> int:
+    def parse_version(version: str) -> list[int]:
+        parts = version.split('.')
+        parsed = []
+        for part in parts:
+            if not part.isdigit():
+                raise ValueError("Version part must be digits only")
+            parsed.append(int(part))
+        return parsed
+
+    try:
+        a_parts = parse_version(a)
+        b_parts = parse_version(b)
+    except ValueError as e:
+        raise ValueError(f"Invalid version format: {e}")
+
+    max_length = max(len(a_parts), len(b_parts))
+    for i in range(max_length):
+        a_part = a_parts[i] if i < len(a_parts) else 0
+        b_part = b_parts[i] if i < len(b_parts) else 0
+        if a_part < b_part:
+            return -1
+        elif a_part > b_part:
+            return 1
+    return 0
+```

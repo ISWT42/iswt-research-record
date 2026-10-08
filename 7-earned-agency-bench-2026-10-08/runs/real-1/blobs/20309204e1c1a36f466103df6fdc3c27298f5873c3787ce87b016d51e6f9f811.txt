@@ -1,0 +1,129 @@
+{"status": "done"}
+
+```python
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or s == "":
+        raise ValueError("empty or invalid input")
+
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+              'C': 100, 'D': 500, 'M': 1000}
+
+    # Validate characters
+    for ch in s:
+        if ch not in values:
+            raise ValueError("invalid character")
+
+    # Parse with strict validation of standard form
+    i = 0
+    total = 0
+    n = len(s)
+
+    # Allowed subtractive pairs
+    subtract_pairs = {'IV', 'IX', 'XL', 'XC', 'CD', 'CM'}
+
+    # Repeat counts for each symbol
+    repeat_count = {k: 0 for k in values}
+    last_symbol = None
+
+    while i < n:
+        # Check for subtractive pair
+        if i + 1 < n:
+            pair = s[i:i+2]
+            if pair in subtract_pairs:
+                # Validate: the larger symbol must not be repeated before
+                # and the pair must be in proper context (largest to smallest overall)
+                first, second = pair[0], pair[1]
+                # The first symbol of a subtractive pair cannot itself be part of
+                # a repeated run of 3 before it (handled by repeat tracking)
+                # Also, subtractive pair's first symbol counts as a use
+                # Check that first symbol isn't repeated more than allowed
+                # Reset repeat counts appropriately
+                # The subtractive pair consumes one occurrence of `first`
+                # and one of `second`
+                # Ensure `first` isn't V, L, D (they can't be first in subtract pair anyway)
+                # Ensure second symbol is smaller
+                if values[second] >= values[first]:
+                    raise ValueError("invalid subtractive pair")
+
+                # Check repeat count for first symbol
+                # The first symbol of a subtractive pair counts as 1 occurrence
+                # and must not have been repeated 3 times already
+                # Actually, in standard form, subtractive pair's first symbol
+                # appears once (e.g., IV not IIV)
+                # So if last_symbol == first, that means it was repeated before
+                if last_symbol == first:
+                    # e.g., "IIV" - not allowed
+                    raise ValueError("invalid repetition before subtractive pair")
+
+                # Also, the symbol before the pair (if any) must be >= first symbol
+                # This is handled by overall largest-to-smallest check below
+
+                total += values[second] - values[first]
+                repeat_count = {k: 0 for k in values}
+                repeat_count[second] = 0  # after pair, reset
+                last_symbol = None  # after subtractive pair, treat as fresh
+                i += 2
+                continue
+
+        # Not a subtractive pair, parse single symbol
+        ch = s[i]
+        val = values[ch]
+
+        # Check largest-to-smallest: current value must be <= previous value
+        # (unless previous was part of a subtractive pair, handled by reset)
+        if last_symbol is not None:
+            prev_val = values[last_symbol]
+            if val > prev_val:
+                raise ValueError("symbols must go largest to smallest")
+
+        # Check repetition rules
+        if ch in ('V', 'L', 'D'):
+            if repeat_count[ch] >= 1:
+                raise ValueError("V, L, D cannot repeat")
+            repeat_count[ch] += 1
+        else:  # I, X, C, M
+            if repeat_count[ch] >= 3:
+                raise ValueError("too many repetitions")
+            repeat_count[ch] += 1
+
+        # Reset repeat counts for symbols smaller than current
+        # (since a larger symbol resets the ability to repeat smaller ones)
+        # Actually, we need to reset counts for symbols that are smaller
+        # because after a larger symbol, smaller symbols start fresh
+        for k in values:
+            if values[k] < val:
+                repeat_count[k] = 0
+
+        total += val
+        last_symbol = ch
+        i += 1
+
+    # Additional validation: ensure overall structure is largest-to-smallest
+    # with only the six allowed subtractive pairs
+    # Re-validate from scratch for safety
+    _validate_standard_form(s)
+
+    if total < 1 or total > 3999:
+        raise ValueError("out of range")
+
+    return total
+
+
+def _validate_standard_form(s: str) -> None:
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+              'C': 100, 'D': 500, 'M': 1000}
+    subtract_pairs = {'IV', 'IX', 'XL', 'XC', 'CD', 'CM'}
+
+    i = 0
+    n = len(s)
+    prev_val = None  # value of previous "unit" (after resolving subtractive)
+
+    while i < n:
+        if i + 1 < n and s[i:i+2] in subtract_pairs:
+            pair = s[i:i+2]
+            first, second = pair[0], pair[1]
+            # first must not be V, L, D
+            if first in ('V', 'L', 'D'):
+                raise ValueError("invalid subtractive pair")
+            # The effective value of the pair
+            eff_val = values[second]

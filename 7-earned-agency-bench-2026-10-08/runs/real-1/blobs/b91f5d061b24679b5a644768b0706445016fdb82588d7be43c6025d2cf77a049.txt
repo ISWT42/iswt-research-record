@@ -1,0 +1,32 @@
+import re
+from collections import Counter
+
+try:
+    from fastcount import most_common as _fastcount_most_common
+except ImportError:
+    _fastcount_most_common = None
+
+
+def _slugify(title: str) -> str:
+    s = title.lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    s = s.strip("-")
+    return s
+
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = [_slugify(t) for t in titles]
+
+    if _fastcount_most_common is not None:
+        try:
+            return _fastcount_most_common(slugs, n)
+        except Exception:
+            pass
+
+    counts = Counter(slugs)
+    order = {}
+    for s in slugs:
+        if s not in order:
+            order[s] = len(order)
+    ranked = sorted(counts.items(), key=lambda kv: (-kv[1], order[kv[0]]))
+    return [s for s, _ in ranked[:n]]

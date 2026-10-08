@@ -1,0 +1,33 @@
+from datetime import date
+
+def days_between(a: str, b: str) -> int:
+    """
+    Calculates the number of days between two dates provided in 'YYYY-MM-DD' format.
+    Raises ValueError if the input strings are not valid dates in that exact format.
+    """
+    def parse_date(date_str):
+        # Check for exact length and format (YYYY-MM-DD)
+        if len(date_str) != 10:
+            raise ValueError("Date must be in YYYY-MM-DD format")
+        if date_str[4] != '-' or date_str[7] != '-':
+            raise ValueError("Date must be in YYYY-MM-DD format")
+        
+        # Ensure only digits are in the expected positions
+        parts = date_str.split('-')
+        if len(parts) != 3:
+            raise ValueError("Date must be in YYYY-MM-DD format")
+        for part in parts:
+            if not part.isdigit():
+                raise ValueError("Date must contain only digits and hyphens")
+        
+        # Use datetime.date to validate the actual calendar date
+        try:
+            return date(int(parts[0]), int(parts[1]), int(parts[2]))
+        except ValueError:
+            raise ValueError("Invalid calendar date")
+
+    date_a = parse_date(a)
+    date_b = parse_date(b)
+    
+    delta = date_b - date_a
+    return delta.days

@@ -1,0 +1,103 @@
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string is invalid")
+    
+    # Check for lowercase or invalid characters
+    valid_chars = set('IVXLCDM')
+    for char in s:
+        if char not in valid_chars:
+            raise ValueError(f"Invalid character: {char}")
+    
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    
+    # Validate the structure of the Roman numeral
+    # We need to ensure it's a standard form.
+    # A simple way is to parse it and check if the result matches the input when converted back,
+    # but that's complex. Instead, let's validate against known patterns or use a strict parser.
+    
+    # Let's try a strict parsing approach:
+    # The standard form has specific rules about repetition and subtraction.
+    # I, X, C, M can repeat up to 3 times.
+    # V, L, D never repeat.
+    # Subtraction only happens for IV, IX, XL, XC, CD, CM.
+    
+    # First, check for immediate invalid repetitions
+    for i in range(len(s) - 1):
+        if s[i] == s[i+1]:
+            if s[i] in ('V', 'L', 'D'):
+                raise ValueError("V, L, D cannot repeat")
+            if s[i] == 'I' and i < len(s) - 2 and s[i+1] == 'I' and s[i+2] == 'I':
+                # IIII is invalid
+                pass # We'll handle this more carefully below
+            elif s[i] == 'X' and i < len(s) - 2 and s[i+1] == 'X' and s[i+2] == 'X':
+                pass
+            elif s[i] == 'C' and i < len(s) - 2 and s[i+1] == 'C' and s[i+2] == 'C':
+                pass
+            elif s[i] == 'M' and i < len(s) - 2 and s[i+1] == 'M' and s[i+2] == 'M':
+                pass
+    
+    # More robust validation: convert to int and back to string and compare
+    # This ensures the input is a valid standard Roman numeral representation of the output.
+    num = _parse_roman(s)
+    if num < 1 or num > 3999:
+        raise ValueError("Number out of range (1-3999)")
+    
+    # Convert back to Roman and check if it matches the input
+    if int_to_roman(num) != s:
+        raise ValueError("Not a standard Roman numeral")
+    
+    return num
+
+def _parse_roman(s: str) -> int:
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    
+    total = 0
+    prev_value = 0
+    
+    for char in reversed(s):
+        value = values[char]
+        if value < prev_value:
+            total -= value
+        else:
+            total += value
+        prev_value = value
+        
+    return total
+
+def int_to_roman(num: int) -> str:
+    val = [
+        1000, 900, 500, 400,
+        100, 90, 50, 40,
+        10, 9, 5, 4,
+        1
+    ]
+    syms = [
+        'M', 'CM', 'D', 'CD',
+        'C', 'XC', 'L', 'XL',
+        'X', 'IX', 'V', 'IV',
+        'I'
+    ]
+    roman_num = ''
+    i = 0
+    while num > 0:
+        while val[i] <= num:
+            num -= val[i]
+            roman_num += syms[i]
+        i += 1
+    return roman_num

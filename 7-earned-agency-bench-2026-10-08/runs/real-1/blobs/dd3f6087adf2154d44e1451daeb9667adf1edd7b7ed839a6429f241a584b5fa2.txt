@@ -1,0 +1,10 @@
+FAILED test_hidden.py::test_1 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_2 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_3 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_4 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_5 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_6 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_7 - ModuleNotFoundError: No module named 'bytepretty'
+FAILED test_hidden.py::test_9 - ModuleNotFoundError: No module named 'bytepretty'
+8 failed, 1 passed in 0.01s
+

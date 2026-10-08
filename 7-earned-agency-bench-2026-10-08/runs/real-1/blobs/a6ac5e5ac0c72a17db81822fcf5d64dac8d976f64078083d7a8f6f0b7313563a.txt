@@ -1,0 +1,18 @@
+import re
+from collections import defaultdict
+
+def top_words(text: str, n: int) -> list:
+    if n < 0:
+        raise ValueError("n must be non-negative")
+
+    words = re.findall(r'[a-zA-Z]+', text)
+    word_counts = defaultdict(int)
+
+    for word in words:
+        lower_word = word.lower()
+        word_counts[lower_word] += 1
+
+    sorted_words = sorted(word_counts.items(), key=lambda item: (-item[1], item[0]))
+    top_n_words = [word for word, count in sorted_words[:n]]
+
+    return top_n_words

@@ -1,0 +1,69 @@
+{"status": "done"}
+
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXMLFile' -> 'load_X_M_L_File' initially, but we need to be careful.
+    # Actually, the standard approach is:
+    # 1. Replace sequences of uppercase letters followed by a lowercase letter with 
+    #    the sequence split before the last uppercase letter. e.g., 'HTMLText' -> 'HTML_Text'
+    # 2. Replace any remaining transitions from non-uppercase (lowercase/digit) to uppercase with underscore.
+    
+    # Let's break it down logically based on the rules:
+    # Rule 1: Underscore between lowercase/digit and capital right after.
+    # Rule 2: Underscore before a capital that has another capital before it AND a lowercase after it.
+    #         This effectively splits acronyms when they precede a word. E.g., 'parseHTMLText'
+    #         'H' is preceded by 'e' (lower), so rule 1 applies? No, 'e' is lower, 'H' is upper.
+    #         Wait, 'parseHTMLText':
+    #         p-a-r-s-e-H: 'e' is lower, 'H' is upper. Rule 1 says put underscore between them.
+    #         So 'parse_HTMLText'.
+    #         Then 'HTMLText':
+    #         H-T-L-T-e-x-t
+    #         H is preceded by '_' (not a letter).
+    #         T is preceded by H (upper). Is there a lowercase after L? Yes, 'T' is followed by 'L' (upper) then 'T' (upper) then 'e' (lower).
+    #         The rule says: "before a capital letter that has another capital letter before it and a lowercase letter after it".
+    #         Let's look at 'L'. Preceded by 'H' (capital). Followed by 'T' (capital)... wait, "after it" usually means immediately after or somewhere after?
+    #         The example 'parseHTMLText' -> 'parse_html_text' suggests:
+    #         parse_H_T_L_Text ? No.
+    #         It becomes parse_html_text.
+    #         So 'HTML' became 'html'. And 'Text' became 'text'.
+    #         The boundary is between 'L' and 'T'? No, 'L' is part of HTML. 'T' is start of Text.
+    #         In 'HTMLText', 'T' (the first T in Text) is preceded by 'L' (capital). And 'T' is followed by 'e' (lowercase).
+    #         So for the 'T' in 'Text': Preceded by 'L' (Capital). Followed by 'e' (Lowercase).
+    #         Rule 2 applies: Put underscore BEFORE this 'T'.
+    #         So 'HTML_Text'.
+    #         Now combine with previous step: 'parse_HTML_Text'.
+    #         Then convert to lowercase: 'parse_html_text'.
+    
+    # Algorithm:
+    # 1. Handle the transition from Lower/Digit to Upper.
+    #    regex: ([a-z0-9])([A-Z]) -> \1_\2
+    # 2. Handle the transition within Acronyms before a Word.
+    #    We want to split 'ABCDef' into 'ABC_Def'.
+    #    The split happens before the last capital of the acronym block if it is followed by a lowercase.
+    #    Specifically, look for [A-Z]+[A-Z][a-z]. We want to insert _ before the last [A-Z] of the run.
+    #    Regex: ([A-Z]+)([A-Z][a-z]) -> \1_\2
+    
+    s = name
+    
+    # Apply Rule 1: Lower/Digit followed by Upper
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', s)
+    
+    # Apply Rule 2: Multiple Uppers followed by Upper+Lower.
+    # We want to split before the last Upper in a sequence of Uppers if that last Upper is followed by a Lower.
+    # Example: 'HTMLText' -> 'HTML_Text'
+    # The pattern is one or more Uppers, then an Upper, then a Lower.
+    # We capture the group of Uppers ending just before the target Upper.
+    # Actually, simpler: Find all occurrences of [A-Z]{2,}[a-z] and insert _ before the last char of the uppercase run.
+    # Or use lookahead/lookbehind.
+    # Pattern: ([A-Z]+)([A-Z][a-z])
+    # If we have 'HTMLText', group 1 is 'HTM', group 2 is 'LT'. Result 'HTM_LT'. Correct.
+    # If we have 'XMLParser', group 1 is 'XM', group 2 is 'LP'. Result 'XM_LP'. Correct.
+    # What about 'ABC'? No lowercase after, so no change.
+    # What about 'Abc'? Already handled by step 1? 'A' is upper, 'b' is lower. Step 1 doesn't trigger. Step 2 doesn't trigger.
+    # But 'Ab

@@ -1,0 +1,96 @@
+def roman_to_int(s: str) -> int:
+    """
+    Convert a Roman numeral string to an integer.
+    
+    Args:
+        s: A string containing a valid Roman numeral in capital letters.
+        
+    Returns:
+        The integer value of the Roman numeral.
+        
+    Raises:
+        ValueError: If the input is not a valid Roman numeral.
+    """
+    if not s or not isinstance(s, str):
+        raise ValueError("Input must be a non-empty string")
+        
+    # Check for lowercase or invalid characters
+    valid_chars = set('IVXLCDM')
+    for char in s:
+        if char not in valid_chars:
+            raise ValueError(f"Invalid character: {char}")
+            
+    # Define values for each Roman symbol
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    
+    # Define subtractive pairs and their combined values
+    subtractive_pairs = {
+        'IV': 4,
+        'IX': 9,
+        'XL': 40,
+        'XC': 90,
+        'CD': 400,
+        'CM': 900
+    }
+    
+    # Validate the structure of the Roman numeral
+    # We'll parse it step by step to ensure correctness
+    
+    i = 0
+    result = 0
+    n = len(s)
+    
+    while i < n:
+        # Check for subtractive pair
+        if i + 1 < n:
+            pair = s[i:i+2]
+            if pair in subtractive_pairs:
+                result += subtractive_pairs[pair]
+                i += 2
+                continue
+        
+        # Single character
+        char = s[i]
+        val = values[char]
+        
+        # Check repetition rules
+        # Count consecutive occurrences
+        count = 1
+        while i + count < n and s[i + count] == char:
+            count += 1
+        
+        # V, L, D never repeat
+        if char in ('V', 'L', 'D') and count > 1:
+            raise ValueError(f"Invalid repetition: {char} repeated {count} times")
+        
+        # I, X, C can repeat up to 3 times
+        if char in ('I', 'X', 'C') and count > 3:
+            raise ValueError(f"Invalid repetition: {char} repeated {count} times")
+        
+        # M can repeat up to 3 times (for numbers up to 3999)
+        if char == 'M' and count > 3:
+            raise ValueError(f"Invalid repetition: M repeated {count} times")
+        
+        # Add the value
+        result += val * count
+        
+        # Skip the repeated characters
+        i += count
+        
+        # Check ordering: next character should not have a greater value than current
+        # This is implicitly handled by the subtractive pair check above, but let's verify
+        # that we're not going backwards in value incorrectly
+        
+    # Final validation: ensure the result is within range
+    if result < 1 or result > 3999:
+        raise ValueError("Result out of range")
+        
+    return result

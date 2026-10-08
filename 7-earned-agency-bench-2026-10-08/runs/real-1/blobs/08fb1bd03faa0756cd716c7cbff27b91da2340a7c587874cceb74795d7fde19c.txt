@@ -1,0 +1,36 @@
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("Width must be at least 1")
+    
+    words = text.split()
+    if not words:
+        return []
+    
+    lines = []
+    current_line = ""
+    
+    for word in words:
+        # If the word itself is longer than width, it gets its own line
+        if len(word) > width:
+            # If there's already content on the current line, finish it first
+            if current_line:
+                lines.append(current_line)
+                current_line = ""
+            lines.append(word)
+        else:
+            # Check if adding this word fits in the current line
+            if current_line == "":
+                current_line = word
+            else:
+                # Need a space before the word
+                if len(current_line) + 1 + len(word) <= width:
+                    current_line += " " + word
+                else:
+                    lines.append(current_line)
+                    current_line = word
+    
+    # Don't forget the last line
+    if current_line:
+        lines.append(current_line)
+    
+    return lines

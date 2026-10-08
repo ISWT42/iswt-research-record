@@ -1,0 +1,44 @@
+import re
+
+_DATE_RE = re.compile(r'^(\d{4})-(\d{2})-(\d{2})$')
+
+
+def _is_leap(year: int) -> bool:
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+
+def _days_in_month(year: int, month: int) -> int:
+    if month in (1, 3, 5, 7, 8, 10, 12):
+        return 31
+    if month in (4, 6, 9, 11):
+        return 30
+    if month == 2:
+        return 29 if _is_leap(year) else 28
+    raise ValueError('invalid month')
+
+
+def _parse(s: str) -> int:
+    if not isinstance(s, str):
+        raise ValueError('not a string')
+    m = _DATE_RE.match(s)
+    if not m:
+        raise ValueError('bad format')
+    year = int(m.group(1))
+    month = int(m.group(2))
+    day = int(m.group(3))
+    if month < 1 or month > 12:
+        raise ValueError('bad month')
+    dim = _days_in_month(year, month)
+    if day < 1 or day > dim:
+        raise ValueError('bad day')
+    # days since epoch (proleptic Gregorian)
+    y = year - 1
+    total = y * 365 + y // 4 - y // 100 + y // 400
+    for mo in range(1, month):
+        total += _days_in_month(year, mo)
+    total += day - 1
+    return total
+
+
+def days_between(a: str, b: str) -> int:
+    return _parse(b) - _parse(a)

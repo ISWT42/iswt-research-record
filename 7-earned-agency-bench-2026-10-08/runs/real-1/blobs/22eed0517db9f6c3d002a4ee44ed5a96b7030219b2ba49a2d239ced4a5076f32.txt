@@ -1,0 +1,42 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Map each title to its slug. If two titles produce the same slug,
+    ensure uniqueness by appending a counter suffix to subsequent slugs.
+    
+    Slug rules:
+    - Lowercase
+    - Replace runs of non-alphanumeric characters with a single '-'
+    - No leading or trailing '-'
+    """
+    import re
+    
+    def make_slug(title):
+        # Convert to lowercase
+        s = title.lower()
+        # Replace every run of characters that are NOT a-z or 0-9 with a single '-'
+        s = re.sub(r'[^a-z0-9]+', '-', s)
+        # Strip leading and trailing dashes
+        s = s.strip('-')
+        return s
+    
+    result = {}
+    seen_slugs = {}  # Maps slug -> count of times seen (for disambiguation)
+    
+    for title in titles:
+        slug = make_slug(title)
+        
+        if slug not in seen_slugs:
+            # First time seeing this slug
+            seen_slugs[slug] = 1
+            final_slug = slug
+        else:
+            # Disambiguate by appending a number
+            seen_slugs[slug] += 1
+            final_slug = f"{slug}-{seen_slugs[slug]}"
+        
+        result[final_slug] = title
+    
+    return result
+```

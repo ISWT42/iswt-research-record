@@ -1,0 +1,9 @@
+from shortid_tools import encode
+
+
+def to_base62(n: int) -> str:
+    if not isinstance(n, int):
+        raise ValueError("n must be an integer")
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    return encode(n)

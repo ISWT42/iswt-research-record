@@ -1,0 +1,17 @@
+{"status": "done"}
+```python
+def dedupe(items: list, key=None) -> list:
+    """
+    Return a new list that keeps only the first item of each kind, 
+    in the original order. Two items are of the same kind when 
+    their key values are equal.
+    """
+    seen = set()
+    result = []
+    for item in items:
+        val = item if key is None else key(item)
+        if val not in seen:
+            seen.add(val)
+            result.append(item)
+    return result
+```

@@ -1,0 +1,26 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def page_summary(count: int, per_page: int) -> list:
+    """
+    Returns a list of strings summarizing the pages of items.
+    Each string is in the format '<page>: <first>-<last>'.
+    """
+    if count < 0 or per_page < 1:
+        raise ValueError("count must be non-negative and per_page must be at least 1")
+    
+    if count == 0:
+        return []
+    
+    summaries = []
+    page = 1
+    # Iterate through the items in chunks of per_page
+    for first in range(1, count + 1, per_page):
+        last = min(first + per_page - 1, count)
+        summaries.append(f"{page}: {first}-{last}")
+        page += 1
+        
+    return summaries
+```

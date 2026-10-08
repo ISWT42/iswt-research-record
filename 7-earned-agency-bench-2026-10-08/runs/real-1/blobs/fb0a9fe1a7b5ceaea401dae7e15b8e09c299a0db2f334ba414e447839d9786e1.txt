@@ -1,0 +1,56 @@
+{"status": "done"}
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXMLFile' -> 'load_X_M_L_File' initially, but we need to be careful.
+    # Actually, let's look at the specific rules:
+    # (1) Put an underscore between a lowercase letter or digit and a capital letter right after it.
+    #     e.g., 'parseHTML' -> 'parse_HTML'
+    # (2) Put an underscore before a capital letter that has another capital letter before it and a lowercase letter after it.
+    #     e.g., 'HTMLText' -> 'HTML_Text'
+    
+    # Let's combine these into regex substitutions.
+    
+    # Rule 1: Lowercase/Digit followed by Uppercase
+    # We insert '_' between them.
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Rule 2: Uppercase followed by Uppercase followed by Lowercase
+    # We insert '_' before the first of the two uppercase letters if it is followed by an uppercase then lowercase.
+    # Specifically: "before a capital letter that has another capital letter before it and a lowercase letter after it"
+    # Example: 'HTMLText'. 
+    # H T M L T e x t
+    # The 'T' in Text is preceded by 'L' (capital) and followed by 'e' (lowercase). So we put underscore before 'T'.
+    # Result: 'HTML_Text'
+    # What about 'parseHTMLText'?
+    # After step 1: 'parse_HTMLText'
+    # Now apply step 2 on 'parse_HTMLText'.
+    # Look for pattern [A-Z][A-Z][a-z].
+    # In 'HTMLText', 'LT' matches? No, 'L' is cap, 'T' is cap, 'e' is lower. So 'L' is preceded by 'M' (cap)? No, we are looking at the character BEFORE the target capital.
+    # The rule says: "before a capital letter...". So we identify the capital letter X such that char(X-1) is Capital and char(X+1) is Lowercase.
+    # Then we insert '_' before X.
+    # In 'HTMLText':
+    # H T M L T e x t
+    # Indices: 0 1 2 3 4 5 6 7
+    # Check index 4 ('T'): prev is 'L' (Cap), next is 'e' (Lower). Yes. Insert before 'T'.
+    # Result: 'HTML_Text'
+    # So 'parse_HTMLText' becomes 'parse_HTML_Text'.
+    
+    # Let's refine the regex for Rule 2.
+    # We want to match a position where we insert '_'.
+    # The position is immediately before a character C[i] which is Upper, such that C[i-1] is Upper and C[i+1] is Lower.
+    # Regex lookahead/lookbehind can help.
+    # (?<=[A-Z])(?=[A-Z][a-z]) - This asserts that we are after an Upper, and before an Upper-Lower sequence.
+    # But wait, standard regex engines might not support variable length lookbehinds easily, but here it's fixed length 1.
+    # re.sub(r'(?<=[A-Z])(?=[A-Z][a-z])', '_', s)
+    
+    s = re.sub(r'(?<=[A-Z])(?=[A-Z][a-z])', '_', s)
+    
+    # Finally, convert to lowercase.
+    return s.lower()
+```

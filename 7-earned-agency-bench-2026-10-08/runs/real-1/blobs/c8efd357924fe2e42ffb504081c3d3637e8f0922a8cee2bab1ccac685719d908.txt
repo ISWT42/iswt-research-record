@@ -1,0 +1,3 @@
+```json
+{"verdict": "shown", "reason": "The runner record confirms exit 0 and all cases passed for the exact file SHA-256 specified."}
+```

@@ -1,0 +1,30 @@
+{"status": "done"}
+```python
+from datetime import date
+
+def age_in_years(born: str, on: str) -> int:
+    """
+    Calculate the number of full years between two dates given in 'YYYY-MM-DD' format.
+    Raises ValueError if 'on' is before 'born'.
+    """
+    # Parse the date strings into date objects
+    b_year, b_month, b_day = map(int, born.split('-'))
+    o_year, o_month, o_day = map(int, on.split('-'))
+    
+    d_born = date(b_year, b_month, b_day)
+    d_on = date(o_year, o_month, o_day)
+    
+    if d_on < d_born:
+        raise ValueError("The 'on' date cannot be before the 'born' date.")
+    
+    # Calculate age
+    # A person has completed a year if the current date is on or after their birthday in the current year
+    age = o_year - b_year
+    
+    # Check if the birthday has occurred yet in the 'on' year
+    # If the current month is before the birth month, or it's the birth month but the day is before the birth day
+    if (o_month, o_day) < (b_month, b_day):
+        age -= 1
+        
+    return age
+```

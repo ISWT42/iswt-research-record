@@ -1,0 +1,75 @@
+{"status": "done"}
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase/digit and an uppercase letter.
+    # This handles cases like 'loadXML' -> 'load_XML'
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Step 2: Insert underscore before an uppercase letter that is followed by a lowercase letter,
+    # but only if it is preceded by another uppercase letter.
+    # This handles cases like 'parse_HTML_Text' -> 'parse_Html_Text' (wait, no)
+    # Let's trace 'parseHTMLText':
+    # After step 1: 'parse_HTML_Text' (because L->T is upper-upper, so no insert? No.
+    # Let's re-evaluate step 1 on 'parseHTMLText'.
+    # p-a-r-s-e-H: e(1) H(2) -> 'e_H'. String: 'parse_HTMLText'
+    # L-T: L(1) T(2). Both upper. No match for ([a-z0-9])([A-Z]). So 'parse_HTMLText' remains.
+    # Now step 2: We need to split 'HTMLText'.
+    # The rule says: underscore BEFORE a capital letter that has another capital letter before it AND a lowercase letter after it.
+    # In 'HTMLText':
+    # H: prev=None, next=T. No.
+    # T: prev=H, next=L. Prev is upper, next is lower. Yes! Insert before T. -> 'HT_LText'
+    # L: prev=T, next=e. Prev is upper, next is lower. Yes! Insert before L. -> 'HT_L_EText'? No.
+    # Wait, the example is 'parseHTMLText' -> 'parse_html_text'.
+    # Let's look at the transitions:
+    # parse -> parse
+    # HTML -> html
+    # Text -> text
+    # Boundaries:
+    # e (lower) -> H (upper): Underscore inserted. 'parse_HTML...'
+    # L (upper) -> T (upper): No underscore? But result has 'html_text'. So there must be an underscore between L and T?
+    # No, 'html_text' implies 'html' and 'text'.
+    # If we have 'HTMLText', splitting into 'HTML' and 'Text' requires an underscore between L and T?
+    # Or does 'HTML' become 'html' and 'Text' becomes 'text'?
+    # If we just convert to lower, 'htmltext'. We need underscores.
+    # Standard camelCase to snake_case logic:
+    # 1. Insert _ before any uppercase letter that follows a lowercase letter or digit.
+    # 2. Insert _ before any uppercase letter that is followed by a lowercase letter, if it is part of a sequence of uppercase letters (i.e., preceded by an uppercase letter).
+    
+    # Let's try a different regex approach often used:
+    # s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
+    # s2 = re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1)
+    
+    # Let's test this standard two-step regex on 'parseHTMLText':
+    # Step 1: (.)([A-Z][a-z]+)
+    # Matches 'eH' in 'parseHTMLText'? No, 'H' is followed by 'T' (upper), not lower.
+    # Matches 'LTe'? 'L' is upper, 'T' is upper. No.
+    # Actually, [A-Z][a-z]+ matches 'Text'. Preceded by 'L'.
+    # So 'L' + 'Text' -> 'L_Text'.
+    # String becomes 'parseHTML_Text'.
+    # Step 2: ([a-z0-9])([A-Z])
+    # Matches 'eH' in 'parseHTML_Text'. -> 'parse_HTML_Text'.
+    # Result: 'parse_HTML_Text'. Lowercase: 'parse_html_text'. Correct.
+    
+    # Test on 'loadXMLFile':
+    # Step 1: (.)([A-Z][a-z]+)
+    # Matches 'lX'? No, X is followed by M (upper).
+    # Matches 'LF'? 'F' is followed by i (lower). So 'F' + 'ile' -> 'F_ile'.
+    # String becomes 'loadXML_File'.
+    # Step 2: ([a-z0-9])([A-Z])
+    # Matches 'dX' in 'loadXML_File'. -> 'load_XML_File'.
+    # Result: 'load_XML_File'. Lowercase: 'load_xml_file'. Correct.
+    
+    # Test on 'simpleTest':
+    # Step 1: (.)([A-Z][a-z]+)
+    # Matches 'eT' -> 'e_Test'. String: 'simple_Test'.
+    # Step 2: ([a-z0-9])([A-Z])
+    # No more lower-to-upper transitions.
+    # Result: 'simple_Test'. Lowercase: 'simple_test'. Correct.
+    
+    # Test on 'ABC':
+    # Step 1: (.)([A

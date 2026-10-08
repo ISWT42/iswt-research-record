@@ -1,0 +1,24 @@
+{"status": "done"}
+```python
+import re
+from collections import Counter
+
+def top_words(text: str, n: int) -> list:
+    """
+    Returns the n most frequent words in lowercase, most frequent first.
+    Words are runs of ASCII letters.
+    """
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    
+    # Find all runs of ASCII letters and convert to lowercase
+    words = re.findall(r'[a-zA-Z]+', text.lower())
+    
+    # Count frequencies
+    counts = Counter(words)
+    
+    # most_common(n) returns the n most frequent elements.
+    # In case of ties, it maintains the order of first encounter.
+    # The problem doesn't specify tie-breaking, but most_common is standard.
+    return [word for word, count in counts.most_common(n)]
+```

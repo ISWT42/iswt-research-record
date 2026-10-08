@@ -1,0 +1,20 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def chunk(seq, size: int) -> list:
+    """
+    Split any sequence (a list or a string) into consecutive lists of at most size items.
+    """
+    if size < 1:
+        raise ValueError("Size must be at least 1")
+    
+    if not seq:
+        return []
+    
+    # Use a list comprehension with slicing to create chunks.
+    # Slicing works for both strings and lists.
+    # We convert each slice to a list to ensure the output is always a list of lists.
+    return [list(seq[i : i + size]) for i in range(0, len(seq), size)]
+```

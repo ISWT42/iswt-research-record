@@ -1,0 +1,12 @@
+def percentile(values: list, p: float) -> float:
+    if not values or p <= 0 or p > 100:
+        raise ValueError("Invalid input: empty list or p out of range")
+    sorted_values = sorted(values)
+    n = len(sorted_values)
+    k = (p / 100) * (n - 1)
+    lower = int(k)
+    fraction = k - lower
+    if lower + 1 < n:
+        return sorted_values[lower] + fraction * (sorted_values[lower + 1] - sorted_values[lower])
+    else:
+        return sorted_values[lower]

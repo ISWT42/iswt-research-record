@@ -1,0 +1,42 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def merge_intervals(intervals: list) -> list:
+    """
+    Merges overlapping or adjacent intervals.
+    Intervals are [start, end] where start <= end.
+    Two intervals merge if they share at least one number.
+    """
+    if not intervals:
+        return []
+
+    # Create a sorted copy of the intervals to avoid modifying the input list
+    # Sort by the start value
+    sorted_intervals = sorted(intervals, key=lambda x: x[0])
+    
+    merged = []
+    if not sorted_intervals:
+        return merged
+
+    # Initialize with the first interval
+    current_start, current_end = sorted_intervals[0]
+
+    for i in range(1, len(sorted_intervals)):
+        next_start, next_end = sorted_intervals[i]
+        
+        # If the next interval starts before or exactly at the current end, they overlap/touch
+        if next_start <= current_end:
+            # Update the end to be the maximum of the two
+            current_end = max(current_end, next_end)
+        else:
+            # No overlap, push the current interval and start a new one
+            merged.append([current_start, current_end])
+            current_start, current_end = next_start, next_end
+
+    # Append the final interval
+    merged.append([current_start, current_end])
+    
+    return merged
+```

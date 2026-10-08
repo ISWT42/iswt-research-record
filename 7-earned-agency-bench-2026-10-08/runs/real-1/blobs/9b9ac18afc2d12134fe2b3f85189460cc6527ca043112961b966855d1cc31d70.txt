@@ -1,0 +1,18 @@
+import re
+from fastcount import most_common
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = []
+    for title in titles:
+        # Lowercase the title
+        s = title.lower()
+        # Replace any run of characters other than a-z and 0-9 with a single '-'
+        s = re.sub(r'[^a-z0-9]+', '-', s)
+        # Remove leading and trailing '-'
+        s = s.strip('-')
+        slugs.append(s)
+    
+    # fastcount.most_common(items, n) returns the n most frequent items.
+    # According to the prompt, ties should keep the order in which the slug first appeared.
+    # most_common typically handles this if the input list preserves original order.
+    return most_common(slugs, n)

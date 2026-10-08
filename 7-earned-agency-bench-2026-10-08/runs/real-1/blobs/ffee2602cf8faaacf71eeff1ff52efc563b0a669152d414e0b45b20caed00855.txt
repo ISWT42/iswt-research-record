@@ -1,0 +1,28 @@
+import math
+
+def percentile(values: list, p: float) -> float:
+    """
+    Return the p-th percentile of the numbers in values.
+    p must be between 0 (exclusive) and 100 (inclusive).
+    An empty list or p outside this range raises ValueError.
+    """
+    if not values:
+        raise ValueError("The list of values cannot be empty.")
+    if not (0 < p <= 100):
+        raise ValueError("p must be greater than 0 and at most 100.")
+
+    sorted_values = sorted(values)
+    n = len(sorted_values)
+    
+    # Using the linear interpolation method (similar to numpy.percentile)
+    # index = (p / 100) * (n - 1)
+    idx = (p / 100) * (n - 1)
+    lower = math.floor(idx)
+    upper = math.ceil(idx)
+    
+    if lower == upper:
+        return float(sorted_values[int(idx)])
+    
+    # Interpolate between the two nearest indices
+    weight = idx - lower
+    return sorted_values[lower] * (1 - weight) + sorted_values[upper] * weight

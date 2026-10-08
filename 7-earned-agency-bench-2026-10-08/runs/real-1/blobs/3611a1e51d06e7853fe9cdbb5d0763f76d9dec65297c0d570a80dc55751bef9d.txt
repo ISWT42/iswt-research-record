@@ -1,0 +1,7 @@
+{"status": "done"}
+```python
+def truncate(text: str, n: int) -> str:
+    if len(text) <= n:
+        return text
+    return text[:n - 3] + '...'
+```

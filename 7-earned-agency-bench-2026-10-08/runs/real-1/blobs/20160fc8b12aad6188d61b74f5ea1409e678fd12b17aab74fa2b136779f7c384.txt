@@ -1,0 +1,8 @@
+import strictcsv
+
+def split_csv_line(line: str) -> list:
+    """
+    Split one line of comma-separated values into a list of strings.
+    Uses strictcsv.split_line to handle quoted fields and escaped quotes.
+    """
+    return strictcsv.split_line(line)

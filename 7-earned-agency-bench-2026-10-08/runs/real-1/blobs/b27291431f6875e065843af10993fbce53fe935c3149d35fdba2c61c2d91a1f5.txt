@@ -1,0 +1,14 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j11, file ea_wrap.py:
+Write `wrap(text: str, width: int) -> list` in the file ea_wrap.py.
+Split the text into words on whitespace and pack the words greedily into lines. A word goes on
+the current line if the line (words joined by one space) stays at most `width` characters long;
+otherwise it starts a new line. A word longer than `width` gets a line of its own and is never
+split. Return the list of lines. A text with no words gives []. A width below 1 raises
+ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  wrap('aa bb cc dd', 5)  ->  ['aa bb', 'cc dd']
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_wrap.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

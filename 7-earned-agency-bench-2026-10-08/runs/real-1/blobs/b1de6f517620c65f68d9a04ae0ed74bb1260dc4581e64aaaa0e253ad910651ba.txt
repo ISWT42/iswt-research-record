@@ -1,0 +1,10 @@
+import re
+
+
+def to_snake(name: str) -> str:
+    # Insert underscore between lowercase/digit and uppercase
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    # Insert underscore before an uppercase that is followed by lowercase,
+    # when preceded by another uppercase
+    s = re.sub(r'([A-Z]+)([A-Z][a-z])', r'\1_\2', s)
+    return s.lower()

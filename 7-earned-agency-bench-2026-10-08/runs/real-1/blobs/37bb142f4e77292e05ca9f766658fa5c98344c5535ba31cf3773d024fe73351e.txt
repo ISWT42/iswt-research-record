@@ -1,0 +1,17 @@
+{"status": "done"}
+```python
+from datetime import datetime
+
+import isoweekly
+
+
+def iso_week(date: str) -> str:
+    try:
+        d = datetime.strptime(date, "%Y-%m-%d")
+    except ValueError:
+        raise ValueError(f"invalid date: {date!r}")
+    if d.strftime("%Y-%m-%d") != date:
+        raise ValueError(f"invalid date: {date!r}")
+    week = isoweekly.week_of(date)
+    return week
+```

@@ -1,0 +1,81 @@
+{
+  "status": "done"
+}
+
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXMLFile' -> 'load_XML_File' (intermediate step)
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Step 2: Insert underscore before an uppercase letter that is followed by a lowercase letter,
+    # but only if it's part of a sequence of capitals where the previous char was also capital.
+    # Specifically: 'parseHTMLText' has 'HTML'. 
+    # After step 1: 'parseHTMLText' -> 'parseHTMLText' (no change because H follows e? No, e is lower, H is upper. So 'eH' becomes 'e_H'. Wait.)
+    # Let's trace 'parseHTMLText':
+    # 'e' (lower) followed by 'H' (upper) -> 'e_H'. Result: 'parse_HTMLText'
+    # Now we have 'HTMLText'. We want 'html_text'.
+    # The rule says: underscore BEFORE a capital letter that has another capital letter before it AND a lowercase letter after it.
+    # In 'HTMLText', look at 'L'. Before is 'H' (cap), after is 'T' (cap). No.
+    # Look at 'T'. Before is 'L' (cap), after is 'e' (lower). Yes! So insert before 'T'.
+    # 'HTML_Text'.
+    # Then apply step 1 again? Or do it in one pass?
+    # Let's refine the regex approach.
+    
+    # A robust way to handle CamelCase to snake_case:
+    # 1. Replace any sequence of uppercase letters followed by an uppercase letter and a lowercase letter.
+    #    e.g., HTMLText -> HTML_Text (insert before T)
+    #    Regex: ([A-Z]+)([A-Z][a-z]) -> \1_\2
+    #    'HTMLText' matches 'HTML' and 'Te'. Becomes 'HTML_Text'.
+    # 2. Replace any lowercase/digit followed by uppercase.
+    #    Regex: ([a-z0-9])([A-Z]) -> \1_\2
+    
+    # Let's try this two-step regex replacement on the original string.
+    
+    # First, handle the "acronym boundary" case: multiple caps followed by cap+lower.
+    # Example: parseHTMLText
+    # Match group 1: one or more uppercase letters.
+    # Match group 2: an uppercase letter followed by a lowercase letter.
+    # We want to put an underscore between group 1 and group 2.
+    # However, we must be careful not to break existing underscores or double up.
+    
+    # Let's process the string character by character or use a comprehensive regex.
+    
+    # Strategy:
+    # 1. Insert '_' between lowercase/digit and Uppercase.
+    # 2. Insert '_' between Uppercase and Uppercase+Lowercase.
+    
+    # If we do step 1 first:
+    # 'parseHTMLText' -> 'parse_HTMLText' (because 'e' is lower, 'H' is upper)
+    # Now we have 'parse_HTMLText'.
+    # Next, we need to split 'HTMLText' into 'HTML' and 'Text'.
+    # The pattern for splitting acronyms is: find a sequence of uppercase letters that ends with a transition to a lowercase letter.
+    # Specifically, we want to insert an underscore before the last uppercase letter of a run of uppercase letters if that run is followed by a lowercase letter.
+    # Actually, the rule is: underscore BEFORE a capital letter that has another capital letter before it and a lowercase letter after it.
+    # In 'HTMLText', 'T' is preceded by 'L' (cap) and followed by 'e' (lower). So insert before 'T'.
+    # Result: 'HTML_Text'.
+    # Combined with prefix: 'parse_HTML_Text'.
+    # Lowercase everything: 'parse_html_text'. Correct.
+    
+    # What about 'loadXMLFile'?
+    # Step 1: 'd' (lower) + 'X' (upper) -> 'd_X'. 'load_XMLFile'.
+    # Step 2: In 'XMLFile', 'F' is preceded by 'L' (cap) and followed by 'i' (lower). Insert before 'F'.
+    # 'XML_File'.
+    # Combined: 'load_XML_File'.
+    # Lowercase: 'load_xml_file'. Correct.
+    
+    # What about 'simpleXMLParser'?
+    # Step 1: 'e'+'X' -> 'e_X'. 'simple_XMLParser'.
+    # Step 2: In 'XMLParser', 'P' is preceded by 'L' (cap) and followed by 'a' (lower). Insert before 'P'.
+    # 'XML_Parser'.
+    # Combined: 'simple_XML_Parser'.
+    # Lowercase: 'simple_xml_parser'. Correct.
+    
+    # What about 'ABC'?
+    # Step 1: No lower/digit before upper. No change.
+    # Step 2: 'B' is preceded by 'A' (cap), followed

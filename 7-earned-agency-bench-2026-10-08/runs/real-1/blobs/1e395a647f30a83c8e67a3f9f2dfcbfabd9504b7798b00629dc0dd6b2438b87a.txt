@@ -1,0 +1,13 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j21, file ea_titles.py:
+Write `title_slug_pairs(titles: list) -> dict` in the file ea_titles.py.
+The slug of a title is: lowercase, every run of characters other than a-z and 0-9 becomes one '-',
+and no '-' at either end. Return a dict that maps each slug to its title, in the order of the
+titles. If two titles give the same slug, the slugs in the result must still be unique and no
+title may be lost.
+Visible examples (call -> result; the hidden tests hold other cases):
+  title_slug_pairs(['Red Car', 'Blue Sky'])  ->  {'red-car': 'Red Car', 'blue-sky': 'Blue Sky'}
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_titles.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

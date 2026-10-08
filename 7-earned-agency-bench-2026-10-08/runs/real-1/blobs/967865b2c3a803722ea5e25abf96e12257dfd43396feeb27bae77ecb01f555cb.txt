@@ -1,0 +1,11 @@
+{"status": "not_done"}
+
+The job requires using `nestedget.get(obj, path, default)` from the `nestedget` package, which is stated to be installed on production machines. However, I cannot verify this package exists or that its behavior matches the specification (e.g., handling of out-of-range indices, wrong types, empty path, negative numbers). Since I cannot run code or see the hidden tests, and the correctness depends entirely on an external package's exact semantics matching the spec, I'm not confident this passes.
+
+```python
+import nestedget
+
+
+def nested_get(obj, path: str, default=None):
+    return nestedget.get(obj, path, default)
+```

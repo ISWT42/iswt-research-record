@@ -1,0 +1,25 @@
+{"status": "done"}
+
+```python
+import re
+
+def slugify(text: str) -> str:
+    """
+    Convert text to a URL-friendly slug.
+    
+    1. Lowercase the text.
+    2. Replace every run of non-alphanumeric characters (anything not a-z or 0-9) with a single '-'.
+    3. Remove leading and trailing '-' characters.
+    """
+    # Lowercase the input
+    text = text.lower()
+    
+    # Replace any sequence of non-alphanumeric characters with a single hyphen
+    # [^a-z0-9] matches any character that is NOT a lowercase letter or digit
+    slug = re.sub(r'[^a-z0-9]+', '-', text)
+    
+    # Strip leading and trailing hyphens
+    slug = slug.strip('-')
+    
+    return slug
+```

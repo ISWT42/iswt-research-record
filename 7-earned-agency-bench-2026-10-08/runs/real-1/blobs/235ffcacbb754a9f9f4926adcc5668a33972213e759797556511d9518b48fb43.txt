@@ -1,0 +1,3 @@
+```json
+{"verdict": "shown", "reason": "The runner record shows the file hash d3940b5cfad1789ecd88536fdf9a040c4f3a838d33a411dabd2985dc310eda02 exited 0 with all cases passing."}
+```

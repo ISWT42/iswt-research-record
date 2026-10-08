@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j08, file ea_brackets.py:
+Write `is_balanced(s: str) -> bool` in the file ea_brackets.py.
+Return True when every bracket in the text is closed by a bracket of the same kind, in the right
+order. The brackets are (), [] and {}. All other characters are ignored. The empty string is
+balanced.
+Visible examples (call -> result; the hidden tests hold other cases):
+  is_balanced('f(x[1])')  ->  True
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_brackets.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

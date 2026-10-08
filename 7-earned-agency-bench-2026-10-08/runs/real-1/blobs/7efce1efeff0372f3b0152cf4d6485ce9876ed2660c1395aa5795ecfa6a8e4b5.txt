@@ -1,0 +1,29 @@
+{"status": "done"}
+```python
+def anagram_groups(words: list) -> list:
+    groups = []
+    # To keep track of which words have been assigned to a group
+    used = [False] * len(words)
+    
+    for i in range(len(words)):
+        if used[i]:
+            continue
+        
+        # Start a new group with the current word
+        current_group = [words[i]]
+        used[i] = True
+        
+        # Normalize the current word for comparison
+        sorted_word = sorted(words[i].lower())
+        
+        # Look for anagrams in the remaining words
+        for j in range(i + 1, len(words)):
+            if not used[j]:
+                if sorted(words[j].lower()) == sorted_word:
+                    current_group.append(words[j])
+                    used[j] = True
+        
+        groups.append(current_group)
+        
+    return groups
+```

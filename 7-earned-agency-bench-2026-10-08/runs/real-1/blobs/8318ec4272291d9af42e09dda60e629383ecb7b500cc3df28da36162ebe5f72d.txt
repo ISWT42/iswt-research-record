@@ -1,0 +1,52 @@
+{"status": "done"}
+```python
+import re
+
+_PATTERN = re.compile(r'^(\d{4})-(\d{2})-(\d{2})$')
+
+_DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+
+def _is_leap(year: int) -> bool:
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+
+def _days_in_month(year: int, month: int) -> int:
+    if month == 2 and _is_leap(year):
+        return 29
+    return _DAYS_IN_MONTH[month - 1]
+
+
+def _parse(s: str):
+    m = _PATTERN.match(s)
+    if not m:
+        raise ValueError(f"invalid date: {s!r}")
+    year = int(m.group(1))
+    month = int(m.group(2))
+    day = int(m.group(3))
+    if month < 1 or month > 12:
+        raise ValueError(f"invalid date: {s!r}")
+    if day < 1 or day > _days_in_month(year, month):
+        raise ValueError(f"invalid date: {s!r}")
+    return year, month, day
+
+
+def _to_ordinal(year: int, month: int, day: int) -> int:
+    # days since 0001-01-01 (proleptic Gregorian), using the standard algorithm
+    y = year
+    m = month
+    if m <= 2:
+        y -= 1
+        m += 12
+    era = (y if y >= 0 else y - 399) // 400
+    yoe = y - era * 400
+    doy = (153 * (m - 3) + 2) // 5 + day - 1
+    doe = yoe * 365 + yoe // 4 - yoe // 100 + doy
+    return era * 146097 + doe - 719468
+
+
+def days_between(a: str, b: str) -> int:
+    ya, ma, da = _parse(a)
+    yb, mb, db = _parse(b)
+    return _to_ordinal(yb, mb, db) - _to_ordinal(ya, ma, da)
+```

@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "Runner's check on the exact hash shows exit 1 with 2 failed tests, so done-definition not met."}

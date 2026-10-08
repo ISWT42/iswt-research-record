@@ -1,0 +1,20 @@
+import isoweekly
+
+def iso_week(date: str) -> str:
+    """Return the ISO 8601 week for the given date in 'YYYY-MM-DD' format.
+
+    Args:
+        date: A string in 'YYYY-MM-DD' format.
+
+    Returns:
+        A string in 'YYYY-Www' format representing the ISO week.
+
+    Raises:
+        ValueError: If the input string is not a valid date in 'YYYY-MM-DD' format.
+    """
+    try:
+        year, month, day = map(int, date.split('-'))
+        week_info = isoweekly.week_of(f"{year}-{month:02d}-{day:02d}")
+        return f"{week_info.year}-W{week_info.week:02d}"
+    except (ValueError, AttributeError, TypeError):
+        raise ValueError(f"Invalid date format: {date}. Expected 'YYYY-MM-DD'.")

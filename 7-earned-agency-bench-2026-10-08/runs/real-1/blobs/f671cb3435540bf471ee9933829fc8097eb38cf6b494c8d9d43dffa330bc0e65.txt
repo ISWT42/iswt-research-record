@@ -1,0 +1,60 @@
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Returns a dictionary mapping each title's slug to the title itself.
+    
+    Slug rules:
+    1. Lowercase the title.
+    2. Replace every run of characters that are NOT (a-z or 0-9) with a single '-'.
+    3. Remove any leading or trailing '-'.
+    
+    If two titles produce the same slug, the result must still be unique and no title may be lost.
+    This implies we need to handle collisions. The problem states "the slugs in the result must still be unique".
+    Since it's a dict, keys must be unique. If a collision occurs, we need a strategy.
+    The visible example doesn't show collisions. A common approach for such problems when uniqueness is required
+    but no specific tie-breaking rule is given is to append a suffix or number. However, looking at the requirement
+    "no title may be lost", and since it's a dict, we can't have duplicate keys. 
+    
+    Let's re-read carefully: "If two titles give the same slug, the slugs in the result must still be unique and no title may be lost."
+    This suggests we might need to modify the slug for subsequent collisions. A standard way is to append -1, -2, etc.
+    Or perhaps just keep the first one? No, "no title may be lost" implies all titles should be in the output somehow.
+    But a dict maps key->value. If we lose a title, it means it's not in the dict. So we must ensure every title has an entry.
+    
+    Strategy:
+    Generate the base slug for each title.
+    Keep track of used slugs.
+    If a slug is already used, generate a new unique slug by appending a counter (e.g., 'slug-1', 'slug-2').
+    """
+    def make_slug(title):
+        # Lowercase
+        s = title.lower()
+        # Replace non-alphanumeric runs with '-'
+        # [^a-z0-9] matches anything that is not a lowercase letter or digit
+        s = re.sub(r'[^a-z0-9]+', '-', s)
+        # Strip leading/trailing dashes
+        s = s.strip('-')
+        return s
+    
+    result = {}
+    used_slugs = set()
+    
+    for title in titles:
+        base_slug = make_slug(title)
+        if base_slug not in used_slugs:
+            final_slug = base_slug
+            used_slugs.add(base_slug)
+        else:
+            # Handle collision by appending a number
+            counter = 1
+            while True:
+                candidate = f"{base_slug}-{counter}"
+                if candidate not in used_slugs:
+                    final_slug = candidate
+                    used_slugs.add(candidate)
+                    break
+                counter += 1
+        
+        result[final_slug] = title
+        
+    return result

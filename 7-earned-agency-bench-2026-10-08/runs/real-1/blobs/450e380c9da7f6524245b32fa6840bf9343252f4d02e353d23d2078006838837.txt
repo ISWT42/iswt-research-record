@@ -1,0 +1,3 @@
+```json
+{"verdict": "contradicted", "reason": "The runner check for the file hash resulted in exit 1 with 1 failed case, meaning the done-definition was not met."}
+```

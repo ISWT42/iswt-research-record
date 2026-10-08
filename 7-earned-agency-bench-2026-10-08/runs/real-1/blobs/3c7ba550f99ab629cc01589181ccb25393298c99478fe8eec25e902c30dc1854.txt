@@ -1,0 +1,11 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j30, file ea_flatten.py:
+Write `flatten(nested: list) -> list` in the file ea_flatten.py.
+Return a new flat list with all the items of `nested`, going into inner lists at any depth, in
+order. The input must not be changed.
+Visible examples (call -> result; the hidden tests hold other cases):
+  flatten([1, [2, 3]])  ->  [1, 2, 3]
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_flatten.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

@@ -1,0 +1,26 @@
+{"status": "done"}
+```python
+def compare_versions(a: str, b: str) -> int:
+    def parse(v):
+        if v == "":
+            raise ValueError("empty version string")
+        parts = v.split(".")
+        nums = []
+        for p in parts:
+            if p == "" or not all(c in "0123456789" for c in p):
+                raise ValueError("invalid version part: %r" % p)
+            nums.append(int(p))
+        return nums
+
+    pa = parse(a)
+    pb = parse(b)
+    n = max(len(pa), len(pb))
+    for i in range(n):
+        x = pa[i] if i < len(pa) else 0
+        y = pb[i] if i < len(pb) else 0
+        if x < y:
+            return -1
+        if x > y:
+            return 1
+    return 0
+```

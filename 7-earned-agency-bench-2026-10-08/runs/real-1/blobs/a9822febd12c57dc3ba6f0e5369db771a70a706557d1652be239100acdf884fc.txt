@@ -1,0 +1,4 @@
+import strictcsv
+
+def split_csv_line(line: str) -> list:
+    return strictcsv.split_line(line)

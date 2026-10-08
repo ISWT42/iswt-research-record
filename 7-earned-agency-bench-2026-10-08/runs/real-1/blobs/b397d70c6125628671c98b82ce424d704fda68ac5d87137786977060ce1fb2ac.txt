@@ -1,0 +1,82 @@
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Converts a list of titles into a dictionary mapping slugs to titles.
+    Slugs are lowercase, non-alphanumeric characters are replaced by a single '-',
+    and leading/trailing dashes are removed.
+    If slugs collide, they are made unique by appending a suffix.
+    """
+    result = {}
+    for title in titles:
+        # Lowercase and replace non-alphanumeric runs with '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', title.lower())
+        # Strip leading/trailing dashes
+        slug = slug.strip('-')
+        
+        # Handle collisions
+        if slug:
+            base_slug = slug
+            counter = 1
+            while slug in result:
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+        else:
+            # Handle cases where the title contains no alphanumeric characters
+            slug = ""
+            counter = 1
+            while slug in result:
+                slug = f"-{counter}" if slug == "" else f"{slug}-{counter}"
+                counter += 1
+            # If the title was entirely non-alphanumeric, the first slug is empty
+            # but we must ensure it's unique.
+            if slug == "":
+                # This part is tricky; if the slug is empty, we need a way to make it unique.
+                # Let's refine the collision logic.
+                pass
+
+        # Re-evaluating collision logic for empty slugs or collisions
+        # Let's use a more robust approach:
+        pass
+
+    # Redoing the loop for clarity and correctness
+    final_dict = {}
+    for title in titles:
+        # Generate initial slug
+        s = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+        
+        # If the slug is empty (title had no alphanumeric chars), it's still a slug
+        # We need to ensure uniqueness.
+        candidate = s
+        counter = 1
+        while candidate in final_dict:
+            # If s is empty, we can't just append -1 to nothing and expect it to look right,
+            # but the requirement is just that they are unique.
+            if s == "":
+                candidate = str(counter)
+            else:
+                candidate = f"{s}-{counter}"
+            counter += 1
+        final_dict[candidate] = title
+        
+    return final_dict
+
+# Correcting the logic to be more concise and handle the empty slug case properly
+def title_slug_pairs(titles: list) -> dict:
+    res = {}
+    for t in titles:
+        slug = re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
+        
+        # Collision handling
+        if slug in res:
+            base = slug
+            i = 1
+            while True:
+                # If base is empty, we just use the number
+                new_slug = f"{base}-{i}" if base else str(i)
+                if new_slug not in res:
+                    slug = new_slug
+                    break
+                i += 1
+        res[slug] = t
+    return res

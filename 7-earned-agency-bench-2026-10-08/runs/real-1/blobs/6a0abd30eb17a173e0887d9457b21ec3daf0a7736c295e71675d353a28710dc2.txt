@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "Runner check shows exit 1 with 3 failures, so done-definition not met."}

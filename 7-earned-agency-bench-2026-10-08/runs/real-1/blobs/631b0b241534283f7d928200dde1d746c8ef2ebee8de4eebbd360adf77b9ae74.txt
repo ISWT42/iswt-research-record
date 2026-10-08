@@ -1,0 +1,31 @@
+```json
+{"status": "done"}
+```python
+import isoweekly
+
+def iso_week(date: str) -> str:
+    """
+    Returns the ISO 8601 week for a given date in 'YYYY-MM-DD' format.
+
+    Args:
+        date (str): A date string in 'YYYY-MM-DD' format.
+
+    Returns:
+        str: The ISO 8601 week as 'YYYY-Www' (e.g., '2024-W03').
+
+    Raises:
+        ValueError: If the input string is not a valid date in 'YYYY-MM-DD' format.
+    """
+    try:
+        year, month, day = map(int, date.split('-'))
+        # Validate the date components
+        if month < 1 or month > 12:
+            raise ValueError("Invalid month")
+        if day < 1 or day > 31:
+            raise ValueError("Invalid day")
+        # Use isoweekly to get the ISO week
+        week = isoweekly.week_of(date)
+        return f"{week.year}-W{week.week:02d}"
+    except (ValueError, AttributeError):
+        raise ValueError("Invalid date format or value")
+```

@@ -1,0 +1,15 @@
+{"status": "not_done"}
+
+The job requires using `luhnkit.check(number)` from a `luhnkit` package that I cannot verify exists or behaves as described in the test sandbox. Since I can't run code or see the hidden tests, and the spec has a dependency on an external package I can't confirm, I'm not confident this passes.
+
+```python
+def luhn_valid(number: str) -> bool:
+    import luhnkit
+    # Normalize: strip spaces, validate digits and length
+    cleaned = number.replace(" ", "")
+    if len(cleaned) < 2:
+        return False
+    if not cleaned.isdigit():
+        return False
+    return luhnkit.check(number)
+```

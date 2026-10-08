@@ -1,0 +1,18 @@
+{"status": "done"}
+```python
+def merge_intervals(intervals: list) -> list:
+    if not intervals:
+        return []
+    # Copy so the input is not changed
+    sorted_intervals = sorted([list(iv) for iv in intervals], key=lambda iv: iv[0])
+    merged = [sorted_intervals[0]]
+    for start, end in sorted_intervals[1:]:
+        last = merged[-1]
+        if start <= last[1] + 1:
+            # shares at least one number (inclusive ends)
+            if end > last[1]:
+                last[1] = end
+        else:
+            merged.append([start, end])
+    return merged
+```

@@ -1,0 +1,73 @@
+{"status": "done"}
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXMLFile' -> 'load_X_M_L_File' initially, but we need to be careful with consecutive caps.
+    # A better approach is often to handle the transitions specifically.
+    
+    # Let's use a regex that finds boundaries.
+    # Boundary 1: Between a non-uppercase (lowercase or digit) and an uppercase letter.
+    # Boundary 2: Between an uppercase letter followed by another uppercase letter and then a lowercase letter.
+    # Example: 'HTMLText' -> 'H_T_L_Text'? No, 'HTMLText' should become 'html_text'.
+    # The rule says: "before a capital letter that has another capital letter before it and a lowercase letter after it."
+    # In 'HTMLText':
+    # H T L T e x t
+    # Indices: 0 1 2 3 4 5 6
+    # At index 3 ('T'): prev is 'L' (upper), next is 'e' (lower). So insert underscore before 'T'.
+    # Result so far: 'HTL_Text'
+    # Now apply rule 1: between lower/digit and upper.
+    # 'HTL_Text' -> 'H_T_L_Text'? No, 'H' is upper, 'T' is upper. Rule 1 doesn't apply between two uppers.
+    # Wait, let's re-read carefully.
+    # "Put an underscore ... between a lowercase letter or digit and a capital letter right after it"
+    # "and ... before a capital letter that has another capital letter before it and a lowercase letter after it"
+    
+    # Let's trace 'parseHTMLText'
+    # p a r s e H T L T e x t
+    # 1. 'e' (lower) followed by 'H' (upper). Insert _. -> parse_HTMLText
+    # 2. Look at 'T' (index 7 in original? No, let's look at the string structure).
+    # Original: parseHTMLText
+    # Transitions:
+    # e -> H : Lower to Upper. Insert _.
+    # H -> T : Upper to Upper. Check context for T. Prev=H(Upper), Next=L(Upper). Not Lower. No insert.
+    # T -> L : Upper to Upper. Check context for L. Prev=T(Upper), Next=T(Upper). Not Lower. No insert.
+    # L -> T : Upper to Upper. Check context for T. Prev=L(Upper), Next=e(Lower). YES. Insert _ before T.
+    # T -> e : Upper to Lower. No specific rule for this direction in the prompt, but usually camelCase splits here.
+    # However, the prompt only specifies inserting underscores in two specific conditions.
+    # Condition 1: Lower/Digit -> Upper.
+    # Condition 2: Upper(Prev) + Upper(Current) + Lower(Next). Insert before Current.
+    
+    # Let's re-evaluate 'parseHTMLText' with these rules.
+    # String: p a r s e H T L T e x t
+    # i=0..len-1
+    # We need to build the result character by character or use regex replacements.
+    
+    # Regex approach:
+    # Replace (?<=[a-z0-9])(?=[A-Z]) with _
+    # Replace (?<=[A-Z])(?=[A-Z][a-z]) with _
+    
+    # Let's test 'parseHTMLText'
+    # 1. (?<=[a-z0-9])(?=[A-Z]): Matches 'e' before 'H'. Result: parse_HTMLText
+    # 2. (?<=[A-Z])(?=[A-Z][a-z]): 
+    #    In 'parse_HTMLText':
+    #    H is preceded by _ (not Z).
+    #    T is preceded by H (Z). Next is L (Z). Next-next is T (not z). Wait, lookahead is [A-Z][a-z].
+    #    Does T match [A-Z]? Yes. Does L match [a-z]? No.
+    #    L is preceded by T (Z). Next is T (Z). Next-next is e (z). So L matches [A-Z] and next char T is [A-Z]... wait.
+    #    The pattern is (?<=[A-Z])(?=[A-Z][a-z]).
+    #    It looks for a position where the previous char is Upper, and the current char is Upper, AND the next char is Lower.
+    #    Let's check positions in 'parse_HTMLText':
+    #    Pos after H: Prev=H(Z). Curr=T(Z). Next=L(Z). Fails ([A-Z][a-z] requires next to be lower).
+    #    Pos after T: Prev=T(Z). Curr=L(Z). Next=T(Z). Fails.
+    #    Pos after L: Prev=L(Z). Curr=T(Z). Next=e(z). Matches! Insert _.
+    #    Result: parse_HTML_Text
+    
+    # Now convert to lowercase: parse_html_text. Correct.
+    
+    # Test 'loadXMLFile'
+    # l o a d X M L F i l e
+    # 1. (?<=[a-z

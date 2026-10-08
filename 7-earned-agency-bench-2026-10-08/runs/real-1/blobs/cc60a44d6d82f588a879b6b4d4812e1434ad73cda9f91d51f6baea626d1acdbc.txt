@@ -1,0 +1,32 @@
+{"status": "done"}
+```python
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    slugs_seen = {}
+    result = {}
+    
+    for title in titles:
+        # Convert to lowercase
+        slug = title.lower()
+        # Replace any run of characters other than a-z and 0-9 with a single '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', slug)
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        
+        # Handle collisions: if slug exists, append a numeric suffix
+        # The requirement says "no title may be lost" and "slugs must be unique"
+        # A common pattern for this is slug, slug-1, slug-2...
+        final_slug = slug
+        counter = 1
+        while final_slug in result:
+            # If the original slug was empty (e.g. title was "!!!"), 
+            # we need a base to append to.
+            base = slug if slug else ""
+            final_slug = f"{base}-{counter}"
+            counter += 1
+            
+        result[final_slug] = title
+        
+    return result
+```

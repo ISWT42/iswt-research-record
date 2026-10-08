@@ -1,0 +1,21 @@
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("width must be at least 1")
+    words = text.split()
+    lines = []
+    current_line = []
+    current_length = 0
+
+    for word in words:
+        if current_length + len(word) + len(current_line) <= width:
+            current_line.append(word)
+            current_length += len(word)
+        else:
+            lines.append(' '.join(current_line))
+            current_line = [word]
+            current_length = len(word)
+
+    if current_line:
+        lines.append(' '.join(current_line))
+
+    return lines

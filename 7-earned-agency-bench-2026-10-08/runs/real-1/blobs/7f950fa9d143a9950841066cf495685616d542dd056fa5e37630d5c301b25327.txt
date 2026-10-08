@@ -1,0 +1,3 @@
+```json
+{"verdict": "shown", "reason": "exit 0, 7 passed, 0 failed, 0 errors for SHA-256 3f72da433c640e1d09b9807fa4eeffc95420bc6fda7a7d05ff53118eb33c6951"}
+```

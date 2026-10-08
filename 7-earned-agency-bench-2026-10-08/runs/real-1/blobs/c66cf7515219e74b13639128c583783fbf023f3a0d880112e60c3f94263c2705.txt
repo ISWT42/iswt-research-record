@@ -1,0 +1,67 @@
+{"status": "done"}
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXMLFile' -> 'load_X_M_L_File' initially, but we need to be careful.
+    # Actually, let's look at the specific rules:
+    # 1. Underscore between a lowercase letter or digit and a capital letter right after it.
+    #    e.g., 'aB' -> 'a_B', '9A' -> '9_A'
+    # 2. Underscore before a capital letter that has another capital letter before it and a lowercase letter after it.
+    #    e.g., 'XMLText' -> 'X_M_L_Text'? No.
+    #    Let's trace 'parseHTMLText':
+    #    p-a-r-s-e (lower) H (upper). Rule 1 applies: parse_H...
+    #    H-M-L (all upper). L-T (upper T, followed by lower t). Rule 2 applies before T? 
+    #    The rule says: "before a capital letter that has another capital letter before it and a lowercase letter after it".
+    #    In 'HTMLText', looking at 'T': previous is 'L' (capital), next is 'e' (lowercase). So insert underscore before 'T'.
+    #    So 'HTMLText' becomes 'HTML_Text'.
+    #    Now combine with previous step.
+    
+    # Let's try a regex approach based on the two conditions.
+    
+    # Condition 1: Lowercase/Digit followed by Uppercase
+    # Pattern: ([a-z0-9])([A-Z])
+    # Replace with: \1_\2
+    
+    # Condition 2: Uppercase followed by Uppercase then Lowercase
+    # We want to insert an underscore BEFORE the last uppercase in a sequence of uppers if it is followed by a lowercase.
+    # Pattern: ([A-Z])([A-Z][a-z])
+    # Wait, if we have 'XMLText', indices: X(0) M(1) L(2) T(3) e(4)...
+    # At index 3 ('T'), prev is 'L' (Upper), next is 'e' (Lower).
+    # So we want to split before 'T'.
+    # Regex for this: Lookbehind for [A-Z], lookahead for [A-Z][a-z].
+    # But standard regex doesn't support variable length lookbehinds easily if we just want to insert.
+    # However, we can match the group preceding the insertion point.
+    # Match: ([A-Z])([A-Z][a-z]) -> This matches 'LT' where L is captured in group 1 and 'Te' in group 2? No.
+    # If we match ([A-Z])([A-Z][a-z]), we are matching two characters.
+    # In 'HTMLText', 'LT' is matched. Group 1='L', Group 2='Te'.
+    # If we replace with '\1_\2', we get 'HTML_Text'. This works.
+    # What about 'ABCDef'?
+    # 'BCD' + 'E' + 'f'.
+    # First pass (Cond 1): No lower/digit before upper.
+    # Second pass (Cond 2):
+    # Scan for ([A-Z])([A-Z][a-z]).
+    # 'CD' is followed by 'E' (upper), so no.
+    # 'DE' is followed by 'f' (lower). Prev is 'C' (upper)? No, the pattern is ([A-Z])([A-Z][a-z]).
+    # It matches 'D' then 'Ef'. So 'D' is group 1, 'Ef' is group 2.
+    # Replace 'D' + '_' + 'Ef' -> 'C_D_Ef'?
+    # Original: ABCDef.
+    # Matches:
+    # 1. 'C' 'D' 'E' 'f'. Does 'CD' match ([A-Z])([A-Z][a-z])? No, 'D' is upper, 'E' is upper, 'f' is lower.
+    #    The pattern requires the second char to be Upper and third to be Lower.
+    #    So 'DEF' part: 'D' is Upper, 'E' is Upper, 'F' is Upper. No match.
+    #    'EF' part: 'E' is Upper, 'F' is Upper, 'd' is Lower (if there was one).
+    #    Let's take 'XMLParser'.
+    #    Cond 1: No lower/digit before upper.
+    #    Cond 2: Find ([A-Z])([A-Z][a-z]).
+    #    'MLP': M(U) L(U) P(U). No.
+    #    'LPa': L(U) P(U) a(L). Match! Group 1='L', Group 2='Pa'.
+    #    Replace with 'L_Pa'. Result 'XML_Parser'. Correct.
+    
+    # What about 'getHTTPResponse'?
+    # Cond 1: 't' (lower) 'H' (upper) -> 't_H'. String becomes 'get_HTTPResponse'.
+    # Cond 2:

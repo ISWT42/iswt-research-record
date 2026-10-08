@@ -1,0 +1,45 @@
+def anagram_groups(words: list) -> list:
+    """
+    Group words that are anagrams of each other.
+    
+    Args:
+        words: A list of strings to group into anagrams.
+        
+    Returns:
+        A list of groups, where each group is a list of original words that are anagrams.
+        Groups are ordered by the first appearance of any word in that group.
+        Words within each group maintain their original relative order from the input.
+    """
+    if not words:
+        return []
+    
+    # Dictionary to store anagram groups
+    # Key: sorted lowercase version of word (anagram signature)
+    # Value: list of original words that share this signature
+    anagram_map = {}
+    
+    for word in words:
+        # Create the anagram signature: sort the characters of the lowercase word
+        signature = ''.join(sorted(word.lower()))
+        
+        if signature not in anagram_map:
+            anagram_map[signature] = []
+        
+        anagram_map[signature].append(word)
+    
+    # Now we need to order the groups by where their first word appears in the input
+    # We'll track the index of the first occurrence of each signature
+    first_occurrence = {}
+    for i, word in enumerate(words):
+        signature = ''.join(sorted(word.lower()))
+        if signature not in first_occurrence:
+            first_occurrence[signature] = i
+    
+    # Get all signatures and sort them by their first occurrence index
+    signatures = list(anagram_map.keys())
+    signatures.sort(key=lambda sig: first_occurrence[sig])
+    
+    # Build the result list in the correct order
+    result = [anagram_map[sig] for sig in signatures]
+    
+    return result

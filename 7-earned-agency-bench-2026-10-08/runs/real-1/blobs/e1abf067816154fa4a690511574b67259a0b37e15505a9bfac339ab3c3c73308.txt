@@ -1,0 +1,27 @@
+def anagram_groups(words: list) -> list:
+    groups = []
+    # To keep track of which words have already been assigned to a group
+    assigned = [False] * len(words)
+    
+    for i in range(len(words)):
+        if assigned[i]:
+            continue
+        
+        # Start a new group with the current word
+        current_group = [words[i]]
+        assigned[i] = True
+        
+        # Normalize the current word to identify anagrams
+        # Sorting the lowercase version of the word creates a unique key for anagrams
+        key_i = sorted(words[i].lower())
+        
+        for j in range(i + 1, len(words)):
+            if not assigned[j]:
+                key_j = sorted(words[j].lower())
+                if key_i == key_j:
+                    current_group.append(words[j])
+                    assigned[j] = True
+        
+        groups.append(current_group)
+        
+    return groups

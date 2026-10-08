@@ -1,0 +1,48 @@
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string")
+
+    roman_to_value = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+
+    total = 0
+    prev_value = 0
+
+    for char in reversed(s.upper()):
+        if char not in roman_to_value:
+            raise ValueError(f"Invalid Roman numeral character: {char}")
+
+        current_value = roman_to_value[char]
+
+        if current_value < prev_value:
+            total -= current_value
+        else:
+            total += current_value
+
+        prev_value = current_value
+
+    # Validate the Roman numeral
+    if total > 3999:
+        raise ValueError("Roman numeral exceeds maximum value of 3999")
+
+    # Check for invalid repetitions
+    for i in range(len(s)):
+        if s[i] in ['V', 'L', 'D']:
+            if i > 0 and s[i] == s[i-1]:
+                raise ValueError("Invalid repetition of Roman numeral character")
+        if s[i] in ['I', 'X', 'C', 'M']:
+            if i > 0 and s[i] == s[i-1]:
+                count = 1
+                while i + count < len(s) and s[i + count] == s[i]:
+                    count += 1
+                if count > 3:
+                    raise ValueError("Roman numeral character repeated more than 3 times")
+
+    return total

@@ -1,0 +1,15 @@
+{"status": "done"}
+```python
+def flatten(nested: list) -> list:
+    """
+    Returns a new flat list with all the items of nested, 
+    going into inner lists at any depth, in order.
+    """
+    result = []
+    for item in nested:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result
+```

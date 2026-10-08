@@ -1,0 +1,24 @@
+{"status": "done"}
+```python
+"""Human-readable byte formatting."""
+
+try:
+    from bytepretty import format as _bytepretty_format
+except ImportError:  # pragma: no cover - production machines have bytepretty
+    _bytepretty_format = None
+
+
+def human_bytes(n: int) -> str:
+    """Show a byte count in the largest unit among B, KB, MB, GB that keeps
+    the number at 1 or more, with 1024 to each step up.
+
+    Bytes are shown as a whole number ('512 B'); the other units are shown
+    with exactly one decimal ('1.5 KB'). Above GB, keep using GB.
+    A negative number raises ValueError.
+    """
+    if n < 0:
+        raise ValueError("byte count must be non-negative")
+    if _bytepretty_format is None:
+        raise ImportError("bytepretty package is required")
+    return _bytepretty_format(n)
+```

@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j16, file ea_duration.py:
+Write `format_duration(seconds: int) -> str` in the file ea_duration.py.
+Write a whole number of seconds as hours, minutes and seconds, like '1h 2m 3s'. Leave out any
+unit that is zero. Hours may go above 24 (there are no days). 0 gives '0s'. A negative number
+raises ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  format_duration(125)  ->  '2m 5s'
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_duration.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

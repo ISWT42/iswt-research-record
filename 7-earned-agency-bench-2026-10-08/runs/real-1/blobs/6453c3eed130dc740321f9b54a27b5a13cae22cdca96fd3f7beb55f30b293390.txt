@@ -1,0 +1,3 @@
+```json
+{"verdict": "contradicted", "reason": "The record states no file was submitted, so the ticket's done-definition (passing tests on a specific file hash) was not met."}
+```

@@ -1,0 +1,14 @@
+def chunk(seq, size: int) -> list:
+    if size < 1:
+        raise ValueError("Size must be at least 1")
+    if not seq:
+        return []
+    
+    # Convert string to list to ensure the output is always a list of lists
+    # as per the requirement "consecutive lists of at most size items"
+    items = list(seq) if isinstance(seq, (str, bytes)) else seq
+    
+    result = []
+    for i in range(0, len(items), size):
+        result.append(items[i : i + size])
+    return result

@@ -1,0 +1,65 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Map each title to a slug derived from it.
+    
+    Slug rules:
+    1. Lowercase the title.
+    2. Replace every run of characters that are NOT (a-z or 0-9) with a single '-'.
+    3. Remove any leading or trailing '-'.
+    
+    If two titles produce the same slug, we need to ensure uniqueness and no loss of titles.
+    The problem states: "the slugs in the result must still be unique and no title may be lost."
+    This implies that if there's a collision, we need to modify the slug to make it unique.
+    However, the standard interpretation of such problems usually involves appending a suffix like -1, -2, etc.
+    Let's look at the example: ['Red Car', 'Blue Sky'] -> {'red-car': 'Red Car', 'blue-sky': 'Blue Sky'}
+    
+    Since the prompt doesn't specify how to handle collisions explicitly other than "unique" and "no title lost",
+    a common approach is to append a counter or index when a collision occurs.
+    
+    Let's implement a helper function to generate the base slug, then handle collisions by appending a number.
+    """
+    
+    def make_slug(title):
+        # Convert to lowercase
+        lower_title = title.lower()
+        
+        # Replace non-alphanumeric characters with '-'
+        # We can use regex for this: replace [^a-z0-9]+ with '-'
+        import re
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        
+        # Strip leading and trailing '-'
+        slug = slug.strip('-')
+        
+        return slug
+
+    result = {}
+    slug_counts = {}
+    
+    for title in titles:
+        base_slug = make_slug(title)
+        
+        if base_slug not in result:
+            # First time seeing this slug
+            result[base_slug] = title
+            slug_counts[base_slug] = 1
+        else:
+            # Collision! Need to make it unique.
+            # Append a number to the slug.
+            count = slug_counts[base_slug]
+            new_slug = f"{base_slug}-{count}"
+            
+            # It's possible that even the new_slug collides with an existing one?
+            # Unlikely given typical inputs, but let's be safe.
+            while new_slug in result:
+                count += 1
+                new_slug = f"{base_slug}-{count}"
+            
+            result[new_slug] = title
+            # Update the count for the base_slug so next collision gets a higher number
+            slug_counts[base_slug] = count + 1
+            
+    return result
+```

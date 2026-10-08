@@ -1,0 +1,9 @@
+def split_cents(total: int, n: int) -> list:
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    base = total // n
+    remainder = total % n
+    shares = [base] * n
+    for i in range(remainder):
+        shares[i] += 1
+    return shares

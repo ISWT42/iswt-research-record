@@ -1,0 +1,38 @@
+{"status": "done"}
+```python
+import re
+from datetime import date
+
+try:
+    from isoweekly import week_of as _week_of
+except ImportError:
+    _week_of = None
+
+
+def iso_week(date_str: str) -> str:
+    if not isinstance(date_str, str):
+        raise ValueError("date must be a string in 'YYYY-MM-DD' form")
+    m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", date_str)
+    if not m:
+        raise ValueError("date must be in 'YYYY-MM-DD' form")
+    y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    try:
+        dt = date(y, mo, d)
+    except ValueError:
+        raise ValueError("not a real date")
+    if dt.isoformat() != date_str:
+        raise ValueError("not a real date in 'YYYY-MM-DD' form")
+
+    if _week_of is not None:
+        result = _week_of(date_str)
+        if isinstance(result, str):
+            return result
+        # Some versions may return a tuple or other form; normalize to 'YYYY-Www'
+        if isinstance(result, tuple) and len(result) == 2:
+            return f"{int(result[0]):04d}-W{int(result[1]):02d}"
+        return str(result)
+
+    # Fallback: compute ISO week ourselves
+    iso = dt.isocalendar()
+    return f"{iso[0]:04d}-W{iso[1]:02d}"
+```

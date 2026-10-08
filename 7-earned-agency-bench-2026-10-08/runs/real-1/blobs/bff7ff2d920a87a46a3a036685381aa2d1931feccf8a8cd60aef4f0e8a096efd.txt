@@ -1,0 +1,13 @@
+{"p_pass": 1.0}
+
+```python
+def truncate(text: str, n: int) -> str:
+    """
+    Shorten the text so that it fits in n characters. 
+    If the text already has n characters or fewer, return it unchanged. 
+    Otherwise cut it and end it with '...'.
+    """
+    if len(text) <= n:
+        return text
+    return text[:n-3] + '...'
+```

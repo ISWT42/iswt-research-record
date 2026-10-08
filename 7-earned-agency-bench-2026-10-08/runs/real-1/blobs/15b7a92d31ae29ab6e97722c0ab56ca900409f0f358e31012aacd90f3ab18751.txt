@@ -1,0 +1,28 @@
+{"status": "done"}
+```python
+def compare_versions(a: str, b: str) -> int:
+    def parse_version(v):
+        parts = v.split('.')
+        parsed = []
+        for p in parts:
+            if not p or not p.isdigit():
+                raise ValueError("Version parts must be non-empty digits")
+            parsed.append(int(p))
+        return parsed
+
+    v1 = parse_version(a)
+    v2 = parse_version(b)
+    
+    max_len = max(len(v1), len(v2))
+    
+    for i in range(max_len):
+        n1 = v1[i] if i < len(v1) else 0
+        n2 = v2[i] if i < len(v2) else 0
+        
+        if n1 < n2:
+            return -1
+        if n1 > n2:
+            return 1
+            
+    return 0
+```

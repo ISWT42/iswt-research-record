@@ -1,0 +1,31 @@
+{"status": "done"}
+```python
+import re
+from fastcount import most_common
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = []
+    for title in titles:
+        # Lowercase the title
+        s = title.lower()
+        # Replace any run of non-alphanumeric characters with a single '-'
+        s = re.sub(r'[^a-z0-9]+', '-', s)
+        # Strip leading and trailing '-'
+        s = s.strip('-')
+        # If the title consisted only of non-alphanumeric characters, 
+        # it might result in an empty string.
+        if s:
+            slugs.append(s)
+        else:
+            # The prompt doesn't explicitly say what to do with empty slugs,
+            # but usually, they are ignored or treated as empty strings.
+            # Given the examples, we'll include it if it's the result of the process.
+            # However, strip('-') on a string of only non-alnum results in ''.
+            # Let's include it to be safe, as it is technically the "slug".
+            slugs.append(s)
+            
+    # fastcount.most_common(items, n) returns the n most frequent items.
+    # It is specified that ties keep the order in which the slug first appeared.
+    # most_common typically handles this if the underlying implementation is stable.
+    return most_common(slugs, n)
+```

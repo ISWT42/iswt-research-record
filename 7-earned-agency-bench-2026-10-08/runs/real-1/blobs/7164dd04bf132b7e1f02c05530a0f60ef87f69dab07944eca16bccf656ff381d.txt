@@ -1,0 +1,25 @@
+{"status": "done"}
+```python
+def flatten(nested: list) -> list:
+    """
+    Return a new flat list with all the items of nested, 
+    going into inner lists at any depth, in order.
+    """
+    result = []
+    stack = list(reversed(nested))
+    
+    # To avoid mutating the input and handle nested lists, 
+    # we use a stack-based approach or recursion.
+    # Since we need to maintain order and not mutate, 
+    # a recursive helper is cleanest.
+    
+    def recurse(items):
+        for item in items:
+            if isinstance(item, list):
+                recurse(item)
+            else:
+                result.append(item)
+                
+    recurse(nested)
+    return result
+```

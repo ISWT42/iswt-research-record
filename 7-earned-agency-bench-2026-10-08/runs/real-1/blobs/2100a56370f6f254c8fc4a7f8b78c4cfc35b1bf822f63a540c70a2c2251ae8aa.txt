@@ -1,0 +1,24 @@
+{"status": "done"}
+```python
+def anagram_groups(words: list) -> list:
+    groups = []
+    seen = set()
+
+    for word in words:
+        # Create a key that is the sorted lowercase version of the word
+        key = ''.join(sorted(word.lower()))
+
+        # Check if this key has been seen before
+        found = False
+        for group in groups:
+            if ''.join(sorted(group[0].lower())) == key:
+                group.append(word)
+                found = True
+                break
+
+        # If not found, create a new group
+        if not found:
+            groups.append([word])
+
+    return groups
+```

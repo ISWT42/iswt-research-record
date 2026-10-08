@@ -1,0 +1,52 @@
+{"status": "done"}
+```python
+import re
+
+def parse_cents(s: str) -> int:
+    """
+    Parse a money string into whole cents.
+    """
+    s = s.strip()
+    if not s:
+        raise ValueError("Empty string")
+
+    # Regex breakdown:
+    # ^(-)?         : Optional leading minus
+    # (\$)?         : Optional dollar sign
+    # (             : Start of numeric part
+    #   \d{1,3}     : 1-3 digits
+    #   (,\d{3})*   : Zero or more groups of comma + 3 digits
+    #   |           : OR
+    #   \d+         : Just digits (no commas)
+    # )
+    # (\.(\d{1,2}))? : Optional dot followed by 1 or 2 digits
+    # $             : End of string
+    pattern = r"^(-)?(\$)?((\d{1,3}(,\d{3})*)|(\d+))(\.(\d{1,2}))?$"
+    match = re.match(pattern, s)
+    
+    if not match:
+        raise ValueError(f"Invalid money format: {s}")
+    
+    sign_group = match.group(1)
+    # The numeric part is either group 3 (with commas) or group 6 (no commas)
+    # We remove commas to get the whole number part
+    whole_part_str = (match.group(3) or match.group(6)).replace(',', '')
+    
+    # The decimal part is group 7 (the dot and digits)
+    decimal_part_str = match.group(8)
+    
+    # Convert whole part to cents
+    total_cents = int(whole_part_str) * 100
+    
+    # Handle decimal part
+    if decimal_part_str is not None:
+        if len(decimal_part_str) == 1:
+            total_cents += int(decimal_part_str) * 10
+        else:
+            total_cents += int(decimal_part_str)
+            
+    if sign_group == '-':
+        total_cents = -total_cents
+        
+    return total_cents
+```

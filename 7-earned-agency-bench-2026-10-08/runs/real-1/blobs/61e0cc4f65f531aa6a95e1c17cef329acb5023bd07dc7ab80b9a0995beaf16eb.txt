@@ -1,0 +1,20 @@
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXML' -> 'load_XML', 'parseHTML' -> 'parse_HTML'
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Step 2: Insert underscore before an uppercase letter that is followed by a lowercase letter,
+    # but only if it is preceded by another uppercase letter.
+    # This handles cases like 'XMLFile' (from step 1 result 'load_XMLFile') -> 'load_XML_File'.
+    # Specifically, we look for [A-Z][A-Z][a-z] pattern and insert _ before the last capital of the sequence
+    # if it's followed by a lower case. More precisely, we want to split 'HTMLText' into 'HTML_Text'.
+    # The pattern ([A-Z]+)([A-Z][a-z]) captures all caps then a cap+lower. We replace with \1_\2.
+    s = re.sub(r'([A-Z]+)([A-Z][a-z])', r'\1_\2', s)
+    
+    # Convert to lowercase
+    return s.lower()

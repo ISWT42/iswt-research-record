@@ -1,0 +1,11 @@
+def anagram_groups(words: list) -> list:
+    groups = []
+    index = {}
+    for w in words:
+        key = tuple(sorted(w.lower()))
+        if key in index:
+            groups[index[key]].append(w)
+        else:
+            index[key] = len(groups)
+            groups.append([w])
+    return groups

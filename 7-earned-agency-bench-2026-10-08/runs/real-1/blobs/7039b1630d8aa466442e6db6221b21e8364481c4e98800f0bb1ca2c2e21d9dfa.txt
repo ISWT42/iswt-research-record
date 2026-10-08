@@ -1,0 +1,7 @@
+{"status": "done"}
+```python
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    return [[row[i] for row in m[::-1]] for i in range(len(m[0]))]
+```

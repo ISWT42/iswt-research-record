@@ -1,0 +1,20 @@
+def age_in_years(born: str, on: str) -> int:
+    """Return the whole number of years completed on date `on` since `born`.
+
+    Both dates are given as 'YYYY-MM-DD' strings. Raises ValueError if `on`
+    is before `born`.
+    """
+    def parse(d: str):
+        y, m, day = d.split('-')
+        return int(y), int(m), int(day)
+
+    by, bm, bd = parse(born)
+    oy, om, od = parse(on)
+
+    if (oy, om, od) < (by, bm, bd):
+        raise ValueError("on is before born")
+
+    years = oy - by
+    if (om, od) < (bm, bd):
+        years -= 1
+    return years

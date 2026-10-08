@@ -1,0 +1,4 @@
+from gridwrap import center
+
+def center_line(text: str, width: int) -> str:
+    return center(text, width)

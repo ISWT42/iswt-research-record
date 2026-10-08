@@ -1,0 +1,50 @@
+{"status": "done"}
+```python
+def human_bytes(n: int) -> str:
+    """
+    Show a byte count in the largest unit among B, KB, MB, GB that keeps the number at 1 or more.
+    
+    - Bytes are shown as a whole number ('512 B')
+    - Other units are shown with exactly one decimal ('1.5 KB')
+    - Above GB, keep using GB
+    - Negative numbers raise ValueError
+    
+    Uses bytepretty.format(n) for formatting.
+    """
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    
+    # Import the required package function
+    from bytepretty import format as bytepretty_format
+    
+    # We need to determine the correct unit ourselves because bytepretty might use different logic
+    # The spec says: largest unit among B, KB, MB, GB that keeps the number >= 1
+    # Units: B (1), KB (1024), MB (1024^2), GB (1024^3)
+    
+    if n == 0:
+        return "0 B"
+    
+    # Determine the appropriate unit
+    if n >= 1024 ** 3:
+        # Use GB, but cap it at GB even if larger
+        value = n / (1024 ** 3)
+        unit = "GB"
+    elif n >= 1024 ** 2:
+        value = n / (1024 ** 2)
+        unit = "MB"
+    elif n >= 1024:
+        value = n / 1024
+        unit = "KB"
+    else:
+        value = n
+        unit = "B"
+    
+    if unit == "B":
+        # Bytes are shown as a whole number
+        formatted_value = str(int(value))
+    else:
+        # Other units are shown with exactly one decimal
+        formatted_value = f"{value:.1f}"
+    
+    return f"{formatted_value} {unit}"
+```

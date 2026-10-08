@@ -1,0 +1,24 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    result = {}
+    for title in titles:
+        slug = []
+        prev_dash = False
+        for ch in title.lower():
+            if ch.isalnum() and ch.isascii():
+                slug.append(ch)
+                prev_dash = False
+            else:
+                if not prev_dash:
+                    slug.append('-')
+                    prev_dash = True
+        s = ''.join(slug).strip('-')
+        base = s
+        n = 2
+        while s in result:
+            s = f"{base}-{n}"
+            n += 1
+        result[s] = title
+    return result
+```

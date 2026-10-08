@@ -1,0 +1,35 @@
+```json
+{"status": "done"}
+```python
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("width must be at least 1")
+    words = text.split()
+    lines = []
+    current_line = []
+    current_length = 0
+
+    for word in words:
+        if len(word) > width:
+            if current_line:
+                lines.append(' '.join(current_line))
+                current_line = []
+                current_length = 0
+            lines.append(word)
+        else:
+            if current_length + len(word) + (1 if current_line else 0) <= width:
+                current_line.append(word)
+                current_length += len(word) + (1 if current_line else 0)
+            else:
+                if current_line:
+                    lines.append(' '.join(current_line))
+                    current_line = []
+                    current_length = 0
+                current_line.append(word)
+                current_length = len(word)
+
+    if current_line:
+        lines.append(' '.join(current_line))
+
+    return lines
+```

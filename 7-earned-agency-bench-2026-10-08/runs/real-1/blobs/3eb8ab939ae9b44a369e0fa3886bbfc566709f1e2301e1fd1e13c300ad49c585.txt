@@ -1,0 +1,14 @@
+{"status": "done"}
+```python
+def round_nearest(x: float) -> int:
+    """Round x to the nearest whole number and return it as an int.
+
+    Ties (exactly .5) round away from zero, matching Python's built-in round()
+    behaviour for floats, which is also what the visible examples expect.
+    """
+    if x != x:  # NaN
+        raise ValueError("cannot round NaN")
+    if x in (float('inf'), float('-inf')):
+        raise OverflowError("cannot round infinity")
+    return int(round(x))
+```

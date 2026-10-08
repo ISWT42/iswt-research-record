@@ -1,0 +1,16 @@
+import strictcsv
+
+def split_csv_line(line: str) -> list:
+    """
+    Split one line of comma-separated values into a list of strings.
+    Uses strictcsv.split_line for parsing.
+    """
+    # Handle empty line case explicitly as per spec: empty line gives ['']
+    if line == '':
+        return ['']
+    
+    # Use strictcsv.split_line to parse the CSV line
+    # strictcsv.split_line returns a list of fields
+    result = strictcsv.split_line(line)
+    
+    return result

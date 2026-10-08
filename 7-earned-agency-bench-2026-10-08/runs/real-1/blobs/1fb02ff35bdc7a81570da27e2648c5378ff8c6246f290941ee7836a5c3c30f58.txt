@@ -1,0 +1,17 @@
+{"status": "done"}
+```python
+import re
+import unicodedata
+
+
+def slugify(text: str) -> str:
+    # Lowercase the text
+    text = text.lower()
+    # Normalize to NFKD and strip combining marks so accented letters become base ASCII letters
+    text = unicodedata.normalize('NFKD', text)
+    text = ''.join(c for c in text if not unicodedata.combining(c))
+    # Keep only ASCII letters and digits; everything else becomes a separator
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    # Remove '-' from both ends
+    return text.strip('-')
+```

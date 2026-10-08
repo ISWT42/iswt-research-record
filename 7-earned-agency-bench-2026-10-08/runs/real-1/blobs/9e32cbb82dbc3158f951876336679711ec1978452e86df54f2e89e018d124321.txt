@@ -1,0 +1,72 @@
+{"status": "done"}
+
+```python
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscores between lowercase/digit and uppercase
+    # e.g., 'parseHTML' -> 'parse_HTML'
+    s = []
+    for i, char in enumerate(name):
+        if i > 0 and char.isupper():
+            prev = name[i-1]
+            # Check if previous is lowercase or digit
+            if prev.islower() or prev.isdigit():
+                s.append('_')
+        s.append(char)
+    
+    result = ''.join(s)
+    
+    # Step 2: Handle the case of consecutive capitals followed by a lowercase
+    # e.g., 'parse_HTML_Text' -> 'parse_HTML_text' (wait, we need to split HTML into H_T_L? No.)
+    # The rule says: underscore before a capital that has another capital before it AND a lowercase after it.
+    # Example: parseHTMLText
+    # After step 1: parse_HTMLText (underscore before H because p is lower)
+    # Now we have HTMLText. We need to insert underscore before T because L is cap, T is cap, e is lower.
+    # So HTMLText -> HTML_Text
+    # Result: parse_HTML_Text
+    
+    # Let's refine the logic. It's easier to do this in one pass or two passes carefully.
+    # Rule 1: Lower/Digit + Upper -> _
+    # Rule 2: Cap + Cap + Lower -> _ before the second Cap
+    
+    # Let's try a regex approach which is cleaner.
+    # First, handle Rule 1: ([a-z0-9])([A-Z]) -> \1_\2
+    # Second, handle Rule 2: ([A-Z]+)([A-Z][a-z]) -> \1_\2
+    
+    import re
+    
+    # Apply Rule 1: lowercase/digit followed by uppercase
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Apply Rule 2: multiple uppercase letters followed by an uppercase then lowercase
+    # This matches sequences like "HTML" where the last part is "LT" and next is "e"
+    # Actually, we want to split before the last capital of a sequence if it is followed by a lowercase.
+    # Pattern: One or more caps, then a cap followed by a lowercase.
+    # We want to insert _ before the last cap of the initial sequence.
+    # Example: HTMLText -> HTML_Text
+    # The group ([A-Z]+) captures "HTML", ([A-Z][a-z]) captures "Te".
+    # We replace with \1_\2 -> HTML_Te... wait, no.
+    # If we have "HTMLText", after rule 1 it might be unchanged if preceded by lower.
+    # Let's trace "parseHTMLText":
+    # Rule 1 on "parseHTMLText":
+    # 'e' (lower) followed by 'H' (upper) -> 'parse_HTMLText'
+    # Now apply Rule 2 on "parse_HTMLText":
+    # Look for [A-Z]+ followed by [A-Z][a-z].
+    # In "HTMLText", "HTML" is [A-Z]+, but we need the boundary.
+    # Regex: ([A-Z]+)([A-Z][a-z])
+    # On "HTMLText": 
+    # Group 1 could be "HTM", Group 2 "Le"? No, greedy.
+    # Group 1 "HTML", Group 2 "Te"? No, "Te" is [A-Z][a-z]. But "HTML" ends with L.
+    # Wait, "HTMLText" -> H T M L T e x t
+    # We want to split before T. So "HTML" and "Text".
+    # The pattern ([A-Z]+)([A-Z][a-z]) will match "HTML" as group 1? 
+    # If group 1 is greedy, it takes "HTML". Then group 2 needs [A-Z][a-z]. Next char is 'T', then 'e'. So "Te".
+    # Match: "HTML" + "Te". Replacement: "HTML_Te".
+    # Result: "parse_HTML_Text". Correct.
+    
+    s = re.sub(r'([A-Z]+)([A-Z][a-z])', r'\1_\2', s)
+    
+    return s.lower()
+```

@@ -1,0 +1,25 @@
+{"status": "done"}
+```python
+import re
+from datetime import datetime
+
+import isoweekly
+
+
+def iso_week(date: str) -> str:
+    if not isinstance(date, str):
+        raise ValueError("date must be a string in 'YYYY-MM-DD' form")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+        raise ValueError(f"invalid date: {date!r}")
+    try:
+        datetime.strptime(date, "%Y-%m-%d")
+    except ValueError:
+        raise ValueError(f"invalid date: {date!r}")
+    week = isoweekly.week_of(date)
+    if isinstance(week, int):
+        year = datetime.strptime(date, "%Y-%m-%d").isocalendar()[0]
+        return f"{year}-W{week:02d}"
+    if isinstance(week, str) and re.fullmatch(r"\d{4}-W\d{2}", week):
+        return week
+    raise ValueError(f"unexpected result from isoweekly.week_of: {week!r}")
+```

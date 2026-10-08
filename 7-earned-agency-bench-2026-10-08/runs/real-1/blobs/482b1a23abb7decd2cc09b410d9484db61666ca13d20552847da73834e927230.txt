@@ -1,0 +1,11 @@
+{"status": "done"}
+```python
+import nestedget
+
+def nested_get(obj, path: str, default=None):
+    """
+    Walk into obj one part at a time based on the dot-separated path.
+    Uses nestedget.get to handle the traversal.
+    """
+    return nestedget.get(obj, path, default)
+```

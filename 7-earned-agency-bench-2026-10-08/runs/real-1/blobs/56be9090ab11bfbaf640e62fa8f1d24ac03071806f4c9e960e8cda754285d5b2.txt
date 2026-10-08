@@ -1,0 +1,6 @@
+FAILED test_hidden.py::test_1 - ValueError: invalid literal for int() with base 10: '.50'
+FAILED test_hidden.py::test_3 - ValueError: invalid literal for int() with base 10: '.5'
+FAILED test_hidden.py::test_4 - ValueError: invalid literal for int() with base 10: '.07'
+FAILED test_hidden.py::test_5 - ValueError: invalid literal for int() with base 10: '.25'
+4 failed, 6 passed in 0.01s
+

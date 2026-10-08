@@ -1,0 +1,13 @@
+def format_duration(seconds: int) -> str:
+    if seconds < 0:
+        raise ValueError("seconds must be non-negative")
+    h, rem = divmod(seconds, 3600)
+    m, s = divmod(rem, 60)
+    parts = []
+    if h:
+        parts.append(f"{h}h")
+    if m:
+        parts.append(f"{m}m")
+    if s or not parts:
+        parts.append(f"{s}s")
+    return " ".join(parts)

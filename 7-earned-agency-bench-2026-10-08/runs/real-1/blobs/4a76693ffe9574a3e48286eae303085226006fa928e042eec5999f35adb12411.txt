@@ -1,0 +1,13 @@
+```json
+{"status": "done"}
+```python
+def dedupe(items: list, key=None) -> list:
+    seen = set()
+    result = []
+    for item in items:
+        k = key(item) if key is not None else item
+        if k not in seen:
+            seen.add(k)
+            result.append(item)
+    return result
+```

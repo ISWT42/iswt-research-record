@@ -1,0 +1,9 @@
+import quickrounds
+
+def tax_cents(total: int, rate_percent: float) -> int:
+    """
+    Calculates the tax in cents given a total amount in cents and a tax rate percentage.
+    The result is rounded to the nearest whole cent using round-half-even.
+    """
+    tax = total * rate_percent / 100
+    return int(quickrounds.round_half_even(tax))

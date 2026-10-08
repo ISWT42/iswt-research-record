@@ -1,0 +1,10 @@
+def split_cents(total: int, n: int) -> list:
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    
+    base_share = total // n
+    remainder = total % n
+    
+    # Distribute the base share to everyone, 
+    # and add 1 extra cent to the first 'remainder' people.
+    return [base_share + 1 if i < remainder else base_share for i in range(n)]

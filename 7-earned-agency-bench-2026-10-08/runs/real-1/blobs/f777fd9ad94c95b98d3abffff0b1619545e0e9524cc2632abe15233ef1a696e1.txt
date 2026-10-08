@@ -1,0 +1,12 @@
+```json
+{"status": "done"}
+```python
+from collections import defaultdict
+
+def anagram_groups(words: list) -> list:
+    groups = defaultdict(list)
+    for word in words:
+        key = ''.join(sorted(word.lower()))
+        groups[key].append(word)
+    return [group for group in groups.values()]
+```

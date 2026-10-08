@@ -1,0 +1,76 @@
+import re
+from fastcount import most_common
+
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    A slug is derived by:
+    1. Converting to lowercase
+    2. Replacing every run of non-alphanumeric characters with a single '-'
+    3. Stripping leading and trailing '-'
+    
+    Results are sorted by frequency (descending), with ties broken by 
+    the order in which the slug first appeared in the input list.
+    """
+    if not titles or n <= 0:
+        return []
+    
+    # Step 1: Generate slugs for all titles
+    slugs = []
+    for title in titles:
+        # Convert to lowercase
+        lower_title = title.lower()
+        # Replace runs of non-alphanumeric chars with '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        # Strip leading and trailing '-'
+        slug = slug.strip('-')
+        slugs.append(slug)
+    
+    # Filter out empty strings that might result from titles with no alphanumeric chars
+    # However, based on typical usage, we should keep them if they exist, but usually
+    # strip('-') on a string of only dashes results in empty string.
+    # Let's check if empty slugs should be counted. The problem says "slug of a title".
+    # If a title has no alnum chars, the slug is empty. We'll include it if it appears.
+    
+    # Step 2: Count frequencies using fastcount.most_common
+    # most_common(items, n) returns a list of (item, count) tuples, sorted by count desc,
+    # then by first appearance? The problem says "Ties keep the order in which the slug first appeared."
+    # We need to ensure tie-breaking is correct.
+    
+    # Let's get the most common items. The fastcount package's most_common typically returns
+    # items sorted by count descending. For ties, the behavior depends on implementation.
+    # To be safe, we should handle tie-breaking ourselves if needed.
+    
+    # First, let's get all counts
+    # most_common(items, n) might not return all items if len(items) > n.
+    # But we need to know the full ordering for tie-breaking among the top n.
+    # Actually, if we ask for n most common, and there are ties at the boundary,
+    # we need to break those ties correctly.
+    
+    # Let's use most_common with a large number to get all, or just enough.
+    # Since we don't know the size, let's get all unique items with their counts.
+    # But most_common(items, n) takes n as the number of items to return.
+    # If we pass len(set(slugs)), we get all.
+    
+    unique_slugs = list(dict.fromkeys(slugs))  # Preserve order of first appearance
+    
+    # Count frequencies
+    # We can use collections.Counter or fastcount. Let's use fastcount as required.
+    # fastcount.most_common(items, n) returns [(item, count), ...]
+    
+    # Get all most common items
+    all_counts = most_common(slugs, len(unique_slugs))
+    
+    # all_counts is sorted by count descending. For ties, we need to sort by first appearance.
+    # Create a mapping from slug to its first appearance index
+    first_appearance = {slug: idx for idx, slug in enumerate(unique_slugs)}
+    
+    # Sort by (-count, first_appearance_index)
+    sorted_slugs = sorted(all_counts, key=lambda x: (-x[1], first_appearance[x[0]]))
+    
+    # Take the top n
+    result = [slug for slug, count in sorted_slugs[:n]]
+    
+    return result

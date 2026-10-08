@@ -1,0 +1,3 @@
+def luhn_valid(number: str) -> bool:
+    import luhnkit
+    return luhnkit.check(number)

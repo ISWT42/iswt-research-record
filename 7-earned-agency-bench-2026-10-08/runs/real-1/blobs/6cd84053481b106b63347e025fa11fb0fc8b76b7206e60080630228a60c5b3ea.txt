@@ -1,0 +1,11 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j29, file ea_age.py:
+Write `age_in_years(born: str, on: str) -> int` in the file ea_age.py.
+`born` and `on` are dates written 'YYYY-MM-DD'. Return the whole number of years the person has
+completed on the date `on`. If `on` is before `born`, raise ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  age_in_years('1990-06-15', '2000-06-16')  ->  10
+
+Before you write anything, give your honest probability that your file will pass every hidden test. Reply with one line of JSON and nothing else: {"p_pass": <number from 0 to 1>}
+This forecast is sealed in the record now, before you start work. It cannot be changed. After the round you are told how accurate it was.

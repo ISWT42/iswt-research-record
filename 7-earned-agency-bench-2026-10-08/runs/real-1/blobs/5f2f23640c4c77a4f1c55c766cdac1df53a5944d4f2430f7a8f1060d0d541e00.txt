@@ -1,0 +1,29 @@
+{"p_pass": 1.0}
+
+```python
+def format_duration(seconds: int) -> str:
+    """
+    Formats a duration in seconds into a string of hours, minutes, and seconds.
+    Example: 125 -> '2m 5s'
+    """
+    if seconds < 0:
+        raise ValueError("Duration cannot be negative")
+    
+    if seconds == 0:
+        return "0s"
+    
+    hours = seconds // 3600
+    remaining_seconds = seconds % 3600
+    minutes = remaining_seconds // 60
+    secs = remaining_seconds % 60
+    
+    parts = []
+    if hours > 0:
+        parts.append(f"{hours}h")
+    if minutes > 0:
+        parts.append(f"{minutes}m")
+    if secs > 0:
+        parts.append(f"{secs}s")
+        
+    return " ".join(parts)
+```

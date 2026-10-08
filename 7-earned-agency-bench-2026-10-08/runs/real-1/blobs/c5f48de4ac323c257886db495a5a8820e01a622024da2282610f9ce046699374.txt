@@ -1,0 +1,3 @@
+```json
+{"verdict": "contradicted", "reason": "The runner check for the file hash resulted in exit 2 and a ModuleNotFoundError, not exit 0."}
+```

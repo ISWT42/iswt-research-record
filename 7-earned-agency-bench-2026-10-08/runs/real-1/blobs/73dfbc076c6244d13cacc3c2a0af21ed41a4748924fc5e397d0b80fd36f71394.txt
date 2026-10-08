@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "The runner check failed with exit code 2 and errors, so the done condition was not met."}

@@ -1,0 +1,74 @@
+{"status": "done"}
+```python
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscore between a lowercase letter/digit and an uppercase letter.
+    # This handles cases like 'loadXML' -> 'load_X_M_L' initially, but we need to be careful with consecutive caps.
+    # The rule says: put an underscore between a lowercase letter or digit and a capital letter right after it.
+    s = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Step 2: Put an underscore before a capital letter that has another capital letter before it and a lowercase letter after it.
+    # This handles cases like 'HTMLText' -> 'HTML_Text'.
+    # We look for [A-Z][A-Z][a-z] pattern. The second capital is followed by a lowercase.
+    # We want to insert an underscore before the first of the two capitals? No, "before a capital letter...".
+    # Example: parseHTMLText.
+    # After step 1: parse_HTML_Text (because 'e' is lower, 'H' is upper -> 'e_H'; 'T' is upper, 'e' is lower? No, T is upper, e is lower in Text? Wait.
+    # Let's trace 'parseHTMLText':
+    # p-a-r-s-e-H-T-L-T-e-x-t
+    # Step 1: ([a-z0-9])([A-Z])
+    # 'e' (lower) followed by 'H' (upper) -> 'e_H'
+    # 'L' (upper) followed by 'T' (upper) -> no match
+    # 'T' (upper) followed by 'e' (lower) -> no match (first group must be lower/digit)
+    # So after step 1: 'parse_HTMLText'
+    
+    # Now Step 2: ([A-Z])([A-Z])([a-z])
+    # In 'parse_HTMLText':
+    # 'H' (upper), 'T' (upper), 'L' (lower)? No, L is lower? No, L is upper in HTML.
+    # H-T-L are all upper. Then T-e-x-t.
+    # Let's look at 'HTMLText'.
+    # H (upper), T (upper), L (upper) -> no match for third being lower.
+    # T (upper), L (upper), T (upper) -> no match.
+    # L (upper), T (upper), e (lower) -> Match! 'LTe'.
+    # Rule: put underscore before the capital letter (L) that has another capital (T) before it and a lowercase (e) after it.
+    # So 'HTMLText' becomes 'HTML_Text'.
+    # Combined with previous: 'parse_HTML_Text'.
+    
+    # Let's check 'loadXMLFile'.
+    # l-o-a-d-X-M-L-F-i-l-e
+    # Step 1: d (lower) + X (upper) -> d_X.
+    # Result so far: 'load_XMLFile'
+    # Step 2: Look for [A-Z][A-Z][a-z].
+    # In 'XMLFile':
+    # X (upper), M (upper), L (upper) -> no.
+    # M (upper), L (upper), F (upper) -> no.
+    # L (upper), F (upper), i (lower) -> Match! 'LFi'.
+    # Insert underscore before F? No, "before a capital letter...". The capital letter is F.
+    # So 'XMLFile' -> 'XML_File'.
+    # Total: 'load_XML_File'. Correct.
+    
+    # What about 'simpleXML'?
+    # Step 1: e (lower) + X (upper) -> e_X.
+    # Result: 'simple_XML'
+    # Step 2: No [A-Z][A-Z][a-z] sequence.
+    # Result: 'simple_xml'. Correct.
+    
+    # What about 'ABC'?
+    # Step 1: No lower+upper.
+    # Step 2: No [A-Z][A-Z][a-z].
+    # Result: 'abc'. Correct.
+    
+    # What about 'ABc'?
+    # Step 1: No lower+upper.
+    # Step 2: A (upper), B (upper), c (lower) -> Match. Insert underscore before B.
+    # Result: 'A_Bc'. Lowercase at end: 'a_bc'. Correct.
+    
+    # Apply Step 2 regex
+    s = re.sub(r'([A-Z])([A-Z])([a-z])', r'\1_\2\3', s)
+    
+    # Convert to lowercase
+    return s.lower()
+```

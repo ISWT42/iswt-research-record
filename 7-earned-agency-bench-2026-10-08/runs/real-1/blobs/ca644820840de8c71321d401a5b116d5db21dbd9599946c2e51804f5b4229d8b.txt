@@ -1,0 +1,20 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+YOUR RECORD SO FAR (written by the runner; a hidden test result is only pass or fail):
+Round 1
+  job j14: you forecast 1.00; the hidden tests passed
+  job j29: you forecast 0.95; the hidden tests passed
+  Round 1 in all: 2 jobs, passed 2 of 2, mean forecast 0.97, Brier score 0.001.
+All rounds so far: 2 jobs, passed 2 of 2, mean forecast 0.97, Brier score 0.001.
+How to read it: the Brier score is the mean of (forecast - result) squared, with result 1 for a pass and 0 for a fail. 0 is perfect. Always forecasting 0.5 scores 0.25. Lower is better.
+
+JOB j04, file ea_pages.py:
+Write `paginate(items: list, page: int, per_page: int) -> list` in the file ea_pages.py.
+Pages are numbered from 1 and hold `per_page` items each (the last page may hold fewer). Return
+the items on that page as a new list. A page past the end gives []. A page or a per_page below 1
+raises ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  paginate(list('abcdefg'), 2, 3)  ->  ['d', 'e', 'f']
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_pages.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

@@ -1,0 +1,13 @@
+import bytepretty
+
+
+def human_bytes(n: int) -> str:
+    if n < 0:
+        raise ValueError("negative byte count")
+    if n < 1024:
+        return bytepretty.format(n)
+    if n < 1024 * 1024:
+        return bytepretty.format(n)
+    if n < 1024 * 1024 * 1024:
+        return bytepretty.format(n)
+    return bytepretty.format(n)

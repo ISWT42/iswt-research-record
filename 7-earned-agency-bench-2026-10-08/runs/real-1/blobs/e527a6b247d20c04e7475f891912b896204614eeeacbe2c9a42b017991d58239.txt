@@ -1,0 +1,25 @@
+import re
+
+
+def parse_cents(s: str) -> int:
+    if not isinstance(s, str):
+        raise ValueError("not a string")
+    t = s.strip()
+    m = re.fullmatch(r'(-)?(\$)?(\d+)(?:,(\d{3}))*(?:\.(\d{1,2}))?', t)
+    if not m:
+        # need stricter comma validation: groups of exactly three
+        m2 = re.fullmatch(r'(-)?(\$)?((?:\d{1,3}(?:,\d{3})*|\d+))(?:\.(\d{1,2}))?', t)
+        if not m2:
+            raise ValueError("bad money string")
+        sign = -1 if m2.group(1) else 1
+        dollars_str = m2.group(3).replace(',', '')
+        frac = m2.group(4)
+        cents = int(dollars_str) * 100
+        if frac is not None:
+            if len(frac) == 1:
+                cents += int(frac) * 10
+            else:
+                cents += int(frac)
+        return sign * cents
+    # fallback path (shouldn't normally hit due to stricter check below)
+    raise ValueError("bad money string")

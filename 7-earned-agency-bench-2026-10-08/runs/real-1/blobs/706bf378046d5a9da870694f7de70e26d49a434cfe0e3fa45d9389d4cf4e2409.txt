@@ -1,0 +1,79 @@
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or s == "":
+        raise ValueError("empty or invalid")
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    # Validate structure first
+    # Check all chars are valid
+    for ch in s:
+        if ch not in values:
+            raise ValueError("invalid character")
+    # Check repeats and ordering
+    i = 0
+    n = len(s)
+    total = 0
+    # We'll parse greedily but validate standard form
+    # Standard form: non-increasing except subtractive pairs
+    # Approach: scan, handle subtractive pairs, ensure no invalid repeats/order
+    repeatable = {'I', 'X', 'C', 'M'}
+    # Validate repeats
+    run = 1
+    for idx in range(1, n):
+        if s[idx] == s[idx-1]:
+            if s[idx] not in repeatable:
+                raise ValueError("repeat")
+            run += 1
+            if run > 3:
+                raise ValueError("too many repeats")
+        else:
+            run = 1
+    # Validate no V,L,D followed by something smaller-or-equal incorrectly, and general ordering
+    # Parse with validation
+    total = 0
+    i = 0
+    while i < n:
+        c = s[i]
+        # Check for subtractive pair
+        if i + 1 < n:
+            nxt = s[i+1]
+            pair = c + nxt
+            if pair in ('IV', 'IX', 'XL', 'XC', 'CD', 'CM'):
+                # The subtractive pair must be valid: c must be one of I,X,C and next larger
+                # Also c must not be repeated before (already checked repeats)
+                # And after the pair, remaining must be <= value of c (i.e., smaller than c's value)
+                # Actually standard: after subtractive pair, next value must be < value of c
+                total += values[nxt] - values[c]
+                i += 2
+                # Check next char value < values[c]
+                if i < n and values[s[i]] >= values[c]:
+                    raise ValueError("order")
+                continue
+        # Normal: must be non-increasing relative to previous handled
+        total += values[c]
+        i += 1
+    # Additional ordering check: ensure overall non-increasing except subtractive
+    # Re-validate by reconstructing
+    # Check total in range
+    if total < 1 or total > 3999:
+        raise ValueError("out of range")
+    # Final strict validation: re-parse ensuring standard form
+    # Verify by checking that our parse consumed correctly and ordering holds
+    # Do a strict pass
+    i = 0
+    prev_val = float('inf')
+    while i < n:
+        c = s[i]
+        if i + 1 < n:
+            pair = c + s[i+1]
+            if pair in ('IV', 'IX', 'XL', 'XC', 'CD', 'CM'):
+                v = values[s[i+1]] - values[c]
+                if v > prev_val:
+                    raise ValueError("order")
+                prev_val = v
+                i += 2
+                continue
+        v = values[c]
+        if v > prev_val:
+            raise ValueError("order")
+        prev_val = v
+        i += 1
+    return total

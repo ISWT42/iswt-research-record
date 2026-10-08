@@ -1,0 +1,21 @@
+def rotate_clockwise(m: list) -> list:
+    if not m or not m[0]:
+        return []
+    
+    rows = len(m)
+    cols = len(m[0])
+    
+    # The output will have 'cols' rows and 'rows' columns.
+    # For a 90 degree clockwise rotation:
+    # new_grid[i][j] = m[rows - 1 - j][i]
+    # where i is the row index in the new grid (0 to cols-1)
+    # and j is the column index in the new grid (0 to rows-1)
+    
+    new_grid = []
+    for i in range(cols):
+        new_row = []
+        for j in range(rows):
+            new_row.append(m[rows - 1 - j][i])
+        new_grid.append(new_row)
+    
+    return new_grid

@@ -1,0 +1,36 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def compare_versions(a: str, b: str) -> int:
+    """
+    Compares two version strings.
+    Returns 1 if a > b, -1 if a < b, 0 if a == b.
+    Raises ValueError if any part is empty or contains non-digit characters.
+    """
+    def parse_version(v: str):
+        parts = v.split('.')
+        parsed = []
+        for part in parts:
+            if not part or not part.isdigit():
+                raise ValueError("Invalid version part")
+            parsed.append(int(part))
+        return parsed
+
+    parts_a = parse_version(a)
+    parts_b = parse_version(b)
+
+    # Normalize lengths by padding with zeros
+    max_len = max(len(parts_a), len(parts_b))
+    parts_a.extend([0] * (max_len - len(parts_a)))
+    parts_b.extend([0] * (max_len - len(parts_b)))
+
+    for val_a, val_b in zip(parts_a, parts_b):
+        if val_a > val_b:
+            return 1
+        if val_a < val_b:
+            return -1
+
+    return 0
+```

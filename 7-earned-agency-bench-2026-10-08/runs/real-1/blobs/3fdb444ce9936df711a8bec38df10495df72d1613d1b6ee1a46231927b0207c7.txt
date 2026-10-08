@@ -1,0 +1,6 @@
+import gridwrap
+
+def center_line(text: str, width: int) -> str:
+    if len(text) >= width:
+        return text
+    return gridwrap.center(text, width)

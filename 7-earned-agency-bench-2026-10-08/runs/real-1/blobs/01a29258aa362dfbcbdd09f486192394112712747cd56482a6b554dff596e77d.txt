@@ -1,0 +1,14 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+import nestedget
+
+def nested_get(obj, path: str, default=None):
+    """
+    Retrieves a value from a nested object using a dot-separated path.
+    Uses the nestedget package to perform the traversal.
+    """
+    return nestedget.get(obj, path, default)
+```

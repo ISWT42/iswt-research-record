@@ -1,0 +1,96 @@
+{"status": "done"}
+
+```python
+def to_snake(name: str) -> str:
+    if not name:
+        return ''
+    
+    # Step 1: Insert underscores between lowercase/digit and uppercase
+    # e.g., loadXML -> load_XML
+    result = []
+    for i, char in enumerate(name):
+        if i > 0 and char.isupper():
+            prev_char = name[i-1]
+            if prev_char.islower() or prev_char.isdigit():
+                result.append('_')
+        result.append(char)
+    
+    s = ''.join(result)
+    
+    # Step 2: Handle the case where a capital letter is preceded by a capital 
+    # and followed by a lowercase. We need to insert an underscore before this capital.
+    # Example: XMLText -> X_M_L_Text (after step 1 it might be different depending on logic)
+    # Let's trace 'parseHTMLText':
+    # Step 1:
+    # p,a,r,s,e,H -> parse_H (e is lower, H is upper -> insert _)
+    # H,T -> HT (no insert)
+    # T,L -> TL (no insert)
+    # L,T -> LT (no insert)
+    # T,e -> Text (T is upper, e is lower -> no insert here because we look at current char being upper)
+    # Wait, the rule says: "underscore ... before a capital letter that has another capital letter before it and a lowercase letter after it."
+    # In 'HTMLText', 'L' is preceded by 'T' (cap) and followed by 'T' (cap). No insert.
+    # 'T' is preceded by 'L' (cap) and followed by 'e' (lower). Insert underscore before 'T'.
+    # So HTMLText -> HTML_Text
+    
+    # Let's refine the algorithm to do both passes or combine them carefully.
+    # A common robust approach:
+    # 1. Replace sequences of uppercase letters followed by a lowercase letter with _<uppercase><lowercase>
+    #    Actually, let's stick to the specific rules given.
+    
+    # Rule 1: Lower/Digit + Upper -> _Upper
+    # Rule 2: Upper + Upper + Lower -> Upper_Upper+Lower (insert before the last Upper of the sequence if it precedes a lower)
+    
+    # Let's try a regex-based approach which is often cleaner for these cases.
+    # Pattern 1: ([a-z0-9])([A-Z]) -> \1_\2
+    # Pattern 2: ([A-Z]+)([A-Z][a-z]) -> This is tricky. 
+    # If we have "HTMLText", we want "HTML_Text".
+    # The transition is from 'L' to 'T' where 'T' starts a new word? No, 'T' is part of 'Text'.
+    # The rule says: underscore BEFORE a capital letter that has another capital before it AND a lowercase after it.
+    # In "HTMLText":
+    # H: prev=None, next=T
+    # T: prev=H, next=L
+    # L: prev=T, next=T
+    # T: prev=L, next=e -> Preceded by Cap (L), Followed by Lower (e). Insert before this T.
+    # So HTML_T... -> HTML_Text
+    
+    # Let's re-run Step 1 on 'parseHTMLText':
+    # p,a,r,s,e -> parse
+    # H: prev=e (lower). Insert _. Result so far: parse_H
+    # T: prev=H (upper). No insert. Result: parse_HT
+    # L: prev=T (upper). No insert. Result: parse_HTML
+    # T: prev=L (upper). No insert. Result: parse_HTMLT
+    # e: prev=T (upper). Char is lower. No insert triggered by 'char' being upper.
+    # x: ...
+    # t: ...
+    # Result after Step 1: parse_HTMLText
+    
+    # Now apply Rule 2 to 'parse_HTMLText':
+    # We need to find indices i such that:
+    # s[i] is Upper
+    # s[i-1] is Upper
+    # s[i+1] is Lower
+    # And insert '_' before s[i].
+    
+    # In 'parse_HTMLText':
+    # Index 5: 'H'. Prev='e' (lower). Skip.
+    # Index 6: 'T'. Prev='H' (upper). Next='L' (upper). Skip.
+    # Index 7: 'L'. Prev='T' (upper). Next='T' (upper). Skip.
+    # Index 8: 'T'. Prev='L' (upper). Next='e' (lower). MATCH! Insert before index 8.
+    
+    # So we get parse_HTML_Text.
+    
+    # Let's implement this two-pass string manipulation.
+    
+    # Pass 1: Lower/Digit followed by Upper
+    s1 = []
+    for i, char in enumerate(s):
+        if i > 0 and char.isupper():
+            prev = s[i-1]
+            if prev.islower() or prev.isdigit():
+                s1.append('_')
+        s1.append(char)
+    s = ''.join(s1)
+    
+    # Pass 2: Upper followed by Upper followed by Lower -> Insert before the second Upper
+    # We iterate through the string and build a new one.
+    s2

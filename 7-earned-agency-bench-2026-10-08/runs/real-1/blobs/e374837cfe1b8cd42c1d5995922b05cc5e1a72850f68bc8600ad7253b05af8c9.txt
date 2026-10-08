@@ -1,0 +1,17 @@
+{"status": "done"}
+
+```python
+from luhnkit import check
+
+
+def luhn_valid(number: str) -> bool:
+    # Remove spaces
+    cleaned = number.replace(" ", "")
+    # Must have at least 2 digits
+    if len(cleaned) < 2:
+        return False
+    # All remaining characters must be digits
+    if not cleaned.isdigit():
+        return False
+    return bool(check(number))
+```

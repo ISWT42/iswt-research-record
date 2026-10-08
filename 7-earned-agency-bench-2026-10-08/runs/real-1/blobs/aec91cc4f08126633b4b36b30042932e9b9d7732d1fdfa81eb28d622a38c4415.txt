@@ -1,0 +1,16 @@
+import luhnkit
+
+
+def luhn_valid(number: str) -> bool:
+    if not isinstance(number, str):
+        return False
+    # Spaces are ignored; anything else non-digit is invalid.
+    stripped = number.replace(" ", "")
+    if len(stripped) < 2:
+        return False
+    if not stripped.isdigit():
+        return False
+    try:
+        return bool(luhnkit.check(number))
+    except Exception:
+        return False

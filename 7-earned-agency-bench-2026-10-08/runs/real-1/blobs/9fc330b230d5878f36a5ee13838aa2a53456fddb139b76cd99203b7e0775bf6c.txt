@@ -1,0 +1,52 @@
+import re
+
+def parse_cents(s: str) -> int:
+    s = s.strip()
+    if not s:
+        raise ValueError("Empty string")
+
+    # Regex breakdown:
+    # ^(-)?             Optional leading minus
+    # (\$)?             Optional leading dollar sign
+    # (                 Start of number part
+    #   \d{1,3}         1-3 digits
+    #   (,\d{3})*       Zero or more groups of comma and 3 digits
+    #   |               OR
+    #   \d+             Just digits (no commas)
+    # )
+    # (\.(\d{1,2}))?    Optional dot followed by 1 or 2 digits
+    # $
+    pattern = r'^(-)?(\$)?((\d{1,3}(,\d{3})*)|(\d+))(\.(\d{1,2}))?$'
+    match = re.match(pattern, s)
+    
+    if not match:
+        raise ValueError("Invalid money format")
+    
+    sign_group = match.group(1)
+    # The number part is either group 3 (with commas) or group 6 (plain digits)
+    # But the regex captures the whole numeric part in group 3 if it matches the first branch
+    # Let's simplify: get the part between the sign/$ and the dot.
+    
+    # Re-evaluating groups based on the regex:
+    # 1: sign, 2: $, 3: whole part (with commas), 4: first 1-3 digits, 5: comma groups, 6: plain digits, 7: .xx, 8: xx
+    
+    # Extract the whole number part (removing commas)
+    whole_part_str = match.group(3) or match.group(6)
+    whole_part_str = whole_part_str.replace(',', '')
+    
+    # Extract the fractional part
+    fraction_str = match.group(8)
+    
+    # Convert to cents
+    total_cents = int(whole_part_str) * 100
+    
+    if fraction_str:
+        if len(fraction_str) == 1:
+            total_cents += int(fraction_str) * 10
+        else:
+            total_cents += int(fraction_str)
+            
+    if sign_group == '-':
+        total_cents = -total_cents
+        
+    return total_cents

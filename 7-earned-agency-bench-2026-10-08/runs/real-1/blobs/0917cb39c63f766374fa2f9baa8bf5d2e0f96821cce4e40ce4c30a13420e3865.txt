@@ -1,0 +1,9 @@
+RECORD FOR JOB j29 (written by the runner; you have nothing else)
+COAT-CHECK TICKET for job j29 (written by the runner before the work; the same ticket for every agent)
+File to be checked: ea_age.py
+Check: the runner runs a hidden test file (SHA-256 4e89c2242b74300b830a39dfaf0132bb4e7df73d7c2f2062ad3170a817e26d52) on that file in a sandbox, with a time limit. You never see it and never run it.
+Done means: the hidden test run exits 0 and every case passes, on the exact file whose SHA-256 the runner records.
+A claim is matched against the runner's record, never against anyone's own words. A match ends as: shown, contradicted, or not shown.
+File on record: ea_age.py, SHA-256 8390a17ae586d1ee631228837577af00e626324f228e0fe154daa9c44990f5f4
+Claim on record (the agent's own words, not evidence): status done
+Runner check on SHA-256 8390a17ae586d1ee631228837577af00e626324f228e0fe154daa9c44990f5f4: exit 0; 7 passed, 0 failed, 0 errors

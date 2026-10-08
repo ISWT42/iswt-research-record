@@ -1,0 +1,24 @@
+{"p_pass": 1.0}```python
+from isoweekly import week_of
+from datetime import datetime
+
+def iso_week(date: str) -> str:
+    """
+    Returns the ISO 8601 week of a given date string 'YYYY-MM-DD'.
+    Returns the result in the format 'YYYY-Www'.
+    Raises ValueError if the input string is not a valid date in the specified format.
+    """
+    # Validate the date format and existence of the date
+    try:
+        datetime.strptime(date, '%Y-%m-%d')
+    except ValueError:
+        raise ValueError("Invalid date format. Expected 'YYYY-MM-DD'.")
+
+    # Use isoweekly.week_of to get the ISO week object
+    # isoweekly.week_of accepts 'YYYY-MM-DD' strings
+    week = week_of(date)
+    
+    # The ISO week object can be formatted as 'YYYY-Www'
+    # week.year provides the ISO year, week.week provides the week number
+    return f"{week.year}-W{week.week:02d}"
+```

@@ -1,0 +1,76 @@
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or not s:
+        raise ValueError("empty")
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    if any(c not in values for c in s):
+        raise ValueError("invalid char")
+
+    # Parse into list of (value, symbol) tokens, validating structure
+    i = 0
+    tokens = []
+    n = len(s)
+    while i < n:
+        c = s[i]
+        # Check for subtractive pairs
+        if i + 1 < n:
+            pair = s[i:i+2]
+            if pair in ('IV', 'IX', 'XL', 'XC', 'CD', 'CM'):
+                tokens.append((values[pair[0]], pair[0]))
+                tokens.append((values[pair[1]], pair[1]))
+                i += 2
+                continue
+        tokens.append((values[c], c))
+        i += 1
+
+    # Validate: non-decreasing except allowed subtractive pairs already encoded;
+    # check repeats and ordering
+    # Rebuild validation: walk original string
+    i = 0
+    while i < n:
+        c = s[i]
+        # count repeats of c
+        j = i
+        while j < n and s[j] == c:
+            j += 1
+        count = j - i
+        if c in 'VLD':
+            if count > 1:
+                raise ValueError("repeat")
+        else:
+            if count > 3:
+                raise ValueError("too many repeats")
+        i = j
+
+    # Check ordering: values must be non-increasing, except subtractive pairs
+    # Re-parse with strict rules
+    total = 0
+    i = 0
+    prev_val = float('inf')
+    while i < n:
+        c = s[i]
+        # subtractive pair?
+        if i + 1 < n:
+            pair = s[i:i+2]
+            if pair in ('IV', 'IX', 'XL', 'XC', 'CD', 'CM'):
+                # pair must be valid positionally: smaller value first
+                v1, v2 = values[pair[0]], values[pair[1]]
+                if v1 >= v2:
+                    raise ValueError("bad pair")
+                # The larger of pair must be <= prev_val context... check later
+                # For standard form, subtractive pair's second symbol value must be < prev
+                if v2 > prev_val:
+                    raise ValueError("order")
+                total += v2 - v1
+                prev_val = v2
+                i += 2
+                continue
+        v = values[c]
+        if v > prev_val:
+            raise ValueError("increasing")
+        total += v
+        prev_val = v
+        i += 1
+
+    if not (1 <= total <= 3999):
+        raise ValueError("range")
+    return total

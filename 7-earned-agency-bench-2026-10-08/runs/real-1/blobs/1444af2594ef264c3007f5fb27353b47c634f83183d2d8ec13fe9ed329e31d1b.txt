@@ -1,0 +1,17 @@
+import bytepretty
+
+def human_bytes(n: int) -> str:
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # Define the units and their thresholds
+    # B: 0-1023, KB: 1024-1024^2-1, MB: 1024^2-1024^3-1, GB: 1024^3+
+    if n < 1024:
+        # Bytes are shown as a whole number
+        return f"{n} B"
+    
+    # For KB, MB, GB, we use bytepretty.format(n)
+    # The requirement says "largest unit... that keeps the number at 1 or more"
+    # and "Above GB, keep using GB".
+    # bytepretty.format(n) is expected to handle the scaling and 1-decimal formatting.
+    return bytepretty.format(n)

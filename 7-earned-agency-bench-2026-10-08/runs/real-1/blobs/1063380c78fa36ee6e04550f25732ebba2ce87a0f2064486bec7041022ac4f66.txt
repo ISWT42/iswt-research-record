@@ -1,0 +1,27 @@
+def compare_versions(a: str, b: str) -> int:
+    def parse_version(v: str):
+        parts = v.split('.')
+        parsed = []
+        for part in parts:
+            if not part:
+                raise ValueError(f"Empty version part in {v}")
+            if not part.isdigit():
+                raise ValueError(f"Non-digit version part '{part}' in {v}")
+            parsed.append(int(part))
+        return parsed
+
+    a_parts = parse_version(a)
+    b_parts = parse_version(b)
+
+    # Pad with zeros to equal length
+    max_len = max(len(a_parts), len(b_parts))
+    a_parts.extend([0] * (max_len - len(a_parts)))
+    b_parts.extend([0] * (max_len - len(b_parts)))
+
+    for ap, bp in zip(a_parts, b_parts):
+        if ap < bp:
+            return -1
+        elif ap > bp:
+            return 1
+    
+    return 0

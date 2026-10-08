@@ -1,0 +1,42 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+import re
+
+def parse_cents(s: str) -> int:
+    """
+    Parse a money string into whole cents.
+    Accepted: optional leading '-', optional '$', digits (thousands commas in groups of 3),
+    optional '.' followed by 1 or 2 digits.
+    """
+    s = s.strip()
+    if not s:
+        raise ValueError("Empty string")
+
+    # Regex breakdown:
+    # ^(-?\$?) : Optional minus, optional dollar sign
+    # (\d{1,3}(?:,\d{3})*|\d+) : Either comma-separated thousands or just digits
+    # (\.\d{1,2})? : Optional dot followed by 1 or 2 digits
+    # $ : End of string
+    match = re.fullmatch(r'^(-?\$?)(\d{1,3}(?:,\d{3})*|\d+)(\.\d{1,2})?$', s)
+    
+    if not match:
+        raise ValueError(f"Invalid money format: {s}")
+
+    prefix, main_part, decimal_part = match.groups()
+    
+    # Handle sign
+    is_negative = '-' in prefix
+    
+    # Remove commas from the main part
+    main_val = main_part.replace(',', '')
+    
+    # Process decimal part
+    if decimal_part:
+        # Remove the dot
+        cents_str = decimal_part[1:]
+        # If one digit (e.g., .7), it's 70 cents. If two (e.g., .75), it's 75 cents.
+        if len(cents_str) == 1:
+            cents_val

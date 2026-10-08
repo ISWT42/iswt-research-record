@@ -1,0 +1,22 @@
+def percentile(values: list, p: float) -> float:
+    if not isinstance(values, list):
+        raise ValueError("values must be a list")
+    if p <= 0 or p > 100:
+        raise ValueError("p must be in (0, 100]")
+    if len(values) == 0:
+        raise ValueError("values must not be empty")
+
+    data = sorted(values)
+    n = len(data)
+
+    if n == 1:
+        return float(data[0])
+
+    # Linear interpolation between closest ranks (numpy's default 'linear' method)
+    k = (p / 100.0) * (n - 1)
+    f = int(k)
+    c = f + 1
+    if c >= n:
+        return float(data[-1])
+    d = k - f
+    return float(data[f] + d * (data[c] - data[f]))

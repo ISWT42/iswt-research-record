@@ -1,0 +1,22 @@
+{"status": "done"}
+```python
+def anagram_groups(words: list) -> list:
+    groups = []
+    # To keep track of which group each word belongs to
+    # and to maintain the order of groups based on the first appearance
+    word_to_group_idx = {}
+    
+    for word in words:
+        # Normalize word for anagram comparison: lowercase and sorted characters
+        sorted_word = "".join(sorted(word.lower()))
+        
+        if sorted_word in word_to_group_idx:
+            idx = word_to_group_idx[sorted_word]
+            groups[idx].append(word)
+        else:
+            # Create a new group and record its index
+            word_to_group_idx[sorted_word] = len(groups)
+            groups.append([word])
+            
+    return groups
+```

@@ -1,0 +1,11 @@
+{"status": "done"}
+```python
+def truncate(text: str, n: int) -> str:
+    if len(text) <= n:
+        return text
+    # We need to cut the text and end with '...'
+    # The total length must be n.
+    # The suffix '...' has length 3.
+    # So we take the first (n - 3) characters of the text.
+    return text[:n-3] + '...'
+```

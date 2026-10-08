@@ -1,0 +1,12 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j06, file ea_rle.py:
+Write `rle_encode(s: str) -> str` in the file ea_rle.py.
+Run-length encode the text: each run of the same character becomes '<count><char>', with the
+count in decimal and no upper limit (a run of 12 is written '12x'). Only runs of equal characters
+that sit next to each other are joined. The input has no digits. The empty string gives ''.
+Visible examples (call -> result; the hidden tests hold other cases):
+  rle_encode('zzzy')  ->  '3z1y'
+
+Your reply must start with one line of JSON: {"status": "done" or "not_done"}
+Say not_done if you think the job cannot be completed as specified, or you are not sure it passes. Then give the complete contents of ea_rle.py in one ```python block. Nothing after the block. Write the JSON line as plain text, not inside a code block.

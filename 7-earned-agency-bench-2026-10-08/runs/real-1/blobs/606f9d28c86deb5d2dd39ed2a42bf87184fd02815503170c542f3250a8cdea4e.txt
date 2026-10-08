@@ -1,0 +1,22 @@
+{"status": "done"}
+```python
+def chunk(seq, size: int) -> list:
+    if size < 1:
+        raise ValueError("Size must be at least 1")
+    if not seq:
+        return []
+    
+    # Handle strings by converting them to lists of characters
+    # or use slicing which works for both strings and lists.
+    # The requirement says "consecutive lists", so we must ensure 
+    # the inner elements are lists even if the input is a string.
+    
+    result = []
+    for i in range(0, len(seq), size):
+        chunk_part = seq[i : i + size]
+        if isinstance(chunk_part, str):
+            result.append(list(chunk_part))
+        else:
+            result.append(list(chunk_part))
+    return result
+```

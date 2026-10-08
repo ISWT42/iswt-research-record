@@ -1,0 +1,21 @@
+try:
+    from shortid_tools import encode as _encode
+except ImportError:
+    _encode = None
+
+_DIGITS = "[REDACTED:long-token]"
+
+
+def to_base62(n: int) -> str:
+    if not isinstance(n, int) or isinstance(n, bool):
+        raise ValueError("n must be an integer")
+    if n < 0:
+        raise ValueError("negative number")
+    if n == 0:
+        return "0"
+    if _encode is None:
+        raise ImportError("shortid_tools is not installed")
+    result = _encode(n)
+    if not isinstance(result, str):
+        raise ValueError("shortid_tools.encode did not return a string")
+    return result

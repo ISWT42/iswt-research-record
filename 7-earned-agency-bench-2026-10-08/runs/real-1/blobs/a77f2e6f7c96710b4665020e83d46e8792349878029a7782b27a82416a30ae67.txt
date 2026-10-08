@@ -1,0 +1,18 @@
+{"status": "not_done"}
+```python
+import bytepretty
+
+def human_bytes(n: int) -> str:
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # The prompt specifies using bytepretty.format(n)
+    # However, it also specifies very specific formatting rules:
+    # - Largest unit among B, KB, MB, GB that keeps number >= 1
+    # - B as whole number, others with exactly one decimal
+    # - Above GB, keep using GB
+    # Since we must use bytepretty.format(n), we assume that package 
+    # implements the logic described.
+    
+    return bytepretty.format(n)
+```

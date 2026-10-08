@@ -1,0 +1,26 @@
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    
+    # Get dimensions
+    num_rows = len(m)
+    num_cols = len(m[0])
+    
+    # If the grid is empty (rows exist but are empty lists), handle appropriately
+    if num_cols == 0:
+        return [[] for _ in range(num_rows)]
+    
+    # The result will have num_cols rows and num_rows columns
+    # For a 90 degree clockwise rotation:
+    # new_grid[i][j] = old_grid[num_rows - 1 - j][i]
+    # where i ranges from 0 to num_cols-1 (new row index)
+    #       j ranges from 0 to num_rows-1 (new col index)
+    
+    new_grid = []
+    for i in range(num_cols):
+        new_row = []
+        for j in range(num_rows):
+            new_row.append(m[num_rows - 1 - j][i])
+        new_grid.append(new_row)
+    
+    return new_grid

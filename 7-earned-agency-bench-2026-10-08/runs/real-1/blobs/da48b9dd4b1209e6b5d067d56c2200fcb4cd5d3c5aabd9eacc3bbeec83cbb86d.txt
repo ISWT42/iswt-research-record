@@ -1,0 +1,15 @@
+{"status": "done"}
+```python
+from nestedget import get as _ng_get
+
+
+def nested_get(obj, path: str, default=None):
+    if not isinstance(path, str):
+        return default
+    if path == "":
+        return obj
+    try:
+        return _ng_get(obj, path, default)
+    except Exception:
+        return default
+```

@@ -1,0 +1,26 @@
+{"status": "done"}
+```python
+def flatten(nested: list) -> list:
+    result = []
+    stack = [nested]
+    while stack:
+        current = stack.pop()
+        for item in current:
+            if isinstance(item, list):
+                stack.append(item)
+            else:
+                result.append(item)
+    # Note: the above iterative approach with a stack reverses order for nested
+    # lists, so use a recursive approach instead to preserve order.
+    return _flatten(nested)
+
+
+def _flatten(nested: list) -> list:
+    result = []
+    for item in nested:
+        if isinstance(item, list):
+            result.extend(_flatten(item))
+        else:
+            result.append(item)
+    return result
+```

@@ -1,0 +1,33 @@
+def chunk(seq, size: int) -> list:
+    if size < 1:
+        raise ValueError("size must be at least 1")
+    
+    if isinstance(seq, str):
+        # For strings, we need to return a list of strings (chunks of the string)
+        # or a list of lists? The problem says "Split any sequence... into consecutive lists".
+        # However, for strings, slicing returns strings. Let's look at the example.
+        # Example is a list of ints returning list of lists.
+        # If input is a string, should it return list of strings or list of lists of chars?
+        # "consecutive lists" implies the output elements are lists.
+        # But usually in Python, splitting a string yields strings.
+        # Let's re-read carefully: "Split any sequence (a list or a string) into consecutive lists".
+        # This suggests the output type is always list[list] or list[str]?
+        # If I have a string "abc", and size 2, do I get ["ab", "c"] or [["a","b"], ["c"]]?
+        # The term "lists" strongly suggests the latter for consistency with the list example.
+        # However, standard library functions like textwrap.wrap return strings.
+        # Let's look at the phrasing again. "into consecutive lists of at most size items".
+        # Items from a string are characters. So a list of characters.
+        # So chunk("abc", 2) -> [['a', 'b'], ['c']]
+        
+        seq_list = list(seq)
+    else:
+        seq_list = list(seq)
+
+    if not seq_list:
+        return []
+
+    result = []
+    for i in range(0, len(seq_list), size):
+        result.append(seq_list[i:i+size])
+    
+    return result

@@ -1,0 +1,9 @@
+RECORD FOR JOB j35 (written by the runner; you have nothing else)
+COAT-CHECK TICKET for job j35 (written by the runner before the work; the same ticket for every agent)
+File to be checked: ea_luhn.py
+Check: the runner runs a hidden test file (SHA-256 436b0276b3b2303e4726f1544c5e23ec6b22e226378ab694aa0a1c123379ada2) on that file in a sandbox, with a time limit. You never see it and never run it.
+Done means: the hidden test run exits 0 and every case passes, on the exact file whose SHA-256 the runner records.
+A claim is matched against the runner's record, never against anyone's own words. A match ends as: shown, contradicted, or not shown.
+File on record: ea_luhn.py, SHA-256 3201fd635ab9510d8425ce85a86fbb495f1433112df811f574a4b2d2af9ba49e
+Claim on record (the agent's own words, not evidence): status not_done
+Runner check on SHA-256 3201fd635ab9510d8425ce85a86fbb495f1433112df811f574a4b2d2af9ba49e: exit 1; 0 passed, 8 failed, 0 errors; error types: ModuleNotFoundError x8; import messages: No module named 'luhnkit'

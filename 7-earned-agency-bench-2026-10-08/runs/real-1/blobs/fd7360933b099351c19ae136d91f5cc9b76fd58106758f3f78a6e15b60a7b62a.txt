@@ -1,0 +1,9 @@
+{"status": "done"}
+
+```python
+def human_bytes(n: int) -> str:
+    if n < 0:
+        raise ValueError("negative byte count")
+    from bytepretty import format as bytepretty_format
+    return bytepretty_format(n)
+```

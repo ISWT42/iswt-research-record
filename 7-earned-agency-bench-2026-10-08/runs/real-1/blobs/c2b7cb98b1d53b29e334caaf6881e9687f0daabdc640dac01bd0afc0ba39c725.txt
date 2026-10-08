@@ -1,0 +1,50 @@
+def anagram_groups(words: list) -> list:
+    """
+    Group words that are anagrams of each other.
+    
+    Args:
+        words: A list of strings to group into anagram groups.
+        
+    Returns:
+        A list of lists, where each inner list contains words that are anagrams
+        of each other. Groups are ordered by the first appearance of any word
+        in that group in the input list. Words within each group maintain their
+        original relative order from the input.
+    """
+    if not words:
+        return []
+    
+    # Dictionary to map sorted letter tuple to list of indices
+    anagram_map = {}
+    
+    for i, word in enumerate(words):
+        # Normalize word: lowercase and sort letters to create a key
+        normalized_key = tuple(sorted(word.lower()))
+        
+        if normalized_key not in anagram_map:
+            anagram_map[normalized_key] = []
+        
+        anagram_map[normalized_key].append(i)
+    
+    # Create groups based on the map
+    groups = []
+    seen_indices = set()
+    
+    # We need to preserve the order of first appearance
+    # Iterate through the original words to determine group order
+    for i, word in enumerate(words):
+        if i in seen_indices:
+            continue
+            
+        normalized_key = tuple(sorted(word.lower()))
+        indices = anagram_map[normalized_key]
+        
+        # Add all indices in this group to seen_indices
+        for idx in indices:
+            seen_indices.add(idx)
+            
+        # Create the group with original words in their original relative order
+        group = [words[idx] for idx in indices]
+        groups.append(group)
+    
+    return groups

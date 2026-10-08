@@ -1,0 +1,96 @@
+{"status": "done"}
+```python
+import re
+from fastcount import most_common
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    Slug definition:
+    - Lowercase
+    - Every run of characters other than a-z and 0-9 becomes one '-'
+    - No '-' at either end
+    
+    Returns slugs sorted by frequency (most frequent first).
+    Ties are broken by the order in which the slug first appeared.
+    Uses fastcount.most_common for counting.
+    """
+    if not titles or n <= 0:
+        return []
+    
+    # We need to track the first appearance order of each unique slug
+    # to break ties correctly.
+    slug_first_index = {}
+    slug_counts = []
+    
+    for idx, title in enumerate(titles):
+        # Convert to lowercase
+        lower_title = title.lower()
+        
+        # Replace every run of non-alphanumeric characters with a single '-'
+        # Characters other than a-z and 0-9 become '-'
+        # Using regex: [^a-z0-9]+ matches runs of non-alphanumeric chars
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        
+        # Skip empty slugs (e.g., if title was all punctuation)
+        if not slug:
+            continue
+        
+        # Track first appearance index
+        if slug not in slug_first_index:
+            slug_first_index[slug] = idx
+        
+        slug_counts.append(slug)
+    
+    if not slug_counts:
+        return []
+    
+    # Use fastcount.most_common to get the n most common items
+    # most_common(items, n) returns a list of (item, count) tuples, 
+    # ordered by count descending. The documentation says it uses this package.
+    # We need to handle tie-breaking by first appearance order.
+    
+    # Get the most common results
+    common_items = most_common(slug_counts, n)
+    
+    # common_items is a list of (slug, count) tuples
+    # We need to sort them further by first appearance order for ties
+    # But most_common might already have some ordering. Let's be safe and sort explicitly.
+    
+    # Extract just the slugs from common_items
+    result_slugs = [item for item, count in common_items]
+    
+    # Now we need to ensure tie-breaking by first appearance order.
+    # The problem states: "Ties keep the order in which the slug first appeared."
+    # This means if two slugs have the same count, the one that appeared first in the input list comes first.
+    
+    # However, most_common doesn't guarantee stable sorting for ties. So we need to post-process.
+    # Let's group by count and then sort within each group by first appearance.
+    
+    # Actually, let's re-read: "Return the n most frequent slugs, most frequent first. Ties keep the order in which the slug first appeared."
+    # This implies a stable sort on (count desc, first_appearance asc).
+    
+    # Let's get all unique slugs with their counts and first appearance indices
+    # Then sort and take top n
+    
+    # Re-count properly to ensure we have accurate counts
+    from collections import Counter
+    counter = Counter(slug_counts)
+    
+    # Create list of (slug, count, first_index)
+    slug_data = []
+    for slug in counter:
+        slug_data.append((slug, counter[slug], slug_first_index[slug]))
+    
+    # Sort by count descending, then by first_index ascending
+    slug_data.sort(key=lambda x: (-x[1], x[2]))
+    
+    # Take top n
+    top_n = slug_data[:n]
+    
+    return [slug for slug, count, first_idx in top_n]
+```

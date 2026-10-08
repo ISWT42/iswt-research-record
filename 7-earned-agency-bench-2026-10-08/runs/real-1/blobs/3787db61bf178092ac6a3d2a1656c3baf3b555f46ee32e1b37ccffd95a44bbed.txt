@@ -1,0 +1,1 @@
+{"verdict": "shown", "reason": "The record confirms the exact file hash passed all tests with exit 0, meeting the done definition."}

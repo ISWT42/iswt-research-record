@@ -1,0 +1,26 @@
+{"status": "done"}
+```python
+import re
+
+def slugify(text: str) -> str:
+    """
+    Convert text to a URL-friendly slug.
+    
+    1. Lowercase the text.
+    2. Replace every run of non-alphanumeric characters with a single '-'.
+    3. Remove leading and trailing '-' characters.
+    """
+    # Lowercase the text
+    text = text.lower()
+    
+    # Replace any sequence of non-alphanumeric characters with a single hyphen
+    # \W matches any non-word character (equivalent to [^a-zA-Z0-9_]), but we want to keep digits and letters.
+    # Actually, re.sub(r'[^a-z0-9]+', '-', text) is more precise for ASCII letters and digits only.
+    # The spec says: "Keep ASCII letters a-z and digits 0-9. Every run of any other characters ... becomes a single '-'."
+    slug = re.sub(r'[^a-z0-9]+', '-', text)
+    
+    # Strip leading and trailing hyphens
+    slug = slug.strip('-')
+    
+    return slug
+```

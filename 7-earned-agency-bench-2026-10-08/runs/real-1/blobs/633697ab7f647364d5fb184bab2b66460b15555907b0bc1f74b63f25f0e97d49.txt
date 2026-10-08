@@ -1,0 +1,13 @@
+def split_cents(total: int, n: int) -> list:
+    """
+    Split a total number of cents between n people as evenly as possible.
+    """
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    
+    base = total // n
+    remainder = total % n
+    
+    # Create a list where 'remainder' people get base + 1, and the rest get base
+    result = [base + 1] * remainder + [base] * (n - remainder)
+    return result

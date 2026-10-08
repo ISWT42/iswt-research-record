@@ -1,0 +1,36 @@
+def human_bytes(n: int) -> str:
+    """
+    Show a byte count in the largest unit among B, KB, MB, GB that keeps the number at 1 or more.
+    
+    - Bytes are shown as a whole number ('512 B')
+    - Other units are shown with exactly one decimal ('1.5 KB')
+    - Above GB, keep using GB
+    - Negative numbers raise ValueError
+    
+    Uses bytepretty.format(n) from the bytepretty package for formatting.
+    """
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # Define units and their thresholds
+    units = [
+        (1024**3, 'GB'),
+        (1024**2, 'MB'),
+        (1024, 'KB'),
+        (1, 'B')
+    ]
+    
+    # Find the largest unit where the value is >= 1
+    for threshold, unit_name in units:
+        if n >= threshold:
+            value = n / threshold
+            break
+    else:
+        # This shouldn't happen since we have B with threshold 1
+        value = float(n)
+        unit_name = 'B'
+    
+    # Use bytepretty.format for the actual formatting
+    # The bytepretty library should handle the formatting based on the value and unit
+    import bytepretty
+    return bytepretty.format(value, unit_name)

@@ -1,0 +1,5 @@
+def truncate(text: str, n: int) -> str:
+    if len(text) <= n:
+        return text
+    else:
+        return text[:n-3] + '...'

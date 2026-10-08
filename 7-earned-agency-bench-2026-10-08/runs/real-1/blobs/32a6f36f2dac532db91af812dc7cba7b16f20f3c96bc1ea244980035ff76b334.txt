@@ -1,0 +1,17 @@
+import luhnkit
+
+def luhn_valid(number: str) -> bool:
+    # Remove spaces as per requirements
+    cleaned = number.replace(' ', '')
+    
+    # Check if there are fewer than 2 digits
+    if len(cleaned) < 2:
+        return False
+    
+    # Check if everything else is a digit
+    if not cleaned.isdigit():
+        return False
+    
+    # Use luhnkit to perform the check
+    # luhnkit.check returns True if valid, False otherwise
+    return luhnkit.check(number)

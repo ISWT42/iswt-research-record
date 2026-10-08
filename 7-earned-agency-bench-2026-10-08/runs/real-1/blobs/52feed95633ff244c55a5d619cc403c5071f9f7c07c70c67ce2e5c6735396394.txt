@@ -1,0 +1,108 @@
+{"status": "done"}
+```python
+def roman_to_int(s: str) -> int:
+    """
+    Convert a Roman numeral string to an integer.
+    
+    Args:
+        s: A string representing a Roman numeral in standard form.
+        
+    Returns:
+        The integer value of the Roman numeral.
+        
+    Raises:
+        ValueError: If the input is not a valid standard Roman numeral.
+    """
+    if not s:
+        raise ValueError("Empty string is not a valid Roman numeral")
+    
+    # Check for lowercase or invalid characters
+    valid_chars = set('IVXLCDM')
+    if not all(c in valid_chars for c in s):
+        raise ValueError("Invalid character in Roman numeral")
+    
+    # Define values for each Roman symbol
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    
+    # Subtractive pairs and their combined values
+    subtractive_pairs = {
+        'IV': 4,
+        'IX': 9,
+        'XL': 40,
+        'XC': 90,
+        'CD': 400,
+        'CM': 900
+    }
+    
+    # Validate the structure of the Roman numeral
+    # We'll parse it step by step to ensure it's in standard form
+    
+    i = 0
+    result = 0
+    n = len(s)
+    
+    while i < n:
+        # Check for subtractive pair
+        if i + 1 < n:
+            pair = s[i:i+2]
+            if pair in subtractive_pairs:
+                result += subtractive_pairs[pair]
+                i += 2
+                continue
+        
+        # Single character
+        char = s[i]
+        val = values[char]
+        
+        # Check if this character can be followed by a smaller one (which would have been caught above)
+        # Or if it repeats too many times
+        
+        # Count consecutive occurrences of the same character
+        count = 1
+        while i + count < n and s[i + count] == char:
+            count += 1
+        
+        # Validate repetition rules
+        if char in ['V', 'L', 'D']:
+            # V, L, D cannot repeat
+            if count > 1:
+                raise ValueError(f"Invalid repetition of '{char}'")
+        elif char in ['I', 'X', 'C', 'M']:
+            # I, X, C, M can repeat up to 3 times
+            if count > 3:
+                raise ValueError(f"Invalid repetition of '{char}'")
+        
+        # Add the value
+        result += val * count
+        
+        # Move index forward
+        i += count
+        
+        # After processing a group, check if the next character (if any) is larger
+        # This would indicate an invalid sequence like IL or IC
+        if i < n:
+            next_char = s[i]
+            next_val = values[next_char]
+            if next_val <= val:
+                # This is fine, we're going down or equal (but equal handled by grouping)
+                pass
+            else:
+                # Next value is larger, which means we should have had a subtractive pair
+                # But since we already checked for subtractive pairs at the start of the loop,
+                # this means the sequence is invalid
+                raise ValueError(f"Invalid sequence: '{char}{next_char}'")
+    
+    # Final validation: ensure the result is within range
+    if result < 1 or result > 3999:
+        raise ValueError("Result out of range")
+    
+    return result
+```

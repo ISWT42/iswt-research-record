@@ -1,0 +1,5 @@
+def round_nearest(x: float) -> int:
+    """Round x to the nearest whole number and return it as an int."""
+    if x >= 0:
+        return int(x + 0.5)
+    return int(x - 0.5)

@@ -1,0 +1,9 @@
+def two_sum(nums: list, target: int):
+    seen = {}
+    for j, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            i = seen[complement]
+            return (i, j)
+        seen[num] = j
+    return None

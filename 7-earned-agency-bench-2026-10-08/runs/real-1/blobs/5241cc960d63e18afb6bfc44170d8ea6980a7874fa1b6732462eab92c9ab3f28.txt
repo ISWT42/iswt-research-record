@@ -1,0 +1,42 @@
+{"status": "done"}
+```python
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    
+    # Get dimensions
+    num_rows = len(m)
+    num_cols = len(m[0])
+    
+    # If the grid is empty (rows exist but are empty lists), handle it
+    if num_cols == 0:
+        return [[] for _ in range(num_rows)]
+    
+    # The result will have num_cols rows and num_rows columns
+    # To rotate 90 degrees clockwise:
+    # new_grid[i][j] = old_grid[num_rows - 1 - j][i]
+    # Or equivalently:
+    # The first row of the output corresponds to the last column of the input, read from bottom to top? 
+    # Let's re-read the spec carefully.
+    # "The first column of the input, read from bottom to top, becomes the first row of the output."
+    
+    # Input:
+    # [[1, 2, 3],
+    #  [4, 5, 6]]
+    # First column: [1, 4]. Bottom to top: [4, 1]. This becomes the first row of output: [4, 1].
+    # Second column: [2, 5]. Bottom to top: [5, 2]. This becomes the second row of output: [5, 2].
+    # Third column: [3, 6]. Bottom to top: [6, 3]. This becomes the third row of output: [6, 3].
+    # Output: [[4, 1], [5, 2], [6, 3]]
+    
+    # So, for each column index c in input:
+    #   Create a new row by taking m[r][c] for r from num_rows-1 down to 0.
+    
+    new_grid = []
+    for c in range(num_cols):
+        new_row = []
+        for r in range(num_rows - 1, -1, -1):
+            new_row.append(m[r][c])
+        new_grid.append(new_row)
+        
+    return new_grid
+```

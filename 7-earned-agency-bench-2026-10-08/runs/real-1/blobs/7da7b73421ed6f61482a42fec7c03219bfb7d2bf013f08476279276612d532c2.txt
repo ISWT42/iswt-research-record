@@ -1,0 +1,20 @@
+import re
+from collections import Counter
+
+def top_words(text: str, n: int) -> list:
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    
+    # Find all runs of ASCII letters
+    words = re.findall(r'[a-zA-Z]+', text)
+    
+    # Convert to lowercase and count frequencies
+    counts = Counter(word.lower() for word in words)
+    
+    # Sort by frequency (descending) and then by original order of appearance (implicit in Counter)
+    # The problem asks for the n most frequent. 
+    # In Python 3.7+, Counter remembers insertion order.
+    # most_common(n) returns the n most common elements.
+    # If counts are tied, most_common returns the one encountered first.
+    
+    return [word for word, count in counts.most_common(n)]

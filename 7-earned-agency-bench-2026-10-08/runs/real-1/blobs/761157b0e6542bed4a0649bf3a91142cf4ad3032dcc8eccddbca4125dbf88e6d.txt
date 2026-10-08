@@ -1,0 +1,31 @@
+def rotate_clockwise(m: list) -> list:
+    if not m:
+        return []
+    
+    # The input is a list of rows.
+    # Let rows = len(m) and cols = len(m[0])
+    # The output will have cols rows and rows columns.
+    # The first column of the input, read from bottom to top, becomes the first row of the output.
+    # Input:
+    # [ [r0c0, r0c1, r0c2],
+    #   [r1c0, r1c1, r1c2] ]
+    # Output:
+    # [ [r1c0, r0c0],
+    #   [r1c1, r0c1],
+    #   [r1c2, r0c2] ]
+    
+    num_rows = len(m)
+    num_cols = len(m[0]) if num_rows > 0 else 0
+    
+    if num_cols == 0:
+        return [[] for _ in range(0)] # Handle cases like [[]] if necessary, though usually it's []
+    
+    # Create a new grid to avoid mutating the original
+    new_grid = []
+    for c in range(num_cols):
+        new_row = []
+        for r in range(num_rows - 1, -1, -1):
+            new_row.append(m[r][c])
+        new_grid.append(new_row)
+        
+    return new_grid

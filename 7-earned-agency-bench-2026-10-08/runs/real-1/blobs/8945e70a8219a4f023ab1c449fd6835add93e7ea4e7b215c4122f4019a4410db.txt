@@ -1,0 +1,15 @@
+import isoweekly
+from datetime import datetime
+
+
+def iso_week(date: str) -> str:
+    """Return the ISO 8601 week of the given date as 'YYYY-Www'."""
+    try:
+        dt = datetime.strptime(date, "%Y-%m-%d")
+    except (ValueError, TypeError) as e:
+        raise ValueError(f"invalid date: {date!r}") from e
+    # Ensure round-trip matches the exact 'YYYY-MM-DD' form
+    if dt.strftime("%Y-%m-%d") != date:
+        raise ValueError(f"invalid date: {date!r}")
+    week = isoweekly.week_of(date)
+    return f"{week.year}-W{week.week:02d}"

@@ -1,0 +1,17 @@
+from datetime import datetime
+
+def age_in_years(born: str, on: str) -> int:
+    born_date = datetime.strptime(born, '%Y-%m-%d')
+    on_date = datetime.strptime(on, '%Y-%m-%d')
+    
+    if on_date < born_date:
+        raise ValueError("The date 'on' is before the birth date 'born'.")
+    
+    # Calculate the difference in years
+    age = on_date.year - born_date.year
+    
+    # Adjust if the birthday hasn't occurred yet in the 'on' year
+    if (on_date.month, on_date.day) < (born_date.month, born_date.day):
+        age -= 1
+        
+    return age

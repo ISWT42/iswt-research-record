@@ -1,0 +1,3 @@
+```json
+{"verdict": "contradicted", "reason": "The runner check for the file hash returned exit 1 with 8 failures, contradicting the 'status done' claim."}
+```

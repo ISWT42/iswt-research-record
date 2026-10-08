@@ -1,0 +1,21 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    slug_to_title = {}
+    for title in titles:
+        # Convert to lowercase
+        slug = title.lower()
+        # Replace non-alphanumeric characters with '-'
+        import re
+        slug = re.sub(r'[^a-z0-9]+', '-', slug)
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        # Ensure uniqueness by appending a counter if needed
+        counter = 1
+        original_slug = slug
+        while slug in slug_to_title:
+            slug = f"{original_slug}-{counter}"
+            counter += 1
+        slug_to_title[slug] = title
+    return slug_to_title
+```

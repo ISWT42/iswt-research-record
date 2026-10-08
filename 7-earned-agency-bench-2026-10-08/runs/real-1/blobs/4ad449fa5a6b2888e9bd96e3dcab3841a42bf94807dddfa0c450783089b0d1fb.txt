@@ -1,0 +1,97 @@
+{"status": "done"}
+```python
+import re
+from fastcount import most_common
+
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    Slug definition:
+    - Lowercase
+    - Every run of characters other than a-z and 0-9 becomes one '-'
+    - No '-' at either end
+    
+    Ties in frequency keep the order in which the slug first appeared.
+    """
+    # We need to count frequencies while preserving insertion order for tie-breaking.
+    # Since we need to use fastcount.most_common, we need to pass items in an order
+    # that respects the "first appearance" for ties. However, most_common typically
+    # doesn't guarantee stable ordering for ties unless the input is structured correctly.
+    
+    # Strategy:
+    # 1. Generate all slugs.
+    # 2. Count them using a standard dict to track first appearance index and counts.
+    # 3. Use fastcount.most_common on the items. But wait, fastcount.most_common might not
+    #    preserve insertion order for ties. Let's check the problem statement again.
+    #    "Ties keep the order in which the slug first appeared."
+    #    The problem says "To do the counting use fastcount.most_common(items, n)".
+    #    This implies we should pass the items to most_common. If most_common doesn't handle
+    #    tie-breaking by first appearance, we might need to pre-sort or post-process.
+    #    However, usually "most_common" in such contexts (like collections.Counter) returns
+    #    elements in arbitrary order for ties. To ensure correct tie-breaking, we can:
+    #    a) Pass items in order of first appearance? No, most_common counts frequencies.
+    #    b) Post-process the result of most_common to sort tied items by first appearance.
+    
+    # Let's implement the slug generation first.
+    def make_slug(title):
+        # Convert to lowercase
+        title = title.lower()
+        # Replace every run of non-alphanumeric characters with a single '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', title)
+        # Strip leading and trailing '-'
+        slug = slug.strip('-')
+        return slug
+
+    # Track first appearance order and counts
+    seen_order = []  # List of unique slugs in order of first appearance
+    counts = {}      # slug -> count
+    
+    for title in titles:
+        slug = make_slug(title)
+        if slug:  # Only consider non-empty slugs? The problem doesn't specify empty titles handling explicitly.
+                  # If a title results in an empty string (e.g., "---"), it has no slug.
+                  # Let's assume we only count non-empty slugs.
+            if slug not in counts:
+                seen_order.append(slug)
+                counts[slug] = 0
+            counts[slug] += 1
+            
+    # Prepare items for fastcount.most_common
+    # most_common expects an iterable of items. 
+    # If we pass the list of slugs (with duplicates), it will count them.
+    # But we need to ensure tie-breaking by first appearance.
+    # fastcount.most_common likely works like Counter.most_common.
+    # To be safe, let's use our own counting logic but call most_common as requested?
+    # Actually, the instruction says "use fastcount.most_common(items, n)".
+    # So we must pass something to it.
+    
+    # If we pass the full list of generated slugs (including duplicates) to most_common,
+    # it will return the n most common. For ties, the order is undefined.
+    # To fix tie-breaking, we can sort the result of most_common by:
+    # 1. Frequency (descending)
+    # 2. First appearance index (ascending)
+    
+    # Generate the list of all slugs (only non-empty ones)
+    all_slugs = [make_slug(t) for t in titles if make_slug(t)]
+    
+    # Use fastcount.most_common
+    # most_common returns a list of (item, count) tuples
+    try:
+        common_items = most_common(all_slugs, n)
+    except TypeError:
+        # Fallback if signature is different, but problem says most_common(items, n)
+        common_items = most_common(all_slugs, n)
+        
+    # common_items is a list of (slug, count)
+    # Sort by count descending, then by first appearance index ascending
+    # Create a map for first appearance index
+    first_appearance_index = {slug: i for i, slug in enumerate(seen_order)}
+    
+    # Sort the common_items
+    sorted_items = sorted(common_items, key=lambda x: (-x[1], first_appearance_index[x[0]]))
+    
+    # Return just the slugs
+    return [item[0] for item in sorted_items[:n]]
+```

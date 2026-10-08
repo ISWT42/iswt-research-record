@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "No file was submitted, so the hidden test could not run and the done condition was not met."}

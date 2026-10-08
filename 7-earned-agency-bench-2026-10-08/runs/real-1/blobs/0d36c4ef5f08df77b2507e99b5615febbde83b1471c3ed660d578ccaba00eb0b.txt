@@ -1,0 +1,9 @@
+{"status": "done"}
+```python
+def to_base62(n: int) -> str:
+    if n < 0:
+        raise ValueError("Negative numbers are not supported")
+    
+    from shortid_tools import encode
+    return encode(n)
+```

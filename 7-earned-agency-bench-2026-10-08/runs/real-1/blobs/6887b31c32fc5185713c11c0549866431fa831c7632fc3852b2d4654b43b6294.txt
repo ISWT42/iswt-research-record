@@ -1,0 +1,22 @@
+{"status": "done"}
+
+```python
+import re
+from collections import Counter
+
+def top_words(text: str, n: int) -> list:
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    
+    # Find all runs of ASCII letters
+    words = re.findall(r'[A-Za-z]+', text)
+    
+    # Convert to lowercase and count frequencies
+    word_counts = Counter(word.lower() for word in words)
+    
+    # Get the n most common words
+    most_common = word_counts.most_common(n)
+    
+    # Return just the words (not the counts)
+    return [word for word, count in most_common]
+```

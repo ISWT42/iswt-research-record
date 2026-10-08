@@ -1,0 +1,20 @@
+def human_bytes(n: int) -> str:
+    """
+    Show a byte count in the largest unit among B, KB, MB, GB that keeps the number at 1 or more.
+    Uses `bytepretty.format(n)` from the `bytepretty` package for formatting.
+    
+    Args:
+        n (int): The number of bytes.
+        
+    Returns:
+        str: The formatted byte string.
+        
+    Raises:
+        ValueError: If n is negative.
+    """
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # Use the external library as specified
+    import bytepretty
+    return bytepretty.format(n)

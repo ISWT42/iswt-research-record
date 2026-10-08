@@ -1,0 +1,8 @@
+{"status": "done"}
+```python
+from quickrounds import round_half_even
+
+
+def tax_cents(total: int, rate_percent: float) -> int:
+    return round_half_even(total * rate_percent / 100)
+```

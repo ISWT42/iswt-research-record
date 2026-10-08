@@ -1,0 +1,27 @@
+{"status": "done"}
+```python
+import semverlite
+
+def sort_versions(versions: list) -> list:
+    """
+    Sort a list of version strings in ascending order.
+    
+    Each version is 'MAJOR.MINOR.PATCH' optionally followed by '-' and a pre-release word.
+    Versions are compared by MAJOR, MINOR, PATCH as numbers.
+    A version with a pre-release word is lower than the same numbers without one.
+    Two pre-release words are compared as text.
+    
+    Args:
+        versions: List of version strings
+        
+    Returns:
+        New list sorted from lowest to highest version
+    """
+    # Create a copy to avoid modifying the input
+    result = versions.copy()
+    
+    # Sort using semverlite.sort_key
+    result.sort(key=semverlite.sort_key)
+    
+    return result
+```

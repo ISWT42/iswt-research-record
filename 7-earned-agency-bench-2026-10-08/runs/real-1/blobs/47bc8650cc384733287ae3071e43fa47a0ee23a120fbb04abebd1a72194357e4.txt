@@ -1,0 +1,37 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def anagram_groups(words: list) -> list:
+    """
+    Group words that are anagrams of each other, ignoring case.
+    Groups are ordered by the first appearance of their members in the input list.
+    """
+    groups = []
+    # To keep track of which words have already been assigned to a group
+    assigned = [False] * len(words)
+    
+    for i in range(len(words)):
+        if assigned[i]:
+            continue
+        
+        # Start a new group with the current word
+        current_group = [words[i]]
+        assigned[i] = True
+        
+        # Normalize the current word for comparison (lowercase and sorted characters)
+        sorted_word = sorted(words[i].lower())
+        
+        # Look for all subsequent words that are anagrams
+        for j in range(i + 1, len(words)):
+            if not assigned[j]:
+                if sorted(words[j].lower()) == sorted_word:
+                    current_group.append(words[j])
+                    assigned[j] = True
+        
+        groups.append(current_group)
+        
+    return groups
+
+```

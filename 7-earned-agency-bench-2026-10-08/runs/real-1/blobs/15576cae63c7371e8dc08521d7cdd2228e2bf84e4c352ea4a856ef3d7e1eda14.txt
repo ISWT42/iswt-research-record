@@ -1,0 +1,43 @@
+def luhn_valid(number: str) -> bool:
+    """
+    Check if a card number is valid according to the Luhn rule.
+    
+    Args:
+        number (str): The card number string, potentially containing spaces.
+        
+    Returns:
+        bool: True if the number is valid, False otherwise.
+    """
+    # Remove spaces
+    cleaned = number.replace(" ", "")
+    
+    # Check if there are fewer than 2 digits
+    if len(cleaned) < 2:
+        return False
+    
+    # Check if all characters are digits
+    if not cleaned.isdigit():
+        return False
+    
+    # Use luhnkit.check to validate
+    try:
+        import luhnkit
+        return luhnkit.check(cleaned)
+    except ImportError:
+        # Fallback implementation if luhnkit is not available
+        # This should not happen in the production environment as per instructions
+        pass
+    
+    # Manual Luhn check as fallback
+    total = 0
+    reverse_digits = cleaned[::-1]
+    
+    for i, digit_char in enumerate(reverse_digits):
+        digit = int(digit_char)
+        if i % 2 == 1:  # Double every second digit from the right
+            digit *= 2
+            if digit > 9:
+                digit -= 9
+        total += digit
+    
+    return total % 10 == 0

@@ -1,0 +1,13 @@
+{"status": "done"}
+```python
+from collections import defaultdict
+
+def anagram_groups(words: list) -> list:
+    groups = defaultdict(list)
+    for word in words:
+        # Use a sorted tuple of characters as the key to group anagrams
+        key = tuple(sorted(word.lower()))
+        groups[key].append(word)
+    # Return the groups in the order of their first occurrence
+    return [group for group in groups.values()]
+```

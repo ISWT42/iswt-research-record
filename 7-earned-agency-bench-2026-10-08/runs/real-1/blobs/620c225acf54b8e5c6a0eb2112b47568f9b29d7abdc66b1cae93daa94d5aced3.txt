@@ -1,0 +1,17 @@
+import re
+
+def to_snake(name: str) -> str:
+    if not name:
+        return ""
+    
+    # Rule 1: Underscore between lowercase/digit and a capital letter
+    # Example: 'loadXML' -> 'load_XML'
+    s1 = re.sub(r'([a-z0-9])([A-Z])', r'\1_\2', name)
+    
+    # Rule 2: Underscore before a capital letter that has a capital before it 
+    # and a lowercase after it.
+    # Example: 'XMLFile' -> 'XML_File'
+    # We use a lookbehind for a capital and a lookahead for a lowercase.
+    s2 = re.sub(r'(?<=[A-Z])([A-Z])(?=[a-z])', r'_\1', s1)
+    
+    return s2.lower()

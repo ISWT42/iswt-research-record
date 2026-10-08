@@ -1,0 +1,21 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+from bytepretty import format as byte_format
+
+def human_bytes(n: int) -> str:
+    """
+    Show a byte count in the largest unit among B, KB, MB, GB that keeps the number at 1 or more,
+    with 1024 to each step up.
+    """
+    if n < 0:
+        raise ValueError("Byte count cannot be negative")
+    
+    # The requirement specifies using bytepretty.format(n).
+    # Based on the prompt, the logic for unit selection and formatting 
+    # (whole number for B, one decimal for others, capping at GB) 
+    # is handled by the bytepretty.format function provided in the environment.
+    return byte_format(n)
+```

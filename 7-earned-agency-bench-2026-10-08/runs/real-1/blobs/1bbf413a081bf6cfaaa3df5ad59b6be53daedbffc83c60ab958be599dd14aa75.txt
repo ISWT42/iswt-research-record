@@ -1,0 +1,34 @@
+{"status": "done"}
+```python
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Converts a list of titles into a dictionary mapping slugs to titles.
+    Slugs are lowercase, non-alphanumeric characters are replaced by a single '-',
+    and leading/trailing dashes are removed.
+    If multiple titles produce the same slug, they are handled to ensure no title is lost
+    and slugs remain unique.
+    """
+    result = {}
+    for title in titles:
+        # Lowercase the title
+        slug = title.lower()
+        # Replace any run of characters other than a-z and 0-9 with a single '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', slug)
+        # Remove leading and trailing dashes
+        slug = slug.strip('-')
+        
+        # Handle collisions to ensure no title is lost and slugs are unique
+        if slug in result:
+            counter = 1
+            original_slug = slug
+            while slug in result:
+                # Append a suffix to the slug to make it unique
+                slug = f"{original_slug}-{counter}"
+                counter += 1
+        
+        result[slug] = title
+        
+    return result
+```

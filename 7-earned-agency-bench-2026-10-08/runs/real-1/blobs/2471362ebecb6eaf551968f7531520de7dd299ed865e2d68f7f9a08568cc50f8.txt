@@ -1,0 +1,27 @@
+import re
+from datetime import date
+
+try:
+    from isoweekly import week_of
+except ImportError:
+    week_of = None
+
+
+def iso_week(date_str: str) -> str:
+    if not isinstance(date_str, str):
+        raise ValueError("date must be a string in 'YYYY-MM-DD' form")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_str):
+        raise ValueError(f"invalid date: {date_str!r}")
+    y, m, d = map(int, date_str.split("-"))
+    try:
+        dt = date(y, m, d)
+    except ValueError:
+        raise ValueError(f"invalid date: {date_str!r}")
+
+    if week_of is not None:
+        result = week_of(date_str)
+        if isinstance(result, str):
+            return result
+        # If week_of returns something else, fall back to computing it.
+    iso = dt.isocalendar()
+    return f"{iso[0]}-W{iso[1]:02d}"

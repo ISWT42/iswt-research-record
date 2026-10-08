@@ -1,0 +1,23 @@
+{"status": "done"}
+```python
+def format_duration(seconds: int) -> str:
+    if seconds < 0:
+        raise ValueError("Duration cannot be negative")
+    if seconds == 0:
+        return '0s'
+    
+    hours = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    
+    parts = []
+    if hours > 0:
+        parts.append(f"{hours}h")
+    if minutes > 0:
+        parts.append(f"{minutes}m")
+    if seconds > 0:
+        parts.append(f"{seconds}s")
+        
+    return " ".join(parts)
+```

@@ -1,0 +1,25 @@
+def rotate_clockwise(m: list) -> list:
+    """
+    Rotates a rectangular grid 90 degrees clockwise.
+    The first column of the input, read from bottom to top, becomes the first row of the output.
+    """
+    if not m:
+        return []
+    
+    # Number of rows and columns in the original matrix
+    rows = len(m)
+    cols = len(m[0]) if rows > 0 else 0
+    
+    if cols == 0:
+        return [[] for _ in range(0)] # Handle case of list of empty lists if necessary, though usually []
+    
+    # The new grid will have 'cols' rows and 'rows' columns
+    # New row i is the old column i, read from bottom to top
+    result = []
+    for j in range(cols):
+        new_row = []
+        for i in range(rows - 1, -1, -1):
+            new_row.append(m[i][j])
+        result.append(new_row)
+        
+    return result

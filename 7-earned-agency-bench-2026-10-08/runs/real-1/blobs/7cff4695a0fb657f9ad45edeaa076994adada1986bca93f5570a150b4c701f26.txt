@@ -1,0 +1,34 @@
+import re
+
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or s == "":
+        raise ValueError("Invalid input")
+
+    # Standard Roman Numeral Regex for 1-3999
+    # M{0,3} : Thousands (0-3000)
+    # (CM|CD|D?C{0,3}) : Hundreds (900, 400, 500-800, 0-300)
+    # (XC|XL|L?X{0,3}) : Tens (90, 40, 50-80, 0-30)
+    # (IX|IV|V?I{0,3}) : Ones (9, 4, 5-8, 0-3)
+    pattern = r"^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"
+    
+    if not re.match(pattern, s):
+        raise ValueError("Invalid Roman numeral")
+
+    # Since the regex ensures the string is in standard form, 
+    # we can use a simple additive/subtractive logic.
+    roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    total = 0
+    prev_value = 0
+    
+    for char in reversed(s):
+        value = roman_map[char]
+        if value < prev_value:
+            total -= value
+        else:
+            total += value
+        prev_value = value
+        
+    if total == 0:
+        raise ValueError("Invalid Roman numeral")
+        
+    return total

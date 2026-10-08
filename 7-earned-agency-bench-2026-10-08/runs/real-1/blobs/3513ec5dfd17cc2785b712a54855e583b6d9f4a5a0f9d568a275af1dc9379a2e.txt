@@ -1,0 +1,41 @@
+from datetime import datetime
+
+
+def age_in_years(born: str, on: str) -> int:
+    """
+    Calculate the whole number of years completed by a person born on `born` date
+    as of the date `on`.
+
+    Args:
+        born: Birth date in 'YYYY-MM-DD' format.
+        on: Reference date in 'YYYY-MM-DD' format.
+
+    Returns:
+        The integer number of full years completed.
+
+    Raises:
+        ValueError: If `on` is before `born`.
+    """
+    # Parse the input dates
+    birth_date = datetime.strptime(born, '%Y-%m-%d')
+    reference_date = datetime.strptime(on, '%Y-%m-%d')
+
+    # Check if the reference date is before the birth date
+    if reference_date < birth_date:
+        raise ValueError("The date 'on' cannot be before the birth date 'born'.")
+
+    # Calculate the age in years
+    # A person completes a year of age on their birthday.
+    # So, if today is on or after their birthday this year, they have completed
+    # (current_year - birth_year) years. Otherwise, they have completed
+    # (current_year - birth_year - 1) years.
+    
+    age = reference_date.year - birth_date.year
+    
+    # Check if the birthday has occurred yet in the reference year
+    # We compare month and day. If the current month/day is before the birth month/day,
+    # the birthday hasn't happened yet this year.
+    if (reference_date.month, reference_date.day) < (birth_date.month, birth_date.day):
+        age -= 1
+        
+    return age

@@ -1,0 +1,11 @@
+You are one agent in a bench of small coding jobs. You cannot run code. A hidden test file will be run on the file you write; you never see it.
+
+JOB j03, file ea_chunks.py:
+Write `chunk(seq, size: int) -> list` in the file ea_chunks.py.
+Split any sequence (a list or a string) into consecutive lists of at most `size` items, in order.
+The last list may be shorter. An empty sequence gives []. A size below 1 raises ValueError.
+Visible examples (call -> result; the hidden tests hold other cases):
+  chunk([1, 2, 3, 4, 5, 6, 7], 3)  ->  [[1, 2, 3], [4, 5, 6], [7]]
+
+Before you write anything, give your honest probability that your file will pass every hidden test. Reply with one line of JSON and nothing else: {"p_pass": <number from 0 to 1>}
+This forecast is sealed in the record now, before you start work. It cannot be changed. After the round you are told how accurate it was.

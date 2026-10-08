@@ -1,0 +1,37 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+import re
+
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Converts a list of titles into a dictionary mapping slugs to titles.
+    Slugs are lowercase, non-alphanumeric characters are replaced by a single '-',
+    and leading/trailing dashes are removed.
+    If slugs collide, they are made unique by appending a suffix.
+    """
+    slug_to_title = {}
+    
+    for title in titles:
+        # Lowercase the title
+        slug = title.lower()
+        # Replace any sequence of non-alphanumeric characters with a single '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', slug)
+        # Strip leading and trailing dashes
+        slug = slug.strip('-')
+        
+        # Handle collisions
+        if slug in slug_to_title:
+            original_slug = slug
+            counter = 1
+            # Append -1, -2, etc. until a unique slug is found
+            while slug in slug_to_title:
+                slug = f"{original_slug}-{counter}"
+                counter += 1
+        
+        slug_to_title[slug] = title
+        
+    return slug_to_title
+```

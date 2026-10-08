@@ -1,0 +1,15 @@
+{"status": "done"}
+```python
+def split_cents(total: int, n: int) -> list:
+    if n < 1:
+        raise ValueError("n must be at least 1")
+    
+    base_share = total // n
+    remainder = total % n
+    
+    # Create a list where each person gets the base share, 
+    # and the first 'remainder' people get one extra cent.
+    shares = [base_share + (1 if i < remainder else 0) for i in range(n)]
+    
+    return shares
+```

@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "The runner's check failed with exit 1 and 0 passed cases, contradicting the 'done' requirement of exit 0 and all cases passing."}

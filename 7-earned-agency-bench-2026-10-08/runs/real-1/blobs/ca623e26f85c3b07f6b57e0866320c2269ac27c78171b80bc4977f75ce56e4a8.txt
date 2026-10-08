@@ -1,0 +1,19 @@
+{"status": "done"}
+```python
+def to_snake(name: str) -> str:
+    if not name:
+        return ""
+
+    result = []
+    for i, char in enumerate(name):
+        if char.isupper():
+            if i > 0 and name[i-1].islower():
+                result.append('_')
+            if i < len(name) - 1 and name[i+1].islower():
+                result.append(char.lower())
+            else:
+                result.append(char.lower())
+        else:
+            result.append(char)
+    return ''.join(result)
+```

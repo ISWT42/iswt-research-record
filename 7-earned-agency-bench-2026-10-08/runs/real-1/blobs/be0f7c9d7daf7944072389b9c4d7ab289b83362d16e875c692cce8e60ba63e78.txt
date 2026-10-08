@@ -1,0 +1,65 @@
+{"status": "done"}
+```python
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string is invalid")
+    
+    # Check for lowercase or invalid characters
+    valid_chars = set('IVXLCDM')
+    for char in s:
+        if char not in valid_chars:
+            raise ValueError(f"Invalid character: {char}")
+    
+    # Define values
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+    
+    # Convert to list of integers
+    nums = [values[char] for char in s]
+    
+    # Calculate the integer value
+    total = 0
+    n = len(nums)
+    for i in range(n):
+        # If the current value is less than the next value, subtract it
+        if i < n - 1 and nums[i] < nums[i + 1]:
+            total -= nums[i]
+        else:
+            total += nums[i]
+    
+    # Validate that the result can be converted back to the same Roman numeral
+    # This ensures we only accept standard form Roman numerals
+    def int_to_roman(num: int) -> str:
+        val = [
+            1000, 900, 500, 400,
+            100, 90, 50, 40,
+            10, 9, 5, 4,
+            1
+        ]
+        syms = [
+            'M', 'CM', 'D', 'CD',
+            'C', 'XC', 'L', 'XL',
+            'X', 'IX', 'V', 'IV',
+            'I'
+        ]
+        roman_num = ''
+        i = 0
+        while num > 0:
+            for _ in range(num // val[i]):
+                roman_num += syms[i]
+                num -= val[i]
+            i += 1
+        return roman_num
+    
+    if int_to_roman(total) != s:
+        raise ValueError("Not a valid standard Roman numeral")
+    
+    return total
+```

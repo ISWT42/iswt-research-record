@@ -1,0 +1,38 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def compare_versions(a: str, b: str) -> int:
+    """
+    Compares two version strings.
+    Returns 1 if a > b, -1 if a < b, and 0 if a == b.
+    Raises ValueError if any part is empty or contains non-digit characters.
+    """
+    def parse_version(v: str):
+        parts = v.split('.')
+        # Check for empty parts (e.g., '1..2' or starting/ending with '.')
+        # Note: split('.') on an empty string returns [''], which is handled here.
+        if not v and v != "": # This is a logic check, but split handles it.
+            pass 
+        
+        # The problem states "A version with an empty part... raises ValueError"
+        # If v is empty string, split('.') returns [''], which is an empty part.
+        
+        numeric_parts = []
+        for p in parts:
+            if not p or not p.isdigit():
+                raise ValueError("Version parts must be non-empty and consist only of digits.")
+            numeric_parts.append(int(p))
+        return numeric_parts
+
+    # Handle the case where the input string itself might be empty if that's considered an empty part
+    # Based on "A version with an empty part", if a is '', split('.') is [''], which is empty.
+    parts_a = parse_version(a)
+    parts_b = parse_version(b)
+
+    # Normalize lengths by padding with zeros
+    max_len = max(len(parts_a), len(parts_b))
+    
+    for i in range(max_len):
+        val_a = parts_

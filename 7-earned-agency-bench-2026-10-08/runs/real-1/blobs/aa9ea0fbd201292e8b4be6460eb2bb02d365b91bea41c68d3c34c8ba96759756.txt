@@ -1,0 +1,65 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Returns a dictionary mapping each title's slug to the title itself.
+    
+    Slug rules:
+    - Lowercase the title.
+    - Replace every run of characters that are NOT (a-z or 0-9) with a single '-'.
+    - Remove leading and trailing '-' characters.
+    
+    If two titles produce the same slug, the first one encountered wins in the dict,
+    but all titles must be preserved. Since dicts have unique keys, we need a strategy
+    to handle collisions. The problem states "no title may be lost" and "slugs in the result 
+    must still be unique". This implies we might need to modify the slug for duplicates.
+    
+    However, looking at the example: {'red-car': 'Red Car', 'blue-sky': 'Blue Sky'}
+    It maps slug -> title. If there's a collision, how do we keep both?
+    Standard dict behavior would overwrite. The requirement "no title may be lost" suggests
+    we cannot simply overwrite. We likely need to append a suffix to duplicate slugs to make them unique.
+    
+    Let's re-read carefully: "If two titles give the same slug, the slugs in the result must still be unique and no title may be lost."
+    This means if Title A and Title B both map to 'foo', we can't have {'foo': 'A', 'foo': 'B'}.
+    We probably need something like {'foo': 'A', 'foo-1': 'B'} or similar.
+    But what is the convention? Usually, it's appending a counter or index.
+    Let's assume a simple approach: if a slug already exists, append '-1', '-2', etc. until unique.
+    """
+    result = {}
+    slug_counts = {}
+    
+    for title in titles:
+        # Generate base slug
+        lower_title = title.lower()
+        current_slug = []
+        prev_was_sep = False
+        
+        for char in lower_title:
+            if char.isalpha() or char.isdigit():
+                if prev_was_sep:
+                    current_slug.append('-')
+                    prev_was_sep = False
+                current_slug.append(char)
+            else:
+                prev_was_sep = True
+        
+        # Join and strip leading/trailing dashes
+        slug = ''.join(current_slug).strip('-')
+        
+        # Handle uniqueness
+        if slug not in result:
+            result[slug] = title
+            slug_counts[slug] = 1
+        else:
+            # Find a unique variant
+            count = slug_counts[slug]
+            while True:
+                new_slug = f"{slug}-{count}"
+                if new_slug not in result:
+                    result[new_slug] = title
+                    slug_counts[slug] = count + 1
+                    break
+                count += 1
+                
+    return result
+```

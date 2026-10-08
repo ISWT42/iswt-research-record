@@ -1,0 +1,15 @@
+{"status": "done"}
+```python
+import re
+from collections import Counter
+
+
+def top_words(text: str, n: int) -> list:
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    words = re.findall(r'[A-Za-z]+', text)
+    counts = Counter(w.lower() for w in words)
+    # Sort by frequency descending; ties broken by first appearance order for stability
+    # Using most_common which preserves insertion order for ties
+    return [w for w, _ in counts.most_common(n)]
+```

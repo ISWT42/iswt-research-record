@@ -1,0 +1,17 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+import shortid_tools
+
+def to_base62(n: int) -> str:
+    """
+    Converts a non-negative integer to a base 62 string using the 
+    character set: 0-9, a-z, A-Z.
+    """
+    if n < 0:
+        raise ValueError("Number must be non-negative")
+    
+    return shortid_tools.encode(n)
+```

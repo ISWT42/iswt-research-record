@@ -1,0 +1,34 @@
+def roman_to_int(s: str) -> int:
+    if not s:
+        raise ValueError("Empty string is invalid")
+    
+    # Check for lowercase or invalid characters
+    valid_chars = set('IVXLCDM')
+    for char in s:
+        if char not in valid_chars:
+            raise ValueError(f"Invalid character: {char}")
+
+    values = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    }
+
+    # Convert to list of integers
+    nums = [values[char] for char in s]
+    
+    total = 0
+    n = len(nums)
+    
+    for i in range(n):
+        # If the current value is less than the next value, subtract it
+        if i < n - 1 and nums[i] < nums[i + 1]:
+            total -= nums[i]
+        else:
+            total += nums[i]
+            
+    return total

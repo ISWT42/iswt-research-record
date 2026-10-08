@@ -1,0 +1,62 @@
+import re
+from fastcount import most_common
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    Slug definition:
+    - Lowercase
+    - Every run of characters other than a-z and 0-9 becomes one '-'
+    - No '-' at either end
+    
+    Returns slugs sorted by frequency (most frequent first).
+    Ties are broken by the order in which the slug first appeared.
+    Uses fastcount.most_common(items, n) for counting.
+    """
+    if not titles or n <= 0:
+        return []
+    
+    # Process each title to generate its slug
+    slugs = []
+    seen_order = {}  # Map slug to its first appearance index
+    
+    for i, title in enumerate(titles):
+        # Convert to lowercase
+        lower_title = title.lower()
+        
+        # Replace every run of non-alphanumeric characters with a single '-'
+        # [^a-z0-9] matches any character that is NOT a lowercase letter or digit
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        
+        # Skip empty slugs (e.g., if title was all punctuation)
+        if not slug:
+            continue
+            
+        slugs.append(slug)
+        
+        # Track first appearance order
+        if slug not in seen_order:
+            seen_order[slug] = i
+    
+    # Use fastcount.most_common to get the n most common items
+    # most_common returns a list of (item, count) tuples, sorted by count descending
+    # For ties, we need to preserve the order of first appearance
+    common_items = most_common(slugs, n)
+    
+    # Sort by frequency (descending), then by first appearance order (ascending) for ties
+    # most_common already sorts by frequency descending, but we need to handle ties manually
+    # Let's extract the results and sort properly
+    
+    result = []
+    for item, count in common_items:
+        result.append((item, count, seen_order[item]))
+    
+    # Sort by count descending, then by first appearance index ascending
+    result.sort(key=lambda x: (-x[1], x[2]))
+    
+    # Extract just the slugs
+    return [item for item, count, idx in result]

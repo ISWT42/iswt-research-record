@@ -1,0 +1,32 @@
+import datetime
+
+
+def days_between(a: str, b: str) -> int:
+    """
+    Calculate the number of days from date a to date b.
+    
+    Args:
+        a: Start date in 'YYYY-MM-DD' format
+        b: End date in 'YYYY-MM-DD' format
+    
+    Returns:
+        Integer representing the number of days from a to b.
+        Positive if b is later than a, negative if b is earlier, 0 if same day.
+    
+    Raises:
+        ValueError: If either string is not a valid calendar date in 'YYYY-MM-DD' format.
+    """
+    # Validate and parse the dates
+    try:
+        date_a = datetime.datetime.strptime(a, '%Y-%m-%d').date()
+    except (ValueError, TypeError):
+        raise ValueError(f"Invalid date format or value: {a}")
+    
+    try:
+        date_b = datetime.datetime.strptime(b, '%Y-%m-%d').date()
+    except (ValueError, TypeError):
+        raise ValueError(f"Invalid date format or value: {b}")
+    
+    # Calculate the difference in days
+    delta = date_b - date_a
+    return delta.days

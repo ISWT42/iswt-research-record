@@ -1,0 +1,14 @@
+def percentile(values: list, p: float) -> float:
+    if not values:
+        raise ValueError("values must not be empty")
+    if not (0 < p <= 100):
+        raise ValueError("p must be in (0, 100]")
+    data = sorted(values)
+    n = len(data)
+    if n == 1:
+        return float(data[0])
+    rank = (p / 100.0) * (n - 1)
+    lo = int(rank)
+    hi = min(lo + 1, n - 1)
+    frac = rank - lo
+    return float(data[lo] + (data[hi] - data[lo]) * frac)

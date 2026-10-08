@@ -1,0 +1,100 @@
+{"status": "done"}
+
+```python
+def roman_to_int(s: str) -> int:
+    if not isinstance(s, str) or s == "":
+        raise ValueError("empty or invalid")
+    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
+              'C': 100, 'D': 500, 'M': 1000}
+    # Validate characters
+    for ch in s:
+        if ch not in values:
+            raise ValueError("invalid character")
+
+    # Check standard form by parsing greedily and verifying reconstruction
+    # Build list of (value, symbol) and check ordering/repetition rules
+    i = 0
+    total = 0
+    n = len(s)
+    prev_value = None
+    repeat_count = 0
+    last_symbol = None
+
+    # We'll parse using a strict approach: scan left to right,
+    # handle subtractive pairs, enforce ordering and repetition.
+    # First, check for valid subtractive pairs at correct positions.
+    # Simpler: convert using standard algorithm but validate structure.
+
+    # Validate structure:
+    # - no lowercase (already checked via values)
+    # - repetition rules
+    # - ordering (non-increasing except subtractive pairs)
+    # - subtractive pairs only the six allowed, and I/X/C/M as first of pair
+
+    # Check repetition: V, L, D never repeat; I, X, C, M up to 3
+    # Check no more than 3 in a row for I,X,C,M
+    # Check ordering: each symbol's value should be <= previous unless part of allowed subtractive pair
+
+    # Let's do a strict parse:
+    idx = 0
+    while idx < n:
+        ch = s[idx]
+        # Check for subtractive pair
+        if idx + 1 < n:
+            nxt = s[idx + 1]
+            pair = ch + nxt
+            if pair in ('IV', 'IX', 'XL', 'XC', 'CD', 'CM'):
+                # Validate: ch must be I, X, or C (already implied by pairs)
+                # And this pair must be in correct position (larger before it)
+                # Check that ch hasn't been repeated improperly before
+                # Check next symbol after pair is smaller than value of pair's second symbol? 
+                # Actually standard: after subtractive pair, next must be <= value of second symbol
+                # We'll handle ordering check separately
+                total += values[nxt] - values[ch]
+                # After a subtractive pair, the next symbol (if any) must be <= values[ch]... 
+                # actually must be < values[nxt]? Let's think: XIV = 14, after IV comes nothing.
+                # CDL = 450, after CD comes L (50) which is < D(500) but > C(100)? 
+                # Actually CD = 400, L = 50, 50 < 400, fine.
+                # The rule: symbols go largest to smallest. After pair CD (value 400),
+                # next symbol must have value <= 50 (value of D? no, value of the pair's 
+                # "effective" is 400, but next must be < 100? Hmm.
+                # Standard: after CD, next must be <= 50 (L) or smaller like X, I.
+                # Actually next must be < C's value? No.
+                # Let's just check: next symbol value must be <= value of second symbol (D=500)?
+                # That's too loose. CDL: L=50 <= 500 ok. CDC would be wrong (C after CD).
+                # CDC: C=100. Is 100 <= 500? Yes but CDC is invalid.
+                # Actually the rule is next must be < value of first symbol of pair? C=100, next C=100, not <.
+                # Hmm, let's think differently.
+                # We'll do a full validation pass separately.
+                idx += 2
+                last_symbol = nxt
+                prev_value = values[nxt]
+                repeat_count = 0  # reset after pair
+                continue
+        # Not a subtractive pair, single symbol
+        # Check repetition
+        if ch in ('V', 'L', 'D'):
+            if last_symbol == ch:
+                raise ValueError("VLD cannot repeat")
+            repeat_count = 0
+        else:  # I, X, C, M
+            if last_symbol == ch:
+                repeat_count += 1
+                if repeat_count >= 3:
+                    raise ValueError("too many repeats")
+            else:
+                repeat_count = 0
+        # Check ordering: value must be <= prev_value (non-increasing)
+        if prev_value is not None and values[ch] > prev_value:
+            raise ValueError("ordering violation")
+        total += values[ch]
+        prev_value = values[ch]
+        last_symbol = ch
+        idx += 1
+
+    # Additional validation: reconstruct and check it matches standard form
+    # by re-encoding
+    def encode(num):
+        mapping = [(1000,'M'),(900,'CM'),(500,'D'),(400,'CD'),
+                   (100,'C'),(90,'XC'),(50,'L'),(40,'XL'),
+                   (10,'X'),(9,'IX'),(5,'V'),(

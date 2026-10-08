@@ -1,6 +1,6 @@
-# Public research record, staged 8 October 2026
+# Public research record, 8 October 2026
 
-By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 7 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. Published 8 October 2026; archived on Zenodo, DOI 10.5281/zenodo.23227858. All 99 OpenTimestamps proofs in this record carry a Bitcoin block.
+By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 8 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. First published 8 October 2026 (bundles 1 to 6; archived on Zenodo, DOI 10.5281/zenodo.23227858). Bundle 7, the Earned Agency Bench, was added later on 8 October 2026 (this release has its own version DOI on Zenodo, under the same concept DOI 10.5281/zenodo.23227857). There are 101 OpenTimestamps proofs in this record. 100 carry a Bitcoin block. The one still waiting is the proof for the bench's results seal (bundle 7).
 
 ## In plain words
 
@@ -24,6 +24,7 @@ Can an AI agent's "done" be trusted? The studies here ask when it can, when it c
 | [4-ai-village-counts](4-ai-village-counts/) | T13c, T18, T19 and the model scorecard: counts from the gated AI Village record | T19: humans were 303 of 15,030 engaged replies (2.0%); the instrument was built for agent language | FreeTSA stamps 2026-10-04T16:14:15Z to 2026-10-04T20:16:31Z; Bitcoin blocks 969871 to 969871 where confirmed in the file |
 | [5-designs-and-statements](5-designs-and-statements/) | Designs sealed before they ran, and statements in his words | See the folder READMEs | FreeTSA stamps 2026-10-04T04:45:10Z to 2026-10-07T21:36:06Z; Bitcoin blocks 969781 to 970196 where confirmed in the file |
 | [6-seal-checks](6-seal-checks/) | The 5 Oct check of Bitcoin proofs | "82 OK (merkle roots match real Bitcoin block headers; file hashes match), 0 FAIL" | checked 2026-10-05T03:20:59Z |
+| [7-earned-agency-bench-2026-10-08](7-earned-agency-bench-2026-10-08/) | The Earned Agency Bench, real run 1 (8 Oct): four small models, 40 games, 5 ways of handing on finished work | Arm A said done on 314 of 320 jobs and 116 of 320 were false done; checking every job against the record handed on 0 of 320 (arm C); earned routing NOT SHOWN (T1 -0.0117, p = 0.6562) | Design FreeTSA 2026-10-08T03:14:29Z (Bitcoin block 970432); results FreeTSA 2026-10-08T05:45:21Z (Bitcoin proof pending) |
 
 Each bundle folder has its own README with the counts, the seal times and what was left out.
 

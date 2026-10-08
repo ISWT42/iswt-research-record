@@ -1,0 +1,19 @@
+YOUR RECORD SO FAR (written by the runner; a hidden test result is only pass or fail):
+Round 1
+  job j14: you forecast 0.70; the hidden tests passed
+  job j31: you forecast 0.80; the hidden tests failed
+  Round 1 in all: 2 jobs, passed 1 of 2, mean forecast 0.75, Brier score 0.365.
+Round 2
+  job j10: you forecast 0.90; the hidden tests passed
+  job j25: you forecast 0.85; the hidden tests failed
+  Round 2 in all: 2 jobs, passed 1 of 2, mean forecast 0.88, Brier score 0.366.
+Round 3
+  job j05: you forecast 0.85; the hidden tests failed
+  job j24: you forecast 0.95; the hidden tests passed
+  Round 3 in all: 2 jobs, passed 1 of 2, mean forecast 0.90, Brier score 0.362.
+Round 4
+  job j26: you forecast 0.85; the hidden tests passed
+  job j34: you forecast 0.90; the hidden tests failed
+  Round 4 in all: 2 jobs, passed 1 of 2, mean forecast 0.88, Brier score 0.416.
+All rounds so far: 8 jobs, passed 4 of 8, mean forecast 0.85, Brier score 0.378.
+How to read it: the Brier score is the mean of (forecast - result) squared, with result 1 for a pass and 0 for a fail. 0 is perfect. Always forecasting 0.5 scores 0.25. Lower is better.

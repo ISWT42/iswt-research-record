@@ -1,0 +1,26 @@
+{"status": "done"}
+
+```python
+try:
+    from shortid_tools import encode as _encode
+except ImportError:
+    _encode = None
+
+
+def to_base62(n: int) -> str:
+    if not isinstance(n, int) or isinstance(n, bool):
+        raise ValueError("n must be a non-negative integer")
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    if _encode is not None:
+        return _encode(n)
+    # Fallback in case shortid_tools is unavailable
+    digits = "[REDACTED:long-token]"
+    if n == 0:
+        return "0"
+    result = []
+    while n:
+        n, rem = divmod(n, 62)
+        result.append(digits[rem])
+    return "".join(reversed(result))
+```

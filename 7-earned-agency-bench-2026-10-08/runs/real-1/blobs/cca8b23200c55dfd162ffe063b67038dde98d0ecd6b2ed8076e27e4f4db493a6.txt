@@ -1,0 +1,13 @@
+import strictcsv
+
+def split_csv_line(line: str) -> list:
+    """
+    Split one line of comma-separated values into a list of strings.
+    Uses strictcsv.split_line to handle quoting and escaping.
+    """
+    # The requirement specifies that an empty line gives [''].
+    # strictcsv.split_line('') typically returns [''], but we ensure 
+    # the behavior matches the prompt's specific requirement.
+    if line == '':
+        return ['']
+    return strictcsv.split_line(line)

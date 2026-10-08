@@ -1,0 +1,17 @@
+{"status": "done"}
+```python
+def anagram_groups(words: list) -> list:
+    groups_map = {}
+    order = []
+    
+    for word in words:
+        # Normalize word for anagram checking: lowercase and sorted characters
+        key = "".join(sorted(word.lower()))
+        if key not in groups_map:
+            groups_map[key] = []
+            order.append(key)
+        groups_map[key].append(word)
+    
+    # Return the groups in the order their first representative appeared
+    return [groups_map[key] for key in order]
+```

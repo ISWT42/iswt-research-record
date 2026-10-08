@@ -1,0 +1,40 @@
+```json
+{"p_pass": 1.0}
+```
+
+```python
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("Width must be at least 1")
+    
+    words = text.split()
+    if not words:
+        return []
+    
+    lines = []
+    current_line_words = []
+    current_length = 0
+    
+    for word in words:
+        # Calculate length if this word is added to the current line
+        # If current_line_words is empty, length is just len(word)
+        # Otherwise, it's current_length + 1 (for space) + len(word)
+        added_length = len(word) if not current_line_words else current_length + 1 + len(word)
+        
+        if added_length <= width:
+            current_line_words.append(word)
+            current_length = added_length
+        else:
+            # Commit current line and start a new one with the word
+            if current_line_words:
+                lines.append(" ".join(current_line_words))
+            
+            current_line_words = [word]
+            current_length = len(word)
+            
+    # Add the final line if it exists
+    if current_line_words:
+        lines.append(" ".join(current_line_words))
+        
+    return lines
+```

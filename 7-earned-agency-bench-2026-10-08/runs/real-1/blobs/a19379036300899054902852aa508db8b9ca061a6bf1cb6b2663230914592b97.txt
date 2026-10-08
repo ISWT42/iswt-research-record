@@ -1,0 +1,34 @@
+import re
+
+
+def parse_cents(s: str) -> int:
+    if not isinstance(s, str):
+        raise ValueError("not a string")
+    t = s.strip()
+    pattern = r"-?\$?(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d{1,2})?"
+    m = re.fullmatch(pattern, t)
+    if not m:
+        raise ValueError("invalid money string: %r" % (s,))
+    body = t
+    negative = False
+    if body.startswith("-"):
+        negative = True
+        body = body[1:]
+    if body.startswith("$"):
+        body = body[1:]
+    if "." in body:
+        int_part, frac_part = body.split(".")
+    else:
+        int_part, frac_part = body, ""
+    int_digits = int_part.replace(",", "")
+    if not int_digits:
+        raise ValueError("invalid money string: %r" % (s,))
+    dollars = int(int_digits)
+    if len(frac_part) == 0:
+        cents = 0
+    elif len(frac_part) == 1:
+        cents = int(frac_part) * 10
+    else:
+        cents = int(frac_part)
+    total = dollars * 100 + cents
+    return -total if negative else total

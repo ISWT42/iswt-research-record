@@ -1,0 +1,21 @@
+def page_summary(count: int, per_page: int) -> list:
+    if count < 0 or per_page < 1:
+        raise ValueError("count must be non-negative and per_page must be at least 1")
+    
+    if count == 0:
+        return []
+    
+    result = []
+    num_pages = (count + per_page - 1) // per_page
+    
+    for i in range(num_pages):
+        start_index = i * per_page
+        end_index = min((i + 1) * per_page, count) - 1
+        
+        # Positions are 1-based
+        first_pos = start_index + 1
+        last_pos = end_index + 1
+        
+        result.append(f"{i + 1}: {first_pos}-{last_pos}")
+    
+    return result

@@ -1,0 +1,13 @@
+import re
+import unicodedata
+
+
+def slugify(text: str) -> str:
+    # Lowercase the text
+    text = text.lower()
+    # Normalize to decompose accented characters into base + combining marks
+    text = unicodedata.normalize('NFKD', text)
+    # Keep ASCII letters and digits; replace runs of anything else with '-'
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    # Remove '-' from both ends
+    return text.strip('-')

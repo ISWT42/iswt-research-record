@@ -1,0 +1,26 @@
+```json
+{"status": "done"}
+```python
+import fastcount
+import re
+
+def top_slugs(titles: list, n: int) -> list:
+    slugs = []
+    seen = set()
+
+    for title in titles:
+        # Convert to lowercase
+        lower_title = title.lower()
+        # Replace non-alphanumeric runs with '-'
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        # Add to slugs list if not already seen
+        if slug not in seen:
+            seen.add(slug)
+            slugs.append(slug)
+
+    # Get the n most common slugs using fastcount
+    most_common = fastcount.most_common(slugs, n)
+    return [slug for slug, count in most_common]
+```

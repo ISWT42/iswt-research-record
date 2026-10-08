@@ -1,0 +1,11 @@
+def flatten(nested: list) -> list:
+    result = []
+    stack = [nested]
+    while stack:
+        current = stack.pop()
+        for item in current:
+            if isinstance(item, list):
+                stack.append(item)
+            else:
+                result.append(item)
+    return result

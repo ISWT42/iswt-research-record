@@ -1,0 +1,17 @@
+{"status": "done"}
+
+```python
+def two_sum(nums: list, target: int):
+    """
+    Find positions i < j with nums[i] + nums[j] == target.
+    If several pairs work, return the one with the smallest i,
+    and among those the smallest j, as the tuple (i, j).
+    If no pair works, return None.
+    """
+    n = len(nums)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if nums[i] + nums[j] == target:
+                return (i, j)
+    return None
+```

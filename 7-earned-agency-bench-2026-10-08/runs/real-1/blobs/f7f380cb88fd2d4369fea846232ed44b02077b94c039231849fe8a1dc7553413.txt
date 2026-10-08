@@ -1,0 +1,23 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    result = {}
+    for title in titles:
+        slug = _make_slug(title)
+        if slug not in result:
+            result[slug] = title
+    return result
+
+def _make_slug(title: str) -> str:
+    # Convert to lowercase
+    lower_title = title.lower()
+    
+    # Replace every run of characters other than a-z and 0-9 with a single '-'
+    import re
+    slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+    
+    # Remove '-' at either end
+    slug = slug.strip('-')
+    
+    return slug
+```

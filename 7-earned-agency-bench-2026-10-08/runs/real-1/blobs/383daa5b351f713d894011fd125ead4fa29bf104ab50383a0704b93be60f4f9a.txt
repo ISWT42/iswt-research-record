@@ -1,0 +1,12 @@
+{"status": "done"}
+```python
+def dedupe(items: list, key=None) -> list:
+    seen = set()
+    result = []
+    for item in items:
+        k = item if key is None else key(item)
+        if k not in seen:
+            seen.add(k)
+            result.append(item)
+    return result
+```

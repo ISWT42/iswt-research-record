@@ -1,0 +1,37 @@
+{"status": "done"}
+```python
+def title_slug_pairs(titles: list) -> dict:
+    """
+    Returns a dictionary mapping slugs to titles.
+    
+    Slug rules:
+    - Lowercase the title.
+    - Replace every run of characters that are NOT (a-z or 0-9) with a single '-'.
+    - Remove leading and trailing '-' characters.
+    
+    If two titles produce the same slug, the first one encountered in the input list
+    is kept, and subsequent ones with the same slug are ignored to ensure uniqueness
+    and preserve order.
+    """
+    import re
+    
+    result = {}
+    
+    for title in titles:
+        # Convert to lowercase
+        lower_title = title.lower()
+        
+        # Replace every run of non-alphanumeric characters with a single '-'
+        # [^a-z0-9] matches any character that is not a lowercase letter or digit
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        
+        # Strip leading and trailing hyphens
+        slug = slug.strip('-')
+        
+        # Only add if the slug is not already in the result
+        # This ensures uniqueness and preserves the order of first occurrence
+        if slug and slug not in result:
+            result[slug] = title
+            
+    return result
+```

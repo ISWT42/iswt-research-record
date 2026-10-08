@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "The runner's check for the recorded file hash failed with exit code 1 and an assertion error, so the done condition was not met."}

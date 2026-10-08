@@ -1,0 +1,72 @@
+import re
+from fastcount import most_common
+
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    Slug definition:
+    - Lowercase
+    - Every run of characters other than a-z and 0-9 becomes one '-'
+    - No '-' at either end
+    
+    Ties are broken by the order in which the slug first appeared.
+    """
+    # We need to track the order of first appearance for tie-breaking.
+    # We'll collect all slugs with their first occurrence index.
+    
+    slug_first_index = {}
+    slug_counts = []
+    
+    for idx, title in enumerate(titles):
+        # Convert to lowercase
+        lower_title = title.lower()
+        
+        # Replace every run of non-alphanumeric characters with a single '-'
+        # Using regex: [^a-z0-9]+ matches one or more characters that are not a-z or 0-9
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        
+        # Remove leading and trailing dashes
+        slug = slug.strip('-')
+        
+        # Skip empty slugs (e.g., if title was all special chars)
+        if not slug:
+            continue
+        
+        # Track first appearance
+        if slug not in slug_first_index:
+            slug_first_index[slug] = idx
+        
+        slug_counts.append(slug)
+    
+    if not slug_counts:
+        return []
+    
+    # Use fastcount.most_common to get the n most common items
+    # most_common(items, n) returns a list of (item, count) tuples sorted by count descending
+    # For ties, we need to preserve the order of first appearance.
+    # The problem says "Ties keep the order in which the slug first appeared."
+    # This means if two slugs have the same count, the one that appeared first comes first.
+    
+    # However, most_common might not guarantee stable ordering for ties.
+    # Let's check what most_common does. Since we can't see the source, we should be careful.
+    # Typically, Counter.most_common uses a heap or sorting which may not be stable.
+    # To ensure correct tie-breaking, we might need to post-process.
+    
+    # Let's use most_common to get counts, then sort manually for tie-breaking.
+    common_items = most_common(slug_counts, n)
+    
+    # common_items is a list of (slug, count) tuples
+    # We need to sort by count descending, then by first appearance index ascending
+    
+    # Create a list of (slug, count, first_index)
+    enriched = [(slug, count, slug_first_index[slug]) for slug, count in common_items]
+    
+    # Sort by count descending, then by first_index ascending
+    enriched.sort(key=lambda x: (-x[1], x[2]))
+    
+    # Extract just the slugs
+    result = [slug for slug, count, _ in enriched]
+    
+    return result

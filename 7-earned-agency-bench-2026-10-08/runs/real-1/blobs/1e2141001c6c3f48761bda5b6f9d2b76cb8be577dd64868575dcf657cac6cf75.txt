@@ -1,0 +1,15 @@
+{"status": "done"}
+```python
+import gridwrap
+
+def center_line(text: str, width: int) -> str:
+    """
+    Return the text padded with spaces to exactly width characters, 
+    with the text in the middle. If the spaces cannot be split evenly, 
+    the extra space goes on the right. If the text is longer than 
+    width, return it unchanged.
+    """
+    if len(text) >= width:
+        return text
+    return gridwrap.center(text, width)
+```

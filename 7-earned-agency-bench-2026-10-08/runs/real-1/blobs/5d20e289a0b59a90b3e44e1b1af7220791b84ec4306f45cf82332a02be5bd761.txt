@@ -1,0 +1,73 @@
+import re
+from fastcount import most_common
+
+def top_slugs(titles: list, n: int) -> list:
+    """
+    Return the n most frequent slugs from the given titles.
+    
+    Slug definition:
+    - Lowercase
+    - Every run of characters other than a-z and 0-9 becomes one '-'
+    - No '-' at either end
+    
+    Returns slugs sorted by frequency (most frequent first).
+    Ties are broken by the order in which the slug first appeared.
+    """
+    if not titles or n <= 0:
+        return []
+    
+    # We need to track the order of first appearance for tie-breaking
+    # We'll process titles in order and build a list of slugs
+    # Then use fastcount.most_common to get the counts
+    
+    slugs = []
+    seen_order = {}  # slug -> index of first appearance
+    
+    for title in titles:
+        # Convert to lowercase
+        lower_title = title.lower()
+        
+        # Replace every run of non-alphanumeric characters with a single '-'
+        # Using regex: [^a-z0-9]+ matches one or more characters that are NOT a-z or 0-9
+        slug = re.sub(r'[^a-z0-9]+', '-', lower_title)
+        
+        # Remove leading and trailing '-'
+        slug = slug.strip('-')
+        
+        # Skip empty slugs (e.g., if title was all special chars)
+        if not slug:
+            continue
+        
+        # Track first appearance order
+        if slug not in seen_order:
+            seen_order[slug] = len(seen_order)
+        
+        slugs.append(slug)
+    
+    if not slugs:
+        return []
+    
+    # Use fastcount.most_common to get the n most common items
+    # most_common(items, n) returns a list of (item, count) tuples sorted by count descending
+    # For ties, we need to preserve the order of first appearance
+    
+    # Get the most common results
+    common_results = most_common(slugs, n)
+    
+    # common_results is a list of (slug, count) tuples
+    # We need to sort by count descending, then by first appearance order ascending
+    # But most_common might already handle some ordering; let's be explicit
+    
+    # Extract just the slugs from the result, but we need proper tie-breaking
+    # Let's collect all unique slugs with their counts and first appearance indices
+    slug_data = []
+    for slug, count in common_results:
+        slug_data.append((slug, count, seen_order[slug]))
+    
+    # Sort by count descending, then by first appearance index ascending
+    slug_data.sort(key=lambda x: (-x[1], x[2]))
+    
+    # Take the top n
+    result = [slug for slug, count, idx in slug_data[:n]]
+    
+    return result

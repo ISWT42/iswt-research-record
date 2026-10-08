@@ -1,0 +1,11 @@
+{"status": "done"}
+```python
+import nestedget
+
+def nested_get(obj, path: str, default=None):
+    """
+    Walks into obj using the provided path of dot-separated keys/indices.
+    Uses the nestedget package to perform the retrieval.
+    """
+    return nestedget.get(obj, path, default)
+```

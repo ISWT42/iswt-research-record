@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "Runner's test run on the recorded hash exited 1 with 3 failures, so done-definition not met."}

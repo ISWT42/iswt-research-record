@@ -1,0 +1,19 @@
+def anagram_groups(words: list) -> list:
+    groups = []
+    used = set()
+
+    for word in words:
+        if word in used:
+            continue
+
+        # Create a key for the anagram group
+        key = ''.join(sorted(word.lower()))
+
+        # Find all anagrams of the current word
+        anagrams = [w for w in words if ''.join(sorted(w.lower())) == key and w not in used]
+
+        # Add the anagrams to the group and mark them as used
+        groups.append(anagrams)
+        used.update(anagrams)
+
+    return groups

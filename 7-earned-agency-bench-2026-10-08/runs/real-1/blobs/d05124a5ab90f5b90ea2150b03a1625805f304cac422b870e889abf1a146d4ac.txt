@@ -1,0 +1,20 @@
+{"status": "done"}
+```python
+import isoweekly
+
+def iso_week(date: str) -> str:
+    """
+    Returns the ISO 8601 week of a date string 'YYYY-MM-DD' as 'YYYY-Www'.
+    Uses isoweekly.week_of(date) as specified.
+    """
+    # isoweekly.week_of expects a date string in 'YYYY-MM-DD' format.
+    # It returns a Week object. We need to format it as 'YYYY-Www'.
+    # The Week object has attributes 'year' and 'week'.
+    
+    # The prompt specifies that a string that is not a real date in that form 
+    # raises ValueError. isoweekly.week_of typically handles this or 
+    # we can let the underlying date parsing raise it.
+    
+    week_obj = isoweekly.week_of(date)
+    return f"{week_obj.year}-W{week_obj.week:02d}"
+```

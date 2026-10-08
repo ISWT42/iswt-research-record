@@ -1,0 +1,39 @@
+try:
+    import luhnkit
+    _HAS_LUHNKIT = True
+except ImportError:
+    _HAS_LUHNKIT = False
+
+
+def luhn_valid(number: str) -> bool:
+    if not isinstance(number, str):
+        return False
+
+    # Remove spaces
+    cleaned = number.replace(" ", "")
+
+    # Must be at least 2 digits
+    if len(cleaned) < 2:
+        return False
+
+    # All remaining characters must be digits
+    if not cleaned.isdigit():
+        return False
+
+    if _HAS_LUHNKIT:
+        try:
+            return bool(luhnkit.check(number))
+        except Exception:
+            pass
+
+    # Fallback: implement Luhn check directly
+    total = 0
+    # Process from right to left
+    for i, ch in enumerate(reversed(cleaned)):
+        d = int(ch)
+        if i % 2 == 1:  # every second digit from the right (0-indexed odd positions)
+            d *= 2
+            if d > 9:
+                d -= 9
+        total += d
+    return total % 10 == 0

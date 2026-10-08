@@ -1,0 +1,10 @@
+def median(values: list) -> float:
+    if not values:
+        raise ValueError("median() arg is an empty sequence")
+    original = list(values)
+    original.sort()
+    n = len(original)
+    mid = n // 2
+    if n % 2 == 1:
+        return float(original[mid])
+    return (original[mid - 1] + original[mid]) / 2.0

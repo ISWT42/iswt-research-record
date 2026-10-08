@@ -1,0 +1,23 @@
+{"status": "done"}
+
+```python
+def wrap(text: str, width: int) -> list:
+    if width < 1:
+        raise ValueError("width must be at least 1")
+    words = text.split()
+    if not words:
+        return []
+    lines = []
+    current = ""
+    for word in words:
+        if current == "":
+            current = word
+        elif len(current) + 1 + len(word) <= width:
+            current = current + " " + word
+        else:
+            lines.append(current)
+            current = word
+    if current:
+        lines.append(current)
+    return lines
+```

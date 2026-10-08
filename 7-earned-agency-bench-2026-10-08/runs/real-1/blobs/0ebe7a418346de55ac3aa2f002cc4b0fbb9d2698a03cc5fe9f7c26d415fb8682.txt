@@ -1,0 +1,1 @@
+{"verdict": "contradicted", "reason": "The runner check for the recorded file hash resulted in exit 1 with failures, contradicting the claim that status is done."}

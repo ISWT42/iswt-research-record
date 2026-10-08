@@ -1,0 +1,16 @@
+{"status": "not_done"}
+
+The job requires using `shortid_tools.encode(n)`, a package I cannot verify exists or behaves as needed (e.g., its digit ordering, handling of 0, negatives, leading zeros). Since I can't run code or see the hidden tests, and the dependency's exact behavior is uncertain, I can't be confident this passes.
+
+```python
+def to_base62(n: int) -> str:
+    if not isinstance(n, int) or isinstance(n, bool):
+        raise ValueError("n must be a non-negative integer")
+    if n < 0:
+        raise ValueError("negative number")
+    try:
+        from shortid_tools import encode
+    except ImportError as e:
+        raise ImportError("shortid_tools package is required") from e
+    return encode(n)
+```

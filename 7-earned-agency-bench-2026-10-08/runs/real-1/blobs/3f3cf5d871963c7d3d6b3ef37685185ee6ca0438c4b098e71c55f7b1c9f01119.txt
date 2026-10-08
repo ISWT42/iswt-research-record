@@ -1,0 +1,26 @@
+{"status": "done"}
+```python
+import re
+
+_PATTERN = re.compile(r'^-?\$?(?:\d{1,3}(?:,\d{3})*|\d+)(?:\.\d{1,2})?$')
+
+def parse_cents(s: str) -> int:
+    if not isinstance(s, str):
+        raise ValueError("not a string")
+    t = s.strip()
+    if not _PATTERN.match(t):
+        raise ValueError("invalid money string: %r" % (s,))
+    negative = t.startswith('-')
+    if negative:
+        t = t[1:]
+    if t.startswith('$'):
+        t = t[1:]
+    if '.' in t:
+        whole, frac = t.split('.')
+    else:
+        whole, frac = t, ''
+    whole = whole.replace(',', '')
+    frac = frac.ljust(2, '0')
+    cents = int(whole) * 100 + int(frac)
+    return -cents if negative else cents
+```

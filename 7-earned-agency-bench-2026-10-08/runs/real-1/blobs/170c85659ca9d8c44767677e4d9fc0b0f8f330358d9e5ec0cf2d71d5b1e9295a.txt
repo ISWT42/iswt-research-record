@@ -1,0 +1,13 @@
+{
+  "status": "done"
+}
+
+```python
+def average_rating(ratings: list) -> float:
+    if not ratings:
+        return 0.0
+    total = sum(ratings)
+    count = len(ratings)
+    mean = total / count
+    return round(mean, 1)
+```

@@ -1,0 +1,18 @@
+{"status": "done"}
+```python
+def median(values: list) -> float:
+    if not values:
+        raise ValueError("The input list must not be empty.")
+    
+    # Create a sorted copy to avoid modifying the original list
+    sorted_values = sorted(values)
+    n = len(sorted_values)
+    mid = n // 2
+    
+    if n % 2 == 1:
+        # Odd number of elements: return the middle one
+        return float(sorted_values[mid])
+    else:
+        # Even number of elements: return the mean of the two middle ones
+        return (sorted_values[mid - 1] + sorted_values[mid]) / 2.0
+```

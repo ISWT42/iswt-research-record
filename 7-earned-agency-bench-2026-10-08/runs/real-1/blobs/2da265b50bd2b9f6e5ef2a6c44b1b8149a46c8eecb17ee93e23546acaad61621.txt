@@ -1,0 +1,21 @@
+{"status": "done"}
+```python
+from datetime import datetime
+
+def age_in_years(born: str, on: str) -> int:
+    born_date = datetime.strptime(born, '%Y-%m-%d')
+    on_date = datetime.strptime(on, '%Y-%m-%d')
+    
+    if on_date < born_date:
+        raise ValueError("The date 'on' cannot be before the birth date 'born'.")
+    
+    # Calculate the difference in years
+    age = on_date.year - born_date.year
+    
+    # Check if the birthday has occurred this year
+    # If the current month/day is before the birth month/day, subtract one year
+    if (on_date.month, on_date.day) < (born_date.month, born_date.day):
+        age -= 1
+        
+    return age
+```
