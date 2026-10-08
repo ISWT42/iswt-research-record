@@ -1,6 +1,6 @@
 # Public research record, 8 October 2026
 
-By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 8 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. First published 8 October 2026 (bundles 1 to 6; archived on Zenodo, DOI 10.5281/zenodo.23227858). Bundle 7, the Earned Agency Bench, was added later on 8 October 2026 (this release has its own version DOI on Zenodo, under the same concept DOI 10.5281/zenodo.23227857). There are 101 OpenTimestamps proofs in this record. 100 carry a Bitcoin block. The one still waiting is the proof for the bench's results seal (bundle 7).
+By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 8 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. First published 8 October 2026 (bundles 1 to 6; archived on Zenodo, DOI 10.5281/zenodo.23227858). Bundle 7, the Earned Agency Bench, was added later on 8 October 2026 (version DOI 10.5281/zenodo.23235648, under the same concept DOI 10.5281/zenodo.23227857). There are 101 OpenTimestamps proofs in this record. 100 carry a Bitcoin block. The one still waiting is the proof for the bench's results seal (bundle 7).
 
 ## In plain words
 

@@ -6,7 +6,7 @@ This bundle: 6,178 published files, 17.1 MB (6,139 of them are single raw calls 
 
 ## In plain words
 
-Four small, cheap AI models did 40 small coding jobs each, in 5 rounds. Each job had hidden tests that the model never saw. Before each job, the model wrote down how likely it was that its work would pass. Then it did the job and said "done" or not. The hidden tests then decided whether the work really passed. A "false done" is a job the agent called done and the hidden tests failed.
+Four small, cheap AI models worked on a bank of 40 small coding jobs. Each job had hidden tests that the model never saw. A game is one arm played for 5 rounds of 8 jobs, and there were 8 games per arm, 40 games in all. Before each job, the model wrote down how likely it was that its work would pass. Then it did the job and said "done" or not. The hidden tests then decided whether the work really passed. A "false done" is a job the agent called done and the hidden tests failed.
 
 Five ways of handling the hand-off were compared, 8 games each:
 
@@ -14,7 +14,7 @@ Five ways of handling the hand-off were compared, 8 games each:
 |---|---|
 | A baseline | The agent's own word that it was done was accepted. |
 | B ticket | Same, but the prompt carried a ticket written before the work that named the check. |
-| C relay | Every finished job was checked by a second agent, from another model family, against the record. The second agent could not change the work. |
+| C relay | Every finished job was checked by a second agent, from another model family. It was given the ticket, the file's fingerprint, the first agent's claim and the runner's own line from the hidden-test run, and it could not change the work. |
 | D earned | Agents with the better forecasting record were checked less (5 jobs of 8 were checked). |
 | E random | The same amount of checking as D, handed out at random. |
 
@@ -35,7 +35,7 @@ Every number is a count with its denominator, copied from `runs/real-1-score.txt
 
 ## Limits
 
-- The record clearly settled each job here (the hidden tests ran and gave a plain pass or fail). That probably made the second agent's job easy. A perfect checker is not to be expected on messy real logs. For comparison, in an earlier checker study (the deciding-line tables in bundle 3, local pair, 100 items) the rule "shown needs both" let 2 of 68 false "shown" answers through and kept 23 of 32 true ones.
+- The record clearly settled each job here: the second agent was handed the line from the hidden-test run, a plain pass or fail. That probably made its job easy. A perfect checker is not to be expected on messy real logs. For comparison, in an earlier checker study (the deciding-line tables in bundle 3, local pair, 100 items) the rule "shown needs both" let 2 of 68 false "shown" answers through and kept 23 of 32 true ones.
 - Four small, cheap models. One run of 40 games. Not replicated.
 - Two of the declared secondary tests (S6 and S7, the twin pairs) were not run: their arms were not part of this run.
 - Our forecasts for this run are not published (see below).
@@ -70,3 +70,7 @@ Every number is a count with its denominator, copied from `runs/real-1-score.txt
 - **`COMMANDS.md`**: run commands with local paths and account steps.
 - **Not sealed, not published:** the stand-in dry runs, the two smoke runs, `.ots` backup copies.
 - `WITHHELD.json` at the top lists each withheld file with the hash its seal list gives it.
+
+## Correction
+
+8 October 2026, after the release with version DOI 10.5281/zenodo.23235648: that release's copy of this README said the four models "did 40 small coding jobs each, in 5 rounds". The right description is the one in "In plain words" above: a bank of 40 jobs, and 40 games (8 per arm), each game 5 rounds of 8 jobs. The score and every other file are unchanged.
