@@ -1,6 +1,6 @@
 # Public research record, staged 8 October 2026
 
-By Joshua Bauer (ISWT42). This is a staged copy of the sealed studies from 3 to 7 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. Nothing here has been uploaded yet.
+By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 7 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. Published 8 October 2026; archived on Zenodo, DOI 10.5281/zenodo.23227858. All 99 OpenTimestamps proofs in this record carry a Bitcoin block.
 
 ## In plain words
 
