@@ -1284,7 +1284,7 @@
  "known_test_failures": [
   {
    "test": "7-earned-agency-bench-2026-10-08/tests/test_runner.py::test_every_design_code_and_source_file_is_in_the_seal_list",
-   "result": "fails in the public package (re-run on 8 October 2026 in the public bundle folder: 1 failure, naming 4 files at that time). An outside reviewer's full run counted 204 passed, 1 failed, 3 skipped.",
+   "result": "fails in the public package (re-run on 8 October 2026 in the public bundle folder: 1 failure, naming 4 files at that time). An outside methods review's full run counted 204 passed, 1 failed, 3 skipped.",
    "reason": "The test requires every *.py, *.md, *.json, tests/*.py and sources/* file in the bundle folder to be in EAB-SEAL-SHA256.txt. The public package also holds files that were never part of the sealed design: README.md, three .redacted.md copies of withheld sealed originals (DESIGN.redacted.md, sources/AGREED-DESIGN-from-the-7-oct-handoff.redacted.md, sources/IDEA-1-relay-his-words.redacted.md) and ADDENDUM-1-2026-10-08.md. No scored file is outside the seal. The test is a sealed file, so it is not edited.",
    "explained_in": "7-earned-agency-bench-2026-10-08/ADDENDUM-1-2026-10-08.md, section 3",
    "checked": "2026-10-08, test re-run in the public bundle folder"
