@@ -1,5 +1,5 @@
 {
- "comment": "Files left out of this record on purpose, with the SHA-256 the seal list gives them. A redacted copy, where one exists, is named in replaced_by.",
+ "comment": "Files left out of this record on purpose, with the SHA-256 the seal list gives them. A redacted copy, where one exists, is named in replaced_by. On 8 Oct 2026 the owner decided to publish the sealed scorers as they are, including Claude's forecast probabilities inside them, so the counts can be re-run; those 11 files are now in the record unchanged.",
  "entries": [
   {
    "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/ADDENDUM-1.md",
@@ -74,12 +74,6 @@
    "replaced_by": "3-checker-studies-5-to-7-oct/before-after-2026-10-06/DESIGN.redacted.md"
   },
   {
-   "path": "3-checker-studies-5-to-7-oct/before-after-2026-10-06/score_s8b.py",
-   "sha256": "5c62c6f57815b3540f3f8a9fcdc30c59c39f433abdc6f4b951233acb5777b361",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
-  },
-  {
    "path": "3-checker-studies-5-to-7-oct/deciding-line-2026-10-06/DESIGN.md",
    "sha256": "cebaca99bc95fe7f94dac5ae5ffdf0175e11d66fd3f4cac046b3168813251269",
    "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed; 1 forecast section(s) or paragraph(s) removed)",
@@ -126,12 +120,6 @@
    "sha256": "23bd3c514a67207899ef2b3e9ee80d3af9cc6f0c3b3b7a9e70ca6ca483c63994",
    "reason": "sealed original not published; redacted copy published instead (2 forecast section(s) or paragraph(s) removed)",
    "replaced_by": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/score_gate.py",
-   "sha256": "02e3b691afa20bd7980d7fb2b098b759f9b7fec8820888be6ac41e6411484a4d",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
   },
   {
    "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/AGENTS.md",
@@ -200,18 +188,6 @@
    "replaced_by": null
   },
   {
-   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s11/score_s11.py",
-   "sha256": "9920b157e834cd2ebeac037389efe0dda1075c0aae597a1b481a704556402fb3",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/score_s12.py",
-   "sha256": "bde20cc1a30c3678b6b98d49f7d0da2b95db456fc68ba0f3f3cfdd232cd5df97",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
-  },
-  {
    "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/calls.jsonl",
    "sha256": "31c0c6f717887af92f201fb7688c1624efc8faff171cc67fdfb8d3307282d828",
    "reason": "S2 run records are withheld for safety, as the public chain page already says",
@@ -221,12 +197,6 @@
    "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/calls.jsonl",
    "sha256": "31c0c6f717887af92f201fb7688c1624efc8faff171cc67fdfb8d3307282d828",
    "reason": "S2 run records are withheld for safety, as the public chain page already says",
-   "replaced_by": null
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s9/score_s9.py",
-   "sha256": "ed456655eed19b22de71bc1599c6f8d36f1dec288ff59a7d0731be736ccc1e9d",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
    "replaced_by": null
   },
   {
@@ -426,24 +396,6 @@
    "sha256": "ed9c7eb685f2a2109ca3026109ae8d453e4906890be3fe7573ae5a25407bad0c",
    "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
    "replaced_by": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/E2-DESIGN.redacted.md"
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/code/e1_score.py",
-   "sha256": "b68f41b0aa61b9798f31b1c4bb149a2527d496cdcef24e836bc0783297bb690f",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/code/e2_score.py",
-   "sha256": "e8816a974b00201c873e947c1b4be23b2df54b1c07ec6db0feb2a70cb2265028",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/code/report_tables.py",
-   "sha256": "464d701dafec6027a437e7cd6364bfe562be24199487f1f551fdbf15ad761006",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
   },
   {
    "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/e1/results/score-e1.json",
@@ -1166,22 +1118,10 @@
    "replaced_by": null
   },
   {
-   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/score_s13.py",
-   "sha256": "f9d4770fce535162eecca0d69520da395bd1b9304b46227708667cf57d734195",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
-  },
-  {
    "path": "3-checker-studies-5-to-7-oct/tuned-local-2026-10-06/DESIGN.md",
    "sha256": "19b12e21ff6710fb6d1553a65ff1e3aae9dd699187439a320d0b1eacf8ae5829",
    "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
    "replaced_by": "3-checker-studies-5-to-7-oct/tuned-local-2026-10-06/DESIGN.redacted.md"
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/tuned-local-2026-10-06/score_tuned.py",
-   "sha256": "05fb990340f7d108d68cc1b134ad1154a538a2c1bdb9aa81e9afb4712ade9be2",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
   },
   {
    "path": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/DESIGN.md",
@@ -1200,12 +1140,6 @@
    "sha256": "57438ea1b2bd3e895bcd2ed7dc7b4b08a15beb2213c5b8da941dc7bd9ccf84d6",
    "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
    "replaced_by": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/results/S14-SCORED.redacted.md"
-  },
-  {
-   "path": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/score_s14.py",
-   "sha256": "8c8d76e12a54372b2c5c71f83f6df94a65b093ae2db449153c46201e17de361a",
-   "reason": "sealed file that carries forecast probabilities in its code or data",
-   "replaced_by": null
   },
   {
    "path": "4-ai-village-counts/t13c-2026-10-04/DESIGN.md",

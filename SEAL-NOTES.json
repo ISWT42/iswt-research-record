@@ -1268,5 +1268,17 @@
    "listed": "dc4624f0db9719c55d94c382f5838e7b295bf970a87f540e4979bb8abdf500a3"
   }
  ],
- "directory_entries": []
+ "directory_entries": [],
+ "explained": [
+  {
+   "checked": "2026-10-08 by the coordinating session",
+   "files": [
+    "panel-two-blocks answers/RUN-LOG.txt (ANSWERS-SHA256.txt)",
+    "merkle-review answers/RUN-LOG.txt (ANSWERS-SHA256.txt)",
+    "merkle-review answers-run2/RUN-LOG.txt (ANSWERS-RUN2-SHA256.txt)"
+   ],
+   "finding": "Explained. In each case the runner appended two lines to RUN-LOG.txt after it hashed the answers: 'answers sealed: Time stamp: ...' and 'end ... total reported spend US$...'. With the last two lines removed, each RUN-LOG.txt matches its sealed SHA-256 exactly. Every answer file itself matches its seal.",
+   "check": "cd answers; head -n -2 RUN-LOG.txt | sha256sum  # equals the RUN-LOG.txt line in ../ANSWERS-SHA256.txt"
+  }
+ ]
 }
