@@ -1,0 +1,2 @@
+9a279c9f63df1dda5952f8fc73f2b10d1f1945ab713ce6e6413c9c281a1fd06e *STAGE2D-DESIGN.md
+7a6b35a3be9b32ea0ef9272e7ee7d6cb5cfcada726b63e030e2aa6d2865b7dea *stage2d.py

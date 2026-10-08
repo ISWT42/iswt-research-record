@@ -1,0 +1,4 @@
+[broker] FAILED: OpenRouter returned no answer text
+[broker] model: z-ai/glm-5.3 (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/225247-560-openrouter-merkle-review
+[broker] tokens in/out/reasoning: 576/6000/6573; time 40082 ms; cost estimate unknown

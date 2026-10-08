@@ -1,0 +1,42 @@
+{
+  "kind": "offline-evaluation-kit-spec-freeze/1",
+  "spec_version": 1,
+  "frozen_at": "2026-10-04T22:10:48.514688+00:00",
+  "status": "FROZEN_DESIGN_ONLY",
+  "external_timestamp_or_signature": false,
+  "implementation_authorized_now": false,
+  "first_real_use_authorized_now": false,
+  "first_real_use_required": "Researcher own20 only after exact-profile fresh sealed swarm-receipts Gate4-or-later pass and reviewed release; sealed Gate4 rule governs once available.",
+  "files": [
+    {
+      "path": "changes.md",
+      "bytes": 4573,
+      "sha256": "252ee423140c22e11972753d77529cc1941c434007e64f1ea583645b1e667a09"
+    },
+    {
+      "path": "release-requirements.json",
+      "bytes": 4724,
+      "sha256": "1ce1976de134211255dbb62ae095ed71c1ea31363ca76ba5ac867968662fff9d"
+    },
+    {
+      "path": "result-envelope.schema.json",
+      "bytes": 3389,
+      "sha256": "79214891a54ea505267c585e6af154d79c741267ecffdb50ff90d08f70f37ed8"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 6079,
+      "sha256": "7b1f300cf78f013244a7b30827cf804e42322b61fadaf244ffbf9909bff6945e"
+    },
+    {
+      "path": "spec.md",
+      "bytes": 10072,
+      "sha256": "3bf25538521e4992596b97c706d9c41d979ce36a9fd832be666689514fca9e85"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1629,
+      "sha256": "0d0b93e28dbe893da96dcd29f778a0d60cbba53003aa1f23fa174898264dea3f"
+    }
+  ]
+}

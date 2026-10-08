@@ -1,0 +1,257 @@
+{
+ "meta": {
+  "calls_sha256": "6ab0daa90d6377e722900baa164d8f3f1b2833784f0c45dd82fffdda43b9b0d4",
+  "rows": 520,
+  "errors": 0,
+  "no_verdict": 0,
+  "text_fingerprints": {
+   "forced_cannot": "df6de01a3bf01d525a386fef194c5f79d8fdab4fec262775ae8b59a6be67becb",
+   "forced_cant": "8668f49f1e30725cbb977e73a42fb80c27463bf22fba033c0668c2599ebe3dca",
+   "allowed_cannot": "498ae83764b85a7c383123ae9a0e181e9b9d9adf3a4947d97387a44532e07341",
+   "allowed_cant": "661cb45cd5072fc76bf790b8c65c55db99080aa0d9e536d9e32ac08e646b4ad7"
+  },
+  "notes": [
+   "DESIGN.md prints allowed_cant's fingerprint as 661cb45c...6ad7; the text the sealed runner builds from the sealed framings has 661cb45c...4ad7 (full value 661cb45cd5072fc76bf790b8c65c55db99080aa0d9e536d9e32ac08e646b4ad7). Every allowed_cant call row carries the full value, so the printed part is a typo in the design, not a different text."
+  ]
+ },
+ "scores": {
+  "qwen": {
+   "verdicts": {
+    "forced_cannot": {
+     "not_shown": 11,
+     "contradicted": 24,
+     "shown": 19
+    },
+    "forced_cant": {
+     "not_shown": 10,
+     "contradicted": 24,
+     "shown": 20
+    },
+    "allowed_cannot": {
+     "not_shown": 18,
+     "contradicted": 18,
+     "shown": 18
+    },
+    "allowed_cant": {
+     "not_shown": 19,
+     "contradicted": 17,
+     "shown": 18
+    }
+   },
+   "changed_pairs": 3,
+   "changed_detail": [
+    {
+     "id": "T028",
+     "framing": "forced",
+     "kind": "twin_missing",
+     "truth": "not_shown",
+     "cannot": "contradicted",
+     "cant": "shown"
+    },
+    {
+     "id": "T028",
+     "framing": "allowed",
+     "kind": "twin_missing",
+     "truth": "not_shown",
+     "cannot": "contradicted",
+     "cant": "not_shown"
+    },
+    {
+     "id": "T030",
+     "framing": "forced",
+     "kind": "twin_missing",
+     "truth": "not_shown",
+     "cannot": "not_shown",
+     "cant": "contradicted"
+    }
+   ],
+   "changed_by_framing": {
+    "forced": 2,
+    "allowed": 1
+   },
+   "forced_breaks": {
+    "cannot": 11,
+    "cant": 10,
+    "of": 54,
+    "cannot_only": 1,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "forced_guesses_missing": {
+    "cannot": 16,
+    "cant": 17,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 1,
+    "mcnemar_p": 1.0
+   },
+   "forced_right_intact": {
+    "cannot": 25,
+    "cant": 25,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "allowed_guesses_missing": {
+    "cannot": 9,
+    "cant": 8,
+    "of": 27,
+    "cannot_only": 1,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "allowed_right_intact": {
+    "cannot": 24,
+    "cant": 24,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "allowed_right_missing": {
+    "cannot": 18,
+    "cant": 19,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 1,
+    "mcnemar_p": 1.0
+   },
+   "repeats": {
+    "agree": 44,
+    "of": 44,
+    "disagree_detail": []
+   },
+   "forced_vs_allowed_guesses_missing": {
+    "forced": 33,
+    "allowed": 17,
+    "of": 54
+   },
+   "word_alone": "shown (at least one pair changed, and all 44 repeats agree)",
+   "directions": {
+    "forced_breaks": false,
+    "forced_guesses_missing": false,
+    "forced_right_intact": false,
+    "allowed_guesses_missing": false,
+    "allowed_right_intact": false
+   }
+  },
+  "gemma": {
+   "verdicts": {
+    "forced_cannot": {
+     "shown": 29,
+     "contradicted": 21,
+     "not_shown": 4
+    },
+    "forced_cant": {
+     "shown": 29,
+     "contradicted": 21,
+     "not_shown": 4
+    },
+    "allowed_cannot": {
+     "not_shown": 14,
+     "shown": 21,
+     "contradicted": 19
+    },
+    "allowed_cant": {
+     "not_shown": 13,
+     "shown": 22,
+     "contradicted": 19
+    }
+   },
+   "changed_pairs": 1,
+   "changed_detail": [
+    {
+     "id": "T033",
+     "framing": "allowed",
+     "kind": "twin_missing",
+     "truth": "not_shown",
+     "cannot": "not_shown",
+     "cant": "shown"
+    }
+   ],
+   "changed_by_framing": {
+    "allowed": 1
+   },
+   "forced_breaks": {
+    "cannot": 4,
+    "cant": 4,
+    "of": 54,
+    "cannot_only": 0,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "forced_guesses_missing": {
+    "cannot": 23,
+    "cant": 23,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "forced_right_intact": {
+    "cannot": 25,
+    "cant": 25,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "allowed_guesses_missing": {
+    "cannot": 13,
+    "cant": 14,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 1,
+    "mcnemar_p": 1.0
+   },
+   "allowed_right_intact": {
+    "cannot": 25,
+    "cant": 25,
+    "of": 27,
+    "cannot_only": 0,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "allowed_right_missing": {
+    "cannot": 14,
+    "cant": 13,
+    "of": 27,
+    "cannot_only": 1,
+    "cant_only": 0,
+    "mcnemar_p": 1.0
+   },
+   "repeats": {
+    "agree": 44,
+    "of": 44,
+    "disagree_detail": []
+   },
+   "forced_vs_allowed_guesses_missing": {
+    "forced": 46,
+    "allowed": 27,
+    "of": 54
+   },
+   "word_alone": "shown (at least one pair changed, and all 44 repeats agree)",
+   "directions": {
+    "forced_breaks": false,
+    "forced_guesses_missing": false,
+    "forced_right_intact": false,
+    "allowed_guesses_missing": false,
+    "allowed_right_intact": false
+   }
+  }
+ },
+ "secondary": {
+  "reference": {
+   "disagreements": 0,
+   "by_direction": {},
+   "examples": []
+  },
+  "full_key": {
+   "disagreements": 0,
+   "by_direction": {},
+   "examples": []
+  }
+ },
+ "secondary_measures": {}
+}

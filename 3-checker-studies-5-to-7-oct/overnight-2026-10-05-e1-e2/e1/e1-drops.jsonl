@@ -1,0 +1,36 @@
+{"call": 8, "slot": "S016", "attempt": 1, "reasons": ["deciding_line_partial"]}
+{"call": 3, "slot": "S005", "attempt": 1, "note": "counted by addendum 1", "reasons": ["truncated_reply"]}
+{"call": 3, "slot": "S006", "attempt": 1, "note": "counted by addendum 1", "reasons": ["truncated_reply"]}
+{"call": 1, "slot": "S001", "attempt": 1, "note": "counted by addendum 1", "reasons": ["truncated_reply"]}
+{"call": 1, "slot": "S002", "attempt": 1, "note": "counted by addendum 1", "reasons": ["truncated_reply"]}
+{"call": 4, "slot": "S007", "attempt": 1, "note": "counted by addendum 1", "reasons": ["truncated_reply"]}
+{"call": 4, "slot": "S008", "attempt": 1, "note": "counted by addendum 1", "reasons": ["truncated_reply"]}
+{"call": 6, "slot": "S011", "attempt": 1, "note": "counted by addendum 1", "reasons": ["empty_reply"]}
+{"call": 6, "slot": "S012", "attempt": 1, "note": "counted by addendum 1", "reasons": ["empty_reply"]}
+{"call": 15, "slot": "S026", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 29, "slot": "S042", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 31, "slot": "S044", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 42, "slot": "S055", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 48, "slot": "S061", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 60, "slot": "S073", "attempt": 1, "reasons": ["deciding_line_partial"]}
+{"call": 61, "slot": "S074", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 67, "slot": "S080", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 71, "slot": "S084", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 80, "slot": "S093", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 87, "slot": "S100", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 91, "slot": "S104", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 99, "slot": "S112", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 109, "slot": "S122", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 113, "slot": "S126", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 120, "slot": "S133", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 124, "slot": "S137", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 127, "slot": "S140", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 135, "slot": "S148", "attempt": 1, "reasons": ["truncated_reply"]}
+{"call": 148, "slot": "S042", "attempt": 2, "reasons": ["truncated_reply"]}
+{"call": 149, "slot": "S044", "attempt": 2, "reasons": ["truncated_reply"]}
+{"call": 160, "slot": "S122", "attempt": 2, "reasons": ["truncated_reply"]}
+{"call": 161, "slot": "S126", "attempt": 2, "reasons": ["truncated_reply"]}
+{"call": 166, "slot": "S042", "attempt": 3, "reasons": ["truncated_reply"]}
+{"call": 168, "slot": "S122", "attempt": 3, "reasons": ["truncated_reply"]}
+{"call": 169, "slot": "S126", "attempt": 3, "reasons": ["truncated_reply"]}
+{"call": 171, "slot": "S122", "attempt": 4, "reasons": ["truncated_reply"]}

@@ -1,0 +1,4 @@
+[2026-10-07T18:23:17Z] preflight: listed files, the entry's seal, a fresh build of the task files
+[2026-10-07T18:23:17Z] seal verifies: 32 of 32 items unchanged
+[2026-10-07T18:23:18Z] tasks/ equals a fresh build (2 files)
+[2026-10-07T18:23:18Z] push receipt-triplets-t6-coat-check-do (sha256 89828a9edc89... matches the list)

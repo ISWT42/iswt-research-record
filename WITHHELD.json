@@ -1,0 +1,1295 @@
+{
+ "comment": "Files left out of this record on purpose, with the SHA-256 the seal list gives them. A redacted copy, where one exists, is named in replaced_by.",
+ "entries": [
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/ADDENDUM-1.md",
+   "sha256": "d2fa0abdff12f5a4e4c898d9dc658c29b2e05501e561a2848d181096f775d9a1",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/ADDENDUM-1.redacted.md"
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/COMMANDS.md",
+   "sha256": "0f43f359ca3dc3b721a8f11a389f8a90dca421319f50841b8114ffc267953628",
+   "reason": "run commands with local paths and account steps",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/PREDICTIONS.md",
+   "sha256": "0f06c87932e9e7a92fdb0d8d1598682bd87438c85f1229de5a718993ef5601fc",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct)",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/dryrun-2026-10-07.log",
+   "sha256": "84a17f70b5d382c7b864b43837c6722eae0bf58010bf978f35aaa4eaff1a8dc9",
+   "reason": "dry-run log",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/push-blindcheck-2026-10-07.log",
+   "sha256": "27afc25877524ed480dbf8326ebee26f8274f7a2222592ff979d20144b583b3e",
+   "reason": "push script and log for the Kaggle account",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/push-blindcheck.sh",
+   "sha256": "f17b30bcf9c7b5c7fdefab0dcaa7c4b30adf1ea87fc1d720734d0c1b3a9779e4",
+   "reason": "push script and log for the Kaggle account",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/test_blindcheck.py",
+   "sha256": "5b4831138d036e06c56a5b0f54d3c49d0c4ae1d0b716a8c156d6014d13214560",
+   "reason": "test file that holds a list of private words",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/COMMANDS.md",
+   "sha256": "878ac3dd464e92fdf66cf2e796d250809ac194522c20b5332817a67e7af551b5",
+   "reason": "run commands with local paths and account steps",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/PREDICTIONS.md",
+   "sha256": "fa9c3f980ad01840a53ff8d78880b2f1f49c34db2d8d3cff88b5e1da35079fe6",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct)",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/dryrun-2026-10-07.log",
+   "sha256": "6d5408b8716234e0f03509c850cade4a07fa85f78f9e758c6b68c1b151ac3a70",
+   "reason": "dry-run log",
+   "replaced_by": null
+  },
+  {
+   "path": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/test_coatcheck.py",
+   "sha256": "3c51c5b29366ced514f46300c11be7dfd1ce07e1d7fb897dd1c59c59606dfb6b",
+   "reason": "test file that holds a list of private words",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/before-after-2026-10-06/DESIGN.md",
+   "sha256": "22fbb7a12a39e17f1eae9c7482225de2c56ddd5cdd7d0e70748a82663cd16e58",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/before-after-2026-10-06/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/before-after-2026-10-06/score_s8b.py",
+   "sha256": "5c62c6f57815b3540f3f8a9fcdc30c59c39f433abdc6f4b951233acb5777b361",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/deciding-line-2026-10-06/DESIGN.md",
+   "sha256": "cebaca99bc95fe7f94dac5ae5ffdf0175e11d66fd3f4cac046b3168813251269",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed; 1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/deciding-line-2026-10-06/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/findings-v2-2026-10-06/FINDINGS-2026-10-06-v2.md",
+   "sha256": "bb9a454e1362e15cf327d756db2f8307a0a93974331efd6811c82f60907c9caf",
+   "reason": "sealed original not published; redacted copy published instead (forecast outcome tags removed; 1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/findings-v2-2026-10-06/FINDINGS-2026-10-06-v2.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.md",
+   "sha256": "ec48655eaec636dd2b4d9f023e82805e439cdbdccfb55d005c557093da6e1dee",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed; forecast outcome tags removed; forecast outcome tags removed; forecast outcome tags removed; 5 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/FINDINGS-2026-10-06.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/findings-v3-2026-10-06/IMPLICATIONS-2026-10-06.md",
+   "sha256": "1dd4aa95c7b940f842b1a247b0b58aa4f56e89147c64a442fd6c7f885592751d",
+   "reason": "implications document: holds a section marked confidential (ledger: withhold or cut)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/ADDENDUM-1.md",
+   "sha256": "3bfba9f7603c2d8a2b6c820d7c3f57c2736a4de8b39bc5bba2d0a26755496d8e",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/ADDENDUM-1.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/DESIGN.md",
+   "sha256": "9bdd2e5338ac13325f48e8bbfb4abad4f5ac8b671d5fab1a248d0c195947a1a3",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed; 1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/DESIGN.md",
+   "sha256": "9bdd2e5338ac13325f48e8bbfb4abad4f5ac8b671d5fab1a248d0c195947a1a3",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed; 1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.md",
+   "sha256": "23bd3c514a67207899ef2b3e9ee80d3af9cc6f0c3b3b7a9e70ca6ca483c63994",
+   "reason": "sealed original not published; redacted copy published instead (2 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/results/GATE-RESULTS.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gate-test-2026-10-07/score_gate.py",
+   "sha256": "02e3b691afa20bd7980d7fb2b098b759f9b7fec8820888be6ac41e6411484a4d",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/AGENTS.md",
+   "sha256": "228e2a525349402bc993810e2a749cd957d247568cad9b2975ca640bf3ed9940",
+   "reason": "copy of the worker rules file",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/AGENTS.md",
+   "sha256": "228e2a525349402bc993810e2a749cd957d247568cad9b2975ca640bf3ed9940",
+   "reason": "copy of the worker rules file",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/README.md",
+   "sha256": "e9fe661c99b47bb144d3b94542ef3ac1f137c69a5c083e74bd1bbef530563446",
+   "reason": "run instructions that name the box host",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/README.md",
+   "sha256": "e9fe661c99b47bb144d3b94542ef3ac1f137c69a5c083e74bd1bbef530563446",
+   "reason": "run instructions that name the box host",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S11-TUNED-REVIEWER.md",
+   "sha256": "5387d67cd925cb837e15a9322eaef5ef571b0bb8a8c52ff5a2199307783e100d",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S11-TUNED-REVIEWER.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S12-FORCED-SWEEP.md",
+   "sha256": "4c2f44916e273f7aa5a6457de8da9681c0b13bfcd37564a04a2d24af3106f64e",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S12-FORCED-SWEEP.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S4-PLANTED-INSTRUCTIONS.md",
+   "sha256": "d4bba54189241a982ba088c76505b098ea9112d1d4cc95f6eddcbfa8975aabaf",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S4-PLANTED-INSTRUCTIONS.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S4-PLANTED-INSTRUCTIONS.md",
+   "sha256": "d4bba54189241a982ba088c76505b098ea9112d1d4cc95f6eddcbfa8975aabaf",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S4-PLANTED-INSTRUCTIONS.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S9-WOBBLE.md",
+   "sha256": "319321fda833120a1613850df1c063c885816812137db95b8f93be388894daa1",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed; 1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/S9-WOBBLE.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/build_inputs.py",
+   "sha256": "48a3cb7796757a09d0150fd9de71c3010e7c3cd5e1512eaa592d7b74ecfcf373",
+   "reason": "build script with local paths",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/build_inputs.py",
+   "sha256": "48a3cb7796757a09d0150fd9de71c3010e7c3cd5e1512eaa592d7b74ecfcf373",
+   "reason": "build script with local paths",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s11/score_s11.py",
+   "sha256": "9920b157e834cd2ebeac037389efe0dda1075c0aae597a1b481a704556402fb3",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/score_s12.py",
+   "sha256": "bde20cc1a30c3678b6b98d49f7d0da2b95db456fc68ba0f3f3cfdd232cd5df97",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/calls.jsonl",
+   "sha256": "31c0c6f717887af92f201fb7688c1624efc8faff171cc67fdfb8d3307282d828",
+   "reason": "S2 run records are withheld for safety, as the public chain page already says",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/calls.jsonl",
+   "sha256": "31c0c6f717887af92f201fb7688c1624efc8faff171cc67fdfb8d3307282d828",
+   "reason": "S2 run records are withheld for safety, as the public chain page already says",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s9/score_s9.py",
+   "sha256": "ed456655eed19b22de71bc1599c6f8d36f1dec288ff59a7d0731be736ccc1e9d",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/LICENSE",
+   "sha256": "106952d68c982e8e8ed107a7dda684dcb2886a17a56dcd90e159474a467899e4",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/__init__.py",
+   "sha256": "7137a890a44b4cd349666ba1e7f12e1a17260c3a224cf73d5cbd228784fcf24d",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/__init__.py",
+   "sha256": "7137a890a44b4cd349666ba1e7f12e1a17260c3a224cf73d5cbd228784fcf24d",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/__main__.py",
+   "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/__main__.py",
+   "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/cli.py",
+   "sha256": "3850912c89e80d2198afe4fde9146aab4aeb3a31e33bc29b7b034f2b71ae32ff",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/cli.py",
+   "sha256": "3850912c89e80d2198afe4fde9146aab4aeb3a31e33bc29b7b034f2b71ae32ff",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/client.py",
+   "sha256": "7d4b497477e5efd19a9fc56f69a8872c8daba47924963febb9139f3057755ac1",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/client.py",
+   "sha256": "7d4b497477e5efd19a9fc56f69a8872c8daba47924963febb9139f3057755ac1",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/files.py",
+   "sha256": "ca55b420baeb755594a357df460ab7205b0742828122b888f3fc481147ed2250",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/files.py",
+   "sha256": "ca55b420baeb755594a357df460ab7205b0742828122b888f3fc481147ed2250",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/pair.py",
+   "sha256": "3cdd2ec5714b87c50900c7d05995ac74be960e1b0495521795bd58748420af36",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/pair.py",
+   "sha256": "3cdd2ec5714b87c50900c7d05995ac74be960e1b0495521795bd58748420af36",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/reader.py",
+   "sha256": "458b0c77ea98ea359ea5945ae8caf02be07b63c0899568d91304b2eb9f0d9a49",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/reader.py",
+   "sha256": "458b0c77ea98ea359ea5945ae8caf02be07b63c0899568d91304b2eb9f0d9a49",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/replay.py",
+   "sha256": "abc1d40b910cb34ac292568057c918051b883fd0e9cfec352b1455f30b2c0d99",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/replay.py",
+   "sha256": "abc1d40b910cb34ac292568057c918051b883fd0e9cfec352b1455f30b2c0d99",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/rules.py",
+   "sha256": "b94aec1e9c06e3e621b801b4ecaacd303379bd9a62386cdea3b7207569d69fa3",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/rules.py",
+   "sha256": "b94aec1e9c06e3e621b801b4ecaacd303379bd9a62386cdea3b7207569d69fa3",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/score.py",
+   "sha256": "62c47e9e149f5899f61d7e8ee60e9f99ac3bd9fbd256e3a72e5fab8045155d5f",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/vendor-staging/vendor/receipt_pair/score.py",
+   "sha256": "62c47e9e149f5899f61d7e8ee60e9f99ac3bd9fbd256e3a72e5fab8045155d5f",
+   "reason": "vendored code copy",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN.md",
+   "sha256": "21b412615dd13fe92cf2618734ef25543af0699dcda0b68d27e53cc8449bb822",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/noise/LOCAL-REPEAT-DESIGN.md",
+   "sha256": "934d1c274483a52f5fd91685593cf81b96a11b03af2d510a74c3b6d53d28c48a",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/noise/LOCAL-REPEAT-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/noise/PINNED-REPEAT-DESIGN.md",
+   "sha256": "9316c85d818bd9142d70a61d45f8818c93cf3259f129244521cf21a93337c75f",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/noise/PINNED-REPEAT-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/RUN3-DESIGN.md",
+   "sha256": "9e24f5774a7df3df435f2ec0ff2986fd3d92f95530483693000312d55c11dde2",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/RUN3-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2-DESIGN.md",
+   "sha256": "9bc34995e56dc07e3395a59c131eaa417c268e9d5be639f94aef5f4aa9f85022",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2B-DESIGN.md",
+   "sha256": "ade05d4a7fd55cdff69fcb9215352e451f9b9339cc0b555da22da5d39703b7b2",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2B-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2C-DESIGN.md",
+   "sha256": "15abea85dec5ea70e3b15b99654877d2d070a58efb3f501fdc0987469eef2df6",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2C-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2D-DESIGN.md",
+   "sha256": "9a279c9f63df1dda5952f8fc73f2b10d1f1945ab713ce6e6413c9c281a1fd06e",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2D-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2E-DESIGN.md",
+   "sha256": "bef0273c06f427bad0378451126a2c59de48ca038ff03e8f8e6c943ba89b317e",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run3/STAGE2E-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/run_pair.py",
+   "sha256": "3d8e8292ebd48b1278549988d275bac3a396ed99ccaa1e71a1df5b0d56468bdb",
+   "reason": "outside the public set chosen for this study (runs 1 and 2 are already public in the receipt-pair repo; drafts and entry forms stay private)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/E1-DESIGN.md",
+   "sha256": "c79f8db981b5e3e1b07dd201edea8a3f16fae1f26b1173cb7a7cb68549492506",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/E1-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/E2-DESIGN.md",
+   "sha256": "ed9c7eb685f2a2109ca3026109ae8d453e4906890be3fe7573ae5a25407bad0c",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/E2-DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/code/e1_score.py",
+   "sha256": "b68f41b0aa61b9798f31b1c4bb149a2527d496cdcef24e836bc0783297bb690f",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/code/e2_score.py",
+   "sha256": "e8816a974b00201c873e947c1b4be23b2df54b1c07ec6db0feb2a70cb2265028",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/code/report_tables.py",
+   "sha256": "464d701dafec6027a437e7cd6364bfe562be24199487f1f551fdbf15ad761006",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/e1/results/score-e1.json",
+   "sha256": "f55b193c7841aa2a5957632886395cb5c5e08ba2179150681717efe42987d702",
+   "reason": "sealed original not published; redacted copy published instead (forecast keys removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/e1/results/score-e1.redacted.json"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/e2/results/score-e2.json",
+   "sha256": "c2558b40a79320afd3d440d9af41f22e1cfa4e684663d456100539d4d7e6cbb2",
+   "reason": "sealed original not published; redacted copy published instead (forecast keys removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/overnight-2026-10-05-e1-e2/e2/results/score-e2.redacted.json"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/panel-two-blocks-2026-10-06/run-panel.sh",
+   "sha256": "21c4c0c1aca9ba20522b4340a87260637ba65e6b2b0499dbd97abf325e58c752",
+   "reason": "box operation scripts or broker/infrastructure files (security detail kept private)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/pressure-direction-2026-10-03/CLAUDE-PREDICTIONS-PRESSURE-DIRECTION-2026-10-03.md",
+   "sha256": "f2bce1c8256e628081f52b159663664a3d202996a1d5a448bda373a7acbf3020",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/pressure-direction-2026-10-03/JOSHUA-PREDICTION-PRESSURE-DIRECTION-2026-10-03.txt",
+   "sha256": "d31ec7453c4ef8c6ba19692caf0870a7b24e37d728ae9272548faba7534aeb99",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/pressure-direction-2026-10-03/JOSHUA-THOUGHTS-COLLATED-2026-10-03.md",
+   "sha256": "1aa324537aa93b7c131faa4594c7c30da7a143721d895c509aac92aba9418e2a",
+   "reason": "holds a confidential idea item (ledger: leave out)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/pressure-direction-2026-10-03/PRESSURE-RESULTS-2026-10-03.md",
+   "sha256": "ce381c05408dc90098dfcf926d3bb504e6fc733349987c79bf204c76186ae383",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/pressure-direction-2026-10-03/PRESSURE-RESULTS-2026-10-03.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/DESIGN-A.md",
+   "sha256": "6601875a0191eba7792ebe30ea58a91017ce53e7c3a054bf90c10471512e7387",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/DESIGN-A.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/SETTINGS.json",
+   "sha256": "66f527c65303f492a0ecdc5855e1b9c59f35b3a0ca01282ffee2ab9f837aa0f1",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/box_check.sh",
+   "sha256": "8ab7a244c3487a63bf60b332daa4255f74b118b698788067f31319076dc3f2f7",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/box_start.sh",
+   "sha256": "8ad326f66eadc857c32dd64c2f641d8909a8a78bb5c3aef25473555f09fb0f57",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-adapter/gate_check.mjs",
+   "sha256": "b882fadfe83a6e3450a110c59368333d4d10ea310fab89405ccb0c27e5d90389",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-adapter/openrouter-matrix.mjs",
+   "sha256": "6b84d90a46a413a2c5b2063b11767dcdb4977d1ddda39df139acc9b1199bec76",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/broker.mjs",
+   "sha256": "d0834b8abb1113ee649e823a3925867b7fe755fcdbff08e421a8149a9e50ee0d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/gate_check.mjs",
+   "sha256": "b882fadfe83a6e3450a110c59368333d4d10ea310fab89405ccb0c27e5d90389",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/chainlog.mjs",
+   "sha256": "944b114f2c134da56fc08d1a9380597233521d3eaf5aef0f2512316bc7305696",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/config.mjs",
+   "sha256": "a82343db986f267567e9d82c4c1aa6f073fc78781f3223753dc08bbd4c1bae30",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/conformity.mjs",
+   "sha256": "903743a38691b6d8cd2f9eb5b1ca2cbbcff6cea6955b9eef87f3bbeb46a06e79",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/decide.mjs",
+   "sha256": "4d57fb534e87177bf132450ddff59686cf7f6350c2db8fe3795caaa0ab776332",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/gate.mjs",
+   "sha256": "a6da06214c5ebc20eb1230c0883c142ae302019ef29b189cd836ff7deb762bdf",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/keystore.mjs",
+   "sha256": "83b64b8356a8c4a6c11852dd1b2ee61ac13553978f5ad6b7374be682326b9163",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/ledger.mjs",
+   "sha256": "aa97a8f8e40ec932ba2e34c46a90a4f26e2bedcdcc1f721bb63d50fd1ef274e9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/modelinfo.mjs",
+   "sha256": "f42cfb453916c51ea16cf2e3658050efd6931069b6f46d5c252e5a7db3119a6b",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/names.mjs",
+   "sha256": "3b7eedd5e08fce4ed1816fe9530a12a228c25b949f586c5e754f6d71f7e33c02",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/notes.mjs",
+   "sha256": "558716515ec09c6b923110016a3bcfa49c1bc988687af148b7bd87d1509977d2",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/antigravity.mjs",
+   "sha256": "9d6f3194b4a96968ad9010dfe20482d5d65db3179828c5b97e590aa3949b5bbf",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/claude.mjs",
+   "sha256": "aaf01d9af854957723b8a6a86ace8e0bfbd71b89d575d88ce54264eb7beced18",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/codex.mjs",
+   "sha256": "d5614e256d356382c6251a62472ce97d1ea44069389069343b5d114f57f28979",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/deepseek.mjs",
+   "sha256": "d36af688ac6d868544ec8a1573f857e610f5ac3239760b992b098bb018b5e069",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/gemini.mjs",
+   "sha256": "7fb2b4b67866beccfac88462d6123bdd2621ca0340f74de9405d362249f576b3",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/index.mjs",
+   "sha256": "039f4473facb197a046f4bf83864b885b15cc32b623b4982dde035c81e89f103",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/mock.mjs",
+   "sha256": "7c0af37ca918e92f7cd7448c462858859d0faf7312cd389b9d0ae6e0a9a45a33",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/openrouter-decisions.mjs",
+   "sha256": "86e665ef24cd3ea0e6eb31347809a08d7750b8baae78fe87b5717eff53f7b83d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/openrouter-matrix.mjs",
+   "sha256": "6b84d90a46a413a2c5b2063b11767dcdb4977d1ddda39df139acc9b1199bec76",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/openrouter-plain-long.mjs",
+   "sha256": "23831354fcf4a3f8aac1036d45d5489914e472b41166d4a1c57cbd428f657ab2",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/openrouter-plain.mjs",
+   "sha256": "a79ccd8760d1a3b39cc676e314e7df6595ce525403d14079128fe13c8070e2e9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/openrouter.mjs",
+   "sha256": "483c0078730956185d1feb7d9248415e442600050fa496b22028d53b8bb9de13",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/providers/util.mjs",
+   "sha256": "05deebbb2a675a20d65bf93cb80395e0396bc4805ef8cc39987f95a76dee2090",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/run.mjs",
+   "sha256": "1c9b3649f091de09f1b99d2e0c0ee5fc0c1371fd5ad3d79c24184a77e94514e9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/scrub.mjs",
+   "sha256": "15267427feadfd090aa8ac3d2921cbb0c7ed68227caa5a407c51d0e814de5326",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/server.mjs",
+   "sha256": "da6dee983ea37473c4913b511b8ee58400d289cb45543b5cab9e1f430acbd2a7",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/thread.mjs",
+   "sha256": "faa045edc9068a7f151ea3b149560c495cf0a757aae270b3ec54d8bce457372d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/viewer/app.css",
+   "sha256": "d6552aa55e87526bcd0f4671c30baae7de5612009c5d655b439eb62338d64b78",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/viewer/app.js",
+   "sha256": "84701464a4c4ff3052847bfadf48bd895208a8119f006422cb881645b1c634db",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/viewer/fold.js",
+   "sha256": "9d3822bf234bd11f4a8101a34f599d7bc8095666ba55672af5e7bba93450a6a8",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/viewer/index.html",
+   "sha256": "0eee2ff5d5d2fd837b13863ff7d425f2e3dccaaf11609e13e107df171af7883e",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/lib/viewer/threads.js",
+   "sha256": "54702f15d8240a1eceb425904ffcc667c465339cac1a555a5e92807e68982fbb",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/broker-copy/package.json",
+   "sha256": "7eda064cade53f427b413e107c1c2626b0a85aa7672d5a1fa43a1591dc8b0552",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/collect_seal_score.sh",
+   "sha256": "028c412ca1088caa4a63568039ecef5a45fd326e1b573c0e71020b4c37cba191",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/broker.mjs",
+   "sha256": "d0834b8abb1113ee649e823a3925867b7fe755fcdbff08e421a8149a9e50ee0d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/gate_check.mjs",
+   "sha256": "b882fadfe83a6e3450a110c59368333d4d10ea310fab89405ccb0c27e5d90389",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/chainlog.mjs",
+   "sha256": "944b114f2c134da56fc08d1a9380597233521d3eaf5aef0f2512316bc7305696",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/config.mjs",
+   "sha256": "a82343db986f267567e9d82c4c1aa6f073fc78781f3223753dc08bbd4c1bae30",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/conformity.mjs",
+   "sha256": "903743a38691b6d8cd2f9eb5b1ca2cbbcff6cea6955b9eef87f3bbeb46a06e79",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/decide.mjs",
+   "sha256": "4d57fb534e87177bf132450ddff59686cf7f6350c2db8fe3795caaa0ab776332",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/gate.mjs",
+   "sha256": "a6da06214c5ebc20eb1230c0883c142ae302019ef29b189cd836ff7deb762bdf",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/keystore.mjs",
+   "sha256": "83b64b8356a8c4a6c11852dd1b2ee61ac13553978f5ad6b7374be682326b9163",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/ledger.mjs",
+   "sha256": "aa97a8f8e40ec932ba2e34c46a90a4f26e2bedcdcc1f721bb63d50fd1ef274e9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/modelinfo.mjs",
+   "sha256": "f42cfb453916c51ea16cf2e3658050efd6931069b6f46d5c252e5a7db3119a6b",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/names.mjs",
+   "sha256": "3b7eedd5e08fce4ed1816fe9530a12a228c25b949f586c5e754f6d71f7e33c02",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/notes.mjs",
+   "sha256": "558716515ec09c6b923110016a3bcfa49c1bc988687af148b7bd87d1509977d2",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/antigravity.mjs",
+   "sha256": "9d6f3194b4a96968ad9010dfe20482d5d65db3179828c5b97e590aa3949b5bbf",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/claude.mjs",
+   "sha256": "aaf01d9af854957723b8a6a86ace8e0bfbd71b89d575d88ce54264eb7beced18",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/codex.mjs",
+   "sha256": "d5614e256d356382c6251a62472ce97d1ea44069389069343b5d114f57f28979",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/deepseek.mjs",
+   "sha256": "d36af688ac6d868544ec8a1573f857e610f5ac3239760b992b098bb018b5e069",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/gemini.mjs",
+   "sha256": "7fb2b4b67866beccfac88462d6123bdd2621ca0340f74de9405d362249f576b3",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/index.mjs",
+   "sha256": "039f4473facb197a046f4bf83864b885b15cc32b623b4982dde035c81e89f103",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/mock.mjs",
+   "sha256": "7c0af37ca918e92f7cd7448c462858859d0faf7312cd389b9d0ae6e0a9a45a33",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/openrouter-decisions.mjs",
+   "sha256": "86e665ef24cd3ea0e6eb31347809a08d7750b8baae78fe87b5717eff53f7b83d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/openrouter-matrix.mjs",
+   "sha256": "6b84d90a46a413a2c5b2063b11767dcdb4977d1ddda39df139acc9b1199bec76",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/openrouter-plain-long.mjs",
+   "sha256": "23831354fcf4a3f8aac1036d45d5489914e472b41166d4a1c57cbd428f657ab2",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/openrouter-plain.mjs",
+   "sha256": "a79ccd8760d1a3b39cc676e314e7df6595ce525403d14079128fe13c8070e2e9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/openrouter.mjs",
+   "sha256": "483c0078730956185d1feb7d9248415e442600050fa496b22028d53b8bb9de13",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/providers/util.mjs",
+   "sha256": "05deebbb2a675a20d65bf93cb80395e0396bc4805ef8cc39987f95a76dee2090",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/run.mjs",
+   "sha256": "1c9b3649f091de09f1b99d2e0c0ee5fc0c1371fd5ad3d79c24184a77e94514e9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/scrub.mjs",
+   "sha256": "15267427feadfd090aa8ac3d2921cbb0c7ed68227caa5a407c51d0e814de5326",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/server.mjs",
+   "sha256": "da6dee983ea37473c4913b511b8ee58400d289cb45543b5cab9e1f430acbd2a7",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/thread.mjs",
+   "sha256": "faa045edc9068a7f151ea3b149560c495cf0a757aae270b3ec54d8bce457372d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/viewer/app.css",
+   "sha256": "d6552aa55e87526bcd0f4671c30baae7de5612009c5d655b439eb62338d64b78",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/viewer/app.js",
+   "sha256": "84701464a4c4ff3052847bfadf48bd895208a8119f006422cb881645b1c634db",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/viewer/fold.js",
+   "sha256": "9d3822bf234bd11f4a8101a34f599d7bc8095666ba55672af5e7bba93450a6a8",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/viewer/index.html",
+   "sha256": "0eee2ff5d5d2fd837b13863ff7d425f2e3dccaaf11609e13e107df171af7883e",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/lib/viewer/threads.js",
+   "sha256": "54702f15d8240a1eceb425904ffcc667c465339cac1a555a5e92807e68982fbb",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/_broker-copy/package.json",
+   "sha256": "7eda064cade53f427b413e107c1c2626b0a85aa7672d5a1fa43a1591dc8b0552",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/dry/seal/a.txt",
+   "sha256": "7692c3ad3540bb803c020b3aee66cd8887123234ea0c6e7143c0add73ff431ed",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/inputs/prompts.jsonl",
+   "sha256": "2836bbfd72ad507a8de82ad865b1c2dabe26b37256bbdf6f6203ddce9c405830",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/ledger-matrix/index.head",
+   "sha256": "01fdf102d098c6643b6de1301df28098525b10a72c19921720ab224fe872d292",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/ledger-matrix/index.jsonl",
+   "sha256": "93416c242a5b2eb2819815715c7ec2580020789844d980dade76d864cdd3e993",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/events-manifest-w1.txt",
+   "sha256": "4e16116ae0c7d032b7fb36de573a3fefde027840751d218e8d264cf5d163b273",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/ledger-heads.txt",
+   "sha256": "669a4132d9eb6cf25dd0ef3c721cc03060ddfb41ea0e648acc881fa73e2fdeda",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-ours-w1-r1-console.txt",
+   "sha256": "95eb2108edc1be69ff742cb39e3bf7b94d2c77a775827227827ff9949a3d20ad",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-ours-w1-r23-console.txt",
+   "sha256": "410bdb1cc40419b2e9b33bbe5ed2c771c4ac8429b51d817f0e5f974c011b9630",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-ours-w1.jsonl",
+   "sha256": "128e75a5c849fadc9a178dbc0a546ba34feb2c433339524730a3b1fc13799e59",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-theirs-check.txt",
+   "sha256": "d70b238eda96c6451d34a83fe5ded3d9fb918df760af219425e13643dad1b6a8",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-theirs-probe.txt",
+   "sha256": "b44e2126cc8d4ffa1cb156ff63cbe77a47910c524cfa4f65d3e2790c4b8d1d65",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-theirs-w1-console.txt",
+   "sha256": "9e29557294252d44606f7259b7e40aa8755e29eb7291c6d977cdebc0efec44c7",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/openai-theirs-w1.jsonl",
+   "sha256": "507a9f77ce8e6bb319e4ff67be7a62c89d554149cdf22c9fa436761578f75011",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/claude-ours-PASS.json",
+   "sha256": "8f89ae6f1855587c207da5619f5e8d259be01ce77401c3764cf2924156ceb93d",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/claude-ours-report.json",
+   "sha256": "e06d50638a5caf4522f0eaa3a1233ce04d771973432875383d57664a6a3c3606",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/claude-ours.jsonl",
+   "sha256": "ce3f28787877f497211a3aa6f7ea863b21942433c386d441b5c12d77180b3b50",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-ours-PASS.json",
+   "sha256": "3fd87170e288db054a7535c5bd0e36b3dbb01c8e9e097cada00b4a49569fea02",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-ours-report.json",
+   "sha256": "3e9e95a22db809e6559c13bf3ac1aedfa1e45edd3ebe963c897ffa30b6eb2ad9",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-ours.jsonl",
+   "sha256": "8eddfed0a077d2e29e4e1f085e243dbbb6e0bb83bf4f656e330751e472e61f01",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-theirs-PASS.json",
+   "sha256": "a8d18d73e06c0d1d4743266664d9cb13f8ca0dc938539ba2a9c789892c6d57b5",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-theirs-report.json",
+   "sha256": "804ef6ca791b3cde78b963b9e343e6da5008b576354e5898e1906cfe7addc294",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-theirs-report.json",
+   "sha256": "804ef6ca791b3cde78b963b9e343e6da5008b576354e5898e1906cfe7addc294",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/probe/openai-theirs.jsonl",
+   "sha256": "8d87f6f225a2981b82642866982fd9a71843688d498b6ddb132221ee4f6e6dd8",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/scored-w1/MATRIX-SCORED.json",
+   "sha256": "207692a8d0b18cbcc3c18f0e38b4e07879f0b1d9c80c9a5f93efd9074e7e7e66",
+   "reason": "sealed original not published; redacted copy published instead (forecast keys removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/scored-w1/MATRIX-SCORED.redacted.json"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/scored-w1/MATRIX-SCORED.md",
+   "sha256": "3c3e8dc5faabc9cbb3cdaaa741e1507b2a56bee60cb3494cf3fcf6149613ba89",
+   "reason": "sealed original not published; redacted copy published instead (2 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/results/scored-w1/MATRIX-SCORED.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2-2026-10-07/stage_to_box.sh",
+   "sha256": "3ab9391b294d7bb20ca9916da5966a0727d048dbb9f53ae03bfad9f208aac31f",
+   "reason": "outside the public set chosen for this study (run records, box scripts, broker copies and prompts that name the box or a city stay private; the sealed hashes of them are in the seal lists)",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/ADDENDUM-4.md",
+   "sha256": "729e4fc94f93d5f54d6b80fcacfbd574f174e1b36289338d5d9ed537cef40b1c",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/ADDENDUM-4.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/DESIGN.md",
+   "sha256": "a463e29d69661df1e0ff67abad5d77ca61642d445c37057d6e771d8cce04b42e",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/S13-FIRST-LOOK.md",
+   "sha256": "9a35e126449a69b3aeb47780d822ac3226eda5f92783d80cfd05051679be477a",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/S13-FIRST-LOOK.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/gemini-attempt1.log",
+   "sha256": "d4823b520f6cb1fa34cdaa2714389d2911ad530041085c7ade8efc4d9eaa5146",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/gemini.log",
+   "sha256": "375f38736208bc97362a8c311e96639b3b19ebfc64724a213e7b73932653b4b8",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/probe.txt",
+   "sha256": "6a35ea4bed05fab068e1aaa8d021b868d4da5d6ee974174583e3c410ee6903bd",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/run_stack.py",
+   "sha256": "6ed665baea95659001f9c427c794e8a1b1610a97a16ce37284ac41da3fb378a6",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/run_stack.sealed-0614.py",
+   "sha256": "783ba0d01a71fd3c9dd39345bcb4bbe6c071778314a803a307eed648a6bad8cd",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/settings.json",
+   "sha256": "78858838179dadc4839e406dd3c39ecc9ec1306b49bcc695928b18d27bd50b40",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/results/box-logs/sol.log",
+   "sha256": "b5d7925dbb655a34629c6ea27c30cd22f042acd3a5c6b9532d449007a9448e93",
+   "reason": "box logs",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/score_s13.py",
+   "sha256": "f9d4770fce535162eecca0d69520da395bd1b9304b46227708667cf57d734195",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/tuned-local-2026-10-06/DESIGN.md",
+   "sha256": "19b12e21ff6710fb6d1553a65ff1e3aae9dd699187439a320d0b1eacf8ae5829",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/tuned-local-2026-10-06/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/tuned-local-2026-10-06/score_tuned.py",
+   "sha256": "05fb990340f7d108d68cc1b134ad1154a538a2c1bdb9aa81e9afb4712ade9be2",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/DESIGN.md",
+   "sha256": "83505c70db3c06b2ff2b56f29f07787566286742986d777429320e8fa1f2ac9f",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/DESIGN.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/results/S14-SCORED.json",
+   "sha256": "48862c89e6ba5266d9c11187cf98370b6e0e96e4aee2e867d8bf7e526e540273",
+   "reason": "sealed original not published; redacted copy published instead (forecast keys removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/results/S14-SCORED.redacted.json"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/results/S14-SCORED.md",
+   "sha256": "57438ea1b2bd3e895bcd2ed7dc7b4b08a15beb2213c5b8da941dc7bd9ccf84d6",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/results/S14-SCORED.redacted.md"
+  },
+  {
+   "path": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/score_s14.py",
+   "sha256": "8c8d76e12a54372b2c5c71f83f6df94a65b093ae2db449153c46201e17de361a",
+   "reason": "sealed file that carries forecast probabilities in its code or data",
+   "replaced_by": null
+  },
+  {
+   "path": "4-ai-village-counts/t13c-2026-10-04/DESIGN.md",
+   "sha256": "ce34b445a6a4cdfb3c86ca35829e09a3b37be5ade16da91188a58c15bd5387d3",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "4-ai-village-counts/t13c-2026-10-04/DESIGN.redacted.md"
+  },
+  {
+   "path": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/DESIGN.md",
+   "sha256": "05294fb739dff302bdbfccc0d233d4e2b25a5b8803d297c9515e80813d03369c",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/DESIGN.redacted.md"
+  },
+  {
+   "path": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/T18-RESULT.md",
+   "sha256": "66e6a0beb9bd9ce467fba303cb882eb77da88a3a4b9c290ff2732a08f0631a8f",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/T18-RESULT.redacted.md"
+  },
+  {
+   "path": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/predictions.jsonl",
+   "sha256": "b3a13a2eadc962571992fc9abf961871b34009fe9719ca19d10c76fd4963a066",
+   "reason": "forecast or prediction file (kept private by the owner's decision of 8 Oct)",
+   "replaced_by": null
+  },
+  {
+   "path": "4-ai-village-counts/t19-whistle-2026-10-04/DESIGN.md",
+   "sha256": "0519cfac352f569eeac045581ba1b01df1560ee96a1ae4e644616d8611e15da2",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "4-ai-village-counts/t19-whistle-2026-10-04/DESIGN.redacted.md"
+  },
+  {
+   "path": "4-ai-village-counts/t19-whistle-2026-10-04/T19-RESULT.md",
+   "sha256": "7cee86dc8e2fa03f3d2ee87f9e7dcd42c13b2873d419b199c236302274b49199",
+   "reason": "sealed original not published; redacted copy published instead (forecast outcome tags removed; forecast outcome tags removed; 1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "4-ai-village-counts/t19-whistle-2026-10-04/T19-RESULT.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/coat-check-relay-ideas-2026-10-07/IDEA-2.md",
+   "sha256": "6d0487c105b15254f9dbe58a77e7edeb55dd35558573f3957acc2174dd67cf28",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "5-designs-and-statements/coat-check-relay-ideas-2026-10-07/IDEA-2.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/coat-check-relay-ideas-2026-10-07/IDEA.md",
+   "sha256": "c372ae07960ab5692b07ba85ac14190aef3f7e9302024d0c8a36ab08b9a9585d",
+   "reason": "names a box account and a confidential product line; owner to check before it goes out",
+   "replaced_by": null
+  },
+  {
+   "path": "5-designs-and-statements/drop-in-receipts-2026-10-06/SPEC.md",
+   "sha256": "2f3fe412d2d6841677d41ffc7c55362a5078b6487c4da1e77c771a9166337bd1",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "5-designs-and-statements/drop-in-receipts-2026-10-06/SPEC.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/iswt-contagion-2026-10-03/THE-OPPOSITE-OF-A-VIRUS-2026-10-03.md",
+   "sha256": "3628c8b535e84c340c2ff675775e4e9ff4449a29c3b2920b3587f442ffdebbd7",
+   "reason": "sealed original not published; redacted copy published instead (forecast or prediction lines removed)",
+   "replaced_by": "5-designs-and-statements/iswt-contagion-2026-10-03/THE-OPPOSITE-OF-A-VIRUS-2026-10-03.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/prediction-job-2026-10-06/DESIGN.md",
+   "sha256": "5cd2b9b1fd03a4de4e5ac6b22b94036ebcc22866f45dd68ab6c741a41309d41b",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "5-designs-and-statements/prediction-job-2026-10-06/DESIGN.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/weakness-designs-2026-10-05/W1-DESIGN-v1.md",
+   "sha256": "d66811f4f018b62031c21594e62fef73d9e2666f12540a2e095890890fce42c3",
+   "reason": "sealed original not published; redacted copy published instead (box host/account names and a city name replaced)",
+   "replaced_by": "5-designs-and-statements/weakness-designs-2026-10-05/W1-DESIGN-v1.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/weakness-designs-2026-10-05/W2-DESIGN-v1.md",
+   "sha256": "11724235d015cb42c059d36b467838d7c1789d634d90f6663315bee6788488c0",
+   "reason": "sealed original not published; redacted copy published instead (box host/account names and a city name replaced)",
+   "replaced_by": "5-designs-and-statements/weakness-designs-2026-10-05/W2-DESIGN-v1.redacted.md"
+  },
+  {
+   "path": "5-designs-and-statements/weakness-designs-2026-10-05/W3-DESIGN-v1.md",
+   "sha256": "4c39e64a3e3577582f39da97c8e45a16bacd671f90c3a6c2b5e4f059e95fe48f",
+   "reason": "sealed original not published; redacted copy published instead (1 forecast section(s) or paragraph(s) removed)",
+   "replaced_by": "5-designs-and-statements/weakness-designs-2026-10-05/W3-DESIGN-v1.redacted.md"
+  }
+ ]
+}

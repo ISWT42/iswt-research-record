@@ -1,0 +1,10 @@
+# Human labels for the bench: sealed before anyone labels
+# Written 2026-10-04T04:44:59Z by Claude. Seed = first 16 hex digits of the gate 3 manifest's SHA-256 (sealed in block 969768).
+# The sample and the page hold AI Village record text and stay private; the key holds the model labels.
+41b2e5aad5c75936588b9b762adde2d44910afca1893f2811943157b6b7b21ee *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/DESIGN.md
+8d044f23f0a10d78e3fc6c586af11a137e314bb192c12258fb3953e35641c341 *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/make_label_sample.py
+143ef7d8fb732306071fad5f2ee785e9578a2b57cbae8c2b88901fbbe7f0f6b3 *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/label-template.html
+4c5c0d02f70988ed5f039f75c0dd13645d14079df3dab9b3f7ec9ff4730fce36 *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/score_labels.py
+a9daeb4f914bc5b6e36343f2a637adf126de2865db5e5906cad2c8ee11d8b803 *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/SAMPLE.json
+38da7f91fb23670ba10e27e08d5185a54be8efb296f7495debf8c76aa5a978dd *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/KEY.json
+bb3166a070ba8782d2fca414aafc000e006b97e8d9a72f5078118a35b13728cc *C:/Users/joshd/Private/ClaudeHandoff/ground-truth/labelling-2026-10-04/label.html

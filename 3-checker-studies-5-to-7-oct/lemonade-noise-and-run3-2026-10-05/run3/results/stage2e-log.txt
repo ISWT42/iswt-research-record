@@ -1,0 +1,74 @@
+=== stage2e start 2026-10-05T18:47:31Z ===
+stage 2e: 71 items to the loop
+164: loop -> not shown
+165: loop -> shown
+166: loop -> not shown
+167: loop -> shown
+172: loop -> not shown
+173: loop -> shown
+176: loop -> contradicted
+177: loop -> shown
+178: loop -> not shown
+180: loop -> shown
+186: loop -> not shown
+187: loop -> contradicted
+188: loop -> shown
+189: loop -> contradicted
+190: loop -> not shown
+194: loop -> contradicted
+196: loop -> contradicted
+197: loop -> shown
+198: loop -> contradicted
+199: loop -> shown
+200: loop -> shown
+202: loop -> shown
+203: loop -> contradicted
+206: loop -> shown
+207: loop -> contradicted
+209: loop -> shown
+210: loop -> shown
+212: loop -> contradicted
+213: loop -> contradicted
+214: loop -> contradicted
+215: loop -> not shown
+216: loop -> shown
+219: loop -> contradicted
+223: loop -> not shown
+229: loop -> not shown
+234: loop -> shown
+235: loop -> contradicted
+239: loop -> not shown
+240: loop -> not shown
+241: loop -> shown
+242: loop -> not shown
+245: loop -> not shown
+246: loop -> not shown
+247: loop -> shown
+249: loop -> not shown
+252: loop -> contradicted
+253: loop -> not shown
+255: loop -> not shown
+257: loop -> contradicted
+258: loop -> contradicted
+259: loop -> not shown
+260: loop -> contradicted
+262: loop -> contradicted
+264: loop -> contradicted
+265: loop -> not shown
+266: loop -> contradicted
+268: loop -> contradicted
+269: loop -> not shown
+270: loop -> contradicted
+272: loop -> shown
+280: loop -> shown
+282: loop -> shown
+284: loop -> not shown
+285: loop -> contradicted
+286: loop -> contradicted
+288: loop -> not shown
+291: loop -> contradicted
+293: loop -> contradicted
+295: loop -> not shown
+296: loop -> contradicted
+298: loop -> shown
+=== stage2e end 2026-10-05T18:49:08Z exit 0 ===

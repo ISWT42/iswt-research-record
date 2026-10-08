@@ -1,0 +1,7778 @@
+[
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 0
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 1
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 2
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 3
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 4
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 5
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 6
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 7
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 8
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 9
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 10
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 11
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 12
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 13
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 14
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 15
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 16
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 17
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 18
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 19
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 20
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 21
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 22
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 23
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 24
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 25
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 26
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 27
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 28
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 29
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 30
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 31
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 32
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 33
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 34
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 35
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 36
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 37
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 38
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 39
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 40
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 41
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 42
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 43
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 44
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 45
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 46
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 47
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 48
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 49
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 50
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 51
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 52
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 53
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 54
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 55
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 56
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 57
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 58
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 59
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 60
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 61
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 62
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 63
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 64
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 65
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 66
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 67
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 68
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 69
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 70
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 71
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 72
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 73
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 74
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 75
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 76
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 77
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 78
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 79
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 80
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 81
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 82
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 83
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 84
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 85
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 86
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 87
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 88
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 89
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 90
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 91
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 92
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 93
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 94
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 95
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 96
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 97
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 98
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 99
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 100
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 101
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 102
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 103
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 104
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 105
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 106
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 107
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 108
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 109
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 110
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 111
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 112
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 113
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 114
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 115
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 116
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 117
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 118
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 119
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 120
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 121
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 122
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 123
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 124
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 125
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 126
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 127
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 128
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 129
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 130
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 131
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 132
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 133
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 134
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 135
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 136
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 137
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 138
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 139
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 140
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 141
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 142
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 143
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 144
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 145
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 146
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 147
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 148
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 149
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 150
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 151
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 152
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 153
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 154
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 155
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 156
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 157
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 158
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 159
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 160
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 161
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 162
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 163
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 164
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 165
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 166
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 167
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 168
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 169
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 170
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 171
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 172
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 173
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 174
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 175
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 176
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 177
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 178
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 179
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 180
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 181
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 182
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 183
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 184
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 185
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 186
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 187
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 188
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 189
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 190
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 191
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 192
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 193
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 194
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 195
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 196
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 197
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 198
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 199
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 200
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 201
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 202
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 203
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 204
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 205
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 206
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 207
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 208
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 209
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 210
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 211
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 212
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 213
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 214
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 215
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 216
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 217
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 218
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 219
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 220
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 221
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 222
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 223
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 224
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 225
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 226
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 227
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 228
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 229
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 230
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 231
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 232
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 233
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 234
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 235
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 236
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 237
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 238
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 239
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 240
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 241
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 242
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 243
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 244
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 245
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 246
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 247
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 248
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 249
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 250
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 251
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 252
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 253
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 254
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 255
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 256
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 257
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 258
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 259
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 260
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 261
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 262
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 263
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 264
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 265
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 266
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 267
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 268
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 269
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 270
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 271
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 272
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 273
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 274
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 275
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 276
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 277
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 278
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 279
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 280
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 281
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 282
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 283
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 284
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 285
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 286
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 287
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 288
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 289
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 290
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 291
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 292
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 293
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 294
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 295
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 296
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 297
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 298
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 299
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 300
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 301
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 302
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 303
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 304
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 305
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 306
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 307
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 308
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 309
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 310
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 311
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 312
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 313
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 314
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 315
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 316
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 317
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 318
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 319
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 320
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 321
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 322
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 323
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 324
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 325
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 326
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 327
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 328
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 329
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 330
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 331
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 332
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 333
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 334
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 335
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 336
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 337
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 338
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 339
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 340
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 341
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 342
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 343
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 344
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 345
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 346
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 347
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 348
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 349
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 350
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 351
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 352
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 353
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 354
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 355
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 356
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 357
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 358
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 359
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 360
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 361
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 362
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 363
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 364
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 365
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 366
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 367
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 368
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 369
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 370
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 371
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 372
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 373
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 374
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 375
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 376
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 377
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 378
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 379
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 380
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 381
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 382
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 383
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 384
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 385
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 386
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 387
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 388
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 389
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 390
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 391
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 392
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 393
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 394
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 395
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 396
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 397
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 398
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 399
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 400
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 401
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 402
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 403
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 404
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 405
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 406
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 407
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 408
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 409
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 410
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 411
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 412
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 413
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 414
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 415
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 416
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 417
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 418
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 419
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 420
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 421
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 422
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 423
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 424
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 425
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 426
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 427
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 428
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 429
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 430
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 431
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 432
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 433
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 434
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 435
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 436
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 437
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 438
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 439
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 440
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 441
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 442
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 443
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 444
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 445
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 446
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 447
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 448
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 449
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 450
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 451
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 452
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 453
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 454
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 455
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 456
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 457
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 458
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 459
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T054",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 460
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 461
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 462
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 463
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 464
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 465
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 466
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 467
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 468
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 469
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 470
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 471
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 472
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 473
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 474
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 475
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 476
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 477
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 478
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 479
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 480
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 481
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 482
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 483
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 484
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 485
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 486
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 487
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 488
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 489
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 490
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 491
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 492
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 493
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 494
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 495
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 496
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 497
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 498
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 499
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 500
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 501
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 502
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 503
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 504
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 505
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 506
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 507
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 508
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 509
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 510
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 511
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 512
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 513
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 514
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 515
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 516
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 517
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 518
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 519
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 520
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 521
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 522
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 523
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 524
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 525
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 526
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 527
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 528
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 529
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 530
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 531
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 532
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 533
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 534
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 535
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 536
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 537
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 538
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 539
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 540
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 541
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 542
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 543
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 544
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 545
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 546
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 547
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 548
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 549
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 550
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 551
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 552
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 553
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 554
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 555
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 556
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 557
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 558
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 559
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 560
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 561
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 562
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 563
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 564
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 565
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 566
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 567
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 568
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 569
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 570
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 571
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 572
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 573
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 574
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 575
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 576
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 577
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 578
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 579
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 580
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 581
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 582
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 583
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 584
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 585
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 586
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 587
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 588
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 589
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 590
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 591
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 592
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 593
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 594
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 595
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 596
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 597
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 598
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 599
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 600
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 601
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 602
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 603
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 604
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 605
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 606
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 607
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 608
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 609
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 610
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 611
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 612
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 613
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 614
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 615
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 616
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 617
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 618
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 619
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 620
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 621
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 622
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 623
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 624
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 625
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 626
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 627
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 628
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 629
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 630
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T020",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 631
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 632
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 633
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 634
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 635
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 636
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 637
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 638
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 639
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 640
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 641
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 642
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 643
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 644
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 645
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 646
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 647
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 648
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 649
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 650
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 651
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 652
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 653
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 654
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 655
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 656
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 657
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 658
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 659
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 660
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 661
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 662
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 663
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 664
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 665
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 666
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 667
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 668
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 669
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 670
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 671
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 672
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 673
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 674
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 675
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 676
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 677
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 678
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 679
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 680
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 681
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 682
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 683
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 684
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T022",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 685
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 686
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 687
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 688
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 689
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 690
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 691
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 692
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 693
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 694
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 695
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 696
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T042",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 697
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 698
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 699
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 700
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 701
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 702
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 703
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 704
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 705
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 706
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 707
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 708
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 709
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 710
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 711
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 712
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 713
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 714
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 715
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 716
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 717
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 718
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 719
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 720
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 721
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 722
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 723
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 724
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 725
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 726
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 727
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 728
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 729
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 730
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 731
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 732
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T052",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 733
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 734
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 735
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 736
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 737
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 738
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 739
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 740
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 741
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 742
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 743
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 744
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T050",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 745
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 746
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 747
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 748
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T037",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 749
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 750
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 751
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 752
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 753
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 754
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 755
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 756
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T016",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 757
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 758
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 759
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 760
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 761
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 762
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 763
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 764
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 765
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 766
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 767
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 768
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 769
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 770
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 771
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 772
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 773
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 774
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 775
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 776
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 777
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 778
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 779
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T048",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 780
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 781
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 782
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 783
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T046",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 784
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 785
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 786
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 787
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 788
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 789
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 790
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 791
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 792
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 793
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 794
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T006",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 795
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T048",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 796
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 797
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 798
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 799
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 800
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 801
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T044",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 802
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 803
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 804
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 805
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 806
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T026",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 807
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 808
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 809
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 810
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 811
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 812
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 813
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 814
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 815
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T051",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 816
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 817
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T019",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 818
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 819
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 820
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 821
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 822
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 823
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 824
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 825
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T022",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 826
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 827
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 828
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 829
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T023",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 830
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 831
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T002",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 832
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 833
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 834
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T024",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 835
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 836
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 837
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T029",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 838
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T036",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 839
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 840
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T015",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 841
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T035",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 842
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 843
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 844
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 845
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T027",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 846
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 847
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T046",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 848
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T034",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 849
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T034",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 850
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T026",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 851
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 852
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 853
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 854
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T005",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 855
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 856
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T009",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 857
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T018",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 858
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 859
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 860
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 861
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 862
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 863
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 864
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 865
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 866
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 867
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 868
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T003",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 869
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T032",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 870
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T009",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 871
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 872
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T033",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 873
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T011",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 874
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T028",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 875
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T017",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 876
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T018",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 877
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 878
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 879
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T019",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 880
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T047",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 881
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T040",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 882
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T031",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 883
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T053",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 884
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T039",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 885
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T020",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 886
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 887
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T035",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 888
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 889
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T041",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 890
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 891
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 892
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T010",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 893
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T045",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 894
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T047",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 895
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 896
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T024",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 897
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 898
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T052",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 899
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 900
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T049",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 901
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T012",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 902
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T038",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 903
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T014",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 904
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T040",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 905
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 906
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 907
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 908
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T051",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 909
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T054",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 910
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T003",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 911
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 912
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T021",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 913
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 914
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T013",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 915
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T028",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 916
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T023",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 917
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 918
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T016",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 919
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T011",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 920
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T004",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 921
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T025",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 922
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 923
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T006",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 924
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T038",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 925
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 926
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T004",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 927
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 928
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T037",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 929
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T042",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 930
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 931
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T008",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 932
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 933
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T008",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 934
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 935
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T010",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 936
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 937
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T001",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 938
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T013",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 939
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T050",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 940
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T021",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 941
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T025",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 942
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T033",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 943
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T027",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 944
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T015",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 945
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T043",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 946
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 947
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T007",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 948
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 949
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T001",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 950
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T007",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 951
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T002",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 952
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T044",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 953
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T043",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 954
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T049",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 955
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T031",
+    "model": "anthropic/claude-opus-5.5",
+    "repeat": 0,
+    "call_index": 956
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T041",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 957
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 958
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T036",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 959
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T030",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 960
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T014",
+    "model": "openai/gpt-6.1-sol",
+    "repeat": 0,
+    "call_index": 961
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T032",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 962
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T045",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 963
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T012",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 964
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T030",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 965
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "z-ai/glm-5.3",
+    "repeat": 0,
+    "call_index": 966
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T053",
+    "model": "moonshotai/kimi-k3",
+    "repeat": 0,
+    "call_index": 967
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T017",
+    "model": "google/gemini-3.8-flash",
+    "repeat": 0,
+    "call_index": 968
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T039",
+    "model": "x-ai/grok-4.7",
+    "repeat": 0,
+    "call_index": 969
+  },
+  {
+    "spec": "s12",
+    "arm": "allowed",
+    "item_id": "T005",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 970
+  },
+  {
+    "spec": "s12",
+    "arm": "forced",
+    "item_id": "T029",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "repeat": 0,
+    "call_index": 971
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "kind": "kit-spec-v1-read-only-source-inspection/1",
+  "source_files": [
+    {
+      "id": "H1",
+      "file": "C:\\Users\\joshd\\Workbench\\human-gate-poc-2026-10-04\\gate-core.mjs",
+      "lines": "6-103",
+      "read_scope": "entire file",
+      "supports": [
+        "Pinned localhost RP/origin",
+        "Sorted-key two-space canonical action",
+        "Challenge includes domain, requestId, nonce and action",
+        "Verification uses enrollment registry, native client/authenticator bytes, origin/RP/type/challenge, UP and UV",
+        "Accepts ES256 and Ed25519; no explicit low-S normalization"
+      ],
+      "sha256": "5c7591bf0c523d7098e2474d6c6d53addb816915e2f69ca184231f30361ac7a5"
+    },
+    {
+      "id": "H2",
+      "file": "C:\\Users\\joshd\\Workbench\\human-gate-poc-2026-10-04\\public\\index.html",
+      "read_scope": "lines 1-210",
+      "supports": [
+        "Browser create/get ceremonies",
+        "Required user verification and cross-platform enrollment selection",
+        "No attestation requested",
+        "Browser recomputes displayed-action challenge",
+        "ES256 and Ed25519 requested in reference enrollment"
+      ],
+      "sha256": "1eeda09603d1ccd1c40ebf4084900dc4b3b0bb9fba912c84ce6a32d58e3334a6"
+    },
+    {
+      "id": "H3",
+      "file": "C:\\Users\\joshd\\Workbench\\human-gate-poc-2026-10-04\\server.mjs",
+      "read_scope": "entire file",
+      "supports": [
+        "Loopback binding, Host/Origin filtering",
+        "Reference enrollment and one-time redemption ledger",
+        "Counter handling in server, not proof of model execution"
+      ],
+      "sha256": "721e2931d405550e526142544e8d69205bc631df5cae24bcc50d2037d7f7abbc"
+    },
+    {
+      "id": "H4",
+      "file": "C:\\Users\\joshd\\Workbench\\human-gate-poc-2026-10-04\\README.md",
+      "read_scope": "entire file",
+      "supports": [
+        "Reference instructions and stated limitations",
+        "Existing test descriptions; no claim they were rerun in this task"
+      ],
+      "sha256": "4c912edc1dad0b68cc8e640c9b81ddda7ff35a0712476644556d781e9869fb29"
+    },
+    {
+      "id": "H5",
+      "file": "C:\\Users\\joshd\\Workbench\\human-gate-poc-2026-10-04\\results\\planted-faults-software-2026-10-04T21-03-31-138Z.json",
+      "read_scope": "saved synthetic software test artifact; aggregate fields inspected",
+      "supports": [
+        "Saved artifact reports 14 total, 14 safe, 14 exact; historical evidence only"
+      ],
+      "sha256": "a07e34095ada68e053b2abee18f74bf289b5c7d18c5f4cca3c24c2b0e8771bbc"
+    },
+    {
+      "id": "G1",
+      "file": "C:\\Users\\joshd\\Workbench\\swarm-receipts-public\\WRITEUP.md",
+      "read_scope": "Next section lines 220-229; selected contextual search matches",
+      "supports": [
+        "Gate 4 is a fresh exam under a new seal",
+        "Confirm or overturn narrow Gemma pass",
+        "Two-model cross-check is a post-hoc hypothesis for Gate 4"
+      ],
+      "sha256": "56ca405aa8ff2aa07f5c42dbfd39269c280f4b2dd324e8e3bdd65e5dd0668f59"
+    },
+    {
+      "id": "G2",
+      "file": "C:\\Users\\joshd\\Workbench\\swarm-receipts-public\\audit\\gate-3\\G3-RESULT-gemma4-12b.md",
+      "read_scope": "lines 73-84",
+      "supports": [
+        "Lines 83-84 call Gate 3 pass narrow and cross-check exploratory, not a fresh result"
+      ],
+      "sha256": "07d3507844ecd86b48f22013d336fb2813e7170fb51487004b83080e2c7d32dc"
+    },
+    {
+      "id": "G3",
+      "file": "C:\\Users\\joshd\\Workbench\\swarm-receipts-public\\audit\\gate-3\\G3-DESIGN.md",
+      "read_scope": "entire file",
+      "supports": [
+        "Line 42: at least 90 percent each group, 45/50 or ceil(0.9*n) if smaller, no planted failure shown",
+        "Fresh receipts exclude earlier gate turns"
+      ],
+      "sha256": "32431545261f158babf2d937865c454ab46329d57c341a25b62edf4bf0fcdd85"
+    }
+  ],
+  "reference_tests_executed": false,
+  "reference_data_and_receipts_read": false,
+  "network_used": false,
+  "saved_software_result": {
+    "mode": "software",
+    "at": "2026-10-04T21:03:31.139Z",
+    "safe": 14,
+    "exact": 14,
+    "total": 14
+  },
+  "material_adaptations_not_claimed_tested": [
+    "ES256-only enrollment and verifier instead of reference ES256/Ed25519",
+    "Explicit internal low-S normalization is added; absent from inspected gate-core.mjs",
+    "Challenge binds fixed kit domain plus canonical payload, not the PoC request and nonce structure",
+    "New fixed aggregate schema, native-response byte limits and strict client-data template",
+    "One accepted aggregate per enrolled donor/study window instead of nonce redemption",
+    "Exact calibration gate, reference publication and Gate 4-or-later release prerequisite"
+  ],
+  "gate4_current_status": "User states design and seal do not yet exist; no pass or seal assumed",
+  "gate4_user_direction": "Exact kit model profile must pass fresh sealed swarm-receipts Gate 4 or later. Gate 3 pass rule is interim; a subsequently sealed Gate 4 rule governs. Record qualifying seal in the kit manifest.",
+  "numeric_channel_calculation": {
+    "calibration_old_sum_only_schema": {
+      "counts": 10,
+      "total": 160,
+      "possible_vectors": 249524848105533,
+      "bits_upper_bound": 47.826176817146546
+    },
+    "calibration_exact_reference_for_fixed_profile": {
+      "possible_vectors": 1,
+      "bits": 0
+    },
+    "donor_counts_and_errors": {
+      "counts": 28,
+      "total": 20,
+      "possible_vectors": 9762479679106,
+      "bits_upper_bound": 43.150384778893134
+    },
+    "limitations": [
+      "The old bound uses only nonnegative counts and the sum, not additional truthful reference-row constraints.",
+      "Not a measured exfiltration rate or privacy guarantee.",
+      "The donor, spot-check, enrollment, authenticator, signature, profile-selection and withholding channels are not eliminated.",
+      "Published calibration equality does not prove honest execution or per-item equality."
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+PILOT RESULTS (counts only, no item text)  run pilot-1  made 2026-10-07T12:32:03Z
+PILOT - items 161 to 280 are NOT FRESH (scored before); exploratory, not evidence
+
+THE RUN
+  provider broker; calls in the log 2384: A-fixed 1080, A-study 129, B-improver 10, B-method 4, B-oneshot 361, B-study 400, B-test 400
+  tries 2396, retries 12, no answer 0, spent US$0.1774 (tries with no cost reported: 0)
+  answering providers {'Darkbloom': 2384}; pin mismatches in the log 0; answers whose ledger entry named no provider 0; finish reasons {'stop': 2384}
+  output tokens: most in one call 448 (of 2384 calls with counts); calls with reasoning tokens above zero 0
+  commands run on this run: 3; under a seal: 3; distinct core seals 1
+
+PHASE A, THE STUDY RUN (Empty notes on the study pool)
+  right 112 of 129; wrong 17: false shown 12, false contradicted 3, missed shown 1, missed contradicted 1, no answer 0; sure and wrong 17
+
+PHASE A, THE FIXED ARMS: right answers out of 40 per block (items 161 to 280, NOT FRESH)
+  arm          run      block 1    block 2    block 3         all
+  empty          1     30 of 40   29 of 40   28 of 40   87 of 120
+  empty          2     30 of 40   28 of 40   28 of 40   86 of 120
+  empty          3     29 of 40   28 of 40   28 of 40   85 of 120
+  filler         1     26 of 40   31 of 40   28 of 40   85 of 120
+  filler         2     26 of 40   34 of 40   28 of 40   88 of 120
+  filler         3     26 of 40   32 of 40   28 of 40   86 of 120
+  model-hand     1     30 of 40   30 of 40   31 of 40   91 of 120
+  model-hand     2     28 of 40   31 of 40   31 of 40   90 of 120
+  model-hand     3     28 of 40   30 of 40   31 of 40   89 of 120
+  one-shot       1     27 of 40   30 of 40   27 of 40   84 of 120
+  one-shot       2     27 of 40   28 of 40   29 of 40   84 of 120
+  one-shot       3     29 of 40   29 of 40   29 of 40   87 of 120
+  noise floor, all fixed arms (4.8): f = 2 per 40-item block (90th percentile 2.00 of 36 absolute differences between repeats, interpolated as in type 7, which f is read from; the nearest-rank 90th percentile is 2; minimum 2); pooled over 3 blocks 4; differences seen {'0': 18, '1': 9, '2': 8, '3': 1}
+  noise floor, phase A's three arms only, without One shot: f = 2 per 40-item block (90th percentile 2.00 of 27 absolute differences between repeats, interpolated as in type 7, which f is read from; the nearest-rank 90th percentile is 2; minimum 2); pooled over 3 blocks 4; differences seen {'0': 16, '1': 7, '2': 3, '3': 1}
+  noise floor, Empty alone (pilot rule 1): f = 2 per 40-item block (90th percentile 1.00 of 9 absolute differences between repeats, interpolated as in type 7, which f is read from; the nearest-rank 90th percentile is 1; minimum 2); pooled over 3 blocks 4; differences seen {'0': 5, '1': 4}
+
+SECONDARY COUNTS, each arm's first run on all test items (every count with its own denominator)
+  empty: right 87 of 120; false shown 12 of 80; true shown kept 31 of 40; false contradicted 5 of 80; true contradicted kept 26 of 40; correct not shown 30 of 40; sent to a person 46 of 120; no answer 0 of 120
+  filler: right 85 of 120; false shown 10 of 80; true shown kept 29 of 40; false contradicted 5 of 80; true contradicted kept 27 of 40; correct not shown 29 of 40; sent to a person 49 of 120; no answer 0 of 120
+  model-hand: right 91 of 120; false shown 11 of 80; true shown kept 31 of 40; false contradicted 3 of 80; true contradicted kept 31 of 40; correct not shown 29 of 40; sent to a person 44 of 120; no answer 0 of 120
+  one-shot: right 84 of 120; false shown 12 of 80; true shown kept 31 of 40; false contradicted 7 of 80; true contradicted kept 25 of 40; correct not shown 28 of 40; sent to a person 45 of 120; no answer 0 of 120
+  settle proposals, empty: made 40 of 120; pass the word list 35 of 40; expected line matches the settling line 0 of 16
+  settle proposals, filler: made 38 of 120; pass the word list 36 of 38; expected line matches the settling line 0 of 20
+  settle proposals, model-hand: made 36 of 120; pass the word list 35 of 36; expected line matches the settling line 0 of 15
+  settle proposals, one-shot: made 38 of 120; pass the word list 37 of 38; expected line matches the settling line 0 of 17
+
+PHASE B, THE ROUNDS (diagonal: each round's new notes on that round's test block; the loops never see these scores)
+  Caution: Empty's first run was made in phase A, earlier than these runs. A change in the provider between the two is not separated from the effect of the notes.
+  round 1 (block of 40): Empty right 30 of 40; Model-hand 30 of 40
+    Own notes: right A1 28 of 40, A2 29 of 40; median 28.5, min 28, max 29 against Empty 30 of 40; gain -1.5 (floor f = 2)
+      against Empty's first run, pooled over 2 loops: fixed 1, broken 4; false shown 10 of 54 (Empty 4 of 27 on one run); sent to a person 33 of 80 (Empty 18 of 40)
+    Own notes + own method: right S1 28 of 40, S2 29 of 40; median 28.5, min 28, max 29 against Empty 30 of 40; gain -1.5 (floor f = 2)
+      against Empty's first run, pooled over 2 loops: fixed 1, broken 4; false shown 10 of 54 (Empty 4 of 27 on one run); sent to a person 33 of 80 (Empty 18 of 40)
+    Model-hand: gain 0
+  round 2 (block of 40): Empty right 29 of 40; Model-hand 30 of 40
+    Own notes: right A1 29 of 40, A2 29 of 40; median 29, min 29, max 29 against Empty 29 of 40; gain 0 (floor f = 2)
+      against Empty's first run, pooled over 2 loops: fixed 4, broken 4; false shown 8 of 54 (Empty 5 of 27 on one run); sent to a person 34 of 80 (Empty 14 of 40)
+    Own notes + own method: right S1 29 of 40, S2 31 of 40; median 30, min 29, max 31 against Empty 29 of 40; gain +1 (floor f = 2)
+      against Empty's first run, pooled over 2 loops: fixed 5, broken 3; false shown 7 of 54 (Empty 5 of 27 on one run); sent to a person 31 of 80 (Empty 14 of 40)
+    Model-hand: gain +1
+  round 3 (block of 40): Empty right 28 of 40; Model-hand 31 of 40
+    Own notes: right A1 30 of 40, A2 27 of 40; median 28.5, min 27, max 30 against Empty 28 of 40; gain +0.5 (floor f = 2)
+      against Empty's first run, pooled over 2 loops: fixed 3, broken 2; false shown 6 of 52 (Empty 3 of 26 on one run); sent to a person 27 of 80 (Empty 14 of 40)
+    Own notes + own method: right S1 28 of 40, S2 29 of 40; median 28.5, min 28, max 29 against Empty 28 of 40; gain +0.5 (floor f = 2)
+      against Empty's first run, pooled over 2 loops: fixed 4, broken 3; false shown 6 of 52 (Empty 3 of 26 on one run); sent to a person 28 of 80 (Empty 14 of 40)
+    Model-hand: gain +3
+
+PHASE B, WHAT THE LOOPS SAW (study side, 25 items per round; counts from the chain files)
+  A1 round 1: right 19 of 25; false shown 4 of 12; improver output schema valid NO, edits applied 0, dropped 0; notes now {'V1': 0, 'V2': 0, 'V3': 0, 'V4': 0} (0 characters)
+  A1 round 2: right 23 of 25; false shown 2 of 15; improver output schema valid yes, edits applied 6, dropped 3 {'over_op_cap': 3}; notes now {'V1': 2, 'V2': 3, 'V3': 1, 'V4': 0} (324 characters)
+  A1 round 3: right 20 of 25; false shown 3 of 11; before the last update right 21 of 25, fixed 1, broken 2; improver output schema valid yes, edits applied 4, dropped 2 {'over_line_cap': 1, 'bad_format': 1}; notes now {'V1': 4, 'V2': 5, 'V3': 1, 'V4': 0} (591 characters)
+  A2 round 1: right 19 of 25; false shown 3 of 19; improver output schema valid yes, edits applied 2, dropped 0; notes now {'V1': 1, 'V2': 1, 'V3': 0, 'V4': 0} (136 characters)
+  A2 round 2: right 23 of 25; false shown 2 of 16; before the last update right 23 of 25, fixed 0, broken 0; improver output schema valid yes, edits applied 4, dropped 1 {'bad_format': 1}; notes now {'V1': 2, 'V2': 1, 'V3': 1, 'V4': 2} (456 characters)
+  A2 round 3: right 23 of 25; false shown 2 of 14; before the last update right 23 of 25, fixed 0, broken 0; improver output schema valid yes, edits applied 1, dropped 0; notes now {'V1': 3, 'V2': 1, 'V3': 1, 'V4': 2} (546 characters)
+  S1 round 1 (shared with the A loop): right 19 of 25; false shown 4 of 12; improver output schema valid NO, edits applied 0, dropped 0; notes now {'V1': 0, 'V2': 0, 'V3': 0, 'V4': 0} (0 characters)
+  S1 round 2: right 23 of 25; false shown 2 of 15; improver output schema valid yes, edits applied 6, dropped 4 {'over_op_cap': 4}; notes now {'V1': 2, 'V2': 4, 'V3': 0, 'V4': 0} (332 characters); method rewrite kept
+  S1 round 3: right 21 of 25; false shown 3 of 11; before the last update right 21 of 25, fixed 0, broken 0; improver output schema valid yes, edits applied 2, dropped 0; notes now {'V1': 3, 'V2': 5, 'V3': 0, 'V4': 0} (460 characters); method rewrite kept
+  S2 round 1 (shared with the A loop): right 19 of 25; false shown 3 of 19; improver output schema valid yes, edits applied 2, dropped 0; notes now {'V1': 1, 'V2': 1, 'V3': 0, 'V4': 0} (136 characters)
+  S2 round 2: right 23 of 25; false shown 2 of 16; before the last update right 23 of 25, fixed 0, broken 0; improver output schema valid yes, edits applied 3, dropped 1 {'directive_wording': 1}; notes now {'V1': 1, 'V2': 2, 'V3': 1, 'V4': 1} (329 characters); method rewrite kept
+  S2 round 3: right 23 of 25; false shown 2 of 14; before the last update right 23 of 25, fixed 0, broken 0; improver output schema valid yes, edits applied 1, dropped 0; notes now {'V1': 2, 'V2': 2, 'V3': 1, 'V4': 1} (424 characters); method rewrite kept
+
+THE IMPROVER (pilot rule 2 and the gate)
+  all outputs: 11 outputs; schema valid 9 of 11; at least one valid edit 9 of 11; every proposed edit applied 4 of 11
+  loops only: 10 outputs; schema valid 9 of 10; at least one valid edit 9 of 10; every proposed edit applied 4 of 10
+  One shot: 1 outputs; schema valid 0 of 1; at least one valid edit 0 of 1; every proposed edit applied 0 of 1
+  dropped edits by reason {'over_op_cap': 7, 'over_line_cap': 1, 'bad_format': 2, 'directive_wording': 1}; V3 lines proposed (add or replace) 8, refused by the word list 0
+
+CHAIN FILES (each entry's hash and link, and the heads written beside them)
+  A1: 4 entries, intact
+  A2: 4 entries, intact
+  one-shot: 1 entries, intact
+  S1: 4 entries, intact
+  S2: 4 entries, intact
+  HEADS-r0.txt: 1 heads, all match the chain files
+  HEADS-r1.txt: 4 heads, all match the chain files
+  HEADS-r2.txt: 4 heads, all match the chain files
+  HEADS-r3.txt: 4 heads, all match the chain files
+  V3 lines in any state or edit that the word list refuses (a bypass of the applier): 0
+
+PILOT RULES (4.17): each condition beside its counts; what follows from them is the coordinator's decision
+  (1) Empty three-repeat floor per 40-item block: f = 2 (from 9 differences {'0': 5, '1': 4}); condition 'at most 3' holds
+  (2) schema-valid improver outputs: 9 of 11 (82%); condition 'at least 70%' holds
+  (3) mistakes per study block under Empty: study run wrong 17 of 129, about 3.3 per 25 (the rate the condition is read on); round 1 blocks wrong 6 of 25, 6 of 25 (context); condition 'at least 3 per block' holds
+  (4) hash mismatch or gate bypass: provider broker; pin mismatches 0; answers with no named provider 0; manifest intact now True; commands without a seal 0; core seals used 1; chain problems 0; V3 lines failing the word list 0 (refused by the applier 0); mismatch stops none; condition 'none' holds
+
+BY TRAP WORD (test items; Own notes and Own notes + own method pooled over loops and rounds; right k of n)
+  trap                           empty        filler    model-hand      one-shot           own    own+method
+  example_text                  6 of 7        6 of 7        6 of 7        6 of 7      11 of 14      12 of 14
+  expected_error               4 of 11       5 of 11       4 of 11       4 of 11       8 of 22       8 of 22
+  injected_text                 2 of 6        3 of 6        5 of 6        2 of 6       5 of 12       7 of 12
+  intermediate_signal          6 of 10       6 of 10       7 of 10       7 of 10      13 of 20      13 of 20
+  narration                     7 of 7        7 of 7        7 of 7        7 of 7      14 of 14      14 of 14
+  none                        18 of 24      17 of 24      22 of 24      17 of 24      38 of 48      37 of 48
+  other_environment            8 of 13       7 of 13       7 of 13       7 of 13      14 of 26      14 of 26
+  relayed_claim                 5 of 7        5 of 7        5 of 7        5 of 7      10 of 14       9 of 14
+  retry                       10 of 13       8 of 13       8 of 13       9 of 13      18 of 26      18 of 26
+  tool_failed_to_run          11 of 12      11 of 12      10 of 12      11 of 12      22 of 24      22 of 24
+  truncated                   10 of 10      10 of 10      10 of 10       9 of 10      19 of 20      20 of 20
+
+FALSE SHOWN BY TRAP WORD (false shown k of the items whose key is not shown)
+  trap                           empty        filler    model-hand      one-shot           own    own+method
+  example_text                  1 of 4        1 of 4        1 of 4        1 of 4        2 of 8        2 of 8
+  expected_error                1 of 7        1 of 7        1 of 7        1 of 7       2 of 14       2 of 14
+  injected_text                 2 of 4        2 of 4        1 of 4        2 of 4        4 of 8        3 of 8
+  intermediate_signal           3 of 6        2 of 6        2 of 6        2 of 6       4 of 12       4 of 12
+  narration                     0 of 5        0 of 5        0 of 5        0 of 5       0 of 10       0 of 10
+  none                         0 of 14       0 of 14       0 of 14       0 of 14       0 of 28       0 of 28
+  other_environment             3 of 9        2 of 9        3 of 9        4 of 9       8 of 18       8 of 18
+  relayed_claim                 2 of 6        2 of 6        2 of 6        2 of 6       4 of 12       4 of 12
+  retry                         0 of 8        0 of 8        0 of 8        0 of 8       0 of 16       0 of 16
+  tool_failed_to_run            0 of 9        0 of 9        1 of 9        0 of 9       0 of 18       0 of 18
+  truncated                     0 of 8        0 of 8        0 of 8        0 of 8       0 of 16       0 of 16
+
+TABLE OF APPENDIX D (one row per round; byhand_right is the Model-hand set, written by a model, not a person; own_fixed, own_broken, own_false_shown and own_sent_to_person are sums over own_loops loops)
+round,n_items,empty_right,byhand_right,own_median,own_min,own_max,ownmethod_median,floor_f,own_fixed,own_broken,own_false_shown,own_false_shown_denominator,own_sent_to_person,own_loops,own_sent_to_person_denominator
+1,40,30,30,28.5,28,29,28.5,2,1,4,10,54,33,2,80
+2,40,29,30,29,29,29,30,2,4,4,8,54,34,2,80
+3,40,28,31,28.5,27,30,28.5,2,3,2,6,52,27,2,80

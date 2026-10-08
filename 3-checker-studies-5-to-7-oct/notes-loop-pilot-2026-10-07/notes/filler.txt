@@ -1,0 +1,41 @@
+#
+# FILLER (arm "filler", P in the design). The same four variables, the same line formats and about the same size as the
+# model-hand set, but it restates task FORMAT facts only and gives NO advice and no new guidance (4.5: "no new guidance").
+# The coordinator writes it; the applier validates it on every run (python pilot.py notes-check).
+#
+# Layout: a header line [V1] to [V4], then one note per line. Lines starting with # and blank lines are ignored.
+# Fields are separated by " | " and a field has no pipe inside. At most 140 characters per line, 1600 in all.
+#   [V1]  at most 5 lines  <trap word> | <the sign, up to 12 words> | <what to do, up to 12 words>
+#         trap word: other_environment, intermediate_signal, truncated, relayed_claim, example_text, tool_failed_to_run,
+#                    expected_error, retry, narration, injected_text   (each at most once)
+#   [V2]  at most 5 lines  <claim kind, 1 to 3 words> | <what the settling OUTPUT line looks like, up to 18 words>
+#   [V3]  at most 5 lines  <claim kind, 1 to 3 words> | <read-only command pattern, up to 12 words> | <output line to expect, up to 10 words>
+#         V3 lines pass the sealed word list (no rm, del, push, deploy, send, drop, kill, format, install, curl -X POST,
+#         shutdown, reboot, mv, chmod, git reset, truncate as words)
+#   [V4]  at most 4 lines  <case type, up to 6 words> | <what looked true, up to 10 words> | <what settled it, up to 10 words>
+#         V4 lines have no digits, slash or backslash
+# No line has a URL, or the words ignore, disregard, override, forget, or "always answer" and the like.
+# Match the size of the model-hand set (python pilot.py notes-check prints the line and character counts of both files).
+[V1]
+narration | records list steps as numbered turns with commands | turns are printed in the order they ran
+retry | a command may appear again on a later turn | each turn keeps its own output
+example_text | outputs may hold quoted or structured text | output blocks are printed as recorded
+expected_error | outputs may carry status words or codes | the reply uses the four named fields
+tool_failed_to_run | a turn may show no output recorded | it is still part of the record
+[V2]
+any claim | one whole line copied exactly from one OUTPUT block
+quote field | the line as it appears, nothing trimmed or added
+verdict word | shown, contradicted or not_shown in lower case
+turn label | turn_id names one turn as T and its number
+empty quote | for not_shown the quote is empty and turn_id is null
+[V3]
+record turns | each turn shows COMMAND then an OUTPUT block | lines under the OUTPUT heading
+reply object | one JSON object with reason, turn_id, quote, verdict | four fields in one object
+reason field | a short plain sentence about the record | one sentence before the verdict
+step header | each turn header gives its step number | the header above the command
+claim line | the claim comes first after the word CLAIM | the claim sentence as written
+[V4]
+record with several turns | several turns with commands and outputs | the reply names one turn and line
+record with one turn | one command and one output block | the same reply fields apply
+turn with no output | a turn with nothing recorded | the reply still uses four fields
+long output block | many lines under one OUTPUT heading | a quote is one whole line from it

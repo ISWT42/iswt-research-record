@@ -1,0 +1,149 @@
+I'll check what exists before drawing conclusions.Below is my review. I checked the landscape with web searches; where I rely on my own knowledge rather than a source I say so, and I flag things I'm unsure about.
+
+---
+
+## 0. Quick framing (what the two blocks actually are)
+
+Stripped of metaphor, the "ladder" is an **append-only, verifiable log** and the "Möbius loop" is a **commitment scheme (commit‑reveal) with an external timestamp**. "Digital time travel" is the standard notion of *proof of existence*: a hash committed at time T proves the data existed **no later than** T. That is exactly what OpenTimestamps advertises — anyone can later take the original data and the .ots proof file and independently verify that the data existed no later than the time of that Bitcoin block. Everything below follows from taking that seriously.
+
+---
+
+## 1. Other uses, ranked
+
+Ranking criterion: size of the problem × how badly current practice fails × how directly the two blocks fix it (not just decorate it).
+
+**1. Pre‑registered AI evaluation and benchmark claims.**
+Who: labs, benchmark maintainers, regulators, reviewers. What it proves: that the eval protocol, test‑set hash, metrics and exclusion rules were fixed *before* results were seen, and that *every* sealed run is accounted for (shown / contradicted / not shown), so a "SOTA" claim can't be the survivor of twenty quiet attempts. What it replaces: self‑reported results and un-timestamped "we didn't train on the test set" assurances. A preprint already argues for preregistration specifically for agent experiments, noting that it constrains the flexibility that otherwise enables p-hacking, HARKing ("hypothesizing after results are known"), and selective outcome reporting — your tooling is the mechanical version of that.
+
+**2. Forecaster and analyst track records (finance, policy, security).**
+Who: anyone paid for predictions whose record you can't currently audit. What it proves: not just *that* a forecast predates the outcome, but *how many* forecasts were sealed, so the "I called it" problem becomes checkable. This is the one place the ladder adds real value over a bare timestamp: with plain RFC 3161 stamps, a company predicting market trends might use RFC-3161 timestamps to stamp multiple predictions and later only reveal the successful ones, misleading stakeholders about forecasting accuracy despite cryptographically accurate RFC-3161 timestamps. A numbered, append‑only log makes the unrevealed entries visible as "not shown." Replaces: curated track records and screenshots.
+
+**3. Regulatory evidence for automated decisions (EU AI Act, finance, health).**
+Who: deployers who must show auditors what a system decided and why. What it proves: that the decision record existed at the time and wasn't edited after a complaint. Practitioners are already converging on this requirement — a record you can edit is a claim, not evidence. Auditors in 2026 are trained to discount logs that cannot prove they were not altered. Replaces: mutable database logs and self‑attestation. Caveat: this is crowded (see §2), so the differentiator must be the claim/evidence pairing and verdict vocabulary, not the log itself.
+
+**4. Clinical and social‑science trial outcome reporting.**
+Who: trialists, journals, meta‑researchers. What it proves: that the outcome list published matches the one sealed before enrolment. The problem is large: a systematic review found the median observed discrepancy rate was 41 % (range 30 % (13/43) to 100 % (1/1), IQR 33–48 %) between prospectively registered and published outcomes, and COMPare found only nine were found to have reported their outcomes perfectly. The remaining 58—the vast proportion—showed often-egregious amounts of outcome switching, nonreporting, or silent fixing. What it replaces/adds: registries already exist (ClinicalTrials.gov) and already timestamp, so the marginal gain is machine‑checkable diffs rather than human auditing by volunteers. Ranked below #1–3 because the institutional layer exists and the bottleneck is enforcement, not cryptography — and evidence that preregistration itself changes behaviour is mixed: one study did not find robust evidence that preregistration prevents p -hacking and HARKing.
+
+**5. Journalism, whistleblowing and evidence custody.**
+Who: reporters, NGOs, litigants. What it proves: possession of a document (or a dataset, a recording) by a date, without disclosing it, plus a chain of custody. Replaces/complements: notaries, and content‑provenance systems like C2PA, which cover a different question — C2PA can tell you that a particular signer said a particular thing about a particular file and that the file has not changed since. It cannot tell you that what the signer said is true, and the chain breaks on the ordinary act of uploading a picture to a website. Your log is detached from the file, so it survives re‑encoding; it does not fix the first‑mile problem either.
+
+**6. Sealed decisions in evaluation processes: hiring, grant review, procurement, security disclosure.**
+Who: reviewers who should score before seeing identities; bidders; vulnerability researchers establishing priority. What it proves: that scores/bids/findings were fixed before the information that could bias them was available. Replaces: trust in process and in the organiser's clock. Commit‑reveal is the textbook tool here — commitments are foundational for secure multi-party protocols, zero-knowledge proofs, sealed-bid auctions, e-voting, randomness generation. Low novelty, moderate value.
+
+**7. Personal/legal priority (IP, wills, authorship).**
+Already a common OpenTimestamps use case; low differentiation, so lowest rank.
+
+---
+
+## 2. What already exists, and what is (and isn't) distinct
+
+### Prior art, by block
+
+**Append‑only verifiable logs ("the ladder")**
+- Certificate Transparency, RFC 6962 (now RFC 9162). The append-only property of each log is achieved using Merkle Trees, which can be used to efficiently prove that any particular instance of the log is a superset of any particular previous instance and to efficiently detect various misbehaviors of the log. Spec: https://datatracker.ietf.org/doc/html/rfc6962 ; CT 2.0: https://www.rfc-editor.org/rfc/rfc9162. Russ Cox's explainer: https://research.swtch.com/tlog.
+- Sigstore Rekor (software supply chain). An entry in Rekor provides a single-party attestation that a piece of data existed prior to a certain time. These timestamps and the contents of the log cannot be tampered with or removed later, providing long-term trust. https://github.com/sigstore/rekor. Note its own caveat: Rekor does not store secrets, and it does not vouch for the meaning of the entry, only for the fact that it was published at a specific tree size and time.
+- Google Trillian (general log infrastructure): https://github.com/google/trillian.
+- IETF SCITT — a standards effort for exactly "receipts" for statements: SCITT supports the ongoing verification of goods and services where the authenticity of entities, evidence, policy, and artifacts can be assured and the actions of entities can be guaranteed to be authorized, non-repudiable, immutable, and auditable. https://datatracker.ietf.org/wg/scitt/about/. **This is the closest standards track to your "receipt" concept; worth aligning with rather than paralleling.**
+- Key Transparency (WhatsApp AKD, CONIKS/SEEMless): The server (WhatsApp) maintains an append-only AKD of public keys mapped to user accounts. A third-party audit record, wherein any change in the server directory is recorded in a publicly available, privacy-preserving audit record for anyone to verify. https://engineering.fb.com/2023/04/13/security/whatsapp-key-transparency/
+
+**Commit‑reveal ("the loop")**
+- Commitment schemes: a cryptographic primitive that allows one to commit to a chosen value (or chosen statement) while keeping it hidden to others, with the ability to reveal the committed value later. Commitment schemes are designed so that a party cannot change the value or statement after they have committed to it. https://en.wikipedia.org/wiki/Commitment_scheme. Your "seen from the other side" is the pair of properties cryptographers call *hiding* and *binding*.
+- Time‑lock encryption (drand/tlock) — a commit‑reveal where the reveal is automatic: encrypt messages toward the future that anybody can decrypt when the time has come, even if you or your services are off-line by then. https://docs.drand.love/. Relevant to the lost‑key failure mode below.
+
+**Trusted timestamping**
+- RFC 3161 (what FreeTSA implements): a trusted timestamp is a timestamp issued by a Trusted Third Party (TTP) acting as a Time Stamping Authority (TSA). It is used to prove the existence of certain data before a certain point (e.g. contracts, research data, medical records, ...) without the possibility that the owner can backdate the timestamps. https://www.rfc-editor.org/rfc/rfc3161 ; ANSI X9.95 and ISO/IEC 18014 are the related standards.
+- OpenTimestamps: https://opentimestamps.org/ ; design post https://petertodd.org/2016/opentimestamps-announcement. Verification needs only two things: the .ots proof file, and access to the Bitcoin block header chain.
+
+**Secret sharing** (your "two halves of a secret")
+- Shamir 1979: The secret is split into multiple shares, which individually do not give any information about the secret. To reconstruct a secret secured by SSS, a number of shares is needed, called the threshold. No information about the secret can be gained from any number of shares below the threshold. https://en.wikipedia.org/wiki/Shamir%27s_secret_sharing
+
+**Pre‑registration**
+- Registered Reports / OSF / AsPredicted / ClinicalTrials.gov. Registries require that all pre-specified outcomes are entered at the outset of the trial in a time-stamped and publicly accessible location. COMPare: https://www.compare-trials.org/.
+
+**Directly overlapping recent work on agents** (all 2026 preprints; I have only seen abstracts/reference lists, so I'm unsure of their depth):
+- "Agent Flight Recorder: Tamper‑Evident Audit Trails with On‑Chain Anchoring for Long‑Horizon Tool‑Using Agents," https://arxiv.org/abs/2609.01931
+- "NovaFabric: Tamper‑Evident, Replayable Evidence for Autonomous AI Agent Runs," https://arxiv.org/abs/2609.12582
+- "A black box for agentic processes: Blockchain‑anchored evidence for AI agent communication…," https://arxiv.org/abs/2609.04017
+- "Preregistration for Experiments with AI Agents," https://arxiv.org/abs/2606.11217
+- Commercial tooling already markets built-in observability logging and signed audit logs for agents.
+
+### What is distinct — plainly
+
+**Not distinct:**
+- Neither block is new, and using them *together* is not new either. Sigstore is literally "commitment (signature over a hash) + append‑only log + timestamp," deployed at scale since 2021. Clinical trial registries are "commitment + timestamped public record" without the cryptography. Tamper‑evident agent audit trails are now a crowded 2026 topic (above).
+- "Digital time travel" is a rebranding of proof‑of‑existence. Reviewers in cryptography will read the metaphors (ladder, Möbius) as marketing unless the formal objects are named alongside them.
+- The "two halves of a secret" example conflates two different primitives. Secret sharing is about *confidentiality and availability* of a value; claim/evidence pairing is about *verifiability* of a statement. Both are "two things that belong together," but the security properties are unrelated, and listing them as one block will make specialists doubt the rest.
+
+**Distinct, or at least under‑served (my assessment, not sourced):**
+1. **The pairing rule as a schema constraint.** Requiring that *every* log entry be a (claim, evidence‑pointer) pair, with a fixed three‑valued verdict vocabulary (shown / contradicted / not shown), is a *discipline on top of* the log, not a property of the log. Rekor and SCITT store signed statements; they do not force a claim to point at evidence the claimant can't alter. That's a genuine design contribution, closer to a reporting standard (like CONSORT) than to a cryptographic one.
+2. **Set‑completeness by construction.** Because sealed claims are numbered rungs on one ladder, "how many did you seal and how many did you reveal?" is answerable. Bare timestamps don't give you that (see the vBase point in §1 #2). This is the mechanism that attacks the file‑drawer problem; it should be your headline, not time travel.
+3. **Applying it to the agent's own completion claim, in the loop,** rather than as an after‑the‑fact audit export. Whether that matters empirically is exactly what the experiment in §5 should test.
+
+---
+
+## 3. Failure modes
+
+**Privacy / confidentiality**
+- A hash of low‑entropy content (a yes/no prediction, a short claim) is brute‑forceable from the commitment. Every sealed item needs a random nonce ("salt"), and the nonce must be kept or the commitment can never be opened. (Own knowledge.)
+- The log itself leaks metadata: timing, volume, who committed. CT's own gossip designs stalled partly on this: This assumption is simple in theory but remarkably hard in practice due to client privacy, varying threat models, and deployment challenges.
+- Append‑only collides with erasure rights. WhatsApp handles this with tombstoning: Tombstoning involves overwriting the data of leaves in the directory with a constant value, ensuring that the account's history is securely deleted and the AKD remains consistent. If you store only hashes, you are mostly fine; if you store evidence bodies, you are not.
+
+**Sealed ≠ true**
+- Sealing proves existence and fixity, nothing about correctness. The blockchain "does not understand" the semantics of data that are timestamped, and thus it cannot vet or certify them. The same holds for Rekor (quoted above) and for C2PA. A sealed false prediction, a sealed study design with a flawed analysis plan, or an agent "done" claim pointing at evidence the agent itself fabricated are all perfectly valid proofs.
+- **First‑mile problem for agents.** If the agent writes both the claim and the "evidence," the receipt proves only that the agent said so at time T. C2PA's analogue: a camera can sign a photo of a screen displaying a deepfake. The manifest will be cryptographically valid, the hard binding will pass, the certificate chain will verify — and the content is still fabricated. Evidence pointers must resolve to something the agent could not produce or alter (external system state, a human attestation, a test run on infrastructure it doesn't control).
+- **Selective reveal.** Sealing 100 predictions and opening 10 is the dominant gaming strategy. Only the numbered, public ladder (not the seal) defends against it, and only if unrevealed entries are reported as "not shown" by default.
+- **Vague commitments.** A sealed claim worded loosely enough can be "confirmed" by almost any outcome. Pre‑registration research shows this persists even with registration: researchers still selectively report hypotheses in approximately half of all published, preregistered studies.
+
+**Who controls the record**
+- A single‑operator log can equivocate. In a split-view or equivocation attack, a malicious log presents different versions of the Merkle tree to the victim and to everybody else. Each tree version is kept consistent in itself. RFC 6962 says so itself: It is necessary to treat each log as a trusted third party, because the log auditing mechanisms described in this document can be circumvented by a misbehaving log that shows different, inconsistent views of itself to different clients. The modern fix is witness cosigning — a quorum of independent witnesses each verify consistency and cosign each checkpoint, so a client that requires k cosignatures cannot be split-viewed unless k witnesses collude with the log. Anchoring the ladder's head into Bitcoin via OTS is a cheap partial witness; it fixes *when* a head existed, not that only one head was shown.
+- If the agent or its operator runs the log writer, the record is the operator's word. Practitioners insist that The people who operate the system are separated from the people who can touch the audit store.
+- "Never closes" is operational, not cryptographic. Real logs do close and rotate (CT uses temporal shards; Rekor moved to a v2 shard) — own knowledge. Say "any closing is itself logged," not "never closes."
+- Logs are only useful if someone watches them: If new entries are not monitored, the security benefits of using a log are greatly reduced.
+
+**Lost keys, nonces and receipts**
+- Lose the nonce or the pre‑image and the commitment is permanently unopenable — the claim becomes "not shown" forever, which is indistinguishable from hiding. Time‑lock encryption (drand tlock) is one mitigation: the reveal doesn't depend on you being present.
+- RFC 3161 tokens are receipts: If the receipt is lost or corrupted, an RFC-3161 cannot be validated. OTS has the same issue (lose the .ots, lose the proof), plus a pending phase: Pending is normal. Wait a few hours, then re-upload the file or run ots upgrade. A proof that was never upgraded before the calendar server disappeared may be unverifiable. (Unsure how often this happens in practice.)
+- TSA key compromise or certificate expiry degrades RFC 3161 evidence; The trust model therefore depends on the authority's private key, certificate validity, and the reliability of its time source and policy. Using two independent mechanisms (as you do) is the right hedge.
+- Hash agility: SHA‑256 is fine today; long‑lived archives should plan for re‑stamping. (Own knowledge.)
+
+**Misreading what a timestamp proves**
+- It proves an **upper bound** ("no later than T"), never a lower bound. Anyone can timestamp an old document today. It also doesn't prove *who* created it or that it wasn't copied. One vendor's comparison table puts it well: blockchain registration Proves a file existed at a point in time but not who created it or how it was made.
+- Bitcoin block times are approximate (consensus rules allow roughly hours of slack; own knowledge), so OTS gives you "before this block," not a clock reading. RFC 3161 gives a clock reading from one party's clock.
+- Courts are not uniform. Claims like Courts worldwide accept trusted timestamps as definitive proof of chronology. are vendor language; admissibility varies by jurisdiction and I'd avoid repeating it (unsure of the case law in Canada specifically).
+
+---
+
+## 4. How to say it (one paragraph)
+
+> Every result I publish — study designs, predictions, and the "done" claims made by AI agents I run — is first hashed and committed to an append‑only log, and the log's state is timestamped by two independent mechanisms (an RFC 3161 authority and Bitcoin via OpenTimestamps) before anything is revealed. This lets a third party verify three things without trusting me: that a specific claim existed no later than a specific time, that it has not been altered since, and how many claims I sealed versus how many I later opened. It does not establish that any claim is true, that the evidence a claim points to is itself genuine, or exactly when a claim was written — only that it was fixed by the time shown. The building blocks (hash commitments, Merkle logs, trusted timestamps) are standard and decades old; what I add is a discipline for using them: every entry must pair a claim with evidence the claimant cannot change, every claim gets a verdict of shown, contradicted, or not shown, and unrevealed entries count against the record rather than disappearing from it.
+
+---
+
+## 5. One experiment (to seal in advance)
+
+**Target use:** the file‑drawer defence — does a numbered, append‑only ladder with "not shown" accounting actually reduce selective reporting, compared with timestamping alone? This tests the one property that is distinct (§2), and it tests behaviour, not cryptography (the cryptography is not in doubt).
+
+**Design (randomized, two arms, pre‑registered and sealed):**
+- Participants: N forecasters or N AI‑agent task runs (either works; agent runs are cheaper and avoid consent issues). Each unit produces K claims with a known ground truth resolving within the study window (e.g., K = 20 binary forecasts, or K = 20 task‑completion claims checkable against an external test harness the agent cannot touch).
+- **Arm A (timestamp only):** each claim is sealed and timestamped individually (RFC 3161 + OTS). The unit chooses which claims to reveal at the end; the public record is whatever is revealed.
+- **Arm B (ladder):** identical, except claims are committed as numbered entries in one append‑only log whose head is timestamped; at reveal time, every unrevealed entry is published as "not shown" and scored as a miss.
+- A third group of independent evaluators (blind to arm) rates each unit's revealed record for trustworthiness.
+
+**Measured:**
+1. Primary: **selective‑reveal inflation** = accuracy (Brier or task‑pass rate) of the *revealed* set minus accuracy of the *full sealed* set, per unit. Hypothesis: inflation is smaller in Arm B.
+2. Secondary: reveal rate (fraction of sealed claims opened); evaluators' trust ratings and their correlation with full‑set accuracy; cost in time/tokens per claim.
+3. Pre‑specified analysis: difference in mean inflation between arms, with a pre‑declared minimum effect of interest (e.g., a reduction of at least 5 percentage points), and a sealed sample‑size justification.
+
+**What would show it doesn't work:**
+- Inflation in Arm B is not smaller than in Arm A by at least the pre‑declared minimum (confidence interval includes zero or the effect is below the threshold), **or**
+- Reveal rates are indistinguishable and evaluators' trust ratings in Arm B do not track full‑set accuracy better than in Arm A. Either result means the ladder adds verifiability on paper but does not change what gets reported or believed — which is precisely the gap the preregistration literature has already found for registration without enforcement.
+
+**Why this one:** it is cheap, it is falsifiable, it directly tests the only claim that goes beyond prior art, and if it fails the honest conclusion is that the tooling is a good archive but not a behaviour‑changing instrument — a result worth sealing either way.
+
+---
+
+### Things I'm unsure about
+- The depth and quality of the four 2026 arXiv preprints on agent audit trails/preregistration; I saw only abstracts and reference lists.
+- How often unupgraded OTS proofs become permanently unverifiable in practice.
+- Canadian evidentiary treatment of RFC 3161 / blockchain timestamps.
+- Whether SCITT is far enough along to be a practical interoperability target this year, as opposed to a reference point.

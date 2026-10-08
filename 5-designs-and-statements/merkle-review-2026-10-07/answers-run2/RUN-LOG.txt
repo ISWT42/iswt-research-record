@@ -1,0 +1,8 @@
+start 2026-10-07T02:49:32Z prompt sha256 b03574efe05b0eb4
+Sol_6.1 (openai/gpt-6.1-sol) exit 0 at 02:50:09Z, 6329 bytes; tokens in/out/reasoning: 567/1366/202; cost US$0.014794; total US$0.01479
+Grok_4.7 (x-ai/grok-4.7) exit 0 at 02:51:46Z, 5955 bytes; tokens in/out/reasoning: 1800/5149/3908; cost US$0.032766; total US$0.04756
+Kimi_K3 (moonshotai/kimi-k3) exit 0 at 02:52:46Z, 5904 bytes; tokens in/out/reasoning: 647/5347/4047; cost US$0.0739314; total US$0.12149
+GLM_5.3 (z-ai/glm-5.3) exit 1 at 02:53:27Z, 0 bytes; tokens in/out/reasoning: 576/6000/6573; cost US$0.0272064; total US$0.1487
+Deepseek_Flash_4.1 (deepseek/deepseek-v4.1-flash) exit 0 at 02:53:47Z, 4996 bytes; tokens in/out/reasoning: 599/2649/1594; cost US$0.00321474; total US$0.15191
+answers sealed: Time stamp: Oct  7 02:53:50 2026 GMT
+end 2026-10-07T02:53:47Z total reported spend US$0.15191

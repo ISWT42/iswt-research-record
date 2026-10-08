@@ -1,0 +1,126 @@
+{
+  "kind": "offline-evaluation-kit-v1-release-bindings/1",
+  "status": "UNASSIGNED_BLOCKS_REAL_USE_AND_EXPORT",
+  "specification": "spec.md",
+  "design_only": true,
+  "implementation_exists": false,
+  "required_bindings": {
+    "kit_release_artifact_hashes": null,
+    "researcher_release_approval": null,
+    "enrollment_registry_and_roles": null,
+    "model_profile": {
+      "models_and_weights": null,
+      "quantization_tokenizer_prompts_preprocessing": null,
+      "seed_sampler_runtime_kernels_precision_hardware_threads": null,
+      "fresh_context_and_no_learned_state_policy": null,
+      "pair_and_fusion_rule_if_used": null
+    },
+    "calibration": {
+      "bank_count": 160,
+      "bank_source_hashes_and_order": null,
+      "published_reference_table": null,
+      "reference_table_cells": 10,
+      "reference_error_cell_index": 9,
+      "reference_errors_required": 0,
+      "total_required": 160,
+      "publication_before_donor_evaluation": true,
+      "table_sha256": null,
+      "reference_generation_evidence_and_repeatability": null
+    },
+    "webauthn": {
+      "algorithm": -7,
+      "rp_id": "localhost",
+      "origin": "http://localhost:5361",
+      "required_up": true,
+      "required_uv": true,
+      "authenticator_data_decoded_bytes": 37,
+      "client_data_decoded_max_bytes": 512,
+      "signature_der_decoded_bytes": [
+        8,
+        72
+      ],
+      "credential_decoded_bytes": [
+        1,
+        1023
+      ],
+      "canonical_envelope_max_bytes": 8192,
+      "challenge_domain_utf8": "offline-evaluation-kit/v1\n",
+      "canonicalization": "sorted object keys recursively; arrays unchanged; two-space JSON indentation; UTF-8; no trailing newline",
+      "browser_native_byte_template": null,
+      "browser_key_compatibility_evidence": null,
+      "strict_der_low_s_tests": null,
+      "enrollment_custody_procedure": "supervised dedicated cross-platform FIDO2 security-key enrollment; no hardware provenance claimed solely from an assertion"
+    },
+    "qualifying_gate": {
+      "bench": "swarm-receipts",
+      "gate_number_minimum": 4,
+      "fresh_exam_unseen_by_earlier_gates": true,
+      "design_reference_and_sha256": null,
+      "rule_reference_and_sha256": null,
+      "seal_reference": null,
+      "sealed_artifact_hashes": null,
+      "result_reference_and_sha256": null,
+      "exact_profile_binding": null,
+      "pass_status": "NOT_ESTABLISHED",
+      "interim_rule": {
+        "per_group_minimum_accuracy": 0.9,
+        "at_n_50_minimum_correct": 45,
+        "smaller_nonempty_group_rule": "ceil(0.9*n)",
+        "maximum_planted_failure_shown": 0
+      },
+      "supersession": "A subsequently sealed Gate 4 design governs its rule. Never substitute post hoc outcomes or a component-model pass for the kit profile."
+    },
+    "technical_privacy_approval_and_mutation_test_evidence": null,
+    "first_real_use": {
+      "subject": "researcher only",
+      "runs": 20,
+      "allowed_now": false,
+      "prerequisites": [
+        "exact-profile qualifying fresh sealed gate pass",
+        "all reviewed release bindings complete",
+        "synthetic technical/privacy/approval tests accepted",
+        "researcher approval of exact built release"
+      ]
+    },
+    "outside_donors": {
+      "allowed_now": false,
+      "independent_ethics_review_required": true
+    },
+    "acceptance_policy": {
+      "donor_envelope_credential_equals_payload_donor": true,
+      "reviewer_assignment_registry": null,
+      "reviewer_payload_byte_identical_to_donor": true,
+      "assigned_donor_checks_required": 5,
+      "unassigned_donor_checks_required": 0,
+      "assigned_reviewer_countersignature_required": true,
+      "spot_metric": "Reviewer labels independently before donor/model reveal. Both decisive and equal: agreement; both decisive and different: disagreement; either cant_tell: unverifiable. Procedural and placement checks are required before countersigning.",
+      "donor_checker_agreement_formula": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          8
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ],
+      "formula_note": "For each formula offset, sum counts[9*a+offset] across a=0,1,2."
+    }
+  },
+  "first_version_codes": {
+    "schema": 1,
+    "study": 1,
+    "kit": 1,
+    "model_profile": 1
+  },
+  "code_meaning": "Reserved design constants; not evidence of assigned artifacts or model qualification. Filling release bindings creates a separately reviewed release manifest, without modifying the frozen spec."
+}

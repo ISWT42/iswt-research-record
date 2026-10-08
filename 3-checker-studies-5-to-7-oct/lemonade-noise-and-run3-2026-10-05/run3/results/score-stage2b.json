@@ -1,0 +1,79 @@
+{
+ "design_sha256": "ade05d4a7fd55cdff69fcb9215352e451f9b9339cc0b555da22da5d39703b7b2",
+ "arms": {
+  "U-Q": {
+   "n": 23,
+   "A": {
+    "right": {
+     "k": 18,
+     "n": 23,
+     "ci95": [
+      0.581,
+      0.903
+     ]
+    },
+    "still_not_shown": 4,
+    "false_shown": 1,
+    "false_contradicted": 0,
+    "providers": [
+     "SiliconFlow"
+    ]
+   },
+   "B": {
+    "right": {
+     "k": 16,
+     "n": 23,
+     "ci95": [
+      0.491,
+      0.844
+     ]
+    },
+    "still_not_shown": 6,
+    "false_shown": 1,
+    "false_contradicted": 0,
+    "providers": [
+     "SiliconFlow"
+    ]
+   },
+   "B_fixed_vs_A": 1,
+   "B_broke_vs_A": 3
+  },
+  "U-G": {
+   "n": 39,
+   "A": {
+    "right": {
+     "k": 22,
+     "n": 39,
+     "ci95": [
+      0.41,
+      0.707
+     ]
+    },
+    "still_not_shown": 16,
+    "false_shown": 1,
+    "false_contradicted": 0,
+    "providers": [
+     "Darkbloom"
+    ]
+   },
+   "B": {
+    "right": {
+     "k": 24,
+     "n": 39,
+     "ci95": [
+      0.459,
+      0.751
+     ]
+    },
+    "still_not_shown": 14,
+    "false_shown": 1,
+    "false_contradicted": 0,
+    "providers": [
+     "Darkbloom"
+    ]
+   },
+   "B_fixed_vs_A": 2,
+   "B_broke_vs_A": 0
+  }
+ }
+}

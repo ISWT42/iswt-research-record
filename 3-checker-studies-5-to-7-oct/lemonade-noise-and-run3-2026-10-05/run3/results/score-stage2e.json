@@ -1,0 +1,59 @@
+{
+ "design_sha256": "bef0273c06f427bad0378451126a2c59de48ca038ff03e8f8e6c943ba89b317e",
+ "sets": {
+  "primary_201_300": {
+   "n": 98,
+   "routes": {
+    "turn1": 48,
+    "loop": 50,
+    "to_person": 0
+   },
+   "right": {
+    "k": 73,
+    "n": 98,
+    "ci95": [
+     0.65,
+     0.821
+    ]
+   },
+   "false_shown": {
+    "k": 3,
+    "n": 56,
+    "ci95": [
+     0.018,
+     0.146
+    ]
+   },
+   "false_contradicted": 5,
+   "to_a_person": 17,
+   "spent_usd": 0.00335
+  },
+  "fresh_161_300": {
+   "n": 137,
+   "routes": {
+    "turn1": 66,
+    "loop": 71,
+    "to_person": 0
+   },
+   "right": {
+    "k": 103,
+    "n": 137,
+    "ci95": [
+     0.673,
+     0.817
+    ]
+   },
+   "false_shown": {
+    "k": 6,
+    "n": 75,
+    "ci95": [
+     0.037,
+     0.164
+    ]
+   },
+   "false_contradicted": 5,
+   "to_a_person": 23,
+   "spent_usd": 0.00466
+  }
+ }
+}

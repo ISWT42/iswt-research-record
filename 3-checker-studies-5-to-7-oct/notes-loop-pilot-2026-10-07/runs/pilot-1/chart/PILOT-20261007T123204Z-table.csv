@@ -1,0 +1,4 @@
+round,n_items,empty_right,byhand_right,own_median,own_min,own_max,ownmethod_median,floor_f,own_fixed,own_broken,own_false_shown,own_false_shown_denominator,own_sent_to_person,own_loops,own_sent_to_person_denominator
+1,40,30,30,28.5,28,29,28.5,2,1,4,10,54,33,2,80
+2,40,29,30,29,29,29,30,2,4,4,8,54,34,2,80
+3,40,28,31,28.5,27,30,28.5,2,3,2,6,52,27,2,80

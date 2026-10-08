@@ -1,0 +1,9 @@
+{
+  "subject_models": ["qwen/qwen3.5-9b", "google/gemma-4-26b-a4b-it"],
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "request_body": {"temperature": 0, "seed": 42, "max_tokens": 400, "reasoning": {"enabled": false}, "provider": {"data_collection": "deny"}},
+  "key": "read from the environment variable OPENROUTER_API_KEY; never printed, logged or written to a file",
+  "max_concurrent_calls": 4,
+  "receipt_pair": "pip install \"git+https://github.com/ISWT42/receipt-pair@b7dfbad\"",
+  "note": "The same two hosted models and settings as run 3 of Receipt Pair (5 Oct 2026)."
+}

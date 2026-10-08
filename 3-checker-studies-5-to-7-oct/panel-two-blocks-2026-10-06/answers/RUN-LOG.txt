@@ -1,0 +1,11 @@
+start 2026-10-06T19:35:53Z prompt sha256 8dea348218960456
+Sol_6.1 (openai/gpt-6.1-sol:online) exit 0 at 19:38:17Z, 17667 bytes; tokens in/out/reasoning: 47521/5042/1606; cost US$0.197911; total US$0.19791
+Gemini_3.8_Flash (google/gemini-3.8-flash:online) exit 0 at 19:38:54Z, 9371 bytes; tokens in/out/reasoning: 565/4326/2254; cost US$0.01664625; total US$0.21456
+Grok_4.7 (x-ai/grok-4.7:online) exit 0 at 19:44:27Z, 17162 bytes; tokens in/out/reasoning: 428262/11502/7139; cost US$1.020656; total US$1.23522
+Kimi_K3 (moonshotai/kimi-k3:online) exit 0 at 19:47:01Z, 13610 bytes; tokens in/out/reasoning: 2933/16356/13337; cost US$0.23026972; total US$1.46549
+GLM_5.3 (z-ai/glm-5.3:online) exit 0 at 19:48:57Z, 12643 bytes; tokens in/out/reasoning: 2882/22534/21711; cost US$0.1101844; total US$1.57567
+Deepseek_Flash_4.1 (deepseek/deepseek-v4.1-flash:online) exit 0 at 19:51:32Z, 16672 bytes; tokens in/out/reasoning: 2883/14033/10269; cost US$0.011339635; total US$1.58701
+Deepseek_R1 (deepseek/deepseek-r1-0528:online) exit 0 at 19:52:41Z, 5754 bytes; tokens in/out/reasoning: 2858/3653/2226; cost US$0.016982676; total US$1.60399
+Fable_5.1 (anthropic/claude-fable-5.1:online) exit 0 at 19:55:59Z, 22895 bytes; tokens in/out/reasoning: 291052/13023/3525; cost US$3.70167; total US$5.30566
+answers sealed: Time stamp: Oct  6 19:56:01 2026 GMT
+end 2026-10-06T19:56:00Z total reported spend US$5.30566

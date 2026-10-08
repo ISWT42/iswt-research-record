@@ -1,0 +1,6 @@
+U-Q fresh: n=140 shown answers=42 by certainty={'sure': 42} | wrong shown=8 by certainty={'sure': 8} | flagged (unsure/unmarked)=23 by answer type={'contradicted': 5, 'not shown': 18}
+U-Q primary: n=100 shown answers=28 by certainty={'sure': 28} | wrong shown=4 by certainty={'sure': 4} | flagged (unsure/unmarked)=18 by answer type={'not shown': 15, 'contradicted': 3}
+U-G fresh: n=140 shown answers=49 by certainty={'sure': 49} | wrong shown=12 by certainty={'sure': 12} | flagged (unsure/unmarked)=4 by answer type={'not shown': 4}
+U-G primary: n=100 shown answers=33 by certainty={'sure': 33} | wrong shown=6 by certainty={'sure': 6} | flagged (unsure/unmarked)=3 by answer type={'not shown': 3}
+V rows re-derived: 429 class counts (both lanes, both arms, fresh): {'FULL': 238, 'OTHER': 46, 'NO_D': 114, 'PLUS': 10, 'PART': 21}
+disagreements with sealed rows: 0 []

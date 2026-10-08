@@ -1,0 +1,127 @@
+=== stage2b start 2026-10-05T18:19:23Z ===
+stage 2b: 124 calls
+[A U-Q] 180: shown (verified) spent $0.0002
+[A U-Q] 202: not shown (model_not_shown) spent $0.0003
+[A U-Q] 177: shown (verified) spent $0.0004
+[A U-Q] 197: shown (verified) spent $0.0005
+[A U-Q] 214: contradicted (verified) spent $0.0007
+[A U-Q] 165: shown (verified) spent $0.0009
+[A U-Q] 240: contradicted (verified) spent $0.0010
+[A U-Q] 229: contradicted (verified) spent $0.0011
+[A U-Q] 242: shown (verified) spent $0.0013
+[A U-Q] 241: not shown (model_not_shown) spent $0.0014
+[A U-Q] 245: contradicted (verified) spent $0.0016
+[A U-Q] 234: shown (verified) spent $0.0017
+[A U-Q] 266: contradicted (verified) spent $0.0019
+[A U-Q] 246: contradicted (verified) spent $0.0020
+[A U-Q] 253: contradicted (verified) spent $0.0021
+[A U-Q] 264: shown (verified) spent $0.0023
+[A U-Q] 190: not shown (unparseable_reply) spent $0.0025
+[A U-Q] 252: contradicted (verified) spent $0.0026
+[A U-Q] 282: shown (verified) spent $0.0027
+[A U-Q] 291: contradicted (verified) spent $0.0029
+[A U-Q] 268: contradicted (verified) spent $0.0030
+[A U-G] 165: shown (verified) spent $0.0031
+[A U-G] 164: not shown (model_not_shown) spent $0.0032
+[A U-G] 177: shown (verified) spent $0.0033
+[A U-Q] 280: shown (verified) spent $0.0034
+[A U-G] 173: shown (verified) spent $0.0035
+[A U-G] 172: not shown (model_not_shown) spent $0.0036
+[A U-G] 167: not shown (model_not_shown) spent $0.0037
+[A U-G] 189: contradicted (verified) spent $0.0037
+[A U-G] 178: not shown (model_not_shown) spent $0.0038
+[A U-G] 166: contradicted (verified) spent $0.0039
+[A U-G] 186: not shown (shown_citing_failure) spent $0.0040
+[A U-G] 194: contradicted (verified) spent $0.0040
+[A U-G] 200: not shown (shown_citing_failure) spent $0.0041
+[A U-G] 240: contradicted (verified) spent $0.0042
+[A U-G] 242: shown (verified) spent $0.0042
+[A U-G] 212: not shown (model_not_shown) spent $0.0043
+[A U-G] 234: shown (verified) spent $0.0044
+[A U-G] 210: shown (verified) spent $0.0045
+[A U-G] 245: not shown (unverified_quote) spent $0.0046
+[A U-G] 255: shown (verified) spent $0.0047
+[A U-G] 258: contradicted (verified) spent $0.0047
+[A U-G] 216: not shown (model_not_shown) spent $0.0048
+[A U-G] 252: contradicted (verified) spent $0.0049
+[A U-G] 257: not shown (model_not_shown) spent $0.0049
+[A U-G] 253: not shown (model_not_shown) spent $0.0050
+[A U-G] 266: contradicted (verified) spent $0.0051
+[A U-G] 260: not shown (model_not_shown) spent $0.0052
+[A U-G] 259: not shown (model_not_shown) spent $0.0053
+[A U-G] 272: shown (verified) spent $0.0053
+[A U-G] 264: shown (verified) spent $0.0054
+[A U-G] 280: shown (verified) spent $0.0055
+[A U-G] 270: contradicted (verified) spent $0.0055
+[A U-G] 291: contradicted (verified) spent $0.0056
+[A U-G] 284: not shown (model_not_shown) spent $0.0057
+[A U-G] 295: not shown (model_not_shown) spent $0.0058
+[A U-G] 286: contradicted (verified) spent $0.0059
+[A U-G] 296: contradicted (verified) spent $0.0060
+[A U-G] 285: contradicted (verified) spent $0.0060
+[A U-G] 282: shown (verified) spent $0.0061
+[A U-G] 293: not shown (model_not_shown) spent $0.0062
+[B U-Q] 210: shown (verified) spent $0.0063
+[B U-Q] 180: shown (verified) spent $0.0065
+[B U-Q] 197: shown (verified) spent $0.0066
+[B U-Q] 202: not shown (model_not_shown) spent $0.0068
+[B U-Q] 177: shown (verified) spent $0.0069
+[B U-Q] 190: not shown (model_not_shown) spent $0.0071
+[B U-Q] 214: contradicted (verified) spent $0.0072
+[B U-Q] 165: shown (verified) spent $0.0074
+[B U-Q] 240: contradicted (verified) spent $0.0075
+[B U-Q] 234: shown (verified) spent $0.0077
+[B U-Q] 241: not shown (model_not_shown) spent $0.0078
+[B U-Q] 242: shown (verified) spent $0.0079
+[B U-Q] 245: contradicted (verified) spent $0.0081
+[B U-Q] 266: contradicted (verified) spent $0.0082
+[B U-Q] 246: not shown (unparseable_reply) spent $0.0084
+[B U-Q] 264: shown (verified) spent $0.0085
+[B U-Q] 252: contradicted (verified) spent $0.0087
+[B U-Q] 253: contradicted (verified) spent $0.0088
+[B U-Q] 282: shown (verified) spent $0.0089
+[B U-Q] 280: shown (verified) spent $0.0091
+[B U-G] 164: not shown (model_not_shown) spent $0.0092
+[B U-G] 165: shown (verified) spent $0.0092
+[B U-G] 177: shown (verified) spent $0.0093
+[B U-G] 167: shown (verified) spent $0.0094
+[B U-G] 173: shown (verified) spent $0.0095
+[B U-Q] 291: contradicted (verified) spent $0.0096
+[B U-G] 172: shown (verified) spent $0.0097
+[B U-Q] 268: not shown (model_not_shown) spent $0.0098
+[B U-G] 166: contradicted (verified) spent $0.0099
+[B U-G] 189: contradicted (verified) spent $0.0100
+[B U-G] 178: not shown (model_not_shown) spent $0.0101
+[B U-G] 186: not shown (shown_citing_failure) spent $0.0102
+[B U-G] 200: not shown (shown_citing_failure) spent $0.0102
+[B U-G] 240: contradicted (verified) spent $0.0103
+[B U-G] 194: contradicted (verified) spent $0.0104
+[B U-G] 210: shown (verified) spent $0.0105
+[B U-G] 234: shown (verified) spent $0.0105
+[B U-G] 242: shown (verified) spent $0.0106
+[B U-G] 212: not shown (model_not_shown) spent $0.0107
+[B U-G] 255: shown (verified) spent $0.0108
+[B U-G] 245: not shown (unverified_quote) spent $0.0109
+[B U-G] 252: contradicted (verified) spent $0.0110
+[B U-G] 258: contradicted (verified) spent $0.0110
+[B U-G] 216: not shown (model_not_shown) spent $0.0111
+[B U-G] 253: not shown (model_not_shown) spent $0.0112
+[B U-G] 257: not shown (model_not_shown) spent $0.0112
+[B U-G] 266: contradicted (verified) spent $0.0113
+[B U-G] 264: shown (verified) spent $0.0114
+[B U-G] 259: not shown (model_not_shown) spent $0.0115
+[B U-G] 260: not shown (model_not_shown) spent $0.0116
+[B U-G] 280: shown (verified) spent $0.0117
+[B U-G] 270: contradicted (verified) spent $0.0117
+[B U-G] 272: shown (verified) spent $0.0118
+[B U-G] 284: not shown (model_not_shown) spent $0.0119
+[B U-G] 286: contradicted (verified) spent $0.0120
+[B U-G] 296: contradicted (verified) spent $0.0120
+[B U-G] 291: contradicted (verified) spent $0.0121
+[B U-G] 295: not shown (model_not_shown) spent $0.0122
+[B U-G] 285: contradicted (verified) spent $0.0123
+[B U-G] 282: shown (verified) spent $0.0124
+[B U-G] 293: not shown (model_not_shown) spent $0.0124
+[A U-Q] 210: not shown (unparseable_reply) spent $0.0126
+[B U-Q] 229: not shown (unparseable_reply) spent $0.0127
+=== stage2b end 2026-10-05T18:22:58Z exit 0 ===

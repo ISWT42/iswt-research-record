@@ -1,0 +1,1 @@
+{"ts": "2026-10-07T12:02:17Z", "event": "command_start", "step": "probe", "provider": "broker", "sealed": true, "manifest_sha256": "1b19b4bbcc2782c1d2f34ca0d11191e5537360298f277c76018182170e9992ca", "cap_usd": 1.0, "workers": 6, "wire_newline": "LF", "broker_ledger_dir_env": null}

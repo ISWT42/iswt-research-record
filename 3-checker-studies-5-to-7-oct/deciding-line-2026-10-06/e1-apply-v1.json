@@ -1,0 +1,1775 @@
+{
+ "script": "e1_apply.py",
+ "run_at": "2026-10-06T08:48:29Z",
+ "python": "3.14.7",
+ "seal": {
+  "seal_file": "DESIGN-SHA256.txt",
+  "seal_file_sha256": "b9aff948f490079bdc80c8d7760861a2aaa8c1c1ee7fbcf447cc8ce616d244e3",
+  "files_match": {
+   "DESIGN.md": true,
+   "outcome_markers.py": true,
+   "deciding_rules.py": true,
+   "non_settling_rule.py": true,
+   "non_settling_rule2.py": true,
+   "e1_apply.py": true,
+   "dev_eval.py": true,
+   "dev_eval2.py": true,
+   "dev-results-v1.json": true,
+   "dev-results2-v1.json": true,
+   "dev-eval-v1.log": true,
+   "dev-eval2-v1.log": true,
+   "postchoice_look.py": true,
+   "make_design_tables.py": true,
+   "design-tables.md": true,
+   "marker-list.md": true,
+   "selftest.py": true,
+   "selftest_own.py": true,
+   "selftest_own2.py": true,
+   "selftest_dev.py": true,
+   "PREREG-1.md": true,
+   "PREREG-1-SHA256.txt": true,
+   "PREREG-1-SHA256.txt.tsq": true,
+   "PREREG-1-SHA256.txt.tsr": true,
+   "PREREG-2.md": true,
+   "PREREG-2-SHA256.txt": true,
+   "PREREG-2-SHA256.txt.tsq": true,
+   "PREREG-2-SHA256.txt.tsr": true,
+   "PREREG-3.md": true,
+   "PREREG-3-SHA256.txt": true,
+   "PREREG-3-SHA256.txt.tsq": true,
+   "PREREG-3-SHA256.txt.tsr": true
+  }
+ },
+ "inputs": {
+  "items": {
+   "path_name": "items-X001-X150.jsonl",
+   "sha256": "d82e4259f5614977a95ccd71d849749b52337dd3d16ebb729045de4d29a3ae5e",
+   "n_items_in_file": 150
+  },
+  "answers": {
+   "path_name": "answers-e1-local.jsonl",
+   "sha256": "e95d2e7254fb55ec5b4eb6f207a9cc412d8e6903483e8bb08c7e9422f53c8203",
+   "n_records": 300,
+   "duplicates": 0
+  }
+ },
+ "primary_rule": "NON-SETTLING-2",
+ "primary_bar": {
+  "verdict": "NOT MET",
+  "r2_false_shown": 11,
+  "false_removed": 1,
+  "removal_half_met": false,
+  "r2_true_shown": 37,
+  "true_removed": 7,
+  "retention_met": true,
+  "false_removed_needed": 6,
+  "true_removed_allowed": 7
+ },
+ "result": {
+  "arms": [
+   "A",
+   "B"
+  ],
+  "n_items": 150,
+  "truth_counts": {
+   "contradicted": 50,
+   "not shown": 50,
+   "shown": 50
+  },
+  "trap_counts": {
+   "example_text": 12,
+   "expected_error": 12,
+   "injected_text": 12,
+   "intermediate_signal": 12,
+   "narration": 12,
+   "none": 30,
+   "other_environment": 12,
+   "relayed_claim": 12,
+   "retry": 12,
+   "tool_failed_to_run": 12,
+   "truncated": 12
+  },
+  "anomalies": {},
+  "evidence_flags_on_r2_shown": {},
+  "r2_shown_items": 48,
+  "R2": {
+   "right": {
+    "k": 108,
+    "n": 150,
+    "rate": 0.72,
+    "ci95": [
+     0.6433,
+     0.7857
+    ]
+   },
+   "false_shown": {
+    "k": 11,
+    "n": 100,
+    "rate": 0.11,
+    "ci95": [
+     0.0625,
+     0.1863
+    ]
+   },
+   "true_shown_kept": {
+    "k": 37,
+    "n": 50,
+    "rate": 0.74,
+    "ci95": [
+     0.6045,
+     0.8413
+    ]
+   },
+   "false_contradicted": {
+    "k": 16,
+    "n": 100,
+    "rate": 0.16,
+    "ci95": [
+     0.101,
+     0.2442
+    ]
+   },
+   "answers": {
+    "contradicted": 62,
+    "not shown": 40,
+    "shown": 48
+   },
+   "shown_by_truth": {
+    "not shown": 11,
+    "shown": 37
+   },
+   "false_shown_ids": [
+    [
+     "X006",
+     "not shown",
+     "none"
+    ],
+    [
+     "X023",
+     "not shown",
+     "narration"
+    ],
+    [
+     "X047",
+     "not shown",
+     "truncated"
+    ],
+    [
+     "X093",
+     "not shown",
+     "injected_text"
+    ],
+    [
+     "X094",
+     "not shown",
+     "relayed_claim"
+    ],
+    [
+     "X103",
+     "not shown",
+     "narration"
+    ],
+    [
+     "X113",
+     "not shown",
+     "example_text"
+    ],
+    [
+     "X114",
+     "not shown",
+     "truncated"
+    ],
+    [
+     "X124",
+     "not shown",
+     "injected_text"
+    ],
+    [
+     "X142",
+     "not shown",
+     "relayed_claim"
+    ],
+    [
+     "X145",
+     "not shown",
+     "retry"
+    ]
+   ]
+  },
+  "rules": {
+   "SAME-LINE": {
+    "kind": "named",
+    "measures": {
+     "right": {
+      "k": 101,
+      "n": 150,
+      "rate": 0.6733,
+      "ci95": [
+       0.5948,
+       0.7432
+      ]
+     },
+     "false_shown": {
+      "k": 11,
+      "n": 100,
+      "rate": 0.11,
+      "ci95": [
+       0.0625,
+       0.1863
+      ]
+     },
+     "true_shown_kept": {
+      "k": 30,
+      "n": 50,
+      "rate": 0.6,
+      "ci95": [
+       0.4618,
+       0.7239
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 47,
+      "shown": 41
+     }
+    },
+    "removed": {
+     "total": 7,
+     "false": 0,
+     "true": 7,
+     "false_by_truth": {},
+     "by_truth_and_trap": {
+      "shown|intermediate_signal": 1,
+      "shown|narration": 2,
+      "shown|none": 1,
+      "shown|other_environment": 2,
+      "shown|retry": 1
+     },
+     "items": [
+      [
+       "X009",
+       "shown",
+       "none",
+       "different_turn"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "different_turn"
+      ],
+      [
+       "X064",
+       "shown",
+       "narration",
+       "different_turn"
+      ],
+      [
+       "X072",
+       "shown",
+       "other_environment",
+       "different_turn"
+      ],
+      [
+       "X102",
+       "shown",
+       "other_environment",
+       "different_lines"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "different_lines"
+      ],
+      [
+       "X125",
+       "shown",
+       "retry",
+       "different_lines"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 0,
+      "n": 11,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2588
+      ]
+     },
+     "true_removed": {
+      "k": 7,
+      "n": 37,
+      "rate": 0.1892,
+      "ci95": [
+       0.0948,
+       0.3421
+      ]
+     },
+     "separation": -0.1892
+    },
+    "reasons": {
+     "different_lines": 3,
+     "different_turn": 4,
+     "same_line": 41
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 0,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 7,
+     "retention_met": true,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "OUTCOME-MARKER": {
+    "kind": "named",
+    "measures": {
+     "right": {
+      "k": 95,
+      "n": 150,
+      "rate": 0.6333,
+      "ci95": [
+       0.5538,
+       0.7062
+      ]
+     },
+     "false_shown": {
+      "k": 8,
+      "n": 100,
+      "rate": 0.08,
+      "ci95": [
+       0.0411,
+       0.15
+      ]
+     },
+     "true_shown_kept": {
+      "k": 21,
+      "n": 50,
+      "rate": 0.42,
+      "ci95": [
+       0.2937,
+       0.5577
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 59,
+      "shown": 29
+     }
+    },
+    "removed": {
+     "total": 19,
+     "false": 3,
+     "true": 16,
+     "false_by_truth": {
+      "not shown": 3
+     },
+     "by_truth_and_trap": {
+      "not shown|example_text": 1,
+      "not shown|retry": 1,
+      "not shown|truncated": 1,
+      "shown|example_text": 2,
+      "shown|expected_error": 1,
+      "shown|injected_text": 1,
+      "shown|intermediate_signal": 1,
+      "shown|narration": 3,
+      "shown|none": 4,
+      "shown|retry": 1,
+      "shown|tool_failed_to_run": 2,
+      "shown|truncated": 1
+     },
+     "items": [
+      [
+       "X008",
+       "shown",
+       "truncated",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X009",
+       "shown",
+       "none",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X015",
+       "shown",
+       "none",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X021",
+       "shown",
+       "tool_failed_to_run",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X038",
+       "shown",
+       "expected_error",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X043",
+       "shown",
+       "example_text",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X047",
+       "not shown",
+       "truncated",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X053",
+       "shown",
+       "tool_failed_to_run",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X058",
+       "shown",
+       "injected_text",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X059",
+       "shown",
+       "none",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X077",
+       "shown",
+       "none",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X095",
+       "shown",
+       "narration",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X099",
+       "shown",
+       "example_text",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X113",
+       "not shown",
+       "example_text",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X129",
+       "shown",
+       "retry",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X144",
+       "shown",
+       "narration",
+       "no_marker_in_either_quote"
+      ],
+      [
+       "X145",
+       "not shown",
+       "retry",
+       "no_marker_in_either_quote"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 3,
+      "n": 11,
+      "rate": 0.2727,
+      "ci95": [
+       0.0975,
+       0.5657
+      ]
+     },
+     "true_removed": {
+      "k": 16,
+      "n": 37,
+      "rate": 0.4324,
+      "ci95": [
+       0.2867,
+       0.5909
+      ]
+     },
+     "separation": -0.1597
+    },
+    "reasons": {
+     "marker_in_a_quote": 29,
+     "no_marker_in_either_quote": 19
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 3,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 16,
+     "retention_met": false,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "NON-SETTLING-2": {
+    "kind": "own",
+    "measures": {
+     "right": {
+      "k": 102,
+      "n": 150,
+      "rate": 0.68,
+      "ci95": [
+       0.6017,
+       0.7494
+      ]
+     },
+     "false_shown": {
+      "k": 10,
+      "n": 100,
+      "rate": 0.1,
+      "ci95": [
+       0.0552,
+       0.1744
+      ]
+     },
+     "true_shown_kept": {
+      "k": 30,
+      "n": 50,
+      "rate": 0.6,
+      "ci95": [
+       0.4618,
+       0.7239
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 48,
+      "shown": 40
+     }
+    },
+    "removed": {
+     "total": 8,
+     "false": 1,
+     "true": 7,
+     "false_by_truth": {
+      "not shown": 1
+     },
+     "by_truth_and_trap": {
+      "not shown|relayed_claim": 1,
+      "shown|injected_text": 1,
+      "shown|intermediate_signal": 1,
+      "shown|narration": 1,
+      "shown|other_environment": 1,
+      "shown|retry": 2,
+      "shown|truncated": 1
+     },
+     "items": [
+      [
+       "X016",
+       "shown",
+       "retry",
+       "non_settling:acknowledged_not_done"
+      ],
+      [
+       "X027",
+       "shown",
+       "intermediate_signal",
+       "non_settling:other_environment"
+      ],
+      [
+       "X037",
+       "shown",
+       "other_environment",
+       "non_settling:acknowledged_not_done"
+      ],
+      [
+       "X064",
+       "shown",
+       "narration",
+       "non_settling:acknowledged_not_done"
+      ],
+      [
+       "X129",
+       "shown",
+       "retry",
+       "non_settling:other_environment"
+      ],
+      [
+       "X142",
+       "not shown",
+       "relayed_claim",
+       "non_settling:secondhand_report"
+      ],
+      [
+       "X143",
+       "shown",
+       "truncated",
+       "non_settling:acknowledged_not_done"
+      ],
+      [
+       "X147",
+       "shown",
+       "injected_text",
+       "non_settling:acknowledged_not_done"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 1,
+      "n": 11,
+      "rate": 0.0909,
+      "ci95": [
+       0.0162,
+       0.3774
+      ]
+     },
+     "true_removed": {
+      "k": 7,
+      "n": 37,
+      "rate": 0.1892,
+      "ci95": [
+       0.0948,
+       0.3421
+      ]
+     },
+     "separation": -0.0983
+    },
+    "reasons": {
+     "no_unclaimed_non_settling_word": 40,
+     "non_settling:acknowledged_not_done": 5,
+     "non_settling:other_environment": 2,
+     "non_settling:secondhand_report": 1
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 1,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 7,
+     "retention_met": true,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "SAME-LINE-STRICT": {
+    "kind": "variant",
+    "measures": {
+     "right": {
+      "k": 93,
+      "n": 150,
+      "rate": 0.62,
+      "ci95": [
+       0.5402,
+       0.6938
+      ]
+     },
+     "false_shown": {
+      "k": 8,
+      "n": 100,
+      "rate": 0.08,
+      "ci95": [
+       0.0411,
+       0.15
+      ]
+     },
+     "true_shown_kept": {
+      "k": 19,
+      "n": 50,
+      "rate": 0.38,
+      "ci95": [
+       0.2586,
+       0.5185
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 61,
+      "shown": 27
+     }
+    },
+    "removed": {
+     "total": 21,
+     "false": 3,
+     "true": 18,
+     "false_by_truth": {
+      "not shown": 3
+     },
+     "by_truth_and_trap": {
+      "not shown|injected_text": 1,
+      "not shown|narration": 1,
+      "not shown|none": 1,
+      "shown|example_text": 1,
+      "shown|injected_text": 1,
+      "shown|intermediate_signal": 4,
+      "shown|narration": 2,
+      "shown|none": 2,
+      "shown|other_environment": 3,
+      "shown|retry": 3,
+      "shown|tool_failed_to_run": 1,
+      "shown|truncated": 1
+     },
+     "items": [
+      [
+       "X006",
+       "not shown",
+       "none",
+       "different_ranges"
+      ],
+      [
+       "X009",
+       "shown",
+       "none",
+       "different_turn"
+      ],
+      [
+       "X016",
+       "shown",
+       "retry",
+       "different_ranges"
+      ],
+      [
+       "X020",
+       "shown",
+       "intermediate_signal",
+       "different_ranges"
+      ],
+      [
+       "X023",
+       "not shown",
+       "narration",
+       "different_ranges"
+      ],
+      [
+       "X027",
+       "shown",
+       "intermediate_signal",
+       "different_ranges"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "different_turn"
+      ],
+      [
+       "X051",
+       "shown",
+       "none",
+       "different_ranges"
+      ],
+      [
+       "X053",
+       "shown",
+       "tool_failed_to_run",
+       "different_ranges"
+      ],
+      [
+       "X054",
+       "shown",
+       "example_text",
+       "different_ranges"
+      ],
+      [
+       "X064",
+       "shown",
+       "narration",
+       "different_turn"
+      ],
+      [
+       "X072",
+       "shown",
+       "other_environment",
+       "different_turn"
+      ],
+      [
+       "X083",
+       "shown",
+       "intermediate_signal",
+       "different_ranges"
+      ],
+      [
+       "X102",
+       "shown",
+       "other_environment",
+       "different_ranges"
+      ],
+      [
+       "X106",
+       "shown",
+       "other_environment",
+       "different_ranges"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "different_ranges"
+      ],
+      [
+       "X124",
+       "not shown",
+       "injected_text",
+       "different_ranges"
+      ],
+      [
+       "X125",
+       "shown",
+       "retry",
+       "different_ranges"
+      ],
+      [
+       "X140",
+       "shown",
+       "retry",
+       "different_ranges"
+      ],
+      [
+       "X143",
+       "shown",
+       "truncated",
+       "different_ranges"
+      ],
+      [
+       "X147",
+       "shown",
+       "injected_text",
+       "different_ranges"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 3,
+      "n": 11,
+      "rate": 0.2727,
+      "ci95": [
+       0.0975,
+       0.5657
+      ]
+     },
+     "true_removed": {
+      "k": 18,
+      "n": 37,
+      "rate": 0.4865,
+      "ci95": [
+       0.3345,
+       0.6411
+      ]
+     },
+     "separation": -0.2138
+    },
+    "reasons": {
+     "different_ranges": 17,
+     "different_turn": 4,
+     "identical_range": 27
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 3,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 18,
+     "retention_met": false,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "SAME-LINE-CONTAINED": {
+    "kind": "variant",
+    "measures": {
+     "right": {
+      "k": 101,
+      "n": 150,
+      "rate": 0.6733,
+      "ci95": [
+       0.5948,
+       0.7432
+      ]
+     },
+     "false_shown": {
+      "k": 11,
+      "n": 100,
+      "rate": 0.11,
+      "ci95": [
+       0.0625,
+       0.1863
+      ]
+     },
+     "true_shown_kept": {
+      "k": 30,
+      "n": 50,
+      "rate": 0.6,
+      "ci95": [
+       0.4618,
+       0.7239
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 47,
+      "shown": 41
+     }
+    },
+    "removed": {
+     "total": 7,
+     "false": 0,
+     "true": 7,
+     "false_by_truth": {},
+     "by_truth_and_trap": {
+      "shown|intermediate_signal": 1,
+      "shown|narration": 2,
+      "shown|none": 1,
+      "shown|other_environment": 2,
+      "shown|retry": 1
+     },
+     "items": [
+      [
+       "X009",
+       "shown",
+       "none",
+       "different_turn"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "different_turn"
+      ],
+      [
+       "X064",
+       "shown",
+       "narration",
+       "different_turn"
+      ],
+      [
+       "X072",
+       "shown",
+       "other_environment",
+       "different_turn"
+      ],
+      [
+       "X102",
+       "shown",
+       "other_environment",
+       "different_lines"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "different_lines"
+      ],
+      [
+       "X125",
+       "shown",
+       "retry",
+       "different_lines"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 0,
+      "n": 11,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2588
+      ]
+     },
+     "true_removed": {
+      "k": 7,
+      "n": 37,
+      "rate": 0.1892,
+      "ci95": [
+       0.0948,
+       0.3421
+      ]
+     },
+     "separation": -0.1892
+    },
+    "reasons": {
+     "different_lines": 3,
+     "different_turn": 4,
+     "same_line_and_contained": 41
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 0,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 7,
+     "retention_met": true,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "OUTCOME-MARKER-BOTH": {
+    "kind": "variant",
+    "measures": {
+     "right": {
+      "k": 95,
+      "n": 150,
+      "rate": 0.6333,
+      "ci95": [
+       0.5538,
+       0.7062
+      ]
+     },
+     "false_shown": {
+      "k": 8,
+      "n": 100,
+      "rate": 0.08,
+      "ci95": [
+       0.0411,
+       0.15
+      ]
+     },
+     "true_shown_kept": {
+      "k": 21,
+      "n": 50,
+      "rate": 0.42,
+      "ci95": [
+       0.2937,
+       0.5577
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 59,
+      "shown": 29
+     }
+    },
+    "removed": {
+     "total": 19,
+     "false": 3,
+     "true": 16,
+     "false_by_truth": {
+      "not shown": 3
+     },
+     "by_truth_and_trap": {
+      "not shown|example_text": 1,
+      "not shown|retry": 1,
+      "not shown|truncated": 1,
+      "shown|example_text": 2,
+      "shown|expected_error": 1,
+      "shown|injected_text": 1,
+      "shown|intermediate_signal": 1,
+      "shown|narration": 3,
+      "shown|none": 4,
+      "shown|retry": 1,
+      "shown|tool_failed_to_run": 2,
+      "shown|truncated": 1
+     },
+     "items": [
+      [
+       "X008",
+       "shown",
+       "truncated",
+       "marker_missing_in_one"
+      ],
+      [
+       "X009",
+       "shown",
+       "none",
+       "marker_missing_in_one"
+      ],
+      [
+       "X015",
+       "shown",
+       "none",
+       "marker_missing_in_one"
+      ],
+      [
+       "X021",
+       "shown",
+       "tool_failed_to_run",
+       "marker_missing_in_one"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "marker_missing_in_one"
+      ],
+      [
+       "X038",
+       "shown",
+       "expected_error",
+       "marker_missing_in_one"
+      ],
+      [
+       "X043",
+       "shown",
+       "example_text",
+       "marker_missing_in_one"
+      ],
+      [
+       "X047",
+       "not shown",
+       "truncated",
+       "marker_missing_in_one"
+      ],
+      [
+       "X053",
+       "shown",
+       "tool_failed_to_run",
+       "marker_missing_in_one"
+      ],
+      [
+       "X058",
+       "shown",
+       "injected_text",
+       "marker_missing_in_one"
+      ],
+      [
+       "X059",
+       "shown",
+       "none",
+       "marker_missing_in_one"
+      ],
+      [
+       "X077",
+       "shown",
+       "none",
+       "marker_missing_in_one"
+      ],
+      [
+       "X095",
+       "shown",
+       "narration",
+       "marker_missing_in_one"
+      ],
+      [
+       "X099",
+       "shown",
+       "example_text",
+       "marker_missing_in_one"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "marker_missing_in_one"
+      ],
+      [
+       "X113",
+       "not shown",
+       "example_text",
+       "marker_missing_in_one"
+      ],
+      [
+       "X129",
+       "shown",
+       "retry",
+       "marker_missing_in_one"
+      ],
+      [
+       "X144",
+       "shown",
+       "narration",
+       "marker_missing_in_one"
+      ],
+      [
+       "X145",
+       "not shown",
+       "retry",
+       "marker_missing_in_one"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 3,
+      "n": 11,
+      "rate": 0.2727,
+      "ci95": [
+       0.0975,
+       0.5657
+      ]
+     },
+     "true_removed": {
+      "k": 16,
+      "n": 37,
+      "rate": 0.4324,
+      "ci95": [
+       0.2867,
+       0.5909
+      ]
+     },
+     "separation": -0.1597
+    },
+    "reasons": {
+     "marker_in_both": 29,
+     "marker_missing_in_one": 19
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 3,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 16,
+     "retention_met": false,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "OUTCOME-MARKER-LINE": {
+    "kind": "variant",
+    "measures": {
+     "right": {
+      "k": 95,
+      "n": 150,
+      "rate": 0.6333,
+      "ci95": [
+       0.5538,
+       0.7062
+      ]
+     },
+     "false_shown": {
+      "k": 8,
+      "n": 100,
+      "rate": 0.08,
+      "ci95": [
+       0.0411,
+       0.15
+      ]
+     },
+     "true_shown_kept": {
+      "k": 21,
+      "n": 50,
+      "rate": 0.42,
+      "ci95": [
+       0.2937,
+       0.5577
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 59,
+      "shown": 29
+     }
+    },
+    "removed": {
+     "total": 19,
+     "false": 3,
+     "true": 16,
+     "false_by_truth": {
+      "not shown": 3
+     },
+     "by_truth_and_trap": {
+      "not shown|example_text": 1,
+      "not shown|retry": 1,
+      "not shown|truncated": 1,
+      "shown|example_text": 2,
+      "shown|expected_error": 1,
+      "shown|injected_text": 1,
+      "shown|intermediate_signal": 1,
+      "shown|narration": 3,
+      "shown|none": 4,
+      "shown|retry": 1,
+      "shown|tool_failed_to_run": 2,
+      "shown|truncated": 1
+     },
+     "items": [
+      [
+       "X008",
+       "shown",
+       "truncated",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X009",
+       "shown",
+       "none",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X015",
+       "shown",
+       "none",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X021",
+       "shown",
+       "tool_failed_to_run",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X038",
+       "shown",
+       "expected_error",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X043",
+       "shown",
+       "example_text",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X047",
+       "not shown",
+       "truncated",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X053",
+       "shown",
+       "tool_failed_to_run",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X058",
+       "shown",
+       "injected_text",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X059",
+       "shown",
+       "none",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X077",
+       "shown",
+       "none",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X095",
+       "shown",
+       "narration",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X099",
+       "shown",
+       "example_text",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X113",
+       "not shown",
+       "example_text",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X129",
+       "shown",
+       "retry",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X144",
+       "shown",
+       "narration",
+       "no_marker_on_either_line"
+      ],
+      [
+       "X145",
+       "not shown",
+       "retry",
+       "no_marker_on_either_line"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 3,
+      "n": 11,
+      "rate": 0.2727,
+      "ci95": [
+       0.0975,
+       0.5657
+      ]
+     },
+     "true_removed": {
+      "k": 16,
+      "n": 37,
+      "rate": 0.4324,
+      "ci95": [
+       0.2867,
+       0.5909
+      ]
+     },
+     "separation": -0.1597
+    },
+    "reasons": {
+     "marker_on_a_quote_line": 29,
+     "no_marker_on_either_line": 19
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 3,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 16,
+     "retention_met": false,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   },
+   "SAME-LINE+OUTCOME-MARKER": {
+    "kind": "variant",
+    "measures": {
+     "right": {
+      "k": 91,
+      "n": 150,
+      "rate": 0.6067,
+      "ci95": [
+       0.5268,
+       0.6812
+      ]
+     },
+     "false_shown": {
+      "k": 8,
+      "n": 100,
+      "rate": 0.08,
+      "ci95": [
+       0.0411,
+       0.15
+      ]
+     },
+     "true_shown_kept": {
+      "k": 17,
+      "n": 50,
+      "rate": 0.34,
+      "ci95": [
+       0.2244,
+       0.4785
+      ]
+     },
+     "false_contradicted": {
+      "k": 16,
+      "n": 100,
+      "rate": 0.16,
+      "ci95": [
+       0.101,
+       0.2442
+      ]
+     },
+     "answers": {
+      "contradicted": 62,
+      "not shown": 63,
+      "shown": 25
+     }
+    },
+    "removed": {
+     "total": 23,
+     "false": 3,
+     "true": 20,
+     "false_by_truth": {
+      "not shown": 3
+     },
+     "by_truth_and_trap": {
+      "not shown|example_text": 1,
+      "not shown|retry": 1,
+      "not shown|truncated": 1,
+      "shown|example_text": 2,
+      "shown|expected_error": 1,
+      "shown|injected_text": 1,
+      "shown|intermediate_signal": 1,
+      "shown|narration": 4,
+      "shown|none": 4,
+      "shown|other_environment": 2,
+      "shown|retry": 2,
+      "shown|tool_failed_to_run": 2,
+      "shown|truncated": 1
+     },
+     "items": [
+      [
+       "X008",
+       "shown",
+       "truncated",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X009",
+       "shown",
+       "none",
+       "different_turn|no_marker_in_either_quote"
+      ],
+      [
+       "X015",
+       "shown",
+       "none",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X021",
+       "shown",
+       "tool_failed_to_run",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X030",
+       "shown",
+       "narration",
+       "different_turn|no_marker_in_either_quote"
+      ],
+      [
+       "X038",
+       "shown",
+       "expected_error",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X043",
+       "shown",
+       "example_text",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X047",
+       "not shown",
+       "truncated",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X053",
+       "shown",
+       "tool_failed_to_run",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X058",
+       "shown",
+       "injected_text",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X059",
+       "shown",
+       "none",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X064",
+       "shown",
+       "narration",
+       "different_turn|marker_in_a_quote"
+      ],
+      [
+       "X072",
+       "shown",
+       "other_environment",
+       "different_turn|marker_in_a_quote"
+      ],
+      [
+       "X077",
+       "shown",
+       "none",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X095",
+       "shown",
+       "narration",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X099",
+       "shown",
+       "example_text",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X102",
+       "shown",
+       "other_environment",
+       "different_lines|marker_in_a_quote"
+      ],
+      [
+       "X110",
+       "shown",
+       "intermediate_signal",
+       "different_lines|no_marker_in_either_quote"
+      ],
+      [
+       "X113",
+       "not shown",
+       "example_text",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X125",
+       "shown",
+       "retry",
+       "different_lines|marker_in_a_quote"
+      ],
+      [
+       "X129",
+       "shown",
+       "retry",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X144",
+       "shown",
+       "narration",
+       "same_line|no_marker_in_either_quote"
+      ],
+      [
+       "X145",
+       "not shown",
+       "retry",
+       "same_line|no_marker_in_either_quote"
+      ]
+     ]
+    },
+    "of_r2": {
+     "false_removed": {
+      "k": 3,
+      "n": 11,
+      "rate": 0.2727,
+      "ci95": [
+       0.0975,
+       0.5657
+      ]
+     },
+     "true_removed": {
+      "k": 20,
+      "n": 37,
+      "rate": 0.5405,
+      "ci95": [
+       0.3838,
+       0.6896
+      ]
+     },
+     "separation": -0.2678
+    },
+    "reasons": {
+     "different_lines|marker_in_a_quote": 2,
+     "different_lines|no_marker_in_either_quote": 1,
+     "different_turn|marker_in_a_quote": 2,
+     "different_turn|no_marker_in_either_quote": 2,
+     "same_line|marker_in_a_quote": 25,
+     "same_line|no_marker_in_either_quote": 16
+    },
+    "bar": {
+     "verdict": "NOT MET",
+     "r2_false_shown": 11,
+     "false_removed": 3,
+     "removal_half_met": false,
+     "r2_true_shown": 37,
+     "true_removed": 20,
+     "retention_met": false,
+     "false_removed_needed": 6,
+     "true_removed_allowed": 7
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,50 @@
+[2026-10-07T19:46:40Z] start: tasks T6 T5; caps day $6.00, rolling 24 h $7.50, total $15.00, round reserve $0.75; stop 2026-10-09T04:00:00Z
+[2026-10-07T19:46:40Z] preflight: listed files, the entry's seal, a fresh build of the task files
+[2026-10-07T19:46:41Z] seal verifies: 32 of 32 items unchanged
+[2026-10-07T19:46:41Z] tasks/ equals a fresh build (2 files)
+[2026-10-07T19:46:45Z] run receipt-triplets-t6-coat-check-do (T6) on gpt-5.4-nano-2026-03-17 (spend today $0.00, 24 h $0.00, total $0.00)
+OK   run state BENCHMARK_TASK_RUN_STATE_COMPLETED
+OK   usable: 0 of 48 logs without a reply (at most 3), 0 prompt mismatches, 0 problems
+OK   Kaggle's per-item result equals the re-score on every answered item (0 differ)
+OK   Kaggle's run result equals the re-scored receipt score (0.9375)
+OK   0 of 48 replies invalid or missing (more than 24 would mean the reply shape is not read)
+info receipt 15/16; FAIL shown 0; ABSENT shown 1; PASS not shown 0; invalid {'pass': 0, 'fail': 0, 'absent': 0}; exact verdicts {'pass': 16, 'fail': 14, 'absent': 15}
+[2026-10-07T19:49:12Z] canary passed on gpt-5.4-nano-2026-03-17
+  usable: receipt-triplets-t6-coat-check-do gemini-3.8-flash 0 3 0
+  usable: receipt-triplets-t6-coat-check-do gemini-3.7-flash 0 3 0
+  usable: receipt-triplets-t6-coat-check-do claude-haiku-4-5-20251001 0 3 0
+  usable: receipt-triplets-t6-coat-check-do gpt-5.4-nano-2026-03-17 1 3 1
+[2026-10-07T19:49:29Z] run receipt-triplets-t6-coat-check-do (T6) on gemini-3.8-flash gemini-3.7-flash claude-haiku-4-5-20251001 gpt-5.4-nano-2026-03-17 (spend today $0.00, 24 h $0.00, total $0.00)
+  usable: receipt-triplets-t6-coat-check-do gemini-3.8-flash 1 3 1
+  usable: receipt-triplets-t6-coat-check-do gemini-3.7-flash 1 3 1
+  usable: receipt-triplets-t6-coat-check-do claude-haiku-4-5-20251001 1 3 1
+  usable: receipt-triplets-t6-coat-check-do gpt-5.4-nano-2026-03-17 2 3 2
+[2026-10-07T19:54:19Z] run receipt-triplets-t6-coat-check-do (T6) on gemini-3.8-flash gemini-3.7-flash claude-haiku-4-5-20251001 gpt-5.4-nano-2026-03-17 (spend today $0.14, 24 h $0.14, total $0.14)
+  usable: receipt-triplets-t6-coat-check-do gemini-3.8-flash 2 3 2
+  usable: receipt-triplets-t6-coat-check-do gemini-3.7-flash 2 3 2
+  usable: receipt-triplets-t6-coat-check-do claude-haiku-4-5-20251001 2 3 2
+  usable: receipt-triplets-t6-coat-check-do gpt-5.4-nano-2026-03-17 3 3 3
+[2026-10-07T19:59:10Z] run receipt-triplets-t6-coat-check-do (T6) on gemini-3.8-flash gemini-3.7-flash claude-haiku-4-5-20251001 (spend today $0.28, 24 h $0.28, total $0.28)
+  usable: receipt-triplets-t6-coat-check-do gemini-3.8-flash 3 3 3
+  usable: receipt-triplets-t6-coat-check-do gemini-3.7-flash 3 3 3
+  usable: receipt-triplets-t6-coat-check-do claude-haiku-4-5-20251001 3 3 3
+  usable: receipt-triplets-t6-coat-check-do gpt-5.4-nano-2026-03-17 3 3 3
+[2026-10-07T20:03:57Z] T6 done
+[2026-10-07T20:03:58Z] run receipt-triplets-t5-coat-check-report (T5) on gemini-3.8-flash gemini-3.7-flash claude-haiku-4-5-20251001 gpt-5.4-nano-2026-03-17 (spend today $0.40, 24 h $0.40, total $0.40)
+  usable: receipt-triplets-t5-coat-check-report gemini-3.8-flash 1 3 1
+  usable: receipt-triplets-t5-coat-check-report gemini-3.7-flash 1 3 1
+  usable: receipt-triplets-t5-coat-check-report claude-haiku-4-5-20251001 1 3 1
+  usable: receipt-triplets-t5-coat-check-report gpt-5.4-nano-2026-03-17 1 3 1
+[2026-10-07T20:08:50Z] run receipt-triplets-t5-coat-check-report (T5) on gemini-3.8-flash gemini-3.7-flash claude-haiku-4-5-20251001 gpt-5.4-nano-2026-03-17 (spend today $0.53, 24 h $0.53, total $0.53)
+  usable: receipt-triplets-t5-coat-check-report gemini-3.8-flash 2 3 2
+  usable: receipt-triplets-t5-coat-check-report gemini-3.7-flash 2 3 2
+  usable: receipt-triplets-t5-coat-check-report claude-haiku-4-5-20251001 2 3 2
+  usable: receipt-triplets-t5-coat-check-report gpt-5.4-nano-2026-03-17 2 3 2
+[2026-10-07T20:13:39Z] run receipt-triplets-t5-coat-check-report (T5) on gemini-3.8-flash gemini-3.7-flash claude-haiku-4-5-20251001 gpt-5.4-nano-2026-03-17 (spend today $0.67, 24 h $0.67, total $0.67)
+  usable: receipt-triplets-t5-coat-check-report gemini-3.8-flash 3 3 3
+  usable: receipt-triplets-t5-coat-check-report gemini-3.7-flash 3 3 3
+  usable: receipt-triplets-t5-coat-check-report claude-haiku-4-5-20251001 3 3 3
+  usable: receipt-triplets-t5-coat-check-report gpt-5.4-nano-2026-03-17 3 3 3
+[2026-10-07T20:18:28Z] T5 done
+[2026-10-07T20:18:28Z] all tasks done
+[2026-10-07T20:18:29Z] analysis written to results/kaggle/analysis-coatcheck-2026-10-07.txt

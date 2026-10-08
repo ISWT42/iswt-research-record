@@ -1,0 +1,82 @@
+{
+ "seed": 4716771871833052839,
+ "claims": 2000,
+ "engaged_replies": 15030,
+ "human": {
+  "n": 303,
+  "challenge": {
+   "k": 10,
+   "share": 0.033,
+   "wilson95": [
+    0.018,
+    0.06
+   ]
+  },
+  "verify": {
+   "k": 4,
+   "share": 0.013,
+   "wilson95": [
+    0.005,
+    0.033
+   ]
+  },
+  "accept": {
+   "k": 12,
+   "share": 0.04,
+   "wilson95": [
+    0.023,
+    0.068
+   ]
+  },
+  "other": {
+   "k": 277,
+   "share": 0.914,
+   "wilson95": [
+    0.877,
+    0.941
+   ]
+  }
+ },
+ "agent": {
+  "n": 14727,
+  "challenge": {
+   "k": 2155,
+   "share": 0.146,
+   "wilson95": [
+    0.141,
+    0.152
+   ]
+  },
+  "verify": {
+   "k": 849,
+   "share": 0.058,
+   "wilson95": [
+    0.054,
+    0.062
+   ]
+  },
+  "accept": {
+   "k": 3036,
+   "share": 0.206,
+   "wilson95": [
+    0.2,
+    0.213
+   ]
+  },
+  "other": {
+   "k": 8687,
+   "share": 0.59,
+   "wilson95": [
+    0.582,
+    0.598
+   ]
+  }
+ },
+ "fisher_verify_human_vs_agent": 0.0002,
+ "fisher_challenge_human_vs_agent": 0.0,
+ "human_share_of_engaged": 0.0202,
+ "human_share_of_verify_or_challenge": 0.0046,
+ "over_representation_ratio": 0.23,
+ "claims_with_human_verify_or_challenge": 14,
+ "claims_with_agent_verify_or_challenge": 1225
+}

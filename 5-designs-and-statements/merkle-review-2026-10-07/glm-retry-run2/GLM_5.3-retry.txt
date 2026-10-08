@@ -1,0 +1,51 @@
+## 1. Verdict
+
+The cryptography is standard and sound: salted hash leaves, Merkle trees, RFC 3161 plus Bitcoin anchoring, per-viewer audit paths. The pre-commitment step (anchor before anyone reads results) is a genuinely good property. It is worth building as an engineering product for agent accountability, with two honest caveats: it cannot prove absence (so "Not shown" is true but weak), and nothing stops the tree builder from omitting records or inserting fake "withheld" hashes. It is a receipt that records were captured, unchanged, at a known time — not a receipt that they are true or complete. That is still useful.
+
+## 2. What is already established
+
+- **Merkle trees** (Merkle, 1980): hashing in a tree; inclusion proofs via sibling paths. This design is exactly that.
+- **Certificate Transparency** (RFC 6962 / RFC 9162): append-only logs with inclusion and consistency proofs and fork detection via published roots — the closest operational model.
+- **CONIKS** (Melara et al., 2015): transparency with signed tree heads; sorted leaves also give non-inclusion proofs.
+- **Redactable signatures** (Johnson, Molnar, Song, Wagner, 2002): signatures that stay valid when parts are hidden — the "withheld" leaf idea in signature form.
+- **Crosby & Wallach (2009)**: efficient tamper-evident logging with history proofs.
+- **OpenTimestamps** (Peter Todd): aggregates hashes and anchors them in Bitcoin; **RFC 3161** covers timestamp tokens. **RFC 8785** gives canonical JSON; **OpenTelemetry** is the standard for agent/tool trace capture.
+
+The cryptographic core is not new. What differs is the packaging: tri-state receipt semantics and per-viewer redaction with visible placeholders.
+
+## 3. What is new
+
+Little in cryptography; modest systems novelty. Three points: (a) treating an agent's "done" claim as a query over a committed evidence tree with three explicit answers; (b) redaction that keeps a visible commitment, so a withheld record can be declassified later and still match its published hash when salt and content are revealed; (c) audit paths as an access-control mechanism. This is honest application engineering.
+
+## 4. How it can fail
+
+- **Guessable records.** Salt stops precomputation, not a dictionary attack on plausible record texts; a low-entropy record behind a "withheld" hash can be brute-forced. *Fix:* 256-bit salts, and encrypt anything truly secret — hashing binds, it does not hide.
+- **Encoding and boundaries.** Ambiguous serialization lets the builder equivocate. *Fix:* canonical bytes (RFC 8785), schema version inside the hashed leaf.
+- **Absence is unprovable.** Merkle proofs show membership only. *Fix:* sort leaves by claim/record ID (CONIKS-style) or use a sparse Merkle tree for non-inclusion proofs; otherwise declare "Not shown" an epistemic answer, not a proof.
+- **Omission and junk leaves.** The builder can drop a record or insert random "withheld" hashes; no viewer can tell. *Fix:* trusted capture layer (instrumented runtime, sequence-numbered spans, run-root committed before execution).
+- **Forking.** The builder anchors two roots and shows each viewer a different one. *Fix:* one operator-signed root per period, publicly published, with consistency proofs; viewers pin and compare roots.
+- **Within-day window.** Only the day root is anchored, so edits are possible until anchoring. *Fix:* anchor per run — OpenTimestamps makes this free.
+- **Lost salts.** A leaf becomes unverifiable forever. *Fix:* derive salts as HMAC(master key, leaf ID) and escrow the key.
+- **Structure leakage.** Counts, grouping, timing are visible by design. Accept and document, or pad (which trades against "nothing disappears silently").
+- **Access rules.** Who sets them is policy, not crypto; revocation stops new proofs, not already-seen records. Say so.
+
+## 5. Threat model
+
+- **The agent/operator (tree builder):** cannot retro-edit after anchoring. But can lie at capture time, omit, or plant junk — only trusted capture and publication discipline address that.
+- **Viewers:** cannot forge proofs; learn only count and position from withheld hashes, unless the record is guessable or its salt leaks.
+- **Timestamp authority:** a compromised TSA is mitigated by the Bitcoin anchor; keep both.
+- **Collusion:** operator and a viewer can hide truth from others by omission. No log design stops that.
+
+## 6. Smallest prototype
+
+Wrap one agent run: each step is canonical JSON plus salt → leaf → run root, anchored via OpenTimestamps before results are read; three viewers with different access receive leaves, salts, and paths. Tests: (a) every visible leaf verifies against the public root; (b) flipping one byte breaks the proofs; (c) no withheld leaf is matched by a million-candidate dictionary of plausible records; (d) declassifying a withheld record later matches its published hash; (e) a second, different root is rejected by a viewer who pinned the first. Measure proof size, verification time, and dictionary-recovery rate. Any tamper that still verifies, any dictionary hit, or an undetected fork counts against the design.
+
+## 7. Where it is most useful first
+
+- **Payment and finance-ops agents:** claims are monetary, auditors exist, access tiers are natural.
+- **Enterprise IT automation under audit:** compliance already requires records; this adds verifiable redaction.
+- **Public agent benchmarks:** anyone can check "done" claims against a published root, with low data sensitivity.
+
+## 8. What it does not prove
+
+Truth at capture (anchored garbage still verifies); completeness (a missing record may mean missing evidence, not that nothing happened); event time (anchoring proves commitment time, not action time); the reality of withheld leaves (real or junk, indistinguishable); confidentiality (hashing is not encryption — visibility is a policy promise); and objectivity of "Contradicted," which requires someone to define in advance which records would contradict a claim.

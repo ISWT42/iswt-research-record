@@ -1,0 +1,193 @@
+=== replication start 2026-10-05T19:25:29Z ===
+items-R001-R040.jsonl sha256 dc4f8eeef92795529dad1c41013dc9a353f05d16ce360b5c23be01db0f5107b5
+followups-R001-R040.jsonl sha256 43e98e5452eda6f03a9c8f6ada6f0826375531b1b937b4c99575008ab8b21359
+ids ok: True
+truth: {'not shown': 13, 'contradicted': 14, 'shown': 13} | trap: {'tool_failed_to_run': 4, 'intermediate_signal': 3, 'none': 8, 'expected_error': 3, 'truncated': 3, 'retry': 3, 'injected_text': 3, 'relayed_claim': 3, 'narration': 3, 'other_environment': 4, 'example_text': 3}
+item deciding line not a whole output line: []
+file sha256: 43e98e5452eda6f03a9c8f6ada6f0826375531b1b937b4c99575008ab8b21359 | bytes: 12025 | rows: 40
+ids 161-300 exactly: True | missing: []
+rows missing a field: []
+settles_as disagrees with world: 0 [] | deciding line not a whole output line: 0 [] | check_cmd not read-only: 0 []
+world disagrees with truth: []
+left out: [] | items used: 40
+fast lane: 80 calls to make, $0.0000 spent so far, cap $3.0
+[F-Q] R006: shown (verified) spent $0.0001
+[F-Q] R004: not shown (shown_citing_failure) spent $0.0002
+[F-Q] R002: contradicted (verified) spent $0.0004
+[F-Q] R003: shown (verified) spent $0.0005
+[F-Q] R005: contradicted (verified) spent $0.0006
+[F-Q] R001: contradicted (verified) spent $0.0007
+[F-Q] R007: contradicted (verified) spent $0.0008
+[F-Q] R008: not shown (quote_is_instruction) spent $0.0010
+[F-Q] R009: shown (verified) spent $0.0011
+[F-Q] R011: not shown (model_not_shown) spent $0.0012
+[F-Q] R012: shown (verified) spent $0.0013
+[F-Q] R010: shown (verified) spent $0.0015
+[F-Q] R013: shown (verified) spent $0.0016
+[F-Q] R015: contradicted (verified) spent $0.0017
+[F-Q] R014: contradicted (verified) spent $0.0018
+[F-Q] R016: contradicted (verified) spent $0.0019
+[F-Q] R018: contradicted (verified) spent $0.0020
+[F-Q] R017: contradicted (verified) spent $0.0022
+[F-Q] R019: shown (verified) spent $0.0023
+[F-Q] R020: contradicted (verified) spent $0.0024
+[F-Q] R024: not shown (model_not_shown) spent $0.0025
+[F-Q] R021: not shown (shown_citing_failure) spent $0.0027
+[F-Q] R022: contradicted (verified) spent $0.0028
+[F-Q] R025: contradicted (verified) spent $0.0029
+[F-Q] R028: contradicted (verified) spent $0.0030
+[F-Q] R029: contradicted (verified) spent $0.0031
+[F-Q] R026: shown (verified) spent $0.0033
+[F-Q] R027: not shown (model_not_shown) spent $0.0034
+[F-Q] R030: shown (verified) spent $0.0035
+[F-Q] R033: shown (verified) spent $0.0036
+[F-Q] R031: not shown (model_not_shown) spent $0.0037
+[F-Q] R035: not shown (model_not_shown) spent $0.0039
+[F-Q] R034: shown (verified) spent $0.0040
+[F-Q] R037: contradicted (verified) spent $0.0041
+[F-Q] R038: contradicted (verified) spent $0.0042
+[F-Q] R039: shown (verified) spent $0.0044
+[F-Q] R040: shown (verified) spent $0.0045
+[F-G] R001: not shown (model_not_shown) spent $0.0045
+[F-G] R002: contradicted (verified) spent $0.0046
+[F-Q] R023: not shown (unparseable_reply) spent $0.0048
+[F-G] R003: shown (verified) spent $0.0049
+[F-G] R004: not shown (model_not_shown) spent $0.0049
+[F-G] R006: shown (verified) spent $0.0050
+[F-G] R005: not shown (unverified_quote) spent $0.0050
+[F-G] R008: not shown (quote_is_instruction) spent $0.0051
+[F-G] R007: not shown (model_not_shown) spent $0.0052
+[F-Q] R032: not shown (unparseable_reply) spent $0.0054
+[F-G] R009: shown (verified) spent $0.0054
+[F-G] R010: shown (verified) spent $0.0055
+[F-G] R012: shown (verified) spent $0.0056
+[F-G] R011: not shown (model_not_shown) spent $0.0056
+[F-Q] R036: not shown (unparseable_reply) spent $0.0058
+[F-G] R014: not shown (model_not_shown) spent $0.0059
+[F-G] R015: not shown (model_not_shown) spent $0.0059
+[F-G] R013: shown (verified) spent $0.0060
+[F-G] R016: contradicted (verified) spent $0.0061
+[F-G] R017: contradicted (verified) spent $0.0062
+[F-G] R018: contradicted (verified) spent $0.0062
+[F-G] R019: shown (verified) spent $0.0063
+[F-G] R020: contradicted (verified) spent $0.0064
+[F-G] R021: not shown (shown_citing_failure) spent $0.0064
+[F-G] R023: not shown (shown_citing_failure) spent $0.0065
+[F-G] R022: not shown (unverified_quote) spent $0.0066
+[F-G] R024: not shown (model_not_shown) spent $0.0066
+[F-G] R025: contradicted (verified) spent $0.0067
+[F-G] R027: not shown (model_not_shown) spent $0.0068
+[F-G] R028: contradicted (verified) spent $0.0068
+[F-G] R029: not shown (model_not_shown) spent $0.0069
+[F-G] R031: not shown (model_not_shown) spent $0.0069
+[F-G] R030: shown (verified) spent $0.0070
+[F-G] R026: contradicted (verified) spent $0.0071
+[F-G] R033: shown (verified) spent $0.0072
+[F-G] R032: shown (verified) spent $0.0072
+[F-G] R034: shown (verified) spent $0.0073
+[F-G] R036: shown (verified) spent $0.0074
+[F-G] R037: contradicted (verified) spent $0.0074
+[F-G] R035: not shown (model_not_shown) spent $0.0075
+[F-G] R038: contradicted (verified) spent $0.0076
+[F-G] R039: shown (verified) spent $0.0076
+[F-G] R040: shown (verified) spent $0.0077
+run 3: 80 calls, $0.0000 spent so far, cap $3.0
+[U-Q] R006: shown (verified, sure) spent $0.0001
+[U-Q] R002: contradicted (verified, sure) spent $0.0003
+[U-Q] R001: contradicted (verified, sure) spent $0.0004
+[U-Q] R004: contradicted (verified, sure) spent $0.0005
+[U-Q] R005: contradicted (verified, sure) spent $0.0007
+[U-Q] R003: shown (verified, sure) spent $0.0008
+[U-Q] R007: contradicted (verified, sure) spent $0.0009
+[U-Q] R009: shown (verified, sure) spent $0.0011
+[U-Q] R012: shown (verified, sure) spent $0.0012
+[U-Q] R008: not shown (quote_is_instruction, sure) spent $0.0013
+[U-Q] R011: not shown (model_not_shown, sure) spent $0.0015
+[U-Q] R010: shown (verified, sure) spent $0.0016
+[U-Q] R013: shown (verified, sure) spent $0.0018
+[U-Q] R014: contradicted (verified, sure) spent $0.0019
+[U-Q] R015: contradicted (verified, sure) spent $0.0020
+[U-Q] R016: contradicted (verified, sure) spent $0.0022
+[U-Q] R018: contradicted (verified, sure) spent $0.0023
+[U-Q] R017: contradicted (verified, sure) spent $0.0024
+[U-Q] R020: contradicted (verified, sure) spent $0.0026
+[U-Q] R021: not shown (shown_citing_failure, sure) spent $0.0027
+[U-Q] R023: not shown (shown_citing_failure, sure) spent $0.0028
+[U-Q] R024: not shown (model_not_shown, sure) spent $0.0030
+[U-Q] R025: contradicted (verified, sure) spent $0.0031
+[U-Q] R028: contradicted (verified, sure) spent $0.0032
+[U-Q] R026: contradicted (verified, sure) spent $0.0034
+[U-Q] R027: not shown (model_not_shown, unsure) spent $0.0035
+[U-Q] R029: contradicted (verified, sure) spent $0.0036
+[U-Q] R030: shown (verified, sure) spent $0.0037
+[U-Q] R032: shown (verified, sure) spent $0.0039
+[U-Q] R031: not shown (model_not_shown, sure) spent $0.0040
+[U-Q] R033: shown (verified, sure) spent $0.0042
+[U-Q] R034: shown (verified, sure) spent $0.0043
+[U-Q] R035: not shown (model_not_shown, sure) spent $0.0044
+[U-Q] R019: not shown (unparseable_reply, None) spent $0.0046
+[U-Q] R036: shown (verified, sure) spent $0.0048
+[U-Q] R037: contradicted (verified, sure) spent $0.0049
+[U-Q] R022: not shown (unparseable_reply, None) spent $0.0051
+[U-Q] R038: contradicted (verified, sure) spent $0.0052
+[U-Q] R039: shown (verified, sure) spent $0.0054
+[U-Q] R040: shown (verified, sure) spent $0.0055
+[U-G] R001: not shown (model_not_shown, sure) spent $0.0056
+[U-G] R002: contradicted (verified, sure) spent $0.0057
+[U-G] R003: shown (verified, sure) spent $0.0058
+[U-G] R004: not shown (model_not_shown, sure) spent $0.0058
+[U-G] R008: not shown (quote_is_instruction, sure) spent $0.0059
+[U-G] R005: not shown (unverified_quote, sure) spent $0.0060
+[U-G] R006: shown (verified, sure) spent $0.0061
+[U-G] R009: shown (verified, sure) spent $0.0061
+[U-G] R007: not shown (model_not_shown, sure) spent $0.0062
+[U-G] R010: shown (verified, sure) spent $0.0063
+[U-G] R011: not shown (model_not_shown, sure) spent $0.0064
+[U-G] R012: shown (verified, sure) spent $0.0065
+[U-G] R013: shown (verified, sure) spent $0.0065
+[U-G] R015: not shown (model_not_shown, sure) spent $0.0066
+[U-G] R018: contradicted (verified, sure) spent $0.0066
+[U-G] R014: not shown (model_not_shown, sure) spent $0.0067
+[U-G] R016: contradicted (verified, sure) spent $0.0068
+[U-G] R019: shown (verified, sure) spent $0.0069
+[U-G] R017: contradicted (verified, sure) spent $0.0069
+[U-G] R020: contradicted (verified, sure) spent $0.0070
+[U-G] R021: not shown (shown_citing_failure, sure) spent $0.0071
+[U-G] R023: not shown (shown_citing_failure, sure) spent $0.0072
+[U-G] R024: not shown (model_not_shown, sure) spent $0.0072
+[U-G] R022: not shown (unverified_quote, sure) spent $0.0073
+[U-G] R025: contradicted (verified, sure) spent $0.0074
+[U-G] R026: contradicted (verified, sure) spent $0.0075
+[U-G] R027: not shown (model_not_shown, sure) spent $0.0075
+[U-G] R029: not shown (model_not_shown, sure) spent $0.0076
+[U-G] R028: contradicted (verified, sure) spent $0.0077
+[U-G] R031: not shown (model_not_shown, sure) spent $0.0078
+[U-G] R030: shown (verified, sure) spent $0.0078
+[U-G] R032: shown (verified, sure) spent $0.0079
+[U-G] R033: shown (verified, sure) spent $0.0080
+[U-G] R034: shown (verified, sure) spent $0.0081
+[U-G] R036: shown (verified, sure) spent $0.0081
+[U-G] R037: contradicted (verified, sure) spent $0.0082
+[U-G] R039: shown (verified, sure) spent $0.0083
+[U-G] R035: not shown (model_not_shown, sure) spent $0.0084
+[U-G] R038: contradicted (verified, sure) spent $0.0084
+[U-G] R040: shown (verified, sure) spent $0.0085
+stage 2e: 17 items to the loop
+R001: loop -> shown
+R004: loop -> contradicted
+R005: loop -> contradicted
+R007: loop -> not shown
+R008: loop -> not shown
+R011: loop -> not shown
+R014: loop -> shown
+R015: loop -> contradicted
+R019: loop -> not shown
+R021: loop -> shown
+R022: loop -> not shown
+R023: loop -> shown
+R024: loop -> not shown
+R027: loop -> contradicted
+R029: loop -> not shown
+R031: loop -> contradicted
+R035: loop -> shown
+=== replication end 2026-10-05T19:27:59Z exit 0 ===

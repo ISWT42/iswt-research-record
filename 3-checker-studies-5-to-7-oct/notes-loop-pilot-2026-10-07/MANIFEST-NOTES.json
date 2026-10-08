@@ -1,0 +1,42 @@
+{
+ "build_root": "C:/Users/joshd/Private/claims/2026-10-07-notes-loop-pilot",
+ "core_manifest_sha256": "1b19b4bbcc2782c1d2f34ca0d11191e5537360298f277c76018182170e9992ca",
+ "created_utc": "2026-10-07T12:06:29Z",
+ "files": {
+  "build/notes/filler.txt": {
+   "bytes": 3354,
+   "class": "fixed",
+   "path": "notes/filler.txt",
+   "sha256": "80ac92727a634ab2b830500e36f771dd3e9b1a63edf406b0848e1b7ad8bc656a",
+   "where": "build"
+  },
+  "build/notes/model-hand.txt": {
+   "bytes": 3534,
+   "class": "fixed",
+   "path": "notes/model-hand.txt",
+   "sha256": "0c0335a9af1867bfb088c1793e4d3678bfaf376925c8d40c936404edcff498b6",
+   "where": "build"
+  },
+  "run/digest/study-empty-digest.txt": {
+   "bytes": 14394,
+   "class": "fixed",
+   "path": "runs/pilot-1/digest/study-empty-digest.txt",
+   "sha256": "ca2de7e8c78d242823bccc766e16b42117616af897747c4ca6dd6f5288128072",
+   "where": "run"
+  },
+  "run/digest/study-empty-evidence.json": {
+   "bytes": 471,
+   "class": "fixed",
+   "path": "runs/pilot-1/digest/study-empty-evidence.json",
+   "sha256": "02a505faef7c79b2179bdf5661d5715b9957305e0c441c339fc114a0be7133b0",
+   "where": "run"
+  }
+ },
+ "kind": "notes",
+ "notes_written_after_digest": {
+  "notes/filler.txt": true,
+  "notes/model-hand.txt": true
+ },
+ "run": "pilot-1",
+ "schema": 1
+}

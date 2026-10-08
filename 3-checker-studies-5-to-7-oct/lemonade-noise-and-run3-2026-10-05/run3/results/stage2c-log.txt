@@ -1,0 +1,65 @@
+=== stage2c start 2026-10-05T18:27:52Z ===
+stage 2c: 62 calls
+[C U-Q] 202: shown (verified) spent $0.0000
+[C U-Q] 177: shown (verified) spent $0.0000
+[C U-Q] 190: not shown (model_not_shown) spent $0.0001
+[C U-Q] 197: shown (verified) spent $0.0001
+[C U-Q] 210: not shown (model_not_shown) spent $0.0001
+[C U-Q] 165: shown (verified) spent $0.0002
+[C U-Q] 180: shown (verified) spent $0.0002
+[C U-Q] 214: contradicted (verified) spent $0.0002
+[C U-Q] 241: shown (verified) spent $0.0002
+[C U-Q] 240: not shown (unverified_quote) spent $0.0003
+[C U-Q] 229: not shown (unverified_quote) spent $0.0003
+[C U-Q] 234: shown (verified) spent $0.0003
+[C U-Q] 246: not shown (model_not_shown) spent $0.0004
+[C U-Q] 245: contradicted (verified) spent $0.0004
+[C U-Q] 242: shown (verified) spent $0.0004
+[C U-Q] 264: contradicted (verified) spent $0.0004
+[C U-Q] 253: contradicted (verified) spent $0.0005
+[C U-Q] 266: contradicted (verified) spent $0.0005
+[C U-Q] 252: contradicted (verified) spent $0.0005
+[C U-Q] 282: shown (verified) spent $0.0006
+[C U-G] 167: shown (verified) spent $0.0006
+[C U-Q] 268: contradicted (verified) spent $0.0006
+[C U-G] 165: shown (verified) spent $0.0006
+[C U-Q] 280: shown (verified) spent $0.0006
+[C U-Q] 291: contradicted (verified) spent $0.0007
+[C U-G] 164: shown (verified) spent $0.0007
+[C U-G] 189: contradicted (verified) spent $0.0007
+[C U-G] 166: not shown (unverified_quote) spent $0.0008
+[C U-G] 178: not shown (unverified_quote) spent $0.0008
+[C U-G] 177: shown (verified) spent $0.0008
+[C U-G] 172: not shown (unverified_quote) spent $0.0008
+[C U-G] 173: shown (verified) spent $0.0008
+[C U-G] 240: contradicted (verified) spent $0.0009
+[C U-G] 186: not shown (unverified_quote) spent $0.0009
+[C U-G] 210: shown (verified) spent $0.0009
+[C U-G] 200: shown (verified) spent $0.0009
+[C U-G] 194: contradicted (verified) spent $0.0009
+[C U-G] 242: shown (verified) spent $0.0010
+[C U-G] 234: shown (verified) spent $0.0010
+[C U-G] 212: contradicted (verified) spent $0.0010
+[C U-G] 255: not shown (unverified_quote) spent $0.0010
+[C U-G] 252: contradicted (verified) spent $0.0010
+[C U-G] 245: not shown (unverified_quote) spent $0.0011
+[C U-G] 258: contradicted (verified) spent $0.0011
+[C U-G] 253: not shown (model_not_shown) spent $0.0011
+[C U-G] 216: shown (verified) spent $0.0011
+[C U-G] 257: contradicted (verified) spent $0.0011
+[C U-G] 259: not shown (unverified_quote) spent $0.0011
+[C U-G] 264: contradicted (verified) spent $0.0012
+[C U-G] 266: contradicted (verified) spent $0.0012
+[C U-G] 272: shown (verified) spent $0.0012
+[C U-G] 260: contradicted (verified) spent $0.0012
+[C U-G] 280: shown (verified) spent $0.0012
+[C U-G] 270: contradicted (verified) spent $0.0013
+[C U-G] 284: not shown (unverified_quote) spent $0.0013
+[C U-G] 286: contradicted (verified) spent $0.0013
+[C U-G] 291: contradicted (verified) spent $0.0013
+[C U-G] 296: contradicted (verified) spent $0.0013
+[C U-G] 293: contradicted (verified) spent $0.0014
+[C U-G] 285: contradicted (verified) spent $0.0014
+[C U-G] 295: not shown (model_not_shown) spent $0.0014
+[C U-G] 282: shown (verified) spent $0.0014
+=== stage2c end 2026-10-05T18:28:30Z exit 0 ===

@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: moonshotai/kimi-k3 (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/225147-586-openrouter-merkle-review
+[broker] tokens in/out/reasoning: 647/5347/4047; time 59013 ms; cost estimate unknown

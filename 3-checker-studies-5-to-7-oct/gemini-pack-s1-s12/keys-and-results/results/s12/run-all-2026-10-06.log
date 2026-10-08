@@ -1,0 +1,61 @@
+nohup: ignoring input
+Prepared 3360 calls for S9.
+Order written to /home/iswt42/work/gemini-pack/runs/s9/order.json
+Found 2523 existing calls (spend: $0.2987).
+Pending calls to execute: 837
+Starting S9 execution (max 4 concurrent)...
+Progress S9: 2600/3360 calls completed (spend: $0.3085, no-answer: 0).
+Progress S9: 2700/3360 calls completed (spend: $0.3204, no-answer: 0).
+Progress S9: 2800/3360 calls completed (spend: $0.3334, no-answer: 0).
+Progress S9: 2900/3360 calls completed (spend: $0.3448, no-answer: 0).
+Progress S9: 3000/3360 calls completed (spend: $0.3571, no-answer: 0).
+Progress S9: 3100/3360 calls completed (spend: $0.3693, no-answer: 0).
+Progress S9: 3200/3360 calls completed (spend: $0.3815, no-answer: 0).
+Progress S9: 3300/3360 calls completed (spend: $0.3948, no-answer: 0).
+Progress S9: 3360/3360 calls completed (spend: $0.4015, no-answer: 0).
+Execution finished. Writing MANIFEST.sha256...
+S9 run complete.
+Order written to /home/iswt42/work/gemini-pack/runs/s11/order.json
+Step 1: Running 180 pending receipt checks (out of 180)...
+Step 1 complete. Computed gates for 90 items.
+Step 2: Running 648 chains (1296 calls)...
+Progress S11: 50/648 chains (280/1476 calls) done (spend: $0.0243).
+Progress S11: 100/648 chains (380/1476 calls) done (spend: $0.0274).
+Progress S11: 150/648 chains (480/1476 calls) done (spend: $0.0305).
+Progress S11: 200/648 chains (580/1476 calls) done (spend: $0.0333).
+Progress S11: 250/648 chains (680/1476 calls) done (spend: $0.0361).
+Progress S11: 300/648 chains (780/1476 calls) done (spend: $0.0390).
+Progress S11: 350/648 chains (880/1476 calls) done (spend: $0.0416).
+Progress S11: 400/648 chains (980/1476 calls) done (spend: $0.0445).
+Progress S11: 450/648 chains (1080/1476 calls) done (spend: $0.0476).
+Progress S11: 500/648 chains (1180/1476 calls) done (spend: $0.0505).
+Progress S11: 550/648 chains (1280/1476 calls) done (spend: $0.0533).
+Progress S11: 600/648 chains (1380/1476 calls) done (spend: $0.0560).
+Progress S11: 648/648 chains (1476/1476 calls) done (spend: $0.0586).
+Writing MANIFEST.sha256...
+S11 run complete.
+Order written to /home/iswt42/work/gemini-pack/runs/s12/order.json
+Pending calls for S12: 972 out of 972
+Starting S12 execution (max 4 concurrent)...
+Progress S12: 50/972 calls completed (spend: $0.1528, no-answer: 1).
+Progress S12: 100/972 calls completed (spend: $0.2511, no-answer: 3).
+Progress S12: 150/972 calls completed (spend: $0.3715, no-answer: 3).
+Progress S12: 200/972 calls completed (spend: $0.5430, no-answer: 5).
+Progress S12: 250/972 calls completed (spend: $0.6609, no-answer: 5).
+Progress S12: 300/972 calls completed (spend: $0.7640, no-answer: 6).
+Progress S12: 350/972 calls completed (spend: $0.8740, no-answer: 7).
+Progress S12: 400/972 calls completed (spend: $1.0155, no-answer: 7).
+Progress S12: 450/972 calls completed (spend: $1.1268, no-answer: 8).
+Progress S12: 500/972 calls completed (spend: $1.2596, no-answer: 8).
+Progress S12: 550/972 calls completed (spend: $1.3824, no-answer: 8).
+Progress S12: 600/972 calls completed (spend: $1.4793, no-answer: 8).
+Progress S12: 650/972 calls completed (spend: $1.5870, no-answer: 8).
+Progress S12: 700/972 calls completed (spend: $1.7075, no-answer: 10).
+Progress S12: 750/972 calls completed (spend: $1.8179, no-answer: 10).
+Progress S12: 800/972 calls completed (spend: $1.9304, no-answer: 11).
+Progress S12: 850/972 calls completed (spend: $2.0793, no-answer: 12).
+Progress S12: 900/972 calls completed (spend: $2.2035, no-answer: 12).
+Progress S12: 950/972 calls completed (spend: $2.2871, no-answer: 13).
+Progress S12: 972/972 calls completed (spend: $2.3431, no-answer: 13).
+Writing MANIFEST.sha256...
+S12 run complete.

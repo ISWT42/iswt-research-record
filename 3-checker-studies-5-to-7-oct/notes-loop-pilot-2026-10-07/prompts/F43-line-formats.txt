@@ -1,0 +1,4 @@
+V1  <trap word> | <the sign, up to 12 words> | <what to do, up to 12 words>
+V2  <claim kind, 1 to 3 words> | <what the settling OUTPUT line looks like, up to 18 words>
+V3  <claim kind, 1 to 3 words> | <read-only command pattern, up to 12 words> | <output line to expect, up to 10 words>
+V4  <case type, up to 6 words> | <what looked true, up to 10 words> | <what settled it, up to 10 words>

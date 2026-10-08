@@ -1,0 +1,25 @@
+HEADS-r0 FreeTSA Time stamp: Oct  7 12:19:24 2026 GMT
+Submitting to remote calendar https://a.pool.opentimestamps.org
+Submitting to remote calendar https://b.pool.opentimestamps.org
+Submitting to remote calendar https://a.pool.eternitywall.com
+Submitting to remote calendar https://ots.btc.catallaxy.com
+56cabceac3aef9ba5aebfccb9a6eb0d8dbb42f61deda430732e0498e9c40e7c4 *HEADS-r0.txt
+HEADS-r1 FreeTSA Time stamp: Oct  7 12:23:46 2026 GMT
+Submitting to remote calendar https://a.pool.opentimestamps.org
+Submitting to remote calendar https://b.pool.opentimestamps.org
+Submitting to remote calendar https://a.pool.eternitywall.com
+Submitting to remote calendar https://ots.btc.catallaxy.com
+cb68c49d959e2178fc967638d2f978dbd3316db60be658a0f5ecea36f79ffb69 *HEADS-r1.txt
+HEADS-r2 FreeTSA Time stamp: Oct  7 12:26:11 2026 GMT
+Submitting to remote calendar https://a.pool.opentimestamps.org
+Submitting to remote calendar https://b.pool.opentimestamps.org
+Submitting to remote calendar https://a.pool.eternitywall.com
+Submitting to remote calendar https://ots.btc.catallaxy.com
+eeedecd271b0eb8711ba3e4a263d756d06395f8e4e44690adbb0d13637bfe00b *HEADS-r2.txt
+HEADS-r3 FreeTSA Time stamp: Oct  7 12:30:08 2026 GMT
+Submitting to remote calendar https://a.pool.opentimestamps.org
+Submitting to remote calendar https://b.pool.opentimestamps.org
+Submitting to remote calendar https://a.pool.eternitywall.com
+Submitting to remote calendar https://ots.btc.catallaxy.com
+b71ae65e0e687ad0f611b21248916e1cdbe5102efbce952d463b2b8e9c707e1b *HEADS-r3.txt
+all four heads stamped by 12:30:06 UTC

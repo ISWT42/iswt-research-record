@@ -1,0 +1,15 @@
+# S1 after round 2: 6 edits applied, 4 dropped
+# state hash 18590f33de610ae6d558be0b7b21e12e6810b8c2797c9520cde62b256b5b909b
+[V1]
+relayed_claim | information repeated by an agent | do not use as proof
+tool_failed_to_run | command returns error or timeout | do not use as proof
+[V2]
+schema change | SUCCESS line with target type
+status change | transition line showing new state
+test suite | RESULT line with failed count
+ledger posting | inspect line showing POSTED status
+[V3]
+[V4]
+# METHOD
+# METHOD
+# Prioritize identifying errors that permit incorrect claims to pass. Follow with errors that cause valid claims to be dismissed. Conclude with ambiguous instances. For each pattern, create a concise rule identifying the specific indicator and the required action. Focus rules on identifying which specific output lines constitute proof rather than the final verdict. Keep all instructions brief. Remove or modify any rule that fails to improve accuracy or causes regression. Do not duplicate existing instructions.

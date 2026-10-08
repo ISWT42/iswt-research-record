@@ -1,0 +1,12 @@
+# A1 after round 2: 6 edits applied, 3 dropped
+# state hash 35b439330dba7c1ca330852c0b4fedf28709be9bbcf66cbe2a82badbf3086fe6
+[V1]
+retry | command failed or no output | do not use as evidence
+relayed_claim | agent reports a fact | do not use as evidence
+[V2]
+schema change | SUCCESS line with target type
+status change | transition line showing new state
+test suite | RESULT line with pass/fail counts
+[V3]
+schema state | schema.show_plan | SUCCESS line with target type
+[V4]

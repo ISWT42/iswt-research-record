@@ -1,0 +1,12 @@
+# A2 after round 2: 4 edits applied, 1 dropped
+# state hash 6f2ef7477a4f892d7a8d3fa444d1f3c97043ebb0ea13e5ecde32fb1dd4ed9d8a
+[V1]
+retry | command failed or rolled back | check next step for success
+expected_error | command failed or permission denied | check next step for success
+[V2]
+resource state | output showing specific property value or empty list
+[V3]
+file properties | files.list_names or files.stat | output showing permissions or size
+[V4]
+permission failure | command failed with EPERM | check next step for success
+version mismatch | git rev-parse or tar output | output showing specific hash

@@ -1,0 +1,1202 @@
+[
+ {
+  "slot": "S001",
+  "truth": "shown",
+  "trap": "truncated",
+  "format": "pytest",
+  "name": "Susbeth",
+  "setting": "a lab-equipment scheduler"
+ },
+ {
+  "slot": "S002",
+  "truth": "shown",
+  "trap": "relayed_claim",
+  "format": "git",
+  "name": "Bamtom",
+  "setting": "a payments gateway"
+ },
+ {
+  "slot": "S003",
+  "truth": "not_shown",
+  "trap": "intermediate_signal",
+  "format": "pseudo",
+  "name": "Pordruk",
+  "setting": "an authentication service"
+ },
+ {
+  "slot": "S004",
+  "truth": "not_shown",
+  "trap": "other_environment",
+  "format": "curl_http",
+  "name": "Tixpred",
+  "setting": "a certificate renewal"
+ },
+ {
+  "slot": "S005",
+  "truth": "shown",
+  "trap": "truncated",
+  "format": "ci_log",
+  "name": "Zorstir",
+  "setting": "an internal wiki"
+ },
+ {
+  "slot": "S006",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "pytest",
+  "name": "Prikdrum",
+  "setting": "an inventory system"
+ },
+ {
+  "slot": "S007",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Vexbrus",
+  "setting": "a log-shipping agent"
+ },
+ {
+  "slot": "S008",
+  "truth": "shown",
+  "trap": "truncated",
+  "format": "npm",
+  "name": "Nortux",
+  "setting": "a payments gateway"
+ },
+ {
+  "slot": "S009",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Kexvath",
+  "setting": "a certificate renewal"
+ },
+ {
+  "slot": "S010",
+  "truth": "not_shown",
+  "trap": "other_environment",
+  "format": "kubectl",
+  "name": "Zokpux",
+  "setting": "a search index"
+ },
+ {
+  "slot": "S011",
+  "truth": "not_shown",
+  "trap": "retry",
+  "format": "pseudo",
+  "name": "Stokbith",
+  "setting": "a spreadsheet import"
+ },
+ {
+  "slot": "S012",
+  "truth": "contradicted",
+  "trap": "retry",
+  "format": "mail_api_json",
+  "name": "Volto",
+  "setting": "a nightly backup job"
+ },
+ {
+  "slot": "S013",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "kubectl",
+  "name": "Sudki",
+  "setting": "a feature-flag rollout"
+ },
+ {
+  "slot": "S014",
+  "truth": "contradicted",
+  "trap": "retry",
+  "format": "pseudo",
+  "name": "Trirbad",
+  "setting": "a documentation site"
+ },
+ {
+  "slot": "S015",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Brexmun",
+  "setting": "a translation workflow"
+ },
+ {
+  "slot": "S016",
+  "truth": "shown",
+  "trap": "retry",
+  "format": "pseudo",
+  "name": "Tokstuk",
+  "setting": "a machine-learning training job"
+ },
+ {
+  "slot": "S017",
+  "truth": "shown",
+  "trap": "none",
+  "format": "ci_log",
+  "name": "Prinlas",
+  "setting": "a package registry"
+ },
+ {
+  "slot": "S018",
+  "truth": "contradicted",
+  "trap": "other_environment",
+  "format": "pytest",
+  "name": "Krolfas",
+  "setting": "a newsletter campaign"
+ },
+ {
+  "slot": "S019",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "mail_api_json",
+  "name": "Dradzor",
+  "setting": "a monitoring dashboard"
+ },
+ {
+  "slot": "S020",
+  "truth": "shown",
+  "trap": "intermediate_signal",
+  "format": "pseudo",
+  "name": "Moxgral",
+  "setting": "a calendar-sync tool"
+ },
+ {
+  "slot": "S021",
+  "truth": "shown",
+  "trap": "tool_failed_to_run",
+  "format": "npm",
+  "name": "Dimtrin",
+  "setting": "a log-shipping agent"
+ },
+ {
+  "slot": "S022",
+  "truth": "not_shown",
+  "trap": "relayed_claim",
+  "format": "kubectl",
+  "name": "Melgrud",
+  "setting": "a build farm"
+ },
+ {
+  "slot": "S023",
+  "truth": "not_shown",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Brisdon",
+  "setting": "a translation workflow"
+ },
+ {
+  "slot": "S024",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "curl_http",
+  "name": "Tikdrex",
+  "setting": "a newsletter campaign"
+ },
+ {
+  "slot": "S025",
+  "truth": "contradicted",
+  "trap": "other_environment",
+  "format": "kubectl",
+  "name": "Trethgor",
+  "setting": "a mobile app release"
+ },
+ {
+  "slot": "S026",
+  "truth": "contradicted",
+  "trap": "tool_failed_to_run",
+  "format": "ci_log",
+  "name": "Velboth",
+  "setting": "a documentation site"
+ },
+ {
+  "slot": "S027",
+  "truth": "shown",
+  "trap": "intermediate_signal",
+  "format": "pseudo",
+  "name": "Puthpil",
+  "setting": "a data pipeline"
+ },
+ {
+  "slot": "S028",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "git",
+  "name": "Lersoth",
+  "setting": "a game-server patch"
+ },
+ {
+  "slot": "S029",
+  "truth": "not_shown",
+  "trap": "example_text",
+  "format": "git",
+  "name": "Ferlud",
+  "setting": "a game-server patch"
+ },
+ {
+  "slot": "S030",
+  "truth": "shown",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Lexdem",
+  "setting": "an inventory system"
+ },
+ {
+  "slot": "S031",
+  "truth": "shown",
+  "trap": "relayed_claim",
+  "format": "mail_api_json",
+  "name": "Rixbral",
+  "setting": "a cache layer"
+ },
+ {
+  "slot": "S032",
+  "truth": "shown",
+  "trap": "expected_error",
+  "format": "git",
+  "name": "Vunfo",
+  "setting": "a build farm"
+ },
+ {
+  "slot": "S033",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Rinfex",
+  "setting": "a thumbnail service"
+ },
+ {
+  "slot": "S034",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Rarkuth",
+  "setting": "an internal wiki"
+ },
+ {
+  "slot": "S035",
+  "truth": "not_shown",
+  "trap": "relayed_claim",
+  "format": "pseudo",
+  "name": "Rixtin",
+  "setting": "a cache layer"
+ },
+ {
+  "slot": "S036",
+  "truth": "contradicted",
+  "trap": "injected_text",
+  "format": "pseudo",
+  "name": "Texzud",
+  "setting": "a documentation site"
+ },
+ {
+  "slot": "S037",
+  "truth": "shown",
+  "trap": "other_environment",
+  "format": "git",
+  "name": "Sendik",
+  "setting": "a build farm"
+ },
+ {
+  "slot": "S038",
+  "truth": "shown",
+  "trap": "expected_error",
+  "format": "git",
+  "name": "Granrim",
+  "setting": "a machine-learning training job"
+ },
+ {
+  "slot": "S039",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "ci_log",
+  "name": "Stalmor",
+  "setting": "a lab-equipment scheduler"
+ },
+ {
+  "slot": "S040",
+  "truth": "contradicted",
+  "trap": "tool_failed_to_run",
+  "format": "kubectl",
+  "name": "Kuthbrir",
+  "setting": "a search index"
+ },
+ {
+  "slot": "S041",
+  "truth": "contradicted",
+  "trap": "expected_error",
+  "format": "pseudo",
+  "name": "Trethmil",
+  "setting": "a lab-equipment scheduler"
+ },
+ {
+  "slot": "S042",
+  "truth": "contradicted",
+  "trap": "relayed_claim",
+  "format": "kubectl",
+  "name": "Trakkus",
+  "setting": "an authentication service"
+ },
+ {
+  "slot": "S043",
+  "truth": "shown",
+  "trap": "example_text",
+  "format": "pseudo",
+  "name": "Dredbrad",
+  "setting": "a build farm"
+ },
+ {
+  "slot": "S044",
+  "truth": "contradicted",
+  "trap": "retry",
+  "format": "chat_api_json",
+  "name": "Duthgrun",
+  "setting": "a game-server patch"
+ },
+ {
+  "slot": "S045",
+  "truth": "not_shown",
+  "trap": "retry",
+  "format": "pytest",
+  "name": "Kesfu",
+  "setting": "a data pipeline"
+ },
+ {
+  "slot": "S046",
+  "truth": "contradicted",
+  "trap": "tool_failed_to_run",
+  "format": "npm",
+  "name": "Drethfim",
+  "setting": "a spreadsheet import"
+ },
+ {
+  "slot": "S047",
+  "truth": "not_shown",
+  "trap": "truncated",
+  "format": "mail_api_json",
+  "name": "Kelfan",
+  "setting": "a spreadsheet import"
+ },
+ {
+  "slot": "S048",
+  "truth": "not_shown",
+  "trap": "intermediate_signal",
+  "format": "curl_http",
+  "name": "Kurprim",
+  "setting": "a database migration"
+ },
+ {
+  "slot": "S049",
+  "truth": "contradicted",
+  "trap": "injected_text",
+  "format": "pytest",
+  "name": "Staskror",
+  "setting": "a metrics exporter"
+ },
+ {
+  "slot": "S050",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Gemlor",
+  "setting": "a cache layer"
+ },
+ {
+  "slot": "S051",
+  "truth": "shown",
+  "trap": "none",
+  "format": "curl_http",
+  "name": "Trurgrer",
+  "setting": "a monitoring dashboard"
+ },
+ {
+  "slot": "S052",
+  "truth": "shown",
+  "trap": "tool_failed_to_run",
+  "format": "mail_api_json",
+  "name": "Trothgrud",
+  "setting": "a mobile app release"
+ },
+ {
+  "slot": "S053",
+  "truth": "shown",
+  "trap": "tool_failed_to_run",
+  "format": "pseudo",
+  "name": "Tornan",
+  "setting": "a metrics exporter"
+ },
+ {
+  "slot": "S054",
+  "truth": "shown",
+  "trap": "example_text",
+  "format": "pseudo",
+  "name": "Raxtok",
+  "setting": "a payments gateway"
+ },
+ {
+  "slot": "S055",
+  "truth": "not_shown",
+  "trap": "expected_error",
+  "format": "pseudo",
+  "name": "Brirtros",
+  "setting": "a customer-support queue"
+ },
+ {
+  "slot": "S056",
+  "truth": "not_shown",
+  "trap": "truncated",
+  "format": "chat_api_json",
+  "name": "Dilsto",
+  "setting": "a customer-support queue"
+ },
+ {
+  "slot": "S057",
+  "truth": "shown",
+  "trap": "expected_error",
+  "format": "mail_api_json",
+  "name": "Todtrol",
+  "setting": "a newsletter campaign"
+ },
+ {
+  "slot": "S058",
+  "truth": "shown",
+  "trap": "injected_text",
+  "format": "curl_http",
+  "name": "Brisron",
+  "setting": "a cache layer"
+ },
+ {
+  "slot": "S059",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Krulkos",
+  "setting": "a newsletter campaign"
+ },
+ {
+  "slot": "S060",
+  "truth": "contradicted",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Zinbron",
+  "setting": "a log-shipping agent"
+ },
+ {
+  "slot": "S061",
+  "truth": "not_shown",
+  "trap": "injected_text",
+  "format": "kubectl",
+  "name": "Sadprom",
+  "setting": "a database migration"
+ },
+ {
+  "slot": "S062",
+  "truth": "contradicted",
+  "trap": "truncated",
+  "format": "chat_api_json",
+  "name": "Sokkro",
+  "setting": "a package registry"
+ },
+ {
+  "slot": "S063",
+  "truth": "contradicted",
+  "trap": "example_text",
+  "format": "pseudo",
+  "name": "Kirran",
+  "setting": "a mobile app release"
+ },
+ {
+  "slot": "S064",
+  "truth": "shown",
+  "trap": "narration",
+  "format": "curl_http",
+  "name": "Dodbix",
+  "setting": "a package registry"
+ },
+ {
+  "slot": "S065",
+  "truth": "contradicted",
+  "trap": "relayed_claim",
+  "format": "pytest",
+  "name": "Mamprix",
+  "setting": "a lab-equipment scheduler"
+ },
+ {
+  "slot": "S066",
+  "truth": "contradicted",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Nulbruk",
+  "setting": "a database migration"
+ },
+ {
+  "slot": "S067",
+  "truth": "contradicted",
+  "trap": "intermediate_signal",
+  "format": "npm",
+  "name": "Grodgek",
+  "setting": "a certificate renewal"
+ },
+ {
+  "slot": "S068",
+  "truth": "contradicted",
+  "trap": "truncated",
+  "format": "ci_log",
+  "name": "Trosgres",
+  "setting": "a customer-records export"
+ },
+ {
+  "slot": "S069",
+  "truth": "not_shown",
+  "trap": "retry",
+  "format": "curl_http",
+  "name": "Bolsur",
+  "setting": "an internal wiki"
+ },
+ {
+  "slot": "S070",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Sadrith",
+  "setting": "a DNS change"
+ },
+ {
+  "slot": "S071",
+  "truth": "contradicted",
+  "trap": "intermediate_signal",
+  "format": "pytest",
+  "name": "Brusvim",
+  "setting": "a mobile app release"
+ },
+ {
+  "slot": "S072",
+  "truth": "shown",
+  "trap": "other_environment",
+  "format": "curl_http",
+  "name": "Stalkrox",
+  "setting": "a calendar-sync tool"
+ },
+ {
+  "slot": "S073",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "chat_api_json",
+  "name": "Prixnun",
+  "setting": "a log-shipping agent"
+ },
+ {
+  "slot": "S074",
+  "truth": "contradicted",
+  "trap": "injected_text",
+  "format": "chat_api_json",
+  "name": "Malrox",
+  "setting": "a nightly backup job"
+ },
+ {
+  "slot": "S075",
+  "truth": "not_shown",
+  "trap": "expected_error",
+  "format": "curl_http",
+  "name": "Buthmon",
+  "setting": "a payments gateway"
+ },
+ {
+  "slot": "S076",
+  "truth": "not_shown",
+  "trap": "example_text",
+  "format": "git",
+  "name": "Gessel",
+  "setting": "a feature-flag rollout"
+ },
+ {
+  "slot": "S077",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Droxroth",
+  "setting": "a thumbnail service"
+ },
+ {
+  "slot": "S078",
+  "truth": "not_shown",
+  "trap": "tool_failed_to_run",
+  "format": "pseudo",
+  "name": "Dulgen",
+  "setting": "a customer-records export"
+ },
+ {
+  "slot": "S079",
+  "truth": "not_shown",
+  "trap": "truncated",
+  "format": "chat_api_json",
+  "name": "Vukzer",
+  "setting": "a customer-records export"
+ },
+ {
+  "slot": "S080",
+  "truth": "contradicted",
+  "trap": "truncated",
+  "format": "kubectl",
+  "name": "Prirkath",
+  "setting": "a game-server patch"
+ },
+ {
+  "slot": "S081",
+  "truth": "shown",
+  "trap": "none",
+  "format": "mail_api_json",
+  "name": "Trelnoth",
+  "setting": "a lab-equipment scheduler"
+ },
+ {
+  "slot": "S082",
+  "truth": "shown",
+  "trap": "tool_failed_to_run",
+  "format": "npm",
+  "name": "Varprok",
+  "setting": "a nightly backup job"
+ },
+ {
+  "slot": "S083",
+  "truth": "shown",
+  "trap": "intermediate_signal",
+  "format": "npm",
+  "name": "Nathfe",
+  "setting": "a nightly backup job"
+ },
+ {
+  "slot": "S084",
+  "truth": "contradicted",
+  "trap": "tool_failed_to_run",
+  "format": "kubectl",
+  "name": "Pirnox",
+  "setting": "an invoicing service"
+ },
+ {
+  "slot": "S085",
+  "truth": "contradicted",
+  "trap": "other_environment",
+  "format": "chat_api_json",
+  "name": "Larbrid",
+  "setting": "a certificate renewal"
+ },
+ {
+  "slot": "S086",
+  "truth": "contradicted",
+  "trap": "truncated",
+  "format": "mail_api_json",
+  "name": "Treksak",
+  "setting": "a metrics exporter"
+ },
+ {
+  "slot": "S087",
+  "truth": "shown",
+  "trap": "relayed_claim",
+  "format": "kubectl",
+  "name": "Kithnil",
+  "setting": "a calendar-sync tool"
+ },
+ {
+  "slot": "S088",
+  "truth": "contradicted",
+  "trap": "intermediate_signal",
+  "format": "pseudo",
+  "name": "Baskrud",
+  "setting": "a customer-support queue"
+ },
+ {
+  "slot": "S089",
+  "truth": "not_shown",
+  "trap": "other_environment",
+  "format": "kubectl",
+  "name": "Momred",
+  "setting": "a feature-flag rollout"
+ },
+ {
+  "slot": "S090",
+  "truth": "contradicted",
+  "trap": "example_text",
+  "format": "ci_log",
+  "name": "Kromkur",
+  "setting": "a mobile app release"
+ },
+ {
+  "slot": "S091",
+  "truth": "contradicted",
+  "trap": "relayed_claim",
+  "format": "ci_log",
+  "name": "Fithdol",
+  "setting": "a translation workflow"
+ },
+ {
+  "slot": "S092",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "git",
+  "name": "Gintim",
+  "setting": "an inventory system"
+ },
+ {
+  "slot": "S093",
+  "truth": "not_shown",
+  "trap": "injected_text",
+  "format": "pytest",
+  "name": "Trasfol",
+  "setting": "an authentication service"
+ },
+ {
+  "slot": "S094",
+  "truth": "not_shown",
+  "trap": "relayed_claim",
+  "format": "chat_api_json",
+  "name": "Bednal",
+  "setting": "a log-shipping agent"
+ },
+ {
+  "slot": "S095",
+  "truth": "shown",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Trontin",
+  "setting": "a DNS change"
+ },
+ {
+  "slot": "S096",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "git",
+  "name": "Nusdod",
+  "setting": "a data pipeline"
+ },
+ {
+  "slot": "S097",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Duthvoth",
+  "setting": "a package registry"
+ },
+ {
+  "slot": "S098",
+  "truth": "contradicted",
+  "trap": "injected_text",
+  "format": "pseudo",
+  "name": "Zekmex",
+  "setting": "an internal wiki"
+ },
+ {
+  "slot": "S099",
+  "truth": "shown",
+  "trap": "example_text",
+  "format": "npm",
+  "name": "Vedpur",
+  "setting": "a DNS change"
+ },
+ {
+  "slot": "S100",
+  "truth": "shown",
+  "trap": "relayed_claim",
+  "format": "git",
+  "name": "Dralfis",
+  "setting": "an invoicing service"
+ },
+ {
+  "slot": "S101",
+  "truth": "not_shown",
+  "trap": "tool_failed_to_run",
+  "format": "ci_log",
+  "name": "Grilne",
+  "setting": "an inventory system"
+ },
+ {
+  "slot": "S102",
+  "truth": "shown",
+  "trap": "other_environment",
+  "format": "curl_http",
+  "name": "Roxmin",
+  "setting": "a documentation site"
+ },
+ {
+  "slot": "S103",
+  "truth": "not_shown",
+  "trap": "narration",
+  "format": "curl_http",
+  "name": "Stirvoth",
+  "setting": "a database migration"
+ },
+ {
+  "slot": "S104",
+  "truth": "not_shown",
+  "trap": "tool_failed_to_run",
+  "format": "pytest",
+  "name": "Fasfan",
+  "setting": "a spreadsheet import"
+ },
+ {
+  "slot": "S105",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "mail_api_json",
+  "name": "Tusfath",
+  "setting": "a metrics exporter"
+ },
+ {
+  "slot": "S106",
+  "truth": "shown",
+  "trap": "other_environment",
+  "format": "npm",
+  "name": "Dridked",
+  "setting": "a documentation site"
+ },
+ {
+  "slot": "S107",
+  "truth": "not_shown",
+  "trap": "example_text",
+  "format": "pseudo",
+  "name": "Brumleth",
+  "setting": "a package registry"
+ },
+ {
+  "slot": "S108",
+  "truth": "not_shown",
+  "trap": "tool_failed_to_run",
+  "format": "kubectl",
+  "name": "Tithkral",
+  "setting": "an invoicing service"
+ },
+ {
+  "slot": "S109",
+  "truth": "contradicted",
+  "trap": "retry",
+  "format": "pseudo",
+  "name": "Bethdan",
+  "setting": "a data pipeline"
+ },
+ {
+  "slot": "S110",
+  "truth": "shown",
+  "trap": "intermediate_signal",
+  "format": "npm",
+  "name": "Stiddes",
+  "setting": "a nightly backup job"
+ },
+ {
+  "slot": "S111",
+  "truth": "contradicted",
+  "trap": "intermediate_signal",
+  "format": "git",
+  "name": "Zodgom",
+  "setting": "a database migration"
+ },
+ {
+  "slot": "S112",
+  "truth": "contradicted",
+  "trap": "expected_error",
+  "format": "npm",
+  "name": "Puthlud",
+  "setting": "a translation workflow"
+ },
+ {
+  "slot": "S113",
+  "truth": "not_shown",
+  "trap": "example_text",
+  "format": "pseudo",
+  "name": "Rordas",
+  "setting": "a customer-records export"
+ },
+ {
+  "slot": "S114",
+  "truth": "not_shown",
+  "trap": "truncated",
+  "format": "mail_api_json",
+  "name": "Trumbron",
+  "setting": "a spreadsheet import"
+ },
+ {
+  "slot": "S115",
+  "truth": "not_shown",
+  "trap": "intermediate_signal",
+  "format": "npm",
+  "name": "Naldrod",
+  "setting": "an invoicing service"
+ },
+ {
+  "slot": "S116",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Podtrur",
+  "setting": "a monitoring dashboard"
+ },
+ {
+  "slot": "S117",
+  "truth": "contradicted",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Dalmuk",
+  "setting": "a search index"
+ },
+ {
+  "slot": "S118",
+  "truth": "not_shown",
+  "trap": "narration",
+  "format": "ci_log",
+  "name": "Ganlal",
+  "setting": "a feature-flag rollout"
+ },
+ {
+  "slot": "S119",
+  "truth": "shown",
+  "trap": "example_text",
+  "format": "mail_api_json",
+  "name": "Fempru",
+  "setting": "a data pipeline"
+ },
+ {
+  "slot": "S120",
+  "truth": "shown",
+  "trap": "injected_text",
+  "format": "pseudo",
+  "name": "Nakmon",
+  "setting": "a customer-support queue"
+ },
+ {
+  "slot": "S121",
+  "truth": "contradicted",
+  "trap": "narration",
+  "format": "ci_log",
+  "name": "Kralsto",
+  "setting": "a calendar-sync tool"
+ },
+ {
+  "slot": "S122",
+  "truth": "not_shown",
+  "trap": "expected_error",
+  "format": "pytest",
+  "name": "Buthdol",
+  "setting": "a machine-learning training job"
+ },
+ {
+  "slot": "S123",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Trinmu",
+  "setting": "a certificate renewal"
+ },
+ {
+  "slot": "S124",
+  "truth": "not_shown",
+  "trap": "injected_text",
+  "format": "pseudo",
+  "name": "Gradfal",
+  "setting": "a thumbnail service"
+ },
+ {
+  "slot": "S125",
+  "truth": "shown",
+  "trap": "retry",
+  "format": "npm",
+  "name": "Rukgith",
+  "setting": "a cache layer"
+ },
+ {
+  "slot": "S126",
+  "truth": "contradicted",
+  "trap": "expected_error",
+  "format": "chat_api_json",
+  "name": "Suthnak",
+  "setting": "a customer-support queue"
+ },
+ {
+  "slot": "S127",
+  "truth": "shown",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Kudgrun",
+  "setting": "a feature-flag rollout"
+ },
+ {
+  "slot": "S128",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "curl_http",
+  "name": "Grospix",
+  "setting": "an invoicing service"
+ },
+ {
+  "slot": "S129",
+  "truth": "shown",
+  "trap": "retry",
+  "format": "pseudo",
+  "name": "Desbras",
+  "setting": "a game-server patch"
+ },
+ {
+  "slot": "S130",
+  "truth": "not_shown",
+  "trap": "injected_text",
+  "format": "chat_api_json",
+  "name": "Krelbox",
+  "setting": "an authentication service"
+ },
+ {
+  "slot": "S131",
+  "truth": "contradicted",
+  "trap": "relayed_claim",
+  "format": "pseudo",
+  "name": "Drolfex",
+  "setting": "a monitoring dashboard"
+ },
+ {
+  "slot": "S132",
+  "truth": "contradicted",
+  "trap": "other_environment",
+  "format": "pseudo",
+  "name": "Dethprik",
+  "setting": "an internal wiki"
+ },
+ {
+  "slot": "S133",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "pseudo",
+  "name": "Zolpul",
+  "setting": "a DNS change"
+ },
+ {
+  "slot": "S134",
+  "truth": "contradicted",
+  "trap": "example_text",
+  "format": "pseudo",
+  "name": "Zomkrer",
+  "setting": "a translation workflow"
+ },
+ {
+  "slot": "S135",
+  "truth": "contradicted",
+  "trap": "none",
+  "format": "ci_log",
+  "name": "Nixprath",
+  "setting": "a build farm"
+ },
+ {
+  "slot": "S136",
+  "truth": "shown",
+  "trap": "expected_error",
+  "format": "pseudo",
+  "name": "Laxgil",
+  "setting": "a search index"
+ },
+ {
+  "slot": "S137",
+  "truth": "not_shown",
+  "trap": "none",
+  "format": "chat_api_json",
+  "name": "Stasdres",
+  "setting": "a search index"
+ },
+ {
+  "slot": "S138",
+  "truth": "contradicted",
+  "trap": "example_text",
+  "format": "kubectl",
+  "name": "Nurfos",
+  "setting": "an authentication service"
+ },
+ {
+  "slot": "S139",
+  "truth": "contradicted",
+  "trap": "expected_error",
+  "format": "mail_api_json",
+  "name": "Polzu",
+  "setting": "a customer-records export"
+ },
+ {
+  "slot": "S140",
+  "truth": "shown",
+  "trap": "retry",
+  "format": "git",
+  "name": "Kemkam",
+  "setting": "a thumbnail service"
+ },
+ {
+  "slot": "S141",
+  "truth": "shown",
+  "trap": "injected_text",
+  "format": "chat_api_json",
+  "name": "Pemduk",
+  "setting": "a calendar-sync tool"
+ },
+ {
+  "slot": "S142",
+  "truth": "not_shown",
+  "trap": "relayed_claim",
+  "format": "npm",
+  "name": "Desgrek",
+  "setting": "a machine-learning training job"
+ },
+ {
+  "slot": "S143",
+  "truth": "shown",
+  "trap": "truncated",
+  "format": "pseudo",
+  "name": "Purbra",
+  "setting": "a monitoring dashboard"
+ },
+ {
+  "slot": "S144",
+  "truth": "shown",
+  "trap": "narration",
+  "format": "pseudo",
+  "name": "Didlax",
+  "setting": "a metrics exporter"
+ },
+ {
+  "slot": "S145",
+  "truth": "not_shown",
+  "trap": "retry",
+  "format": "git",
+  "name": "Torstim",
+  "setting": "a machine-learning training job"
+ },
+ {
+  "slot": "S146",
+  "truth": "not_shown",
+  "trap": "expected_error",
+  "format": "pseudo",
+  "name": "Tuknod",
+  "setting": "a thumbnail service"
+ },
+ {
+  "slot": "S147",
+  "truth": "shown",
+  "trap": "injected_text",
+  "format": "pytest",
+  "name": "Vithdith",
+  "setting": "a newsletter campaign"
+ },
+ {
+  "slot": "S148",
+  "truth": "not_shown",
+  "trap": "narration",
+  "format": "ci_log",
+  "name": "Vimmom",
+  "setting": "an inventory system"
+ },
+ {
+  "slot": "S149",
+  "truth": "not_shown",
+  "trap": "other_environment",
+  "format": "pytest",
+  "name": "Gruthbed",
+  "setting": "a payments gateway"
+ },
+ {
+  "slot": "S150",
+  "truth": "not_shown",
+  "trap": "intermediate_signal",
+  "format": "pytest",
+  "name": "Bumtus",
+  "setting": "a DNS change"
+ }
+]

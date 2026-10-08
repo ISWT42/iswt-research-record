@@ -1,0 +1,14 @@
+# S2 after round 2: 3 edits applied, 1 dropped
+# state hash 9053a60c9088f6717fdfaf267050527865c5eb570b05608e2cdb8d9d0982faca
+[V1]
+retry | command failed or rolled back | check next step for success
+[V2]
+resource state | output showing specific property value or empty list
+version mismatch | output showing different hash or commit than claim
+[V3]
+file existence | files.stat or files.list | path: NOT_FOUND
+[V4]
+diagnostic logs | log message shows success | claim is not proven
+# METHOD
+# METHOD
+# Start with errors that permit false claims, then errors that reject true claims, then undecidable cases. For each group, write one rule identifying the specific indicator and the required action. Prioritize rules identifying which output lines constitute evidence over rules regarding the final answer. Keep every line brief. Delete or reword lines that fail to improve accuracy or cause regressions. Do not repeat existing rules.

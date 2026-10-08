@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: google/gemini-3.8-flash:online (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/153818-500-openrouter-panel-two-blocks
+[broker] tokens in/out/reasoning: 565/4326/2254; time 35481 ms; cost estimate unknown

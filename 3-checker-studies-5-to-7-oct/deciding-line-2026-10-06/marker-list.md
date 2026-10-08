@@ -1,0 +1,35 @@
+- `tests.count_result` (case-insensitive): `\b\d+\s+(?:passed|failed|failing|passing|errors?|skipped|xfailed|xpassed)\b`
+- `tests.status_token_capitals` (case-sensitive): `\b(?:PASSED|FAILED|PASS|FAIL|ERROR|ERRORS|SKIPPED|XFAIL|XPASS)\b`
+- `tests.status_word` (case-insensitive): `\b(?:passed|failed|passing|failing)\b`
+- `tests.unittest_ran` (case-sensitive): `\bRan\s+\d+\s+tests?\b`
+- `tests.ok_token` (case-sensitive): `\bOK\b`
+- `tests.runner_summary` (case-insensitive): `\bTests?\s+run:\s*\d+|\btest result:\s*\w+|\bTest\s+Suites?:\s*\d+|\bTests:\s+\d+`
+- `tests.go_ok_line` (case-insensitive): `^\s*ok\s+\S+\s+(?:\(cached\)|[\d.]+s)`
+- `tests.check_or_cross_mark` (case-sensitive): `[\u2713\u2714\u2717\u2718\u2715\u2705\u274C\u2611\u2612]`
+- `exit.exit_code_phrase` (case-insensitive): `\bexit(?:ed)?(?:\s+with)?(?:\s+(?:code|status))?\s*[:=]?\s*-?\d+\b`
+- `exit.exit_code_field` (case-insensitive): `\b(?:exit_?code|exit_?status|return_?code|returncode|rc)[\"']?\s*[:=]\s*-?\d+\b`
+- `git.ref_arrow` (case-sensitive): `->`
+- `git.bracket_tag` (case-insensitive): `\[(?:new branch|new tag|new ref|rejected|up to date|deleted|forced update|remote rejected|tag update)\]`
+- `git.up_to_date` (case-insensitive): `\b(?:everything up-to-date|already up[ -]to[ -]date)\b`
+- `git.hash_range` (case-sensitive): `\b[0-9a-f]{7,40}\.\.\.?[0-9a-f]{7,40}\b`
+- `git.commit_line` (case-sensitive): `\[[\w./#-]+(?:\s+\(root-commit\))?\s+[0-9a-f]{7,40}\]`
+- `git.merge_and_diffstat_words` (case-insensitive): `\bfast-forward\b|\bmerge made by\b|\bautomatic merge failed\b|\bmerge conflict\b|\bCONFLICT\s*\(|\bnothing to commit\b|\bfiles? changed\b|\b(?:create|delete) mode\b`
+- `http.status_line` (case-insensitive): `\bHTTP/\d(?:\.\d)?\s+\d{3}\b`
+- `http.status_code_with_reason` (case-insensitive): `\b(?:200\s+OK|201\s+Created|202\s+Accepted|204\s+No\s+Content|30[1-8]\s+[A-Z][a-z]+|400\s+Bad\s+Request|401\s+Unauthorized|403\s+Forbidden|404\s+Not\s+Found|405\s+Method\s+Not\s+Allowed|408\s+Request\s+Timeout|409\s+Conflict|410\s+Gone|422\s+Unprocessable|429\s+Too\s+Many\s+Requests|500\s+Internal\s+Server\s+Error|501\s+Not\s+Implemented|502\s+Bad\s+Gateway|503\s+Service\s+Unavailable|504\s+Gateway\s+Time-?out)\b`
+- `http.status_code_field` (case-insensitive): `\b(?:status|status_?code|statusCode|http_?status|response_?code|code)[\"']?\s*[:=]\s*[\"']?[1-5]\d\d\b`
+- `api.status_text_field` (case-insensitive): `\b(?:status|state|result|outcome|conclusion|phase)[\"']?\s*[:=]\s*[\"']?[A-Za-z]`
+- `api.boolean_result_field` (case-insensitive): `\b(?:ok|success|succeeded|accepted|delivered|sent|created|deleted|updated|published|merged|error|failed)[\"']?\s*[:=]\s*(?:true|false)\b`
+- `api.error_field` (case-insensitive): `[\"']\s*(?:error|errors|error_?code|error_?message)\s*[\"']\s*:`
+- `api.message_receipt_id` (case-insensitive): `\b(?:message_?id|msg_?id|messageId)\b|[\"']ts[\"']\s*:\s*[\"']?\d`
+- `status.success_words` (case-insensitive): `\b(?:success|successful|successfully|succeeded|succeeds)\b`
+- `status.failure_words` (case-insensitive): `\b(?:fail|fails|failed|failing|failure|failures|errors?|errored|exception|traceback|fatal|denied|refused|rejected|aborted|cancell?ed|timed\s*out|timeout|unauthorized|forbidden|not\s+found|crash(?:ed)?|killed)\b`
+- `status.completion_words` (case-insensitive): `\b(?:done|complete|completed|finished|healthy|approved|resolved)\b`
+- `status.up_to_date_words` (case-insensitive): `\bup to date\b|\bno changes\b|\bnothing to (?:do|update)\b|\balready (?:exists|installed|applied|satisfied)\b`
+- `message.delivery_words` (case-insensitive): `\b(?:sent|delivered|bounced|accepted|posted|replied|forwarded)\b`
+- `confirm.change_verbs` (case-insensitive): `\b(?:created|deleted|removed|updated|deployed|published|released|uploaded|installed|uninstalled|applied|configured|unchanged|scaled|restarted|saved|written|committed|pushed|merged|tagged|built|migrated|renamed|moved|copied|archived|restored|revoked|enabled|disabled|registered|submitted|assigned|closed|reopened|patched|reverted|imported|exported|generated|provisioned|destroyed|terminated|added|changed|replaced|inserted|affected|processed|synced|synchronized|rolled\s+out|rolled\s+back)\b`
+- `confirm.kubectl_pod_status_row` (case-sensitive): `\b\d+/\d+\s+(?:Running|Pending|CrashLoopBackOff|ImagePullBackOff|ErrImagePull|Terminating|Evicted|OOMKilled|Completed|Succeeded|Failed|NotReady|Error)\b`
+- `confirm.kubectl_failure_states` (case-sensitive): `\b(?:CrashLoopBackOff|ImagePullBackOff|ErrImagePull|OOMKilled|Evicted)\b`
+- `confirm.rollout_and_wait` (case-insensitive): `\bsuccessfully rolled out\b|\bcondition met\b`
+- `confirm.package_manager_counts` (case-insensitive): `\b(?:added|removed|changed|audited)\s+\d+\s+packages?\b|\bfound\s+\d+\s+vulnerabilit(?:y|ies)\b|\bnpm\s+ERR!`
+- `confirm.docker_acks` (case-insensitive): `\bdigest:\s*sha256:[0-9a-f]{8,}|\bpull complete\b|\blogin succeeded\b|\blayer already exists\b`
+- `confirm.terraform_summaries` (case-insensitive): `\bapply complete!|\bdestroy complete!|\bplan:\s*\d+\s+to\s+add|\bresources:\s*\d+\s+added`

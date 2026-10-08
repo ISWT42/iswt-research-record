@@ -1,0 +1,844 @@
+{
+ "broker_dir": "C:/Users/joshd/Desktop/Moonshots/ai-broker",
+ "broker_git": {
+  "dirty": [
+   "broker.config.json",
+   "smoke/confidential.txt"
+  ],
+  "head": "36404b676aed6f125348b50eb15ca08fa7dfbb99"
+ },
+ "build_root": "C:/Users/joshd/Private/claims/2026-10-07-notes-loop-pilot",
+ "counts": {
+  "fixed": 83,
+  "recorded": 29
+ },
+ "created_utc": "2026-10-07T12:01:59Z",
+ "files": {
+  "broker/broker.config.json": {
+   "bytes": 1484,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/broker.config.json",
+   "projection": {
+    "endpoints.openrouter": "https://openrouter.ai/api/v1",
+    "keyEnv.openrouter": "OPENROUTER_API_KEY",
+    "timeoutMs": 5400000
+   },
+   "projection_name": "broker-config",
+   "sha256": "e873bc1ed8393474ff074391accf7ba05c796a36ea2ddf998b670d72a5942862",
+   "where": "broker"
+  },
+  "broker/broker.mjs": {
+   "bytes": 11805,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/broker.mjs",
+   "sha256": "d0834b8abb1113ee649e823a3925867b7fe755fcdbff08e421a8149a9e50ee0d",
+   "where": "broker"
+  },
+  "broker/confidential-markers.txt": {
+   "bytes": 390,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/confidential-markers.txt",
+   "sha256": "db446500f2fca41f6c1125522bb281c51b577ae872ebdb9e5f42d0988f348128",
+   "where": "broker"
+  },
+  "broker/lib/chainlog.mjs": {
+   "bytes": 4753,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/chainlog.mjs",
+   "sha256": "944b114f2c134da56fc08d1a9380597233521d3eaf5aef0f2512316bc7305696",
+   "where": "broker"
+  },
+  "broker/lib/config.mjs": {
+   "bytes": 1832,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/config.mjs",
+   "sha256": "a82343db986f267567e9d82c4c1aa6f073fc78781f3223753dc08bbd4c1bae30",
+   "where": "broker"
+  },
+  "broker/lib/conformity.mjs": {
+   "bytes": 1667,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/conformity.mjs",
+   "sha256": "903743a38691b6d8cd2f9eb5b1ca2cbbcff6cea6955b9eef87f3bbeb46a06e79",
+   "where": "broker"
+  },
+  "broker/lib/decide.mjs": {
+   "bytes": 10799,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/decide.mjs",
+   "sha256": "4d57fb534e87177bf132450ddff59686cf7f6350c2db8fe3795caaa0ab776332",
+   "where": "broker"
+  },
+  "broker/lib/gate.mjs": {
+   "bytes": 2199,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/gate.mjs",
+   "sha256": "a6da06214c5ebc20eb1230c0883c142ae302019ef29b189cd836ff7deb762bdf",
+   "where": "broker"
+  },
+  "broker/lib/keystore.mjs": {
+   "bytes": 2388,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/keystore.mjs",
+   "sha256": "83b64b8356a8c4a6c11852dd1b2ee61ac13553978f5ad6b7374be682326b9163",
+   "where": "broker"
+  },
+  "broker/lib/ledger.mjs": {
+   "bytes": 15039,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/ledger.mjs",
+   "sha256": "aa97a8f8e40ec932ba2e34c46a90a4f26e2bedcdcc1f721bb63d50fd1ef274e9",
+   "where": "broker"
+  },
+  "broker/lib/modelinfo.mjs": {
+   "bytes": 10920,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/modelinfo.mjs",
+   "sha256": "16023544f2768bbe5ea076232b52437eeec5bd8850073cfa2043ab75ff68bf38",
+   "where": "broker"
+  },
+  "broker/lib/names.mjs": {
+   "bytes": 4479,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/names.mjs",
+   "sha256": "3b7eedd5e08fce4ed1816fe9530a12a228c25b949f586c5e754f6d71f7e33c02",
+   "where": "broker"
+  },
+  "broker/lib/notes.mjs": {
+   "bytes": 5435,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/notes.mjs",
+   "sha256": "558716515ec09c6b923110016a3bcfa49c1bc988687af148b7bd87d1509977d2",
+   "where": "broker"
+  },
+  "broker/lib/providers/antigravity.mjs": {
+   "bytes": 8913,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/antigravity.mjs",
+   "sha256": "9d6f3194b4a96968ad9010dfe20482d5d65db3179828c5b97e590aa3949b5bbf",
+   "where": "broker"
+  },
+  "broker/lib/providers/claude.mjs": {
+   "bytes": 6826,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/claude.mjs",
+   "sha256": "aaf01d9af854957723b8a6a86ace8e0bfbd71b89d575d88ce54264eb7beced18",
+   "where": "broker"
+  },
+  "broker/lib/providers/codex.mjs": {
+   "bytes": 5376,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/codex.mjs",
+   "sha256": "d5614e256d356382c6251a62472ce97d1ea44069389069343b5d114f57f28979",
+   "where": "broker"
+  },
+  "broker/lib/providers/deepseek.mjs": {
+   "bytes": 3778,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/deepseek.mjs",
+   "sha256": "d36af688ac6d868544ec8a1573f857e610f5ac3239760b992b098bb018b5e069",
+   "where": "broker"
+  },
+  "broker/lib/providers/gemini.mjs": {
+   "bytes": 4664,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/gemini.mjs",
+   "sha256": "7fb2b4b67866beccfac88462d6123bdd2621ca0340f74de9405d362249f576b3",
+   "where": "broker"
+  },
+  "broker/lib/providers/index.mjs": {
+   "bytes": 1398,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/index.mjs",
+   "sha256": "a9bc82bfd9390b6b07ed53d8d5da62f42be9da432b8444c7ee1f3633d85b72ad",
+   "where": "broker"
+  },
+  "broker/lib/providers/mock.mjs": {
+   "bytes": 3488,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/mock.mjs",
+   "sha256": "7c0af37ca918e92f7cd7448c462858859d0faf7312cd389b9d0ae6e0a9a45a33",
+   "where": "broker"
+  },
+  "broker/lib/providers/openrouter-decisions.mjs": {
+   "bytes": 10164,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/openrouter-decisions.mjs",
+   "sha256": "86e665ef24cd3ea0e6eb31347809a08d7750b8baae78fe87b5717eff53f7b83d",
+   "where": "broker"
+  },
+  "broker/lib/providers/openrouter-plain-long.mjs": {
+   "bytes": 2680,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/openrouter-plain-long.mjs",
+   "sha256": "23831354fcf4a3f8aac1036d45d5489914e472b41166d4a1c57cbd428f657ab2",
+   "where": "broker"
+  },
+  "broker/lib/providers/openrouter-plain.mjs": {
+   "bytes": 4041,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/openrouter-plain.mjs",
+   "sha256": "a79ccd8760d1a3b39cc676e314e7df6595ce525403d14079128fe13c8070e2e9",
+   "where": "broker"
+  },
+  "broker/lib/providers/openrouter.mjs": {
+   "bytes": 5204,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/openrouter.mjs",
+   "sha256": "483c0078730956185d1feb7d9248415e442600050fa496b22028d53b8bb9de13",
+   "where": "broker"
+  },
+  "broker/lib/providers/util.mjs": {
+   "bytes": 4284,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/providers/util.mjs",
+   "sha256": "05deebbb2a675a20d65bf93cb80395e0396bc4805ef8cc39987f95a76dee2090",
+   "where": "broker"
+  },
+  "broker/lib/run.mjs": {
+   "bytes": 9992,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/run.mjs",
+   "sha256": "1c9b3649f091de09f1b99d2e0c0ee5fc0c1371fd5ad3d79c24184a77e94514e9",
+   "where": "broker"
+  },
+  "broker/lib/scrub.mjs": {
+   "bytes": 4611,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/scrub.mjs",
+   "sha256": "15267427feadfd090aa8ac3d2921cbb0c7ed68227caa5a407c51d0e814de5326",
+   "where": "broker"
+  },
+  "broker/lib/server.mjs": {
+   "bytes": 14258,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/server.mjs",
+   "sha256": "da6dee983ea37473c4913b511b8ee58400d289cb45543b5cab9e1f430acbd2a7",
+   "where": "broker"
+  },
+  "broker/lib/thread.mjs": {
+   "bytes": 15096,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/thread.mjs",
+   "sha256": "faa045edc9068a7f151ea3b149560c495cf0a757aae270b3ec54d8bce457372d",
+   "where": "broker"
+  },
+  "broker/lib/viewer/app.css": {
+   "bytes": 11242,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/viewer/app.css",
+   "sha256": "d6552aa55e87526bcd0f4671c30baae7de5612009c5d655b439eb62338d64b78",
+   "where": "broker"
+  },
+  "broker/lib/viewer/app.js": {
+   "bytes": 12432,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/viewer/app.js",
+   "sha256": "84701464a4c4ff3052847bfadf48bd895208a8119f006422cb881645b1c634db",
+   "where": "broker"
+  },
+  "broker/lib/viewer/fold.js": {
+   "bytes": 2409,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/viewer/fold.js",
+   "sha256": "9d3822bf234bd11f4a8101a34f599d7bc8095666ba55672af5e7bba93450a6a8",
+   "where": "broker"
+  },
+  "broker/lib/viewer/index.html": {
+   "bytes": 2384,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/viewer/index.html",
+   "sha256": "0eee2ff5d5d2fd837b13863ff7d425f2e3dccaaf11609e13e107df171af7883e",
+   "where": "broker"
+  },
+  "broker/lib/viewer/threads.js": {
+   "bytes": 20638,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/lib/viewer/threads.js",
+   "sha256": "54702f15d8240a1eceb425904ffcc667c465339cac1a555a5e92807e68982fbb",
+   "where": "broker"
+  },
+  "broker/package.json": {
+   "bytes": 411,
+   "class": "recorded",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/package.json",
+   "sha256": "7eda064cade53f427b413e107c1c2626b0a85aa7672d5a1fa43a1591dc8b0552",
+   "where": "broker"
+  },
+  "broker/prices.json": {
+   "bytes": 1572,
+   "class": "recorded",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/prices.json",
+   "sha256": "07a1eb5a23d924e800f3af6ea37a1ea7e9fa2a915e82bbce3f1140f9d0004194",
+   "where": "broker"
+  },
+  "broker/providers.json": {
+   "bytes": 7163,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Desktop/Moonshots/ai-broker/providers.json",
+   "projection": {
+    "openrouter-plain": {
+     "api": {
+      "checked": "2026-10-05 (copied from openrouter, checked 2026-09-28)",
+      "note": "The openrouter adapter with plain settings (reasoning off, temperature 0, seed 42, max_tokens 400), added 5 Oct 2026. Same service and the same data_collection = \"deny\" as openrouter, so the same terms: OpenRouter itself does not store prompts unless you opt in (logging, or 'OpenRouter use of inputs/outputs'; both off by default). But requests are passed to an upstream provider whose policy varies, and some may train. The broker always sends provider.data_collection = \"deny\" (documented at https://openrouter.ai/docs/guides/routing/provider-selection: 'use only providers which do not collect user data'). You may set this to false after confirming your OpenRouter privacy settings are off.",
+      "source": "https://openrouter.ai/docs/guides/privacy/data-collection",
+      "trainsOnInputs": "unknown"
+     }
+    },
+    "openrouter-plain-long": {
+     "api": {
+      "checked": "2026-10-07 (copied from openrouter-plain, whose terms were copied from openrouter, checked 2026-09-28)",
+      "note": "The openrouter-plain adapter with max_tokens 1200 instead of 400 (all other settings identical), added 7 Oct 2026 for the notes-loop pilot's improver calls. Same service and the same data_collection = \"deny\" as openrouter, so the same terms: OpenRouter itself does not store prompts unless you opt in (logging, or 'OpenRouter use of inputs/outputs'; both off by default). But requests are passed to an upstream provider whose policy varies, and some may train. The broker always sends provider.data_collection = \"deny\" (documented at https://openrouter.ai/docs/guides/routing/provider-selection: 'use only providers which do not collect user data'). You may set this to false after confirming your OpenRouter privacy settings are off.",
+      "source": "https://openrouter.ai/docs/guides/privacy/data-collection",
+      "trainsOnInputs": "unknown"
+     }
+    }
+   },
+   "projection_name": "providers-terms",
+   "sha256": "9e41eac280999ac17dea5357314d31b28b85c98ab4da3f412ceb77cd571bbc2e",
+   "where": "broker"
+  },
+  "build/.gitattributes": {
+   "bytes": 8,
+   "class": "fixed",
+   "path": ".gitattributes",
+   "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+   "where": "build"
+  },
+  "build/.gitignore": {
+   "bytes": 156,
+   "class": "recorded",
+   "path": ".gitignore",
+   "sha256": "f6df8473b214090d682298073ecbe90f1c69edbdecf406d4833d7f31c6e6ec96",
+   "where": "build"
+  },
+  "build/PILOT.md": {
+   "bytes": 33431,
+   "class": "recorded",
+   "path": "PILOT.md",
+   "sha256": "ab35fb2e74e3f24f91eafe0b19e09e07b1b333abc2df35bc9d447868e29ef43d",
+   "where": "build"
+  },
+  "build/data/pilot-blocks.json": {
+   "bytes": 7659,
+   "class": "fixed",
+   "path": "data/pilot-blocks.json",
+   "sha256": "c25785b3c2e24c658a8c6a6e64dbdd2cc405d058ffa87d45bb26f10464242165",
+   "where": "build"
+  },
+  "build/notesloop/__init__.py": {
+   "bytes": 347,
+   "class": "fixed",
+   "path": "notesloop/__init__.py",
+   "sha256": "e371ed8fb232b7ee07a8f31326cbdb2556e3a63cbcfb242f38c3296425fc8286",
+   "where": "build"
+  },
+  "build/notesloop/audit.py": {
+   "bytes": 1891,
+   "class": "fixed",
+   "path": "notesloop/audit.py",
+   "sha256": "e22fe036aaabc9a3cfeb45b870f01998387ba3c8815994e722547fd74329d5e8",
+   "where": "build"
+  },
+  "build/notesloop/bank.py": {
+   "bytes": 7646,
+   "class": "fixed",
+   "path": "notesloop/bank.py",
+   "sha256": "390186fb585364e700aaa52b262395ffb6a7e658840e764da2bb1fb38061b71e",
+   "where": "build"
+  },
+  "build/notesloop/chain.py": {
+   "bytes": 8691,
+   "class": "fixed",
+   "path": "notesloop/chain.py",
+   "sha256": "48c156e7711318b25209c440167a9b719ed3e6fb9024bf45cc147af8a0965c16",
+   "where": "build"
+  },
+  "build/notesloop/chart.py": {
+   "bytes": 12423,
+   "class": "fixed",
+   "path": "notesloop/chart.py",
+   "sha256": "be305f7e7a13345238d532595565958935b9c2f870a9e64d00f60e747d9da510",
+   "where": "build"
+  },
+  "build/notesloop/cli.py": {
+   "bytes": 9792,
+   "class": "fixed",
+   "path": "notesloop/cli.py",
+   "sha256": "e915b067dcf6d86a62bbe88df554b182afe31f2872d26e5ade053084d8f0bf9a",
+   "where": "build"
+  },
+  "build/notesloop/commands.py": {
+   "bytes": 23155,
+   "class": "fixed",
+   "path": "notesloop/commands.py",
+   "sha256": "8631cd442bbef98308dc3d14641c66fa0dcc1f3cdace7a8dc29f951be039feb8",
+   "where": "build"
+  },
+  "build/notesloop/config.py": {
+   "bytes": 9051,
+   "class": "fixed",
+   "path": "notesloop/config.py",
+   "sha256": "ce3c7dd0ca579629fdc48367b8f1ee703cf276dbdfec16368a827ccd70685e68",
+   "where": "build"
+  },
+  "build/notesloop/counts.py": {
+   "bytes": 4205,
+   "class": "fixed",
+   "path": "notesloop/counts.py",
+   "sha256": "590fdd0ea335ec550feaa728df783252eaea2b2b34c4858d92d959f762c1f4ef",
+   "where": "build"
+  },
+  "build/notesloop/gate.py": {
+   "bytes": 2412,
+   "class": "fixed",
+   "path": "notesloop/gate.py",
+   "sha256": "81d431917769eb570095b0b593b1f947ea6391922010c2ed2b65e13136ced684",
+   "where": "build"
+  },
+  "build/notesloop/improver.py": {
+   "bytes": 4345,
+   "class": "fixed",
+   "path": "notesloop/improver.py",
+   "sha256": "a95cc81d9421ffac6c67890c5ce9e13242229d4eba22fca82f30b2414f1c1659",
+   "where": "build"
+  },
+  "build/notesloop/instrument.py": {
+   "bytes": 5417,
+   "class": "fixed",
+   "path": "notesloop/instrument.py",
+   "sha256": "c44156faa7bfc40402b56b735536271ea5ae315d30a42b6743e3723d1c399fb1",
+   "where": "build"
+  },
+  "build/notesloop/manifest.py": {
+   "bytes": 24685,
+   "class": "fixed",
+   "path": "notesloop/manifest.py",
+   "sha256": "35153d89b91f04dd3604bb717b1e0be993a2b6bd1e511363d682093c86a03a1a",
+   "where": "build"
+  },
+  "build/notesloop/notes.py": {
+   "bytes": 2334,
+   "class": "fixed",
+   "path": "notesloop/notes.py",
+   "sha256": "495b6d610d5e29c33ac5deecd0286a20a05c49f6438b2c9878c4d6aa1e6de35f",
+   "where": "build"
+  },
+  "build/notesloop/orphans.py": {
+   "bytes": 13332,
+   "class": "fixed",
+   "path": "notesloop/orphans.py",
+   "sha256": "98f94265db169f11925db6ae3b6fc2df420679cac6ed207491090de66dff79ae",
+   "where": "build"
+  },
+  "build/notesloop/phase_a.py": {
+   "bytes": 6238,
+   "class": "fixed",
+   "path": "notesloop/phase_a.py",
+   "sha256": "16c5e62ba79c69c6b9d1a3e3a13ff13a537363893434b594a0e2d4acb2dad7e3",
+   "where": "build"
+  },
+  "build/notesloop/phase_b.py": {
+   "bytes": 23703,
+   "class": "fixed",
+   "path": "notesloop/phase_b.py",
+   "sha256": "862cfa9bcd5a62d04a35493b53af10c0b7f969677e5fcdec2481960704a88530",
+   "where": "build"
+  },
+  "build/notesloop/plan.py": {
+   "bytes": 2143,
+   "class": "fixed",
+   "path": "notesloop/plan.py",
+   "sha256": "b3813b51b86269d8822b5425a9f69343ff994a1c2fe9eaba0de20331e44ffd2f",
+   "where": "build"
+  },
+  "build/notesloop/preflight.py": {
+   "bytes": 18185,
+   "class": "fixed",
+   "path": "notesloop/preflight.py",
+   "sha256": "bb02c7d6ca22f1aa251376b168d39b7ce65cde54aef8d28a625b86fccedeae45",
+   "where": "build"
+  },
+  "build/notesloop/probe.py": {
+   "bytes": 9439,
+   "class": "fixed",
+   "path": "notesloop/probe.py",
+   "sha256": "94e250abf3d40c5b5d8c48e0a08f2085e97596f2ac2de8e7cff44aa036932ee2",
+   "where": "build"
+  },
+  "build/notesloop/prompts.py": {
+   "bytes": 10767,
+   "class": "fixed",
+   "path": "notesloop/prompts.py",
+   "sha256": "cf0f9105c8d22580c391046c451d694e6622de0c951ccd70c2e9ab4017da2396",
+   "where": "build"
+  },
+  "build/notesloop/provider.py": {
+   "bytes": 19593,
+   "class": "fixed",
+   "path": "notesloop/provider.py",
+   "sha256": "6e6e5031a2c8cb3d1122bb695ef9ed25ed25d5f2921d0e4f653c57337346aa27",
+   "where": "build"
+  },
+  "build/notesloop/reader.py": {
+   "bytes": 25081,
+   "class": "fixed",
+   "path": "notesloop/reader.py",
+   "sealed_sha256": "458b0c77ea98ea359ea5945ae8caf02be07b63c0899568d91304b2eb9f0d9a49",
+   "sha256": "458b0c77ea98ea359ea5945ae8caf02be07b63c0899568d91304b2eb9f0d9a49",
+   "where": "build"
+  },
+  "build/notesloop/results.py": {
+   "bytes": 41358,
+   "class": "fixed",
+   "path": "notesloop/results.py",
+   "sha256": "99decbf75ec470f4bfaf83345de840774983f54e522f9043929913361a7b2a5b",
+   "where": "build"
+  },
+  "build/notesloop/runner.py": {
+   "bytes": 19890,
+   "class": "fixed",
+   "path": "notesloop/runner.py",
+   "sha256": "ec7874a1e9dc0ff5af4933a8c36bfd07b0dfea9091db39fe0db9dbe1f7d67d08",
+   "where": "build"
+  },
+  "build/notesloop/runs.py": {
+   "bytes": 19353,
+   "class": "fixed",
+   "path": "notesloop/runs.py",
+   "sha256": "8f00c836a09b65fddd1eb226924e7c718ab12320e0ab9069566e026d8b693a65",
+   "where": "build"
+  },
+  "build/notesloop/samples.py": {
+   "bytes": 1025,
+   "class": "fixed",
+   "path": "notesloop/samples.py",
+   "sha256": "22db47b5384e95885daede777b1ec740fd61e973167fa4808bba918730561b45",
+   "where": "build"
+  },
+  "build/notesloop/smoke.py": {
+   "bytes": 10398,
+   "class": "fixed",
+   "path": "notesloop/smoke.py",
+   "sha256": "6904447cd5440906fcd5ee53fd26940bd49aa7e242fbc19615e1a46779147edc",
+   "where": "build"
+  },
+  "build/notesloop/stats.py": {
+   "bytes": 5916,
+   "class": "fixed",
+   "path": "notesloop/stats.py",
+   "sha256": "4d390598c22afe3fabbc2bff77089835fe20596f414898eac674c2e630b39a0f",
+   "where": "build"
+  },
+  "build/notesloop/textutil.py": {
+   "bytes": 3004,
+   "class": "fixed",
+   "path": "notesloop/textutil.py",
+   "sha256": "aeb94d106131f3a4c1f468ccb066cafa60a9c55757e129ff18d78a09b45552c9",
+   "where": "build"
+  },
+  "build/notesloop/validators.py": {
+   "bytes": 15787,
+   "class": "fixed",
+   "path": "notesloop/validators.py",
+   "sha256": "f341d589d20d13717fdf12c74dd3b38281f5590b407b43b9573a89e646a600f8",
+   "where": "build"
+  },
+  "build/patches/E1-NOTE.md": {
+   "bytes": 3690,
+   "class": "recorded",
+   "path": "patches/E1-NOTE.md",
+   "sha256": "8a734484dc80ff19392b0c36f7c470d6260a4e2821bfb15e23bf69e045b8b54d",
+   "where": "build"
+  },
+  "build/patches/E1-openrouter-plain-long.patch": {
+   "bytes": 9258,
+   "class": "recorded",
+   "path": "patches/E1-openrouter-plain-long.patch",
+   "sha256": "679ec71b3dcdd4f57dfff6974a9ae5fea985c55e033a016c52d82b5801f9f8d5",
+   "where": "build"
+  },
+  "build/pilot.py": {
+   "bytes": 226,
+   "class": "fixed",
+   "path": "pilot.py",
+   "sha256": "74c808d3ee853453dd8c0adb23b8309c645c95d28a185072775673fbbb82aa50",
+   "where": "build"
+  },
+  "build/prompts/A1-variable-block.txt": {
+   "bytes": 359,
+   "class": "fixed",
+   "path": "prompts/A1-variable-block.txt",
+   "sha256": "d3d2e254b6b0613fb99e68ef39c1a625fbf1fadcbfe48bc176f22f29a1592480",
+   "where": "build"
+  },
+  "build/prompts/A2-formats-and-limits.txt": {
+   "bytes": 1476,
+   "class": "fixed",
+   "path": "prompts/A2-formats-and-limits.txt",
+   "sha256": "ee0f846d9be3a98c49b82824eafc0fc75e8e2bc5fd267d83abf4ecd25ac0e5ec",
+   "where": "build"
+  },
+  "build/prompts/A2-improver-header.txt": {
+   "bytes": 1080,
+   "class": "fixed",
+   "path": "prompts/A2-improver-header.txt",
+   "sha256": "93b28731d27910f3e0a8e3f88a67a5e6b7618e1cc2e00287b9b1cdad090593c9",
+   "where": "build"
+  },
+  "build/prompts/A3-method-seed.txt": {
+   "bytes": 504,
+   "class": "fixed",
+   "path": "prompts/A3-method-seed.txt",
+   "sha256": "8fb95904663028d489947bc1bf4465877a63088a2310b98d42bb34bcee74b81a",
+   "where": "build"
+  },
+  "build/prompts/A5-method-rewrite.txt": {
+   "bytes": 502,
+   "class": "fixed",
+   "path": "prompts/A5-method-rewrite.txt",
+   "sha256": "8fc36c62e21367b079c53dbe33397ad41d7295e3a5c38d60fe0501681e5c6e2f",
+   "where": "build"
+  },
+  "build/prompts/CERTAINTY.txt": {
+   "bytes": 439,
+   "class": "fixed",
+   "path": "prompts/CERTAINTY.txt",
+   "sha256": "a2153f3fa39628c018bfde14f6fed9e68a73999036449e2edcfb9b7aacee9971",
+   "where": "build"
+  },
+  "build/prompts/F43-line-formats.txt": {
+   "bytes": 390,
+   "class": "fixed",
+   "path": "prompts/F43-line-formats.txt",
+   "sha256": "58222119d21ade0c8fa0a4ec7c7caab028f31bdd132d1517bb8bc95617f10517",
+   "where": "build"
+  },
+  "build/prompts/UNSAFE-pattern.txt": {
+   "bytes": 177,
+   "class": "fixed",
+   "path": "prompts/UNSAFE-pattern.txt",
+   "sha256": "af2bf69a701cfb1f4008f94ace33a3fb47b103223cb8a49018568f90a2a4a4ca",
+   "where": "build"
+  },
+  "build/tests/__init__.py": {
+   "bytes": 952,
+   "class": "recorded",
+   "path": "tests/__init__.py",
+   "sha256": "85c2ec64fda9b7c79b53d938ec08e4cae0987830cc916ec37812bd1b8468a5e2",
+   "where": "build"
+  },
+  "build/tests/helpers.py": {
+   "bytes": 4891,
+   "class": "recorded",
+   "path": "tests/helpers.py",
+   "sha256": "d755aab136af0db53c2cee0b076402b1322d7cd978332fbf72019c0b53bada6d",
+   "where": "build"
+  },
+  "build/tests/test_bank_evidence.py": {
+   "bytes": 9915,
+   "class": "recorded",
+   "path": "tests/test_bank_evidence.py",
+   "sha256": "dc1b994619303e7565e58afdbf052c1db9f5c53d67b6091a2ca9c72d5ee015f7",
+   "where": "build"
+  },
+  "build/tests/test_broker.py": {
+   "bytes": 14968,
+   "class": "recorded",
+   "path": "tests/test_broker.py",
+   "sha256": "311d73560f768d75f6a67ed466429e00aae06a4400286a1876913c8f7393f936",
+   "where": "build"
+  },
+  "build/tests/test_cli.py": {
+   "bytes": 33714,
+   "class": "recorded",
+   "path": "tests/test_cli.py",
+   "sha256": "8674cdac2902fcf7dbe3db5da48304c73e69d72685bc3aee877093bc0ec1952a",
+   "where": "build"
+  },
+  "build/tests/test_dress.py": {
+   "bytes": 9123,
+   "class": "recorded",
+   "path": "tests/test_dress.py",
+   "sha256": "5a1c558d5f84b501b88dfe884f3f1866a8d85b531bcd72931493e9bad23c0147",
+   "where": "build"
+  },
+  "build/tests/test_e3_every_prompt.py": {
+   "bytes": 11817,
+   "class": "recorded",
+   "path": "tests/test_e3_every_prompt.py",
+   "sha256": "f158f6c5a057f7d84455107558eec01e9c08f5def367245a8d88000cfd25e603",
+   "where": "build"
+  },
+  "build/tests/test_inputs.py": {
+   "bytes": 12293,
+   "class": "recorded",
+   "path": "tests/test_inputs.py",
+   "sha256": "db78d2cf7c8955880bc9598738fde038d2b66ddd6261d3697535088093b32334",
+   "where": "build"
+  },
+  "build/tests/test_instrument.py": {
+   "bytes": 7378,
+   "class": "recorded",
+   "path": "tests/test_instrument.py",
+   "sha256": "c3f0a8a899ff158205096a5b967ee75241f6bf6a931075056dfd960a433d3d27",
+   "where": "build"
+  },
+  "build/tests/test_ops.py": {
+   "bytes": 38440,
+   "class": "recorded",
+   "path": "tests/test_ops.py",
+   "sha256": "9d0523c345d515c4a5489a9ef12a4fe80d0b6f414dff2bee36d2542a004759f1",
+   "where": "build"
+  },
+  "build/tests/test_phase_a.py": {
+   "bytes": 9268,
+   "class": "recorded",
+   "path": "tests/test_phase_a.py",
+   "sha256": "be3b977e02bae1d40409accd449c163832d3c84aed2ccca4adc28f7044832fae",
+   "where": "build"
+  },
+  "build/tests/test_phase_b.py": {
+   "bytes": 31846,
+   "class": "recorded",
+   "path": "tests/test_phase_b.py",
+   "sha256": "960affb3c61e9e495b5d0c1e9e384e91024bfc43afe18f2793680c75f5ae6dd9",
+   "where": "build"
+  },
+  "build/tests/test_prompts.py": {
+   "bytes": 13741,
+   "class": "recorded",
+   "path": "tests/test_prompts.py",
+   "sha256": "3c0e80d048b5a7d2a7e33209063d961074b7002f1d46792d5f533c03e2bf6573",
+   "where": "build"
+  },
+  "build/tests/test_rerun_matrix.py": {
+   "bytes": 9517,
+   "class": "recorded",
+   "path": "tests/test_rerun_matrix.py",
+   "sha256": "ef76e8247248a2b9c838c86af896b2d20cb7b4061031a49291349d951cd41548",
+   "where": "build"
+  },
+  "build/tests/test_results.py": {
+   "bytes": 20868,
+   "class": "recorded",
+   "path": "tests/test_results.py",
+   "sha256": "1a37266873f26f831c9f8eddc636acdcdcd2e47d7cf43f632c5148ad74577bc5",
+   "where": "build"
+  },
+  "build/tests/test_results_rules.py": {
+   "bytes": 24708,
+   "class": "recorded",
+   "path": "tests/test_results_rules.py",
+   "sha256": "d9ecb5b587295f6b9ab7e7356df3bd6e8f9401124961de9c90365032e888cf18",
+   "where": "build"
+  },
+  "build/tests/test_runner.py": {
+   "bytes": 28305,
+   "class": "recorded",
+   "path": "tests/test_runner.py",
+   "sha256": "5841ef4009dc2c79f9db7681566bdd77aeeb05a283abce700bc90c7ba495c9e9",
+   "where": "build"
+  },
+  "build/tests/test_runs.py": {
+   "bytes": 12737,
+   "class": "recorded",
+   "path": "tests/test_runs.py",
+   "sha256": "8b5b764e43cdd22c9201e6172f2c29724d3b4dcb20e2fc4ac624ef62ac6465fc",
+   "where": "build"
+  },
+  "build/tests/test_seal.py": {
+   "bytes": 29763,
+   "class": "recorded",
+   "path": "tests/test_seal.py",
+   "sha256": "272c1c5754c9137031086ddd5d2db9ad33b3d5b4fcb507add10e3ee710a20b73",
+   "where": "build"
+  },
+  "build/tests/test_second_review.py": {
+   "bytes": 66612,
+   "class": "recorded",
+   "path": "tests/test_second_review.py",
+   "sha256": "76a370dcd74645364d98c6c4061793646778356fbf89f50b01999830a329aa4d",
+   "where": "build"
+  },
+  "build/tests/test_stats.py": {
+   "bytes": 5789,
+   "class": "recorded",
+   "path": "tests/test_stats.py",
+   "sha256": "412a2a19b10c9be53301aef14682af733971bb5c6822623a497e3a2244777f74",
+   "where": "build"
+  },
+  "build/tests/test_validators.py": {
+   "bytes": 19962,
+   "class": "recorded",
+   "path": "tests/test_validators.py",
+   "sha256": "f3a700909b7761809711f1e4eca82058a44eff6563bdd77a577a897ff2ca3d00",
+   "where": "build"
+  },
+  "external/RSI-ONE-SESSION-PLAN-2026-10-05.md": {
+   "bytes": 91060,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Private/ClaudeHandoff/specs/RSI-ONE-SESSION-PLAN-2026-10-05.md",
+   "sealed_sha256": "28e53159e5f56f3f0ee580c6552e691e16ce799ec182732dedf8384fe951761e",
+   "sha256": "28e53159e5f56f3f0ee580c6552e691e16ce799ec182732dedf8384fe951761e",
+   "where": "external"
+  },
+  "external/RSI-ONE-SESSION-PLAN-ADDENDUM-1-2026-10-05.md": {
+   "bytes": 2260,
+   "class": "recorded",
+   "path": "C:/Users/joshd/Private/ClaudeHandoff/specs/RSI-ONE-SESSION-PLAN-ADDENDUM-1-2026-10-05.md",
+   "sha256": "62d042ab318410f94a1d23be9eca7cda1c9f74e6e5baee2a69534a1e86057621",
+   "where": "external"
+  },
+  "external/completion-claims-001-300.jsonl": {
+   "bytes": 296149,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Workbench/chatgpt-review-2026-10-04/completion-claims-001-300.jsonl",
+   "sealed_sha256": "edb897f7b6d7df41a14eb37e4f6079ade036dabdec6d140d82dec6147199593a",
+   "sha256": "edb897f7b6d7df41a14eb37e4f6079ade036dabdec6d140d82dec6147199593a",
+   "where": "external"
+  },
+  "external/reader.py": {
+   "bytes": 25081,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Workbench/chain-local-2026-10-06/vendor/receipt_pair/reader.py",
+   "sealed_sha256": "458b0c77ea98ea359ea5945ae8caf02be07b63c0899568d91304b2eb9f0d9a49",
+   "sha256": "458b0c77ea98ea359ea5945ae8caf02be07b63c0899568d91304b2eb9f0d9a49",
+   "where": "external"
+  },
+  "external/receipts_model.py": {
+   "bytes": 46689,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Workbench/swarm-receipts-public/receipts_model.py",
+   "sealed_sha256": "b0842ecd738554719443269a93665d0e8045c3244a20587e0455b82568169942",
+   "sha256": "b0842ecd738554719443269a93665d0e8045c3244a20587e0455b82568169942",
+   "where": "external"
+  },
+  "external/run3.py": {
+   "bytes": 10134,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Workbench/lemonade-entry-2026-10-05/run3/run3.py",
+   "sealed_sha256": "5a4d47b4f8e1ca44fdc5af3b462f914753fc17fe5a55cadf2bc1682f5a90aa33",
+   "sha256": "5a4d47b4f8e1ca44fdc5af3b462f914753fc17fe5a55cadf2bc1682f5a90aa33",
+   "where": "external"
+  },
+  "external/unanimous-disagreements.json": {
+   "bytes": 217,
+   "class": "fixed",
+   "path": "C:/Users/joshd/Workbench/lemonade-entry-2026-10-05/results/unanimous-disagreements.json",
+   "sealed_sha256": "08971403dbadd95a31f88d77b19a9d0a6206bf66b72170b44d2dc8d13f4974e1",
+   "sha256": "08971403dbadd95a31f88d77b19a9d0a6206bf66b72170b44d2dc8d13f4974e1",
+   "where": "external"
+  }
+ },
+ "git": {
+  "dirty": [],
+  "head": "be30a44bf8ee05ab2bf7b38479e4652737b6ae16"
+ },
+ "kind": "core",
+ "node": "v26.7.0",
+ "python": "3.14.7",
+ "schema": 1,
+ "wire_newline": "LF",
+ "with_externals": true
+}

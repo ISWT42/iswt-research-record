@@ -1,0 +1,36 @@
+{
+  "kind": "kit-spec-v1-document-verification/1",
+  "created_at": "2026-10-04T22:10:48.512691+00:00",
+  "status": "DOCUMENT_QA_PASS",
+  "kit_build": "NOT_RUN",
+  "reference_tests": "NOT_RUN",
+  "model_evaluations": "NOT_RUN",
+  "real_logs_accessed": false,
+  "network_used": false,
+  "enrollment_performed": false,
+  "outside_contacts": false,
+  "redactor_line": "PAUSED_UNCHANGED",
+  "prior_manifested_files_unchanged": 208,
+  "prior_v3_archive_hash_matches": true,
+  "prior_v3_manifest_matches_archive": true,
+  "reference_before_after_bindings_unchanged": 7,
+  "cited_source_bindings_unchanged": 8,
+  "spec_word_count": 1288,
+  "closed_schema_and_fixed_array_lengths_checked": true,
+  "normative_arithmetic_document_checks": "PASS; no model or result validator implementation executed",
+  "challenge_domain_bytes_verified": "6f66666c696e652d6576616c756174696f6e2d6b69742f76310a",
+  "gate4_status": "NOT_DESIGNED_OR_SEALED_PER_USER; NO_PASS_CLAIMED",
+  "release_values": "UNASSIGNED_BLOCK_REAL_USE_AND_EXPORT",
+  "broken_relative_links": [],
+  "independent_document_review": {
+    "role": "separate design reviewer",
+    "not_an_implementation_audit": true,
+    "findings_resolved": [
+      "explicit donor-checker cell formulas",
+      "donor-signer equality and reviewer exception",
+      "assigned spot checks cannot be replaced with zeros",
+      "either donor or reviewer cant_tell means unverifiable"
+    ]
+  },
+  "scope_limit": "Local document integrity and consistency checks only; not a build, WebAuthn compatibility test, calibration run, gate pass or external timestamp seal."
+}

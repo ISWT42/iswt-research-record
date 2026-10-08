@@ -1,0 +1,5 @@
+Joshua Bauer (ISWT42), 5 October 2026, in chat at about 2026-10-05T00:15:08Z:
+"That's why I have felt very confident for a little while that I haven't stumbled on the actual solution that everyone in the entire world is looking for"
+
+Context: said right after the fake-memory discussion (test T24): a model can be made to believe it checked when it didn't, so the proof has to live outside the model, in records it can't write, and every checker must first catch planted fakes. Written exactly as typed.
+This stamp proves when this text existed, nothing more.

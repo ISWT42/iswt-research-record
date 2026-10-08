@@ -1,0 +1,23 @@
+seal verified: every sealed file has its sealed hash
+items in file 300 | items analysed 160 | answer records 480 (duplicate arm-id: 0) | arms ['A', 'B']
+truth {'contradicted': 53, 'not shown': 53, 'shown': 54} | traps {'-': 160}
+anomalies none | evidence flags on R2 'shown' none
+
+R2 ('shown needs both') answers 'shown' on 68 items {'contradicted': 4, 'not shown': 17, 'shown': 47}
+  R2                             false shown  21/106  true shown kept  47/54   right 108/160
+  SAME-LINE [named]              false shown  17/106  true shown kept  40/54   right 104/160  removes 11 (false 4, true 7)
+  OUTCOME-MARKER [named]         false shown  15/106  true shown kept  19/54   right  85/160  removes 34 (false 6, true 28)
+  NON-SETTLING-2 [PRIMARY]       false shown   6/106  true shown kept  42/54   right 114/160  removes 20 (false 15, true 5)
+  SAME-LINE-STRICT [variant]     false shown  15/106  true shown kept  38/54   right 104/160  removes 15 (false 6, true 9)
+  SAME-LINE-CONTAINED [variant]  false shown  17/106  true shown kept  40/54   right 104/160  removes 11 (false 4, true 7)
+  OUTCOME-MARKER-BOTH [variant]  false shown  12/106  true shown kept  17/54   right  86/160  removes 39 (false 9, true 30)
+  OUTCOME-MARKER-LINE [variant]  false shown  15/106  true shown kept  19/54   right  85/160  removes 34 (false 6, true 28)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown  11/106  true shown kept  14/54   right  83/160  removes 43 (false 10, true 33)
+
+PRIMARY RULE NON-SETTLING-2 against the sealed bar:
+  R2 false 'shown' F = 21; the rule removes 15 (needs at least 11): removal half met = True
+  R2 true 'shown' T = 47; the rule removes 5 (may remove at most 9): retention met = True
+  VERDICT: MET
+  removed by the primary (id, truth, trap, reason): [('038', 'shown', '-', 'non_settling:other_environment'), ('042', 'not shown', '-', 'non_settling:other_environment'), ('048', 'contradicted', '-', 'non_settling:other_environment'), ('064', 'shown', '-', 'non_settling:other_environment'), ('068', 'not shown', '-', 'non_settling:other_environment'), ('070', 'not shown', '-', 'non_settling:acknowledged_not_done'), ('072', 'not shown', '-', 'non_settling:other_environment'), ('082', 'shown', '-', 'non_settling:other_environment'), ('083', 'not shown', '-', 'non_settling:other_environment'), ('089', 'not shown', '-', 'non_settling:other_environment'), ('091', 'not shown', '-', 'non_settling:other_environment'), ('092', 'shown', '-', 'non_settling:other_environment'), ('096', 'not shown', '-', 'non_settling:other_environment'), ('105', 'contradicted', '-', 'non_settling:other_environment'), ('106', 'contradicted', '-', 'non_settling:other_environment'), ('110', 'contradicted', '-', 'non_settling:other_environment'), ('111', 'not shown', '-', 'non_settling:other_environment'), ('118', 'not shown', '-', 'non_settling:other_environment'), ('120', 'not shown', '-', 'non_settling:other_environment'), ('139', 'shown', '-', 'non_settling:other_environment')]
+
+Check before reading further: R2's false 'shown' and true 'shown' counts above must equal R2's counts in E1's own score file.

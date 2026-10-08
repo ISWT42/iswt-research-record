@@ -1,0 +1,53 @@
+1. Verdict
+
+The design is sound as a narrow thing: a salted hash commitment, a Merkle inclusion proof, and a published root. It can show that a given byte string was inside a set that existed at a timestamp, and that other positions were committed but not opened. It does not make records redact themselves, and it does not prove a job was done or that a claim is true or false. It is worth a small prototype only if those limits stay in the product. It is not worth building as an agent truth machine.
+
+2. What is already established
+
+Merkle trees (Ralph Merkle) commit to many items under one root and let you prove one item with a sibling path. Certificate Transparency (RFC 6962) uses that in public logs, with inclusion and consistency proofs so a log cannot quietly rewrite history. RFC 3161 is a timestamp protocol; Bitcoin is used as a public time anchor. OpenTimestamps batches hashes into Bitcoin so a digest can be shown to have existed by some block time. SD-JWT does selective disclosure by hashing salted claims and revealing only some salts and values. This proposal stacks those ideas onto agent logs and adds a visible “withheld” label. The stacking is ordinary. The three answers are not a property of the hash.
+
+3. What is new, if anything
+
+The application is specific: agent steps, layered into files, runs, and days, with unopened leaves left visible as withheld hashes so a gap and a redaction look different. That labeling is useful bookkeeping. It is not a new primitive. “Auto redact by access” is not new crypto either; it is the holder choosing which preimages to send.
+
+4. How it can fail
+
+Low-entropy records. Log lines are often guessable. A visible withheld hash plus a weak or leaked salt can be searched. Fix: 128-bit unique salts, a slow or domain-separated hash only if needed, and do not treat salt as protection for enumerable text; encrypt those leaves.
+
+Encoding. JSON key order, Unicode, or newlines change the hash. Fix: one canonical byte encoding, length prefixes, and a leaf-versus-node domain separator so internal nodes cannot be swapped with leaves.
+
+Tree shape. Without fixed left/right indexes, a proof can be replayed at another position. Fix: bind each proof to an index and a published tree size.
+
+Structural leakage. Counts, positions, and layer sizes still show how much was hidden. Fix: pad to a fixed width with random dummy leaves, and document whatever still leaks. Unique salts already stop equal records from sharing a hash.
+
+Lost salts. Then a leaf can never be opened, though the root still stands. Fix: store salts apart from the agent, with backups. Destroying unreleased salts is also the only practical revocation, because a timestamp cannot be undone and a sent opening can be copied.
+
+Who redacts. If the viewer receives salts, local software cannot be trusted to hide them. If the sender has every salt, redaction is a promise by the sender. Fix: encrypt each leaf to the keys of parties allowed to read it, and commit to the ciphertext. Access rules should themselves be committed before the run if later viewers must check that the policy did not change.
+
+Split construction. A file hash that is not the root of its line tree can disagree with line proofs. Fix: one tree, verified from leaves upward, with consistency proofs between successive roots (as in RFC 6962), not one end-of-day root only.
+
+“Contradicted.” A hash does not interpret language. Fix: only mark contradicted when a published predicate on the canonical bytes says so. Otherwise the answer is not shown.
+
+5. Threat model
+
+A third party who alters a disclosed record or swaps it fails the path check against the public root. That is what the design stops.
+
+The builder, including the agent, is not stopped from omitting events, logging false ones, or timestamping only after seeing what to hide. A public root stops them showing two different bytes for the same index, and stops a split root if everyone checks the same Bitcoin or TSA anchor. It does not stop a false but internally consistent log. A distributor can over-share or refuse a permitted opening; encryption to recipient keys stops over-share, not a refusal to send. A colluding timestamp authority can lie about time; a Bitcoin anchor makes that harder but adds delay, and neither anchor fixes a late or selective commitment. Viewers learn nothing about events that were never leaves.
+
+6. Smallest prototype
+
+One canonical log, SHA-256, domain-separated Merkle tree, withheld nodes as committed ciphertext or salted hashes, root filed with a timestamp (a TSA or OpenTimestamps is enough). Disclose a subset with index, salt or key, bytes, and sibling path.
+
+Measure: proof size, verify time, and whether any mutated, moved, or cross-opened leaf still verifies. A single false accept fails the design. Also try guessing a realistic redacted line from its hash; if that succeeds often, the salt scheme fails the privacy claim. Do not score natural-language “contradicted” in this test.
+
+7. Where it is useful first
+
+Auditor sharing: a firm can open some tool calls and leave customer content as visible withheld nodes, so redaction is not a silent deletion.
+
+Dispute about a log: two parties can check whether a specific call was in the committed set at time T, without taking the operator’s later word.
+
+Multi-tenant support: different customers can receive openings for their own runs while sharing one published daily root.
+
+8. What it does not prove
+
+It does not prove the log is complete, that events happened, or that the agent chose well. It does not prove withheld content is harmless. It does not prove the access policy was followed unless leaves are encrypted to independent keys. Inner timestamps are only as honest as the logger. The root’s time is not the time of each step. “Shown” means these bytes were committed. “Not shown” means this viewer was not given a matching opening. Neither means the job was done.

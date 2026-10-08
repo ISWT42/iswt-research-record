@@ -1,0 +1,8 @@
+# Stack test 2, Run Addendum 2: how the Codex cell started
+
+**Written:** 7 Oct 2026 by the coordinating session, Claude (Opus 5.5), while the openai-theirs cell was running and before any count was read. Its time is the time on its seal. Sealed files are not edited.
+
+1. **My sealing slip.** I added the box's probe report (`results/probe/openai-theirs-report.json`, probe at 19:25:25 UTC) to the run seal (RUN-SHA256.txt, FreeTSA 19:27:10 UTC). Joshua's paste ran `box_start.sh`, which re-probes the cell before it runs: the re-probe at 19:30:58 UTC passed (same version, sign-in, canaries, knob check), but it rewrote that report, so the runner's seal check refused to start: "results/probe/openai-theirs-report.json: differs from its seal".
+2. **The fix.** I copied the sealed report back into the box (SHA-256 804ef6ca..., equal to the sealed entry) and started the cell directly with `nohup setsid python3 run_matrix.py run --cells openai-theirs --wave 1`, standard input closed, on Joshua's instruction to run it. Its first call was answered at 19:36 UTC by the console. The PASS marker the runner checks is the one from the 19:30:58 re-probe. No sealed file, setting or prompt changed.
+3. **openai-ours** ran repeat 1 from 19:28:19 to 19:34:20 UTC, the room check gave BASE 4 of 32 from repeat 1 alone (above the pause line of 3), and repeats 2 and 3 ended at 19:45:59 UTC: 576 of 576 answered, no tool attempts, US$0.6762 spent. Launch note: the runner's orphan check matched my own shell's command line, so the cell was started through `launch_cell.sh` (not sealed; it only calls the sealed runner with the cell and repeat count).
+4. **The Claude pair** still waits for Claude Code in the box to be signed in on a plan with room (Design Addendum 1, section 5).

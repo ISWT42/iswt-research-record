@@ -1,0 +1,5 @@
+Joshua Bauer (ISWT42), 4 October 2026, in chat at about 2026-10-04T21:43:57Z:
+"I told you that I am more and more confident that we can keep humans in control."
+
+Context: said minutes after the first human-gate demo. A stand-in agent's action ran only after his hardware key (touch and PIN) signed that exact action, at 21:42:27 UTC; reusing the approval was refused.
+This stamp proves when this text existed, nothing more.

@@ -1,0 +1,16 @@
+# A1 after round 3: 4 edits applied, 2 dropped
+# state hash 74dad7bb70e66260d47fde944580f87b7ca2e9907f3735358631e532884b4d6c
+[V1]
+retry | command failed or no output | do not use as evidence
+relayed_claim | agent reports a fact | do not use as evidence
+intermediate_signal | partial logs or error messages | do not use as evidence
+example_text | diagnostic/stage SUCCESS on different path | do not use as evidence
+[V2]
+schema change | SUCCESS line with target type
+status change | transition line showing new state
+test suite | RESULT line with pass/fail counts
+permission change | SUCCESS line with target path and mode
+data integrity | intersection line showing overlap
+[V3]
+schema state | schema.show_plan | SUCCESS line with target type
+[V4]

@@ -1,0 +1,160 @@
+{
+  "label": "s2",
+  "rule": "r2",
+  "rules_commit": "227e55687097da1b3a135984d9330d0a340a9c6d",
+  "items_file": "<home>\\Workbench\\chain-local-2026-10-06\\inputs\\s2-items.jsonl",
+  "items_sha256": "749a1664acadbe130d91fd5d57b23e30f49f62f5c0b1f612d9bcd3d078dcdbef",
+  "answers_file": "<home>\\Workbench\\chain-local-2026-10-06\\results\\step1.jsonl",
+  "answers_sha256": "94fec6355591c6865ca57141cca97c533ec94a479a1ae46cfabd6f4b16a1ca7a",
+  "script_sha256": "954a0ef5b0bf1b67ffb1fd563db78bf319ecc74ba1ab92d9be3d43bb1dca25b0",
+  "output_file": "<home>\\Workbench\\drop-in-receipts-2026-10-06\\code\\replay\\s2-227e556.jsonl",
+  "output_sha256": "43e7dd49e5314e1690edd033adb6fa96fcbd2426e45b6ad3f91b6f2d92bb63cd",
+  "summary": {
+    "items": 90,
+    "items_with_pair_answer": 90,
+    "rules": {
+      "shown": 5,
+      "contradicted": 3,
+      "not_shown_needs_a_reader": 82,
+      "settled_without_a_model": 8,
+      "claim_recognized_by_the_extractor": 54,
+      "why_not_settled": {
+        "no_confirming_line": 18,
+        "no_claim_recognized": 36,
+        "no_call": 23,
+        "http_2xx_is_not_the_state": 2,
+        "object_mismatch": 3
+      }
+    },
+    "pair": {
+      "shown": 25,
+      "contradicted": 41,
+      "not_shown": 24
+    },
+    "cross_rules_by_pair": {
+      "shown": {
+        "shown": 3,
+        "contradicted": 0,
+        "not shown": 2
+      },
+      "contradicted": {
+        "shown": 0,
+        "contradicted": 3,
+        "not shown": 0
+      },
+      "not shown": {
+        "shown": 22,
+        "contradicted": 38,
+        "not shown": 22
+      }
+    },
+    "of_the_items_the_rules_settled": {
+      "denominator": 8,
+      "pair_gives_the_same_answer": 6,
+      "pair_says_not_shown": 2,
+      "pair_says_the_opposite": 0
+    },
+    "of_the_items_the_pair_settled": {
+      "denominator": 66,
+      "rules_give_the_same_answer": 6,
+      "rules_say_not_shown": 60,
+      "rules_say_the_opposite": 0
+    },
+    "where_both_settled_the_same": {
+      "denominator": 6,
+      "same_turn": 6,
+      "quote_same_line": 4,
+      "quote_overlapping_line": 1,
+      "quote_different_line": 1
+    },
+    "ids": {
+      "rules_shown": [
+        "C015",
+        "C044",
+        "C055",
+        "C060",
+        "C063"
+      ],
+      "rules_contradicted": [
+        "C045",
+        "C049",
+        "C082"
+      ],
+      "agree": [
+        "C015",
+        "C044",
+        "C045",
+        "C049",
+        "C063",
+        "C082"
+      ],
+      "rules_settled_pair_not_shown": [
+        "C055",
+        "C060"
+      ],
+      "opposite": [],
+      "rules_not_shown_pair_settled": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C010",
+        "C011",
+        "C012",
+        "C013",
+        "C014",
+        "C016",
+        "C017",
+        "C018",
+        "C019",
+        "C020",
+        "C022",
+        "C024",
+        "C026",
+        "C027",
+        "C029",
+        "C030",
+        "C032",
+        "C033",
+        "C034",
+        "C035",
+        "C036",
+        "C037",
+        "C038",
+        "C041",
+        "C046",
+        "C047",
+        "C048",
+        "C050",
+        "C051",
+        "C052",
+        "C054",
+        "C057",
+        "C058",
+        "C059",
+        "C061",
+        "C064",
+        "C067",
+        "C068",
+        "C069",
+        "C071",
+        "C073",
+        "C074",
+        "C075",
+        "C076",
+        "C077",
+        "C078",
+        "C080",
+        "C083",
+        "C084",
+        "C085",
+        "C087",
+        "C088",
+        "C089"
+      ]
+    }
+  }
+}

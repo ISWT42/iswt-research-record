@@ -1,0 +1,1 @@
+bde20cc1a30c3678b6b98d49f7d0da2b95db456fc68ba0f3f3cfdd232cd5df97 *score_s12.py

@@ -1,0 +1,30 @@
+=== stage2d start 2026-10-05T18:36:48Z ===
+stage 2d: 27 pairs
+[U-Q] 173: judged -> shown
+[U-Q] 188: judged -> shown
+[U-Q] 196: judged -> contradicted
+[U-Q] 199: judged -> shown
+[U-Q] 203: judged -> contradicted
+[U-Q] 206: judged -> shown
+[U-Q] 209: judged -> shown
+[U-Q] 215: judged -> contradicted
+[U-Q] 239: no_proposal -> not shown
+[U-Q] 249: judged -> not shown
+[U-Q] 262: judged -> contradicted
+[U-Q] 259: judged -> not shown
+[U-Q] 265: judged -> contradicted
+[U-Q] 285: judged -> contradicted
+[U-Q] 284: judged -> not shown
+[U-Q] 288: judged -> shown
+[U-Q] 295: judged -> not shown
+[U-Q] 296: judged -> contradicted
+[U-G] 187: judged -> contradicted
+[U-G] 206: judged -> shown
+[U-G] 214: judged -> contradicted
+[U-G] 223: judged -> not shown
+[U-G] 229: judged -> contradicted
+[U-G] 246: judged -> contradicted
+[U-G] 249: judged -> shown
+[U-G] 265: judged -> not shown
+[U-G] 298: judged -> shown
+=== stage2d end 2026-10-05T18:44:35Z exit 0 ===

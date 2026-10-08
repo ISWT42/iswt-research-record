@@ -1,0 +1,6 @@
+His statement, in his exact words (chat, 6 Oct 2026, 22:42:43 UTC):
+"you can give a cascade of hashes, and my tech SHOULD allow people to auto redact what their access allows"
+
+Follow-up (22:43:14 UTC): "yes merkle trees"
+
+Asked to seal (7 Oct 2026, 00:38:58 UTC): "yes merkle idea, and expand on it for me"

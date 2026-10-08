@@ -1,0 +1,126 @@
+## Bottom line
+
+The useful idea is **a verifiable history of commitments, evidence and later checks—not proof of past knowledge or truth**. Its components, and substantial parts of their combination, already exist; the strongest possible contribution is a clear, reusable workflow that makes unsupported claims harder to pass off as established facts. Linked timestamping dates at least to Haber and Stornetta’s 1991 research, while modern transparency systems already connect policies, claims and evidence. ([gwern.net](https://gwern.net/doc/bitcoin/1991-haber.pdf))
+
+I checked public sources for this review dated **6 October 2026**. **Uncertainty:** without his specification, implementation and studies, I cannot assess whether his particular protocol or results are novel or secure. I did not post, register, publish or contact anyone.
+
+## 1. Other uses, ranked
+
+This is **my ranking of promising applications**, balancing potential benefit, practical testability and how well both building blocks fit—not a demonstrated market ranking.
+
+### 1. Software-release assurance and supplier security claims
+
+Software buyers and release managers could require suppliers to commit to acceptance criteria before testing, then link each release claim to independently captured build, test and approval evidence. This would establish whether the **identified artifact satisfied the previously fixed criteria according to the recorded evidence**, replacing retrospective checklists and screenshot-based assurance—not security testing itself; in-toto, SLSA and Sigstore provide much of the existing foundation. ([in-toto.io](https://in-toto.io/docs/getting-started/?utm_source=openai))
+
+### 2. Procurement: sealed bids and accountable award decisions
+
+Public purchasers and competing suppliers could commit bids and evaluation rules before the deadline, then record openings, evaluations and changes in an independently witnessed history. This would establish that revealed submissions match their commitments and expose post-deadline substitutions or changed scoring rules, replacing reliance on an administrator’s editable portal history; confidentiality, integrity and controlled opening are already requirements in established electronic-procurement guidance. ([thedocs.worldbank.org](https://thedocs.worldbank.[REDACTED:long-token].pdf?utm_source=openai))
+
+### 3. Digital-evidence custody and incident reconstruction
+
+Investigators, incident-response teams and outside reviewers could seal acquired evidence and investigation protocols, then append transfers, transformations and findings with links to the original bytes. This would establish continuity of the **recorded digital objects and documented handling**, replacing scattered custody spreadsheets and editable incident narratives—not proving that the original capture accurately represented reality; NIST already recommends separately protected hashes and custody documentation. ([nvlpubs.nist.gov](https://nvlpubs.nist.gov/nistpubs/ir/2022/NIST.IR.8387.pdf?utm_source=openai))
+
+### 4. Product quality, shipment acceptance and recalls
+
+Manufacturers, purchasers and insurers could fix acceptance thresholds before inspection or shipment, then append signed laboratory results, sensor observations and custody events. This would establish whether recorded measurements met the original rules and help trace affected lots, replacing retrospective certificates and disconnected spreadsheets; GS1’s EPCIS already supplies interoperable event records, but cryptography alone cannot establish that a sensor measured the actual goods. ([ref.gs1.org](https://ref.gs1.org/guidelines/epcis-cbv/2.0.0/?utm_source=openai))
+
+### 5. Media provenance and controlled disclosure of source material
+
+Newsrooms and documentary investigators could commit confidential source files before editing, maintain an append-only transformation history, and later reveal selected originals to authorized reviewers. This would establish that a disclosed file matches the earlier commitment and document its recorded editing history, replacing unsupported chronology claims and screenshots—not proving the story true; C2PA already distinguishes provenance from factual accuracy. ([c2pa.org](https://c2pa.org/specifications/specifications/2.2/explainer/Explainer.html?utm_source=openai))
+
+**Recommendation:** start with software-release assurance. It has a concrete decision—accept or reject a release—and unusually strong existing comparators against which to test whether the proposed workflow adds value. ([in-toto.io](https://in-toto.io/docs/getting-started/?utm_source=openai))
+
+## 2. What already exists
+
+| His description | Existing technology, standard or research | Relationship |
+|---|---|---|
+| **The growing ladder** | [Certificate Transparency, RFC 9162](https://www.rfc-editor.org/rfc/rfc9162.html); [Sigstore Rekor](https://docs.sigstore.dev/logging/overview/) | Merkle-tree logs provide inclusion proofs and consistency proofs demonstrating that one witnessed history extends another. They do not inherently prove that every relevant event was submitted. |
+| **Protected historical audit records** | [Schneier and Kelsey, *Secure Audit Logs to Support Computer Forensics* (1999)](https://www.schneier.com/academic/archives/1999/05/secure_audit_logs_to.html) | Earlier research protects historical log integrity even under subsequent compromise of the logging machine. |
+| **Fixed, hidden, then revealed** | [Commitment-scheme research](https://www.iacr.org/archive/crypto2015/92160114/92160114.pdf), including hash-based and Pedersen commitments | The standard properties are **binding**—cannot feasibly open the commitment differently—and **hiding**—cannot feasibly learn its contents before opening. |
+| **A date attached to a commitment** | [Trusted timestamping, RFC 3161](https://www.rfc-editor.org/rfc/rfc3161.html); [FreeTSA](https://www.freetsa.org/); [OpenTimestamps](https://opentimestamps.org/) | These provide time evidence for digests or commitments, with different authority and verification assumptions. A timestamp does not automatically supply a hiding commitment. |
+| **Linked commitments through time** | [Haber and Stornetta, *How to Time-Stamp a Digital Document* (1991)](https://gwern.net/doc/bitcoin/1991-haber.pdf) | Strong historical overlap: hashed documents, linked timestamp certificates, distributed checking, and timestamping logs of document hashes. |
+| **Two shares of a secret** | [Shamir, *How to Share a Secret* (1979)](https://dspace.mit.edu/entities/publication/91c51bfc-5678-409c-80c5-44ce8fcdbadf) | Threshold secret sharing distributes recovery authority. Merely dividing a secret into two substrings is not equivalent. |
+| **Plans fixed before outcomes** | [OSF registrations](https://help.osf.io/article/330-welcome-to-registrations); [Registered Reports](https://www.cos.io/initiatives/registered-reports) | Preregistration records the plan before analysis; Registered Reports additionally review it before outcomes are known. Embargoed registrations resemble delayed opening, although platform policies remain part of the trust model. |
+| **Plans checked against evidence** | [in-toto](https://in-toto.io/docs/getting-started/); [SLSA](https://slsa.dev/spec/v1.2/threats); [Policy Transparency / PolyLog (2022)](https://storage.googleapis.com/gweb-research2023-media/pubtools/6805.pdf) | Very close workflow precedents: planned steps, authorized actors, signed evidence and policies evaluated using transparency-log claims. PolyLog is not necessarily a hidden commit–reveal system. |
+| **Evidence lasting beyond current keys and algorithms** | [Evidence Record Syntax, RFC 4998](https://www.rfc-editor.org/rfc/rfc4998.html) | Archival timestamp and hash-tree renewal address long-term verification rather than assuming one seal lasts forever. |
+
+These mappings are supported by the standards, original papers and project documentation above. ([rfc-editor.org](https://www.rfc-editor.org/rfc/rfc9162.html?utm_source=openai))
+
+### What is—and is not—distinct?
+
+**Not distinct:** append-only histories, paired claim–evidence records, commit–reveal, timestamped hashes, preregistration, or linking fixed plans to later evidence. Simply using these together is not enough to establish technical novelty; the precedents above already overlap substantially. The ladder and Möbius strip are explanatory metaphors, not additional cryptographic properties. ([gwern.net](https://gwern.net/doc/bitcoin/1991-haber.pdf))
+
+**Potentially distinct, but unverified:** a particularly usable implementation that requires every claim to identify exact evidence, consistently returns **shown / contradicted / not shown**, and preserves amendments and failed checks. That could be a worthwhile systems or human-factors contribution if experiments demonstrate an advantage over existing approaches.
+
+Two distinctions matter:
+
+- **A claim paired with evidence is not equivalent to two secret shares.** The former expresses a relationship to evaluate; the latter controls information recovery. Publishing enough shares together defeats their confidentiality purpose. ([dspace.mit.edu](https://dspace.mit.edu/entities/publication/91c51bfc-5678-409c-80c5-44ce8fcdbadf?utm_source=openai))
+- **Commit–reveal checks the opening against the commitment, not the claim against reality.** Reality still needs independently obtained evidence and an explicit interpretation rule. ([iacr.org](https://www.iacr.org/archive/crypto2015/92160114/92160114.pdf?utm_source=openai))
+
+## 3. Failure modes and gaming
+
+| Failure | What goes wrong—and the necessary response |
+|---|---|
+| **“Sealed” becomes “true”** | A fabricated measurement or dishonest assertion can be perfectly sealed. Separate **commitment verified**, **evidence authenticated**, and **claim supported**; provenance systems explicitly do not establish factual truth. ([c2pa.org](https://c2pa.org/specifications/specifications/2.2/explainer/Explainer.html?utm_source=openai)) |
+| **The record controller cheats** | An agent may lack edit permission while an operator can rewrite storage, censor submissions or present incompatible histories. Require retained inclusion receipts, externally witnessed checkpoints, consistency checking and independent monitoring; append-only database permissions alone are insufficient. ([rfc-editor.org](https://www.rfc-editor.org/rfc/rfc9162.html?utm_source=openai)) |
+| **Relevant evidence never enters the record** | Immutability preserves what was submitted, not what was omitted. Define expected events and authorized evidence producers beforehand; log completeness is a separate requirement from log consistency. ([rfc-editor.org](https://www.rfc-editor.org/rfc/rfc9162.html?utm_source=openai)) |
+| **Many commitments, only winners revealed** | Someone can seal contradictory bids, predictions or policies and reveal only the convenient one. As a protocol requirement, assign one authoritative commitment per declared scope, retain superseded commitments, and label missed openings **not shown** rather than silently ignoring them. |
+| **Privacy leaks** | Permanent entries can expose identities, activity timing and sensitive relationships; an unsalted hash of a guessable claim can reveal the claim. Use properly randomized hiding commitments, minimize public metadata and keep sensitive evidence in controlled storage—not in the public log. ([github.com](https://github.com/sigstore/architecture-docs/blob/main/rekor-spec.md?utm_source=openai)) |
+| **A timestamp is overinterpreted** | Under its assumptions, it supplies evidence that the matching data existed **no later than** a time or anchoring event. It does not establish exact creation time, authorship, originality, comprehension, truth, or that the author had not already seen the outcome. ([rfc-editor.org](https://www.rfc-editor.org/rfc/rfc3161.html)) |
+| **Keys, openings or evidence are lost** | Losing the message or commitment randomness can prevent opening; losing decryption keys can make preserved evidence unreadable. Signed public records do not require retaining the signer’s private key for verification, but verification material and evidence must be archived; threshold recovery and renewal can help. ([dspace.mit.edu](https://dspace.mit.edu/entities/publication/91c51bfc-5678-409c-80c5-44ce8fcdbadf?utm_source=openai)) |
+| **Cryptographic success masks semantic failure** | A valid receipt may refer to the wrong artifact, an obsolete criterion or a test that does not support the claim. Bind records to exact artifact identifiers and policy versions, and define the claim–evidence checks explicitly. ([in-toto.io](https://in-toto.io/docs/getting-started/?utm_source=openai)) |
+| **“Never changes” becomes “never fails”** | Services can disappear, evidence can become unavailable, and algorithms can weaken. Prefer **tamper-evident under stated assumptions** to unconditional “unchangeable”; maintain replicas, verification material and renewal procedures. ([rfc-editor.org](https://www.rfc-editor.org/rfc/rfc4998.html)) |
+
+**Important terminology:** “not shown” means insufficient evidence under the declared rule—not “false.” “Shown” should mean supported within a stated scope, not universally established.
+
+## 4. A precise public paragraph
+
+> I use “digital time travel” as a metaphor for checking historical commitments, not for proving past knowledge or truth. My approach combines established cryptographic commitments and timestamps with an append-only, independently checkable record: plans and claims are fixed before the relevant work, later evidence is linked to them, and each claim is assessed as shown, contradicted or not shown under explicit rules. The aim is to make retrospective changes, unsupported completion claims and missing evidence easier to detect. These records cannot make false inputs true, guarantee that every event was captured, or prove what someone understood; their reliability depends on evidence collection, record governance, cryptographic assumptions and preservation. The contribution I am testing is the usefulness of this workflow, not the invention of its underlying cryptography.
+
+That framing is consistent with the limitations of timestamping, transparency logs and provenance systems. ([gwern.net](https://gwern.net/doc/bitcoin/1991-haber.pdf))
+
+## 5. One experiment: blinded software-release acceptance
+
+**Question:** Does combining precommitted release criteria with an independently witnessed evidence history improve release decisions **beyond either component alone and beyond existing signed-provenance tooling**?
+
+### Design
+
+Run **one randomized, blinded, four-condition audit experiment**. Every condition uses the same underlying releases, tests, signed provenance and available evidence; only the accountability mechanism differs:
+
+1. Existing signed-provenance workflow.
+2. That workflow plus a witnessed append-only history.
+3. That workflow plus timestamped commit–reveal of release criteria.
+4. Both additions, with the proposed claim-to-evidence verdict workflow.
+
+Use in-toto/SLSA-style verification as the active baseline—not an artificially weak “trust the supplier” control. ([in-toto.io](https://in-toto.io/docs/getting-started/?utm_source=openai))
+
+Prepare valid releases and adversarial cases involving artifact substitution, later changes to acceptance thresholds, suppressed failed tests, superseded approvals, and selectively presented histories. Include **false-but-correctly-sealed inputs as a negative control**: the mechanism should not imply those are true merely because their seals verify.
+
+Independent reviewers receive randomized packages and decide which release claims are shown, contradicted or not shown, then accept or reject the release. Reviewers must not see the same underlying case in multiple conditions; analysis should account for differences among both reviewers and cases.
+
+### Seal before starting
+
+Commit and timestamp:
+
+- the case-generation rules and permitted attacks;
+- claim definitions and ground-truth scoring rules;
+- randomization, sample size and power calculation;
+- primary and secondary measures;
+- exclusions, stopping rules and analysis code;
+- the minimum worthwhile improvement and failure criteria.
+
+Have a separate custodian control attack assignments and ground truth. Preserve all trials, including failures to open commitments or retrieve evidence.
+
+### What to measure
+
+**Primary:** the rate at which reviewers accept claims that the ground-truth evidence contradicts or fails to support.
+
+**Secondary:** false rejection of valid releases, review time, correct recognition of missing evidence, and whether reviewers mistake a valid seal for proof of truth.
+
+### What would show it does not work?
+
+Predeclare a practical threshold—for example, **at least a 10-percentage-point reduction in erroneous acceptance compared with the better single-component condition**, with a bounded increase in false rejections and review time. These numbers are proposed decision thresholds, not established benchmarks; the sample size needs a power calculation before sealing.
+
+If the confidence interval rules out that minimum benefit, the combined workflow fails its practical-value test. If uncertainty remains too wide, the result is **inconclusive**; if reviewers become more willing to accept false-but-sealed claims, the workflow demonstrates a dangerous failure.
+
+**The decisive test is not “Can the receipt verify?” It is “Does the receipt improve an independent reviewer’s decision without creating false confidence?”**

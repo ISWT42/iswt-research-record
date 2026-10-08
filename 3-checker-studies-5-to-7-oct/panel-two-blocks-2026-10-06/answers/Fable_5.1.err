@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: anthropic/claude-fable-5.1:online (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/155241-849-openrouter-panel-two-blocks
+[broker] tokens in/out/reasoning: 291052/13023/3525; time 197816 ms; cost estimate unknown

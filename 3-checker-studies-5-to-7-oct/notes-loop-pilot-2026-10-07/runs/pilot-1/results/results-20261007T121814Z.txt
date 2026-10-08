@@ -1,0 +1,87 @@
+PILOT RESULTS (counts only, no item text)  run pilot-1  made 2026-10-07T12:18:14Z
+PILOT - items 161 to 280 are NOT FRESH (scored before); exploratory, not evidence
+
+THE RUN
+  provider broker; calls in the log 1209: A-fixed 1080, A-study 129
+  tries 1215, retries 6, no answer 0, spent US$0.0945 (tries with no cost reported: 0)
+  answering providers {'Darkbloom': 1209}; pin mismatches in the log 0; answers whose ledger entry named no provider 0; finish reasons {'stop': 1209}
+  output tokens: most in one call 293 (of 1209 calls with counts); calls with reasoning tokens above zero 0
+  commands run on this run: 2; under a seal: 2; distinct core seals 1
+
+PHASE A, THE STUDY RUN (Empty notes on the study pool)
+  right 112 of 129; wrong 17: false shown 12, false contradicted 3, missed shown 1, missed contradicted 1, no answer 0; sure and wrong 17
+
+PHASE A, THE FIXED ARMS: right answers out of 40 per block (items 161 to 280, NOT FRESH)
+  arm          run      block 1    block 2    block 3         all
+  empty          1     30 of 40   29 of 40   28 of 40   87 of 120
+  empty          2     30 of 40   28 of 40   28 of 40   86 of 120
+  empty          3     29 of 40   28 of 40   28 of 40   85 of 120
+  filler         1     26 of 40   31 of 40   28 of 40   85 of 120
+  filler         2     26 of 40   34 of 40   28 of 40   88 of 120
+  filler         3     26 of 40   32 of 40   28 of 40   86 of 120
+  model-hand     1     30 of 40   30 of 40   31 of 40   91 of 120
+  model-hand     2     28 of 40   31 of 40   31 of 40   90 of 120
+  model-hand     3     28 of 40   30 of 40   31 of 40   89 of 120
+  noise floor, all fixed arms (4.8): f = 2 per 40-item block (90th percentile 2.00 of 27 absolute differences between repeats, interpolated as in type 7, which f is read from; the nearest-rank 90th percentile is 2; minimum 2); pooled over 3 blocks 4; differences seen {'0': 16, '1': 7, '2': 3, '3': 1}
+  noise floor, Empty alone (pilot rule 1): f = 2 per 40-item block (90th percentile 1.00 of 9 absolute differences between repeats, interpolated as in type 7, which f is read from; the nearest-rank 90th percentile is 1; minimum 2); pooled over 3 blocks 4; differences seen {'0': 5, '1': 4}
+
+SECONDARY COUNTS, each arm's first run on all test items (every count with its own denominator)
+  empty: right 87 of 120; false shown 12 of 80; true shown kept 31 of 40; false contradicted 5 of 80; true contradicted kept 26 of 40; correct not shown 30 of 40; sent to a person 46 of 120; no answer 0 of 120
+  filler: right 85 of 120; false shown 10 of 80; true shown kept 29 of 40; false contradicted 5 of 80; true contradicted kept 27 of 40; correct not shown 29 of 40; sent to a person 49 of 120; no answer 0 of 120
+  model-hand: right 91 of 120; false shown 11 of 80; true shown kept 31 of 40; false contradicted 3 of 80; true contradicted kept 31 of 40; correct not shown 29 of 40; sent to a person 44 of 120; no answer 0 of 120
+  settle proposals, empty: made 40 of 120; pass the word list 35 of 40; expected line matches the settling line 0 of 16
+  settle proposals, filler: made 38 of 120; pass the word list 36 of 38; expected line matches the settling line 0 of 20
+  settle proposals, model-hand: made 36 of 120; pass the word list 35 of 36; expected line matches the settling line 0 of 15
+
+PHASE B, THE ROUNDS (diagonal: each round's new notes on that round's test block; the loops never see these scores)
+  not run
+
+PHASE B, WHAT THE LOOPS SAW (study side, 25 items per round; counts from the chain files)
+  not run
+
+THE IMPROVER (pilot rule 2 and the gate)
+  dropped edits by reason {}; V3 lines proposed (add or replace) 0, refused by the word list 0
+
+CHAIN FILES (each entry's hash and link, and the heads written beside them)
+  no chain folder: phase B has not started
+  V3 lines in any state or edit that the word list refuses (a bypass of the applier): 0
+
+PILOT RULES (4.17): each condition beside its counts; what follows from them is the coordinator's decision
+  (1) Empty three-repeat floor per 40-item block: f = 2 (from 9 differences {'0': 5, '1': 4}); condition 'at most 3' holds
+  (2) schema-valid improver outputs: none yet
+  (3) mistakes per study block under Empty: study run wrong 17 of 129, about 3.3 per 25 (the rate the condition is read on); condition 'at least 3 per block' holds
+  (4) hash mismatch or gate bypass: provider broker; pin mismatches 0; answers with no named provider 0; manifest intact now True; commands without a seal 0; core seals used 1; chain problems 0; V3 lines failing the word list 0 (refused by the applier 0); mismatch stops none; condition 'none' holds
+
+BY TRAP WORD (test items; Own notes and Own notes + own method pooled over loops and rounds; right k of n)
+  trap                           empty        filler    model-hand
+  example_text                  6 of 7        6 of 7        6 of 7
+  expected_error               4 of 11       5 of 11       4 of 11
+  injected_text                 2 of 6        3 of 6        5 of 6
+  intermediate_signal          6 of 10       6 of 10       7 of 10
+  narration                     7 of 7        7 of 7        7 of 7
+  none                        18 of 24      17 of 24      22 of 24
+  other_environment            8 of 13       7 of 13       7 of 13
+  relayed_claim                 5 of 7        5 of 7        5 of 7
+  retry                       10 of 13       8 of 13       8 of 13
+  tool_failed_to_run          11 of 12      11 of 12      10 of 12
+  truncated                   10 of 10      10 of 10      10 of 10
+
+FALSE SHOWN BY TRAP WORD (false shown k of the items whose key is not shown)
+  trap                           empty        filler    model-hand
+  example_text                  1 of 4        1 of 4        1 of 4
+  expected_error                1 of 7        1 of 7        1 of 7
+  injected_text                 2 of 4        2 of 4        1 of 4
+  intermediate_signal           3 of 6        2 of 6        2 of 6
+  narration                     0 of 5        0 of 5        0 of 5
+  none                         0 of 14       0 of 14       0 of 14
+  other_environment             3 of 9        2 of 9        3 of 9
+  relayed_claim                 2 of 6        2 of 6        2 of 6
+  retry                         0 of 8        0 of 8        0 of 8
+  tool_failed_to_run            0 of 9        0 of 9        1 of 9
+  truncated                     0 of 8        0 of 8        0 of 8
+
+TABLE OF APPENDIX D (one row per round; byhand_right is the Model-hand set, written by a model, not a person; own_fixed, own_broken, own_false_shown and own_sent_to_person are sums over own_loops loops)
+round,n_items,empty_right,byhand_right,own_median,own_min,own_max,ownmethod_median,floor_f,own_fixed,own_broken,own_false_shown,own_false_shown_denominator,own_sent_to_person,own_loops,own_sent_to_person_denominator
+1,40,30,30,,,,,2,,,,,,0,
+2,40,29,30,,,,,2,,,,,,0,
+3,40,28,31,,,,,2,,,,,,0,

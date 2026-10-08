@@ -1,0 +1,12 @@
+[
+ {
+  "slot": "S151",
+  "truth": "not_shown",
+  "trap": "expected_error",
+  "format": "pytest",
+  "name": "Bekzer",
+  "setting": "a documentation site",
+  "replaces": "S122",
+  "after": "S122"
+ }
+]

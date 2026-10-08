@@ -1,0 +1,4 @@
+seal verified; inputs verified against the design hashes
+run 3 records read: 280; duplicates: 0
+written: results-q3-v1.json
+reconciliation with the stored run 3 score: 36 figures compared, 36 agree

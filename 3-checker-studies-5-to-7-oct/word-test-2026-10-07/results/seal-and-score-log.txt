@@ -1,0 +1,18 @@
+watcher saw the run end at 2026-10-07 12:20:57 UTC
+RESULTS-SHA256.txt FreeTSA Time stamp: Oct  7 12:21:01 2026 GMT
+Submitting to remote calendar https://a.pool.opentimestamps.org
+Submitting to remote calendar https://b.pool.opentimestamps.org
+Submitting to remote calendar https://a.pool.eternitywall.com
+Submitting to remote calendar https://ots.btc.catallaxy.com
+score_s14.py: OK
+test_score_s14.py: OK
+../../Private/claims/parser-audit-2026-10-07/ref_rule.py: OK
+qwen: changed 3/108, repeats 44/44; shown (at least one pair changed, and all 44 repeats agree)
+gemma: changed 1/108, repeats 44/44; shown (at least one pair changed, and all 44 repeats agree)
+secondary reads: reference 0, full key 0 disagreements
+SCORED-SHA256.txt FreeTSA Time stamp: Oct  7 12:21:03 2026 GMT
+Submitting to remote calendar https://a.pool.opentimestamps.org
+Submitting to remote calendar https://b.pool.opentimestamps.org
+Submitting to remote calendar https://a.pool.eternitywall.com
+Submitting to remote calendar https://ots.btc.catallaxy.com
+watcher finished at 2026-10-07 12:21:01 UTC

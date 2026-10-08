@@ -1,0 +1,7 @@
+{
+ "schema": 1,
+ "provider": "broker",
+ "created_utc": "2026-10-07T12:02:16Z",
+ "pin": "google/gemma-4-26b-a4b-it@Darkbloom",
+ "wire_newline": "LF"
+}

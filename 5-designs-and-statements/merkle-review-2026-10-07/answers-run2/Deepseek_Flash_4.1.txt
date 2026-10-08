@@ -1,0 +1,41 @@
+## 1. Verdict in one paragraph
+
+The design is technically sound for one narrow job: proving that a specific record existed, unchanged, at or before a timestamp, while letting a viewer verify only the records they are allowed to see. That is a standard Merkle-tree transparency-log pattern with salted leaves and selective disclosure. It is worth building as an audit component if paired with an append-only log, independent logging, and witnesses. It is not sound as proof that an AI agent actually did the job, logged everything relevant, or told the truth. The hard parts are policy, completeness, key/salt management, and leakage—not the hashing.
+
+## 2. What is already established
+
+Merkle trees are the core. RFC 6962, Certificate Transparency, defines an append-only Merkle log with inclusion and consistency proofs. Trillian is a production transparent-log implementation. Sigstore/Rekor is a transparency log for software artifacts. RFC 3161 defines timestamping authorities; OpenTimestamps anchors hashes in Bitcoin. For selective disclosure, SD-JWT uses salted hashes for disclosing selected claims; BBS-style signatures allow selective disclosure. Redactable signatures also exist. The proposal combines these: Merkle inclusion proofs, salted leaves, timestamped roots, and access-controlled redaction. The combination is natural, not novel in cryptography.
+
+## 3. What is new, if anything
+
+The new part is the application: treating each AI-agent step or answer as a receipt leaf, giving different viewers different subsets with salts and Merkle paths, and showing withheld leaves as hashes. That is a useful packaging for agent audits. It is not a new primitive.
+
+## 4. How it can fail
+
+- **Salts:** reused or weak salts let viewers brute-force low-entropy hidden records. Fix: unique 128-bit random salts per leaf, never reuse.
+- **Record boundaries and encoding:** different JSON serialization breaks hashes. Fix: canonical byte encoding, length-prefix, domain-separate leaf/internal hashes.
+- **Leakage through structure/counts:** tree shape, number of withheld leaves, file sizes, timing reveal metadata. Fix: fixed-size buckets, padding, batching, or accept the leak explicitly.
+- **Lost salts/keys:** a viewer cannot verify, or a record becomes unopenable. Fix: escrow salts under policy, or treat loss as permanent.
+- **Revocation:** access revoked after disclosure cannot be undone. Fix: per-record encryption, short-lived keys, and legal controls; revocation only affects future disclosures.
+- **Access rules:** the builder decides who sees what. Fix: signed policy, auditable rule engine, independent policy authority.
+- **Equivocation:** a builder can timestamp one root and show another, or omit records before hashing. Fix: append-only log with consistency proofs, gossip, multiple witnesses.
+- **Timestamp trust:** a TSA can backdate or fail. Fix: multiple TSAs, Bitcoin anchoring, and verify independently.
+
+## 5. Threat model
+
+An agent can lie in what it logs, but cannot alter a record after the root is timestamped. A viewer can lie about what a visible proof says only if verification is broken; hidden records remain hidden. The tree builder is the main risk: it can omit bad actions, create different logs, or set unfair access. The design stops post-hoc tampering but not pre-hoc omission. Timestamp authorities and Bitcoin miners are trust-minimized but not trustless for exact time or completeness. Fixes: independent logging, append-only consistency proofs, witnesses, signed policies.
+
+## 6. Smallest prototype
+
+Take 20 synthetic agent steps. Canonicalize to JSON bytes. Hash each with a random salt. Build a Merkle tree with SHA-256 and domain separation. Timestamp the root with OpenTimestamps or a local RFC 3161 TSA. Implement a verifier that takes a root, a visible record, its salt, and its Merkle path; withheld leaves appear only as hashes. Test: accept valid visible record; reject a modified record; reject wrong root; confirm hidden leaves cannot be recovered from hashes alone. Measure proof size, verification time, and metadata leakage. A result against it: verifier accepts altered data, or two different logs produce the same timestamped root.
+
+## 7. Where it is most useful first
+
+- **CI/CD and cloud admin actions:** logs already exist and tampering is a real risk.
+- **Financial or trading agents:** audit trails are regulated and high-value.
+- **Healthcare or insurance agents:** access-controlled disclosure maps to privacy rules.
+- **AI coding agents modifying production systems:** receipts for each change request and deployment are useful.
+
+## 8. What it does not prove
+
+It does not prove the agent did the job correctly, logged every relevant action, or told the truth. It does not prove completeness, fairness of access rules, identity of the agent, or legal compliance. It only proves that a disclosed record matches a timestamped Merkle root, and that some undisclosed records existed as hashes. Hidden metadata can still leak.

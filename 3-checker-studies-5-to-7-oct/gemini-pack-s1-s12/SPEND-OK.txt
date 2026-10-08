@@ -1,0 +1,6 @@
+The owner's words authorising this pack, with the time each message arrived (UTC, from the coordinator's clock):
+
+2026-10-06 02:25:49  "can you design the spec for some of these, including others, that i can give to Gemini to do? fully spec it. gemini needs direction but we know it will be honest if we make it report."
+2026-10-06 02:43:02  "gemini is officially in the box. I will get the openrouter key for you"
+
+The spend is OpenRouter calls to the two subject models only. The key was made by the owner with a requested credit limit of US$10; the coordinator never saw it and did not check the limit. The runner stops at US$8 reported cost (README rule 6). Expected total: US$1 to US$3.

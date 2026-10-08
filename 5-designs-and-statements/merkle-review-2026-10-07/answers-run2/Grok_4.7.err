@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: x-ai/grok-4.7 (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/225010-428-openrouter-merkle-review
+[broker] tokens in/out/reasoning: 1800/5149/3908; time 96119 ms; cost estimate unknown

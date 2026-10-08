@@ -1,0 +1,1110 @@
+{
+ "twins_sha256": "84f6d4b6ffff264fc8deac8f727e44ed4baaebe14edc369dacab8b623dae2e9b",
+ "answers_sha256": "143faece45f19443d45bf8c48f363e34c71dbb3b244f3ab2f6da1b3d64c4852e",
+ "design_sha256_file": [
+  "ed9c7eb685f2a2109ca3026109ae8d453e4906890be3fe7573ae5a25407bad0c *E2-DESIGN.md",
+  "d39becc7400cc6ae7356e36fdbc067146f098a66f21591efcf03c7c29c0eea02 *code/overnight_common.py",
+  "f1401325be4f7e20efc036d41b62787cd4ae31c08ac5724221ddfe63fb05732a *code/e1_run.py",
+  "46f6f40cb5c549e9554c774cbeb224ef966b5a92c0a5ff201c8fc2e5e31511ff *code/e2_framings.py",
+  "261b7f07d560bb046ec03c558844238b98a886e49645c95fc005d6fc846cc718 *code/e2_build_twins.py",
+  "cf46c95884c8fa2ed1ab6f04ddac23882a959159c742a89a35e947506325192e *code/e2_run.py",
+  "e8816a974b00201c873e947c1b4be23b2df54b1c07ec6db0feb2a70cb2265028 *code/e2_score.py",
+  "0aa737b04ace8d59478f095f7ae55612032343677a4bd7dfdaeacebace288750 *e2/framing-diffs.txt",
+  "544bbc68bea0e98d55827eae0280471a6ff8a9bb25835b2550afc89a480c1e33 *code/seal.sh",
+  "1878c67d3336615a4ff5f1ef1a5b3c5fb2a39c27cbe3d530e00f4ddc22b403d4 *code/seal_info.py"
+ ],
+ "framing_sha256": {
+  "forced": "29d9ade2daefb03a051d6d85580c9cd8c67bd48ab7fef2849266f00a1a3a1c4d",
+  "allowed": "659cadf64855d40332cb87b8b5f61efe23fad631dc74d85c95804287cdb27432",
+  "rewarded": "5334487bd40c83aca05d3b59f85d2d535e2725d767116026f8d0682c0ef13897"
+ },
+ "n": {
+  "present": 27,
+  "twin_missing": 27,
+  "twin_blank": 27
+ },
+ "n_twin_missing_empty_log": 12,
+ "n_twin_missing_with_log": 15,
+ "cells": {
+  "A-forced": {
+   "records": 81,
+   "codes": {
+    "verified": 40,
+    "model_not_shown": 12,
+    "unverified_quote": 26,
+    "shown_citing_failure": 2,
+    "quote_is_instruction": 1
+   },
+   "present": {
+    "right": {
+     "k": 20,
+     "n": 27,
+     "ci95": [
+      0.553,
+      0.868
+     ]
+    },
+    "true_shown_kept": {
+     "k": 8,
+     "n": 13,
+     "ci95": [
+      0.355,
+      0.823
+     ]
+    },
+    "true_contradicted_kept": {
+     "k": 12,
+     "n": 14,
+     "ci95": [
+      0.601,
+      0.96
+     ]
+    },
+    "answered_not_shown": {
+     "k": 6,
+     "n": 27,
+     "ci95": [
+      0.106,
+      0.408
+     ]
+    },
+    "wrong_way_round": {
+     "k": 1,
+     "n": 27,
+     "ci95": [
+      0.007,
+      0.183
+     ]
+    },
+    "verdict_not_shown": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0
+   },
+   "twin_missing": {
+    "n": 27,
+    "guess": {
+     "k": 15,
+     "n": 27,
+     "ci95": [
+      0.373,
+      0.724
+     ]
+    },
+    "guess_shown": 6,
+    "guess_contradicted": 9,
+    "not_shown_verdict": {
+     "k": 12,
+     "n": 27,
+     "ci95": [
+      0.276,
+      0.627
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 13,
+     "n": 27,
+     "ci95": [
+      0.307,
+      0.66
+     ]
+    },
+    "final_not_shown": {
+     "k": 14,
+     "n": 27,
+     "ci95": [
+      0.34,
+      0.693
+     ]
+    },
+    "guess_empty_log": {
+     "k": 0,
+     "n": 12,
+     "ci95": [
+      0.0,
+      0.243
+     ]
+    },
+    "guess_with_log": {
+     "k": 15,
+     "n": 15,
+     "ci95": [
+      0.796,
+      1.0
+     ]
+    }
+   },
+   "twin_blank": {
+    "n": 27,
+    "guess": {
+     "k": 27,
+     "n": 27,
+     "ci95": [
+      0.875,
+      1.0
+     ]
+    },
+    "guess_shown": 3,
+    "guess_contradicted": 24,
+    "not_shown_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 6,
+     "n": 27,
+     "ci95": [
+      0.106,
+      0.408
+     ]
+    },
+    "final_not_shown": {
+     "k": 21,
+     "n": 27,
+     "ci95": [
+      0.592,
+      0.894
+     ]
+    }
+   }
+  },
+  "A-allowed": {
+   "records": 81,
+   "codes": {
+    "verified": 36,
+    "model_not_shown": 37,
+    "unverified_quote": 6,
+    "shown_citing_failure": 2
+   },
+   "present": {
+    "right": {
+     "k": 20,
+     "n": 27,
+     "ci95": [
+      0.553,
+      0.868
+     ]
+    },
+    "true_shown_kept": {
+     "k": 9,
+     "n": 13,
+     "ci95": [
+      0.424,
+      0.873
+     ]
+    },
+    "true_contradicted_kept": {
+     "k": 11,
+     "n": 14,
+     "ci95": [
+      0.524,
+      0.924
+     ]
+    },
+    "answered_not_shown": {
+     "k": 5,
+     "n": 27,
+     "ci95": [
+      0.082,
+      0.367
+     ]
+    },
+    "wrong_way_round": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "verdict_not_shown": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0
+   },
+   "twin_missing": {
+    "n": 27,
+    "guess": {
+     "k": 10,
+     "n": 27,
+     "ci95": [
+      0.215,
+      0.558
+     ]
+    },
+    "guess_shown": 5,
+    "guess_contradicted": 5,
+    "not_shown_verdict": {
+     "k": 17,
+     "n": 27,
+     "ci95": [
+      0.442,
+      0.785
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 9,
+     "n": 27,
+     "ci95": [
+      0.186,
+      0.522
+     ]
+    },
+    "final_not_shown": {
+     "k": 18,
+     "n": 27,
+     "ci95": [
+      0.478,
+      0.814
+     ]
+    },
+    "guess_empty_log": {
+     "k": 0,
+     "n": 12,
+     "ci95": [
+      0.0,
+      0.243
+     ]
+    },
+    "guess_with_log": {
+     "k": 10,
+     "n": 15,
+     "ci95": [
+      0.417,
+      0.848
+     ]
+    }
+   },
+   "twin_blank": {
+    "n": 27,
+    "guess": {
+     "k": 7,
+     "n": 27,
+     "ci95": [
+      0.132,
+      0.447
+     ]
+    },
+    "guess_shown": 3,
+    "guess_contradicted": 4,
+    "not_shown_verdict": {
+     "k": 20,
+     "n": 27,
+     "ci95": [
+      0.553,
+      0.868
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 5,
+     "n": 27,
+     "ci95": [
+      0.082,
+      0.367
+     ]
+    },
+    "final_not_shown": {
+     "k": 22,
+     "n": 27,
+     "ci95": [
+      0.633,
+      0.918
+     ]
+    }
+   }
+  },
+  "A-rewarded": {
+   "records": 81,
+   "codes": {
+    "verified": 34,
+    "model_not_shown": 39,
+    "unverified_quote": 6,
+    "shown_citing_failure": 2
+   },
+   "present": {
+    "right": {
+     "k": 20,
+     "n": 27,
+     "ci95": [
+      0.553,
+      0.868
+     ]
+    },
+    "true_shown_kept": {
+     "k": 9,
+     "n": 13,
+     "ci95": [
+      0.424,
+      0.873
+     ]
+    },
+    "true_contradicted_kept": {
+     "k": 11,
+     "n": 14,
+     "ci95": [
+      0.524,
+      0.924
+     ]
+    },
+    "answered_not_shown": {
+     "k": 6,
+     "n": 27,
+     "ci95": [
+      0.106,
+      0.408
+     ]
+    },
+    "wrong_way_round": {
+     "k": 1,
+     "n": 27,
+     "ci95": [
+      0.007,
+      0.183
+     ]
+    },
+    "verdict_not_shown": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0
+   },
+   "twin_missing": {
+    "n": 27,
+    "guess": {
+     "k": 9,
+     "n": 27,
+     "ci95": [
+      0.186,
+      0.522
+     ]
+    },
+    "guess_shown": 5,
+    "guess_contradicted": 4,
+    "not_shown_verdict": {
+     "k": 18,
+     "n": 27,
+     "ci95": [
+      0.478,
+      0.814
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 8,
+     "n": 27,
+     "ci95": [
+      0.159,
+      0.485
+     ]
+    },
+    "final_not_shown": {
+     "k": 19,
+     "n": 27,
+     "ci95": [
+      0.515,
+      0.841
+     ]
+    },
+    "guess_empty_log": {
+     "k": 0,
+     "n": 12,
+     "ci95": [
+      0.0,
+      0.243
+     ]
+    },
+    "guess_with_log": {
+     "k": 9,
+     "n": 15,
+     "ci95": [
+      0.357,
+      0.802
+     ]
+    }
+   },
+   "twin_blank": {
+    "n": 27,
+    "guess": {
+     "k": 6,
+     "n": 27,
+     "ci95": [
+      0.106,
+      0.408
+     ]
+    },
+    "guess_shown": 3,
+    "guess_contradicted": 3,
+    "not_shown_verdict": {
+     "k": 21,
+     "n": 27,
+     "ci95": [
+      0.592,
+      0.894
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 5,
+     "n": 27,
+     "ci95": [
+      0.082,
+      0.367
+     ]
+    },
+    "final_not_shown": {
+     "k": 22,
+     "n": 27,
+     "ci95": [
+      0.633,
+      0.918
+     ]
+    }
+   }
+  },
+  "B-forced": {
+   "records": 81,
+   "codes": {
+    "verified": 43,
+    "model_not_shown": 23,
+    "wrong_turn": 11,
+    "shown_citing_failure": 2,
+    "unverified_quote": 2
+   },
+   "present": {
+    "right": {
+     "k": 23,
+     "n": 27,
+     "ci95": [
+      0.675,
+      0.941
+     ]
+    },
+    "true_shown_kept": {
+     "k": 11,
+     "n": 13,
+     "ci95": [
+      0.578,
+      0.957
+     ]
+    },
+    "true_contradicted_kept": {
+     "k": 12,
+     "n": 14,
+     "ci95": [
+      0.601,
+      0.96
+     ]
+    },
+    "answered_not_shown": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "wrong_way_round": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "verdict_not_shown": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0
+   },
+   "twin_missing": {
+    "n": 27,
+    "guess": {
+     "k": 22,
+     "n": 27,
+     "ci95": [
+      0.633,
+      0.918
+     ]
+    },
+    "guess_shown": 14,
+    "guess_contradicted": 8,
+    "not_shown_verdict": {
+     "k": 5,
+     "n": 27,
+     "ci95": [
+      0.082,
+      0.367
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 11,
+     "n": 27,
+     "ci95": [
+      0.245,
+      0.593
+     ]
+    },
+    "final_not_shown": {
+     "k": 16,
+     "n": 27,
+     "ci95": [
+      0.407,
+      0.755
+     ]
+    },
+    "guess_empty_log": {
+     "k": 11,
+     "n": 12,
+     "ci95": [
+      0.646,
+      0.985
+     ]
+    },
+    "guess_with_log": {
+     "k": 11,
+     "n": 15,
+     "ci95": [
+      0.48,
+      0.891
+     ]
+    }
+   },
+   "twin_blank": {
+    "n": 27,
+    "guess": {
+     "k": 9,
+     "n": 27,
+     "ci95": [
+      0.186,
+      0.522
+     ]
+    },
+    "guess_shown": 6,
+    "guess_contradicted": 3,
+    "not_shown_verdict": {
+     "k": 18,
+     "n": 27,
+     "ci95": [
+      0.478,
+      0.814
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 7,
+     "n": 27,
+     "ci95": [
+      0.132,
+      0.447
+     ]
+    },
+    "final_not_shown": {
+     "k": 20,
+     "n": 27,
+     "ci95": [
+      0.553,
+      0.868
+     ]
+    }
+   }
+  },
+  "B-allowed": {
+   "records": 81,
+   "codes": {
+    "verified": 41,
+    "model_not_shown": 33,
+    "wrong_turn": 5,
+    "shown_citing_failure": 2
+   },
+   "present": {
+    "right": {
+     "k": 23,
+     "n": 27,
+     "ci95": [
+      0.675,
+      0.941
+     ]
+    },
+    "true_shown_kept": {
+     "k": 11,
+     "n": 13,
+     "ci95": [
+      0.578,
+      0.957
+     ]
+    },
+    "true_contradicted_kept": {
+     "k": 12,
+     "n": 14,
+     "ci95": [
+      0.601,
+      0.96
+     ]
+    },
+    "answered_not_shown": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "wrong_way_round": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "verdict_not_shown": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0
+   },
+   "twin_missing": {
+    "n": 27,
+    "guess": {
+     "k": 15,
+     "n": 27,
+     "ci95": [
+      0.373,
+      0.724
+     ]
+    },
+    "guess_shown": 6,
+    "guess_contradicted": 9,
+    "not_shown_verdict": {
+     "k": 12,
+     "n": 27,
+     "ci95": [
+      0.276,
+      0.627
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 10,
+     "n": 27,
+     "ci95": [
+      0.215,
+      0.558
+     ]
+    },
+    "final_not_shown": {
+     "k": 17,
+     "n": 27,
+     "ci95": [
+      0.442,
+      0.785
+     ]
+    },
+    "guess_empty_log": {
+     "k": 5,
+     "n": 12,
+     "ci95": [
+      0.193,
+      0.68
+     ]
+    },
+    "guess_with_log": {
+     "k": 10,
+     "n": 15,
+     "ci95": [
+      0.417,
+      0.848
+     ]
+    }
+   },
+   "twin_blank": {
+    "n": 27,
+    "guess": {
+     "k": 6,
+     "n": 27,
+     "ci95": [
+      0.106,
+      0.408
+     ]
+    },
+    "guess_shown": 5,
+    "guess_contradicted": 1,
+    "not_shown_verdict": {
+     "k": 21,
+     "n": 27,
+     "ci95": [
+      0.592,
+      0.894
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 6,
+     "n": 27,
+     "ci95": [
+      0.106,
+      0.408
+     ]
+    },
+    "final_not_shown": {
+     "k": 21,
+     "n": 27,
+     "ci95": [
+      0.592,
+      0.894
+     ]
+    }
+   }
+  },
+  "B-rewarded": {
+   "records": 81,
+   "codes": {
+    "verified": 40,
+    "model_not_shown": 34,
+    "wrong_turn": 5,
+    "shown_citing_failure": 2
+   },
+   "present": {
+    "right": {
+     "k": 23,
+     "n": 27,
+     "ci95": [
+      0.675,
+      0.941
+     ]
+    },
+    "true_shown_kept": {
+     "k": 11,
+     "n": 13,
+     "ci95": [
+      0.578,
+      0.957
+     ]
+    },
+    "true_contradicted_kept": {
+     "k": 12,
+     "n": 14,
+     "ci95": [
+      0.601,
+      0.96
+     ]
+    },
+    "answered_not_shown": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "wrong_way_round": {
+     "k": 2,
+     "n": 27,
+     "ci95": [
+      0.021,
+      0.234
+     ]
+    },
+    "verdict_not_shown": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0
+   },
+   "twin_missing": {
+    "n": 27,
+    "guess": {
+     "k": 15,
+     "n": 27,
+     "ci95": [
+      0.373,
+      0.724
+     ]
+    },
+    "guess_shown": 6,
+    "guess_contradicted": 9,
+    "not_shown_verdict": {
+     "k": 12,
+     "n": 27,
+     "ci95": [
+      0.276,
+      0.627
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 10,
+     "n": 27,
+     "ci95": [
+      0.215,
+      0.558
+     ]
+    },
+    "final_not_shown": {
+     "k": 17,
+     "n": 27,
+     "ci95": [
+      0.442,
+      0.785
+     ]
+    },
+    "guess_empty_log": {
+     "k": 5,
+     "n": 12,
+     "ci95": [
+      0.193,
+      0.68
+     ]
+    },
+    "guess_with_log": {
+     "k": 10,
+     "n": 15,
+     "ci95": [
+      0.417,
+      0.848
+     ]
+    }
+   },
+   "twin_blank": {
+    "n": 27,
+    "guess": {
+     "k": 5,
+     "n": 27,
+     "ci95": [
+      0.082,
+      0.367
+     ]
+    },
+    "guess_shown": 4,
+    "guess_contradicted": 1,
+    "not_shown_verdict": {
+     "k": 22,
+     "n": 27,
+     "ci95": [
+      0.633,
+      0.918
+     ]
+    },
+    "no_valid_verdict": {
+     "k": 0,
+     "n": 27,
+     "ci95": [
+      0.0,
+      0.125
+     ]
+    },
+    "no_answer": 0,
+    "final_guess": {
+     "k": 5,
+     "n": 27,
+     "ci95": [
+      0.082,
+      0.367
+     ]
+    },
+    "final_not_shown": {
+     "k": 22,
+     "n": 27,
+     "ci95": [
+      0.633,
+      0.918
+     ]
+    }
+   }
+  }
+ },
+ "paired_contrasts": {
+  "A: forced against allowed": {
+   "twin_missing_guess_forced_only_vs_allowed_only": {
+    "first_only": 5,
+    "second_only": 0,
+    "sign_test_p": 0.0625
+   },
+   "twin_blank_guess_forced_only_vs_allowed_only": {
+    "first_only": 20,
+    "second_only": 0,
+    "sign_test_p": 0.0
+   },
+   "present_right_forced_only_vs_allowed_only": {
+    "first_only": 2,
+    "second_only": 2,
+    "sign_test_p": 1.0
+   }
+  },
+  "A: rewarded against allowed": {
+   "twin_missing_guess_rewarded_only_vs_allowed_only": {
+    "first_only": 0,
+    "second_only": 1,
+    "sign_test_p": 1.0
+   },
+   "twin_blank_guess_rewarded_only_vs_allowed_only": {
+    "first_only": 0,
+    "second_only": 1,
+    "sign_test_p": 1.0
+   },
+   "present_right_rewarded_only_vs_allowed_only": {
+    "first_only": 1,
+    "second_only": 1,
+    "sign_test_p": 1.0
+   }
+  },
+  "B: forced against allowed": {
+   "twin_missing_guess_forced_only_vs_allowed_only": {
+    "first_only": 7,
+    "second_only": 0,
+    "sign_test_p": 0.0156
+   },
+   "twin_blank_guess_forced_only_vs_allowed_only": {
+    "first_only": 3,
+    "second_only": 0,
+    "sign_test_p": 0.25
+   },
+   "present_right_forced_only_vs_allowed_only": {
+    "first_only": 0,
+    "second_only": 0,
+    "sign_test_p": 1.0
+   }
+  },
+  "B: rewarded against allowed": {
+   "twin_missing_guess_rewarded_only_vs_allowed_only": {
+    "first_only": 1,
+    "second_only": 1,
+    "sign_test_p": 1.0
+   },
+   "twin_blank_guess_rewarded_only_vs_allowed_only": {
+    "first_only": 0,
+    "second_only": 1,
+    "sign_test_p": 1.0
+   },
+   "present_right_rewarded_only_vs_allowed_only": {
+    "first_only": 0,
+    "second_only": 0,
+    "sign_test_p": 1.0
+   }
+  }
+ }
+}

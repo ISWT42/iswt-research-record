@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Offline evaluation kit v1 WebAuthn result envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "payload",
+    "credentialId",
+    "authenticatorData",
+    "clientDataJSON",
+    "signature"
+  ],
+  "properties": {
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "study",
+        "kit",
+        "model_profile",
+        "donor_credential",
+        "counts",
+        "errors",
+        "agreement",
+        "calibration",
+        "spot_checks"
+      ],
+      "properties": {
+        "schema": {
+          "const": 1
+        },
+        "study": {
+          "const": 1
+        },
+        "kit": {
+          "const": 1
+        },
+        "model_profile": {
+          "const": 1
+        },
+        "donor_credential": {
+          "$ref": "#/$defs/credential"
+        },
+        "counts": {
+          "type": "array",
+          "minItems": 27,
+          "maxItems": 27,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 20
+          }
+        },
+        "errors": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "agreement": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 20
+          }
+        },
+        "calibration": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 160
+          }
+        },
+        "spot_checks": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5
+          }
+        }
+      }
+    },
+    "credentialId": {
+      "$ref": "#/$defs/credential"
+    },
+    "authenticatorData": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 50,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "clientDataJSON": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 683,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    },
+    "signature": {
+      "type": "string",
+      "minLength": 11,
+      "maxLength": 96,
+      "pattern": "^[A-Za-z0-9_-]+$"
+    }
+  },
+  "$defs": {
+    "credential": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 1364,
+      "pattern": "^[A-Za-z0-9_-]+$",
+      "$comment": "Canonical unpadded base64url; decoded 1..1023 bytes; must exactly match approved enrollment. These are required semantic checks beyond JSON Schema."
+    }
+  },
+  "$comment": "Normative spec.md additionally requires canonical bytes, exact decoded lengths, registry enrollment, payload arithmetic, exact published reference calibration, pinned browser client-data template, no duplicate keys, native signed-byte verification, UP/UV, low-S normalization internally, and replay ledger. No conforming release exists until release bindings are completed. The schema URL identifies a standard; it was not fetched and no network resolution is authorized."
+}

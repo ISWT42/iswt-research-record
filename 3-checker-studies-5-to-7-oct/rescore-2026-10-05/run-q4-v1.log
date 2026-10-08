@@ -1,0 +1,7 @@
+seal verified; inputs verified against the design hashes
+local: 280 records read; duplicates: 0; missing: 0
+fast: 280 records read; duplicates: 0; missing: 0
+answer rows built: 560
+verbatim-gate cross-check: 0 disagreements with the recorded codes
+written: results-q4-v1.json
+reconciliation with the stored run 2 scores: 24 figures compared, 24 agree

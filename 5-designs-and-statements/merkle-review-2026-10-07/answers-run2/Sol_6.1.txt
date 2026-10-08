@@ -1,0 +1,61 @@
+## 1. Verdict in one paragraph
+
+The design is sound as a way to disclose selected records while proving they match an earlier commitment, and worth prototyping. Its parts are established; the useful work is packaging them into agent receipts with clear verdict rules. It does **not** make records truthful, complete, or automatically access-controlled. Someone must enforce disclosure policy, protect unreleased records, and define what evidence counts as “shown.” A timestamp limits later rewriting; it does not prove nobody read the results before committing them.
+
+## 2. What is already established
+
+- **Merkle trees:** authenticate individual items against one root using short proofs without disclosing other items. The proposed hierarchy is a standard application.
+- **Certificate Transparency, RFC 9162:** uses Merkle logs to support inclusion and consistency checks. Unlike a single timestamped root, consistency proofs can demonstrate append-only growth.
+- **RFC 3161:** defines signed timestamp tokens binding a hash to a timestamp authority’s asserted time.
+- **OpenTimestamps:** provides timestamp proofs using Bitcoin anchoring. This establishes a latest existence bound, not a precise creation time or evidence of truth.
+- **in-toto:** records supply-chain steps and their inputs and outputs in signed metadata. It addresses accountable provenance, though not this exact selective-disclosure interface.
+
+Salted commitments and selective opening are established techniques. Nesting trees by file, run, and day changes organization, not the underlying guarantee.
+
+## 3. What is new, if anything
+
+The potentially useful contribution is an agent-specific receipt format combining claims, selectively disclosed evidence, access-aware presentation, and three explicit outcomes. Novelty would lie in the evidence rules, usability, and integrations—not the hashing scheme. I cannot establish whether that exact combination is new without a literature search.
+
+## 4. How it can fail
+
+- **Weak or reused salts:** hidden low-entropy records may be guessed. Use independent cryptographically random salts, preferably 256 bits, and keep undisclosed salts secret.
+- **Ambiguous encoding or boundaries:** different records could be interpreted as the same input. Specify exact bytes, lengths, versions, record types, and distinct prefixes for leaves and internal nodes.
+- **Unbound identity or order:** valid leaves could be presented under misleading names or runs. Commit record identifiers, positions, run identifiers, tree shape, and manifests.
+- **Structure leaks:** withheld slots expose counts, timing, and workflow shape. Minimize public metadata; use padding or opaque subtree commitments where needed. These choices weaken visible accounting.
+- **Lost salts, records, or keys:** later disclosure becomes impossible. Back up encrypted records and salts, test recovery, and define retention.
+- **Access mistakes:** Merkle proofs do not enforce access. Use an authenticated disclosure service or encrypted records with controlled key release; audit policy changes.
+- **Revocation:** recipients retain anything already disclosed. Promise only control of future releases, not recall.
+- **Delayed commitment or competing roots:** records can be edited before anchoring, or different audiences shown different roots. Set commitment deadlines, publish a canonical run-to-root registry, and check it.
+- **Misleading verdicts:** withheld evidence may be treated as success. Make unavailable evidence “not shown”; define claim-specific checks and distinguish missing, withheld, and invalid evidence.
+
+## 5. Threat model
+
+An agent or operator can fabricate records, omit failures, or choose a misleading scope **before** commitment. Hashing does not stop this. Independent collection, signed external observations, and committed scope manifests reduce that risk.
+
+The tree builder can commit lies or omissions. After a root is publicly fixed, changing committed bytes without detection should be infeasible under standard hash assumptions.
+
+A disclosure service can withhold evidence or mislabel its significance. Verified manifests can expose some omissions, but cannot force disclosure.
+
+A viewer can redistribute received records. Access controls cannot prevent that reliably.
+
+A timestamp authority can misstate time; Bitcoin provides a separate anchoring basis, with confirmation and timing uncertainty. Neither authenticates the underlying event.
+
+## 6. The smallest prototype that would show it works
+
+Use one narrowly defined job: producing an artifact whose required properties can be checked independently. Record its claim, actions, checker output, and artifact hash. Build the nested tree, anchor one root, and issue views for three access levels. Verify proofs locally against the independently obtained root.
+
+Measure proof size, build and verification time, storage cost, authorized-field visibility, metadata leakage, and agreement with independent claim checks.
+
+Test altered records, wrong salts, reordered records, transplanted proofs, omitted entries, changed labels, and conflicting roots. Also commit a fabricated “success” record: it should pass commitment verification but not thereby establish success.
+
+Results against the design include accepted tampering, unauthorized disclosure, indistinguishable scope omissions, or any “shown” verdict based solely on a valid hash proof.
+
+## 7. Where it is most useful first
+
+- **Software build and test agents:** artifacts and test results have concrete, independently checkable properties.
+- **Internal automation handoffs:** teams can verify reported steps while keeping credentials and unrelated customer data private.
+- **Controlled audit pilots:** auditors can request specific evidence and see explicitly where access prevents a conclusion.
+
+## 8. What it does not prove
+
+A receipt proves that disclosed bytes match a particular commitment anchored by a particular time bound. It does not prove truthful recording, complete capture, correct execution, causation, authorization, or absence of hidden failures. “Shown” must mean the disclosed evidence satisfies an explicit check—not merely that its Merkle proof verifies. “Not shown” is not “false,” and “withheld” is not proof that useful evidence exists behind the hash.

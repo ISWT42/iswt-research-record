@@ -1,0 +1,17 @@
+E2 handoff for the coordinating session (plain paths; written 2026-10-06T09:36:48Z, read with date -u in the same step).
+E2's local run is finished (486 answers: 6 arms x 81 items, no failed calls, no duplicates). My last Lemonade call returned at 2026-10-06T09:35:50Z; no further Lemonade call will be made by me. Answers sealed, then scored, then the score sealed, then read.
+
+Twins file (27 context-present items, 27 context-missing twins, 27 blank-output twins), sealed before the run:
+  <home>\Workbench\overnight-2026-10-05\e2\twins-R001-R040.jsonl
+  sha256 84f6d4b6ffff264fc8deac8f727e44ed4baaebe14edc369dacab8b623dae2e9b
+  seal: <home>\Workbench\overnight-2026-10-05\e2\TWINS-SHA256.txt (FreeTSA reply beside it, .tsr); the twin review is e2\twin-review.json, sealed with it
+Local answers file (arms A-forced, A-allowed, A-rewarded, B-forced, B-allowed, B-rewarded; 81 lines each):
+  <home>\Workbench\overnight-2026-10-05\e2\results\answers-e2-local.jsonl
+  sha256 143faece45f19443d45bf8c48f363e34c71dbb3b244f3ab2f6da1b3d64c4852e
+  seal: <home>\Workbench\overnight-2026-10-05\e2\results\E2-ANSWERS-SHA256.txt (FreeTSA 2026-10-06 09:36:05 GMT)
+Score file:
+  <home>\Workbench\overnight-2026-10-05\e2\results\score-e2.json
+  sha256 c2558b40a79320afd3d440d9af41f22e1cfa4e684663d456100539d4d7e6cbb2
+  seal: <home>\Workbench\overnight-2026-10-05\e2\results\E2-SCORE-SHA256.txt (FreeTSA 2026-10-06 09:36:10 GMT)
+Design: <home>\Workbench\overnight-2026-10-05\E2-DESIGN.md (seal E2-DESIGN-SHA256.txt in the same folder)
+E1 files are listed in <home>\Workbench\overnight-2026-10-05\E1-RESULTS-PATHS.txt

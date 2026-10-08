@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 700" width="980" height="700" role="img" aria-label="PILOT chart: self-help gain by round, right answers out of 40 minus Empty">
+<style>text{font-family:"Segoe UI",system-ui,Arial,sans-serif;fill:#1d1d1f}.small{font-size:12px}.mid{font-size:13px}.grid{stroke:#d8d8dc;stroke-width:1}.axis{stroke:#444;stroke-width:1.5}</style>
+<rect width="980" height="700" fill="#ffffff"/>
+<text x="95" y="34" font-size="21" font-weight="700">Self-help gain by round: right answers out of 40, minus Empty</text>
+<text x="95" y="62" font-size="15" font-weight="700" fill="#b00020" style="fill:#b00020">PILOT. items 161 to 280 are NOT FRESH (scored before); exploratory, not evidence</text>
+<text x="95" y="84" class="mid">Run pilot-1. Counts only; the floor is measured in this session, from repeats of the fixed arms.</text>
+<text x="95" y="104" class="mid">The loops never saw these test blocks or their scores. A rise here is not evidence of anything until the controls pass.</text>
+<line x1="95" y1="485.0" x2="920" y2="485.0" class="grid"/>
+<text x="85" y="489.0" text-anchor="end" class="small">-3</text>
+<line x1="95" y1="437.1" x2="920" y2="437.1" class="grid"/>
+<text x="85" y="441.1" text-anchor="end" class="small">-2</text>
+<line x1="95" y1="389.3" x2="920" y2="389.3" class="grid"/>
+<text x="85" y="393.3" text-anchor="end" class="small">-1</text>
+<line x1="95" y1="341.4" x2="920" y2="341.4" class="grid"/>
+<text x="85" y="345.4" text-anchor="end" class="small">0</text>
+<line x1="95" y1="293.6" x2="920" y2="293.6" class="grid"/>
+<text x="85" y="297.6" text-anchor="end" class="small">+1</text>
+<line x1="95" y1="245.7" x2="920" y2="245.7" class="grid"/>
+<text x="85" y="249.7" text-anchor="end" class="small">+2</text>
+<line x1="95" y1="197.9" x2="920" y2="197.9" class="grid"/>
+<text x="85" y="201.9" text-anchor="end" class="small">+3</text>
+<line x1="95" y1="150.0" x2="920" y2="150.0" class="grid"/>
+<text x="85" y="154.0" text-anchor="end" class="small">+4</text>
+<text x="22" y="318" transform="rotate(-90 22 318)" text-anchor="middle" class="mid">gain: right answers, minus Empty (of 40)</text>
+<rect x="95" y="245.7" width="825" height="191.4" fill="#8a8a96" fill-opacity="0.22"/>
+<text x="914" y="240.7" text-anchor="end" class="small">noise floor, plus and minus f = 2</text>
+<line x1="95" y1="341.4" x2="920" y2="341.4" class="axis"/>
+<text x="101" y="335.4" class="small" font-weight="700">Empty (baseline)</text>
+<line x1="232.5" y1="150" x2="232.5" y2="485" class="grid"/>
+<text x="232.5" y="509" text-anchor="middle" class="mid">R1</text>
+<text x="232.5" y="527" text-anchor="middle" class="small">40 items</text>
+<line x1="507.5" y1="150" x2="507.5" y2="485" class="grid"/>
+<text x="507.5" y="509" text-anchor="middle" class="mid">R2</text>
+<text x="507.5" y="527" text-anchor="middle" class="small">40 items</text>
+<line x1="782.5" y1="150" x2="782.5" y2="485" class="grid"/>
+<text x="782.5" y="509" text-anchor="middle" class="mid">R3</text>
+<text x="782.5" y="527" text-anchor="middle" class="small">40 items</text>
+<polyline points="241.5,413.2 516.5,293.6 791.5,317.5" fill="none" stroke="#5a3d99" stroke-width="2.6" stroke-dasharray="7 5"/>
+<rect x="237.0" y="408.7" width="9" height="9" transform="rotate(45 241.5 413.2)" fill="#ffffff" stroke="#5a3d99" stroke-width="2.2"/>
+<text x="252.5" y="403.2" text-anchor="start" class="small" style="fill:#5a3d99" font-weight="700">-1.5 (28.5 v 30)</text>
+<rect x="512.0" y="289.1" width="9" height="9" transform="rotate(45 516.5 293.6)" fill="#ffffff" stroke="#5a3d99" stroke-width="2.2"/>
+<text x="527.5" y="283.6" text-anchor="start" class="small" style="fill:#5a3d99" font-weight="700">+1 (30 v 29)</text>
+<rect x="787.0" y="313.0" width="9" height="9" transform="rotate(45 791.5 317.5)" fill="#ffffff" stroke="#5a3d99" stroke-width="2.2"/>
+<text x="802.5" y="307.5" text-anchor="start" class="small" style="fill:#5a3d99" font-weight="700">+0.5 (28.5 v 28)</text>
+<polyline points="232.5,341.4 507.5,293.6 782.5,197.9" fill="none" stroke="#b35900" stroke-width="2.6"/>
+<path d="M227.5 336.4L237.5 346.4M227.5 346.4L237.5 336.4" stroke="#b35900" stroke-width="2.6"/>
+<text x="232.5" y="361.4" text-anchor="middle" class="small" style="fill:#b35900" font-weight="700">0 (30 v 30)</text>
+<path d="M502.5 288.6L512.5 298.6M502.5 298.6L512.5 288.6" stroke="#b35900" stroke-width="2.6"/>
+<text x="507.5" y="313.6" text-anchor="middle" class="small" style="fill:#b35900" font-weight="700">+1 (30 v 29)</text>
+<path d="M777.5 192.9L787.5 202.9M777.5 202.9L787.5 192.9" stroke="#b35900" stroke-width="2.6"/>
+<text x="782.5" y="217.9" text-anchor="middle" class="small" style="fill:#b35900" font-weight="700">+3 (31 v 28)</text>
+<polyline points="223.5,413.2 498.5,341.4 773.5,317.5" fill="none" stroke="#1b6ca8" stroke-width="2.6"/>
+<line x1="223.5" y1="437.1" x2="223.5" y2="389.3" stroke="#1b6ca8" stroke-width="1.4"/>
+<line x1="219.5" y1="437.1" x2="227.5" y2="437.1" stroke="#1b6ca8" stroke-width="1.4"/>
+<line x1="219.5" y1="389.3" x2="227.5" y2="389.3" stroke="#1b6ca8" stroke-width="1.4"/>
+<circle cx="223.5" cy="413.2" r="5" fill="#1b6ca8"/>
+<text x="212.5" y="403.2" text-anchor="end" class="small" style="fill:#1b6ca8" font-weight="700">-1.5 (28.5 v 30)</text>
+<line x1="498.5" y1="341.4" x2="498.5" y2="341.4" stroke="#1b6ca8" stroke-width="1.4"/>
+<line x1="494.5" y1="341.4" x2="502.5" y2="341.4" stroke="#1b6ca8" stroke-width="1.4"/>
+<line x1="494.5" y1="341.4" x2="502.5" y2="341.4" stroke="#1b6ca8" stroke-width="1.4"/>
+<circle cx="498.5" cy="341.4" r="5" fill="#1b6ca8"/>
+<text x="487.5" y="331.4" text-anchor="end" class="small" style="fill:#1b6ca8" font-weight="700">0 (29 v 29)</text>
+<line x1="773.5" y1="389.3" x2="773.5" y2="245.7" stroke="#1b6ca8" stroke-width="1.4"/>
+<line x1="769.5" y1="389.3" x2="777.5" y2="389.3" stroke="#1b6ca8" stroke-width="1.4"/>
+<line x1="769.5" y1="245.7" x2="777.5" y2="245.7" stroke="#1b6ca8" stroke-width="1.4"/>
+<circle cx="773.5" cy="317.5" r="5" fill="#1b6ca8"/>
+<text x="762.5" y="307.5" text-anchor="end" class="small" style="fill:#1b6ca8" font-weight="700">+0.5 (28.5 v 28)</text>
+<line x1="95" y1="550" x2="131" y2="550" stroke="#1b6ca8" stroke-width="2.6"/>
+<text x="141" y="554" class="small">Own notes (median of the loops; thin bars show the loops' min and max)</text>
+<line x1="95" y1="572" x2="131" y2="572" stroke="#b35900" stroke-width="2.6"/>
+<text x="141" y="576" class="small">Model-hand (a set written by the coordinating session, a model, not a person)</text>
+<line x1="95" y1="594" x2="131" y2="594" stroke="#5a3d99" stroke-width="2.6" stroke-dasharray="7 5"/>
+<text x="141" y="598" class="small">Own notes + own method (the control that decides whether a rise may be called recursive)</text>
+<text x="95" y="628" class="small">Counts on the points: right answers with that arm, then right answers with Empty on the same block (of 40). The band is the in-session noise floor, plus and minus f.</text>
+<text x="95" y="646" class="small">Floor f = 2 per 40-item block: the 90th percentile of 36 absolute differences between repeats of the same arm, at least 2 (design 4.8).</text>
+<text x="95" y="664" class="small">Labels read: gain (right with the arm v right with Empty). Own notes: the median of the loops; two loops here, so a half count can appear.</text>
+</svg>

@@ -1,0 +1,6 @@
+# A1 after round 1: 0 edits applied, 0 dropped
+# state hash 31a8d71c68c7c6c0c786b979cdd5f3083f110b06b6ba9d3546f8cb519204a82d
+[V1]
+[V2]
+[V3]
+[V4]

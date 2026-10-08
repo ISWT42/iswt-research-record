@@ -1,0 +1,566 @@
+=== pinned-1 start 2026-10-05T18:13:50Z ===
+fast lane: 280 calls to make, $0.0000 spent so far, cap $3.0
+[P-Q] 161: shown (verified) spent $0.0001
+[P-Q] 166: not shown (unverified_quote) spent $0.0002
+[P-Q] 163: shown (verified) spent $0.0004
+[P-Q] 167: shown (verified) spent $0.0005
+[P-Q] 165: contradicted (verified) spent $0.0006
+[P-Q] 162: contradicted (verified) spent $0.0007
+[P-Q] 169: contradicted (verified) spent $0.0009
+[P-Q] 168: shown (verified) spent $0.0010
+[P-Q] 164: contradicted (verified) spent $0.0011
+[P-Q] 171: contradicted (verified) spent $0.0013
+[P-Q] 175: shown (verified) spent $0.0014
+[P-Q] 173: not shown (model_not_shown) spent $0.0015
+[P-Q] 172: shown (verified) spent $0.0016
+[P-Q] 170: contradicted (verified) spent $0.0018
+[P-Q] 174: contradicted (verified) spent $0.0019
+[P-Q] 176: contradicted (verified) spent $0.0020
+[P-Q] 177: not shown (model_not_shown) spent $0.0022
+[P-Q] 178: not shown (model_not_shown) spent $0.0023
+[P-Q] 180: contradicted (verified) spent $0.0024
+[P-Q] 179: shown (verified) spent $0.0025
+[P-Q] 181: shown (verified) spent $0.0027
+[P-Q] 183: shown (verified) spent $0.0028
+[P-Q] 184: contradicted (verified) spent $0.0029
+[P-Q] 185: shown (verified) spent $0.0030
+[P-Q] 182: contradicted (verified) spent $0.0032
+[P-Q] 186: contradicted (verified) spent $0.0033
+[P-Q] 187: contradicted (verified) spent $0.0034
+[P-Q] 189: contradicted (verified) spent $0.0035
+[P-Q] 190: not shown (model_not_shown) spent $0.0036
+[P-Q] 188: contradicted (verified) spent $0.0038
+[P-Q] 191: contradicted (verified) spent $0.0039
+[P-Q] 192: shown (verified) spent $0.0040
+[P-Q] 193: contradicted (verified) spent $0.0042
+[P-Q] 194: contradicted (verified) spent $0.0043
+[P-Q] 197: not shown (model_not_shown) spent $0.0044
+[P-Q] 195: shown (verified) spent $0.0045
+[P-Q] 196: not shown (shown_citing_failure) spent $0.0047
+[P-Q] 198: shown (verified) spent $0.0048
+[P-Q] 199: contradicted (verified) spent $0.0049
+[P-Q] 202: not shown (model_not_shown) spent $0.0050
+[P-Q] 200: contradicted (verified) spent $0.0052
+[P-Q] 205: shown (verified) spent $0.0053
+[P-Q] 204: shown (verified) spent $0.0054
+[P-Q] 201: contradicted (verified) spent $0.0055
+[P-Q] 203: contradicted (verified) spent $0.0057
+[P-Q] 207: shown (verified) spent $0.0058
+[P-Q] 206: contradicted (verified) spent $0.0059
+[P-Q] 209: not shown (model_not_shown) spent $0.0061
+[P-Q] 208: contradicted (verified) spent $0.0062
+[P-Q] 210: not shown (model_not_shown) spent $0.0063
+[P-Q] 211: shown (verified) spent $0.0065
+[P-Q] 212: not shown (model_not_shown) spent $0.0066
+[P-Q] 214: not shown (unverified_quote) spent $0.0067
+[P-Q] 213: contradicted (verified) spent $0.0068
+[P-Q] 215: contradicted (verified) spent $0.0070
+[P-Q] 216: shown (verified) spent $0.0071
+[P-Q] 217: shown (verified) spent $0.0072
+[P-Q] 218: contradicted (verified) spent $0.0073
+[P-Q] 219: not shown (model_not_shown) spent $0.0074
+[P-Q] 221: contradicted (verified) spent $0.0076
+[P-Q] 220: shown (verified) spent $0.0077
+[P-Q] 223: contradicted (verified) spent $0.0078
+[P-Q] 222: shown (verified) spent $0.0080
+[P-Q] 224: contradicted (verified) spent $0.0081
+[P-Q] 226: contradicted (verified) spent $0.0082
+[P-Q] 225: contradicted (verified) spent $0.0083
+[P-Q] 227: shown (verified) spent $0.0085
+[P-Q] 228: contradicted (verified) spent $0.0086
+[P-Q] 229: not shown (model_not_shown) spent $0.0087
+[P-Q] 230: shown (verified) spent $0.0088
+[P-Q] 231: contradicted (verified) spent $0.0090
+[P-Q] 232: shown (verified) spent $0.0091
+[P-Q] 234: contradicted (verified) spent $0.0092
+[P-Q] 233: contradicted (verified) spent $0.0094
+[P-Q] 235: contradicted (verified) spent $0.0095
+[P-Q] 236: shown (verified) spent $0.0096
+[P-Q] 240: not shown (model_not_shown) spent $0.0097
+[P-Q] 241: shown (verified) spent $0.0099
+[P-Q] 239: contradicted (verified) spent $0.0100
+[P-Q] 237: shown (verified) spent $0.0101
+[P-Q] 238: shown (verified) spent $0.0102
+[P-Q] 242: not shown (model_not_shown) spent $0.0104
+[P-Q] 243: contradicted (verified) spent $0.0105
+[P-Q] 245: not shown (model_not_shown) spent $0.0106
+[P-Q] 247: contradicted (verified) spent $0.0107
+[P-Q] 246: not shown (model_not_shown) spent $0.0109
+[P-Q] 249: shown (verified) spent $0.0110
+[P-Q] 244: shown (verified) spent $0.0111
+[P-Q] 248: contradicted (verified) spent $0.0113
+[P-Q] 250: contradicted (verified) spent $0.0114
+[P-Q] 251: shown (verified) spent $0.0115
+[P-Q] 252: not shown (model_not_shown) spent $0.0116
+[P-Q] 253: not shown (model_not_shown) spent $0.0118
+[P-Q] 254: shown (verified) spent $0.0119
+[P-Q] 257: contradicted (verified) spent $0.0120
+[P-Q] 256: shown (verified) spent $0.0121
+[P-Q] 255: contradicted (verified) spent $0.0123
+[P-Q] 260: contradicted (verified) spent $0.0124
+[P-Q] 259: not shown (model_not_shown) spent $0.0125
+[P-Q] 258: contradicted (verified) spent $0.0126
+[P-Q] 261: contradicted (verified) spent $0.0128
+[P-Q] 263: shown (verified) spent $0.0129
+[P-Q] 266: not shown (model_not_shown) spent $0.0130
+[P-Q] 262: contradicted (verified) spent $0.0131
+[P-Q] 264: contradicted (verified) spent $0.0133
+[P-Q] 267: shown (verified) spent $0.0134
+[P-Q] 269: contradicted (verified) spent $0.0135
+[P-Q] 271: contradicted (verified) spent $0.0137
+[P-Q] 268: shown (verified) spent $0.0138
+[P-Q] 265: not shown (unverified_quote) spent $0.0140
+[P-Q] 270: contradicted (verified) spent $0.0141
+[P-Q] 276: shown (verified) spent $0.0142
+[P-Q] 274: contradicted (verified) spent $0.0143
+[P-Q] 273: shown (verified) spent $0.0145
+[P-Q] 277: shown (verified) spent $0.0146
+[P-Q] 275: contradicted (verified) spent $0.0147
+[P-Q] 278: not shown (model_not_shown) spent $0.0148
+[P-Q] 280: contradicted (verified) spent $0.0150
+[P-Q] 279: contradicted (verified) spent $0.0151
+[P-Q] 282: not shown (model_not_shown) spent $0.0152
+[P-Q] 281: shown (verified) spent $0.0153
+[P-Q] 285: not shown (model_not_shown) spent $0.0154
+[P-Q] 284: not shown (shown_citing_failure) spent $0.0156
+[P-Q] 287: contradicted (verified) spent $0.0157
+[P-Q] 272: not shown (unparseable_reply) spent $0.0159
+[P-Q] 283: contradicted (verified) spent $0.0160
+[P-Q] 290: contradicted (verified) spent $0.0161
+[P-Q] 288: not shown (model_not_shown) spent $0.0163
+[P-Q] 292: shown (verified) spent $0.0164
+[P-Q] 289: shown (verified) spent $0.0165
+[P-Q] 291: contradicted (verified) spent $0.0166
+[P-Q] 293: not shown (model_not_shown) spent $0.0168
+[P-Q] 294: shown (verified) spent $0.0169
+[P-Q] 298: contradicted (verified) spent $0.0170
+[P-Q] 296: shown (verified) spent $0.0171
+[P-Q] 297: shown (verified) spent $0.0172
+[P-Q] 299: shown (verified) spent $0.0174
+[P-G] 161: shown (verified) spent $0.0174
+[P-G] 162: contradicted (verified) spent $0.0175
+[P-G] 164: not shown (model_not_shown) spent $0.0176
+[P-Q] 300: contradicted (verified) spent $0.0177
+[P-G] 165: not shown (model_not_shown) spent $0.0178
+[P-G] 163: shown (verified) spent $0.0179
+[P-G] 166: not shown (model_not_shown) spent $0.0179
+[P-G] 167: shown (verified) spent $0.0180
+[P-G] 168: shown (verified) spent $0.0181
+[P-G] 169: contradicted (verified) spent $0.0181
+[P-G] 171: shown (verified) spent $0.0182
+[P-G] 170: contradicted (verified) spent $0.0183
+[P-G] 172: shown (verified) spent $0.0184
+[P-G] 175: shown (verified) spent $0.0184
+[P-G] 174: contradicted (verified) spent $0.0185
+[P-G] 173: not shown (model_not_shown) spent $0.0186
+[P-G] 176: shown (verified) spent $0.0187
+[P-G] 177: not shown (model_not_shown) spent $0.0187
+[P-G] 178: not shown (model_not_shown) spent $0.0188
+[P-G] 179: shown (verified) spent $0.0189
+[P-G] 180: not shown (model_not_shown) spent $0.0189
+[P-Q] 286: not shown (unparseable_reply) spent $0.0191
+[P-G] 181: not shown (unverified_quote) spent $0.0192
+[P-G] 182: not shown (model_not_shown) spent $0.0192
+[P-G] 184: contradicted (verified) spent $0.0193
+[P-G] 187: not shown (model_not_shown) spent $0.0194
+[P-G] 183: shown (verified) spent $0.0194
+[P-G] 186: contradicted (verified) spent $0.0195
+[P-G] 185: shown (verified) spent $0.0196
+[P-G] 189: contradicted (verified) spent $0.0197
+[P-G] 188: shown (verified) spent $0.0197
+[P-G] 190: not shown (model_not_shown) spent $0.0198
+[P-G] 191: shown (verified) spent $0.0199
+[P-G] 192: shown (verified) spent $0.0200
+[P-G] 194: not shown (model_not_shown) spent $0.0200
+[P-G] 195: shown (verified) spent $0.0201
+[P-G] 193: contradicted (verified) spent $0.0202
+[P-G] 196: not shown (shown_citing_failure) spent $0.0202
+[P-G] 197: shown (verified) spent $0.0203
+[P-G] 199: shown (verified) spent $0.0204
+[P-G] 198: contradicted (verified) spent $0.0205
+[P-G] 200: not shown (model_not_shown) spent $0.0205
+[P-G] 202: shown (verified) spent $0.0206
+[P-G] 201: contradicted (verified) spent $0.0207
+[P-G] 204: shown (verified) spent $0.0207
+[P-G] 203: not shown (model_not_shown) spent $0.0208
+[P-G] 205: contradicted (verified) spent $0.0209
+[P-G] 206: not shown (shown_citing_failure) spent $0.0209
+[P-G] 209: not shown (model_not_shown) spent $0.0210
+[P-G] 207: shown (verified) spent $0.0211
+[P-G] 208: contradicted (verified) spent $0.0212
+[P-Q] 295: not shown (unparseable_reply) spent $0.0213
+[P-G] 210: not shown (model_not_shown) spent $0.0214
+[P-G] 211: shown (verified) spent $0.0215
+[P-G] 212: not shown (model_not_shown) spent $0.0215
+[P-G] 214: not shown (model_not_shown) spent $0.0216
+[P-G] 216: shown (verified) spent $0.0217
+[P-G] 218: contradicted (verified) spent $0.0217
+[P-G] 213: shown (verified) spent $0.0218
+[P-G] 215: contradicted (verified) spent $0.0219
+[P-G] 217: shown (verified) spent $0.0220
+[P-G] 219: contradicted (verified) spent $0.0220
+[P-G] 220: shown (verified) spent $0.0221
+[P-G] 223: not shown (model_not_shown) spent $0.0222
+[P-G] 222: shown (verified) spent $0.0223
+[P-G] 224: contradicted (verified) spent $0.0223
+[P-G] 225: contradicted (verified) spent $0.0224
+[P-G] 221: contradicted (verified) spent $0.0225
+[P-G] 226: contradicted (verified) spent $0.0226
+[P-G] 227: shown (verified) spent $0.0226
+[P-G] 228: contradicted (verified) spent $0.0227
+[P-G] 229: not shown (model_not_shown) spent $0.0228
+[P-G] 231: contradicted (verified) spent $0.0229
+[P-G] 232: shown (verified) spent $0.0229
+[P-G] 233: contradicted (verified) spent $0.0230
+[P-G] 234: not shown (model_not_shown) spent $0.0231
+[P-G] 230: shown (verified) spent $0.0232
+[P-G] 235: not shown (model_not_shown) spent $0.0232
+[P-G] 236: shown (verified) spent $0.0233
+[P-G] 237: shown (verified) spent $0.0234
+[P-G] 238: shown (verified) spent $0.0234
+[P-G] 240: not shown (model_not_shown) spent $0.0235
+[P-G] 241: shown (verified) spent $0.0236
+[P-G] 239: not shown (model_not_shown) spent $0.0236
+[P-G] 242: not shown (model_not_shown) spent $0.0237
+[P-G] 243: not shown (model_not_shown) spent $0.0238
+[P-G] 245: not shown (model_not_shown) spent $0.0238
+[P-G] 249: not shown (model_not_shown) spent $0.0239
+[P-G] 248: contradicted (verified) spent $0.0240
+[P-G] 247: not shown (shown_citing_failure) spent $0.0241
+[P-G] 244: shown (verified) spent $0.0241
+[P-G] 250: contradicted (verified) spent $0.0242
+[P-G] 246: contradicted (verified) spent $0.0243
+[P-G] 253: not shown (model_not_shown) spent $0.0243
+[P-G] 251: shown (verified) spent $0.0244
+[P-G] 254: shown (verified) spent $0.0245
+[P-G] 252: not shown (model_not_shown) spent $0.0246
+[P-G] 255: not shown (model_not_shown) spent $0.0246
+[P-G] 257: contradicted (verified) spent $0.0247
+[P-G] 256: shown (verified) spent $0.0248
+[P-G] 258: not shown (model_not_shown) spent $0.0248
+[P-G] 259: not shown (model_not_shown) spent $0.0249
+[P-G] 261: contradicted (verified) spent $0.0250
+[P-G] 263: shown (verified) spent $0.0250
+[P-G] 260: not shown (model_not_shown) spent $0.0251
+[P-G] 262: contradicted (verified) spent $0.0252
+[P-G] 264: shown (verified) spent $0.0253
+[P-G] 266: not shown (model_not_shown) spent $0.0253
+[P-G] 267: shown (verified) spent $0.0254
+[P-G] 265: not shown (unverified_quote) spent $0.0255
+[P-G] 270: not shown (model_not_shown) spent $0.0256
+[P-G] 269: shown (verified) spent $0.0257
+[P-G] 268: contradicted (verified) spent $0.0257
+[P-G] 271: contradicted (verified) spent $0.0258
+[P-G] 272: not shown (model_not_shown) spent $0.0259
+[P-G] 273: shown (verified) spent $0.0260
+[P-G] 274: not shown (model_not_shown) spent $0.0260
+[P-G] 275: contradicted (verified) spent $0.0261
+[P-G] 276: shown (verified) spent $0.0262
+[P-G] 278: shown (verified) spent $0.0262
+[P-G] 277: shown (verified) spent $0.0263
+[P-G] 279: contradicted (verified) spent $0.0264
+[P-G] 280: shown (verified) spent $0.0265
+[P-G] 281: shown (verified) spent $0.0265
+[P-G] 282: not shown (model_not_shown) spent $0.0266
+[P-G] 283: contradicted (verified) spent $0.0267
+[P-G] 286: not shown (model_not_shown) spent $0.0267
+[P-G] 287: contradicted (verified) spent $0.0268
+[P-G] 285: not shown (model_not_shown) spent $0.0268
+[P-G] 284: not shown (shown_citing_failure) spent $0.0269
+[P-G] 288: not shown (model_not_shown) spent $0.0270
+[P-G] 291: not shown (model_not_shown) spent $0.0271
+[P-G] 289: shown (verified) spent $0.0271
+[P-G] 290: contradicted (verified) spent $0.0272
+[P-G] 293: not shown (model_not_shown) spent $0.0273
+[P-G] 292: shown (verified) spent $0.0273
+[P-G] 294: shown (verified) spent $0.0274
+[P-G] 296: not shown (model_not_shown) spent $0.0275
+[P-G] 297: not shown (model_not_shown) spent $0.0276
+[P-G] 295: not shown (model_not_shown) spent $0.0276
+[P-G] 299: shown (verified) spent $0.0277
+[P-G] 298: contradicted (verified) spent $0.0277
+[P-G] 300: contradicted (verified) spent $0.0278
+=== pinned-1 end 2026-10-05T18:17:33Z exit 0 ===
+=== pinned-2 start 2026-10-05T18:17:33Z ===
+fast lane: 280 calls to make, $0.0000 spent so far, cap $3.0
+[P-Q] 161: shown (verified) spent $0.0001
+[P-Q] 163: shown (verified) spent $0.0002
+[P-Q] 166: contradicted (verified) spent $0.0004
+[P-Q] 162: contradicted (verified) spent $0.0005
+[P-Q] 165: contradicted (verified) spent $0.0006
+[P-Q] 164: contradicted (verified) spent $0.0007
+[P-Q] 167: shown (verified) spent $0.0009
+[P-Q] 169: contradicted (verified) spent $0.0010
+[P-Q] 168: shown (verified) spent $0.0011
+[P-Q] 171: contradicted (verified) spent $0.0013
+[P-Q] 172: shown (verified) spent $0.0014
+[P-Q] 174: contradicted (verified) spent $0.0015
+[P-Q] 173: not shown (model_not_shown) spent $0.0016
+[P-Q] 175: shown (verified) spent $0.0018
+[P-Q] 176: contradicted (verified) spent $0.0019
+[P-Q] 177: not shown (model_not_shown) spent $0.0020
+[P-Q] 178: contradicted (verified) spent $0.0021
+[P-Q] 180: contradicted (verified) spent $0.0023
+[P-Q] 179: shown (verified) spent $0.0024
+[P-Q] 181: shown (verified) spent $0.0025
+[P-Q] 182: contradicted (verified) spent $0.0027
+[P-Q] 183: shown (verified) spent $0.0028
+[P-Q] 184: not shown (model_not_shown) spent $0.0029
+[P-Q] 185: shown (verified) spent $0.0030
+[P-Q] 187: not shown (model_not_shown) spent $0.0031
+[P-Q] 186: contradicted (verified) spent $0.0033
+[P-Q] 188: contradicted (verified) spent $0.0034
+[P-Q] 191: contradicted (verified) spent $0.0035
+[P-Q] 192: contradicted (verified) spent $0.0037
+[P-Q] 190: not shown (model_not_shown) spent $0.0038
+[P-Q] 193: contradicted (verified) spent $0.0039
+[P-Q] 189: contradicted (verified) spent $0.0041
+[P-Q] 196: not shown (shown_citing_failure) spent $0.0042
+[P-Q] 194: contradicted (verified) spent $0.0043
+[P-Q] 195: shown (verified) spent $0.0044
+[P-Q] 170: not shown (unparseable_reply) spent $0.0046
+[P-Q] 198: shown (verified) spent $0.0047
+[P-Q] 197: not shown (model_not_shown) spent $0.0048
+[P-Q] 202: not shown (model_not_shown) spent $0.0050
+[P-Q] 203: not shown (model_not_shown) spent $0.0051
+[P-Q] 201: contradicted (verified) spent $0.0052
+[P-Q] 204: shown (verified) spent $0.0053
+[P-Q] 205: shown (verified) spent $0.0055
+[P-Q] 207: shown (verified) spent $0.0056
+[P-Q] 206: contradicted (verified) spent $0.0057
+[P-Q] 200: not shown (model_not_shown) spent $0.0058
+[P-Q] 209: not shown (model_not_shown) spent $0.0060
+[P-Q] 208: contradicted (verified) spent $0.0061
+[P-Q] 211: shown (verified) spent $0.0062
+[P-Q] 212: not shown (model_not_shown) spent $0.0063
+[P-Q] 210: not shown (model_not_shown) spent $0.0065
+[P-Q] 214: not shown (model_not_shown) spent $0.0066
+[P-Q] 215: contradicted (verified) spent $0.0067
+[P-Q] 216: shown (verified) spent $0.0069
+[P-Q] 213: contradicted (verified) spent $0.0070
+[P-Q] 219: not shown (model_not_shown) spent $0.0071
+[P-Q] 218: contradicted (verified) spent $0.0072
+[P-Q] 220: shown (verified) spent $0.0073
+[P-Q] 199: not shown (unparseable_reply) spent $0.0075
+[P-Q] 222: shown (verified) spent $0.0076
+[P-Q] 224: contradicted (verified) spent $0.0078
+[P-Q] 226: contradicted (verified) spent $0.0079
+[P-Q] 225: contradicted (verified) spent $0.0080
+[P-Q] 228: contradicted (verified) spent $0.0082
+[P-Q] 229: not shown (model_not_shown) spent $0.0083
+[P-Q] 223: contradicted (verified) spent $0.0084
+[P-Q] 232: shown (verified) spent $0.0085
+[P-Q] 230: shown (verified) spent $0.0087
+[P-Q] 217: not shown (unparseable_reply) spent $0.0088
+[P-Q] 233: contradicted (verified) spent $0.0090
+[P-Q] 235: contradicted (verified) spent $0.0091
+[P-Q] 234: not shown (unparseable_reply) spent $0.0093
+[P-Q] 236: not shown (unparseable_reply) spent $0.0095
+[P-Q] 238: shown (verified) spent $0.0096
+[P-Q] 240: not shown (model_not_shown) spent $0.0097
+[P-Q] 239: contradicted (verified) spent $0.0098
+[P-Q] 241: shown (verified) spent $0.0099
+[P-Q] 242: not shown (model_not_shown) spent $0.0101
+[P-Q] 244: shown (verified) spent $0.0102
+[P-Q] 243: not shown (unparseable_reply) spent $0.0104
+[P-Q] 246: not shown (model_not_shown) spent $0.0105
+[P-Q] 247: contradicted (verified) spent $0.0106
+[P-Q] 248: contradicted (verified) spent $0.0108
+[P-Q] 249: shown (verified) spent $0.0109
+[P-Q] 250: contradicted (verified) spent $0.0110
+[P-Q] 251: shown (verified) spent $0.0112
+[P-Q] 252: not shown (model_not_shown) spent $0.0113
+[P-Q] 253: not shown (model_not_shown) spent $0.0114
+[P-Q] 254: shown (verified) spent $0.0115
+[P-Q] 255: contradicted (verified) spent $0.0117
+[P-Q] 256: shown (verified) spent $0.0118
+[P-Q] 257: contradicted (verified) spent $0.0119
+[P-Q] 258: contradicted (verified) spent $0.0120
+[P-Q] 259: not shown (model_not_shown) spent $0.0122
+[P-Q] 260: contradicted (verified) spent $0.0123
+[P-Q] 261: not shown (model_not_shown) spent $0.0124
+[P-Q] 262: contradicted (verified) spent $0.0125
+[P-Q] 263: shown (verified) spent $0.0127
+[P-Q] 221: not shown (unparseable_reply) spent $0.0128
+[P-Q] 227: shown (verified) spent $0.0129
+[P-Q] 264: not shown (unparseable_reply) spent $0.0131
+[P-Q] 266: not shown (model_not_shown) spent $0.0132
+[P-Q] 267: shown (verified) spent $0.0133
+[P-Q] 265: not shown (unverified_quote) spent $0.0135
+[P-Q] 269: contradicted (verified) spent $0.0137
+[P-Q] 270: contradicted (verified) spent $0.0138
+[P-Q] 272: contradicted (verified) spent $0.0139
+[P-Q] 273: shown (verified) spent $0.0140
+[P-Q] 231: not shown (unparseable_reply) spent $0.0142
+[P-Q] 245: not shown (model_not_shown) spent $0.0143
+[P-Q] 275: contradicted (verified) spent $0.0144
+[P-Q] 237: shown (verified) spent $0.0145
+[P-Q] 276: shown (verified) spent $0.0147
+[P-Q] 277: shown (verified) spent $0.0148
+[P-Q] 278: not shown (model_not_shown) spent $0.0149
+[P-Q] 279: contradicted (verified) spent $0.0150
+[P-Q] 280: contradicted (verified) spent $0.0151
+[P-Q] 281: shown (verified) spent $0.0153
+[P-Q] 282: not shown (model_not_shown) spent $0.0154
+[P-Q] 283: contradicted (verified) spent $0.0155
+[P-Q] 284: not shown (shown_citing_failure) spent $0.0156
+[P-Q] 285: not shown (model_not_shown) spent $0.0157
+[P-Q] 286: contradicted (verified) spent $0.0159
+[P-Q] 288: not shown (model_not_shown) spent $0.0160
+[P-Q] 290: contradicted (verified) spent $0.0161
+[P-Q] 287: contradicted (verified) spent $0.0163
+[P-Q] 292: shown (verified) spent $0.0164
+[P-Q] 291: contradicted (verified) spent $0.0165
+[P-Q] 293: not shown (model_not_shown) spent $0.0166
+[P-Q] 294: shown (verified) spent $0.0168
+[P-Q] 295: not shown (model_not_shown) spent $0.0169
+[P-Q] 297: shown (verified) spent $0.0170
+[P-Q] 296: not shown (model_not_shown) spent $0.0171
+[P-Q] 299: shown (verified) spent $0.0172
+[P-Q] 300: contradicted (verified) spent $0.0174
+[P-Q] 298: contradicted (verified) spent $0.0175
+[P-G] 161: shown (verified) spent $0.0176
+[P-G] 162: contradicted (verified) spent $0.0176
+[P-Q] 289: not shown (unparseable_reply) spent $0.0178
+[P-G] 164: not shown (model_not_shown) spent $0.0179
+[P-G] 163: shown (verified) spent $0.0180
+[P-G] 165: shown (verified) spent $0.0180
+[P-G] 167: shown (verified) spent $0.0181
+[P-G] 166: not shown (model_not_shown) spent $0.0182
+[P-G] 169: contradicted (verified) spent $0.0182
+[P-G] 168: shown (verified) spent $0.0183
+[P-G] 170: contradicted (verified) spent $0.0184
+[P-G] 171: shown (verified) spent $0.0185
+[P-G] 172: shown (verified) spent $0.0185
+[P-G] 173: not shown (model_not_shown) spent $0.0186
+[P-G] 175: shown (verified) spent $0.0187
+[P-G] 174: contradicted (verified) spent $0.0187
+[P-G] 176: contradicted (verified) spent $0.0188
+[P-G] 178: not shown (model_not_shown) spent $0.0189
+[P-G] 179: shown (verified) spent $0.0189
+[P-G] 177: not shown (model_not_shown) spent $0.0190
+[P-G] 180: not shown (model_not_shown) spent $0.0191
+[P-G] 181: shown (verified) spent $0.0192
+[P-G] 182: not shown (model_not_shown) spent $0.0192
+[P-G] 183: shown (verified) spent $0.0193
+[P-G] 184: contradicted (verified) spent $0.0193
+[P-G] 185: shown (verified) spent $0.0194
+[P-G] 186: contradicted (verified) spent $0.0195
+[P-G] 187: not shown (model_not_shown) spent $0.0195
+[P-G] 188: shown (verified) spent $0.0196
+[P-G] 189: contradicted (verified) spent $0.0197
+[P-G] 190: not shown (model_not_shown) spent $0.0198
+[P-G] 191: shown (verified) spent $0.0198
+[P-G] 192: shown (verified) spent $0.0199
+[P-G] 193: contradicted (verified) spent $0.0200
+[P-G] 194: not shown (model_not_shown) spent $0.0201
+[P-G] 195: shown (verified) spent $0.0201
+[P-G] 196: not shown (shown_citing_failure) spent $0.0202
+[P-G] 198: contradicted (verified) spent $0.0203
+[P-G] 197: shown (verified) spent $0.0203
+[P-G] 199: shown (verified) spent $0.0204
+[P-G] 200: not shown (model_not_shown) spent $0.0205
+[P-G] 201: contradicted (verified) spent $0.0206
+[P-G] 202: shown (verified) spent $0.0206
+[P-G] 203: not shown (model_not_shown) spent $0.0207
+[P-G] 204: shown (verified) spent $0.0208
+[P-G] 206: not shown (shown_citing_failure) spent $0.0208
+[P-G] 205: contradicted (verified) spent $0.0209
+[P-G] 207: shown (verified) spent $0.0210
+[P-G] 208: contradicted (verified) spent $0.0211
+[P-G] 209: not shown (model_not_shown) spent $0.0211
+[P-G] 211: shown (verified) spent $0.0212
+[P-G] 210: not shown (model_not_shown) spent $0.0213
+[P-G] 212: not shown (model_not_shown) spent $0.0213
+[P-G] 213: shown (verified) spent $0.0214
+[P-G] 215: contradicted (verified) spent $0.0215
+[P-G] 216: shown (verified) spent $0.0216
+[P-G] 217: shown (verified) spent $0.0216
+[P-G] 214: not shown (model_not_shown) spent $0.0217
+[P-G] 218: contradicted (verified) spent $0.0218
+[P-G] 220: shown (verified) spent $0.0218
+[P-G] 219: contradicted (verified) spent $0.0219
+[P-G] 222: shown (verified) spent $0.0220
+[P-G] 221: contradicted (verified) spent $0.0220
+[P-G] 223: not shown (model_not_shown) spent $0.0221
+[P-G] 224: contradicted (verified) spent $0.0222
+[P-G] 225: not shown (model_not_shown) spent $0.0222
+[P-G] 226: contradicted (verified) spent $0.0223
+[P-G] 227: shown (verified) spent $0.0224
+[P-G] 228: contradicted (verified) spent $0.0225
+[P-G] 229: not shown (model_not_shown) spent $0.0225
+[P-G] 230: shown (verified) spent $0.0226
+[P-G] 232: shown (verified) spent $0.0227
+[P-G] 231: contradicted (verified) spent $0.0228
+[P-G] 233: contradicted (verified) spent $0.0228
+[P-G] 234: not shown (model_not_shown) spent $0.0229
+[P-G] 235: not shown (model_not_shown) spent $0.0230
+[P-G] 236: shown (verified) spent $0.0230
+[P-G] 237: shown (verified) spent $0.0231
+[P-G] 238: shown (verified) spent $0.0232
+[P-G] 239: not shown (model_not_shown) spent $0.0233
+[P-G] 241: shown (verified) spent $0.0233
+[P-G] 240: not shown (model_not_shown) spent $0.0234
+[P-G] 242: not shown (model_not_shown) spent $0.0235
+[P-G] 245: not shown (model_not_shown) spent $0.0235
+[P-G] 243: not shown (wrong_turn) spent $0.0236
+[P-G] 244: shown (verified) spent $0.0237
+[P-G] 247: not shown (shown_citing_failure) spent $0.0238
+[P-G] 246: contradicted (verified) spent $0.0238
+[P-G] 248: contradicted (verified) spent $0.0239
+[P-G] 250: contradicted (verified) spent $0.0240
+[P-G] 249: not shown (model_not_shown) spent $0.0240
+[P-G] 251: shown (verified) spent $0.0241
+[P-G] 254: shown (verified) spent $0.0242
+[P-G] 252: not shown (model_not_shown) spent $0.0242
+[P-G] 253: not shown (model_not_shown) spent $0.0243
+[P-G] 256: shown (verified) spent $0.0244
+[P-Q] 268: not shown (unparseable_reply) spent $0.0246
+[P-G] 255: not shown (model_not_shown) spent $0.0246
+[P-G] 257: contradicted (verified) spent $0.0247
+[P-G] 259: not shown (model_not_shown) spent $0.0248
+[P-G] 258: not shown (model_not_shown) spent $0.0248
+[P-G] 261: contradicted (verified) spent $0.0249
+[P-G] 260: not shown (model_not_shown) spent $0.0250
+[P-G] 262: contradicted (verified) spent $0.0250
+[P-G] 263: shown (verified) spent $0.0251
+[P-G] 264: shown (verified) spent $0.0252
+[P-G] 265: not shown (unverified_quote) spent $0.0253
+[P-G] 266: not shown (model_not_shown) spent $0.0254
+[P-G] 268: contradicted (verified) spent $0.0254
+[P-G] 267: shown (verified) spent $0.0255
+[P-G] 269: shown (verified) spent $0.0256
+[P-G] 270: not shown (model_not_shown) spent $0.0257
+[P-G] 271: contradicted (verified) spent $0.0257
+[P-G] 274: not shown (model_not_shown) spent $0.0258
+[P-G] 273: shown (verified) spent $0.0259
+[P-G] 272: not shown (model_not_shown) spent $0.0259
+[P-G] 275: contradicted (verified) spent $0.0260
+[P-G] 276: shown (verified) spent $0.0261
+[P-G] 277: shown (verified) spent $0.0262
+[P-G] 278: shown (verified) spent $0.0262
+[P-G] 279: contradicted (verified) spent $0.0263
+[P-G] 281: shown (verified) spent $0.0264
+[P-G] 283: contradicted (verified) spent $0.0264
+[P-G] 282: not shown (model_not_shown) spent $0.0265
+[P-G] 280: shown (verified) spent $0.0266
+[P-G] 284: not shown (model_not_shown) spent $0.0266
+[P-G] 286: not shown (model_not_shown) spent $0.0267
+[P-G] 285: not shown (model_not_shown) spent $0.0268
+[P-G] 287: contradicted (verified) spent $0.0268
+[P-G] 290: contradicted (verified) spent $0.0269
+[P-G] 288: not shown (model_not_shown) spent $0.0270
+[P-G] 289: shown (verified) spent $0.0271
+[P-G] 291: not shown (model_not_shown) spent $0.0271
+[P-G] 292: shown (verified) spent $0.0272
+[P-G] 293: not shown (model_not_shown) spent $0.0273
+[P-G] 294: shown (verified) spent $0.0273
+[P-G] 295: not shown (model_not_shown) spent $0.0274
+[P-G] 297: not shown (model_not_shown) spent $0.0275
+[P-G] 296: not shown (model_not_shown) spent $0.0276
+[P-G] 299: shown (verified) spent $0.0276
+[P-G] 298: contradicted (verified) spent $0.0277
+[P-G] 300: contradicted (verified) spent $0.0278
+[P-Q] 271: contradicted (verified) spent $0.0279
+[P-Q] 274: contradicted (verified) spent $0.0280
+=== pinned-2 end 2026-10-05T18:27:25Z exit 0 ===

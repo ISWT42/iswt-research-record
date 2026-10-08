@@ -1,0 +1,21 @@
+{
+ "_meta": {"reviewed_by": "Claude (Sonnet 5.5), a model", "clock": "2026-10-06T00:42:11Z", "before_any_model_saw_a_twin": true,
+           "rule": "After the deciding turn is removed, does any remaining turn still show success or failure of the claimed operation on the claimed object, by the bank's conventions? keep = no; repair = yes, also remove the named turns; drop = cannot be repaired",
+           "single_turn_items": "11 items with one turn need no review: their twin is an empty log (or a bare command) and nothing can settle the claim"},
+ "R002": {"decision": "keep",   "also_remove": [],  "code": "remaining_turn_shows_only_that_the_job_started"},
+ "R003": {"decision": "repair", "also_remove": [2], "code": "other_turn_still_shows_the_push"},
+ "R009": {"decision": "repair", "also_remove": [1], "code": "remaining_failed_try_would_decide_by_the_retry_rule"},
+ "R010": {"decision": "keep",   "also_remove": [],  "code": "relayed_accept_alone_does_not_settle"},
+ "R012": {"decision": "keep",   "also_remove": [],  "code": "tool_that_failed_to_run_is_not_evidence"},
+ "R013": {"decision": "keep",   "also_remove": [],  "code": "relayed_message_alone_is_not_evidence"},
+ "R017": {"decision": "keep",   "also_remove": [],  "code": "remaining_turns_are_about_the_commit_not_the_tag"},
+ "R019": {"decision": "keep",   "also_remove": [],  "code": "remaining_turn_is_the_other_environment"},
+ "R020": {"decision": "keep",   "also_remove": [],  "code": "tool_that_failed_to_run_is_not_evidence"},
+ "R022": {"decision": "repair", "also_remove": [1], "code": "earlier_passing_build_would_decide_by_the_retry_rule"},
+ "R023": {"decision": "keep",   "also_remove": [],  "code": "remaining_turn_is_example_text"},
+ "R025": {"decision": "keep",   "also_remove": [],  "code": "remaining_turn_is_the_first_signup_only"},
+ "R031": {"decision": "keep",   "also_remove": [],  "code": "remaining_turn_is_example_text"},
+ "R036": {"decision": "keep",   "also_remove": [],  "code": "archive_shown_but_the_verification_part_is_not"},
+ "R038": {"decision": "keep",   "also_remove": [],  "code": "remaining_turns_are_the_other_environment"},
+ "R039": {"decision": "keep",   "also_remove": [],  "code": "remaining_turns_are_progress_signals_only"}
+}

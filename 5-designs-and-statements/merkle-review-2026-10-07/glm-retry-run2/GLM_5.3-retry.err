@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: z-ai/glm-5.3 (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/225521-921-openrouter-merkle-review
+[broker] tokens in/out/reasoning: 576/7407/6983; time 61466 ms; cost estimate unknown

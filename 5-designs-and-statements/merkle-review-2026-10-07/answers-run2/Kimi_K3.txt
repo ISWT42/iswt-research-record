@@ -1,0 +1,56 @@
+## 1. Verdict in one paragraph
+
+The cryptography is standard and sound: salted-hash leaves, a Merkle tree, a timestamped root, and inclusion proofs are well-understood, and the "withheld" placeholder is a sensible convention rather than a new primitive. Whether it is worth building depends on two things the math does not solve: completeness (the builder can simply omit a record before anchoring) and semantics ("Shown / Contradicted / Not shown" only works if claims are written as predicates a machine can evaluate over the visible records — a Merkle proof by itself cannot contradict anything). Worth building as tooling on existing transparency-log components; not worth building as new cryptography.
+
+## 2. What is already established
+
+- **Merkle trees and inclusion proofs** (Merkle, 1979/82): the exact construction proposed.
+- **RFC 6962, Certificate Transparency**: append-only Merkle logs with inclusion proofs; Google's **Trillian** generalises this to any data.
+- **Crosby & Wallach, "history trees"** (USENIX Security 2009): tamper-evident logging of record sequences.
+- **RFC 3161** (trusted timestamping) and **OpenTimestamps**: the latter already aggregates many digests into one Merkle root anchored in Bitcoin — exactly step 2.
+- **SD-JWT** (IETF): each claim stored as a salted digest, the holder reveals only a chosen subset with its salts — the closest existing scheme to "auto redact what access allows".
+- **Content Extraction Signatures** (Steinfeld, Bull, Zheng, 2001): redact parts of a signed document while verification still passes.
+- **IETF SCITT / COSE receipts**: "receipts" for statements registered in a transparency service — same vocabulary, supply-chain focus.
+- **TLSNotary**: proves selected parts of a TLS session to a third party.
+
+This differs mainly in application (per-record redaction of agent runs), the three-valued verdict, and withheld-in-place labelling. I am not aware of a shipped product doing per-line redaction of agent logs this way, but every mechanism exists.
+
+## 3. What is new, if anything
+
+The combination and packaging: redaction as an access-control layer over pre-committed agent telemetry, with "Not shown" as a first-class answer. Cryptographic novelty: none. The contribution would be a clean spec for leaf format, withheld markers, and verdict rules. That is fine — most useful systems are combinations.
+
+## 4. How it can fail
+
+- **Guessable hidden records**: a salted hash hides nothing if content has low entropy (a status code). Fix: 128-bit random salts, pad or bucket short records.
+- **Canonicalisation**: JSON key order, Unicode forms, line endings change bytes. Fix: fix a canonical encoding (RFC 8785 or deterministic CBOR), hash exact stored bytes, version the format.
+- **Structure leakage**: withheld hashes reveal the count and position of hidden records; sibling positions reveal adjacency. Fix: pad to fixed-size buckets, or a sparse tree with shuffled indices, or document the leak as accepted.
+- **Lost salts**: a revealed leaf becomes unverifiable. Fix: store salts with records, or derive them deterministically (HKDF from a per-run key) with real key management.
+- **Revocation**: disclosure is irreversible; access rules live outside the math. Fix: treat reveal as one-way; keep the policy engine separate and auditable.
+- **Builder equivocation**: different roots to different viewers. Fix: one root per period, publicly anchored; viewers compare anchors or use a gossiped transparency log.
+- **Silent omission**: a record never committed leaves no trace. Fix: the runtime signs a running counter per step so gaps show, or mirror to an independent log.
+- **Withheld labels are builder-supplied**: include a type byte inside the leaf preimage so the label is committed, not asserted.
+
+## 5. Threat model
+
+- **Agent/operator**: can write false records. Not stopped — receipts bind to what was recorded, not to reality.
+- **Builder, pre-anchor**: can omit or fabricate. Partially stopped by signed counters or independent mirroring.
+- **Builder, post-anchor**: cannot alter or reorder without breaking proofs; can withhold, but withholding is visible.
+- **Timestamp collusion**: mitigated by anchoring in Bitcoin plus a public TSA; backdating both together is hard.
+- **Viewers**: can re-share salts; unavoidable.
+
+The residual trust point is the builder at recording time.
+
+## 6. Smallest prototype
+
+One repo: ingest a JSONL "agent run"; canonicalise; salt, hash, build the tree; anchor one root per day via OpenTimestamps and an RFC 3161 TSA; emit two viewer bundles with different access; a verifier checking inclusion, withheld positions, and anchors. Tests: flip one byte, reorder two lines, delete a line, forge a salt — all must fail verification. Add an independent second-language verifier. Measure proof size (should be O(log n)), verify time, canonicalisation failure rate, and run a red-team attempt to recover a padded hidden low-entropy field. Counts against: any undetected tamper, cross-language mismatch, or successful recovery.
+
+## 7. Where it is most useful first
+
+- **Regulated-sector AI audit**: the auditor is shown exactly the needed records, no PII beyond them.
+- **Vendor–customer handoffs**: the customer verifies the run without seeing prompts or proprietary data.
+- **Eval and benchmark integrity**: anchoring before grading stops retrofitted results.
+- **Incident forensics**: pre-commitment makes after-the-fact log edits detectable.
+
+## 8. What it does not prove
+
+That records are true. That the tree is complete. That a specific model produced the output (that needs execution attestation). That hidden records would change the verdict — "Not shown" must remain an honest, acceptable answer. Exact time of creation — anchoring proves *existed-by*, not *made-at*. And confidentiality of hidden leaves whose content is guessable. Every reader must be told all six.

@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: openai/gpt-6.1-sol:online (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/153554-488-openrouter-panel-two-blocks
+[broker] tokens in/out/reasoning: 47521/5042/1606; time 142950 ms; cost estimate unknown

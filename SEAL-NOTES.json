@@ -1,0 +1,1272 @@
+{
+ "comment": "Seal-list entries that did not match, or did not exist, in the original folders either. check_public.py checks these exactly.",
+ "known_mismatches": [
+  {
+   "list": "3-checker-studies-5-to-7-oct/panel-two-blocks-2026-10-06/ANSWERS-SHA256.txt",
+   "entry": "RUN-LOG.txt",
+   "listed": "58b03a4ece15bd95ca046af7daaac9355140db37470dea5c93ecb3d1a845b1de",
+   "actual": "1dd4fc3e429089acca22a2728fd6a7a54a633e62a63d552200f9a3af7935abfd"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/stack-test-2026-10-07/SEAL-SHA256.txt",
+   "entry": "run_stack.py",
+   "listed": "783ba0d01a71fd3c9dd39345bcb4bbe6c071778314a803a307eed648a6bad8cd",
+   "actual": "6ed665baea95659001f9c427c794e8a1b1610a97a16ce37284ac41da3fb378a6"
+  },
+  {
+   "list": "5-designs-and-statements/merkle-review-2026-10-07/ANSWERS-RUN2-SHA256.txt",
+   "entry": "RUN-LOG.txt",
+   "listed": "3a0aa715750bf278840e67d2af10aa6af1bbd1b3d7a50451f52cf4d05a82a44f",
+   "actual": "4bbc20ccf57b046044597a75f10ff4fee9803969b5c5f02acf4c26655933a566"
+  },
+  {
+   "list": "5-designs-and-statements/merkle-review-2026-10-07/ANSWERS-SHA256.txt",
+   "entry": "RUN-LOG.txt",
+   "listed": "48c7ec2896a712b307978e8b785067909d431200e50e9f3a5f1537350e9c668b",
+   "actual": "4bbc20ccf57b046044597a75f10ff4fee9803969b5c5f02acf4c26655933a566"
+  }
+ ],
+ "missing_at_source": [
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/analysis-blindcheck-2026-10-07.txt",
+   "listed": "7bc2bd57ec3648164af3f9afe54bf2f5478ec19905439f4d56588239aec23dea"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4453022/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "a3c418831c6968580a43af1dc34cf57fc90aa11b29c6d82c843c51c0b253f2ce"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4453022/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "645b787b5ce7567697c3ab46d60c0d5bcfe7e486e840cb14f15d1daa28870360"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4453022/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "de6a0a137ace41e5218de5c1f073a5a9d9476808d1ec8ea778132af0b8d97aa7"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4453022/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4457304/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "be23559fe7675c25ea4dec0573a1103e2e85aa9fe81fbd8fbc4f453d20f11b67"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4457304/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "7a312f6c7b3c35ff9d8b0700ead34807f720aaabdbad7a891ef79754f5741632"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4457304/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "a640caa18b349789890947d3a6acfb9d79545f864f453a3c46014c9fcc5f5f8d"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4457304/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4459258/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "8c3c61345653b29994dde55b945c01ce4664852a9690c70c19528fc0015b2d07"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4459258/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "940ddcc615fa8ecacb43e9b202fd588b62a1e4bee7e42a5a78782764cde60319"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4459258/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "14a90249d1a3e3faafce4179efcc70ea60454e4682a8bc57833325a4a45032da"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/claude-haiku-4-5-20251001/4459258/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4453021/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "9662b233dab484b6d5bc04807c5980ed75309db29617f7c6ae712e42ccd4cdff"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4453021/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "125fbe4cd7ed030948c5def8fc5f44fef281763ced0f749992dcb7146cd31c5e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4453021/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "783561fdd34c648d41cbfc9d72b606c8ba97dd68637162dab8ca281e2e21c49a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4453021/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4457302/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "8682f0b9a16d43cfa564f8798dabf2bc62aa084c129784aef3d90ccf62b9efb0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4457302/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "58505667563d5667f8f324335f8ce56ced655a6d7f3e0452aaf117f06314f677"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4457302/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "f9a4f0c24e9fad0828c354c3548c228820dae26a3100980056210bb0c3eed66f"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4457302/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4459257/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "805f33653cefef8f2c95029bd01333441b9a5a8b895edc76993f9cb884e611e0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4459257/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "ca7dca4ff8838fe525ba271a1b7596e3e3c0a68d2243a9d7748272d6e7bb26b3"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4459257/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "592a2bfd7472fa65d5ac610b08288fc6cc32ad1df4057b2a0426b01423ff39b9"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.7-flash/4459257/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4453002/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "8196179eff26308b2236ab83825f3237d2e8292353da4ea1437a7de3e15948f0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4453002/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "50ec0c57c0665aceb54863effbf650fddae2e6a3e437f5feefa1df17aa3f57b4"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4453002/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "445a8c41ccd5b9cd739d876f679064d00e5d1bcd69cb7657406f52865dd5cfe9"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4453002/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4457301/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "e6904caea83f6f88f313b1abce2b0fc1de99e8cb42b508f746c956406f94e7e7"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4457301/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "b079806d5e341b307e67a4e5b482b718119d140432ea1ec94d44c55ba4f8991f"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4457301/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "ea2f7eb135f35d0f957cabc998ca9ef2bb7c5e5f3a2872b8449e3d9e6105745c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4457301/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4459255/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "e82f17ff96da74046d9130fd70749789b8de5333c20ab819d439eba93be93a3e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4459255/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "351db88c98ae7f00ac11c1aec0151d38b19be4eb501dd27ec5b17c72cc071ba7"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4459255/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "0f17850fafd3bfb64b4fe19197b2366133380b7a429a3f255717cba97b5dfdd1"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gemini-3.8-flash/4459255/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4453023/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "e691b673fabc4b3e714fb85c3d96e72dd22f3d03bb0e7b48acc5421bdf7bc8c3"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4453023/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "1dc70c953f3d1901094d09f2822f6803bfaada1b059b0f45e9da842c9eda45f1"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4453023/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "ccc3799f7c37c50e75c140b2884481e258bf4e85f2d51ec6e69f74b3044ebf4f"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4453023/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4457305/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "cf9ac4a9500f1976ce29defea09eb851f9fdac07a9e3fd68054fd06a5952178a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4457305/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "5a773d3a0b8e19afcd6dbdc012fd31348a29919d04b9334a3eee176fb58a3d37"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4457305/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "bfa7900c0bc3328134e90dc73acd3c3e5dc2902bcc1e63a05e5f607f6aabeb4f"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4457305/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4459259/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "49447edcf48d7367c2ec7383da5c15467b7b79e42df2853a984273ae00430552"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4459259/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "c08e0dc38a99bbeff7f64500e2204e02a1e17e893c62799215df95cb42bda420"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4459259/receipt-triplets-t7-coat-check-blind-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "cf2be695069c1330eb8aff4102f98c95780ce237ae60f1acea4d5fbe523a3ff8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t7-coat-check-blind-report/1/gpt-5.4-nano-2026-03-17/4459259/receipt-triplets-t7-coat-check-blind-report.task.json",
+   "listed": "5351ed24a286a3365fe2680d54c6d2b1e20a25f7ece9c118a738d58168335d2c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4427274/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "6750a24aa76e24dc91eeac2c06a00295045bf402156cf6afc5e10fe508f0fbb8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4427274/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "f07c367fc0b22ee705a5d349142aa34f5ee303904074c53d439b92b91f7506af"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4427274/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "c713e52b9d1711043ea8d4e821d2bae4c59a2cc0bdbccaaaac8b18c6938e1be6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4427274/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4428029/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "ecfc3e0e1e1504913796a17b662223b6b2aa08c80c09f225234cf9404fb3a688"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4428029/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "b74465180d14a817f4a7de9be1d5dde7ea0504503c19d449a1a89500005fa865"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4428029/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "f102290888d422c14c3dfab2af779edb0970dc54a076bf2e492a528aec07ebee"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4428029/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4435896/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "2f2e1d006e64736b3ce29c412b05b7f51753980e4ef6aff6d979f0910d728954"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4435896/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "f68cb9d6bb19542e9e7eb43152fcfd413e2698d90dc7b428e39698cd26a9d2ef"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4435896/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "8ab81f6b19a893f25f1315a86fdc866df55ef5b379b105210524b3f05e7b431b"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/claude-haiku-4-5-20251001/4435896/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4427273/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "52ed8788de0b704746111b829182af8a2a78a54b334204c5d37542c7a0b70ee8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4427273/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "ce578e2df1fc1791daa728a939255be6492074ed93b4608af8028e93658efeab"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4427273/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "1baddd602b92230068c066d25ae9763f22a9248573232ff8c65b82e6fcb98554"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4427273/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4428027/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "058c1f397272b0d9548cf9280038ac3ea3ba1d335a6410734fb0bebd079b0df0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4428027/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "32bf8086f69733713d5c75ee6cdeab0ed5622c7631c3927707281001602010c9"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4428027/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "34708d5771147b0739b9e4ec3148b6cf81142c2c3873d35f7951a70153336a70"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4428027/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4435895/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "dd40c40f6c5982bdb17d9cf396d9c3f50e839a08fcd83fca86a801a94c0a2623"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4435895/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "7f0f2d1b36b787e8e9b0a2cb0adcc9f17eb4e31a8b2c2d423f1ed2ddfafe2bfc"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4435895/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "ebea4eb34b17a0a1254fe5d2f95f88423370c7138a87ae0e62eaf70a88ec6b57"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.7-flash/4435895/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4427272/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "62de3beb403bab7d7278729884e6af083d4e4df165cb87001294065aab346e52"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4427272/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "ef9ba160744ac8db456ff1042609f283c7b96799dc156fc0b443613d291f6d7a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4427272/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "0e3860a61ed1bd158413a2a2401315630013491ebaefaf286b821da11f13bfd3"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4427272/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4428024/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "ec0c3a1208156e52e88168533ec85407b669af28fd35591cd61e20f75888bebc"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4428024/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "25e34d9ff297ef9253a783afa2fb0d214f58c751cae700cb65b328ec4b9d3c0a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4428024/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "a5919d6e2d6480fd54d7e3852769808178b693796b9d8513858421f24c4e9ba8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4428024/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4435894/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "7df92c39b709a1b6e91a1085e6464149065168091dda78fa07abd9fa24936a0c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4435894/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "0de6a2e1cc5d9ae521e0139bbadf437b0daba08122fbfddf9f63b4a9cf4ed867"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4435894/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "b7c3fdabb3038491a5a024df2a6ea253e459ec93aeded4564dfedcae7b200c10"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gemini-3.8-flash/4435894/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4426814/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "d0c0e133c66cbbb596352263765fe474f2b956823d58b3119e8458ac9bce3ca4"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4426814/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "3ece52a98a25bd9cc49c1969869f44df8206281e9354f48781643bf730011473"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4426814/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "7453727affa2f47a42e084168dd99cc3d88f3e61166f6a5489d4c6f88cacaeff"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4426814/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4427275/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "1f4ef77be71722280694cae3e4b46e768b73beda17a04b27862eaed83eda2e03"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4427275/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "bad463bd2ef6eba2ea4afa828eddb952813e63b177ec35f4a257aaa51a834c3d"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4427275/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "cdd58699b47502c2e90220c00c9e3ecda0c1ae6d167ed2f996689a5d9ccadbc5"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4427275/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4428032/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "93d1217954ffbaa032724ea2a5bbae8062c0d52af69ebd9aaf29e10edfc1575c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4428032/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "afe874cd63c0999f7865dfcaa363fb298db951eb723867f046e50abb84f6b728"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4428032/receipt-triplets-t8-coat-check-blind-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "04e002a93cbddffcedb73431c70affe706489bfa113734158b8559ee58a9df44"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t8-coat-check-blind-do/1/gpt-5.4-nano-2026-03-17/4428032/receipt-triplets-t8-coat-check-blind-do.task.json",
+   "listed": "2db71b181b95ffaaf6320de483f1340af6029152220ffd2a8fea37917a16546e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-blind-2026-10-07/RESULTS-SHA256.txt",
+   "entry": "results/kaggle/run-blindcheck.log",
+   "listed": "945128ea9453598185ca082f50e439b1052cf04a85d8a8c87d0ae54a9bf13fc2"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/analysis-coatcheck-2026-10-07.txt",
+   "listed": "1ac7821a5ac20f866865f8d301d45d865e0a512131320da8fe13758577eca96a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/push-coatcheck.log",
+   "listed": "f0a32982ce4373118eef9506a0c20ba7c708a0de056491a7910b4eeb0888f68f"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4397909/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "dfe29892eacdee5c805a0345994f3f0d4b72bda955fc8cb126eff8531b89afbd"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4397909/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "78ade2c9a7138f46cae194dc9390bf2dca841dda9ac789c4c4f9c3fd50893886"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4397909/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "c51a50f2209dad69f2df441377e4effe34226e4cbb131ee4c5690701129bb455"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4397909/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4399965/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "9570782868f06131cb24cfee96d0431598b04faa33f02f3a6512dd13dc51e9da"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4399965/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "92024a923b6e515d0a535b39b4df85201cc40beb4cd4758a328b89e7d136cf34"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4399965/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "d77953c5373daea46bd050d175d2b37a3454310a8aeefd6cb241e069543fc0a0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4399965/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4400836/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "863ed5c256ce6eaa5baf481d6fcdfe5cd90a3f0fcad7952a874eb190d5a0b4fa"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4400836/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "11cd617de6c74bd0982b627dd5fdda2b810d9d070c14b74830b04978e20a359a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4400836/receipt-triplets-t5-coat-check-report-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "5962d0540df878a85cc16d0c55eff58907567af4f16562413e961e0b70528c27"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/claude-haiku-4-5-20251001/4400836/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4397899/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "1a1999a2f63b6eec4a1cbccdfe347f355a9818ae4fb61d2205ae696a152a3bfb"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4397899/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "985ead8d901258e95ad0fcafdb643e406c92c6c23a57bf88d83ccf31821ccea1"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4397899/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "66f4e96ebb5cac536dd6985a056c4fd5ff4941d616e722f1789be8d618b55129"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4397899/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4399954/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "da5a3346da9acd92cff702b8f6f1cc2de85fc06ae264b878d71e805b9a9a35f5"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4399954/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "e059ea312eb9025f7626d0681b78508475a7a8f86edd548f4f29349013eb4dd8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4399954/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "a0d39dd0af1e9d097d34615c52cfe2594f740313d18dd00751a479b6140d7a22"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4399954/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4400835/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "792d50b13602ba93d9062374c8412e9a6fbd442a96e75c4ca44b10683cafad39"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4400835/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "bee5316efb65fd63f23b099cabdbdef859a30356b7f9f3e889748c1cdd890d1a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4400835/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "8f602ff73e2770f90984b4c1dfd77d8431e588994e23e51171a44bc29b7e2b1b"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.7-flash/4400835/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4397893/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "fad915c184ff50f1bd977e9af8b563fa2b49d586802a09a0b8371839c0fb7082"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4397893/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "4751b9898210ba2b84ec5748c535b64691a15cd4ecd75a3da33be74872b79fd0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4397893/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "6328b7be37c416b6643bfdf043e7a4d7a9a9c6d4d9053ec45500da2372cfe037"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4397893/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4399949/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "8263ac0bee745a467a1dc9241cabc424cfddfcbc98e5bf99ae77befc9650143d"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4399949/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "a43772d3a63fe9250d902187bc5f4e79340c0129ac572be65145eb36a2c2d587"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4399949/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "737144e253ab6e4b9475912fc333a57dd0b7d74104dc0a8623d51336f9a327eb"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4399949/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4400834/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "c7b7e968b89d7e682e92a591147f246e3cfb92a887b93dbda07e41e628e60826"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4400834/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "b90a369d440309c1a565b8a555efc00a16967e32d45534051b4b08eaae2078f3"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4400834/receipt-triplets-t5-coat-check-report-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "1e19ae6db12141cff3d2957adda42c75ab8c83f298586fc8ffcfd7de54cd240f"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gemini-3.8-flash/4400834/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4397911/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "67757622cc9a5da8f13e7cc4ab8d1edbfc3f5cf325108b5a387af1d67a041bea"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4397911/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "2073a6257cc08bd7abed50e7ce68c9f3fe724b1fda3cd286e5aa162d53f400d2"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4397911/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "503463bfb6a3abba9a9f21cc15ad703e61431e97e428323493a018ac7d1b2b3d"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4397911/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4399966/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "dc3ac717b7f480a782accab126211845180eae0d32801567a5a2a904b676204b"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4399966/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "7a87b8e3ea18276811e1979157facac6090dc19b75b07794ea757ef4c34c08ee"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4399966/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "fae8f963d35a904dea980361d3e5c923b5c5ba1348ce2d42c740693ccab38353"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4399966/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4400837/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "8b0a7e7bdebc8706c613162e333adb313a4dadcfd234bc07e6478aa2f4843873"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4400837/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "108fac956fa27717facb5c705854d0d7ff705cec1cd1a1b5e57f01e31f03ed94"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4400837/receipt-triplets-t5-coat-check-report-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "6b992d74f1c8b4c2fde5dcf7883c69ae90d572e10e2e76a591b4a098d151b081"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t5-coat-check-report/1/gpt-5.4-nano-2026-03-17/4400837/receipt-triplets-t5-coat-check-report.task.json",
+   "listed": "bbbd7aff535c3364ebc1aa1c76257b546ad2695216961a28b8dc4e3b44fa0d40"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4388836/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "c162f8a2b456b2bb4f55f7e10dae5c5a53f9d5d98d28174ac3589bf9d65f84b8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4388836/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "9b9584bf696b3a5b4022b5605aec50b336e9ff3361d5f8239d485d99b0f2083c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4388836/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "978ff210aa24628f48ec36daa576d80b9f3771ace57493e78deabd1015e2cbfe"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4388836/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4390958/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "5c279cf4927bb2599f853a5380485b6f176dbac01059669683387cdef82ca87d"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4390958/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "f5832d41350da6e8b71d7f776c330a6dd73e099f0e96ed54dffac0ba21857945"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4390958/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "3e59ae25fdb127067059635eaaddc429e109b2cfd17d0013e613dd115a2d44cb"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4390958/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4394970/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.atif.json",
+   "listed": "615f447c1cd6ce11401dd088b1afc1f670dacb5534a3185d8384881828023310"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4394970/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.result.json",
+   "listed": "0860d6e808258e14006c0fb7410b95ff3e3f08852ff373457173e436fb9c2639"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4394970/receipt-triplets-t6-coat-check-do-run_id_Run_1_anthropic_claude-haiku-4-520251001.run.json",
+   "listed": "9be4973db94aaf14acf5a1d7f5d5b13927794cce2a9bb58318f67bffcff1352c"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/claude-haiku-4-5-20251001/4394970/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4388817/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "641385b0a32e70abe746dad76f513e86118bb761e0148bd02e42b1d39022ef17"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4388817/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "20d7005359606c28e540a61ca6fac45a8eac403d950dea0a96091fc5988e6259"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4388817/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "23b439b729a0e7deef49dc25d0128ecf1902043f1a996eaccfab883bb97c0191"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4388817/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4390938/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "1a8b96a937367d2973ea153757aee37b86679bfecd43e27c14b20bd6a688c9cb"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4390938/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "07a6797db2ed19e4f6bdfa83807d031979381930eabf135dd7f7eb401148514b"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4390938/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "2eef7fb75206179839899d7edb6a0312313b2787a8e5f2edb375a46005a8ca80"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4390938/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4394969/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.atif.json",
+   "listed": "c6b0a1bba10664e9ad5900f4adf49657f006194f26aa695a47b8d899395d3b49"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4394969/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.result.json",
+   "listed": "e2c4acfff3908cb16eedbd41b0fd3d9d157d0abb91a5ceed955b41cbd9e4cf89"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4394969/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.7-flash.run.json",
+   "listed": "0140b5444564616c207838ac3f2d7a4df0e572e0be47c2ce9ce8bc23c377cd49"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.7-flash/4394969/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4388816/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "e1d37aa7d94568cf8d6f8b0eb33016fb73e6bba277f47cff5bdc79d8add59269"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4388816/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "1e3b6146d8b95fce9368c867271d120beb12b38df4de49b6835506f5afda67e2"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4388816/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "e116d40ad9484824f882e5c856f4e24a7e7ec1fc1586d6ce4e9879b91608ecf0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4388816/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4390936/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "98cea23d0411f2ae9789c0ea517ae1158d4d07d114bb9f2c6f6faa961da0cd31"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4390936/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "9ab28c8d4dc793eeb0a2bb30e8dec9434ad103534ac74b6a018536ec2d8871f8"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4390936/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "d0bea95264a240e97620a474defca80fe01b1d8d3dfe7b7e03ae4a4195efef20"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4390936/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4394964/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.atif.json",
+   "listed": "b3eea33d5c8c8cd7608c04426ff325b8c303108adabe1870a20d345044f2c99e"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4394964/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.result.json",
+   "listed": "26994273ca32b5ae7a725216ba1647e02b7f53d433b014951680f3bad0ec40a6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4394964/receipt-triplets-t6-coat-check-do-run_id_Run_1_google_gemini-3.8-flash.run.json",
+   "listed": "8ad08ad4589f520742500d84ddc58ac76015666b26282cdced44155b0ce50c03"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gemini-3.8-flash/4394964/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4387572/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "e89084b3664c61ed5ee9f7fcac9f0a9acfa89a69ca9d89ef2c604965c1f636b9"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4387572/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "bcb605084a492a4e5fdb16a59163a12ae7e19f3bd46d8993366980b668c39503"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4387572/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "6e953b93d1aff88871530c6fb9f3e38cf08cdb056ddb35bb6fa87f5d9cbf9f38"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4387572/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4388891/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "8adb9e98782562d999bfb52db4853d5057cf8bb1100b8dac374f76b729017397"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4388891/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "052c4702da8a49341c1c9154f8e9b7af834302fbb3fd83c9c631e260dba1e3f0"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4388891/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "cd1235a3aa3d42b5b33cee4b1ee248364b86d83cb86e98b3358816f02146a2e4"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4388891/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4390960/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.atif.json",
+   "listed": "e37f5d72e83cf90322c3ed3ca927f210b40fa3e14ca0da33f82deb30f717b51a"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4390960/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.result.json",
+   "listed": "a4c7fc47222cb9380340db881b3e8bda179a43156a27aa30ae6f5cb4c80abcfe"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4390960/receipt-triplets-t6-coat-check-do-run_id_Run_1_openai_gpt-5.4-nano-2026-03-17.run.json",
+   "listed": "34a999003a22e692455b0cb7c66611988813a08c122c4329f42b614912c9f72d"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/receipt-triplets-t6-coat-check-do/1/gpt-5.4-nano-2026-03-17/4390960/receipt-triplets-t6-coat-check-do.task.json",
+   "listed": "222ab3c1d49e480d69f06706e6504502d2f5b302a55974f7749d8b03bb24b5e6"
+  },
+  {
+   "list": "2-coat-check-kaggle-and-7-oct-findings/kaggle-coat-check-update-2026-10-07/RESULTS-2-SHA256.txt",
+   "entry": "results/kaggle/run-coatcheck.log",
+   "listed": "3797f986d77bc19f3c45fb63bebbd92a426b09ac6970930893612e9c5965f808"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "MODELS.json",
+   "listed": "a90b7a069d2600494c8056de623826f9fb974e6d5beb8998cd07c222144ecec5"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "SPEND-OK.txt",
+   "listed": "2a565285799120557a9bb09b4147bbdefe55e410001876773189510e20e269f0"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "S1-MIRRORED-ROOM.md",
+   "listed": "e38279cbc3acee89112e41706d15bbcc14d9925320ef082a3518bd5d33cd3155"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "S2-SPREAD.md",
+   "listed": "871f03caba31c84401216300d40b678c248fda3436784b6fc52aae80649e9254"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "S3-PEER-PRESSURE.md",
+   "listed": "077399d91ee5df2a3c9c74cce43a69399ed1b5b2143ce73b797a66169b6d258b"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "S5-HIDDEN-CONTENT.md",
+   "listed": "85f0767df657bd724aa8f482d7d0a17f61f7f6576e7b0a4e12c447b04396222f"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "inputs/s1-items.jsonl",
+   "listed": "298a177781a101f736ab172d275847e883d5599b91759cd71e414fc1e615618d"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "inputs/s2-items.jsonl",
+   "listed": "749a1664acadbe130d91fd5d57b23e30f49f62f5c0b1f612d9bcd3d078dcdbef"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "inputs/s3-items.jsonl",
+   "listed": "bc8e8ce7748cb28e5d315b52a0debc1d27b14fcd1a581ad14e20256d22563e4c"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "inputs/s4-items.jsonl",
+   "listed": "b83b0d2c51815bf1f8e2f3ba9178b589df6fa1e9af3619baec8ee7c32c33a0e2"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/1-hosted-plan/PACK-SHA256.txt",
+   "entry": "inputs/s5-items.jsonl",
+   "listed": "70b08206e86db25206f8229ceb093dd81e32a80204fb57e3278eac900f7a29cc"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/2-answer-key-seal/KEYS-SHA256.txt",
+   "entry": "BUILD-MANIFEST.json",
+   "listed": "5421e61d29d98f2073cd540c00d054582bc58aa84147c2223bbe7580054e5e32"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/2-answer-key-seal/KEYS-SHA256.txt",
+   "entry": "s1-keys.jsonl",
+   "listed": "07a489fa7b5e0f6a8e60449c182f0e0588ba7036299e8bb23b5eccf85033d135"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/2-answer-key-seal/KEYS-SHA256.txt",
+   "entry": "s2-keys.jsonl",
+   "listed": "565a2847232127b5bd71dd67aba3fbcded11eb64ebcc5a2af6fad268a85f10bd"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/2-answer-key-seal/KEYS-SHA256.txt",
+   "entry": "s3-keys.jsonl",
+   "listed": "16aa557e559fb2eeea412e1b93850f8688373dd6f8e26de46342427fa27f452e"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/2-answer-key-seal/KEYS-SHA256.txt",
+   "entry": "s4-keys.jsonl",
+   "listed": "7991e9f0e2b387cb313cb53605cd34dfde42deeef1104d36c8784b4757b27f04"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/2-answer-key-seal/KEYS-SHA256.txt",
+   "entry": "s5-keys.jsonl",
+   "listed": "5b3b970a0e4c28123f09f99dfb7380559da561df3f3f65214d8a50238b7e6a37"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/3-hosted-results/MANIFEST.sha256",
+   "entry": "order.json",
+   "listed": "95c46e6f8d8474c1b43f8bee92b72cc317e5a018dc1beb14a15f4f02b9f64b57"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/3-hosted-results/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "07ca93ecaa8832114df090d3905ce4f918115750e81f34ba9f72936f9b0d305f"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/3-hosted-results/MANIFEST.sha256",
+   "entry": "code/runner.py",
+   "listed": "4a8f6d2a0b596d06e50afe05790ea9b2b8406a3ebb790c447e1cc229b44c970d"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/4-pc-plan/DESIGN-SHA256.txt",
+   "entry": "DESIGN.md",
+   "listed": "9d849f73bf12cdaafa2df899a066ef39e447662b62ce672893c97ea7830985e8"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/4-pc-plan/DESIGN-SHA256.txt",
+   "entry": "run_chain.py",
+   "listed": "d0afd768625247a58a4cb74c02b2e8337eb37a6959abe08d1f0df354a04a4382"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/4-pc-plan/DESIGN-SHA256.txt",
+   "entry": "score_chain.py",
+   "listed": "3320894508dba37169aa170582630613bd2613563e991890b7877fe02136058f"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/4-pc-plan/DESIGN-SHA256.txt",
+   "entry": "inputs/s2-items.jsonl",
+   "listed": "749a1664acadbe130d91fd5d57b23e30f49f62f5c0b1f612d9bcd3d078dcdbef"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/4-pc-plan/DESIGN-SHA256.txt",
+   "entry": "inputs/s2-hosted-order.json",
+   "listed": "95c46e6f8d8474c1b43f8bee92b72cc317e5a018dc1beb14a15f4f02b9f64b57"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/5-pc-results/RESULTS-SHA256.txt",
+   "entry": "step1.jsonl",
+   "listed": "94fec6355591c6865ca57141cca97c533ec94a479a1ae46cfabd6f4b16a1ca7a"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/5-pc-results/RESULTS-SHA256.txt",
+   "entry": "chains.jsonl",
+   "listed": "d43fd886d80e542d5984c594db83e8b155899e5a0c58156d055da5414317ef80"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/chain-public-subset-2026-10-06/5-pc-results/RESULTS-SHA256.txt",
+   "entry": "run-log.txt",
+   "listed": "fba3717932fb9ac2ee0203fdb92cf1394558b90ce99594b75399c258c03251e5"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s11/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "4eb0c3ac530bd6f40a193b2c175262733c9ea02b04aa9278c24d6f476bd4ba1a"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s12/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "e6796be9b95d2cbf6ff1000ef69d0b7495e408ae59ac6f9ca5dbba005ddb0194"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s1/MANIFEST.sha256",
+   "entry": "code/runner.py",
+   "listed": "96cfc288773c74b473f87ccc740ee35cf51e1647a22205994051d2a4044cb1f2"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "07ca93ecaa8832114df090d3905ce4f918115750e81f34ba9f72936f9b0d305f"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s2/MANIFEST.sha256",
+   "entry": "code/runner.py",
+   "listed": "4a8f6d2a0b596d06e50afe05790ea9b2b8406a3ebb790c447e1cc229b44c970d"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s3/MANIFEST.sha256",
+   "entry": "code/runner.py",
+   "listed": "150a965ecd13cd04992fdc8ca308f7cdd8506ecee34b0ee34e18920bbc18223e"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s4/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "de041391c238e1df78c5cffee1d92e5fce187618db223b0b6156395bd1001e78"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s4/MANIFEST.sha256",
+   "entry": "code/runner.py",
+   "listed": "43ffd7aa83bc5abf2a9b52626bdad7dc6f46a522520f534e4d0a5960ea46e6ab"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s5/MANIFEST.sha256",
+   "entry": "code/runner.py",
+   "listed": "486b788cb59430b6a35aa250ccab75e5fbc6226a47e3dfa6b0d35ed6651f6dec"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s6/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "bb28c507edd4977837669079560748f924054ad3b2d5ec57a446eb792c2a10e6"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s8/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "059657678a084cd1e19641e15faac97e27a590b6c260f4dc49e6b7b5202176ab"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/gemini-pack-s1-s12/keys-and-results/results/s9/MANIFEST.sha256",
+   "entry": "code/__pycache__/runner.cpython-310.pyc",
+   "listed": "45febfc5848353acb406bf376a53605d57aecbc1f819b891c15419c63e937755"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN-SHA256.txt",
+   "entry": "../chatgpt-review-2026-10-04/JOB3-BATCH-1.jsonl",
+   "listed": "2e26f79306663060ac5020f9cf4b6647412f654914aba0e9c4ed491c6aaa2e50"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN-SHA256.txt",
+   "entry": "../chatgpt-review-2026-10-04/JOB3-BATCH-2.jsonl",
+   "listed": "eaba7033475abf477dc834eecd949f5411a2bb0d9e5b1e880312770ff7855c94"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN-SHA256.txt",
+   "entry": "../chatgpt-review-2026-10-04/JOB3-BATCH-3.jsonl",
+   "listed": "79c6af2628deb53fee96fc4ebb9625bd9ec9bd8f15c353c672ed3e11b1c42168"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN-SHA256.txt",
+   "entry": "../chatgpt-review-2026-10-04/JOB3-BATCH-4.jsonl",
+   "listed": "c010aa2baa5b4e7ba9bad62035873808db8c831290d73d14e84a6d2032b6f0a5"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/DESIGN-SHA256.txt",
+   "entry": "/c/Users/<user>/Workbench/swarm-receipts-public/receipts_model.py",
+   "listed": "b0842ecd738554719443269a93665d0e8045c3244a20587e0455b82568169942"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/noise/results/LOCAL-REPEAT-RESULTS-SHA256.txt",
+   "entry": "run2/results/answers-run2-local-repeat.jsonl",
+   "listed": "588aea74ab39f898b3cf679b6f9fc1ae9c1b3a08a5c10571c17c34a77f41d348"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/lemonade-noise-and-run3-2026-10-05/noise/results/LOCAL-REPEAT-RESULTS-SHA256.txt",
+   "entry": "run2/results/local-repeat-log.txt",
+   "listed": "b8a6b903af5f128ef937d882d7c57bf705ed7db2534dc388bf10035a60ee9cc1"
+  },
+  {
+   "list": "3-checker-studies-5-to-7-oct/word-test-2026-10-07/SCORER-SHA256.txt",
+   "entry": "../../Private/claims/parser-audit-2026-10-07/ref_rule.py",
+   "listed": "ea4e68be5736fd69aef53f4952dff565338fc8a72c9468d1b9be4b2356b738ea"
+  },
+  {
+   "list": "4-ai-village-counts/t13c-2026-10-04/T13C-DESIGN-SHA256.txt",
+   "entry": "../2026-10-04-t13-propagation/t13_propagation.py",
+   "listed": "1ff9729039c3d8e752a79d2a9ccad2ba9fbb84028042be7d9ff1047f5b6c02df"
+  },
+  {
+   "list": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/CHECKER-SHA256.txt",
+   "entry": "receipt_checker.py",
+   "listed": "e6bff7aa775d4277c8e527ffc3228465658151e4a3f869d125f02b4c81735bd3"
+  },
+  {
+   "list": "4-ai-village-counts/t18-sol-on-bank-2026-10-04/CHECKER-SHA256.txt",
+   "entry": "generic_checker.py",
+   "listed": "dc4624f0db9719c55d94c382f5838e7b295bf970a87f540e4979bb8abdf500a3"
+  }
+ ],
+ "directory_entries": []
+}

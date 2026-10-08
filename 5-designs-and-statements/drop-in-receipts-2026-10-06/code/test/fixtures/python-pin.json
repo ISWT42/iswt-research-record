@@ -1,0 +1,406 @@
+{
+ "failure_markers": [
+  [
+   "5 passed, 0 failed",
+   []
+  ],
+  [
+   "Tests: 0 failed, 12 passed, 12 total",
+   []
+  ],
+  [
+   "ℹ fail 0",
+   []
+  ],
+  [
+   "ℹ fail 2",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "test result: ok. 5 passed; 0 failed; 0 ignored",
+   []
+  ],
+  [
+   "Tests run: 12, Failures: 0, Errors: 0, Skipped: 0",
+   []
+  ],
+  [
+   "Tests run: 12, Failures: 1, Errors: 0, Skipped: 0",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "12 examples, 0 failures",
+   []
+  ],
+  [
+   "12 examples, 2 failures",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "Completed without errors",
+   []
+  ],
+  [
+   "no errors found",
+   []
+  ],
+  [
+   "errors: []",
+   []
+  ],
+  [
+   "error: null",
+   []
+  ],
+  [
+   "\"error\": \"\"",
+   []
+  ],
+  [
+   "failed=0",
+   []
+  ],
+  [
+   "failed: 3",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "3 failed, 9 passed in 0.12s",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "=== 15 passed in 0.12s ===",
+   []
+  ],
+  [
+   "HTTP/1.1 200 OK",
+   []
+  ],
+  [
+   "HTTP/1.1 404 Not Found",
+   [
+    "http 4xx/5xx"
+   ]
+  ],
+  [
+   "HTTP/2 500",
+   [
+    "http 4xx/5xx"
+   ]
+  ],
+  [
+   "status: 503",
+   [
+    "http 4xx/5xx"
+   ]
+  ],
+  [
+   "\"success\": false",
+   [
+    "success: false"
+   ]
+  ],
+  [
+   "ok: false",
+   [
+    "success: false"
+   ]
+  ],
+  [
+   "Process exited with code 1",
+   [
+    "non-zero exit"
+   ]
+  ],
+  [
+   "exit code 0",
+   []
+  ],
+  [
+   "exit code 2",
+   [
+    "non-zero exit"
+   ]
+  ],
+  [
+   "returncode=1",
+   [
+    "non-zero exit"
+   ]
+  ],
+  [
+   "rc: 0",
+   []
+  ],
+  [
+   "Permission denied (publickey).",
+   [
+    "denied"
+   ]
+  ],
+  [
+   "! [rejected]        main -> main (fetch first)",
+   [
+    "rejected"
+   ]
+  ],
+  [
+   "fatal: unable to access 'https://x/'",
+   [
+    "fatal"
+   ]
+  ],
+  [
+   "Traceback (most recent call last):",
+   [
+    "traceback"
+   ]
+  ],
+  [
+   "Killed",
+   [
+    "killed / out of memory"
+   ]
+  ],
+  [
+   "OOM-killed",
+   [
+    "killed / out of memory"
+   ]
+  ],
+  [
+   "request timed out",
+   [
+    "timed out"
+   ]
+  ],
+  [
+   "10 failed",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "100 failures",
+   [
+    "failed"
+   ]
+  ],
+  [
+   "0 failures, 4 errors",
+   [
+    "error"
+   ]
+  ],
+  [
+   "no failures",
+   []
+  ],
+  [
+   "without any errors",
+   []
+  ],
+  [
+   "zero failed",
+   []
+  ],
+  [
+   "failing: 0",
+   []
+  ],
+  [
+   "fail 0",
+   []
+  ],
+  [
+   "exceptions: {}",
+   []
+  ],
+  [
+   "Error 1",
+   [
+    "error"
+   ]
+  ],
+  [
+   "error rate 0.5",
+   [
+    "error"
+   ]
+  ],
+  [
+   "errors=0",
+   []
+  ],
+  [
+   "ERROR: apply failed: zone locked",
+   [
+    "error",
+    "failed"
+   ]
+  ],
+  [
+   "404",
+   [
+    "http 4xx/5xx"
+   ]
+  ],
+  [
+   "404 Not Found",
+   [
+    "http 4xx/5xx"
+   ]
+  ],
+  [
+   "422 rows exported",
+   []
+  ],
+  [
+   "200 OK",
+   []
+  ]
+ ],
+ "pair": [
+  [
+   "shown",
+   "shown",
+   {
+    "r1": "shown",
+    "r2": "shown",
+    "r3": "shown"
+   }
+  ],
+  [
+   "shown",
+   "contradicted",
+   {
+    "r1": "not shown",
+    "r2": "not shown",
+    "r3": "not shown"
+   }
+  ],
+  [
+   "shown",
+   "not shown",
+   {
+    "r1": "shown",
+    "r2": "not shown",
+    "r3": "not shown"
+   }
+  ],
+  [
+   "contradicted",
+   "shown",
+   {
+    "r1": "not shown",
+    "r2": "not shown",
+    "r3": "not shown"
+   }
+  ],
+  [
+   "contradicted",
+   "contradicted",
+   {
+    "r1": "contradicted",
+    "r2": "contradicted",
+    "r3": "contradicted"
+   }
+  ],
+  [
+   "contradicted",
+   "not shown",
+   {
+    "r1": "contradicted",
+    "r2": "contradicted",
+    "r3": "not shown"
+   }
+  ],
+  [
+   "not shown",
+   "shown",
+   {
+    "r1": "shown",
+    "r2": "not shown",
+    "r3": "not shown"
+   }
+  ],
+  [
+   "not shown",
+   "contradicted",
+   {
+    "r1": "contradicted",
+    "r2": "contradicted",
+    "r3": "not shown"
+   }
+  ],
+  [
+   "not shown",
+   "not shown",
+   {
+    "r1": "not shown",
+    "r2": "not shown",
+    "r3": "not shown"
+   }
+  ]
+ ],
+ "overwritten": [
+  [
+   "Deploy OK\rDeploy FAILED",
+   []
+  ],
+  [
+   "all good\b\b\berror",
+   []
+  ],
+  [
+   "progress 10%\rprogress 100%\n",
+   []
+  ],
+  [
+   "ok\n\u001b[2Kfailed here",
+   []
+  ],
+  [
+   "plain line with error\nsecond line",
+   []
+  ],
+  [
+   "line one\u001b[1A\u001b[2Kerror: boom",
+   [
+    "error"
+   ]
+  ],
+  [
+   "10%\r20%\r30% done",
+   []
+  ]
+ ],
+ "safe_value": [
+  [
+   "curl -H 'Authorization: Bearer abc123def456ghi789' https://x",
+   "curl -H 'Authorization: [redacted] [redacted]' https://x"
+  ],
+  [
+   "password=hunter2 and token: abcdef",
+   "password=[redacted] and token: [redacted]"
+  ],
+  [
+   "export API_KEY=sk-abcdefghijklmnopqrstuvwxyz0123",
+   "export API_KEY=[redacted]"
+  ],
+  [
+   "ghp_abcdefghijklmnopqrstuvwxyz0123456789",
+   "[redacted]"
+  ]
+ ]
+}

@@ -1,0 +1,8 @@
+# A2 after round 1: 2 edits applied, 0 dropped
+# state hash adfae78b44fad96a76752c0cded840900d19bc612a3b814f3b445252b1d2b7bd
+[V1]
+retry | command failed or rolled back | check next step for success
+[V2]
+resource state | output showing specific property value or empty list
+[V3]
+[V4]

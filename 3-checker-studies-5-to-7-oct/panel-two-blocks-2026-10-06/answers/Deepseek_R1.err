@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: deepseek/deepseek-r1-0528:online (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/155133-469-openrouter-panel-two-blocks
+[broker] tokens in/out/reasoning: 2858/3653/2226; time 67377 ms; cost estimate unknown

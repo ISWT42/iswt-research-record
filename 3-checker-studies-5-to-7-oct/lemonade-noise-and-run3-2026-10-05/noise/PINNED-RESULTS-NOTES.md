@@ -1,0 +1,12 @@
+# Pinned-provider repeat: results (5 Oct 2026)
+- **Runs:** pinned-1, 18:13:50 to 18:17:33 UTC; pinned-2, 18:17:33 to 18:27:25 UTC. 560 calls, 0 without an answer, 7 retries, US$0.0559. Every call was served by its pin (SiliconFlow 280, Darkbloom 280).
+- **Sealed before reading:** `results/PINNED-RESULTS-SHA256.txt` (pinned-1 1177578c..., pinned-2 319e946a...), FreeTSA 18:28:16 GMT.
+- **Qwen 3.5 9B pinned to SiliconFlow:**
+  - identical verdicts 118 of 140 (unpinned repeat: 125 of 140);
+  - identical reply text 65 of 140;
+  - right 83, then 82.
+- **Gemma 4 26B pinned to Darkbloom:**
+  - identical verdicts 136 of 140 (unpinned: 117 of 140);
+  - identical reply text 79 of 140;
+  - right 102, then 102 (unpinned runs: 87 and 93).
+- [forecast bullet removed: forecasts are kept private by the owner's decision of 8 Oct 2026]

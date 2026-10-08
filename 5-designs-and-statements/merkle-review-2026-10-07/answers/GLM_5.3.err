@@ -1,0 +1,4 @@
+[broker] FAILED: OpenRouter answered with HTTP 403: Key limit exceeded (weekly limit). Manage it using https://openrouter.ai/workspaces/default/keys/8af2dee164e4f4a95936c9e32a40422f722a8b8e0652c598bd771d1c3c72d2b4
+[broker] model: z-ai/glm-5.3 (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/204603-315-openrouter-merkle-review
+[broker] tokens in/out/reasoning: -/-/-; time 109 ms; cost estimate unknown

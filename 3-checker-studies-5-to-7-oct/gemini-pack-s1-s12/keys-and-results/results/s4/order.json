@@ -1,0 +1,4610 @@
+[
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I026-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 0
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I016-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 1
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I011-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 2
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I025-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 3
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I060-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 4
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I006-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 5
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I044-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 6
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I008-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 7
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I018-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 8
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I040-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 9
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I058-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 10
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I036-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 11
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I030-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 12
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I011-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 13
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I002-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 14
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I018-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 15
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I058-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 16
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I023-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 17
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I014-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 18
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I019-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 19
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I029-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 20
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I013-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 21
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I059-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 22
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I016-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 23
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I023-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 24
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I022-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 25
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I041-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 26
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I020-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 27
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I052-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 28
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I018-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 29
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I057-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 30
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I031-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 31
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I008-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 32
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I029-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 33
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I021-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 34
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I060-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 35
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I020-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 36
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I010-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 37
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I002-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 38
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I043-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 39
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I054-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 40
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I051-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 41
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I047-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 42
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I055-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 43
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I022-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 44
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I009-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 45
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I004-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 46
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I052-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 47
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I052-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 48
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I049-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 49
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I034-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 50
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I007-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 51
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I014-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 52
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I049-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 53
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I014-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 54
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I012-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 55
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I030-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 56
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I028-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 57
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I031-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 58
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I050-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 59
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I043-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 60
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I019-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 61
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I031-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 62
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I043-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 63
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I037-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 64
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I004-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 65
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I027-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 66
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I046-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 67
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I028-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 68
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I041-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 69
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I033-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 70
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I018-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 71
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I006-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 72
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I047-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 73
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I030-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 74
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I023-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 75
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I019-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 76
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I051-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 77
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I034-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 78
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I012-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 79
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I010-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 80
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I020-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 81
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I016-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 82
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I032-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 83
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I038-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 84
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I020-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 85
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I035-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 86
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I058-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 87
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I037-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 88
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I052-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 89
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I031-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 90
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I004-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 91
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I036-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 92
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I014-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 93
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I051-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 94
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I045-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 95
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I018-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 96
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I052-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 97
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I040-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 98
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I025-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 99
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I042-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 100
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I009-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 101
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I017-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 102
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I008-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 103
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I044-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 104
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I021-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 105
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I002-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 106
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I020-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 107
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I012-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 108
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I043-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 109
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I017-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 110
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I034-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 111
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I001-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 112
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I003-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 113
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I056-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 114
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I006-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 115
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I015-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 116
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I054-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 117
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I007-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 118
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I026-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 119
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I056-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 120
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I024-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 121
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I049-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 122
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I040-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 123
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I041-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 124
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I025-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 125
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I021-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 126
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I033-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 127
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I004-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 128
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I032-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 129
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I035-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 130
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I032-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 131
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I060-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 132
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I043-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 133
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I031-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 134
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I039-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 135
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I001-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 136
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I015-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 137
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I013-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 138
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I037-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 139
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I012-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 140
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I052-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 141
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I039-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 142
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I023-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 143
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I059-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 144
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I003-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 145
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I017-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 146
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I004-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 147
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I049-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 148
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I031-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 149
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I044-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 150
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I034-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 151
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I008-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 152
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I040-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 153
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I004-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 154
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I044-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 155
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I021-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 156
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I023-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 157
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I024-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 158
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I004-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 159
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I053-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 160
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I042-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 161
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I046-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 162
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I053-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 163
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I049-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 164
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I013-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 165
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I005-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 166
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I027-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 167
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I040-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 168
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I046-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 169
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I030-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 170
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I033-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 171
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I007-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 172
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I038-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 173
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I027-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 174
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I051-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 175
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I023-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 176
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I047-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 177
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I056-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 178
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I038-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 179
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I050-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 180
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I030-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 181
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I018-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 182
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I024-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 183
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I046-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 184
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I057-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 185
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I001-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 186
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I033-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 187
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I043-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 188
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I016-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 189
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I011-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 190
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I044-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 191
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I025-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 192
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I022-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 193
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I056-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 194
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I007-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 195
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I010-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 196
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I056-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 197
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I034-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 198
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I003-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 199
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I047-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 200
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I029-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 201
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I011-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 202
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I024-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 203
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I017-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 204
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I027-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 205
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I038-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 206
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I049-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 207
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I055-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 208
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I010-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 209
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I047-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 210
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I005-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 211
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I035-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 212
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I016-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 213
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I042-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 214
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I054-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 215
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I026-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 216
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I021-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 217
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I049-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 218
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I015-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 219
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I032-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 220
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I057-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 221
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I025-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 222
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I001-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 223
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I004-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 224
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I038-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 225
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I006-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 226
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I044-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 227
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I035-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 228
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I053-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 229
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I019-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 230
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I012-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 231
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I030-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 232
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I048-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 233
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I039-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 234
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I039-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 235
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I026-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 236
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I031-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 237
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I035-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 238
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I022-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 239
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I034-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 240
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I048-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 241
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I023-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 242
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I028-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 243
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I044-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 244
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I020-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 245
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I041-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 246
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I013-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 247
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I040-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 248
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I011-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 249
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I053-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 250
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I039-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 251
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I050-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 252
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I044-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 253
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I059-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 254
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I022-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 255
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I055-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 256
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I051-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 257
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I037-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 258
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I021-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 259
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I032-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 260
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I003-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 261
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I029-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 262
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I009-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 263
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I006-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 264
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I042-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 265
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I054-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 266
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I013-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 267
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I014-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 268
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I021-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 269
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I044-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 270
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I022-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 271
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I046-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 272
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I009-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 273
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I060-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 274
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I043-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 275
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I019-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 276
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I050-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 277
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I049-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 278
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I055-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 279
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I056-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 280
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I058-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 281
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I036-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 282
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I056-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 283
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I059-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 284
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I040-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 285
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I045-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 286
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I054-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 287
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I006-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 288
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I032-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 289
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I043-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 290
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I033-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 291
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I050-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 292
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I035-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 293
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I046-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 294
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I053-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 295
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I003-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 296
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I037-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 297
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I029-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 298
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I001-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 299
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I002-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 300
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I005-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 301
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I055-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 302
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I024-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 303
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I008-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 304
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I018-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 305
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I048-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 306
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I012-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 307
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I019-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 308
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I028-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 309
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I036-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 310
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I032-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 311
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I005-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 312
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I052-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 313
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I025-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 314
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I051-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 315
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I007-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 316
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I045-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 317
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I022-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 318
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I053-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 319
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I055-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 320
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I051-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 321
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I059-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 322
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I042-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 323
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I045-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 324
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I015-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 325
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I027-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 326
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I014-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 327
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I060-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 328
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I047-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 329
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I038-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 330
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I039-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 331
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I014-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 332
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I002-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 333
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I020-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 334
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I035-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 335
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I057-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 336
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I032-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 337
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I048-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 338
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I058-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 339
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I022-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 340
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I016-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 341
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I060-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 342
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I010-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 343
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I011-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 344
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I013-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 345
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I024-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 346
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I007-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 347
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I058-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 348
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I026-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 349
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I036-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 350
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I042-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 351
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I050-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 352
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I019-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 353
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I031-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 354
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I029-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 355
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I050-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 356
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I048-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 357
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I012-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 358
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I016-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 359
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I054-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 360
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I040-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 361
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I004-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 362
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I025-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 363
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I008-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 364
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I003-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 365
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I060-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 366
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I013-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 367
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I037-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 368
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I001-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 369
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I049-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 370
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I059-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 371
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I012-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 372
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I009-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 373
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I060-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 374
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I007-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 375
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I043-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 376
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I025-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 377
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I034-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 378
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I013-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 379
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I005-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 380
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I007-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 381
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I015-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 382
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I045-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 383
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I014-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 384
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I003-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 385
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I050-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 386
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I057-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 387
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I026-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 388
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I041-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 389
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I021-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 390
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I006-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 391
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I050-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 392
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I046-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 393
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I017-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 394
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I029-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 395
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I057-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 396
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I008-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 397
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I030-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 398
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I001-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 399
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I008-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 400
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I025-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 401
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I028-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 402
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I051-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 403
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I038-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 404
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I016-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 405
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I060-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 406
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I016-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 407
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I017-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 408
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I030-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 409
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I011-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 410
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I037-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 411
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I015-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 412
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I059-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 413
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I006-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 414
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I044-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 415
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I033-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 416
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I058-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 417
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I011-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 418
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I045-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 419
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I034-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 420
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I051-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 421
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I026-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 422
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I017-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 423
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I059-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 424
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I005-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 425
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I020-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 426
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I028-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 427
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I019-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 428
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I057-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 429
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I017-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 430
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I007-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 431
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I032-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 432
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I033-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 433
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I011-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 434
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I009-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 435
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I031-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 436
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I048-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 437
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I037-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 438
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I015-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 439
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I035-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 440
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I041-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 441
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I041-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 442
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I028-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 443
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I011-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 444
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I023-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 445
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I036-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 446
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I005-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 447
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I053-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 448
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I057-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 449
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I042-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 450
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I041-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 451
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I042-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 452
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I051-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 453
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I056-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 454
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I027-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 455
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I019-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 456
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I032-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 457
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I001-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 458
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I039-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 459
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I002-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 460
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I024-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 461
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I036-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 462
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I047-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 463
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I042-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 464
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I055-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 465
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I012-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 466
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I001-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 467
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I044-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 468
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I055-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 469
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I026-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 470
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I058-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 471
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I024-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 472
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I034-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 473
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I008-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 474
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I037-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 475
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I054-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 476
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I045-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 477
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I041-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 478
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I016-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 479
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I034-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 480
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I033-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 481
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I053-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 482
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I036-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 483
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I048-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 484
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I035-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 485
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I045-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 486
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I018-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 487
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I002-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 488
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I028-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 489
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I036-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 490
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I003-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 491
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I058-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 492
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I027-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 493
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I001-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 494
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I020-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 495
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I011-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 496
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I047-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 497
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I045-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 498
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I007-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 499
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I041-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 500
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I046-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 501
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I023-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 502
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I028-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 503
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I029-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 504
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I036-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 505
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I010-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 506
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I032-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 507
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I001-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 508
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I032-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 509
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I005-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 510
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I002-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 511
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I038-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 512
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I018-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 513
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I057-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 514
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I046-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 515
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I053-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 516
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I013-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 517
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I037-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 518
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I052-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 519
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I011-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 520
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I009-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 521
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I012-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 522
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I039-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 523
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I027-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 524
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I009-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 525
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I054-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 526
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I038-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 527
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I007-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 528
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I046-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 529
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I059-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 530
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I006-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 531
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I049-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 532
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I053-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 533
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I003-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 534
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I030-V0",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 535
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I008-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 536
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I042-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 537
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I022-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 538
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I056-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 539
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I009-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 540
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I019-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 541
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I015-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 542
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I048-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 543
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I014-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 544
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I059-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 545
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I002-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 546
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I052-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 547
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I003-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 548
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I024-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 549
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I054-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 550
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I010-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 551
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I047-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 552
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I014-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 553
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I033-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 554
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I028-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 555
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I023-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 556
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I060-V2",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 557
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I015-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 558
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I057-V3",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 559
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I009-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 0,
+    "call_index": 560
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I010-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 561
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I010-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 562
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I027-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 563
+  },
+  {
+    "spec": "s4",
+    "arm": "V0",
+    "item_id": "I019-V0",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 564
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I039-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 565
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I046-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 1,
+    "call_index": 566
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I030-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 567
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I048-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 568
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I014-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 569
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I003-V1",
+    "model": "google/gemma-4-26b-a4b-it",
+    "repeat": 1,
+    "call_index": 570
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I005-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 571
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I060-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 572
+  },
+  {
+    "spec": "s4",
+    "arm": "V1",
+    "item_id": "I015-V1",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 573
+  },
+  {
+    "spec": "s4",
+    "arm": "V2",
+    "item_id": "I017-V2",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 574
+  },
+  {
+    "spec": "s4",
+    "arm": "V3",
+    "item_id": "I006-V3",
+    "model": "qwen/qwen3.5-9b",
+    "repeat": 0,
+    "call_index": 575
+  }
+]

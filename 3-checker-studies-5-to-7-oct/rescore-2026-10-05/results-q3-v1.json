@@ -1,0 +1,3482 @@
+{
+ "meta": {
+  "script": "q3_certainty.py",
+  "script_sha256": "57dca289178a6941155cc995da37d598659f288a9a8e0ac5ffc8e1faa2ee26d6",
+  "common_sha256": "584a7f8d6271c03ca0e4490465ba100ebae136a7bc289ac2784fee2597e767cc",
+  "design_sha256": "e66f0cdd268b9c2f918d6605c6692f8c7b667c942d33ee8fe06060bfbf6655b5",
+  "run_at": "2026-10-06T00:20:35Z",
+  "python": "3.14.7",
+  "platform": "win32",
+  "seal": {
+   "seal_file": "DESIGN-SHA256.txt",
+   "seal_file_sha256": "42c17874d2b4c652423d0a2251bd4632b93b9b3588d00a06e2eb5a5cdaca507a",
+   "files_match": {
+    "DESIGN.md": true,
+    "rescore_common.py": true,
+    "q3_certainty.py": true,
+    "q4_quote_decides.py": true,
+    "selftest.py": true
+   }
+  },
+  "inputs": {
+   "bank": {
+    "sha256": "edb897f7b6d7df41a14eb37e4f6079ade036dabdec6d140d82dec6147199593a",
+    "matches_design": true
+   },
+   "batch5": {
+    "sha256": "468e2ff2deab7cf50cf31fee0a35e832f945a59a787a5703252619b03f19cda1",
+    "matches_design": true
+   },
+   "run2_local": {
+    "sha256": "ba5303a247fe5a805064261c698e0958a36b20d6ec3791c69a1fb48f9c09eed5",
+    "matches_design": true
+   },
+   "run2_fast": {
+    "sha256": "7f634ad3a0ae7874bdecb81aec31096db7a2f6cbbfe4f597bd653c22092f284e",
+    "matches_design": true
+   },
+   "run3": {
+    "sha256": "df9a399dfd2959e30a226c96225495adc3435cd8ea2a07ccdd04eb4417eea9b4",
+    "matches_design": true
+   },
+   "score_run3": {
+    "sha256": "c9e2ad26fca75f3a55812563540999eca69393e599673175a237df44e6ee357f",
+    "matches_design": true
+   },
+   "score_run2_local": {
+    "sha256": "944afdd9cc9d1a4ad970df47544b391cccb7cc63c4abd0dfe86266272d8cdf23",
+    "matches_design": true
+   },
+   "score_run2_fast": {
+    "sha256": "67f26941f3ec510cca5022accd15aab0d4f161fa150308075a12a8fb20c3505d",
+    "matches_design": true
+   },
+   "src_receipts_model": {
+    "sha256": "b0842ecd738554719443269a93665d0e8045c3244a20587e0455b82568169942",
+    "matches_design": true
+   },
+   "src_run2": {
+    "sha256": "bd8decc1ddb4bc10ebcd2bc91ac0aab8c1a94d29dde6e001f456d0f119a1d29d",
+    "matches_design": true
+   },
+   "src_run_pair": {
+    "sha256": "3d8e8292ebd48b1278549988d275bac3a396ed99ccaa1e71a1df5b0d56468bdb",
+    "matches_design": true
+   },
+   "src_run3": {
+    "sha256": "5a4d47b4f8e1ca44fdc5af3b462f914753fc17fe5a55cadf2bc1682f5a90aa33",
+    "matches_design": true
+   }
+  }
+ },
+ "question": "Q3",
+ "checks": {
+  "records": 280,
+  "duplicate_arm_id": 0,
+  "arms_found": [
+   "U-G",
+   "U-Q"
+  ],
+  "ids_missing_by_arm": {
+   "U-Q": [],
+   "U-G": []
+  }
+ },
+ "sets": {
+  "fresh_161_300": {
+   "U-Q": {
+    "n": 140,
+    "truth_counts": {
+     "shown": 46,
+     "contradicted": 47,
+     "not shown": 47
+    },
+    "answer_counts": {
+     "shown": {
+      "k": 42,
+      "n": 140,
+      "rate": 0.3,
+      "ci95": [
+       0.2303,
+       0.3804
+      ]
+     },
+     "contradicted": {
+      "k": 60,
+      "n": 140,
+      "rate": 0.4286,
+      "ci95": [
+       0.3496,
+       0.5114
+      ]
+     },
+     "not shown": {
+      "k": 38,
+      "n": 140,
+      "rate": 0.2714,
+      "ci95": [
+       0.2046,
+       0.3505
+      ]
+     }
+    },
+    "constant_not_shown_right": {
+     "k": 47,
+     "n": 140,
+     "rate": 0.3357,
+     "ci95": [
+      0.2628,
+      0.4174
+     ]
+    },
+    "certainty_counts": {
+     "sure": {
+      "k": 117,
+      "n": 140,
+      "rate": 0.8357,
+      "ci95": [
+       0.7655,
+       0.888
+      ]
+     },
+     "unsure": {
+      "k": 11,
+      "n": 140,
+      "rate": 0.0786,
+      "ci95": [
+       0.0444,
+       0.1352
+      ]
+     },
+     "unmarked": {
+      "k": 12,
+      "n": 140,
+      "rate": 0.0857,
+      "ci95": [
+       0.0497,
+       0.1438
+      ]
+     }
+    },
+    "unmarked_reasons": {
+     "no_answer": {
+      "k": 0,
+      "n": 12,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2425
+      ]
+     },
+     "reply_not_a_json_object": {
+      "k": 8,
+      "n": 12,
+      "rate": 0.6667,
+      "ci95": [
+       0.3906,
+       0.8619
+      ]
+     },
+     "certainty_missing_or_invalid": {
+      "k": 4,
+      "n": 12,
+      "rate": 0.3333,
+      "ci95": [
+       0.1381,
+       0.6094
+      ]
+     }
+    },
+    "accuracy_by_certainty": {
+     "sure": {
+      "k": 80,
+      "n": 117,
+      "rate": 0.6838,
+      "ci95": [
+       0.5948,
+       0.761
+      ]
+     },
+     "unsure": {
+      "k": 6,
+      "n": 11,
+      "rate": 0.5455,
+      "ci95": [
+       0.2801,
+       0.7873
+      ]
+     },
+     "unmarked": {
+      "k": 7,
+      "n": 12,
+      "rate": 0.5833,
+      "ci95": [
+       0.3195,
+       0.8067
+      ]
+     }
+    },
+    "sure_minus_unsure": {
+     "k1": 80,
+     "n1": 117,
+     "k2": 6,
+     "n2": 11,
+     "diff": 0.1383,
+     "ci95": [
+      -0.1194,
+      0.4147
+     ]
+    },
+    "cells": {
+     "shown|sure": {
+      "n": 42,
+      "right": {
+       "k": 34,
+       "n": 42,
+       "rate": 0.8095,
+       "ci95": [
+        0.667,
+        0.9002
+       ]
+      },
+      "wrong": 8,
+      "truth_not_shown": {
+       "k": 6,
+       "n": 42,
+       "rate": 0.1429,
+       "ci95": [
+        0.0672,
+        0.2784
+       ]
+      },
+      "net_if_replaced": -28
+     },
+     "shown|unsure": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "shown|unmarked": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "contradicted|sure": {
+      "n": 55,
+      "right": {
+       "k": 36,
+       "n": 55,
+       "rate": 0.6545,
+       "ci95": [
+        0.5225,
+        0.7664
+       ]
+      },
+      "wrong": 19,
+      "truth_not_shown": {
+       "k": 15,
+       "n": 55,
+       "rate": 0.2727,
+       "ci95": [
+        0.1728,
+        0.4023
+       ]
+      },
+      "net_if_replaced": -21
+     },
+     "contradicted|unsure": {
+      "n": 3,
+      "right": {
+       "k": 0,
+       "n": 3,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.5615
+       ]
+      },
+      "wrong": 3,
+      "truth_not_shown": {
+       "k": 3,
+       "n": 3,
+       "rate": 1.0,
+       "ci95": [
+        0.4385,
+        1.0
+       ]
+      },
+      "net_if_replaced": 3
+     },
+     "contradicted|unmarked": {
+      "n": 2,
+      "right": {
+       "k": 1,
+       "n": 2,
+       "rate": 0.5,
+       "ci95": [
+        0.0945,
+        0.9055
+       ]
+      },
+      "wrong": 1,
+      "truth_not_shown": {
+       "k": 1,
+       "n": 2,
+       "rate": 0.5,
+       "ci95": [
+        0.0945,
+        0.9055
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|sure": {
+      "n": 20,
+      "right": {
+       "k": 10,
+       "n": 20,
+       "rate": 0.5,
+       "ci95": [
+        0.2993,
+        0.7007
+       ]
+      },
+      "wrong": 10,
+      "truth_not_shown": {
+       "k": 10,
+       "n": 20,
+       "rate": 0.5,
+       "ci95": [
+        0.2993,
+        0.7007
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unsure": {
+      "n": 8,
+      "right": {
+       "k": 6,
+       "n": 8,
+       "rate": 0.75,
+       "ci95": [
+        0.4093,
+        0.9285
+       ]
+      },
+      "wrong": 2,
+      "truth_not_shown": {
+       "k": 6,
+       "n": 8,
+       "rate": 0.75,
+       "ci95": [
+        0.4093,
+        0.9285
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unmarked": {
+      "n": 10,
+      "right": {
+       "k": 6,
+       "n": 10,
+       "rate": 0.6,
+       "ci95": [
+        0.3127,
+        0.8318
+       ]
+      },
+      "wrong": 4,
+      "truth_not_shown": {
+       "k": 6,
+       "n": 10,
+       "rate": 0.6,
+       "ci95": [
+        0.3127,
+        0.8318
+       ]
+      },
+      "net_if_replaced": 0
+     }
+    },
+    "rule_R_all": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 8,
+       "n": 42,
+       "rate": 0.1905,
+       "ci95": [
+        0.0998,
+        0.333
+       ]
+      },
+      "after": {
+       "k": 8,
+       "n": 42,
+       "rate": 0.1905,
+       "ci95": [
+        0.0998,
+        0.333
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 8,
+       "n": 94,
+       "rate": 0.0851,
+       "ci95": [
+        0.0438,
+        0.159
+       ]
+      },
+      "after": {
+       "k": 8,
+       "n": 94,
+       "rate": 0.0851,
+       "ci95": [
+        0.0438,
+        0.159
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 8,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 93,
+       "n": 140,
+       "rate": 0.6643,
+       "ci95": [
+        0.5826,
+        0.7372
+       ]
+      },
+      "after": {
+       "k": 96,
+       "n": 140,
+       "rate": 0.6857,
+       "ci95": [
+        0.6047,
+        0.7568
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 1,
+      "n": 93,
+      "rate": 0.0108,
+      "ci95": [
+       0.0019,
+       0.0584
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 34,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.1015
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 1,
+       "n": 37,
+       "rate": 0.027,
+       "ci95": [
+        0.0048,
+        0.1382
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 4,
+      "n": 47,
+      "rate": 0.0851,
+      "ci95": [
+       0.0336,
+       0.1993
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 1,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 23,
+       "n": 93,
+       "rate": 0.2473,
+       "ci95": [
+        0.1708,
+        0.3439
+       ]
+      },
+      "after": {
+       "k": 19,
+       "n": 93,
+       "rate": 0.2043,
+       "ci95": [
+        0.1349,
+        0.2972
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "163",
+       "171",
+       "185",
+       "198",
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "163",
+       "171",
+       "185",
+       "198",
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [
+       "262"
+      ],
+      "wrong_made_right": [
+       "165",
+       "180",
+       "239",
+       "286"
+      ]
+     }
+    },
+    "rule_R_shown": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 8,
+       "n": 42,
+       "rate": 0.1905,
+       "ci95": [
+        0.0998,
+        0.333
+       ]
+      },
+      "after": {
+       "k": 8,
+       "n": 42,
+       "rate": 0.1905,
+       "ci95": [
+        0.0998,
+        0.333
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 8,
+       "n": 94,
+       "rate": 0.0851,
+       "ci95": [
+        0.0438,
+        0.159
+       ]
+      },
+      "after": {
+       "k": 8,
+       "n": 94,
+       "rate": 0.0851,
+       "ci95": [
+        0.0438,
+        0.159
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 8,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 93,
+       "n": 140,
+       "rate": 0.6643,
+       "ci95": [
+        0.5826,
+        0.7372
+       ]
+      },
+      "after": {
+       "k": 93,
+       "n": 140,
+       "rate": 0.6643,
+       "ci95": [
+        0.5826,
+        0.7372
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 0,
+      "n": 93,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0397
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 34,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.1015
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 0,
+       "n": 37,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.0941
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 0,
+      "n": 47,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0756
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 0,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 23,
+       "n": 93,
+       "rate": 0.2473,
+       "ci95": [
+        0.1708,
+        0.3439
+       ]
+      },
+      "after": {
+       "k": 23,
+       "n": 93,
+       "rate": 0.2473,
+       "ci95": [
+        0.1708,
+        0.3439
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "163",
+       "171",
+       "185",
+       "198",
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "163",
+       "171",
+       "185",
+       "198",
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [],
+      "wrong_made_right": []
+     }
+    },
+    "catch_and_giveup": {
+     "flagged_share_of_all": {
+      "k": 23,
+      "n": 140,
+      "rate": 0.1643,
+      "ci95": [
+       0.112,
+       0.2345
+      ]
+     },
+     "wrong_flagged_of_wrong": {
+      "k": 10,
+      "n": 47,
+      "rate": 0.2128,
+      "ci95": [
+       0.1199,
+       0.349
+      ]
+     },
+     "right_flagged_of_right": {
+      "k": 13,
+      "n": 93,
+      "rate": 0.1398,
+      "ci95": [
+       0.0835,
+       0.2246
+      ]
+     },
+     "wrong_shown_flagged_of_wrong_shown": {
+      "k": 0,
+      "n": 8,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.3244
+      ]
+     },
+     "right_shown_flagged_of_right_shown": {
+      "k": 0,
+      "n": 34,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.1015
+      ]
+     },
+     "wrong_contradicted_flagged_of_wrong_contradicted": {
+      "k": 4,
+      "n": 23,
+      "rate": 0.1739,
+      "ci95": [
+       0.0698,
+       0.3714
+      ]
+     },
+     "right_contradicted_flagged_of_right_contradicted": {
+      "k": 1,
+      "n": 37,
+      "rate": 0.027,
+      "ci95": [
+       0.0048,
+       0.1382
+      ]
+     },
+     "catch_minus_giveup_all": {
+      "k1": 10,
+      "n1": 47,
+      "k2": 13,
+      "n2": 93,
+      "diff": 0.073,
+      "ci95": [
+       -0.0528,
+       0.2204
+      ]
+     },
+     "catch_minus_giveup_shown": {
+      "k1": 0,
+      "n1": 8,
+      "k2": 0,
+      "n2": 34,
+      "diff": 0.0,
+      "ci95": [
+       -0.1015,
+       0.3244
+      ]
+     }
+    },
+    "ids_of_unmarked": [
+     "188",
+     "199",
+     "203",
+     "209",
+     "215",
+     "239",
+     "249",
+     "259",
+     "262",
+     "285",
+     "288",
+     "296"
+    ]
+   },
+   "U-G": {
+    "n": 140,
+    "truth_counts": {
+     "shown": 46,
+     "contradicted": 47,
+     "not shown": 47
+    },
+    "answer_counts": {
+     "shown": {
+      "k": 49,
+      "n": 140,
+      "rate": 0.35,
+      "ci95": [
+       0.276,
+       0.4321
+      ]
+     },
+     "contradicted": {
+      "k": 39,
+      "n": 140,
+      "rate": 0.2786,
+      "ci95": [
+       0.211,
+       0.358
+      ]
+     },
+     "not shown": {
+      "k": 52,
+      "n": 140,
+      "rate": 0.3714,
+      "ci95": [
+       0.2958,
+       0.4539
+      ]
+     }
+    },
+    "constant_not_shown_right": {
+     "k": 47,
+     "n": 140,
+     "rate": 0.3357,
+     "ci95": [
+      0.2628,
+      0.4174
+     ]
+    },
+    "certainty_counts": {
+     "sure": {
+      "k": 136,
+      "n": 140,
+      "rate": 0.9714,
+      "ci95": [
+       0.9288,
+       0.9888
+      ]
+     },
+     "unsure": {
+      "k": 3,
+      "n": 140,
+      "rate": 0.0214,
+      "ci95": [
+       0.0073,
+       0.0611
+      ]
+     },
+     "unmarked": {
+      "k": 1,
+      "n": 140,
+      "rate": 0.0071,
+      "ci95": [
+       0.0013,
+       0.0393
+      ]
+     }
+    },
+    "unmarked_reasons": {
+     "no_answer": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.7935
+      ]
+     },
+     "reply_not_a_json_object": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+       0.2065,
+       1.0
+      ]
+     },
+     "certainty_missing_or_invalid": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.7935
+      ]
+     }
+    },
+    "accuracy_by_certainty": {
+     "sure": {
+      "k": 92,
+      "n": 136,
+      "rate": 0.6765,
+      "ci95": [
+       0.5939,
+       0.7493
+      ]
+     },
+     "unsure": {
+      "k": 3,
+      "n": 3,
+      "rate": 1.0,
+      "ci95": [
+       0.4385,
+       1.0
+      ]
+     },
+     "unmarked": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.7935
+      ]
+     }
+    },
+    "sure_minus_unsure": {
+     "k1": 92,
+     "n1": 136,
+     "k2": 3,
+     "n2": 3,
+     "diff": -0.3235,
+     "ci95": [
+      -0.4061,
+      0.2427
+     ]
+    },
+    "cells": {
+     "shown|sure": {
+      "n": 49,
+      "right": {
+       "k": 37,
+       "n": 49,
+       "rate": 0.7551,
+       "ci95": [
+        0.6191,
+        0.854
+       ]
+      },
+      "wrong": 12,
+      "truth_not_shown": {
+       "k": 8,
+       "n": 49,
+       "rate": 0.1633,
+       "ci95": [
+        0.0851,
+        0.2904
+       ]
+      },
+      "net_if_replaced": -29
+     },
+     "shown|unsure": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "shown|unmarked": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "contradicted|sure": {
+      "n": 39,
+      "right": {
+       "k": 29,
+       "n": 39,
+       "rate": 0.7436,
+       "ci95": [
+        0.5892,
+        0.8543
+       ]
+      },
+      "wrong": 10,
+      "truth_not_shown": {
+       "k": 10,
+       "n": 39,
+       "rate": 0.2564,
+       "ci95": [
+        0.1457,
+        0.4108
+       ]
+      },
+      "net_if_replaced": -19
+     },
+     "contradicted|unsure": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "contradicted|unmarked": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|sure": {
+      "n": 48,
+      "right": {
+       "k": 26,
+       "n": 48,
+       "rate": 0.5417,
+       "ci95": [
+        0.4029,
+        0.6742
+       ]
+      },
+      "wrong": 22,
+      "truth_not_shown": {
+       "k": 26,
+       "n": 48,
+       "rate": 0.5417,
+       "ci95": [
+        0.4029,
+        0.6742
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unsure": {
+      "n": 3,
+      "right": {
+       "k": 3,
+       "n": 3,
+       "rate": 1.0,
+       "ci95": [
+        0.4385,
+        1.0
+       ]
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 3,
+       "n": 3,
+       "rate": 1.0,
+       "ci95": [
+        0.4385,
+        1.0
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unmarked": {
+      "n": 1,
+      "right": {
+       "k": 0,
+       "n": 1,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.7935
+       ]
+      },
+      "wrong": 1,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 1,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.7935
+       ]
+      },
+      "net_if_replaced": 0
+     }
+    },
+    "rule_R_all": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 12,
+       "n": 49,
+       "rate": 0.2449,
+       "ci95": [
+        0.146,
+        0.3809
+       ]
+      },
+      "after": {
+       "k": 12,
+       "n": 49,
+       "rate": 0.2449,
+       "ci95": [
+        0.146,
+        0.3809
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 12,
+       "n": 94,
+       "rate": 0.1277,
+       "ci95": [
+        0.0746,
+        0.21
+       ]
+      },
+      "after": {
+       "k": 12,
+       "n": 94,
+       "rate": 0.1277,
+       "ci95": [
+        0.0746,
+        0.21
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 12,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2425
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 95,
+       "n": 140,
+       "rate": 0.6786,
+       "ci95": [
+        0.5973,
+        0.7503
+       ]
+      },
+      "after": {
+       "k": 95,
+       "n": 140,
+       "rate": 0.6786,
+       "ci95": [
+        0.5973,
+        0.7503
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 0,
+      "n": 95,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0389
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 37,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.0941
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 0,
+       "n": 29,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.117
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 0,
+      "n": 45,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0787
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 0,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 10,
+       "n": 93,
+       "rate": 0.1075,
+       "ci95": [
+        0.0595,
+        0.1867
+       ]
+      },
+      "after": {
+       "k": 10,
+       "n": 93,
+       "rate": 0.1075,
+       "ci95": [
+        0.0595,
+        0.1867
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "163",
+       "171",
+       "176",
+       "185",
+       "196",
+       "199",
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "163",
+       "171",
+       "176",
+       "185",
+       "196",
+       "199",
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [],
+      "wrong_made_right": []
+     }
+    },
+    "rule_R_shown": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 12,
+       "n": 49,
+       "rate": 0.2449,
+       "ci95": [
+        0.146,
+        0.3809
+       ]
+      },
+      "after": {
+       "k": 12,
+       "n": 49,
+       "rate": 0.2449,
+       "ci95": [
+        0.146,
+        0.3809
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 12,
+       "n": 94,
+       "rate": 0.1277,
+       "ci95": [
+        0.0746,
+        0.21
+       ]
+      },
+      "after": {
+       "k": 12,
+       "n": 94,
+       "rate": 0.1277,
+       "ci95": [
+        0.0746,
+        0.21
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 12,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2425
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 95,
+       "n": 140,
+       "rate": 0.6786,
+       "ci95": [
+        0.5973,
+        0.7503
+       ]
+      },
+      "after": {
+       "k": 95,
+       "n": 140,
+       "rate": 0.6786,
+       "ci95": [
+        0.5973,
+        0.7503
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 0,
+      "n": 95,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0389
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 37,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.0941
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 0,
+       "n": 29,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.117
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 0,
+      "n": 45,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0787
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 0,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 10,
+       "n": 93,
+       "rate": 0.1075,
+       "ci95": [
+        0.0595,
+        0.1867
+       ]
+      },
+      "after": {
+       "k": 10,
+       "n": 93,
+       "rate": 0.1075,
+       "ci95": [
+        0.0595,
+        0.1867
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "163",
+       "171",
+       "176",
+       "185",
+       "196",
+       "199",
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "163",
+       "171",
+       "176",
+       "185",
+       "196",
+       "199",
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [],
+      "wrong_made_right": []
+     }
+    },
+    "catch_and_giveup": {
+     "flagged_share_of_all": {
+      "k": 4,
+      "n": 140,
+      "rate": 0.0286,
+      "ci95": [
+       0.0112,
+       0.0712
+      ]
+     },
+     "wrong_flagged_of_wrong": {
+      "k": 1,
+      "n": 45,
+      "rate": 0.0222,
+      "ci95": [
+       0.0039,
+       0.1157
+      ]
+     },
+     "right_flagged_of_right": {
+      "k": 3,
+      "n": 95,
+      "rate": 0.0316,
+      "ci95": [
+       0.0108,
+       0.0888
+      ]
+     },
+     "wrong_shown_flagged_of_wrong_shown": {
+      "k": 0,
+      "n": 12,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2425
+      ]
+     },
+     "right_shown_flagged_of_right_shown": {
+      "k": 0,
+      "n": 37,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0941
+      ]
+     },
+     "wrong_contradicted_flagged_of_wrong_contradicted": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "ci95": [
+       -0.0,
+       0.2775
+      ]
+     },
+     "right_contradicted_flagged_of_right_contradicted": {
+      "k": 0,
+      "n": 29,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.117
+      ]
+     },
+     "catch_minus_giveup_all": {
+      "k1": 1,
+      "n1": 45,
+      "k2": 3,
+      "n2": 95,
+      "diff": -0.0094,
+      "ci95": [
+       -0.0694,
+       0.0864
+      ]
+     },
+     "catch_minus_giveup_shown": {
+      "k1": 0,
+      "n1": 12,
+      "k2": 0,
+      "n2": 37,
+      "diff": 0.0,
+      "ci95": [
+       -0.0941,
+       0.2425
+      ]
+     }
+    },
+    "ids_of_unmarked": [
+     "229"
+    ]
+   }
+  },
+  "primary_201_300": {
+   "U-Q": {
+    "n": 100,
+    "truth_counts": {
+     "contradicted": 34,
+     "shown": 32,
+     "not shown": 34
+    },
+    "answer_counts": {
+     "shown": {
+      "k": 28,
+      "n": 100,
+      "rate": 0.28,
+      "ci95": [
+       0.2014,
+       0.3749
+      ]
+     },
+     "contradicted": {
+      "k": 41,
+      "n": 100,
+      "rate": 0.41,
+      "ci95": [
+       0.3187,
+       0.508
+      ]
+     },
+     "not shown": {
+      "k": 31,
+      "n": 100,
+      "rate": 0.31,
+      "ci95": [
+       0.2278,
+       0.4063
+      ]
+     }
+    },
+    "constant_not_shown_right": {
+     "k": 34,
+     "n": 100,
+     "rate": 0.34,
+     "ci95": [
+      0.2546,
+      0.4372
+     ]
+    },
+    "certainty_counts": {
+     "sure": {
+      "k": 82,
+      "n": 100,
+      "rate": 0.82,
+      "ci95": [
+       0.7333,
+       0.883
+      ]
+     },
+     "unsure": {
+      "k": 8,
+      "n": 100,
+      "rate": 0.08,
+      "ci95": [
+       0.0411,
+       0.15
+      ]
+     },
+     "unmarked": {
+      "k": 10,
+      "n": 100,
+      "rate": 0.1,
+      "ci95": [
+       0.0552,
+       0.1744
+      ]
+     }
+    },
+    "unmarked_reasons": {
+     "no_answer": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "ci95": [
+       -0.0,
+       0.2775
+      ]
+     },
+     "reply_not_a_json_object": {
+      "k": 6,
+      "n": 10,
+      "rate": 0.6,
+      "ci95": [
+       0.3127,
+       0.8318
+      ]
+     },
+     "certainty_missing_or_invalid": {
+      "k": 4,
+      "n": 10,
+      "rate": 0.4,
+      "ci95": [
+       0.1682,
+       0.6873
+      ]
+     }
+    },
+    "accuracy_by_certainty": {
+     "sure": {
+      "k": 55,
+      "n": 82,
+      "rate": 0.6707,
+      "ci95": [
+       0.5634,
+       0.7628
+      ]
+     },
+     "unsure": {
+      "k": 5,
+      "n": 8,
+      "rate": 0.625,
+      "ci95": [
+       0.3057,
+       0.8632
+      ]
+     },
+     "unmarked": {
+      "k": 6,
+      "n": 10,
+      "rate": 0.6,
+      "ci95": [
+       0.3127,
+       0.8318
+      ]
+     }
+    },
+    "sure_minus_unsure": {
+     "k1": 55,
+     "n1": 82,
+     "k2": 5,
+     "n2": 8,
+     "diff": 0.0457,
+     "ci95": [
+      -0.2155,
+      0.378
+     ]
+    },
+    "cells": {
+     "shown|sure": {
+      "n": 28,
+      "right": {
+       "k": 24,
+       "n": 28,
+       "rate": 0.8571,
+       "ci95": [
+        0.6851,
+        0.943
+       ]
+      },
+      "wrong": 4,
+      "truth_not_shown": {
+       "k": 3,
+       "n": 28,
+       "rate": 0.1071,
+       "ci95": [
+        0.0371,
+        0.272
+       ]
+      },
+      "net_if_replaced": -21
+     },
+     "shown|unsure": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "shown|unmarked": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "contradicted|sure": {
+      "n": 38,
+      "right": {
+       "k": 24,
+       "n": 38,
+       "rate": 0.6316,
+       "ci95": [
+        0.4728,
+        0.7662
+       ]
+      },
+      "wrong": 14,
+      "truth_not_shown": {
+       "k": 12,
+       "n": 38,
+       "rate": 0.3158,
+       "ci95": [
+        0.1908,
+        0.4746
+       ]
+      },
+      "net_if_replaced": -12
+     },
+     "contradicted|unsure": {
+      "n": 1,
+      "right": {
+       "k": 0,
+       "n": 1,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.7935
+       ]
+      },
+      "wrong": 1,
+      "truth_not_shown": {
+       "k": 1,
+       "n": 1,
+       "rate": 1.0,
+       "ci95": [
+        0.2065,
+        1.0
+       ]
+      },
+      "net_if_replaced": 1
+     },
+     "contradicted|unmarked": {
+      "n": 2,
+      "right": {
+       "k": 1,
+       "n": 2,
+       "rate": 0.5,
+       "ci95": [
+        0.0945,
+        0.9055
+       ]
+      },
+      "wrong": 1,
+      "truth_not_shown": {
+       "k": 1,
+       "n": 2,
+       "rate": 0.5,
+       "ci95": [
+        0.0945,
+        0.9055
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|sure": {
+      "n": 16,
+      "right": {
+       "k": 7,
+       "n": 16,
+       "rate": 0.4375,
+       "ci95": [
+        0.231,
+        0.6682
+       ]
+      },
+      "wrong": 9,
+      "truth_not_shown": {
+       "k": 7,
+       "n": 16,
+       "rate": 0.4375,
+       "ci95": [
+        0.231,
+        0.6682
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unsure": {
+      "n": 7,
+      "right": {
+       "k": 5,
+       "n": 7,
+       "rate": 0.7143,
+       "ci95": [
+        0.3589,
+        0.9178
+       ]
+      },
+      "wrong": 2,
+      "truth_not_shown": {
+       "k": 5,
+       "n": 7,
+       "rate": 0.7143,
+       "ci95": [
+        0.3589,
+        0.9178
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unmarked": {
+      "n": 8,
+      "right": {
+       "k": 5,
+       "n": 8,
+       "rate": 0.625,
+       "ci95": [
+        0.3057,
+        0.8632
+       ]
+      },
+      "wrong": 3,
+      "truth_not_shown": {
+       "k": 5,
+       "n": 8,
+       "rate": 0.625,
+       "ci95": [
+        0.3057,
+        0.8632
+       ]
+      },
+      "net_if_replaced": 0
+     }
+    },
+    "rule_R_all": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 4,
+       "n": 28,
+       "rate": 0.1429,
+       "ci95": [
+        0.057,
+        0.3149
+       ]
+      },
+      "after": {
+       "k": 4,
+       "n": 28,
+       "rate": 0.1429,
+       "ci95": [
+        0.057,
+        0.3149
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 4,
+       "n": 68,
+       "rate": 0.0588,
+       "ci95": [
+        0.0231,
+        0.1417
+       ]
+      },
+      "after": {
+       "k": 4,
+       "n": 68,
+       "rate": 0.0588,
+       "ci95": [
+        0.0231,
+        0.1417
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 4,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.4899
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 66,
+       "n": 100,
+       "rate": 0.66,
+       "ci95": [
+        0.5628,
+        0.7454
+       ]
+      },
+      "after": {
+       "k": 67,
+       "n": 100,
+       "rate": 0.67,
+       "ci95": [
+        0.5731,
+        0.7544
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 1,
+      "n": 66,
+      "rate": 0.0152,
+      "ci95": [
+       0.0027,
+       0.081
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 24,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.138
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 1,
+       "n": 25,
+       "rate": 0.04,
+       "ci95": [
+        0.0071,
+        0.1954
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 2,
+      "n": 34,
+      "rate": 0.0588,
+      "ci95": [
+       0.0163,
+       0.1909
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 1,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 16,
+       "n": 66,
+       "rate": 0.2424,
+       "ci95": [
+        0.1551,
+        0.3581
+       ]
+      },
+      "after": {
+       "k": 14,
+       "n": 66,
+       "rate": 0.2121,
+       "ci95": [
+        0.1308,
+        0.3251
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [
+       "262"
+      ],
+      "wrong_made_right": [
+       "239",
+       "286"
+      ]
+     }
+    },
+    "rule_R_shown": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 4,
+       "n": 28,
+       "rate": 0.1429,
+       "ci95": [
+        0.057,
+        0.3149
+       ]
+      },
+      "after": {
+       "k": 4,
+       "n": 28,
+       "rate": 0.1429,
+       "ci95": [
+        0.057,
+        0.3149
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 4,
+       "n": 68,
+       "rate": 0.0588,
+       "ci95": [
+        0.0231,
+        0.1417
+       ]
+      },
+      "after": {
+       "k": 4,
+       "n": 68,
+       "rate": 0.0588,
+       "ci95": [
+        0.0231,
+        0.1417
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 4,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.4899
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 66,
+       "n": 100,
+       "rate": 0.66,
+       "ci95": [
+        0.5628,
+        0.7454
+       ]
+      },
+      "after": {
+       "k": 66,
+       "n": 100,
+       "rate": 0.66,
+       "ci95": [
+        0.5628,
+        0.7454
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 0,
+      "n": 66,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.055
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 24,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.138
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 0,
+       "n": 25,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.1332
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 0,
+      "n": 34,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.1015
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 0,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 16,
+       "n": 66,
+       "rate": 0.2424,
+       "ci95": [
+        0.1551,
+        0.3581
+       ]
+      },
+      "after": {
+       "k": 16,
+       "n": 66,
+       "rate": 0.2424,
+       "ci95": [
+        0.1551,
+        0.3581
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "207",
+       "238",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [],
+      "wrong_made_right": []
+     }
+    },
+    "catch_and_giveup": {
+     "flagged_share_of_all": {
+      "k": 18,
+      "n": 100,
+      "rate": 0.18,
+      "ci95": [
+       0.117,
+       0.2667
+      ]
+     },
+     "wrong_flagged_of_wrong": {
+      "k": 7,
+      "n": 34,
+      "rate": 0.2059,
+      "ci95": [
+       0.1035,
+       0.368
+      ]
+     },
+     "right_flagged_of_right": {
+      "k": 11,
+      "n": 66,
+      "rate": 0.1667,
+      "ci95": [
+       0.0957,
+       0.2743
+      ]
+     },
+     "wrong_shown_flagged_of_wrong_shown": {
+      "k": 0,
+      "n": 4,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.4899
+      ]
+     },
+     "right_shown_flagged_of_right_shown": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.138
+      ]
+     },
+     "wrong_contradicted_flagged_of_wrong_contradicted": {
+      "k": 2,
+      "n": 16,
+      "rate": 0.125,
+      "ci95": [
+       0.035,
+       0.3602
+      ]
+     },
+     "right_contradicted_flagged_of_right_contradicted": {
+      "k": 1,
+      "n": 25,
+      "rate": 0.04,
+      "ci95": [
+       0.0071,
+       0.1954
+      ]
+     },
+     "catch_minus_giveup_all": {
+      "k1": 7,
+      "n1": 34,
+      "k2": 11,
+      "n2": 66,
+      "diff": 0.0392,
+      "ci95": [
+       -0.1093,
+       0.2162
+      ]
+     },
+     "catch_minus_giveup_shown": {
+      "k1": 0,
+      "n1": 4,
+      "k2": 0,
+      "n2": 24,
+      "diff": 0.0,
+      "ci95": [
+       -0.138,
+       0.4899
+      ]
+     }
+    },
+    "ids_of_unmarked": [
+     "203",
+     "209",
+     "215",
+     "239",
+     "249",
+     "259",
+     "262",
+     "285",
+     "288",
+     "296"
+    ]
+   },
+   "U-G": {
+    "n": 100,
+    "truth_counts": {
+     "contradicted": 34,
+     "shown": 32,
+     "not shown": 34
+    },
+    "answer_counts": {
+     "shown": {
+      "k": 33,
+      "n": 100,
+      "rate": 0.33,
+      "ci95": [
+       0.2456,
+       0.4269
+      ]
+     },
+     "contradicted": {
+      "k": 29,
+      "n": 100,
+      "rate": 0.29,
+      "ci95": [
+       0.2101,
+       0.3854
+      ]
+     },
+     "not shown": {
+      "k": 38,
+      "n": 100,
+      "rate": 0.38,
+      "ci95": [
+       0.291,
+       0.4779
+      ]
+     }
+    },
+    "constant_not_shown_right": {
+     "k": 34,
+     "n": 100,
+     "rate": 0.34,
+     "ci95": [
+      0.2546,
+      0.4372
+     ]
+    },
+    "certainty_counts": {
+     "sure": {
+      "k": 97,
+      "n": 100,
+      "rate": 0.97,
+      "ci95": [
+       0.9155,
+       0.9897
+      ]
+     },
+     "unsure": {
+      "k": 2,
+      "n": 100,
+      "rate": 0.02,
+      "ci95": [
+       0.0055,
+       0.07
+      ]
+     },
+     "unmarked": {
+      "k": 1,
+      "n": 100,
+      "rate": 0.01,
+      "ci95": [
+       0.0018,
+       0.0545
+      ]
+     }
+    },
+    "unmarked_reasons": {
+     "no_answer": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.7935
+      ]
+     },
+     "reply_not_a_json_object": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0,
+      "ci95": [
+       0.2065,
+       1.0
+      ]
+     },
+     "certainty_missing_or_invalid": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.7935
+      ]
+     }
+    },
+    "accuracy_by_certainty": {
+     "sure": {
+      "k": 67,
+      "n": 97,
+      "rate": 0.6907,
+      "ci95": [
+       0.593,
+       0.774
+      ]
+     },
+     "unsure": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0,
+      "ci95": [
+       0.3424,
+       1.0
+      ]
+     },
+     "unmarked": {
+      "k": 0,
+      "n": 1,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.7935
+      ]
+     }
+    },
+    "sure_minus_unsure": {
+     "k1": 67,
+     "n1": 97,
+     "k2": 2,
+     "n2": 2,
+     "diff": -0.3093,
+     "ci95": [
+      -0.407,
+      0.3536
+     ]
+    },
+    "cells": {
+     "shown|sure": {
+      "n": 33,
+      "right": {
+       "k": 27,
+       "n": 33,
+       "rate": 0.8182,
+       "ci95": [
+        0.6561,
+        0.9139
+       ]
+      },
+      "wrong": 6,
+      "truth_not_shown": {
+       "k": 3,
+       "n": 33,
+       "rate": 0.0909,
+       "ci95": [
+        0.0314,
+        0.2357
+       ]
+      },
+      "net_if_replaced": -24
+     },
+     "shown|unsure": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "shown|unmarked": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "contradicted|sure": {
+      "n": 29,
+      "right": {
+       "k": 20,
+       "n": 29,
+       "rate": 0.6897,
+       "ci95": [
+        0.5077,
+        0.8272
+       ]
+      },
+      "wrong": 9,
+      "truth_not_shown": {
+       "k": 9,
+       "n": 29,
+       "rate": 0.3103,
+       "ci95": [
+        0.1728,
+        0.4923
+       ]
+      },
+      "net_if_replaced": -11
+     },
+     "contradicted|unsure": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "contradicted|unmarked": {
+      "n": 0,
+      "right": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 0,
+       "rate": null,
+       "ci95": null
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|sure": {
+      "n": 35,
+      "right": {
+       "k": 20,
+       "n": 35,
+       "rate": 0.5714,
+       "ci95": [
+        0.4086,
+        0.7202
+       ]
+      },
+      "wrong": 15,
+      "truth_not_shown": {
+       "k": 20,
+       "n": 35,
+       "rate": 0.5714,
+       "ci95": [
+        0.4086,
+        0.7202
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unsure": {
+      "n": 2,
+      "right": {
+       "k": 2,
+       "n": 2,
+       "rate": 1.0,
+       "ci95": [
+        0.3424,
+        1.0
+       ]
+      },
+      "wrong": 0,
+      "truth_not_shown": {
+       "k": 2,
+       "n": 2,
+       "rate": 1.0,
+       "ci95": [
+        0.3424,
+        1.0
+       ]
+      },
+      "net_if_replaced": 0
+     },
+     "not shown|unmarked": {
+      "n": 1,
+      "right": {
+       "k": 0,
+       "n": 1,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.7935
+       ]
+      },
+      "wrong": 1,
+      "truth_not_shown": {
+       "k": 0,
+       "n": 1,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.7935
+       ]
+      },
+      "net_if_replaced": 0
+     }
+    },
+    "rule_R_all": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 6,
+       "n": 33,
+       "rate": 0.1818,
+       "ci95": [
+        0.0861,
+        0.3439
+       ]
+      },
+      "after": {
+       "k": 6,
+       "n": 33,
+       "rate": 0.1818,
+       "ci95": [
+        0.0861,
+        0.3439
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 6,
+       "n": 68,
+       "rate": 0.0882,
+       "ci95": [
+        0.0411,
+        0.1794
+       ]
+      },
+      "after": {
+       "k": 6,
+       "n": 68,
+       "rate": 0.0882,
+       "ci95": [
+        0.0411,
+        0.1794
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 6,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.3903
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 69,
+       "n": 100,
+       "rate": 0.69,
+       "ci95": [
+        0.5937,
+        0.7722
+       ]
+      },
+      "after": {
+       "k": 69,
+       "n": 100,
+       "rate": 0.69,
+       "ci95": [
+        0.5937,
+        0.7722
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 0,
+      "n": 69,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0527
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 27,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.1246
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 0,
+       "n": 20,
+       "rate": 0.0,
+       "ci95": [
+        -0.0,
+        0.1611
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 0,
+      "n": 31,
+      "rate": 0.0,
+      "ci95": [
+       -0.0,
+       0.1103
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 0,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 9,
+       "n": 66,
+       "rate": 0.1364,
+       "ci95": [
+        0.0734,
+        0.2393
+       ]
+      },
+      "after": {
+       "k": 9,
+       "n": 66,
+       "rate": 0.1364,
+       "ci95": [
+        0.0734,
+        0.2393
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [],
+      "wrong_made_right": []
+     }
+    },
+    "rule_R_shown": {
+     "wrong_shown_of_shown_answers": {
+      "before": {
+       "k": 6,
+       "n": 33,
+       "rate": 0.1818,
+       "ci95": [
+        0.0861,
+        0.3439
+       ]
+      },
+      "after": {
+       "k": 6,
+       "n": 33,
+       "rate": 0.1818,
+       "ci95": [
+        0.0861,
+        0.3439
+       ]
+      }
+     },
+     "false_shown_rate": {
+      "denominator": "items whose truth is contradicted or not shown",
+      "before": {
+       "k": 6,
+       "n": 68,
+       "rate": 0.0882,
+       "ci95": [
+        0.0411,
+        0.1794
+       ]
+      },
+      "after": {
+       "k": 6,
+       "n": 68,
+       "rate": 0.0882,
+       "ci95": [
+        0.0411,
+        0.1794
+       ]
+      }
+     },
+     "wrong_shown_removed": {
+      "k": 0,
+      "n": 6,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.3903
+      ]
+     },
+     "wrong_shown_removed_split": {
+      "of_removed": 0,
+      "now_right_truth_not_shown": 0,
+      "still_wrong_truth_contradicted": 0
+     },
+     "right": {
+      "before": {
+       "k": 69,
+       "n": 100,
+       "rate": 0.69,
+       "ci95": [
+        0.5937,
+        0.7722
+       ]
+      },
+      "after": {
+       "k": 69,
+       "n": 100,
+       "rate": 0.69,
+       "ci95": [
+        0.5937,
+        0.7722
+       ]
+      }
+     },
+     "correct_given_up": {
+      "k": 0,
+      "n": 69,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.0527
+      ]
+     },
+     "correct_given_up_by_type": {
+      "true_shown_given_up_of_right_shown": {
+       "k": 0,
+       "n": 27,
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.1246
+       ]
+      },
+      "true_contradicted_given_up_of_right_contradicted": {
+       "k": 0,
+       "n": 20,
+       "rate": 0.0,
+       "ci95": [
+        -0.0,
+        0.1611
+       ]
+      }
+     },
+     "wrong_made_right": {
+      "k": 0,
+      "n": 31,
+      "rate": 0.0,
+      "ci95": [
+       -0.0,
+       0.1103
+      ]
+     },
+     "exchange": {
+      "wrong_shown_removed": 0,
+      "correct_given_up": 0,
+      "given_up_per_wrong_shown_removed": null
+     },
+     "false_contradicted": {
+      "denominator": "items whose truth is shown or not shown",
+      "before": {
+       "k": 9,
+       "n": 66,
+       "rate": 0.1364,
+       "ci95": [
+        0.0734,
+        0.2393
+       ]
+      },
+      "after": {
+       "k": 9,
+       "n": 66,
+       "rate": 0.1364,
+       "ci95": [
+        0.0734,
+        0.2393
+       ]
+      }
+     },
+     "ids": {
+      "wrong_shown_before": [
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_after": [
+       "209",
+       "213",
+       "238",
+       "268",
+       "277",
+       "294"
+      ],
+      "wrong_shown_removed": [],
+      "correct_given_up": [],
+      "wrong_made_right": []
+     }
+    },
+    "catch_and_giveup": {
+     "flagged_share_of_all": {
+      "k": 3,
+      "n": 100,
+      "rate": 0.03,
+      "ci95": [
+       0.0103,
+       0.0845
+      ]
+     },
+     "wrong_flagged_of_wrong": {
+      "k": 1,
+      "n": 31,
+      "rate": 0.0323,
+      "ci95": [
+       0.0057,
+       0.1619
+      ]
+     },
+     "right_flagged_of_right": {
+      "k": 2,
+      "n": 69,
+      "rate": 0.029,
+      "ci95": [
+       0.008,
+       0.0997
+      ]
+     },
+     "wrong_shown_flagged_of_wrong_shown": {
+      "k": 0,
+      "n": 6,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.3903
+      ]
+     },
+     "right_shown_flagged_of_right_shown": {
+      "k": 0,
+      "n": 27,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.1246
+      ]
+     },
+     "wrong_contradicted_flagged_of_wrong_contradicted": {
+      "k": 0,
+      "n": 9,
+      "rate": 0.0,
+      "ci95": [
+       0.0,
+       0.2992
+      ]
+     },
+     "right_contradicted_flagged_of_right_contradicted": {
+      "k": 0,
+      "n": 20,
+      "rate": 0.0,
+      "ci95": [
+       -0.0,
+       0.1611
+      ]
+     },
+     "catch_minus_giveup_all": {
+      "k1": 1,
+      "n1": 31,
+      "k2": 2,
+      "n2": 69,
+      "diff": 0.0033,
+      "ci95": [
+       -0.0722,
+       0.1346
+      ]
+     },
+     "catch_minus_giveup_shown": {
+      "k1": 0,
+      "n1": 6,
+      "k2": 0,
+      "n2": 27,
+      "diff": 0.0,
+      "ci95": [
+       -0.1246,
+       0.3903
+      ]
+     }
+    },
+    "ids_of_unmarked": [
+     "229"
+    ]
+   }
+  }
+ },
+ "reconciliation_with_score_run3": {
+  "fresh_161_300|U-Q": {
+   "n_sure": {
+    "mine": 117,
+    "stored": 117,
+    "agree": true
+   },
+   "n_unsure": {
+    "mine": 11,
+    "stored": 11,
+    "agree": true
+   },
+   "n_unmarked": {
+    "mine": 12,
+    "stored": 12,
+    "agree": true
+   },
+   "right_when_sure": {
+    "mine": [
+     80,
+     117
+    ],
+    "stored": [
+     80,
+     117
+    ],
+    "agree": true
+   },
+   "right_when_unsure": {
+    "mine": [
+     6,
+     11
+    ],
+    "stored": [
+     6,
+     11
+    ],
+    "agree": true
+   },
+   "raw_right": {
+    "mine": [
+     93,
+     140
+    ],
+    "stored": [
+     93,
+     140
+    ],
+    "agree": true
+   },
+   "raw_false_shown": {
+    "mine": [
+     8,
+     94
+    ],
+    "stored": [
+     8,
+     94
+    ],
+    "agree": true
+   },
+   "policy_U_right": {
+    "mine": [
+     96,
+     140
+    ],
+    "stored": [
+     96,
+     140
+    ],
+    "agree": true
+   },
+   "policy_U_false_shown": {
+    "mine": [
+     8,
+     94
+    ],
+    "stored": [
+     8,
+     94
+    ],
+    "agree": true
+   }
+  },
+  "fresh_161_300|U-G": {
+   "n_sure": {
+    "mine": 136,
+    "stored": 136,
+    "agree": true
+   },
+   "n_unsure": {
+    "mine": 3,
+    "stored": 3,
+    "agree": true
+   },
+   "n_unmarked": {
+    "mine": 1,
+    "stored": 1,
+    "agree": true
+   },
+   "right_when_sure": {
+    "mine": [
+     92,
+     136
+    ],
+    "stored": [
+     92,
+     136
+    ],
+    "agree": true
+   },
+   "right_when_unsure": {
+    "mine": [
+     3,
+     3
+    ],
+    "stored": [
+     3,
+     3
+    ],
+    "agree": true
+   },
+   "raw_right": {
+    "mine": [
+     95,
+     140
+    ],
+    "stored": [
+     95,
+     140
+    ],
+    "agree": true
+   },
+   "raw_false_shown": {
+    "mine": [
+     12,
+     94
+    ],
+    "stored": [
+     12,
+     94
+    ],
+    "agree": true
+   },
+   "policy_U_right": {
+    "mine": [
+     95,
+     140
+    ],
+    "stored": [
+     95,
+     140
+    ],
+    "agree": true
+   },
+   "policy_U_false_shown": {
+    "mine": [
+     12,
+     94
+    ],
+    "stored": [
+     12,
+     94
+    ],
+    "agree": true
+   }
+  },
+  "primary_201_300|U-Q": {
+   "n_sure": {
+    "mine": 82,
+    "stored": 82,
+    "agree": true
+   },
+   "n_unsure": {
+    "mine": 8,
+    "stored": 8,
+    "agree": true
+   },
+   "n_unmarked": {
+    "mine": 10,
+    "stored": 10,
+    "agree": true
+   },
+   "right_when_sure": {
+    "mine": [
+     55,
+     82
+    ],
+    "stored": [
+     55,
+     82
+    ],
+    "agree": true
+   },
+   "right_when_unsure": {
+    "mine": [
+     5,
+     8
+    ],
+    "stored": [
+     5,
+     8
+    ],
+    "agree": true
+   },
+   "raw_right": {
+    "mine": [
+     66,
+     100
+    ],
+    "stored": [
+     66,
+     100
+    ],
+    "agree": true
+   },
+   "raw_false_shown": {
+    "mine": [
+     4,
+     68
+    ],
+    "stored": [
+     4,
+     68
+    ],
+    "agree": true
+   },
+   "policy_U_right": {
+    "mine": [
+     67,
+     100
+    ],
+    "stored": [
+     67,
+     100
+    ],
+    "agree": true
+   },
+   "policy_U_false_shown": {
+    "mine": [
+     4,
+     68
+    ],
+    "stored": [
+     4,
+     68
+    ],
+    "agree": true
+   }
+  },
+  "primary_201_300|U-G": {
+   "n_sure": {
+    "mine": 97,
+    "stored": 97,
+    "agree": true
+   },
+   "n_unsure": {
+    "mine": 2,
+    "stored": 2,
+    "agree": true
+   },
+   "n_unmarked": {
+    "mine": 1,
+    "stored": 1,
+    "agree": true
+   },
+   "right_when_sure": {
+    "mine": [
+     67,
+     97
+    ],
+    "stored": [
+     67,
+     97
+    ],
+    "agree": true
+   },
+   "right_when_unsure": {
+    "mine": [
+     2,
+     2
+    ],
+    "stored": [
+     2,
+     2
+    ],
+    "agree": true
+   },
+   "raw_right": {
+    "mine": [
+     69,
+     100
+    ],
+    "stored": [
+     69,
+     100
+    ],
+    "agree": true
+   },
+   "raw_false_shown": {
+    "mine": [
+     6,
+     68
+    ],
+    "stored": [
+     6,
+     68
+    ],
+    "agree": true
+   },
+   "policy_U_right": {
+    "mine": [
+     69,
+     100
+    ],
+    "stored": [
+     69,
+     100
+    ],
+    "agree": true
+   },
+   "policy_U_false_shown": {
+    "mine": [
+     6,
+     68
+    ],
+    "stored": [
+     6,
+     68
+    ],
+    "agree": true
+   }
+  },
+  "tally": {
+   "checks": 36,
+   "agree": 36,
+   "differ": 0
+  }
+ }
+}

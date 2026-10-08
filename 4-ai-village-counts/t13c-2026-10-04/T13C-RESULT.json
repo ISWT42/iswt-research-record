@@ -1,0 +1,478 @@
+{
+ "seed": 4716771871833052839,
+ "engaged_replies_with_dated_responder": 15278,
+ "left_out_responders": {
+  "Fine-Tuned Leader": 6,
+  "[Temporary] Fine-tuned Leader": 2
+ },
+ "left_out_total": 8,
+ "oldest": {
+  "n": 9271,
+  "accept": {
+   "k": 1902,
+   "share": 0.205,
+   "wilson95": [
+    0.197,
+    0.213
+   ]
+  },
+  "verify": {
+   "k": 516,
+   "share": 0.056,
+   "wilson95": [
+    0.051,
+    0.061
+   ]
+  },
+  "challenge": {
+   "k": 1384,
+   "share": 0.149,
+   "wilson95": [
+    0.142,
+    0.157
+   ]
+  },
+  "other": {
+   "k": 5469,
+   "share": 0.59,
+   "wilson95": [
+    0.58,
+    0.6
+   ]
+  }
+ },
+ "middle": {
+  "n": 5259,
+  "accept": {
+   "k": 1098,
+   "share": 0.209,
+   "wilson95": [
+    0.198,
+    0.22
+   ]
+  },
+  "verify": {
+   "k": 313,
+   "share": 0.06,
+   "wilson95": [
+    0.053,
+    0.066
+   ]
+  },
+  "challenge": {
+   "k": 777,
+   "share": 0.148,
+   "wilson95": [
+    0.138,
+    0.158
+   ]
+  },
+  "other": {
+   "k": 3071,
+   "share": 0.584,
+   "wilson95": [
+    0.571,
+    0.597
+   ]
+  }
+ },
+ "newest": {
+  "n": 748,
+  "accept": {
+   "k": 145,
+   "share": 0.194,
+   "wilson95": [
+    0.167,
+    0.224
+   ]
+  },
+  "verify": {
+   "k": 32,
+   "share": 0.043,
+   "wilson95": [
+    0.03,
+    0.06
+   ]
+  },
+  "challenge": {
+   "k": 51,
+   "share": 0.068,
+   "wilson95": [
+    0.052,
+    0.089
+   ]
+  },
+  "other": {
+   "k": 520,
+   "share": 0.695,
+   "wilson95": [
+    0.661,
+    0.727
+   ]
+  }
+ },
+ "fisher_verify_newest_vs_oldest": 0.1548,
+ "fisher_accept_newest_vs_oldest": 0.4798,
+ "top_responders": {
+  "Gemini 2.5 Pro": {
+   "third": "oldest",
+   "n": 2133,
+   "accept": {
+    "k": 474,
+    "share": 0.222,
+    "wilson95": [
+     0.205,
+     0.24
+    ]
+   },
+   "verify": {
+    "k": 46,
+    "share": 0.022,
+    "wilson95": [
+     0.016,
+     0.029
+    ]
+   },
+   "challenge": {
+    "k": 383,
+    "share": 0.18,
+    "wilson95": [
+     0.164,
+     0.196
+    ]
+   },
+   "other": {
+    "k": 1230,
+    "share": 0.577,
+    "wilson95": [
+     0.556,
+     0.597
+    ]
+   }
+  },
+  "DeepSeek-V3.2": {
+   "third": "middle",
+   "n": 1353,
+   "accept": {
+    "k": 408,
+    "share": 0.302,
+    "wilson95": [
+     0.278,
+     0.327
+    ]
+   },
+   "verify": {
+    "k": 86,
+    "share": 0.064,
+    "wilson95": [
+     0.052,
+     0.078
+    ]
+   },
+   "challenge": {
+    "k": 207,
+    "share": 0.153,
+    "wilson95": [
+     0.135,
+     0.173
+    ]
+   },
+   "other": {
+    "k": 652,
+    "share": 0.482,
+    "wilson95": [
+     0.455,
+     0.509
+    ]
+   }
+  },
+  "Claude 3.7 Sonnet": {
+   "third": "oldest",
+   "n": 1280,
+   "accept": {
+    "k": 308,
+    "share": 0.241,
+    "wilson95": [
+     0.218,
+     0.265
+    ]
+   },
+   "verify": {
+    "k": 59,
+    "share": 0.046,
+    "wilson95": [
+     0.036,
+     0.059
+    ]
+   },
+   "challenge": {
+    "k": 151,
+    "share": 0.118,
+    "wilson95": [
+     0.101,
+     0.137
+    ]
+   },
+   "other": {
+    "k": 762,
+    "share": 0.595,
+    "wilson95": [
+     0.568,
+     0.622
+    ]
+   }
+  },
+  "Claude Haiku 4.5": {
+   "third": "oldest",
+   "n": 1165,
+   "accept": {
+    "k": 164,
+    "share": 0.141,
+    "wilson95": [
+     0.122,
+     0.162
+    ]
+   },
+   "verify": {
+    "k": 100,
+    "share": 0.086,
+    "wilson95": [
+     0.071,
+     0.103
+    ]
+   },
+   "challenge": {
+    "k": 159,
+    "share": 0.136,
+    "wilson95": [
+     0.118,
+     0.157
+    ]
+   },
+   "other": {
+    "k": 742,
+    "share": 0.637,
+    "wilson95": [
+     0.609,
+     0.664
+    ]
+   }
+  },
+  "Claude Opus 4.5": {
+   "third": "oldest",
+   "n": 1131,
+   "accept": {
+    "k": 307,
+    "share": 0.271,
+    "wilson95": [
+     0.246,
+     0.298
+    ]
+   },
+   "verify": {
+    "k": 100,
+    "share": 0.088,
+    "wilson95": [
+     0.073,
+     0.106
+    ]
+   },
+   "challenge": {
+    "k": 112,
+    "share": 0.099,
+    "wilson95": [
+     0.083,
+     0.118
+    ]
+   },
+   "other": {
+    "k": 612,
+    "share": 0.541,
+    "wilson95": [
+     0.512,
+     0.57
+    ]
+   }
+  },
+  "Claude Sonnet 4.5": {
+   "third": "oldest",
+   "n": 945,
+   "accept": {
+    "k": 230,
+    "share": 0.243,
+    "wilson95": [
+     0.217,
+     0.272
+    ]
+   },
+   "verify": {
+    "k": 79,
+    "share": 0.084,
+    "wilson95": [
+     0.068,
+     0.103
+    ]
+   },
+   "challenge": {
+    "k": 134,
+    "share": 0.142,
+    "wilson95": [
+     0.121,
+     0.165
+    ]
+   },
+   "other": {
+    "k": 502,
+    "share": 0.531,
+    "wilson95": [
+     0.499,
+     0.563
+    ]
+   }
+  },
+  "GPT-5.2": {
+   "third": "middle",
+   "n": 767,
+   "accept": {
+    "k": 82,
+    "share": 0.107,
+    "wilson95": [
+     0.087,
+     0.131
+    ]
+   },
+   "verify": {
+    "k": 54,
+    "share": 0.07,
+    "wilson95": [
+     0.054,
+     0.091
+    ]
+   },
+   "challenge": {
+    "k": 140,
+    "share": 0.183,
+    "wilson95": [
+     0.157,
+     0.211
+    ]
+   },
+   "other": {
+    "k": 491,
+    "share": 0.64,
+    "wilson95": [
+     0.606,
+     0.673
+    ]
+   }
+  },
+  "o3": {
+   "third": "oldest",
+   "n": 692,
+   "accept": {
+    "k": 53,
+    "share": 0.077,
+    "wilson95": [
+     0.059,
+     0.099
+    ]
+   },
+   "verify": {
+    "k": 28,
+    "share": 0.04,
+    "wilson95": [
+     0.028,
+     0.058
+    ]
+   },
+   "challenge": {
+    "k": 128,
+    "share": 0.185,
+    "wilson95": [
+     0.158,
+     0.216
+    ]
+   },
+   "other": {
+    "k": 483,
+    "share": 0.698,
+    "wilson95": [
+     0.663,
+     0.731
+    ]
+   }
+  },
+  "Claude Opus 4.1": {
+   "third": "oldest",
+   "n": 582,
+   "accept": {
+    "k": 151,
+    "share": 0.259,
+    "wilson95": [
+     0.225,
+     0.297
+    ]
+   },
+   "verify": {
+    "k": 32,
+    "share": 0.055,
+    "wilson95": [
+     0.039,
+     0.077
+    ]
+   },
+   "challenge": {
+    "k": 71,
+    "share": 0.122,
+    "wilson95": [
+     0.098,
+     0.151
+    ]
+   },
+   "other": {
+    "k": 328,
+    "share": 0.564,
+    "wilson95": [
+     0.523,
+     0.603
+    ]
+   }
+  },
+  "GPT-5.1": {
+   "third": "middle",
+   "n": 573,
+   "accept": {
+    "k": 100,
+    "share": 0.175,
+    "wilson95": [
+     0.146,
+     0.208
+    ]
+   },
+   "verify": {
+    "k": 46,
+    "share": 0.08,
+    "wilson95": [
+     0.061,
+     0.105
+    ]
+   },
+   "challenge": {
+    "k": 91,
+    "share": 0.159,
+    "wilson95": [
+     0.131,
+     0.191
+    ]
+   },
+   "other": {
+    "k": 336,
+    "share": 0.586,
+    "wilson95": [
+     0.546,
+     0.626
+    ]
+   }
+  }
+ }
+}

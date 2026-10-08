@@ -1,0 +1,84 @@
+inputs verified against the sealed hashes
+run2_local: 280 records; duplicates: 0
+run2_fast: 280 records; duplicates: 0
+run 1: 480 records (arms A, B, C); duplicates: 0; kept for arms A and B: 320
+local_pooled_001_300: items 300, R2 'shown' 107, evidence flags none, anomalies none
+== local_pooled_001_300 | truth {'contradicted': 100, 'not shown': 100, 'shown': 100} | arms ['A', 'B']
+  R2 (shown needs both)      false shown  27/200  true shown kept  80/100  right 200/300
+  SAME-LINE [named]          false shown  23/200  true shown kept  72/100  right 195/300  removes 12 (false 4, true 8)
+  OUTCOME-MARKER [named]     false shown  18/200  true shown kept  24/100  right 151/300  removes 65 (false 9, true 56)
+  NON-SETTLING-2 [own]       false shown   6/200  true shown kept  75/100  right 211/300  removes 26 (false 21, true 5)
+  NON-SETTLING (version 1, withdrawn) [own] false shown  22/200  true shown kept  80/100  right 205/300  removes  5 (false 5, true 0)
+  SAME-LINE-STRICT [variant] false shown  21/200  true shown kept  66/100  right 191/300  removes 20 (false 6, true 14)
+  SAME-LINE-CONTAINED [variant] false shown  23/200  true shown kept  72/100  right 195/300  removes 12 (false 4, true 8)
+  OUTCOME-MARKER-BOTH [variant] false shown  15/200  true shown kept  22/100  right 152/300  removes 70 (false 12, true 58)
+  OUTCOME-MARKER-LINE [variant] false shown  18/200  true shown kept  24/100  right 151/300  removes 65 (false 9, true 56)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown  14/200  true shown kept  18/100  right 148/300  removes 75 (false 13, true 62)
+local_run1_001_160: items 160, R2 'shown' 68, evidence flags none, anomalies none
+== local_run1_001_160 | truth {'contradicted': 53, 'not shown': 53, 'shown': 54} | arms ['A', 'B']
+  R2 (shown needs both)      false shown  21/106  true shown kept  47/54   right 108/160
+  SAME-LINE [named]          false shown  17/106  true shown kept  40/54   right 104/160  removes 11 (false 4, true 7)
+  OUTCOME-MARKER [named]     false shown  15/106  true shown kept  19/54   right  85/160  removes 34 (false 6, true 28)
+  NON-SETTLING-2 [own]       false shown   6/106  true shown kept  42/54   right 114/160  removes 20 (false 15, true 5)
+  NON-SETTLING (version 1, withdrawn) [own] false shown  20/106  true shown kept  47/54   right 109/160  removes  1 (false 1, true 0)
+  SAME-LINE-STRICT [variant] false shown  15/106  true shown kept  38/54   right 104/160  removes 15 (false 6, true 9)
+  SAME-LINE-CONTAINED [variant] false shown  17/106  true shown kept  40/54   right 104/160  removes 11 (false 4, true 7)
+  OUTCOME-MARKER-BOTH [variant] false shown  12/106  true shown kept  17/54   right  86/160  removes 39 (false 9, true 30)
+  OUTCOME-MARKER-LINE [variant] false shown  15/106  true shown kept  19/54   right  85/160  removes 34 (false 6, true 28)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown  11/106  true shown kept  14/54   right  83/160  removes 43 (false 10, true 33)
+local_run2_161_300: items 140, R2 'shown' 39, evidence flags none, anomalies none
+== local_run2_161_300 | truth {'contradicted': 47, 'not shown': 47, 'shown': 46} | arms ['A', 'B']
+  R2 (shown needs both)      false shown   6/94   true shown kept  33/46   right  92/140
+  SAME-LINE [named]          false shown   6/94   true shown kept  32/46   right  91/140  removes  1 (false 0, true 1)
+  OUTCOME-MARKER [named]     false shown   3/94   true shown kept   5/46   right  66/140  removes 31 (false 3, true 28)
+  NON-SETTLING-2 [own]       false shown   0/94   true shown kept  33/46   right  97/140  removes  6 (false 6, true 0)
+  NON-SETTLING (version 1, withdrawn) [own] false shown   2/94   true shown kept  33/46   right  96/140  removes  4 (false 4, true 0)
+  SAME-LINE-STRICT [variant] false shown   6/94   true shown kept  28/46   right  87/140  removes  5 (false 0, true 5)
+  SAME-LINE-CONTAINED [variant] false shown   6/94   true shown kept  32/46   right  91/140  removes  1 (false 0, true 1)
+  OUTCOME-MARKER-BOTH [variant] false shown   3/94   true shown kept   5/46   right  66/140  removes 31 (false 3, true 28)
+  OUTCOME-MARKER-LINE [variant] false shown   3/94   true shown kept   5/46   right  66/140  removes 31 (false 3, true 28)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown   3/94   true shown kept   4/46   right  65/140  removes 32 (false 3, true 29)
+local_run2_201_300: items 100, R2 'shown' 25, evidence flags none, anomalies none
+== local_run2_201_300 | truth {'contradicted': 34, 'not shown': 34, 'shown': 32} | arms ['A', 'B']
+  R2 (shown needs both)      false shown   2/68   true shown kept  23/32   right  67/100
+  SAME-LINE [named]          false shown   2/68   true shown kept  22/32   right  66/100  removes  1 (false 0, true 1)
+  OUTCOME-MARKER [named]     false shown   0/68   true shown kept   4/32   right  49/100  removes 21 (false 2, true 19)
+  NON-SETTLING-2 [own]       false shown   0/68   true shown kept  23/32   right  68/100  removes  2 (false 2, true 0)
+  NON-SETTLING (version 1, withdrawn) [own] false shown   1/68   true shown kept  23/32   right  68/100  removes  1 (false 1, true 0)
+  SAME-LINE-STRICT [variant] false shown   2/68   true shown kept  21/32   right  65/100  removes  2 (false 0, true 2)
+  SAME-LINE-CONTAINED [variant] false shown   2/68   true shown kept  22/32   right  66/100  removes  1 (false 0, true 1)
+  OUTCOME-MARKER-BOTH [variant] false shown   0/68   true shown kept   4/32   right  49/100  removes 21 (false 2, true 19)
+  OUTCOME-MARKER-LINE [variant] false shown   0/68   true shown kept   4/32   right  49/100  removes 21 (false 2, true 19)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown   0/68   true shown kept   3/32   right  48/100  removes 22 (false 2, true 20)
+hosted_run2_161_300: items 140, R2 'shown' 39, evidence flags none, anomalies none
+== hosted_run2_161_300 | truth {'contradicted': 47, 'not shown': 47, 'shown': 46} | arms ['F-Q', 'F-G']
+  R2 (shown needs both)      false shown   7/94   true shown kept  32/46   right  85/140
+  SAME-LINE [named]          false shown   4/94   true shown kept  28/46   right  83/140  removes  7 (false 3, true 4)
+  OUTCOME-MARKER [named]     false shown   6/94   true shown kept   9/46   right  63/140  removes 24 (false 1, true 23)
+  NON-SETTLING-2 [own]       false shown   3/94   true shown kept  31/46   right  87/140  removes  5 (false 4, true 1)
+  NON-SETTLING (version 1, withdrawn) [own] false shown   4/94   true shown kept  31/46   right  87/140  removes  4 (false 3, true 1)
+  SAME-LINE-STRICT [variant] false shown   4/94   true shown kept  28/46   right  83/140  removes  7 (false 3, true 4)
+  SAME-LINE-CONTAINED [variant] false shown   4/94   true shown kept  28/46   right  83/140  removes  7 (false 3, true 4)
+  OUTCOME-MARKER-BOTH [variant] false shown   3/94   true shown kept   7/46   right  63/140  removes 29 (false 4, true 25)
+  OUTCOME-MARKER-LINE [variant] false shown   6/94   true shown kept   9/46   right  63/140  removes 24 (false 1, true 23)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown   3/94   true shown kept   7/46   right  63/140  removes 29 (false 4, true 25)
+hosted_run2_201_300: items 100, R2 'shown' 28, evidence flags none, anomalies none
+== hosted_run2_201_300 | truth {'contradicted': 34, 'not shown': 34, 'shown': 32} | arms ['F-Q', 'F-G']
+  R2 (shown needs both)      false shown   5/68   true shown kept  23/32   right  59/100
+  SAME-LINE [named]          false shown   2/68   true shown kept  21/32   right  59/100  removes  5 (false 3, true 2)
+  OUTCOME-MARKER [named]     false shown   4/68   true shown kept   7/32   right  44/100  removes 17 (false 1, true 16)
+  NON-SETTLING-2 [own]       false shown   3/68   true shown kept  23/32   right  60/100  removes  2 (false 2, true 0)
+  NON-SETTLING (version 1, withdrawn) [own] false shown   4/68   true shown kept  23/32   right  60/100  removes  1 (false 1, true 0)
+  SAME-LINE-STRICT [variant] false shown   2/68   true shown kept  21/32   right  59/100  removes  5 (false 3, true 2)
+  SAME-LINE-CONTAINED [variant] false shown   2/68   true shown kept  21/32   right  59/100  removes  5 (false 3, true 2)
+  OUTCOME-MARKER-BOTH [variant] false shown   1/68   true shown kept   6/32   right  45/100  removes 21 (false 4, true 17)
+  OUTCOME-MARKER-LINE [variant] false shown   4/68   true shown kept   7/32   right  44/100  removes 17 (false 1, true 16)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown   1/68   true shown kept   6/32   right  45/100  removes 21 (false 4, true 17)
+selection computed by the pre-registered procedure
+
+OWN RULE GATE: {'local_conditions_met': True, 'hosted_validation_met': True, 'admitted': True, 'hosted': {'r2_false_shown': 7, 'r2_true_shown': 32, 'false_removed': 4, 'true_removed': 1}}
+SELECTION: NON-SETTLING-2 | step 2: eligible candidate with the most false 'shown' removed (ties: fewer true removed, more removed on the hosted pair, simpler rule)
+  SAME-LINE: {'f_local': 4, 't_local': 8, 'eligible': True, 'f_hosted': 3, 'separation_local': 0.0481, 'rank': 0}
+  OUTCOME-MARKER: {'f_local': 9, 't_local': 56, 'eligible': False, 'f_hosted': 1, 'separation_local': -0.3667, 'rank': 1}
+  NON-SETTLING-2: {'f_local': 21, 't_local': 5, 'eligible': True, 'f_hosted': 4, 'separation_local': 0.7153, 'rank': 2}
+written: dev-results2-v1.json

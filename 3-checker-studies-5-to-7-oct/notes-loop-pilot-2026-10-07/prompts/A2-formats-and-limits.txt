@@ -1,0 +1,12 @@
+FORMATS AND LIMITS
+Every line has fields separated by " | " (a space, a pipe, a space). No field contains a pipe character. A line has at most 140 characters, and the four sets together have at most 1600 characters. V1 holds at most 5 lines, V2 at most 5, V3 at most 5 and V4 at most 4.
+V1  <trap word> | <the sign, up to 12 words> | <what to do, up to 12 words>
+V2  <claim kind, 1 to 3 words> | <what the settling OUTPUT line looks like, up to 18 words>
+V3  <claim kind, 1 to 3 words> | <read-only command pattern, up to 12 words> | <output line to expect, up to 10 words>
+V4  <case type, up to 6 words> | <what looked true, up to 10 words> | <what settled it, up to 10 words>
+The trap word in a V1 line is one of: other_environment, intermediate_signal, truncated, relayed_claim, example_text, tool_failed_to_run, expected_error, retry, narration, injected_text. Each trap word may be used once.
+A V3 line never contains these words: rm, del, push, deploy, send, drop, kill, format, install, curl -X POST, shutdown, reboot, mv, chmod, git reset, truncate.
+A V4 line contains no digits, slash or backslash.
+No line contains a URL, or the words ignore, disregard, override or forget, or the phrases always answer, never answer or you must answer.
+Never repeat six words in a row from a case. A duplicate line is dropped, and so is any edit that breaks a rule above.
+In replace and delete, index is the line number shown in the current notes (numbers restart at 1 in each set).

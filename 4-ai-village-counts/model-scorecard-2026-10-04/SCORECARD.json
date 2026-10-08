@@ -1,0 +1,1408 @@
+{
+ "Claude Opus 4.5": {
+  "claims_made_blind": {
+   "k": 54,
+   "n": 1616,
+   "share": 0.033,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 2,
+   "n": 13,
+   "share": 0.154,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 106,
+   "n": 938,
+   "share": 0.113,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 336,
+   "n": 938,
+   "share": 0.358,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 100,
+   "n": 1131,
+   "share": 0.088,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 307,
+   "n": 1131,
+   "share": 0.271,
+   "small_n": false
+  }
+ },
+ "Gemini 3.5 Flash": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 287,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 7,
+   "n": 56,
+   "share": 0.125,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 56,
+   "n": 56,
+   "share": 1.0,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 2,
+   "n": 86,
+   "share": 0.023,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 40,
+   "n": 86,
+   "share": 0.465,
+   "small_n": false
+  }
+ },
+ "Opus 4.5 (Claude Code)": {
+  "claims_made_blind": {
+   "k": 257,
+   "n": 532,
+   "share": 0.483,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 3,
+   "n": 3,
+   "share": 1.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 6,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 1,
+   "n": 6,
+   "share": 0.167,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 5,
+   "n": 398,
+   "share": 0.013,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 90,
+   "n": 398,
+   "share": 0.226,
+   "small_n": false
+  }
+ },
+ "Claude Opus 4.6": {
+  "claims_made_blind": {
+   "k": 2,
+   "n": 642,
+   "share": 0.003,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 13,
+   "n": 69,
+   "share": 0.188,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 38,
+   "n": 69,
+   "share": 0.551,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 22,
+   "n": 344,
+   "share": 0.064,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 70,
+   "n": 344,
+   "share": 0.203,
+   "small_n": false
+  }
+ },
+ "GLM-5.2": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 386,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 4,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 10,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 10,
+   "n": 10,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 6,
+   "n": 158,
+   "share": 0.038,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 37,
+   "n": 158,
+   "share": 0.234,
+   "small_n": false
+  }
+ },
+ "GPT-5.2": {
+  "claims_made_blind": {
+   "k": 2,
+   "n": 1228,
+   "share": 0.002,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 3,
+   "n": 12,
+   "share": 0.25,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 54,
+   "n": 767,
+   "share": 0.07,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 82,
+   "n": 767,
+   "share": 0.107,
+   "small_n": false
+  }
+ },
+ "o3": {
+  "claims_made_blind": {
+   "k": 74,
+   "n": 522,
+   "share": 0.142,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 2,
+   "n": 7,
+   "share": 0.286,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 10,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 8,
+   "n": 10,
+   "share": 0.8,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 28,
+   "n": 692,
+   "share": 0.04,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 53,
+   "n": 692,
+   "share": 0.077,
+   "small_n": false
+  }
+ },
+ "Claude 3.7 Sonnet": {
+  "claims_made_blind": {
+   "k": 1610,
+   "n": 3685,
+   "share": 0.437,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 16,
+   "n": 36,
+   "share": 0.444,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 250,
+   "n": 2702,
+   "share": 0.093,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 815,
+   "n": 2702,
+   "share": 0.302,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 59,
+   "n": 1280,
+   "share": 0.046,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 308,
+   "n": 1280,
+   "share": 0.241,
+   "small_n": false
+  }
+ },
+ "Claude Opus 4.8": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 1729,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 24,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 23,
+   "n": 24,
+   "share": 0.958,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 8,
+   "n": 219,
+   "share": 0.037,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 54,
+   "n": 219,
+   "share": 0.247,
+   "small_n": false
+  }
+ },
+ "DeepSeek-V3.2": {
+  "claims_made_blind": {
+   "k": 1,
+   "n": 1795,
+   "share": 0.001,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 5,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 63,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 58,
+   "n": 63,
+   "share": 0.921,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 86,
+   "n": 1353,
+   "share": 0.064,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 408,
+   "n": 1353,
+   "share": 0.302,
+   "small_n": false
+  }
+ },
+ "Claude Sonnet 4.5": {
+  "claims_made_blind": {
+   "k": 305,
+   "n": 1233,
+   "share": 0.247,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 3,
+   "n": 9,
+   "share": 0.333,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 126,
+   "n": 1384,
+   "share": 0.091,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 245,
+   "n": 1384,
+   "share": 0.177,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 79,
+   "n": 945,
+   "share": 0.084,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 230,
+   "n": 945,
+   "share": 0.243,
+   "small_n": false
+  }
+ },
+ "GPT-5.4": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 774,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 3,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 1,
+   "n": 1,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 19,
+   "n": 410,
+   "share": 0.046,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 43,
+   "n": 410,
+   "share": 0.105,
+   "small_n": false
+  }
+ },
+ "Claude Opus 4.7": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 144,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 4,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 4,
+   "n": 4,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 4,
+   "n": 80,
+   "share": 0.05,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 23,
+   "n": 80,
+   "share": 0.287,
+   "small_n": false
+  }
+ },
+ "Kimi K2.6": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 129,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 1,
+   "n": 3,
+   "share": 0.333,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 3,
+   "n": 3,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 1,
+   "n": 45,
+   "share": 0.022,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 13,
+   "n": 45,
+   "share": 0.289,
+   "small_n": false
+  }
+ },
+ "Gemini 2.5 Pro": {
+  "claims_made_blind": {
+   "k": 1536,
+   "n": 3213,
+   "share": 0.478,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 64,
+   "n": 92,
+   "share": 0.696,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 724,
+   "n": 7289,
+   "share": 0.099,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 2006,
+   "n": 7289,
+   "share": 0.275,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 46,
+   "n": 2133,
+   "share": 0.022,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 474,
+   "n": 2133,
+   "share": 0.222,
+   "small_n": false
+  }
+ },
+ "Claude Haiku 4.5": {
+  "claims_made_blind": {
+   "k": 234,
+   "n": 1620,
+   "share": 0.144,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 3,
+   "n": 7,
+   "share": 0.429,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 358,
+   "n": 1644,
+   "share": 0.218,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 738,
+   "n": 1644,
+   "share": 0.449,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 100,
+   "n": 1165,
+   "share": 0.086,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 164,
+   "n": 1165,
+   "share": 0.141,
+   "small_n": false
+  }
+ },
+ "Claude Opus 4": {
+  "claims_made_blind": {
+   "k": 14,
+   "n": 1002,
+   "share": 0.014,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 2,
+   "n": 23,
+   "share": 0.087,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 112,
+   "n": 594,
+   "share": 0.189,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 180,
+   "n": 594,
+   "share": 0.303,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 10,
+   "n": 430,
+   "share": 0.023,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 108,
+   "n": 430,
+   "share": 0.251,
+   "small_n": false
+  }
+ },
+ "Gemini 3 Pro": {
+  "claims_made_blind": {
+   "k": 8,
+   "n": 576,
+   "share": 0.014,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 1,
+   "n": 2,
+   "share": 0.5,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 27,
+   "n": 202,
+   "share": 0.134,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 148,
+   "n": 202,
+   "share": 0.733,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 41,
+   "n": 367,
+   "share": 0.112,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 38,
+   "n": 367,
+   "share": 0.104,
+   "small_n": false
+  }
+ },
+ "Claude Opus 4.1": {
+  "claims_made_blind": {
+   "k": 49,
+   "n": 987,
+   "share": 0.05,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 7,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 263,
+   "n": 2631,
+   "share": 0.1,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 569,
+   "n": 2631,
+   "share": 0.216,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 32,
+   "n": 582,
+   "share": 0.055,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 151,
+   "n": 582,
+   "share": 0.259,
+   "small_n": false
+  }
+ },
+ "Gemini 3.1 Pro": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 764,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 1,
+   "n": 4,
+   "share": 0.25,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 17,
+   "n": 89,
+   "share": 0.191,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 85,
+   "n": 89,
+   "share": 0.955,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 7,
+   "n": 225,
+   "share": 0.031,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 70,
+   "n": 225,
+   "share": 0.311,
+   "small_n": false
+  }
+ },
+ "GPT-5.1": {
+  "claims_made_blind": {
+   "k": 57,
+   "n": 730,
+   "share": 0.078,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 2,
+   "n": 4,
+   "share": 0.5,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 1,
+   "n": 1,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 46,
+   "n": 573,
+   "share": 0.08,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 100,
+   "n": 573,
+   "share": 0.175,
+   "small_n": false
+  }
+ },
+ "Claude Sonnet 4.6": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 450,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 6,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 60,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 33,
+   "n": 60,
+   "share": 0.55,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 18,
+   "n": 293,
+   "share": 0.061,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 48,
+   "n": 293,
+   "share": 0.164,
+   "small_n": false
+  }
+ },
+ "Claude 3.5 Sonnet": {
+  "claims_made_blind": {
+   "k": 130,
+   "n": 130,
+   "share": 1.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 6,
+   "n": 6,
+   "share": 1.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 108,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 78,
+   "n": 108,
+   "share": 0.722,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 3,
+   "n": 71,
+   "share": 0.042,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 8,
+   "n": 71,
+   "share": 0.113,
+   "small_n": false
+  }
+ },
+ "Claude Opus 5": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 139,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 11,
+   "n": 57,
+   "share": 0.193,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 15,
+   "n": 57,
+   "share": 0.263,
+   "small_n": false
+  }
+ },
+ "GPT-4.1": {
+  "claims_made_blind": {
+   "k": 300,
+   "n": 300,
+   "share": 1.0,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 4,
+   "n": 118,
+   "share": 0.034,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 47,
+   "n": 118,
+   "share": 0.398,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 1,
+   "n": 268,
+   "share": 0.004,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 36,
+   "n": 268,
+   "share": 0.134,
+   "small_n": false
+  }
+ },
+ "GPT-5.6 Sol": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 19,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 5,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 0,
+   "n": 5,
+   "share": 0.0,
+   "small_n": true
+  }
+ },
+ "GPT-5": {
+  "claims_made_blind": {
+   "k": 52,
+   "n": 416,
+   "share": 0.125,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 5,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 51,
+   "n": 373,
+   "share": 0.137,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 34,
+   "n": 373,
+   "share": 0.091,
+   "small_n": false
+  }
+ },
+ "Gemini 3.8 Flash": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 57,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 2,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 2,
+   "n": 2,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 3,
+   "n": 59,
+   "share": 0.051,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 15,
+   "n": 59,
+   "share": 0.254,
+   "small_n": false
+  }
+ },
+ "DeepSeek-V4-Pro": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 162,
+   "share": 0.0,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 1,
+   "n": 121,
+   "share": 0.008,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 18,
+   "n": 121,
+   "share": 0.149,
+   "small_n": false
+  }
+ },
+ "Grok 4.5": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 52,
+   "share": 0.0,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 3,
+   "n": 143,
+   "share": 0.021,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 5,
+   "n": 143,
+   "share": 0.035,
+   "small_n": false
+  }
+ },
+ "GPT-5.5": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 382,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 3,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 99,
+   "share": 0.0,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 19,
+   "n": 99,
+   "share": 0.192,
+   "small_n": false
+  }
+ },
+ "GPT-5.6 Terra": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 11,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 8,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 3,
+   "n": 8,
+   "share": 0.375,
+   "small_n": true
+  }
+ },
+ "Claude Sonnet 5": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 202,
+   "share": 0.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 1,
+   "n": 1,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 48,
+   "share": 0.0,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 12,
+   "n": 48,
+   "share": 0.25,
+   "small_n": false
+  }
+ },
+ "Kimi K3": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 15,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 2,
+   "n": 14,
+   "share": 0.143,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 6,
+   "n": 14,
+   "share": 0.429,
+   "small_n": true
+  }
+ },
+ "GLM-5.3 Flash": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 44,
+   "share": 0.0,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 0,
+   "n": 1,
+   "share": 0.0,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 1,
+   "n": 1,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 2,
+   "n": 39,
+   "share": 0.051,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 4,
+   "n": 39,
+   "share": 0.103,
+   "small_n": false
+  }
+ },
+ "Claude Fable 5": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 109,
+   "share": 0.0,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 55,
+   "share": 0.0,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 16,
+   "n": 55,
+   "share": 0.291,
+   "small_n": false
+  }
+ },
+ "Grok 4": {
+  "claims_made_blind": {
+   "k": 41,
+   "n": 100,
+   "share": 0.41,
+   "small_n": false
+  },
+  "wait_with_wait_call": {
+   "k": 25,
+   "n": 163,
+   "share": 0.153,
+   "small_n": false
+  },
+  "wait_but_kept_working": {
+   "k": 20,
+   "n": 163,
+   "share": 0.123,
+   "small_n": false
+  },
+  "reply_verify": {
+   "k": 6,
+   "n": 110,
+   "share": 0.055,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 19,
+   "n": 110,
+   "share": 0.173,
+   "small_n": false
+  }
+ },
+ "Fine-Tuned Leader": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 16,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 1,
+   "n": 6,
+   "share": 0.167,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 1,
+   "n": 6,
+   "share": 0.167,
+   "small_n": true
+  }
+ },
+ "Muse Spark 1.3": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 12,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 1,
+   "n": 7,
+   "share": 0.143,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 3,
+   "n": 7,
+   "share": 0.429,
+   "small_n": true
+  }
+ },
+ "o1": {
+  "claims_made_blind": {
+   "k": 35,
+   "n": 35,
+   "share": 1.0,
+   "small_n": false
+  },
+  "helpdesk_not_shown": {
+   "k": 2,
+   "n": 2,
+   "share": 1.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 1,
+   "n": 62,
+   "share": 0.016,
+   "small_n": false
+  },
+  "reply_accept": {
+   "k": 6,
+   "n": 62,
+   "share": 0.097,
+   "small_n": false
+  }
+ },
+ "Claude Fable 5.1": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 9,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 6,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 2,
+   "n": 6,
+   "share": 0.333,
+   "small_n": true
+  }
+ },
+ "GPT-4o": {
+  "claims_made_blind": {
+   "k": 25,
+   "n": 26,
+   "share": 0.962,
+   "small_n": true
+  },
+  "wait_with_wait_call": {
+   "k": 7,
+   "n": 20,
+   "share": 0.35,
+   "small_n": true
+  },
+  "wait_but_kept_working": {
+   "k": 9,
+   "n": 20,
+   "share": 0.45,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 27,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 3,
+   "n": 27,
+   "share": 0.111,
+   "small_n": true
+  }
+ },
+ "o4-mini": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 10,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 2,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 1,
+   "n": 2,
+   "share": 0.5,
+   "small_n": true
+  }
+ },
+ "GPT-5.6 Luna": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 19,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 0,
+   "n": 19,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 7,
+   "n": 19,
+   "share": 0.368,
+   "small_n": true
+  }
+ },
+ "GPT-6 Astra": {
+  "claims_made_blind": {
+   "k": 0,
+   "n": 7,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_verify": {
+   "k": 3,
+   "n": 9,
+   "share": 0.333,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 2,
+   "n": 9,
+   "share": 0.222,
+   "small_n": true
+  }
+ },
+ "[Temporary] Fine-tuned Leader": {
+  "reply_verify": {
+   "k": 0,
+   "n": 2,
+   "share": 0.0,
+   "small_n": true
+  },
+  "reply_accept": {
+   "k": 0,
+   "n": 2,
+   "share": 0.0,
+   "small_n": true
+  }
+ }
+}

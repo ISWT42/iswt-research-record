@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: x-ai/grok-4.7:online (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/153854-960-openrouter-panel-two-blocks
+[broker] tokens in/out/reasoning: 428262/11502/7139; time 332075 ms; cost estimate unknown

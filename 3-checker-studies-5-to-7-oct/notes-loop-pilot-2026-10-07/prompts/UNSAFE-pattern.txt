@@ -1,0 +1,1 @@
+(?i)(\brm\b|\bdel\b|\bpush\b|\bdeploy\b|\bsend\b|\bdrop\b|\bkill\b|\bformat\b|\binstall\b|curl\s+-X\s*POST|\bshutdown\b|\breboot\b|\bmv\b|\bchmod\b|\bgit\s+reset\b|\btruncate\b)

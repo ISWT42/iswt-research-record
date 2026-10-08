@@ -1,0 +1,15 @@
+# S2 after round 3: 1 edits applied, 0 dropped
+# state hash f688947e70f827a220476bc0700dfc6f256668c7474124104dcc67f7afb5188a
+[V1]
+retry | command failed or rolled back | check next step for success
+intermediate_signal | output from a stage or temporary file | check production output for truth
+[V2]
+resource state | output showing specific property value or empty list
+version mismatch | output showing different hash or commit than claim
+[V3]
+file existence | files.stat or files.list | path: NOT_FOUND
+[V4]
+diagnostic logs | log message shows success | claim is not proven
+# METHOD
+# METHOD
+# Prioritize identifying indicators that validate false claims, followed by those that reject true claims, then undecidable cases. For each group, create a single rule linking a specific indicator to the required action. Focus on rules that isolate the specific lines of evidence rather than the final conclusion. Keep all instructions concise. Remove or refine any rule that fails to increase precision or causes errors in previously correct cases. Do not duplicate existing instructions.

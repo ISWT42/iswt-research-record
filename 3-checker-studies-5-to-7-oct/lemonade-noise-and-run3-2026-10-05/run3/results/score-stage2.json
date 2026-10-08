@@ -1,0 +1,293 @@
+{
+ "design_sha256": "9bc34995e56dc07e3395a59c131eaa417c268e9d5be639f94aef5f4aa9f85022",
+ "followups_sha256": "548b99ee7977971964cab8824880238f596cf563a8d4a04804b0e028d303dce6",
+ "left_out": [
+  "183",
+  "278",
+  "289"
+ ],
+ "sets": {
+  "primary_201_300": {
+   "U-Q": {
+    "routes": {
+     "turn1": 65,
+     "follow_up": 18,
+     "no_proposal": 14,
+     "refused": 1
+    },
+    "followed_up": {
+     "n": 18,
+     "right": {
+      "k": 12,
+      "n": 18,
+      "ci95": [
+       0.437,
+       0.837
+      ]
+     },
+     "right_raw_turn2": {
+      "k": 14,
+      "n": 18,
+      "ci95": [
+       0.548,
+       0.91
+      ]
+     },
+     "sure": {
+      "k": 16,
+      "n": 18,
+      "ci95": [
+       0.672,
+       0.969
+      ]
+     },
+     "false_shown": 1,
+     "still_not_shown": 5
+    },
+    "system": {
+     "right": {
+      "k": 66,
+      "n": 98,
+      "ci95": [
+       0.576,
+       0.758
+      ]
+     },
+     "false_shown": {
+      "k": 5,
+      "n": 63,
+      "ci95": [
+       0.034,
+       0.173
+      ]
+     },
+     "to_a_person": 20,
+     "run3_policy_U_not_shown": 33
+    }
+   },
+   "U-G": {
+    "routes": {
+     "turn1": 60,
+     "no_proposal": 8,
+     "follow_up": 27,
+     "refused": 3
+    },
+    "followed_up": {
+     "n": 27,
+     "right": {
+      "k": 15,
+      "n": 27,
+      "ci95": [
+       0.373,
+       0.724
+      ]
+     },
+     "right_raw_turn2": {
+      "k": 15,
+      "n": 27,
+      "ci95": [
+       0.373,
+       0.724
+      ]
+     },
+     "sure": {
+      "k": 27,
+      "n": 27,
+      "ci95": [
+       0.875,
+       1.0
+      ]
+     },
+     "false_shown": 1,
+     "still_not_shown": 11
+    },
+    "system": {
+     "right": {
+      "k": 65,
+      "n": 98,
+      "ci95": [
+       0.565,
+       0.749
+      ]
+     },
+     "false_shown": {
+      "k": 7,
+      "n": 61,
+      "ci95": [
+       0.057,
+       0.218
+      ]
+     },
+     "to_a_person": 22,
+     "run3_policy_U_not_shown": 38
+    }
+   },
+   "pair_final_R3": {
+    "n": 98,
+    "right": {
+     "k": 60,
+     "n": 98,
+     "ci95": [
+      0.513,
+      0.703
+     ]
+    },
+    "false_shown": {
+     "k": 4,
+     "n": 61,
+     "ci95": [
+      0.026,
+      0.157
+     ]
+    },
+    "to_a_person": 38,
+    "answers": {
+     "contradicted": 29,
+     "not shown": 38,
+     "shown": 31
+    }
+   }
+  },
+  "fresh_161_300": {
+   "U-Q": {
+    "routes": {
+     "turn1": 95,
+     "follow_up": 23,
+     "no_proposal": 18,
+     "refused": 1
+    },
+    "followed_up": {
+     "n": 23,
+     "right": {
+      "k": 16,
+      "n": 23,
+      "ci95": [
+       0.491,
+       0.844
+      ]
+     },
+     "right_raw_turn2": {
+      "k": 18,
+      "n": 23,
+      "ci95": [
+       0.581,
+       0.903
+      ]
+     },
+     "sure": {
+      "k": 21,
+      "n": 23,
+      "ci95": [
+       0.732,
+       0.976
+      ]
+     },
+     "false_shown": 1,
+     "still_not_shown": 6
+    },
+    "system": {
+     "right": {
+      "k": 94,
+      "n": 137,
+      "ci95": [
+       0.604,
+       0.758
+      ]
+     },
+     "false_shown": {
+      "k": 9,
+      "n": 85,
+      "ci95": [
+       0.057,
+       0.189
+      ]
+     },
+     "to_a_person": 25,
+     "run3_policy_U_not_shown": 42
+    }
+   },
+   "U-G": {
+    "routes": {
+     "turn1": 85,
+     "follow_up": 39,
+     "no_proposal": 9,
+     "refused": 4
+    },
+    "followed_up": {
+     "n": 39,
+     "right": {
+      "k": 20,
+      "n": 39,
+      "ci95": [
+       0.362,
+       0.661
+      ]
+     },
+     "right_raw_turn2": {
+      "k": 20,
+      "n": 39,
+      "ci95": [
+       0.362,
+       0.661
+      ]
+     },
+     "sure": {
+      "k": 39,
+      "n": 39,
+      "ci95": [
+       0.91,
+       1.0
+      ]
+     },
+     "false_shown": 1,
+     "still_not_shown": 18
+    },
+    "system": {
+     "right": {
+      "k": 90,
+      "n": 137,
+      "ci95": [
+       0.574,
+       0.731
+      ]
+     },
+     "false_shown": {
+      "k": 13,
+      "n": 83,
+      "ci95": [
+       0.094,
+       0.25
+      ]
+     },
+     "to_a_person": 31,
+     "run3_policy_U_not_shown": 52
+    }
+   },
+   "pair_final_R3": {
+    "n": 137,
+    "right": {
+     "k": 83,
+     "n": 137,
+     "ci95": [
+      0.522,
+      0.684
+     ]
+    },
+    "false_shown": {
+     "k": 7,
+     "n": 81,
+     "ci95": [
+      0.042,
+      0.168
+     ]
+    },
+    "to_a_person": 54,
+    "answers": {
+     "shown": 44,
+     "contradicted": 39,
+     "not shown": 54
+    }
+   }
+  }
+ }
+}

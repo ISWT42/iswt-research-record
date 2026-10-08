@@ -1,0 +1,38 @@
+{
+ "counts": {
+  "n": 129,
+  "right": 112,
+  "wrong": 17,
+  "false_shown": 12,
+  "false_contradicted": 3,
+  "missed_shown": 1,
+  "missed_contradicted": 1,
+  "other": 0,
+  "no_answer": 0,
+  "sure_and_wrong": 17
+ },
+ "evidence": {
+  "wrong": [
+   "004",
+   "061",
+   "084",
+   "090",
+   "102",
+   "103",
+   "108",
+   "114",
+   "123",
+   "136",
+   "152",
+   "160"
+  ],
+  "right_and_sure": [
+   "002",
+   "003",
+   "001",
+   "006"
+  ]
+ },
+ "wrong_max": 12,
+ "right_max": 4
+}

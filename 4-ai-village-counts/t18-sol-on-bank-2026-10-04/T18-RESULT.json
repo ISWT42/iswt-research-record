@@ -1,0 +1,41 @@
+{
+ "run_seconds": 0.25,
+ "exit_code": 0,
+ "items": 120,
+ "predicted": 120,
+ "missing": [],
+ "accuracy": 0.333,
+ "correct": 40,
+ "confusion": {
+  "not_shown": {
+   "not_shown": 40
+  },
+  "shown": {
+   "not_shown": 40
+  },
+  "contradicted": {
+   "not_shown": 40
+  }
+ },
+ "by_batch": {
+  "1": {
+   "correct": 13,
+   "wrong": 27
+  },
+  "2": {
+   "wrong": 27,
+   "correct": 13
+  },
+  "3": {
+   "wrong": 26,
+   "correct": 14
+  }
+ },
+ "false_shown": [],
+ "false_contradicted": [],
+ "deciding_line_on_correct_conclusive": {},
+ "checker_sha256": {
+  "receipt_checker.py": "e6bff7aa775d4277c8e527ffc3228465658151e4a3f869d125f02b4c81735bd3",
+  "generic_checker.py": "dc4624f0db9719c55d94c382f5838e7b295bf970a87f540e4979bb8abdf500a3"
+ }
+}

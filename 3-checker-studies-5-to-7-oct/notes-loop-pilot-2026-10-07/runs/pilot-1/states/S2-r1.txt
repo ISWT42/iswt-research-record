@@ -1,0 +1,10 @@
+# S2 after round 1: 2 edits applied, 0 dropped
+# state hash f9f3a5ea6ea37f942ab8bce26da905eeaaa5c0ce8a5a884408d7fe919217fc4d
+[V1]
+retry | command failed or rolled back | check next step for success
+[V2]
+resource state | output showing specific property value or empty list
+[V3]
+[V4]
+# METHOD
+# Start with mistakes that would have let a false claim through, then mistakes that wrongly rejected a true claim, then cases the checker could not decide. For each group of similar mistakes write one rule that names the sign to look for and what to do. Prefer rules about which output line counts as evidence over rules about which answer to give. Keep every line short. Delete or reword a line if the last result shows it did not help or made things worse. Do not add a line that repeats an existing one.

@@ -1,0 +1,20 @@
+E1 handoff for the coordinating session (plain paths; written 2026-10-06T04:02:20Z, read with date -u in the same step).
+E1's local run is finished (300 answers, no failed calls) and the answers file is sealed. The score has not been written yet when this file is made; it follows in the same folder.
+
+Items file (150 items, X001 to X150), sealed before any model saw it:
+  <home>\Workbench\overnight-2026-10-05\e1\items-X001-X150.jsonl
+  sha256 d82e4259f5614977a95ccd71d849749b52337dd3d16ebb729045de4d29a3ae5e
+  seal: <home>\Workbench\overnight-2026-10-05\e1\ITEMS-SHA256.txt (FreeTSA reply beside it, .tsr)
+Local answers file (arm A Qwen3-4B 150 lines, arm B Gemma-4-E4B 150 lines), sealed before scoring:
+  <home>\Workbench\overnight-2026-10-05\e1\results\answers-e1-local.jsonl
+  sha256 e95d2e7254fb55ec5b4eb6f207a9cc412d8e6903483e8bb08c7e9422f53c8203
+  seal: <home>\Workbench\overnight-2026-10-05\e1\results\E1-ANSWERS-SHA256.txt (FreeTSA reply beside it, .tsr)
+Slot map (item id to writer slot, try and broker ledger folder): <home>\Workbench\overnight-2026-10-05\e1\slot-map.json
+Design and addendum: <home>\Workbench\overnight-2026-10-05\E1-DESIGN.md and E1-ADDENDUM-1.md
+Score file (when written and sealed): <home>\Workbench\overnight-2026-10-05\e1\results\score-e1.json
+
+Update 2026-10-06T04:03:43Z (read with date -u in the same step): the score is written and sealed, and has been read.
+Score file: <home>\Workbench\overnight-2026-10-05\e1\results\score-e1.json
+  sha256 f55b193c7841aa2a5957632886395cb5c5e08ba2179150681717efe42987d702
+  seal: <home>\Workbench\overnight-2026-10-05\e1\results\E1-SCORE-SHA256.txt (FreeTSA reply beside it, .tsr)
+E2 (the 2 x 3 test) is still running; its files are under <home>\Workbench\overnight-2026-10-05\e2\.

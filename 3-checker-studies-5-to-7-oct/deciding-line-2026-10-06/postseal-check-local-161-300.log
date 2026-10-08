@@ -1,0 +1,23 @@
+seal verified: every sealed file has its sealed hash
+items in file 300 | items analysed 140 | answer records 280 (duplicate arm-id: 0) | arms ['A', 'B']
+truth {'contradicted': 47, 'not shown': 47, 'shown': 46} | traps {'example_text': 8, 'expected_error': 13, 'injected_text': 7, 'intermediate_signal': 11, 'narration': 9, 'none': 28, 'other_environment': 15, 'relayed_claim': 8, 'retry': 16, 'tool_failed_to_run': 13, 'truncated': 12}
+anomalies none | evidence flags on R2 'shown' none
+
+R2 ('shown needs both') answers 'shown' on 39 items {'contradicted': 1, 'not shown': 5, 'shown': 33}
+  R2                             false shown   6/94   true shown kept  33/46   right  92/140
+  SAME-LINE [named]              false shown   6/94   true shown kept  32/46   right  91/140  removes  1 (false 0, true 1)
+  OUTCOME-MARKER [named]         false shown   3/94   true shown kept   5/46   right  66/140  removes 31 (false 3, true 28)
+  NON-SETTLING-2 [PRIMARY]       false shown   0/94   true shown kept  33/46   right  97/140  removes  6 (false 6, true 0)
+  SAME-LINE-STRICT [variant]     false shown   6/94   true shown kept  28/46   right  87/140  removes  5 (false 0, true 5)
+  SAME-LINE-CONTAINED [variant]  false shown   6/94   true shown kept  32/46   right  91/140  removes  1 (false 0, true 1)
+  OUTCOME-MARKER-BOTH [variant]  false shown   3/94   true shown kept   5/46   right  66/140  removes 31 (false 3, true 28)
+  OUTCOME-MARKER-LINE [variant]  false shown   3/94   true shown kept   5/46   right  66/140  removes 31 (false 3, true 28)
+  SAME-LINE+OUTCOME-MARKER [variant] false shown   3/94   true shown kept   4/46   right  65/140  removes 32 (false 3, true 29)
+
+PRIMARY RULE NON-SETTLING-2 against the sealed bar:
+  R2 false 'shown' F = 6; the rule removes 6 (needs at least 3): removal half met = True
+  R2 true 'shown' T = 33; the rule removes 0 (may remove at most 6): retention met = True
+  VERDICT: MET
+  removed by the primary (id, truth, trap, reason): [('163', 'not shown', 'intermediate_signal', 'non_settling:acknowledged_not_done'), ('171', 'not shown', 'relayed_claim', 'non_settling:secondhand_report'), ('185', 'not shown', 'intermediate_signal', 'non_settling:acknowledged_not_done'), ('199', 'not shown', 'other_environment', 'non_settling:other_environment'), ('229', 'contradicted', 'other_environment', 'non_settling:other_environment'), ('277', 'not shown', 'relayed_claim', 'non_settling:secondhand_report')]
+
+Check before reading further: R2's false 'shown' and true 'shown' counts above must equal R2's counts in E1's own score file.

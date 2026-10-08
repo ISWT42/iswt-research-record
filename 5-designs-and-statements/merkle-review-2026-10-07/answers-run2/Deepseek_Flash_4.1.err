@@ -1,0 +1,4 @@
+[broker] OK
+[broker] model: deepseek/deepseek-v4.1-flash (effort: unknown) via OpenRouter (model from: request; effort from: reasoning.enabled sent without an effort; the model's default applies)
+[broker] recorded in ledger/2026-10-06/225328-670-openrouter-merkle-review
+[broker] tokens in/out/reasoning: 599/2649/1594; time 18475 ms; cost estimate unknown

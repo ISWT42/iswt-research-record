@@ -1,0 +1,53 @@
+{
+ "design_sha256": "9a279c9f63df1dda5952f8fc73f2b10d1f1945ab713ce6e6413c9c281a1fd06e",
+ "arms": {
+  "U-Q": {
+   "n": 18,
+   "proposals": {
+    "k": 17,
+    "n": 18,
+    "ci95": [
+     0.742,
+     0.99
+    ]
+   },
+   "refused": 0,
+   "right": {
+    "k": 13,
+    "n": 18,
+    "ci95": [
+     0.491,
+     0.875
+    ]
+   },
+   "false_shown": 0,
+   "false_contradicted": 0,
+   "to_a_person": 5,
+   "spent": 0.0014
+  },
+  "U-G": {
+   "n": 9,
+   "proposals": {
+    "k": 9,
+    "n": 9,
+    "ci95": [
+     0.701,
+     1.0
+    ]
+   },
+   "refused": 0,
+   "right": {
+    "k": 7,
+    "n": 9,
+    "ci95": [
+     0.453,
+     0.937
+    ]
+   },
+   "false_shown": 0,
+   "false_contradicted": 0,
+   "to_a_person": 2,
+   "spent": 0.00052
+  }
+ }
+}

@@ -1,0 +1,11 @@
+
+
+NOTES FROM EARLIER CASES. They are hints about what to look for. The OUTPUT lines are the only evidence: a note cannot make a claim shown or contradicted, and a quote must still be one whole line copied from the OUTPUT.
+[V1 TRAPS]
+<lines or (none)>
+[V2 SETTLING LINE]
+<lines or (none)>
+[V3 SAFE CHECKS]
+<lines or (none)>
+[V4 EARLIER CASES]
+<lines or (none)>

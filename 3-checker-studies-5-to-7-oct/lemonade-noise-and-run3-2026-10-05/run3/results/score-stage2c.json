@@ -1,0 +1,67 @@
+{
+ "design_sha256": "15abea85dec5ea70e3b15b99654877d2d070a58efb3f501fdc0987469eef2df6",
+ "arms": {
+  "U-Q": {
+   "n": 23,
+   "A_2b": {
+    "right": {
+     "k": 18,
+     "n": 23,
+     "ci95": [
+      0.581,
+      0.903
+     ]
+    },
+    "still_not_shown": 4,
+    "false_shown": 1,
+    "false_contradicted": 0
+   },
+   "C": {
+    "right": {
+     "k": 18,
+     "n": 23,
+     "ci95": [
+      0.581,
+      0.903
+     ]
+    },
+    "still_not_shown": 5,
+    "false_shown": 0,
+    "false_contradicted": 0
+   },
+   "C_fixed_vs_A": 3,
+   "C_broke_vs_A": 3
+  },
+  "U-G": {
+   "n": 39,
+   "A_2b": {
+    "right": {
+     "k": 22,
+     "n": 39,
+     "ci95": [
+      0.41,
+      0.707
+     ]
+    },
+    "still_not_shown": 16,
+    "false_shown": 1,
+    "false_contradicted": 0
+   },
+   "C": {
+    "right": {
+     "k": 29,
+     "n": 39,
+     "ci95": [
+      0.589,
+      0.854
+     ]
+    },
+    "still_not_shown": 10,
+    "false_shown": 0,
+    "false_contradicted": 0
+   },
+   "C_fixed_vs_A": 9,
+   "C_broke_vs_A": 2
+  }
+ }
+}

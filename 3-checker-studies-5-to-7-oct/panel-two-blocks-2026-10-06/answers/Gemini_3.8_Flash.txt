@@ -1,0 +1,78 @@
+### 1. Other Uses (Ranked)
+
+1. **Coordinated Vulnerability Disclosure and Zero-Day Embargoes**  
+   * **Who needs it:** Security researchers, vulnerability brokers, and software vendors.  
+   * **What it proves:** It proves that a researcher possessed an exploit or vulnerability description at date $T_0$ without disclosing the payload early, while later proving whether the vendor’s released patch at $T_1$ addressed that exact flaw or a different one.  
+   * **What it replaces:** Opaque private email threads, disputed vulnerability discovery timelines, and risky public drops ("full disclosure") triggered by vendor delays.
+
+2. **Pre-Registration of Clinical Trial Endpoints and Interim Adverse Events**  
+   * **Who needs it:** Clinical research organizations, drug regulators (FDA/EMA), and meta-analysts.  
+   * **What it proves:** It proves that trial primary/secondary endpoints, statistical analysis plans, and adverse event tallies were immutably locked before unblinding, preventing retroactive parameter pruning.  
+   * **What it replaces:** Centralized, private study registries (e.g., ClinicalTrials.gov) that frequently allow retroactively edited outcome measures without visible, cryptographically enforceable audit trails [1].
+
+3. **Autonomous Supply Chain and Environmental (Scope 3) Compliance**  
+   * **Who needs it:** Exporters, environmental regulators, and cross-border customs authorities.  
+   * **What it proves:** It pairs automated edge-sensor measurements (such as temperature logs, cold-chain integrity, or emissions output) with cryptographic receipts before downstream compliance milestones occur.  
+   * **What it replaces:** Self-reported vendor spreadsheets, delayed third-party audit sampling, and easily forged paper bills of lading.
+
+4. **Multi-Party SLA Adjudication and Cloud Infrastructure Outages**  
+   * **Who needs it:** Enterprise software-as-a-service (SaaS) buyers and cloud hosting providers.  
+   * **What it proves:** It creates a non-repudiable log pairing uptime telemetry pings with mutual execution claims, proving whether down-time thresholds were breached and whether agreed automated failovers ran.  
+   * **What it replaces:** Conflicting internal monitoring dashboards, adversarial post-mortems, and manual credit negotiation processes.
+
+---
+
+### 2. What Already Exists
+
+#### Existing Technologies, Standards, and Literature
+* **Append-Only Transparency Logs:** Google’s [Certificate Transparency (RFC 6962 / RFC 9162)](https://datatracker.ietf.org/doc/html/rfc9162) popularized Merkle-tree logs to monitor SSL certificates. [Sigstore’s Rekor](https://docs.sigstore.dev/rekor/overview/) extends this to software supply chains, recording signatures and artifact hashes to an immutable ledger backed by [Google Trillian](https://github.com/google/trillian).
+* **Commit-Reveal Schemes:** Introduced in foundational cryptography (e.g., Manuel Blum’s 1981 coin-flipping protocol), commit-reveal schemes require a party to commit to a blinded hash value $H(\text{message} \parallel \text{salt})$ at $T_0$ and reveal $(\text{message}, \text{salt})$ at $T_1$. They are widely deployed in decentralized randomness generation (e.g., RANDAO) and front-running mitigation.
+* **Cryptographic Timestamping:** The IETF [RFC 3161 Time-Stamp Protocol (TSP)](https://datatracker.ietf.org/doc/html/rfc3161) formalizes centralized timestamp authorities such as [FreeTSA](https://freetsa.org/). Decentralized, censorship-resistant timestamping is implemented by Peter Todd’s [OpenTimestamps](https://opentimestamps.org/), which aggregates hashes into Merkle trees and embeds roots into the Bitcoin blockchain.
+* **Pre-Registration Frameworks:** In science, registered reports and pre-analysis plans are hosted on platforms like the [Center for Open Science (OSF Preregistration)](https://www.cos.io/initiatives/prereg) [2]. Cryptographic adaptations (e.g., timestamping research pre-registrations onto public ledgers) have been widely discussed in open science literature.
+* **Verifiable Epistemic Claim Checking:** Systems like [Fact-Checking Automated Pipelines](https://fullfact.org/) and verifiable execution systems (e.g., zk-SNARK execution receipts) aim to tie outputs directly to inputs and verifiable proofs.
+
+#### What Is Distinct vs. What Is Not
+* **What is not distinct:** None of the cryptographic primitives are new. Merkle-tree logs, public decentralized timestamps, and hash-based commit-reveal protocols have been deployed in production for over a decade.
+* **What is distinct:** The novelty lies in the *epistemic framing and agentic evaluation workflow*:
+  1. Restricting autonomous AI agents so that "task complete" is technically impossible without referencing an append-only receipt entry.
+  2. Pairing every asserted claim directly with its immutable evidentiary artifact inside a formal tri-state schema (`shown`, `contradicted`, `not shown`).
+  3. Treating pre-registration and commit-reveal not merely as academic or scientific safeguards, but as standard *runtime guardrails* for automated, goal-seeking software systems.
+
+---
+
+### 3. Failure Modes and Vulnerabilities
+
+1. **Garbage In, Sealed Forever ("Sealed $\neq$ True"):**  
+   A cryptographic timestamp guarantees *temporal precedence* and *data integrity*, never *veracity*. An agent or user can seal hallucinations, forged sensor logs, or outright fabrications. The system proves only that a statement existed unchanged since $T_0$, not that the statement corresponds to physical or logical reality.
+2. **Privacy Leaks and Low-Entropy Dictionary Attacks:**  
+   If an agent commits a hash of predictable data without an unguessable cryptographic salt (e.g., `H("Patient_ID: 104, Diagnosis: Cancer")`), an adversary can precompute or brute-force hashes to discover the secret before revelation. Furthermore, append-only logs are permanent; mistakenly logging personal data (PII) violates legal frameworks like the GDPR "right to be forgotten" with no mechanism to purge the record.
+3. **Log Governance and Equivocation Attacks:**  
+   If the append-only log is operated by a centralized server or single entity, that entity can commit *equivocation* (showing log state $A$ to the agent and log state $B$ to an auditor) or censor incoming entries. Without distributed witness gossiping (as required in Certificate Transparency), the log's integrity relies entirely on trusting the host.
+4. **Key Loss, Abandonment, and Un-Revealed Commitments:**  
+   Commit-reveal requires the committer to intentionally publish the revelation. If an agent crashes, wipes its state, or withholds the secret salt, the loop fails permanently: external verifiers cannot check what was promised against what occurred. The commitment becomes dead cryptographic weight.
+5. **Epistemic Fallacy / Audience Misinterpretation:**  
+   Lay observers and non-technical stakeholders frequently mistake "blockchain-verified" or "timestamped" for "peer-reviewed" or "empirically correct." Bad actors can exploit this misunderstanding by sealing pseudoscience or manipulated benchmarks to manufacture unearned credibility.
+
+---
+
+### 4. How to Say It
+
+> "We introduce a dual-layer cryptographic accountability protocol for autonomous processes, combining public append-only transparency logs with commit-reveal verification. By requiring an agent to bind every output claim to an immutable, timestamped evidentiary record, the system verifies temporal priority and protocol adherence across three states: shown, contradicted, or not shown. This mechanism does not verify whether an ungrounded claim is inherently true; rather, it guarantees that whatever an agent claimed, predicted, or used as evidence cannot be altered, backdated, or selectively edited after the fact."
+
+---
+
+### 5. One Experiment
+
+* **Target Use Case:** Coordinated Vulnerability Disclosure (Responsible Disclosure) between independent security researchers and software vendors.
+* **Pre-Registered Design:**
+  1. A red-team generates 50 synthetic software security flaw write-ups with reproducible proofs-of-concept (PoCs).
+  2. For 25 flaws (*Commit-Reveal Group*), the researcher computes $H(\text{PoC} \parallel \text{salt})$, posts it to an append-only log anchored to Bitcoin via OpenTimestamps, and emails only a high-level summary and hash to the vendor with a 60-day deadline.
+  3. For 25 flaws (*Control Group*), the researcher submits the traditional full textual description and PoC directly via the vendor’s bug-bounty portal.
+* **What is Measured:**
+  * *Dispute Frequency:* Number of claims of vendor front-running, patch non-attribution, or timeline disagreement.
+  * *Leakage/Exploitation Rate:* Number of times vulnerabilities leak before the 60-day coordinated patch window.
+  * *Audit Overhead:* Human auditor time required to verify who discovered the vulnerability first and whether the issued patch mitigates the exact pre-committed issue.
+* **Falsification/Failure Threshold:**  
+  The experiment fails if:
+  1. The commit-reveal log fails to reduce attribution disputes by a statistically significant margin ($p \ge 0.05$) compared to standard portal submissions, OR  
+  2. The rate of un-revealable/broken commitments due to salt mismanagement exceeds 5%, indicating that the cryptographic protocol introduces operational fragility without measurable evidentiary benefit.
