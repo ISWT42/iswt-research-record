@@ -53,7 +53,7 @@ Every number is a count with its denominator, copied from `runs/real-1-score.txt
 | `runs/real-1/room.jsonl.head` | The head of that chain. |
 | `runs/real-1/blobs/` | One file per raw call (6,139 files), named by their SHA-256. |
 | `runs-real-1-full-console.txt` | The runner's closing line. |
-| `RESULTS-SEAL-SHA256.txt` with `.tsr`, `.tsq`, `.ots` | The results seal: SHA-256 of the raw run, before any count. FreeTSA 2026-10-08T05:45:21Z. The OpenTimestamps proof is still waiting for a Bitcoin block. |
+| `RESULTS-SEAL-SHA256.txt` with `.tsr`, `.tsq`, `.ots` | The results seal: SHA-256 of the raw run, before any count. FreeTSA 2026-10-08T05:45:21Z. The OpenTimestamps proof holds Bitcoin block 970449 (upgraded on 8 October 2026 after the first release; its Merkle root matched the block's on an independent block explorer). |
 | `runs/real-1-score.txt` | The score, written by the sealed `score.py` after the results seal. SHA-256 `941462cb0e91dcaa0b611bb5a4f704dde8f61c7a71f5b639490291bf53933f04`. It is not in a seal list. |
 
 ## How to check
@@ -74,3 +74,5 @@ Every number is a count with its denominator, copied from `runs/real-1-score.txt
 ## Correction
 
 8 October 2026, after the release with version DOI 10.5281/zenodo.23235648: that release's copy of this README said the four models "did 40 small coding jobs each, in 5 rounds". The right description is the one in "In plain words" above: a bank of 40 jobs, and 40 games (8 per arm), each game 5 rounds of 8 jobs. The score and every other file are unchanged.
+
+8 October 2026, later: the `.ots` proof for `RESULTS-SEAL-SHA256.txt` was upgraded with the calendars' answers and now holds Bitcoin block 970449 (earlier attestations: 970464, 970467). The release with version DOI 10.5281/zenodo.23235648 carries the earlier, still-pending proof; the files it seals are unchanged.
