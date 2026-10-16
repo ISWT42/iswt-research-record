@@ -1,6 +1,6 @@
 # Public research record, 8 October 2026
 
-By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 8 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. First published 8 October 2026 (bundles 1 to 6; archived on Zenodo, DOI 10.5281/zenodo.23227858). Bundle 7, the Earned Agency Bench, was added later on 8 October 2026 (version DOI 10.5281/zenodo.23235648, under the same concept DOI 10.5281/zenodo.23227857). There are 101 OpenTimestamps proofs in this record, and all 101 carry a Bitcoin block (the proof for the bench's results seal got its block, 970449, after the first release of bundle 7).
+By Joshua Bauer (ISWT42). This is the public copy of the sealed studies from 3 to 8 October 2026, made so that anyone can check the counts against the files that were sealed before the runs. First published 8 October 2026 (bundles 1 to 6). Bundle 7, the Earned Agency Bench, was added later on 8 October 2026. There are 101 OpenTimestamps proofs in this record, and all 101 carry a Bitcoin block (the proof for the bench's results seal got its block, 970449, after the first release of bundle 7).
 
 ## In plain words
 
@@ -36,7 +36,7 @@ Each bundle folder has its own README with the counts, the seal times and what w
 - DEV posts: https://dev.to/iswt42/it-quoted-the-failure-two-kinds-of-false-done-1ago and https://dev.to/iswt42/every-done-needs-a-receipt-3n19
 - Code: https://github.com/ISWT42/swarm-receipts , https://github.com/ISWT42/receipt-pair , https://github.com/ISWT42/receipt-desk
 - Pages on iswt.ca: https://iswt.ca/results/ , https://iswt.ca/projects/ , https://iswt.ca/runs/ , https://iswt.ca/entries/ , https://iswt.ca/ledger/ , https://iswt.ca/sonny-test/ , https://iswt.ca/human-words/ , https://iswt.ca/check/chain/
-- Zenodo DOIs: method https://doi.org/10.5281/zenodo.23117476 ; Receipt Desk https://doi.org/10.5281/zenodo.23116560 ; swarm-receipts https://doi.org/10.5281/zenodo.23147283 ; "Every done needs a receipt" https://doi.org/10.5281/zenodo.23162835
+- Links: method https://github.com/ISWT42/sonny-test ; Receipt Desk https://github.com/ISWT42/receipt-desk ; swarm-receipts https://github.com/ISWT42/swarm-receipts ; "Every done needs a receipt" https://iswt.ca
 - Demo video: https://youtu.be/Iqgn11NWwDA
 
 ## What is not here, and why
